@@ -26,17 +26,22 @@
      the fix, so a one-line description of what's automated is enough (and keeps book text out of the module).
 4. Run `.\tools\build.ps1`. It refuses to write if an `_id`, identifier, version or macro syntax is wrong.
    Packs can't be rebuilt while a world with this module enabled is open: return to Setup first.
-5. **Test** in a v14 world: CAT shield on a test actor → apply the Champions Guild source → use the spell.
+5. **Test** in a v14 world: copy `module.json`, `scripts\` and `packs\` into a test server's
+   `Data\modules\champions-guild-automation`, then CAT shield on a test actor → apply the Champions Guild source → use
+   the spell. Test with midi's "Auto apply item effects" and "Auto check saves" turned on (a brand-new world has
+   both off, so effects and save damage silently don't happen).
 6. **Release:** commit your fix, add a `## <new version>` section to CHANGELOG.md, then run
    `.\tools\release.ps1 -Version <new version>`. It stamps the version into module.json, builds, zips (with
    Linux-safe paths), commits, tags `v<version>`, pushes, and creates the GitHub release with `module.zip` +
    `module.json`. Use `-DryRun` to package without touching git or GitHub. DMs then click Update and Mass Apply.
 
-## Don't update this module through Foundry on the dev PC
+## Where the working copy lives
 
-This folder (`Data\modules\champions-guild-automation`) is the git working copy. If Foundry's Setup screen offers
-an Update for it here, **skip it**: Foundry would replace the folder with the release zip and wipe `src\`, `tools\`
-and `.git`. Pull from GitHub instead (`git pull`) and rebuild.
+The git working copy is `C:\Users\roger\AppData\Local\FoundryVTT\Development\champions-guild-automation`, outside
+Foundry's `Data\modules` folder. Never put it back inside `Data\modules`: installing or updating the module through
+Foundry's Setup screen replaces that folder with the release zip, which wipes `src\`, `tools\` and `.git` (this
+happened once, on 2026-11-18). Your own Foundry installs and updates the module from the manifest URL like every
+other DM's.
 
 ## When CAT catches up
 

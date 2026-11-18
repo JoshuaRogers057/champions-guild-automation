@@ -1,0 +1,176 @@
+{
+  "_id": "cgaFeaRepellingB",
+  "name": "Eldritch Invocations: Repelling Blast",
+  "type": "feat",
+  "system": {
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Eldritch Blast beams that hit a Large or smaller creature push it 10 ft straight away. Use the <strong>Toggle Push</strong> activity to switch the push off and on.</p>",
+      "chat": ""
+    },
+    "requirements": "Warlock 5",
+    "prerequisites": {
+      "level": 2,
+      "items": [],
+      "repeatable": false
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "properties": [],
+    "advancement": {},
+    "activities": {
+      "toggleRepelPush1": {
+        "_id": "toggleRepelPush1",
+        "type": "utility",
+        "name": "Toggle Push",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Turn the 10 ft push on or off",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": true
+        },
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "midiProperties": {
+          "identifier": "repelling-toggle",
+          "otherActivityCompatible": false,
+          "automationOnly": false
+        },
+        "otherActivityId": "none",
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "self",
+            "count": "",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft",
+            "stationary": false
+          }
+        },
+        "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp"
+      }
+    },
+    "identifier": "repelling-blast",
+    "crewed": false,
+    "enchant": {}
+  },
+  "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
+  "flags": {
+    "dnd5e": {},
+    "midi-qol": {
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Repelling Blast push is handled by the CGA Eldritch Blast; Toggle Push switches it off/on.",
+        "aliases": [
+          "eldritch-invocations-repelling-blast"
+        ]
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "repelPushToggle1",
+      "name": "Repelling Blast: Push On",
+      "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
+      "description": "<p>While this is enabled, Eldritch Blast hits push Large or smaller creatures 10 ft away. Use the invocation's Toggle Push (or this checkbox) to turn it off.</p>",
+      "statuses": [],
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {
+        "world": {
+          "repellingToggle": true
+        }
+      },
+      "type": "base",
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": false
+      },
+      "tint": "#ffffff",
+      "sort": 0,
+      "start": {
+        "combat": null,
+        "round": null,
+        "time": 1749600175,
+        "turn": null,
+        "combatant": null,
+        "initiative": null
+      },
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "_cgaMacro": "repelling-toggle.js"
+}

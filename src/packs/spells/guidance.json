@@ -1,0 +1,1709 @@
+{
+  "_id": "cgaSplGuidance00",
+  "name": "Guidance",
+  "type": "spell",
+  "system": {
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Pick the skill when you cast; the target adds 1d4 to checks with that skill while you concentrate.</p>",
+      "chat": ""
+    },
+    "level": 0,
+    "school": "div",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "target": {
+      "affects": {
+        "count": "1",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft",
+        "stationary": false
+      }
+    },
+    "range": {
+      "units": "touch"
+    },
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute",
+      "expiry": null
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "method": "spell",
+    "prepared": 0,
+    "activities": {
+      "utilityGuidanceI": {
+        "type": "utility",
+        "_id": "utilityGuidanceI",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "override": false
+        },
+        "consumption": {
+          "spellSlot": true,
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "value": "1",
+          "units": "minute",
+          "concentration": true,
+          "override": true,
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "xFUQhEjcwAbIpLur",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "14q5oFvhDB1RyttO",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "kSlPHBMy8lIMJKrz",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "ovchQE4AVZqgFVpn",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "VlkXCXqepyUVj47w",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "9AE9MGkH0tpmkqS1",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "hQeyMXzHK1vDzVcy",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "nl4mm6N1t4cMEpHc",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "AvLKBlawpn71bG16",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "owDg22Ru3YwGIoK9",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "TcS8orvHdkkQWKzg",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "BXILkTdAOQXhA4I1",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "8O9EQFzChWzEwdyF",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "a0ETPre4GfcDzOMx",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "GBQ92q4M89MvsjEk",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "R7F6oMXFHvwI7KdF",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "v9lAkQK5z4q4XXKf",
+            "level": {},
+            "uuid": null
+          },
+          {
+            "_id": "Fc1UcjNKeqgZzlRK",
+            "level": {},
+            "uuid": null
+          }
+        ],
+        "range": {
+          "units": "touch",
+          "override": true,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "confirmTargets": "default",
+          "automationOnly": false,
+          "identifier": "",
+          "chooseEffects": true,
+          "forceDamageDialog": "",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "otherActivityCompatible": false,
+          "otherActivityAsParentType": true,
+          "displayActivityName": false,
+          "rollMode": "default",
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "skipConcentrationCheck": false,
+          "followUp": false,
+          "followUpTargets": "default",
+          "followUpCondition": "",
+          "targetMustBeSeen": false,
+          "statuses": []
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": "",
+          "rollAs": "target"
+        },
+        "otherActivityId": "none",
+        "otherActivityAsParentType": true,
+        "name": "",
+        "img": null,
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        }
+      }
+    },
+    "identifier": "guidance"
+  },
+  "img": "icons/magic/control/buff-flight-wings-blue.webp",
+  "flags": {
+    "midi-qol": {
+      "removeAttackDamageButtons": "default",
+      "forceCEOff": true,
+      "onUseMacroName": "[preItemRoll]ItemMacro"
+    },
+    "midiProperties": {
+      "confirmTargets": "default",
+      "magicdam": true,
+      "magiceffect": true
+    },
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Skill picker (two-column list); +1d4 to the chosen skill."
+      }
+    }
+  },
+  "effects": [
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Acrobatics)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Acrobatics checks.</p>",
+      "_id": "xFUQhEjcwAbIpLur",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.acr.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "RdWMXBlHjYrJkVcF",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Animal Handling)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Animal Handling checks.</p>",
+      "_id": "14q5oFvhDB1RyttO",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.ani.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "z0JCYZBdgGqyEhIm",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 1,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Arcana)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Arcana checks.</p>",
+      "_id": "kSlPHBMy8lIMJKrz",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.arc.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "hzxgErdZRnSg4ZPI",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 2,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Athletics)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Athletics checks.</p>",
+      "_id": "ovchQE4AVZqgFVpn",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.ath.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "VUieF6csq8UzHoEH",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 3,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Deception)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Deception checks.</p>",
+      "_id": "VlkXCXqepyUVj47w",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.dec.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ZEiUCe7QVGxazkKm",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 4,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (History)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to History checks.</p>",
+      "_id": "9AE9MGkH0tpmkqS1",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.his.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "MZ31W33lPPR0eECV",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 5,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Insight)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Insight checks.</p>",
+      "_id": "hQeyMXzHK1vDzVcy",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.ins.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "lVT16oBktM5e6MEP",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 6,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Intimidation)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Intimidation checks.</p>",
+      "_id": "nl4mm6N1t4cMEpHc",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.itm.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "NJ7QlSdZI3bwU53X",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 7,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Investigation)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Investigation checks.</p>",
+      "_id": "AvLKBlawpn71bG16",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.inv.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "xJrjItbsHX5cqun7",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 8,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Medicine)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Medicine checks.</p>",
+      "_id": "owDg22Ru3YwGIoK9",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.med.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "rRmYZV4hcaZfecBu",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 9,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Nature)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Nature checks.</p>",
+      "_id": "TcS8orvHdkkQWKzg",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.nat.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "dEhuBZJGqBzAzoZx",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 10,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Perception)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Perception checks.</p>",
+      "_id": "BXILkTdAOQXhA4I1",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.prc.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "nZ7RURF5kIa2a2a9",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 11,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Performance)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Performance checks.</p>",
+      "_id": "8O9EQFzChWzEwdyF",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.prf.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "S6ibQibM6JUdr1c9",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 12,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Persuasion)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Persuasion checks.</p>",
+      "_id": "a0ETPre4GfcDzOMx",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.per.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "gzLs5lSxS3NPD7Lt",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 13,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Religion)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Religion checks.</p>",
+      "_id": "GBQ92q4M89MvsjEk",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.rel.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "2e6iZwRnqqN3hhKs",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 14,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Sleight of Hand)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Sleight of Hand checks.</p>",
+      "_id": "R7F6oMXFHvwI7KdF",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.slt.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "RQN463dUwzEi3bnG",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 15,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Stealth)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Stealth checks.</p>",
+      "_id": "v9lAkQK5z4q4XXKf",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.ste.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "JoxOmUdKdNpQGcvU",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 16,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "img": "icons/magic/control/buff-flight-wings-blue.webp",
+      "name": "Guidance (Survival)",
+      "statuses": [],
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "tint": "#ffffff",
+      "transfer": false,
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "transfer": false,
+          "stackable": "noneNameOnly",
+          "specialDuration": [],
+          "enableCondition": "",
+          "disableCondition": "",
+          "showIcon": true,
+          "disableIncapacitated": false,
+          "selfTarget": false,
+          "selfTargetAlways": false,
+          "dontApply": false,
+          "durationExpression": "",
+          "macroRepeat": "none"
+        },
+        "ddbimporter": {
+          "disabled": false
+        },
+        "midi-qol": {
+          "forceCEOff": true
+        },
+        "core": {
+          "overlay": false
+        },
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "description": "<p>+1d4 to Survival checks.</p>",
+      "_id": "Fc1UcjNKeqgZzlRK",
+      "type": "base",
+      "system": {
+        "magical": true,
+        "changes": [
+          {
+            "key": "system.skills.sur.bonuses.check",
+            "value": "+1d4",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "vuQdLbnQBuHmMDBV",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}"
+      },
+      "origin": null,
+      "sort": 17,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "_cgaMacro": "guidance.js"
+}

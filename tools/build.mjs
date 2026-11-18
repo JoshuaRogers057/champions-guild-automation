@@ -76,8 +76,10 @@ function prepareItem(file, raw, seenIds, seenKeys) {
       item.flags.dae ??= {};
       item.flags.dae.macro = { name: item.name, img: item.img, type: "script", scope: "global", command, author: null,
         ownership: { default: 3 }, flags: {} };
-      if (!item.flags["midi-qol"]?.onUseMacroName?.includes("ItemMacro")) {
-        warn(rel, "has _cgaMacro but flags.midi-qol.onUseMacroName never calls ItemMacro");
+      const fromEffect = (item.effects ?? []).some((e) => (e.system?.changes ?? e.changes ?? [])
+        .some((c) => c.key === "flags.midi-qol.onUseMacroName" && String(c.value).includes("ItemMacro")));
+      if (!item.flags["midi-qol"]?.onUseMacroName?.includes("ItemMacro") && !fromEffect) {
+        warn(rel, "has _cgaMacro but neither flags.midi-qol.onUseMacroName nor an effect calls ItemMacro");
       }
     }
     delete item._cgaMacro;
