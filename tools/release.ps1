@@ -68,12 +68,17 @@ Write-Host "Packaged $zipPath"
 
 if ($DryRun) { Write-Host "Dry run: stopped before git/GitHub. module.json now says $Version."; exit 0 }
 
-# 4. Commit, tag, push, release.
-git add -A
-git commit -m "Release $tag"
-if ($LASTEXITCODE -ne 0) { throw "git commit failed." }
+# 4. Commit, tag, push, release. Windows PowerShell 5 turns any native stderr line (git's progress and CRLF
+#    warnings) into a terminating error under "Stop", so rely on exit codes from here on.
+$ErrorActionPreference = "Continue"
+git add -A 2>$null
+git diff --cached --quiet
+if ($LASTEXITCODE -ne 0) {
+  git commit -q -m "Release $tag" 2>$null
+  if ($LASTEXITCODE -ne 0) { throw "git commit failed." }
+}
 git tag $tag
-git push origin HEAD --tags
+git push -q origin HEAD --tags 2>$null
 if ($LASTEXITCODE -ne 0) { throw "git push failed." }
 $notesFile = Join-Path $dist "notes.md"
 [System.IO.File]::WriteAllText($notesFile, $notes, $utf8)
