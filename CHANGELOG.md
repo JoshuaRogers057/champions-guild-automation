@@ -3,6 +3,18 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.3.0
+
+- **Magic Missile** (2024) - new fix 1.0.0. 3 darts at 1st level, +1 per slot level above 1st.
+  - Target one creature and every dart hits it.
+  - Target several and a dialog splits the darts between just those.
+  - Target none and the dialog lists every visible creature within 120 ft.
+  - **Fire** stays locked until every dart is assigned.
+  - The dart damage (1d4 + 1 Force) is rolled once and every dart deals that amount. Each creature takes
+    darts x roll, through midi, so resistances, damage cards and concentration checks apply.
+  - Uses the JB2A dart animation when Sequencer and JB2A are installed.
+  - Not automated: the Shield spell blocking the darts.
+
 ## 0.2.1
 
 - **Hunter's Mark** and **Hex** - fix 1.0.1. The bonus die was added twice when a character owns the spell twice
