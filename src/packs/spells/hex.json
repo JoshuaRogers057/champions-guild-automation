@@ -334,7 +334,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: +1d6 necrotic on attack hits vs the cursed creature; Curse New Creature moves the curse and keeps concentration."
       }
     }

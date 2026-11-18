@@ -3,6 +3,14 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.2.1
+
+- **Hunter's Mark** and **Hex** - fix 1.0.1. The bonus die was added twice when a character owns the spell twice
+  (for example a Vengeance paladin's oath spell plus the class-list copy). Now it's added once per damage roll no
+  matter how many copies there are. DMs: run **Mass Apply / Update** on characters with either spell.
+  (The extra icon on the marked creature is dnd5e's "Marked" condition, which the spell applies along with the
+  mark. It isn't a second Hunter's Mark.)
+
 ## 0.2.0
 
 New fixes (all 1.0.0). DMs: after updating, run **Mass Apply / Update** on each character.

@@ -562,7 +562,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: +1d6 force on attack hits vs the marked creature; Move Mark moves it and keeps concentration."
       }
     }

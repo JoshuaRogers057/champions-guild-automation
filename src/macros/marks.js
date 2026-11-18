@@ -62,6 +62,13 @@ if (pass === "DamageBonus") {
   }
   const marked = hits.find((t) => Array.from(t.actor?.appliedEffects ?? t.actor?.effects ?? []).some((ef) => !ef.disabled && isMine(ef)));
   if (!marked) return;
+  // A character can own the spell twice (e.g. a Vengeance paladin's oath spell plus the class-list copy). Each copy's
+  // passive effect calls this macro for the same damage roll, so only the first call adds the die.
+  const key = `cga-mark|${cfg.match}`.toLowerCase();
+  const now = Date.now();
+  workflow.cgaMarkBonus ??= {};
+  if (now - (workflow.cgaMarkBonus[key] ?? 0) < 2000) return;
+  workflow.cgaMarkBonus[key] = now;
   return { damageRoll: cfg.formula ?? "1d6", damageType: cfg.type, flavor: spell.name };
 }
 
