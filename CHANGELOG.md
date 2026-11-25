@@ -3,6 +3,33 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.10.0
+
+The 8 Player's Handbook Summon spells, with their spirits in a new compendium, **CGA: Summoned Creatures** (24
+spirits, one per form). No D&D Beyond or Plutonium import needed. DMs: update, then run **Mass Apply / Update**.
+
+- **Summon Beast, Fey, Undead, Aberration, Construct, Elemental, Celestial, Fiend**: pick the form when you cast. The
+  spirit's AC, Hit Points and damage scale with the slot level; its attacks and save DCs use the caster's spell attack
+  bonus and spell save DC. It's removed when concentration ends, and disappears when it drops to 0 Hit Points.
+- Automated abilities:
+  - Undead: Ghostly touch frightens; Putrid's Festering Aura poisons creatures starting their turn next to it, and
+    its Rotting Claw paralyzes a Poisoned target.
+  - Aberrant: Slaad regenerates 5 HP each turn and its Claw blocks healing; Mind Flayer's Whispering Aura hits
+    creatures next to it at the start of its turn.
+  - Construct: Metal's Heated Body burns melee attackers; Stone's Stony Lethargy halves the speed of enemies that
+    start their turn within 10 ft and fail the save.
+  - Fey Step: Fuming gives Advantage on the next attack, Mirthful charms (until damaged).
+  - Fiend: Magic Resistance; the Demon's Death Throes explode when it drops to 0 HP or the spell ends.
+  - Celestial: Healing Touch (once per day) and the Defender's Radiant Mace temporary HP activity.
+- Left to the table: the number of attacks in a Multiattack (half the spell's level), Pack Tactics, teleports,
+  Tricksy's darkness, Clay's reaction, and the Yugoloth's teleport.
+- Players summon the spirit themselves only if they're allowed to create actors (Foundry's "Create New Actors"
+  permission) or the GM has summoned that spirit once before in the world. This is how dnd5e's own summons work too.
+- **New module rule**: after a module update, the GM's client removes the world's cached copies of our spirits that
+  aren't on a map, so the next summon uses the updated version.
+- Fire Shield's retaliation code now also sees effects that come from items (needed for Heated Body); Fire Shield
+  itself is unchanged.
+
 ## 0.9.0
 
 14 summon and Conjure spells, plus a concentration fix for spells released in 0.5.0 to 0.8.0. DMs: update, then run
