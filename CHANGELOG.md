@@ -3,6 +3,32 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.9.0
+
+14 summon and Conjure spells, plus a concentration fix for spells released in 0.5.0 to 0.8.0. DMs: update, then run
+**Mass Apply / Update** (27 earlier spells are marked out of date because of the fix).
+
+- **Summons** (placed when you cast; removed when concentration ends): Find Familiar, Find Steed, Animate Dead,
+  Animate Objects, Bigby's Hand, Mordenkainen's Sword, Summon Dragon.
+- **Summons that hurt creatures near them** (the module rolls the save automatically, once per turn):
+  - Flaming Sphere: a creature ending its turn within 5 ft, or that you roll the sphere next to.
+  - Conjure Animals: an enemy that comes within 10 ft of the pack, ends its turn there, or that the pack moves near.
+  - Guardian of Faith: an enemy moving within 10 ft or starting its turn there; it vanishes after 60 damage.
+  - Conjure Elemental: an enemy entering its space or starting its turn within 5 ft is Restrained (8d8 of the
+    element's type); it saves at the start of its turns, taking 4d8 on a failure.
+- **Conjure Woodland Beings**: a 10-ft emanation that moves with you; enemies save when it reaches them or they end a
+  turn in it.
+- **Conjure Minor Elementals**: pick the type; your attacks that hit a creature within 15 ft deal +2d8 of it.
+- **Polymorph**: the save and a "Polymorphed" marker that ends with your concentration; the DM drags the Beast onto the
+  creature's sheet to transform it.
+- **Concentration fix**: using a spell's later activity (Siphon Life, Call Another Bolt, Arc Lightning, Heal in the
+  Aura, Flame Blade's attack) or an area's save started a new concentration, which ended the old one (and with it the
+  spell's effects and summons). Those activities no longer touch concentration.
+- **New module rules (no Mass Apply needed)**: effects a concentration spell puts on creatures later (from its area,
+  repeat saves or summons) now end with that concentration; summons with damaging auras are handled as listed above.
+- Not done yet: the Player's Handbook "Summon" spells (Beast, Fey, Undead, Aberration, Construct, Elemental,
+  Celestial, Fiend) need stat blocks that aren't in the free compendium.
+
 ## 0.8.0
 
 23 more priority-2 spells, each tested in a live v14 world. DMs: update, then run **Mass Apply / Update**.
