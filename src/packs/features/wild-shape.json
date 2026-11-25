@@ -1,0 +1,181 @@
+{
+  "_id": "cgaCfwildshap901",
+  "name": "Wild Shape",
+  "type": "feat",
+  "img": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "uses": {
+      "max": "@scale.druid.wild-shape-uses",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        },
+        {
+          "period": "sr",
+          "type": "formula",
+          "formula": "1"
+        }
+      ],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 2,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Druid",
+    "activities": {
+      "FsDnynyqno8XNHgf": {
+        "type": "transform",
+        "_id": "FsDnynyqno8XNHgf",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "profiles": [
+          {
+            "cr": "0.25",
+            "name": "CR ¼",
+            "_id": "xUPf0uISOwKy3mhO",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [
+              "fly"
+            ],
+            "level": {
+              "min": null,
+              "max": 3
+            }
+          },
+          {
+            "cr": "0.5",
+            "name": "CR ½",
+            "_id": "yu86xk21fVzHg9r5",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [
+              "fly"
+            ],
+            "level": {
+              "min": 4,
+              "max": 7
+            }
+          },
+          {
+            "cr": "1",
+            "name": "CR 1",
+            "_id": "ZFqKHYlY9JhLYnx0",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [],
+            "level": {
+              "min": 8,
+              "max": null
+            }
+          }
+        ],
+        "settings": null,
+        "transform": {
+          "customize": false,
+          "identifier": "druid",
+          "preset": "wildshape"
+        },
+        "name": "",
+        "img": "systems/dnd5e/icons/svg/abilities/intelligence.svg",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "wild-shape"
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: dnd5e Transform (Wild Shape preset): CR-limited beast forms, keeps HP/mental/features, temp HP = Druid level."
+      }
+    }
+  }
+}

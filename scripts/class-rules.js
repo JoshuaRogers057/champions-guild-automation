@@ -271,3 +271,35 @@ async function ensureMartialArts(actor) {
 Hooks.on("createItem", (item) => { if (item.parent instanceof Actor) ensureMartialArts(item.parent); });
 Hooks.on("updateActor", (actor, changes) => { if (foundry.utils.hasProperty(changes, "system.abilities.dex") || foundry.utils.hasProperty(changes, "system.abilities.str")) ensureMartialArts(actor); });
 Hooks.once("ready", () => { if (isGM()) for (const a of game.actors) if (a.type === "character") ensureMartialArts(a); });
+
+// ------------------------------------------------------------------ Starry Form light, Primal Companion, browser
+// Starry Form sheds light while active: put the token's light back when the form's effect ends.
+Hooks.on("deleteActiveEffect", async (effect) => {
+  if (!effect.flags?.world?.cgaStarry || !(effect.parent instanceof Actor)) return;
+  if (effect.parent.effects.some((e) => e.id !== effect.id && e.flags?.world?.cgaStarry)) return; // changed constellation
+  for (const t of effect.parent.getActiveTokens?.() ?? []) {
+    const prev = t.document.getFlag("world", "cgaStarryLight");
+    if (!prev || !t.document.isOwner) continue;
+    await t.document.update({ "light.bright": prev.bright ?? 0, "light.dim": prev.dim ?? 0, "flags.world.-=cgaStarryLight": null }).catch(() => {});
+  }
+});
+// Primal Companion: summoning a new beast makes the old one vanish.
+Hooks.on("createToken", async (tokenDoc) => {
+  if (!isGM()) return;
+  const origin = tokenDoc.actor?.flags?.dnd5e?.summon?.origin;
+  if (!origin || fromUuidSync(origin)?.system?.identifier !== "primal-companion") return;
+  for (const scene of game.scenes) {
+    const old = scene.tokens.filter((t) => t.id !== tokenDoc.id && t.actor?.flags?.dnd5e?.summon?.origin === origin);
+    if (old.length) await scene.deleteEmbeddedDocuments("Token", old.map((t) => t.id)).catch(() => {});
+  }
+});
+// Keep the module's summoned creatures out of dnd5e's Compendium Browser (so they aren't offered as Wild Shape forms).
+// Set once; a DM who turns the pack back on in "Compendium Browser Sources" keeps that choice.
+Hooks.once("ready", async () => {
+  if (!game.user.isGM) return;
+  const key = `${MODULE_ID}.cga-summons`;
+  const cfg = foundry.utils.deepClone(game.settings.get("dnd5e", "packSourceConfiguration") ?? {});
+  if (key in cfg) return;
+  cfg[key] = false;
+  await game.settings.set("dnd5e", "packSourceConfiguration", cfg).catch(() => {});
+});

@@ -104,7 +104,7 @@ Cleric|War Domain|17|Avatar of Battle|PHB|build|3|B/P/S Resistance
 Druid||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Druid||1|Druidic|SRD|skip|3|Sheet/advancement or manual
 Druid||1|Primal Order|SRD|skip|3|Sheet/advancement or manual
-Druid||2|Wild Shape|SRD|build|1|Transform into known Beast forms (scaling CR/fly), temp HP = Druid level; uses 2-4, SR regains one. Needs beast actors
+Druid||2|Wild Shape|SRD|done|1|dnd5e Transform (Wild Shape preset): Compendium Browser of CR-limited Beasts (no fly before 8), keeps HP/mental/features, temp HP = Druid level
 Druid||2|Wild Companion|SRD|verify|2|Compendium summon via slot or Wild Shape (Fey familiar)
 Druid||3|Druid Subclass|PHB|skip|3|Sheet/advancement or manual
 Druid||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
@@ -119,21 +119,21 @@ Druid|Circle of the Land|3|Land’s Aid|SRD|verify|2|Compendium save + heal
 Druid|Circle of the Land|6|Natural Recovery|SRD|verify|2|Compendium activities
 Druid|Circle of the Land|10|Nature’s Ward|SRD|midi|3|
 Druid|Circle of the Land|14|Nature’s Sanctuary|SRD|verify|3|Compendium cube + resistances
-Druid|Circle of the Moon|3|Circle Forms|PHB|build|1|Moon Wild Shape: CR = level/3, AC 13+WIS, temp HP 3x level
+Druid|Circle of the Moon|3|Circle Forms|PHB|done|1|Wild Shape (Circle Forms) transform: CR level/3, AC 13 + WIS, temp HP 3x Druid level, Moon spells castable; spends a Wild Shape use
 Druid|Circle of the Moon|3|Circle of the Moon Spells|PHB|skip|3|Sheet/advancement or manual
 Druid|Circle of the Moon|6|Improved Circle Forms|PHB|build|2|Radiant option on beast attacks, add WIS to CON saves
 Druid|Circle of the Moon|10|Moonlight Step|PHB|build|2|Bonus Action 30-ft teleport + Advantage on next attack
 Druid|Circle of the Moon|14|Lunar Form|PHB|build|3|+2d10 Radiant once per turn in Wild Shape; bring a creature on Moonlight Step
 Druid|Circle of the Sea|3|Circle of the Sea Spells|PHB|skip|3|Sheet/advancement or manual
-Druid|Circle of the Sea|3|Wrath of the Sea|PHB|build|1|5-ft emanation (Wild Shape use): Bonus Action CON save or WIS-mod d6 Cold + push 15 ft
+Druid|Circle of the Sea|3|Wrath of the Sea|PHB|done|1|Ocean Spray effect (Wild Shape use) and Spray save: WIS-mod d6 Cold, push 15 ft on a failure (Large or smaller)
 Druid|Circle of the Sea|6|Aquatic Affinity|PHB|build|2|Emanation 10 ft, swim speed
-Druid|Circle of the Sea|10|Stormborn|PHB|build|3|Fly + Cold/Lightning/Thunder resistance while active
+Druid|Circle of the Sea|10|Stormborn|PHB|done|3|Part of Wrath of the Sea: fly at walk speed and Cold/Lightning/Thunder resistance while it lasts
 Druid|Circle of the Sea|14|Oceanic Gift|PHB|build|3|Put the emanation on an ally
 Druid|Circle of the Stars|3|Star Map|PHB|build|2|Guidance/Guiding Bolt prepared, free Guiding Bolts (WIS-mod per LR)
-Druid|Circle of the Stars|3|Starry Form|PHB|build|1|Wild Shape use: Archer (Bonus Action 1d8+WIS radiant attack), Chalice (extra heal), Dragon (min 10 on INT/WIS checks and concentration)
+Druid|Circle of the Stars|3|Starry Form|PHB|done|1|Constellation prompt (Wild Shape use): Archer Luminous Arrow, Chalice extra heal after slot healing, Dragon minimum 10; light 10/20 ft
 Druid|Circle of the Stars|6|Cosmic Omen|PHB|build|2|Reaction +/-1d6 to a D20 Test (Weal/Woe by LR roll)
-Druid|Circle of the Stars|10|Twinkling Constellations|PHB|build|3|2d8 Archer/Chalice, Dragon fly 20
-Druid|Circle of the Stars|14|Full of Stars|PHB|build|3|B/P/S Resistance in Starry Form
+Druid|Circle of the Stars|10|Twinkling Constellations|PHB|done|3|Part of Starry Form: 2d8, Dragon fly 20 + hover, Change Constellation activity
+Druid|Circle of the Stars|14|Full of Stars|PHB|done|3|Part of Starry Form: B/P/S resistance at 14
 Fighter||1|Fighting Style|SRD|skip|3|Sheet/advancement or manual
 Fighter||1|Second Wind|SRD|verify|1|Compendium heal 1d10 + level; check uses scale
 Fighter||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
@@ -288,7 +288,7 @@ Ranger||17|Precise Hunter|SRD|build|3|Advantage on attacks vs your Hunter's Mark
 Ranger||18|Feral Senses|SRD|verify|3|Compendium Blindsight 30
 Ranger||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Ranger||20|Foe Slayer|SRD|build|3|Hunter's Mark die d10 (marks.js)
-Ranger|Beast Master|3|Primal Companion|PHB|build|1|Summon Beast of the Land/Sea/Sky actors (stat blocks in the book), scaling AC/HP/attack
+Ranger|Beast Master|3|Primal Companion|PHB|done|1|Summon Beast of the Land/Sea/Sky (AC 13+WIS, HP by Ranger level, spell attack, +WIS damage, Primal Bond); a new beast replaces the old (module rule)
 Ranger|Beast Master|7|Exceptional Training|PHB|build|2|Beast Bonus Action Dash/Disengage/Dodge/Help; Force damage option
 Ranger|Beast Master|11|Bestial Fury|PHB|build|3|Beast's Strike twice; extra Force vs Hunter's Mark target
 Ranger|Beast Master|15|Share Spells|PHB|skip|3|Manual

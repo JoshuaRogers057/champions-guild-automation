@@ -1,0 +1,268 @@
+{
+  "name": "Circle Forms",
+  "type": "feat",
+  "img": "icons/creatures/mammals/bear-standing-snarl-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "circle-forms",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Circle of the Moon 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaCfactmoons903": {
+        "type": "transform",
+        "_id": "cgaCfactmoons903",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "feat:wild-shape",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "profiles": [
+          {
+            "cr": "1",
+            "name": "CR 1",
+            "_id": "cgaCfprof1x30904",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [
+              "fly"
+            ],
+            "level": {
+              "min": 3,
+              "max": 5
+            }
+          },
+          {
+            "cr": "2",
+            "name": "CR 2",
+            "_id": "cgaCfprof2x60905",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [
+              "fly"
+            ],
+            "level": {
+              "min": 6,
+              "max": 7
+            }
+          },
+          {
+            "cr": "2",
+            "name": "CR 2",
+            "_id": "cgaCfprof2x80906",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [],
+            "level": {
+              "min": 8,
+              "max": 8
+            }
+          },
+          {
+            "cr": "3",
+            "name": "CR 3",
+            "_id": "cgaCfprof3x90907",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [],
+            "level": {
+              "min": 9,
+              "max": 11
+            }
+          },
+          {
+            "cr": "4",
+            "name": "CR 4",
+            "_id": "cgaCfprof4x12908",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [],
+            "level": {
+              "min": 12,
+              "max": 14
+            }
+          },
+          {
+            "cr": "5",
+            "name": "CR 5",
+            "_id": "cgaCfprof5x15909",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [],
+            "level": {
+              "min": 15,
+              "max": 17
+            }
+          },
+          {
+            "cr": "6",
+            "name": "CR 6",
+            "_id": "cgaCfprof6x18910",
+            "uuid": "",
+            "sizes": [],
+            "types": [
+              "beast"
+            ],
+            "movement": [],
+            "level": {
+              "min": 18,
+              "max": null
+            }
+          }
+        ],
+        "settings": {
+          "effects": [
+            "otherOrigin",
+            "origin",
+            "feat",
+            "spell",
+            "class",
+            "background"
+          ],
+          "keep": [
+            "bio",
+            "class",
+            "feats",
+            "hp",
+            "languages",
+            "mental",
+            "tempHP",
+            "type"
+          ],
+          "merge": [
+            "saves",
+            "skills"
+          ],
+          "minimumAC": "13 + @abilities.wis.mod",
+          "other": [],
+          "spellLists": [
+            "subclass:moon"
+          ],
+          "tempFormula": "@classes.druid.levels * 3",
+          "transformTokens": true
+        },
+        "transform": {
+          "customize": true,
+          "identifier": "druid",
+          "preset": ""
+        },
+        "name": "Wild Shape (Circle Forms)",
+        "img": "systems/dnd5e/icons/svg/abilities/intelligence.svg",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfcirclefo902",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Moon Wild Shape transform (CR level/3, AC 13 + WIS, temp HP 3x level) spending a Wild Shape use."
+      }
+    }
+  }
+}

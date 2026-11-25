@@ -542,7 +542,7 @@ Hooks.on("createActiveEffect", async (effect) => {
 // that aren't on any map; the next cast imports the new version.
 async function refreshSummonCopies() {
   const prefix = `Compendium.${MODULE_ID}.cga-summons.`;
-  const onMap = new Set(game.scenes.flatMap((s) => s.tokens.map((t) => t.actorId)));
+  const onMap = new Set(game.scenes.contents.flatMap((s) => s.tokens.map((t) => t.actorId)));
   const stale = game.actors.filter((a) => a.getFlag("dnd5e", "isAutoImported") && String(a._stats?.compendiumSource ?? "").startsWith(prefix) && !onMap.has(a.id));
   if (!stale.length) return;
   try {

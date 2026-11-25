@@ -1107,9 +1107,9 @@
    "level": 2,
    "name": "Wild Shape",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Transform into known Beast forms (scaling CR/fly), temp HP = Druid level; uses 2-4, SR regains one. Needs beast actors",
+   "note": "dnd5e Transform (Wild Shape preset): Compendium Browser of CR-limited Beasts (no fly before 8), keeps HP/mental/features, temp HP = Druid level",
    "identifier": "wild-shape"
   },
   {
@@ -1272,9 +1272,9 @@
    "level": 3,
    "name": "Circle Forms",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Moon Wild Shape: CR = level/3, AC 13+WIS, temp HP 3x level",
+   "note": "Wild Shape (Circle Forms) transform: CR level/3, AC 13 + WIS, temp HP 3x Druid level, Moon spells castable; spends a Wild Shape use",
    "identifier": "circle-forms"
   },
   {
@@ -1338,9 +1338,9 @@
    "level": 3,
    "name": "Wrath of the Sea",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "5-ft emanation (Wild Shape use): Bonus Action CON save or WIS-mod d6 Cold + push 15 ft",
+   "note": "Ocean Spray effect (Wild Shape use) and Spray save: WIS-mod d6 Cold, push 15 ft on a failure (Large or smaller)",
    "identifier": "wrath-of-the-sea"
   },
   {
@@ -1360,9 +1360,9 @@
    "level": 10,
    "name": "Stormborn",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Fly + Cold/Lightning/Thunder resistance while active",
+   "note": "Part of Wrath of the Sea: fly at walk speed and Cold/Lightning/Thunder resistance while it lasts",
    "identifier": "stormborn"
   },
   {
@@ -1393,9 +1393,9 @@
    "level": 3,
    "name": "Starry Form",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Wild Shape use: Archer (Bonus Action 1d8+WIS radiant attack), Chalice (extra heal), Dragon (min 10 on INT/WIS checks and concentration)",
+   "note": "Constellation prompt (Wild Shape use): Archer Luminous Arrow, Chalice extra heal after slot healing, Dragon minimum 10; light 10/20 ft",
    "identifier": "starry-form"
   },
   {
@@ -1415,9 +1415,9 @@
    "level": 10,
    "name": "Twinkling Constellations",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "2d8 Archer/Chalice, Dragon fly 20",
+   "note": "Part of Starry Form: 2d8, Dragon fly 20 + hover, Change Constellation activity",
    "identifier": "twinkling-constellations"
   },
   {
@@ -1426,9 +1426,9 @@
    "level": 14,
    "name": "Full of Stars",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "B/P/S Resistance in Starry Form",
+   "note": "Part of Starry Form: B/P/S resistance at 14",
    "identifier": "full-of-stars"
   },
   {
@@ -3131,9 +3131,9 @@
    "level": 3,
    "name": "Primal Companion",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Summon Beast of the Land/Sea/Sky actors (stat blocks in the book), scaling AC/HP/attack",
+   "note": "Summon Beast of the Land/Sea/Sky (AC 13+WIS, HP by Ranger level, spell attack, +WIS damage, Primal Bond); a new beast replaces the old (module rule)",
    "identifier": "primal-companion"
   },
   {

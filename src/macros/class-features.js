@@ -450,6 +450,71 @@ switch (id) {
     return;
   }
 
+  // ======================================================================= Druid: Circle of the Stars / Sea
+  case "starry-form": {
+    const twinkle = lvl("druid") >= 10;
+    const dice = twinkle ? "2d8" : "1d8";
+    // Chalice: after a slot healing spell, heal a creature within 30 ft (you included).
+    if (pass === "postActiveEffects" && usedItem?.type === "spell" && activity?.item?.id !== feat.id) {
+      const chalice = actor.effects.find((e) => e.flags?.world?.cgaStarry === "chalice" && !e.disabled);
+      const slot = Number(wf.castData?.castLevel ?? 0);
+      if (!chalice || slot < 1 || !(wf.damageRolls ?? []).some((r) => r.options?.type === "healing") || !firstCall("chalice")) return;
+      const near = (me?.document?.parent?.tokens ?? []).filter((o) => o.actor && o.disposition === me.document.disposition && (o === me.document || MidiQOL.computeDistance?.(me, o.object) <= 30));
+      later(async () => {
+        const pick = near.length === 1 ? near[0].id : await choose("Chalice", `<p>Restore ${dice} + ${mod("wis")} Hit Points to:</p>`, [...near.map((o, i) => ({ action: o.id, label: o.name, default: i === 0 })), { action: "none", label: "No one" }]);
+        const t = near.find((o) => o.id === pick)?.object;
+        if (!t) return;
+        const r = await new Roll(`${dice} + ${mod("wis")}`).evaluate();
+        await r.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Starry Form (Chalice): ${esc(t.name)} regains Hit Points` });
+        await MidiQOL.applyTokenDamage([{ value: r.total, type: "healing" }], r.total, new Set([t]), feat, new Set(), {});
+      });
+      return;
+    }
+    if (pass !== "postActiveEffects" || activity?.item?.id !== feat.id || !["starry-form-start", "starry-form-change"].includes(activity.midiProperties?.identifier)) return;
+    const pick = await choose("Constellation", "<p>Which constellation glimmers on you?</p>", [
+      { action: "archer", label: `Archer (Bonus Action ${dice} + WIS radiant arrow)`, default: true },
+      { action: "chalice", label: `Chalice (slot healing also heals ${dice} + WIS)` },
+      { action: "dragon", label: "Dragon (INT/WIS checks and Concentration saves: 9 or lower counts as 10)" }]);
+    if (!pick) return;
+    const old = actor.effects.filter((e) => e.flags?.world?.cgaStarry);
+    if (old.length) await actor.deleteEmbeddedDocuments("ActiveEffect", old.map((e) => e.id));
+    const changes = [];
+    if (pick === "dragon") {
+      changes.push(["flags.midi-qol.min.ability.check.int", "10", "upgrade"], ["flags.midi-qol.min.ability.check.wis", "10", "upgrade"], ["flags.midi-qol.min.concentration", "10", "upgrade"]);
+      if (twinkle) changes.push(["system.attributes.movement.fly", "20", "upgrade"], ["system.attributes.movement.hover", "true", "override"]);
+    }
+    if (lvl("druid") >= 14) changes.push(["system.traits.dr.value", "bludgeoning", "add"], ["system.traits.dr.value", "piercing", "add"], ["system.traits.dr.value", "slashing", "add"]);
+    const remaining = activity.midiProperties.identifier === "starry-form-change" ? (old[0]?.duration?.remaining ?? 600) : 600;
+    const [eff] = await effectOn(actor, pick[0].toUpperCase() + pick.slice(1), changes, { seconds: Math.max(6, Math.round(remaining)) });
+    if (eff) await eff.update({ "flags.world.cgaStarry": pick }).catch(() => {});
+    // Bright light 10 ft, dim 10 ft more while in the form (restored when the effect ends - module rule).
+    if (me?.document && !me.document.getFlag("world", "cgaStarryLight")) {
+      await me.document.setFlag("world", "cgaStarryLight", { bright: me.document.light.bright, dim: me.document.light.dim });
+      await me.document.update({ "light.bright": 10, "light.dim": 20 });
+    }
+    say(`the ${pick} constellation glimmers on you (10 minutes).${pick === "archer" ? " Use Luminous Arrow as a Bonus Action." : ""}`);
+    return;
+  }
+  case "wrath-of-the-sea": {
+    const ident = activity?.midiProperties?.identifier;
+    if (pass !== "postActiveEffects" || activity?.item?.id !== feat.id) return;
+    if (ident === "wrath-start") {
+      const changes = [];
+      if (lvl("druid") >= 10) changes.push(["system.attributes.movement.fly", String(Number(actor.system.attributes.movement.walk) || 30), "upgrade"],
+        ["system.traits.dr.value", "cold", "add"], ["system.traits.dr.value", "lightning", "add"], ["system.traits.dr.value", "thunder", "add"]);
+      const old = actor.effects.filter((e) => e.flags?.world?.cgaWrath);
+      if (old.length) await actor.deleteEmbeddedDocuments("ActiveEffect", old.map((e) => e.id));
+      const [eff] = await effectOn(actor, "Ocean Spray", changes, { seconds: 600, special: ["shortRest", "longRest"] });
+      if (eff) await eff.update({ "flags.world.cgaWrath": true }).catch(() => {});
+      say(`ocean spray surrounds you (${lvl("druid") >= 6 ? 10 : 5}-ft emanation, 10 minutes). Use Spray now and as a Bonus Action on later turns.`);
+      return;
+    }
+    if (ident === "wrath-spray") {
+      for (const t of asTokens(wf.failedSaves).filter((x) => x !== me && largeOrSmaller(x))) await pushAway(t, 15);
+    }
+    return;
+  }
+
   // ======================================================================= Warlock / Wizard
   case "steps-of-the-fey": {
     // Only the Misty Step activity (the hidden Taunting/Dreadful saves come back through here too).
