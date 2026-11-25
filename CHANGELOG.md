@@ -3,6 +3,29 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.19.0
+
+The rest of the priority-1 class features: Druid forms and the Beast Master's companion. DMs: update, then run
+**Mass Apply / Update** on each Druid and Beast Master.
+
+- Druid: **Wild Shape** (1.0.0) uses dnd5e's Transform: a Compendium Browser of the Beast forms your level allows
+  (no Fly Speed before 8). You keep your Hit Points, mental scores and features, and gain temp HP equal to your Druid
+  level. The module's summoned spirits are now hidden from that browser (turn them back on under Compendium Browser
+  Sources if you want them).
+- Circle of the Moon: **Circle Forms** (1.0.0) adds a "Wild Shape (Circle Forms)" activity: CR up to Druid level / 3,
+  AC at least 13 + WIS, temp HP equal to three times your Druid level, Moon spells castable. It spends a Wild Shape use.
+- Circle of the Stars: **Starry Form** (1.0.0) spends a Wild Shape use and asks for a constellation. Archer gets the
+  Luminous Arrow activity, Chalice heals a creature within 30 ft after you heal with a spell slot, and Dragon treats
+  INT/WIS check and Concentration rolls of 9 or lower as 10. At 10 the dice become 2d8, the Dragon gives fly 20 and
+  Change Constellation is available; at 14 you resist B/P/S damage. You shed light while the form lasts.
+- Circle of the Sea: **Wrath of the Sea** (1.0.0) spends a Wild Shape use for the Ocean Spray effect. The Spray
+  activity forces a CON save: WIS-modifier d6 Cold damage, and the target is pushed 15 ft on a failure. At 10
+  (Stormborn) you also fly and resist Cold, Lightning and Thunder.
+- Ranger, Beast Master: **Primal Companion** (1.0.0) summons a Beast of the Land, Sea or Sky from the Summoned
+  Creatures compendium. It has AC 13 + your WIS, HP that scales with your Ranger level, your spell attack bonus,
+  +WIS damage and Primal Bond. Summoning a new beast makes the old one vanish.
+- Fix: outdated copies of summoned creatures were not being cleared after a module update (an error on world load).
+
 ## 0.18.0
 
 The first class features: 40 priority-1 class and subclass features from the 2024 Player's Handbook, plus a
