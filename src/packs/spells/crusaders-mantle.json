@@ -1,0 +1,236 @@
+{
+  "name": "Crusader's Mantle",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A 30-ft aura moves with you while you concentrate. You and your allies in it deal an extra 1d4 Radiant damage when they hit with a weapon.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": true,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "radius",
+        "size": "30",
+        "contiguous": false,
+        "count": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": "",
+          "value": "15"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 200000,
+        "name": "Cast",
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 1,
+          "excludeSource": false,
+          "oncePerTurn": false,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "caster",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "entry",
+              "action": "applyEffect",
+              "targetId": "cgaCrusaderMantl"
+            }
+          ]
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "identifier": "crusaders-mantle",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgaSplCrusadeMan",
+  "type": "spell",
+  "img": "icons/magic/holy/barrier-shield-winged-blue.webp",
+  "effects": [
+    {
+      "_id": "cgaCrusaderMantl",
+      "name": "Crusader's Mantle",
+      "img": "icons/magic/holy/barrier-shield-winged-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "description": "",
+      "sort": 0,
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [],
+          "showIcon": true
+        }
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "1d4[radiant]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000011",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.bonuses.rwak.damage",
+            "value": "1d4[radiant]",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000012",
+            "conditions": "{}"
+          }
+        ],
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        }
+      }
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: 30-ft aura that moves with you: you and allies inside deal an extra 1d4 radiant with weapon attacks."
+      }
+    }
+  }
+}

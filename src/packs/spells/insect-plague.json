@@ -1,0 +1,318 @@
+{
+  "name": "Insect Plague",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A 20-ft-radius swarm (lightly obscured, difficult terrain). Creatures in it make a CON save: 4d10 Piercing, half on a success (+1d10 per slot level above 5th); so does a creature that enters it or ends its turn there, once per turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "units": "ft",
+        "type": "sphere",
+        "size": "20",
+        "contiguous": false,
+        "stationary": false
+      }
+    },
+    "range": {
+      "value": "300",
+      "units": "ft"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 5,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a locust",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 4,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              },
+              "modifiers": []
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "img": null,
+        "behaviors": [
+          {
+            "type": "difficultTerrain",
+            "_id": "9juAVC9YZwqlJO2G",
+            "config": {
+              "types": []
+            },
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 0,
+          "excludeSource": false,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "entry",
+              "action": "useActivity",
+              "targetId": "insectPlagueSave"
+            },
+            {
+              "trigger": "turnEnd",
+              "action": "useActivity",
+              "targetId": "insectPlagueSave"
+            }
+          ]
+        }
+      },
+      "insectPlagueZone": {
+        "_id": "insectPlagueZone",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Entering the area or ending a turn there",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "any",
+          "value": null,
+          "special": ""
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 4,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "piercing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              },
+              "modifiers": []
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 900000,
+        "img": null,
+        "behaviors": [
+          {
+            "type": "difficultTerrain",
+            "_id": "9juAVC9YZwqlJO2G",
+            "config": {
+              "types": []
+            },
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "name": "Insect Plague: Save",
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "insectPlagueSave"
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "rules": []
+        }
+      }
+    },
+    "identifier": "insect-plague",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgasplInsectPlag",
+  "type": "spell",
+  "img": "icons/creatures/invertebrates/wasp-swarm-attack.webp",
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: CON save 4d10 piercing (half) when it appears, and when a creature enters or ends its turn in it (once per turn)."
+      }
+    }
+  }
+}

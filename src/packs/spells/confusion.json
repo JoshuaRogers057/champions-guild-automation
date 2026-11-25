@@ -1,0 +1,365 @@
+{
+  "name": "Confusion",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Creatures in a 10-ft-radius sphere (+5 ft per slot level above 4th) make a WIS save or are Confused: no Bonus Actions or Reactions, and a d10 at the start of each of their turns decides what they do (1 wander, 2-6 nothing, 7-8 attack a random creature in reach, 9-10 act normally). Repeat the save at the end of each of its turns.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "sphere",
+        "size": "@item.level * 5 - 10",
+        "contiguous": false,
+        "count": ""
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "enc",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "three nut shells",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "VxmsgUz9OIUet6WC",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "confusionOTSave0": {
+        "_id": "confusionOTSave0",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "End of each of the target's turns",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "any",
+          "value": null,
+          "special": ""
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 900000,
+        "name": "Confusion: Repeat Save",
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "turnChoice": "end",
+          "saveRemoves": true,
+          "rollAs": "source",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "confusionSave"
+        }
+      },
+      "confusionBehavi0": {
+        "_id": "confusionBehavi0",
+        "type": "utility",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Start of each of the target's turns",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "1: moves in a random direction, no action. 2-6: no move or action. 7-8: melee attack against a random creature in reach (or nothing). 9-10: acts and moves normally."
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "any",
+          "value": null,
+          "special": ""
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 900000,
+        "name": "Confusion: Behavior (1d10)",
+        "isOverTimeFlag": true,
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "formula": "1d10",
+          "name": "Behavior"
+        },
+        "overTimeProperties": {
+          "turnChoice": "start",
+          "saveRemoves": false,
+          "rollAs": "source",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "confusionBehavior"
+        }
+      }
+    },
+    "identifier": "confusion",
+    "prepared": 0
+  },
+  "_id": "cgasplConfusion0",
+  "type": "spell",
+  "img": "icons/magic/symbols/question-stone-yellow.webp",
+  "effects": [
+    {
+      "name": "Confused",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplConfusion0",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {},
+      "img": "icons/magic/symbols/question-stone-yellow.webp",
+      "_id": "VxmsgUz9OIUet6WC",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.actions.reactionsUsed",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000058",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.actions.reaction",
+            "value": "true",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000059",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "value": "confusionBehavior",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000060",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "value": "confusionSave",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000061",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>The target can’t take Bonus Actions or Reactions and must roll 1d10 at the start of each of its turns to determine its behavior for that turn, consulting the table below.</p><p>@Embed[Compendium.dnd5e.tables24.RollTable.phbsplConfusionB rollable cite=false classes=\"caption-top\"]{Behavior for the Turn}</p><p>At the end of each of its turns, an affected target repeats the [[/save ability=wis]] save, ending the spell on itself on a success.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: WIS save or Confused: no Reactions, a d10 behaviour roll at the start of each of its turns, a repeat save at the end."
+      }
+    }
+  }
+}

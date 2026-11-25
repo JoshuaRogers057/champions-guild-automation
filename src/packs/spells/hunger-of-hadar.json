@@ -1,0 +1,491 @@
+{
+  "name": "Hunger of Hadar",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A 20-ft-radius sphere of blackness. Creatures inside are Blinded. A creature that starts its turn inside takes 2d6 Cold; one that ends its turn inside makes a DEX save or takes 2d6 Acid (each +1d6 per slot level above 3rd).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "sphere",
+        "size": "20",
+        "contiguous": false,
+        "count": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "value": "150",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a pickled tentacle",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Cast",
+        "img": "",
+        "behaviors": [
+          {
+            "name": "",
+            "_id": "sOfWSPGymqiAqbGw",
+            "type": "difficultTerrain",
+            "config": {
+              "types": [
+                "plants"
+              ]
+            },
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 0,
+          "excludeSource": false,
+          "oncePerTurn": false,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "entry",
+              "action": "applyEffect",
+              "targetId": "cgaHungerBlind00"
+            },
+            {
+              "trigger": "exit",
+              "action": "removeEffect",
+              "targetId": "cgaHungerBlind00"
+            },
+            {
+              "trigger": "turnStart",
+              "action": "useActivity",
+              "targetId": "hungerOfHadarCold"
+            },
+            {
+              "trigger": "turnEnd",
+              "action": "useActivity",
+              "targetId": "hungerOfHadarAcid"
+            }
+          ]
+        }
+      },
+      "hungerHadarCold0": {
+        "_id": "hungerHadarCold0",
+        "type": "damage",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Starting a turn in the sphere",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "any",
+          "value": null,
+          "special": ""
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "cold"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 900000,
+        "name": "Hunger of Hadar: Cold",
+        "img": "",
+        "behaviors": [
+          {
+            "name": "",
+            "_id": "sOfWSPGymqiAqbGw",
+            "type": "difficultTerrain",
+            "config": {
+              "types": [
+                "plants"
+              ]
+            },
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "hungerOfHadarCold"
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "rules": []
+        }
+      },
+      "hungerHadarAcid0": {
+        "_id": "hungerHadarAcid0",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Ending a turn in the sphere",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "any",
+          "value": null,
+          "special": ""
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "acid"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 900000,
+        "name": "Hunger of Hadar: Acid",
+        "img": "",
+        "behaviors": [
+          {
+            "name": "",
+            "_id": "sOfWSPGymqiAqbGw",
+            "type": "difficultTerrain",
+            "config": {
+              "types": [
+                "plants"
+              ]
+            },
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "hungerOfHadarAcid"
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "rules": []
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        }
+      }
+    },
+    "identifier": "hunger-of-hadar",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgaSplHungerHada",
+  "type": "spell",
+  "img": "icons/magic/unholy/orb-hands-pink.webp",
+  "effects": [
+    {
+      "_id": "cgaHungerBlind00",
+      "name": "Hunger of Hadar: Blinded",
+      "img": "icons/magic/unholy/orb-hands-pink.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [
+        "blinded"
+      ],
+      "description": "",
+      "sort": 0,
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [],
+          "showIcon": true
+        }
+      },
+      "system": {
+        "changes": [],
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        }
+      }
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: 20-ft sphere: Blinded inside, 2d6 cold at the start of a turn there, DEX save or 2d6 acid at the end of a turn there."
+      }
+    }
+  }
+}

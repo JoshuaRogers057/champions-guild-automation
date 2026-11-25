@@ -1,0 +1,373 @@
+{
+  "name": "Black Tentacles",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Each creature in the 20-ft square makes a STR save: 3d6 Bludgeoning and Restrained until the spell ends on a failure. A creature entering the area or ending its turn there makes the save too, once per turn. A Restrained creature can use an action to make a STR (Athletics) check against your DC to escape (the DM removes the condition).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "square",
+        "size": "20",
+        "contiguous": false,
+        "count": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a tentacle",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "NDytclFrNmC418CS",
+            "onSave": false,
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              },
+              "modifiers": []
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "img": null,
+        "behaviors": [
+          {
+            "type": "difficultTerrain",
+            "_id": "9QZR7Lz1ZILzgkHb",
+            "config": {
+              "types": []
+            },
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 0,
+          "excludeSource": false,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "entry",
+              "action": "useActivity",
+              "targetId": "blackTentaclesSave"
+            },
+            {
+              "trigger": "turnEnd",
+              "action": "useActivity",
+              "targetId": "blackTentaclesSave"
+            }
+          ]
+        }
+      },
+      "tentaclesZoneSav": {
+        "_id": "tentaclesZoneSav",
+        "type": "save",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Entering the area or ending a turn there",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "NDytclFrNmC418CS",
+            "onSave": false,
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": true,
+          "units": "any",
+          "value": null,
+          "special": ""
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 3,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              },
+              "modifiers": []
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 900000,
+        "img": null,
+        "behaviors": [
+          {
+            "type": "difficultTerrain",
+            "_id": "9QZR7Lz1ZILzgkHb",
+            "config": {
+              "types": []
+            },
+            "level": {}
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "name": "Black Tentacles: Save",
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "blackTentaclesSave"
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "rules": []
+        }
+      }
+    },
+    "identifier": "black-tentacles",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgasplEvardsBlac",
+  "type": "spell",
+  "img": "icons/creatures/tentacles/tentacles-suctioncups-pink.webp",
+  "effects": [
+    {
+      "name": "Restrained",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEvardsBlac",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {},
+      "img": "systems/dnd5e/icons/svg/statuses/restrained.svg",
+      "_id": "NDytclFrNmC418CS",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "description": "<p>A &amp;Reference[Restrained apply=false] creature can take an action to make a [[/check ability=str skill=ath dc=@attributes.spell.dc]] check against your spell save DC, ending the condition on itself on a success.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "restrained"
+      ],
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: STR save: 3d6 bludgeoning and Restrained, when it appears and when a creature enters or ends its turn there (once per turn).",
+        "aliases": [
+          "evards-black-tentacles"
+        ]
+      }
+    }
+  }
+}

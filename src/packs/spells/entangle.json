@@ -1,0 +1,216 @@
+{
+  "name": "Entangle",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Grasping plants fill a 20-ft square (difficult terrain). Creatures other than you in it make a STR save or are Restrained until the spell ends. A Restrained creature can use an action to make a STR (Athletics) check against your spell save DC, freeing itself on a success.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "cube",
+        "size": "20",
+        "contiguous": false,
+        "count": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "wn7K2m4XhXhItgPT",
+            "uuid": null,
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true,
+          "bonus": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "img": "",
+        "behaviors": [
+          {
+            "name": "",
+            "_id": "B2ZFUM5G3wW3feMi",
+            "type": "difficultTerrain",
+            "config": {
+              "types": [
+                "plants"
+              ]
+            },
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "name": ""
+      }
+    },
+    "identifier": "entangle",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgasplEntangle00",
+  "type": "spell",
+  "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
+  "effects": [
+    {
+      "name": "Restrained",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEntangle00",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {},
+      "img": "systems/dnd5e/icons/svg/statuses/restrained.svg",
+      "_id": "wn7K2m4XhXhItgPT",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "description": "<p>A Restrained creature can take an action to make a [[/check ability=str skill=ath]] check against your spell save DC. On a success, it frees itself from the grasping plants and is no longer Restrained by them.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "restrained"
+      ],
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: STR save or Restrained until the spell ends. The escape check (an action, STR (Athletics) against your DC) is the DM's to apply."
+      }
+    }
+  }
+}

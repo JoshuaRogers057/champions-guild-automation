@@ -175,6 +175,80 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem }) => {
   } catch (err) { console.warn(`${MODULE_ID} | damage rules failed`, err); }
 });
 
+// Spike Growth: a creature takes 2d4 Piercing for every 5 ft it moves into or within the area. midi-qol region rules
+// only fire on entering, leaving or turn start/end, so the active GM counts the grid steps a moving token ends inside a
+// Spike Growth region (midi-qol's regionActivity behavior names the source spell) and applies the damage.
+const SPIKE_SPELLS = new Set(["spike-growth"]);
+Hooks.on("moveToken", async (tokenDoc, movement) => {
+  if (!game.users.activeGM?.isSelf || !movement?.passed?.waypoints?.length) return;
+  const scene = tokenDoc.parent;
+  const zones = [];
+  for (const region of scene?.regions ?? []) {
+    for (const b of region.behaviors) {
+      if (b.disabled) continue;
+      // midi-qol's own behavior names the spell; rules that only apply an effect become dnd5e's applyActiveEffect
+      // behavior, which names the spell's effect instead.
+      let spell = null;
+      if (b.type === "midi-qol.regionActivity") spell = fromUuidSync(b.system?.sourceItemUuid ?? "");
+      else if (b.type === "dnd5e.applyActiveEffect") spell = fromUuidSync(Array.from(b.system?.effects ?? [])[0] ?? "")?.parent;
+      if (spell && SPIKE_SPELLS.has(spell.system?.identifier)) zones.push({ region, spell, level: b.system.castLevel });
+    }
+  }
+  if (!zones.length) return;
+  const size = scene.grid.size;
+  const half = { x: (tokenDoc.width * size) / 2, y: (tokenDoc.height * size) / 2 };
+  const points = [movement.origin, ...movement.passed.waypoints].filter(Boolean);
+  for (const { region, spell } of zones) {
+    let steps = 0;
+    for (let i = 1; i < points.length; i++) {
+      const a = points[i - 1], b = points[i];
+      const dist = scene.grid.measurePath([a, b]).distance;
+      const n = Math.max(1, Math.round(dist / scene.grid.distance));
+      for (let k = 1; k <= n; k++) {
+        const p = { x: a.x + ((b.x - a.x) * k) / n + half.x, y: a.y + ((b.y - a.y) * k) / n + half.y, elevation: b.elevation ?? 0 };
+        if (region.testPoint(p)) steps++;
+      }
+    }
+    if (!steps || !tokenDoc.object) continue;
+    try {
+      const roll = await new Roll(`${2 * steps}d4`).evaluate();
+      await roll.toMessage({ speaker: ChatMessage.getSpeaker({ actor: spell.actor }),
+        flavor: `${spell.name}: ${tokenDoc.name} moves ${steps * scene.grid.distance} ft through the spikes (Piercing)` });
+      await MidiQOL.applyTokenDamage([{ value: roll.total, type: "piercing", properties: ["mgc"] }], roll.total, new Set([tokenDoc.object]), spell, new Set(), {});
+    } catch (err) { console.warn(`${MODULE_ID} | Spike Growth damage failed`, err); }
+  }
+});
+
+// Effects an area applies while a creature stands in it (Spirit Guardians' half speed, Hunger of Hadar's blindness ...)
+// come from dnd5e's applyActiveEffect region behavior, which removes them when the token leaves. It misses leaving an
+// area attached to a moving token, and the area being deleted when the spell ends, so the active GM sweeps: an effect
+// whose origin is a region behavior is removed once that region is gone or no longer contains the creature's token.
+let sweepTimer = null;
+function scheduleRegionSweep(scene) {
+  if (!game.users.activeGM?.isSelf || !scene) return;
+  clearTimeout(sweepTimer);
+  sweepTimer = setTimeout(() => sweepRegionEffects(scene), 600);
+}
+async function sweepRegionEffects(scene) {
+  for (const token of scene.tokens) {
+    const actor = token.actor;
+    if (!actor) continue;
+    const stale = actor.effects.filter((e) => {
+      if (!e.origin?.includes(".RegionBehavior.")) return false;
+      if (!e.origin.startsWith(scene.uuid)) return false;
+      const behavior = fromUuidSync(e.origin);
+      if (!behavior?.parent) return true; // the area is gone
+      return !behavior.parent.tokens?.has?.(token);
+    }).map((e) => e.id);
+    if (!stale.length) continue;
+    try { await actor.deleteEmbeddedDocuments("ActiveEffect", stale); }
+    catch (err) { console.warn(`${MODULE_ID} | couldn't remove area effects from ${token.name}`, err); }
+  }
+}
+Hooks.on("moveToken", (tokenDoc) => scheduleRegionSweep(tokenDoc.parent));
+Hooks.on("deleteRegion", (region) => scheduleRegionSweep(region.parent));
+Hooks.on("updateRegion", (region) => scheduleRegionSweep(region.parent));
+
 // After an update, tell the GM once that there are new fixes to apply.
 Hooks.once("ready", async () => {
   if (!game.user.isGM) return;

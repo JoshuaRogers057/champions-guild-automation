@@ -6,7 +6,7 @@
 #   priority: 1 = common in combat, do first; 2 = regular; 3 = rare / high level
 # Names use the PHB names; "aka" in the note is the SRD name, which the CGA item must list as an alias.
 0|Acid Splash|SRD|done|1|DEX save, up to two creatures within 5 ft of each other; cantrip scaling
-0|Blade Ward|PHB|build|2|Attackers subtract 1d4 from attack rolls against you (concentration)
+0|Blade Ward|PHB|done|2|Attackers subtract 1d4 from attack rolls against you (concentration)
 0|Chill Touch|SRD|midi|1|
 0|Dancing Lights|SRD|skip|3|
 0|Druidcraft|SRD|skip|3|
@@ -29,7 +29,7 @@
 0|Sacred Flame|SRD|done|1|No benefit from cover
 0|Shillelagh|SRD|done|1|Spellcasting ability + bigger damage die on the club/staff
 0|Shocking Grasp|SRD|done|1|No reactions until its next turn
-0|Sorcerous Burst|SRD|build|2|Damage dice explode on 8s, up to spellcasting-modifier extra dice
+0|Sorcerous Burst|SRD|done|2|Damage dice explode on 8s, up to spellcasting-modifier extra dice
 0|Spare the Dying|SRD|midi|2|
 0|Starry Wisp|SRD|done|2|Target can't be invisible until end of your next turn
 0|Thaumaturgy|SRD|skip|3|
@@ -47,7 +47,7 @@
 1|Bless|SRD|done|1|+1d4 to attacks and saves; extra target per slot level (concentration)
 1|Burning Hands|SRD|done|1|
 1|Charm Person|SRD|verify|3|WIS save or Charmed
-1|Chromatic Orb|SRD|build|2|Choose damage type; matching dice leap to another target
+1|Chromatic Orb|SRD|done|2|Choose damage type; matching dice leap to another target
 1|Color Spray|SRD|done|1|Blinded until end of your next turn
 1|Command|SRD|midi|1|
 1|Compelled Duel|PHB|done|2|Mirjam's compelled-duel macro exists (disadvantage vs others, end conditions)
@@ -62,7 +62,7 @@
 1|Divine Favor|SRD|done|1|+1d4 radiant on weapon hits
 1|Divine Smite|SRD|done|1|Via Paladin's Smite prompt
 1|Ensnaring Strike|SRD|midi|2|
-1|Entangle|SRD|build|2|Restrained on failed STR save; action STR check to escape; difficult terrain
+1|Entangle|SRD|done|2|Restrained on failed STR save; action STR check to escape; difficult terrain
 1|Expeditious Retreat|SRD|skip|3|
 1|Faerie Fire|SRD|done|1|Outlined creatures: attacks against them have advantage, no invisibility
 1|False Life|SRD|done|1|Temp HP
@@ -70,9 +70,9 @@
 1|Find Familiar|SRD|build|2|Summon; per-caster familiar pattern exists (necromancy familiar)
 1|Fog Cloud|SRD|skip|3|
 1|Goodberry|SRD|skip|3|
-1|Grease|SRD|build|2|Prone on failed DEX save; save again entering or ending turn in it
+1|Grease|SRD|done|2|Prone on failed DEX save; save again entering or ending turn in it
 1|Guiding Bolt|SRD|midi|1|
-1|Hail of Thorns|PHB|build|2|Next ranged weapon hit: DEX save in a 5-ft area around the target
+1|Hail of Thorns|PHB|done|2|Next ranged weapon hit: DEX save in a 5-ft area around the target
 1|Healing Word|SRD|done|1|
 1|Hellish Rebuke|SRD|midi|1|
 1|Heroism|SRD|done|2|Temp HP = spellcasting mod at the start of each turn; immune to Frightened
@@ -113,7 +113,7 @@
 2|Blindness/Deafness|SRD|done|2|Repeat CON save at the end of each of its turns
 2|Blur|SRD|done|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
 2|Calm Emotions|SRD|verify|3|
-2|Cloud of Daggers|PHB|build|2|Zone: 4d4 slashing on entering or starting turn there
+2|Cloud of Daggers|PHB|done|2|Zone: 4d4 slashing on entering or starting turn there
 2|Continual Flame|SRD|skip|3|
 2|Cordon of Arrows|PHB|build|3|Trap: arrows fire at creatures entering 30 ft
 2|Crown of Madness|PHB|build|3|Charmed; forced melee attack each turn; repeat save
@@ -158,7 +158,7 @@
 2|Shining Smite|SRD|done|2|Check it works from the Paladin's Smite prompt (glowing, no invisibility)
 2|Silence|SRD|skip|3|
 2|Spider Climb|SRD|verify|3|
-2|Spike Growth|SRD|build|2|2d4 piercing per 5 ft moved inside the area
+2|Spike Growth|SRD|done|2|2d4 piercing per 5 ft moved inside the area
 2|Spiritual Weapon|SRD|done|1|Summoned weapon; bonus-action melee spell attack; move it
 2|Suggestion|SRD|verify|3|
 2|Summon Beast|PHB|build|2|Summon (Land/Sea/Air stat block)
@@ -166,21 +166,21 @@
 2|Web|SRD|midi|2|
 2|Zone of Truth|SRD|skip|3|
 3|Animate Dead|SRD|build|2|Summon skeletons/zombies; command as bonus action
-3|Aura of Vitality|PHB|build|2|Bonus action: heal 2d6 to a creature in the aura
+3|Aura of Vitality|PHB|done|2|Bonus action: heal 2d6 to a creature in the aura
 3|Beacon of Hope|SRD|done|2|Healing is maximized (needs a midi flag), advantage on WIS and death saves
-3|Bestow Curse|SRD|build|2|Pick a curse; the extra 1d8 necrotic option needs a damage rider
+3|Bestow Curse|SRD|done|2|Pick a curse; the extra 1d8 necrotic option needs a damage rider
 3|Blinding Smite|PHB|done|2|Smite prompt; Blinded with repeat CON save
 3|Blink|SRD|build|3|d6 at end of each turn to blink to the Ethereal Plane
 3|Call Lightning|SRD|done|2|Repeat the bolt as an action each turn
 3|Clairvoyance|SRD|skip|3|
 3|Conjure Animals|SRD|build|2|2024: pack of spirits deals damage to creatures near it
 3|Conjure Barrage|PHB|done|2|Cone DEX save
-3|Counterspell|SRD|build|2|Reaction; the target caster makes a CON save
+3|Counterspell|SRD|done|2|Reaction; the target caster makes a CON save
 3|Create Food and Water|SRD|skip|3|
-3|Crusader's Mantle|PHB|build|2|Aura: allies' weapon hits deal +1d4 radiant
+3|Crusader's Mantle|PHB|done|2|Aura: allies' weapon hits deal +1d4 radiant
 3|Daylight|SRD|skip|3|
 3|Dispel Magic|SRD|build|3|End spell effects on a target (check for higher levels)
-3|Elemental Weapon|PHB|build|2|+1 attack and +1d4 elemental damage on the weapon
+3|Elemental Weapon|PHB|done|2|+1 attack and +1d4 elemental damage on the weapon
 3|Fear|SRD|done|2|Frightened, drop held item, must Dash away; save only out of sight
 3|Feign Death|PHB|skip|3|
 3|Fireball|SRD|done|1|
@@ -188,10 +188,10 @@
 3|Gaseous Form|SRD|verify|3|
 3|Glyph of Warding|SRD|verify|3|
 3|Haste|SRD|done|1|+2 AC, double speed, extra action; check the lethargy when it ends
-3|Hunger of Hadar|PHB|build|2|Zone: cold at turn start, acid at turn end, blinded inside
+3|Hunger of Hadar|PHB|done|2|Zone: cold at turn start, acid at turn end, blinded inside
 3|Hypnotic Pattern|SRD|done|1|Charmed + Incapacitated; must end when the creature takes damage
 3|Leomund's Tiny Hut|SRD|skip|3|aka Tiny Hut
-3|Lightning Arrow|PHB|build|2|Next ranged weapon attack becomes lightning + burst
+3|Lightning Arrow|PHB|done|2|Next ranged weapon attack becomes lightning + burst
 3|Lightning Bolt|SRD|done|1|
 3|Magic Circle|SRD|skip|3|
 3|Major Image|SRD|skip|3|
@@ -209,7 +209,7 @@
 3|Speak with Dead|SRD|skip|3|
 3|Speak with Plants|SRD|skip|3|
 3|Spirit Guardians|SRD|done|1|Aura: WIS save on entering/starting turn; half speed for enemies
-3|Stinking Cloud|SRD|build|2|Zone: CON save at turn start or lose the action (Poisoned)
+3|Stinking Cloud|SRD|done|2|Zone: CON save at turn start or lose the action (Poisoned)
 3|Summon Fey|PHB|build|2|Summon
 3|Summon Undead|PHB|build|2|Summon
 3|Tongues|SRD|skip|3|
@@ -224,7 +224,7 @@
 4|Blight|SRD|done|2|
 4|Charm Monster|SRD|verify|3|
 4|Compulsion|SRD|build|3|Forced movement each turn
-4|Confusion|SRD|build|2|d10 behaviour roll each turn; repeat save
+4|Confusion|SRD|done|2|d10 behaviour roll each turn; repeat save
 4|Conjure Minor Elementals|SRD|build|2|2024: your attacks deal +2d8 elemental near you
 4|Conjure Woodland Beings|SRD|build|2|2024: aura damage around you
 4|Control Water|SRD|skip|3|
@@ -232,7 +232,7 @@
 4|Dimension Door|SRD|done|2|Teleport (+ a willing creature)
 4|Divination|SRD|skip|3|
 4|Dominate Beast|SRD|verify|3|
-4|Evard's Black Tentacles|SRD|build|2|aka Black Tentacles. Zone: restrained + bludgeoning
+4|Evard's Black Tentacles|SRD|done|2|aka Black Tentacles. Zone: restrained + bludgeoning
 4|Fabricate|SRD|skip|3|
 4|Fire Shield|SRD|done|2|Melee attackers take 2d8 fire/cold; resistance
 4|Freedom of Movement|SRD|verify|3|
@@ -256,14 +256,14 @@
 4|Summon Construct|PHB|build|2|Summon
 4|Summon Elemental|PHB|build|2|Summon
 4|Vitriolic Sphere|SRD|done|2|Plus acid at the end of the target's next turn
-4|Wall of Fire|SRD|build|2|Wall: damage on entering/ending turn near the hot side
+4|Wall of Fire|SRD|done|2|Wall: damage on entering/ending turn near the hot side
 5|Animate Objects|SRD|build|2|Summon animated objects
 5|Antilife Shell|SRD|verify|3|
 5|Awaken|SRD|skip|3|
 5|Banishing Smite|PHB|done|2|Smite prompt; banish at 50 HP or less
 5|Bigby's Hand|SRD|build|2|aka Arcane Hand. Per-caster summon built before (see Bigby's Hand notes)
 5|Circle of Power|PHB|build|3|Aura: advantage on saves vs spells, no damage on success
-5|Cloudkill|SRD|build|2|Moving zone: CON save poison at turn start
+5|Cloudkill|SRD|done|2|Moving zone: CON save poison at turn start
 5|Commune|SRD|skip|3|
 5|Commune with Nature|SRD|skip|3|
 5|Cone of Cold|SRD|done|1|
@@ -281,7 +281,7 @@
 5|Greater Restoration|SRD|skip|3|
 5|Hallow|SRD|skip|3|
 5|Hold Monster|SRD|done|1|Paralyzed; repeat WIS save end of each turn
-5|Insect Plague|SRD|build|2|Zone: CON save piercing on entering/starting turn
+5|Insect Plague|SRD|done|2|Zone: CON save piercing on entering/starting turn
 5|Jallarzi's Storm of Radiance|PHB|build|3|Zone: radiant + thunder, deafened, blinded
 5|Legend Lore|SRD|skip|3|
 5|Mass Cure Wounds|SRD|midi|2|
@@ -294,7 +294,7 @@
 5|Reincarnate|SRD|skip|3|
 5|Scrying|SRD|skip|3|
 5|Seeming|SRD|skip|3|
-5|Steel Wind Strike|PHB|build|2|Melee spell attack against up to 5 targets, then teleport
+5|Steel Wind Strike|PHB|done|2|Melee spell attack against up to 5 targets, then teleport
 5|Summon Celestial|PHB|build|2|Summon
 5|Summon Dragon|SRD|build|2|Summon
 5|Swift Quiver|PHB|build|3|Two bonus-action weapon attacks each turn
@@ -306,7 +306,7 @@
 5|Wall of Stone|SRD|skip|3|
 5|Yolande's Regal Presence|PHB|build|3|Zone: WIS save psychic, prone or pushed
 6|Arcane Gate|PHB|skip|3|
-6|Blade Barrier|SRD|build|2|Wall: DEX save slashing on entering/starting turn
+6|Blade Barrier|SRD|done|2|Wall: DEX save slashing on entering/starting turn
 6|Chain Lightning|SRD|done|2|Primary target + three leaps
 6|Circle of Death|SRD|done|2|
 6|Conjure Fey|SRD|build|3|2024: fey spirit attacks

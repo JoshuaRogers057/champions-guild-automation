@@ -1,0 +1,327 @@
+{
+  "name": "Steel Wind Strike",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Target up to five creatures within 30 ft. Make a separate melee spell attack against each: 6d10 Force on a hit (+1d10 per slot level above 5th). Then use Teleport to move to an unoccupied space you can see within 5 ft of one of the targets.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "5",
+        "choice": true,
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 5,
+    "school": "con",
+    "properties": [
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a Melee weapon worth 1+ SP",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "x1A2tC9t6R5uxBG0": {
+        "type": "utility",
+        "_id": "x1A2tC9t6R5uxBG0",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "5",
+            "choice": true,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "Cast",
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        }
+      },
+      "steelWindStrike0": {
+        "type": "attack",
+        "_id": "steelWindStrike0",
+        "sort": 900000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "One attack per target",
+          "override": true
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "ft",
+          "value": 30,
+          "special": ""
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 6,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "name": "Steel Wind Strike: Strike",
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "steelWindStrike"
+        }
+      },
+      "steelWindTelepo0": {
+        "_id": "steelWindTelepo0",
+        "type": "teleport",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Right after the strikes",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "ft",
+          "value": 35,
+          "special": ""
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 200000,
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "name": "Teleport",
+        "teleport": {
+          "override": true,
+          "value": "30",
+          "units": "ft"
+        }
+      }
+    },
+    "identifier": "steel-wind-strike",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgaSplSteelWind0",
+  "type": "spell",
+  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: target up to five creatures within 30 ft: a separate melee spell attack against each (6d10 force), then Teleport to a space within 5 ft of one of them."
+      }
+    },
+    "midi-qol": {
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
+    }
+  },
+  "_cgaMacro": "steel-wind-strike.js"
+}

@@ -1,0 +1,1308 @@
+{
+  "name": "Elemental Weapon",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Touch a nonmagical weapon and pick Acid, Cold, Fire, Lightning or Thunder. While you concentrate it's a magic weapon with +1 to attack and damage rolls and deals an extra 1d4 damage of that type (+2 and 2d4 with a 5th or 6th level slot, +3 and 3d4 with 7th or higher).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "bonus",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "object",
+        "count": "1",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "units": "touch"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "enchant",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "cgaElemWepacid10",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepacid20",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepacid30",
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepcold10",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepcold20",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepcold30",
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepfire10",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepfire20",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepfire30",
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepligh10",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepligh20",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepligh30",
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepthun10",
+            "level": {
+              "min": 3,
+              "max": 4
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepthun20",
+            "level": {
+              "min": 5,
+              "max": 6
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "cgaElemWepthun30",
+            "level": {
+              "min": 7,
+              "max": null
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "enchant": {
+          "identifier": ""
+        },
+        "restrictions": {
+          "allowMagical": false,
+          "type": "weapon",
+          "categories": [],
+          "properties": []
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "elemental-weapon",
+    "prepared": 0
+  },
+  "_id": "cgaSplElementWep",
+  "type": "spell",
+  "img": "icons/weapons/swords/sword-flanged-lightning.webp",
+  "effects": [
+    {
+      "name": "Elemental Weapon: Acid +1",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepacid10",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000013",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000014",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"acid\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000015",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Acid +2",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepacid20",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000016",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "2",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000017",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"acid\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000018",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Acid +3",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepacid30",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000019",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "3",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000020",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"acid\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000021",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Cold +1",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepcold10",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000022",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000023",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"cold\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000024",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Cold +2",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepcold20",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000025",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "2",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000026",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"cold\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000027",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Cold +3",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepcold30",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000028",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "3",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000029",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"cold\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000030",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Fire +1",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepfire10",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000031",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000032",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"fire\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000033",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Fire +2",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepfire20",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000034",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "2",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000035",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"fire\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000036",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Fire +3",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepfire30",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000037",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "3",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000038",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"fire\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000039",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Lightning +1",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepligh10",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000040",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000041",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"lightning\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000042",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Lightning +2",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepligh20",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000043",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "2",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000044",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"lightning\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000045",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Lightning +3",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepligh30",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000046",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "3",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000047",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"lightning\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000048",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Thunder +1",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepthun10",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000049",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000050",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":1,\"denomination\":4,\"types\":[\"thunder\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000051",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Thunder +2",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepthun20",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000052",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "2",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000053",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":2,\"denomination\":4,\"types\":[\"thunder\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000054",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Elemental Weapon: Thunder +3",
+      "flags": {
+        "dnd5e": {
+          "enchantment": {
+            "level": {
+              "min": 2,
+              "max": 2
+            },
+            "riders": {
+              "effect": [],
+              "item": []
+            }
+          }
+        }
+      },
+      "img": "icons/skills/melee/weapons-crossed-swords-black.webp",
+      "_id": "cgaElemWepthun30",
+      "type": "enchantment",
+      "system": {
+        "changes": [
+          {
+            "key": "system.properties",
+            "value": "mgc",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000055",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.magicalBonus",
+            "value": "3",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000056",
+            "conditions": "{}"
+          },
+          {
+            "key": "activities[attack].damage.parts",
+            "value": "{\"number\":3,\"denomination\":4,\"types\":[\"thunder\"]}",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP2d0000057",
+            "conditions": "{}"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>Until the spell ends, that weapon becomes a magic weapon with a +1 bonus to attack rolls and damage rolls.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: pick the damage type: the weapon gets +1 to attack and damage and 1d4 extra damage of that type (+2/2d4 with a 5th-6th slot, +3/3d4 with 7th+)."
+      }
+    }
+  }
+}
