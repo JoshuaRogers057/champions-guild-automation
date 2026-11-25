@@ -161,7 +161,7 @@
 2|Spike Growth|SRD|done|2|2d4 piercing per 5 ft moved inside the area
 2|Spiritual Weapon|SRD|done|1|Summoned weapon; bonus-action melee spell attack; move it
 2|Suggestion|SRD|verify|3|
-2|Summon Beast|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+2|Summon Beast|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 2|Warding Bond|SRD|done|2|+1 AC/saves, resistance; caster takes the same damage
 2|Web|SRD|midi|2|
 2|Zone of Truth|SRD|skip|3|
@@ -210,8 +210,8 @@
 3|Speak with Plants|SRD|skip|3|
 3|Spirit Guardians|SRD|done|1|Aura: WIS save on entering/starting turn; half speed for enemies
 3|Stinking Cloud|SRD|done|2|Zone: CON save at turn start or lose the action (Poisoned)
-3|Summon Fey|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
-3|Summon Undead|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+3|Summon Fey|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
+3|Summon Undead|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 3|Tongues|SRD|skip|3|
 3|Vampiric Touch|SRD|done|2|Heal half the damage dealt; repeat the touch as an action
 3|Water Breathing|SRD|skip|3|
@@ -252,9 +252,9 @@
 4|Staggering Smite|PHB|done|2|Smite prompt; Stunned until end of your next turn on a failed save
 4|Stone Shape|SRD|skip|3|
 4|Stoneskin|SRD|done|2|Resistance to B/P/S
-4|Summon Aberration|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
-4|Summon Construct|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
-4|Summon Elemental|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+4|Summon Aberration|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
+4|Summon Construct|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
+4|Summon Elemental|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 4|Vitriolic Sphere|SRD|done|2|Plus acid at the end of the target's next turn
 4|Wall of Fire|SRD|done|2|Wall: damage on entering/ending turn near the hot side
 5|Animate Objects|SRD|done|2|Summon animated objects
@@ -295,7 +295,7 @@
 5|Scrying|SRD|skip|3|
 5|Seeming|SRD|skip|3|
 5|Steel Wind Strike|PHB|done|2|Melee spell attack against up to 5 targets, then teleport
-5|Summon Celestial|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+5|Summon Celestial|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 5|Summon Dragon|SRD|done|2|Summon
 5|Swift Quiver|PHB|build|3|Two bonus-action weapon attacks each turn
 5|Synaptic Static|PHB|done|2|INT save psychic; failed save: -1d6 on attacks and checks, repeat save
@@ -331,7 +331,7 @@
 6|Planar Ally|SRD|skip|3|
 6|Primordial Ward|PHB|build|3|Resistances; reaction to turn one into immunity
 6|Programmed Illusion|SRD|skip|3|
-6|Summon Fiend|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+6|Summon Fiend|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 6|Sunbeam|SRD|midi|2|
 6|Tasha's Bubbling Cauldron|PHB|skip|3|
 6|Transport via Plants|SRD|skip|3|

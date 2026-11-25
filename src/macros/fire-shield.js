@@ -9,7 +9,8 @@ let defender = args[0]?.options?.token;
 defender = defender?.object ?? defender;
 if (!defender?.document) defender = MidiQOL.tokenForActor?.(actor);
 const defenderActor = defender?.actor ?? actor;
-const shield = Array.from(defenderActor?.effects ?? []).find((e) => e.flags?.world?.cgaRetaliate && !e.disabled);
+// allApplicableEffects also covers effects transferred from items (a summoned spirit's Heated Body).
+const shield = Array.from(defenderActor?.allApplicableEffects?.() ?? defenderActor?.effects ?? []).find((e) => e.flags?.world?.cgaRetaliate && !e.disabled);
 if (!shield) return;
 wf.cgaRetaliated ??= new Set();
 if (wf.cgaRetaliated.has(defenderActor.uuid)) return;

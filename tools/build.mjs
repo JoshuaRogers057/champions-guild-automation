@@ -69,6 +69,13 @@ function prepareItem(file, raw, seenIds, seenKeys) {
   }
   for (const e of item.effects ?? []) if (!ID_RE.test(e._id ?? "")) err(rel, `effect "${e.name}" _id must be 16 letters/digits`);
 
+  inlineMacro(rel, item);
+  if (!item.system?.description?.value) warn(rel, "no description (fine - CAT keeps the actor's own description)");
+  return stamp(item);
+}
+
+// Inline an item's _cgaMacro (src/macros/<file>) into flags.dae.macro, where DAE / midi-qol's ItemMacro reads it.
+function inlineMacro(rel, item) {
   if (item._cgaMacro) {
     const command = loadMacro(rel, item._cgaMacro);
     if (command != null) {
@@ -84,8 +91,9 @@ function prepareItem(file, raw, seenIds, seenKeys) {
     }
     delete item._cgaMacro;
   }
-  if (!item.system?.description?.value) warn(rel, "no description (fine - CAT keeps the actor's own description)");
+}
 
+function stamp(item) {
   item._stats = { ...(item._stats ?? {}), coreVersion: CORE_VERSION, systemId: "dnd5e", systemVersion: SYSTEM_VERSION,
     compendiumSource: null, duplicateSource: null, exportSource: null };
   item.folder ??= null;
@@ -94,7 +102,30 @@ function prepareItem(file, raw, seenIds, seenKeys) {
   return item;
 }
 
-async function writePack(dir, items) {
+// A summoned creature (Actor pack): validate ids, inline its items' macros. No CAT identifier: CAT only reads items.
+function prepareActor(file, raw, seenIds) {
+  const actor = structuredClone(raw);
+  const rel = path.relative(ROOT, file);
+  if (!ID_RE.test(actor._id ?? "")) err(rel, `_id "${actor._id}" must be exactly 16 letters/digits`);
+  if (seenIds.has(actor._id)) err(rel, `_id ${actor._id} is also used by ${seenIds.get(actor._id)}`);
+  seenIds.set(actor._id, rel);
+  if (!actor.name || !actor.type) err(rel, "missing name or type");
+  const ids = new Set();
+  for (const item of actor.items ?? []) {
+    if (!ID_RE.test(item._id ?? "") || ids.has(item._id)) err(rel, `item "${item.name}" needs a unique 16-character _id`);
+    ids.add(item._id);
+    for (const [k, a] of Object.entries(item.system?.activities ?? {})) {
+      if (!ID_RE.test(k) || a._id !== k) err(rel, `${item.name}: activity key "${k}" must equal its _id and be 16 letters/digits`);
+    }
+    for (const e of item.effects ?? []) if (!ID_RE.test(e._id ?? "")) err(rel, `${item.name}: effect "${e.name}" _id must be 16 letters/digits`);
+    inlineMacro(rel, item);
+    stamp(item);
+  }
+  for (const e of actor.effects ?? []) if (!ID_RE.test(e._id ?? "")) err(rel, `effect "${e.name}" _id must be 16 letters/digits`);
+  return stamp(actor);
+}
+
+async function writePack(dir, items, type = "Item") {
   const require = createRequire(path.join(FOUNDRY_APP, "main.mjs"));
   const { ClassicLevel } = require("classic-level");
   fs.rmSync(dir, { recursive: true, force: true });
@@ -102,7 +133,21 @@ async function writePack(dir, items) {
   const db = new ClassicLevel(dir, { valueEncoding: "json" });
   await db.open();
   const batch = db.batch();
-  for (const item of items) {
+  const meta = { _stats: { coreVersion: CORE_VERSION, systemId: "dnd5e", systemVersion: SYSTEM_VERSION } };
+  if (type === "Actor") {
+    for (const actor of items) {
+      const embedded = actor.items ?? [];
+      const effects = actor.effects ?? [];
+      batch.put(`!actors!${actor._id}`, { ...actor, items: embedded.map((i) => i._id), effects: effects.map((e) => e._id) });
+      for (const e of effects) batch.put(`!actors.effects!${actor._id}.${e._id}`, { ...meta, ...e });
+      for (const it of embedded) {
+        const ieffects = it.effects ?? [];
+        batch.put(`!actors.items!${actor._id}.${it._id}`, { ...it, effects: ieffects.map((e) => e._id) });
+        for (const e of ieffects) batch.put(`!actors.items.effects!${actor._id}.${it._id}.${e._id}`, { ...meta, ...e });
+      }
+    }
+  }
+  for (const item of type === "Actor" ? [] : items) {
     const effects = item.effects ?? [];
     batch.put(`!items!${item._id}`, { ...item, effects: effects.map((e) => e._id) });
     for (const e of effects) {
@@ -123,7 +168,10 @@ for (const pack of manifest.packs) {
   const name = path.basename(pack.path);
   const files = walk(path.join(ROOT, "src", "packs", name));
   const items = files.map((f) => {
-    try { return prepareItem(f, JSON.parse(fs.readFileSync(f, "utf8")), seenIds, seenKeys); }
+    try {
+      const raw = JSON.parse(fs.readFileSync(f, "utf8"));
+      return pack.type === "Actor" ? prepareActor(f, raw, seenIds) : prepareItem(f, raw, seenIds, seenKeys);
+    }
     catch (e) { err(path.relative(ROOT, f), `not valid JSON: ${e.message}`); return null; }
   }).filter(Boolean);
   built.push({ pack, name, items });
@@ -138,7 +186,7 @@ if (errors.length) {
   console.log(`Check passed: ${built.reduce((n, b) => n + b.items.length, 0)} item(s), no errors.`);
 } else {
   for (const { pack, name, items } of built) {
-    try { await writePack(path.join(ROOT, pack.path), items); }
+    try { await writePack(path.join(ROOT, pack.path), items, pack.type); }
     catch (e) {
       console.log(`ERROR writing ${pack.path}: ${e.message}`);
       console.log("Is a Foundry world with this module enabled open? Close it (or return to Setup) and build again.");

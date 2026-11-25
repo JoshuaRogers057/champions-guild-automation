@@ -86,11 +86,40 @@ Hooks.on("deleteToken", (token) => summonTimes.delete(token.uuid));
 Hooks.on("deleteActiveEffect", async (effect) => {
   if (!game.users.activeGM?.isSelf || !effect.statuses?.has("concentrating")) return;
   const tokens = summonedBy(effect);
+  for (const t of tokens) await lastGasp(t);
   for (const scene of new Set(tokens.map((t) => t.parent))) {
     const ids = tokens.filter((t) => t.parent === scene).map((t) => t.id);
     try { await scene.deleteEmbeddedDocuments("Token", ids); }
     catch (err) { console.warn(`${MODULE_ID} | couldn't remove summons for ${effect.name}`, err); }
   }
+});
+
+// Summoned spirits that disappear at 0 Hit Points (the Summon spells say so). A summon with a "death-throes" ability
+// (the Demon Fiendish Spirit) uses it on every creature within 10 ft first, also when the spell ends.
+const VANISH_AT_ZERO = new Set(["summon-beast", "summon-fey", "summon-undead", "summon-aberration", "summon-construct", "summon-elemental",
+  "summon-celestial", "summon-fiend", "summon-dragon"]);
+async function lastGasp(tokenDoc) {
+  const throes = tokenDoc.actor?.items.find((i) => i.system.identifier === "death-throes")?.system.activities.contents[0];
+  if (!throes || tokenDoc.getFlag(MODULE_ID, "throes")) return;
+  await tokenDoc.setFlag(MODULE_ID, "throes", true).catch(() => {});
+  const caught = tokenDoc.parent.tokens.filter((t) => t.id !== tokenDoc.id && t.actor && !t.hidden && edgeDistance(tokenDoc, t, tokenDoc.parent) <= 10);
+  if (!caught.length) return;
+  try {
+    await MidiQOL.completeActivityUse(throes, { midiOptions: { targetUuids: caught.map((t) => t.uuid), workflowOptions: { targetConfirmation: "none" } },
+      consume: { resources: false }, create: { measuredTemplate: false } }, { configure: false }, {});
+  } catch (err) { console.warn(`${MODULE_ID} | Death Throes failed`, err); }
+}
+Hooks.on("updateActor", async (actor, changes) => {
+  if (!game.users.activeGM?.isSelf) return;
+  const hp = foundry.utils.getProperty(changes, "system.attributes.hp.value");
+  if (hp === undefined || hp > 0) return;
+  const origin = actor.flags?.dnd5e?.summon?.origin;
+  if (!origin || !VANISH_AT_ZERO.has(fromUuidSync(origin)?.system?.identifier)) return;
+  const tokenDoc = actor.token ?? actor.getActiveTokens?.()[0]?.document;
+  if (!tokenDoc) return;
+  await lastGasp(tokenDoc);
+  ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>${tokenDoc.name}</strong> drops to 0 Hit Points and disappears.</p>` });
+  await tokenDoc.delete().catch(() => {});
 });
 
 // Damage rules that dnd5e and midi-qol can't express with plain effect changes. A spell's effect sets one of these
@@ -254,11 +283,17 @@ Hooks.on("updateRegion", (region) => scheduleRegionSweep(region.parent));
 // "<spell identifier>-aura", or "-aura-<element>" for Conjure Elemental) on each creature that qualifies, once per turn.
 //   turnStart / turnEnd: the creature starts / ends its turn within range of the summon
 //   enter: the creature moves to within range;  summonMove: the summon moves to within range of the creature
+//   ownTurnStart: the summon starts its own turn (every creature in range)
+// An entry can instead name an ability of the summoned creature (actorItem = the item's identifier), limited to one form
+// (form = text in the summon's name), e.g. the Putrid Undead Spirit's Festering Aura.
 const SUMMON_AURAS = {
   "flaming-sphere": { range: 5, triggers: ["turnEnd", "summonMove"], enemiesOnly: false },
   "conjure-animals": { range: 10, triggers: ["enter", "turnEnd", "summonMove"], enemiesOnly: true },
   "guardian-of-faith": { range: 10, triggers: ["enter", "turnStart"], enemiesOnly: true, damageCap: 60 },
-  "conjure-elemental": { range: 5, triggers: ["enter", "turnStart"], enemiesOnly: true, oneRestrained: true }
+  "conjure-elemental": { range: 5, triggers: ["enter", "turnStart"], enemiesOnly: true, oneRestrained: true },
+  "summon-undead": { form: "putrid", actorItem: "festering-aura", range: 5, triggers: ["turnStart"], excludeCaster: true },
+  "summon-construct": { form: "stone", actorItem: "stony-lethargy", range: 10, triggers: ["turnStart"], enemiesOnly: true },
+  "summon-aberration": { form: "mind flayer", actorItem: "whispering-aura", range: 5, triggers: ["ownTurnStart"], excludeCaster: true, needsActive: true }
 };
 const auraUsed = new Set();
 function edgeDistance(a, b, scene) {
@@ -275,8 +310,10 @@ function auraSummons(scene) {
     const summon = t.actor?.flags?.dnd5e?.summon;
     if (!summon?.origin) continue;
     const spell = fromUuidSync(summon.origin);
-    const cfg = SUMMON_AURAS[spell?.system?.identifier];
-    if (cfg) out.push({ token: t, spell, cfg, level: Number(summon.level) || spell.system.level });
+    for (const cfg of [SUMMON_AURAS[spell?.system?.identifier] ?? []].flat()) {
+      if (cfg.form && !`${t.name} ${t.actor?.name}`.toLowerCase().includes(cfg.form)) continue;
+      out.push({ token: t, spell, cfg, level: Number(summon.level) || spell.system.level });
+    }
   }
   return out;
 }
@@ -286,16 +323,19 @@ async function triggerAura(aura, creature, why) {
   if (creature.actor.flags?.dnd5e?.summon?.origin === spell.uuid) return; // its own summons
   if ((creature.actor.system.attributes?.hp?.value ?? 0) <= 0) return;
   const casterToken = spell.actor?.getActiveTokens?.()[0]?.document;
-  if (creature.id === casterToken?.id && cfg.enemiesOnly) return;
+  if (creature.id === casterToken?.id && (cfg.enemiesOnly || cfg.excludeCaster)) return;
+  if (cfg.needsActive && summonToken.actor?.statuses?.has("incapacitated")) return;
   if (cfg.enemiesOnly && casterToken && creature.disposition === casterToken.disposition) return;
-  const key = `${summonToken.id}|${creature.id}|${turnKey()}`;
+  const key = `${summonToken.id}|${cfg.actorItem ?? ""}|${creature.id}|${turnKey()}`;
   if (auraUsed.has(key)) return;
   let ident = `${spell.system.identifier}-aura`;
   if (spell.system.identifier === "conjure-elemental") {
     const element = ["air", "earth", "fire", "water"].find((e) => summonToken.name.toLowerCase().includes(e) || summonToken.actor?.name?.toLowerCase().includes(e)) ?? "air";
     ident += `-${element}`;
   }
-  const activity = spell.system.activities.find((a) => a.midiProperties?.identifier === ident);
+  const activity = cfg.actorItem
+    ? summonToken.actor?.items.find((i) => i.system.identifier === cfg.actorItem)?.system.activities.contents[0]
+    : spell.system.activities.find((a) => a.midiProperties?.identifier === ident);
   if (!activity) return;
   if (cfg.oneRestrained) {
     // Conjure Elemental: only while the spirit has no creature Restrained.
@@ -304,10 +344,10 @@ async function triggerAura(aura, creature, why) {
   }
   auraUsed.add(key);
   try {
-    const wf = await MidiQOL.completeActivityUse(activity, {
-      midiOptions: { targetUuids: [creature.uuid], workflowOptions: { targetConfirmation: "none" } },
-      spell: { slot: `spell${level}` }, consume: { spellSlot: false, resources: false }, concentration: { begin: false, end: null }, create: { measuredTemplate: false }
-    }, { configure: false }, {});
+    const usage = { midiOptions: { targetUuids: [creature.uuid], workflowOptions: { targetConfirmation: "none" } },
+      consume: { spellSlot: false, resources: false }, concentration: { begin: false, end: null }, create: { measuredTemplate: false } };
+    if (!cfg.actorItem) usage.spell = { slot: `spell${level}` };
+    const wf = await MidiQOL.completeActivityUse(activity, usage, { configure: false }, {});
     if (cfg.damageCap) {
       const dealt = (wf?.damageList ?? []).reduce((s, d) => s + Math.max(0, (d.hpDamage ?? 0) + (d.tempDamage ?? 0)), 0);
       const total = (summonToken.getFlag(MODULE_ID, "dealt") ?? 0) + dealt;
@@ -333,6 +373,11 @@ Hooks.on("updateCombat", async (combat, changed) => {
   }
   for (const aura of auras) {
     if (curr && aura.cfg.triggers.includes("turnStart") && edgeDistance(aura.token, curr, scene) <= aura.cfg.range) await triggerAura(aura, curr, "turn start");
+    if (curr?.id === aura.token.id && aura.cfg.triggers.includes("ownTurnStart")) {
+      for (const other of scene.tokens) {
+        if (other.id !== aura.token.id && edgeDistance(aura.token, other, scene) <= aura.cfg.range) await triggerAura(aura, other, "its turn start");
+      }
+    }
   }
 });
 Hooks.on("moveToken", async (tokenDoc, movement) => {
@@ -380,12 +425,27 @@ Hooks.on("createActiveEffect", async (effect) => {
   catch (err) { console.warn(`${MODULE_ID} | couldn't tie ${effect.name} to ${spell.name}'s concentration`, err); }
 });
 
+// dnd5e imports a summoned creature from our compendium into the world once and reuses that copy for every later cast,
+// so a spirit fixed in a module update would keep its old statistics. After an update, delete the auto-imported copies
+// that aren't on any map; the next cast imports the new version.
+async function refreshSummonCopies() {
+  const prefix = `Compendium.${MODULE_ID}.cga-summons.`;
+  const onMap = new Set(game.scenes.flatMap((s) => s.tokens.map((t) => t.actorId)));
+  const stale = game.actors.filter((a) => a.getFlag("dnd5e", "isAutoImported") && String(a._stats?.compendiumSource ?? "").startsWith(prefix) && !onMap.has(a.id));
+  if (!stale.length) return;
+  try {
+    await Actor.implementation.deleteDocuments(stale.map((a) => a.id));
+    console.log(`${MODULE_ID} | removed ${stale.length} outdated summoned-creature copies`);
+  } catch (err) { console.warn(`${MODULE_ID} | couldn't remove outdated summon copies`, err); }
+}
+
 // After an update, tell the GM once that there are new fixes to apply.
 Hooks.once("ready", async () => {
   if (!game.user.isGM) return;
   const mod = game.modules.get(MODULE_ID);
   const last = game.settings.get(MODULE_ID, "lastSeenVersion");
   if (last === mod.version) return;
+  await refreshSummonCopies();
   const firstRun = !last;
   const content = firstRun
     ? `<h3>${mod.title} ${mod.version}</h3>

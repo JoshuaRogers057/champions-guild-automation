@@ -61,13 +61,21 @@
       "type": "Item",
       "system": "dnd5e",
       "ownership": { "PLAYER": "NONE", "ASSISTANT": "OWNER" }
+    },
+    {
+      "name": "cga-summons",
+      "label": "CGA: Summoned Creatures",
+      "path": "packs/summons",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": { "PLAYER": "OBSERVER", "ASSISTANT": "OWNER" }
     }
   ],
   "packFolders": [
     {
       "name": "Champions Guild Automation",
       "sorting": "m",
-      "packs": ["cga-spells", "cga-features", "cga-items", "cga-monster-features"]
+      "packs": ["cga-spells", "cga-features", "cga-items", "cga-monster-features", "cga-summons"]
     }
   ],
   "url": "https://github.com/JoshuaRogers057/champions-guild-automation",
