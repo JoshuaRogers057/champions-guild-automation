@@ -1,0 +1,176 @@
+{
+  "_id": "cgaItmNet0000000",
+  "name": "Net",
+  "type": "equipment",
+  "img": "icons/tools/fishing/net-simple-brown.webp",
+  "system": {
+    "activities": {
+      "3u15g2fvhp6MyN5O": {
+        "type": "save",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "67ofG0FVqrrkAHKa",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "value": "15",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": "dex",
+          "dc": {
+            "calculation": "dex",
+            "formula": ""
+          }
+        },
+        "name": "",
+        "_id": "3u15g2fvhp6MyN5O"
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Replace one attack: throw it at a creature within 15 ft. DEX save (DC 8 + your DEX modifier + Proficiency Bonus) or have the Restrained condition until it escapes (an action: DC 10 STR (Athletics) check, or 5 Slashing damage to the net, AC 10). Huge or larger creatures are immune.</p>",
+      "chat": ""
+    },
+    "identifier": "net",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "properties": [],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "name": "Caught in Net",
+      "img": "icons/tools/fishing/net-simple-brown.webp",
+      "origin": "Item.phbagNet00000000",
+      "transfer": false,
+      "_id": "67ofG0FVqrrkAHKa",
+      "type": "base",
+      "system": {
+        "changes": []
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "restrained"
+      ],
+      "sort": 0,
+      "flags": {},
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: The save now applies Restrained (the compendium activity referenced a missing effect)."
+      }
+    }
+  }
+}

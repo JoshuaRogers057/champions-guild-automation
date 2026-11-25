@@ -16,7 +16,8 @@
     "scripts/main.js",
     "scripts/class-rules.js",
     "scripts/class-rules-p2.js",
-    "scripts/class-rules-p3.js"
+    "scripts/class-rules-p3.js",
+    "scripts/item-rules.js"
   ],
   "relationships": {
     "systems": [

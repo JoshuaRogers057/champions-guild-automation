@@ -1,0 +1,216 @@
+{
+  "name": "Alchemist's Fire",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Replace one attack: throw it at a creature or object within 20 ft. DEX save (DC 8 + your DEX modifier + Proficiency Bonus) or take 1d4 Fire damage and start Burning (1d4 Fire at the start of each of its turns until it, or someone, takes an action to put it out - delete the effect).</p>",
+      "chat": ""
+    },
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "uses": {
+      "max": "1",
+      "autoDestroy": true,
+      "spent": 0,
+      "recovery": []
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "magicalBonus": null,
+    "properties": [],
+    "activities": {
+      "NVclbplLi9uFhKQE": {
+        "type": "save",
+        "_id": "NVclbplLi9uFhKQE",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "HL12olRyPOCmmMQ5",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "ft",
+          "special": "",
+          "value": "20"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "creatureOrObject",
+            "count": "1",
+            "special": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 1,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "fire"
+              ]
+            }
+          ],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "dex",
+            "formula": ""
+          }
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "HL12olRyPOCmmMQ5"
+        ]
+      }
+    },
+    "identifier": "alchemists-fire"
+  },
+  "_id": "cgaItmAlchemFire",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-round-label-cork-yellow.webp",
+  "effects": [
+    {
+      "name": "Burning",
+      "img": "systems/dnd5e/icons/svg/statuses/burning.svg",
+      "origin": "Compendium.dnd5e.equipment24.Item.phbagAlchemistsF",
+      "transfer": false,
+      "_id": "HL12olRyPOCmmMQ5",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=start, damageRoll=1d4, damageType=fire, label=Burning",
+            "type": "custom",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Rules reference: &amp;Reference[burning].</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "burning"
+      ],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Applies the Burning condition with its 1d4 Fire at the start of each turn (the compendium effect had neither)."
+      }
+    }
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "_id": "cgaItmPotHeroism",
+  "name": "Potion of Heroism",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-conical-bubbling-blue.webp",
+  "system": {
+    "activities": {
+      "gdyQxFAXH5PM9qy5": {
+        "type": "heal",
+        "name": "Drink",
+        "_id": "gdyQxFAXH5PM9qy5",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "dHNT1jBXfvYuNH16"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "number": null,
+          "denomination": "",
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": false
+          },
+          "scaling": {
+            "number": 1
+          },
+          "bonus": "10"
+        },
+        "img": "",
+        "appliedEffects": [],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "autoDestroy": true,
+      "max": "1"
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you drink it you gain 10 Temporary Hit Points for 1 hour and the effect of Bless (+1d4 to attack rolls and saving throws, no Concentration) for 1 hour.</p>",
+      "chat": ""
+    },
+    "identifier": "potion-of-heroism",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "_id": "dHNT1jBXfvYuNH16",
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "origin": "Compendium.dnd5e.equipment24.Item.dmgPotionOfHeroi",
+      "tint": "#ffffff",
+      "transfer": false,
+      "name": "Blessed",
+      "description": "<p>Whenever a target makes an attack roll or a saving throw before the effect ends, the target adds 1d4 to the attack roll or save.</p>",
+      "statuses": [],
+      "img": "icons/magic/holy/chalice-glowing-gold-water.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.abilities.save",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "dZUwPKDZfOHhNdhG"
+          },
+          {
+            "key": "system.bonuses.mwak.attack",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "7gnO26iwAtuFlQWX"
+          },
+          {
+            "key": "system.bonuses.msak.attack",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "NUVBfooW53S4fv8m"
+          },
+          {
+            "key": "system.bonuses.rsak.attack",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "g6xoEIgL1F3iKkgY"
+          },
+          {
+            "key": "system.bonuses.rwak.attack",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "8l7e1p4KXlEhzQX9"
+          }
+        ],
+        "magical": true
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Drink now applies the Bless effect (the compendium activity had none attached)."
+      }
+    }
+  }
+}

@@ -6,9 +6,9 @@
    "sub": "Armor · uncommon",
    "name": "Adamantine Armor",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Defensive effect - check conditions (unarmored, crits, Advantage vs spells)",
+   "note": "Module rule (no Mass Apply; works on the character's own item): worn Adamantine armor - Critical Hits against you become normal hits",
    "identifier": "adamantine-armor"
   },
   {
@@ -36,9 +36,9 @@
    "sub": "Weapon · very rare",
    "name": "Ammunition, +1, +2, or +3",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Bonus to attack/damage or AC - check the compendium variants",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
    "identifier": "ammunition-1-2-or-3"
   },
   {
@@ -56,9 +56,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Amulet of Health",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Sets an ability score - check it doesn't lower a higher score",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)",
    "identifier": "amulet-of-health"
   },
   {
@@ -106,9 +106,9 @@
    "sub": "Armor · very rare",
    "name": "Armor, +1, +2, or +3",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Bonus to attack/damage or AC - check the compendium variants",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
    "identifier": "armor-1-2-or-3"
   },
   {
@@ -138,7 +138,7 @@
    "source": "SRD",
    "category": "verify",
    "priority": 1,
-   "note": "Resistance to the chosen type",
+   "note": "Not checked yet in v0.23.0 - Resistance to the chosen type",
    "identifier": "armor-of-resistance"
   },
   {
@@ -266,9 +266,9 @@
    "sub": "Wondrous Item · varies · attunement",
    "name": "Belt of Giant Strength",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Sets an ability score - check it doesn't lower a higher score",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)",
    "identifier": "belt-of-giant-strength"
   },
   {
@@ -346,9 +346,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Boots of Speed",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Defensive effect - check conditions (unarmored, crits, Advantage vs spells)",
+   "note": "Compendium Click Heels doubles Speed; module rule (no mass apply; works on the character's own item) adds Disadvantage on Opportunity Attacks against you (not yet seen in play)",
    "identifier": "boots-of-speed"
   },
   {
@@ -396,9 +396,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Bracers of Defense",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Defensive effect - check conditions (unarmored, crits, Advantage vs spells)",
+   "note": "Module rule (no Mass Apply; works on the character's own item): the bracers' +2 AC switches off while wearing armor or a Shield (compendium gave it always)",
    "identifier": "bracers-of-defense"
   },
   {
@@ -606,9 +606,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Cloak of Protection",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "+1 bonuses (AC/saves/checks)",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (+1 AC/saves/checks)",
    "identifier": "cloak-of-protection"
   },
   {
@@ -736,9 +736,9 @@
    "sub": "Weapon · rare",
    "name": "Dagger of Venom",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "note": "CGA item + module rule: the Poison Save rolls on the first hit while coated (compendium ran it on every hit)",
    "identifier": "dagger-of-venom"
   },
   {
@@ -796,9 +796,9 @@
    "sub": "Weapon · legendary · attunement",
    "name": "Defender",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "First attack each turn: prompt to move some of the +3 to AC until your next turn",
+   "note": "Module rule (no Mass Apply; works on the character's own item): first attack each turn asks how much of the +3 moves to AC until your next turn",
    "identifier": "defender"
   },
   {
@@ -1206,9 +1206,9 @@
    "sub": "Weapon · rare · attunement",
    "name": "Flame Tongue",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)",
    "identifier": "flame-tongue"
   },
   {
@@ -1226,9 +1226,9 @@
    "sub": "Weapon · very rare · attunement",
    "name": "Frost Brand",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)",
    "identifier": "frost-brand"
   },
   {
@@ -1236,9 +1236,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Gauntlets of Ogre Power",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Sets an ability score - check it doesn't lower a higher score",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)",
    "identifier": "gauntlets-of-ogre-power"
   },
   {
@@ -1286,9 +1286,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Gloves of Missile Snaring",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Reaction when hit by a ranged/thrown weapon: reduce damage by 1d10 + DEX (prompt)",
+   "note": "Module rule (no Mass Apply; works on the character's own item): Reaction when hit by a ranged/thrown weapon attack - reduce by 1d10 + DEX",
    "identifier": "gloves-of-missile-snaring"
   },
   {
@@ -1386,9 +1386,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Headband of Intellect",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Sets an ability score - check it doesn't lower a higher score",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)",
    "identifier": "headband-of-intellect"
   },
   {
@@ -1456,9 +1456,9 @@
    "sub": "Weapon · legendary · attunement",
    "name": "Holy Avenger",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+3, 2d10 Radiant vs Fiends/Undead, and a 10/30-ft aura of Advantage on saves vs spells/magical effects for allies (module aura)",
+   "note": "Module rule (no Mass Apply; works on the character's own item): +2d10 Radiant vs Fiends/Undead; 10-ft (30 at Paladin 17) aura of Advantage on saves vs spells and magical effects while equipped",
    "identifier": "holy-avenger"
   },
   {
@@ -1726,9 +1726,9 @@
    "sub": "Weapon · uncommon",
    "name": "Javelin of Lightning",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "note": "CGA item: attacks no longer pop up Lightning Bolt; Attack (Piercing) and Attack (Lightning) options",
    "identifier": "javelin-of-lightning"
   },
   {
@@ -1766,9 +1766,9 @@
    "sub": "Weapon · legendary · attunement",
    "name": "Luck Blade",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+1 saves while carried; once per dawn reroll a failed D20 Test (prompt); Wish charges",
+   "note": "Module rule (no Mass Apply; works on the character's own item): once per Long Rest, reroll a failed attack roll or save (asked when it fails). +1 saves and Wish come from the item",
    "identifier": "luck-blade"
   },
   {
@@ -1786,9 +1786,9 @@
    "sub": "Weapon · rare · attunement",
    "name": "Mace of Disruption",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol sample item - check it works",
+   "note": "midi-qol sample works: +2d6 Radiant vs Fiends/Undead, destroy save at 25 HP or fewer",
    "identifier": "mace-of-disruption"
   },
   {
@@ -1816,9 +1816,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Mantle of Spell Resistance",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Defensive effect - check conditions (unarmored, crits, Advantage vs spells)",
+   "note": "Module rule (no Mass Apply; works on the character's own item): Advantage on saves against spells (compendium item had no effect)",
    "identifier": "mantle-of-spell-resistance"
   },
   {
@@ -1956,9 +1956,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Necklace of Fireballs",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Throw one or more beads: Fireball +1d6 per extra bead (max 12d6); bead count as uses",
+   "note": "CGA item: Throw Beads = DC 15 Fireball save, +1d6 per extra bead (max 5 beads); Count Beads rolls 1d6 + 3",
    "identifier": "necklace-of-fireballs"
   },
   {
@@ -2276,9 +2276,9 @@
    "sub": "Potion · varies",
    "name": "Potion of Giant Strength",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Consumable - check the drink activity and effect",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)",
    "identifier": "potion-of-giant-strength"
   },
   {
@@ -2306,9 +2306,9 @@
    "sub": "Potion · varies",
    "name": "Potions of Healing",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Consumable - check the drink activity and effect",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)",
    "identifier": "potion-of-healing"
   },
   {
@@ -2316,9 +2316,9 @@
    "sub": "Potion · rare",
    "name": "Potion of Heroism",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Consumable - check the drink activity and effect",
+   "note": "CGA item: Drink now applies Bless for 1 hour (compendium only gave the temp HP)",
    "identifier": "potion-of-heroism"
   },
   {
@@ -2326,9 +2326,9 @@
    "sub": "Potion · rare",
    "name": "Potion of Invisibility",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Consumable - check the drink activity and effect",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)",
    "identifier": "potion-of-invisibility"
   },
   {
@@ -2336,9 +2336,9 @@
    "sub": "Potion · rare",
    "name": "Potion of Invulnerability",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Consumable - check the drink activity and effect",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)",
    "identifier": "potion-of-invulnerability"
   },
   {
@@ -2386,9 +2386,9 @@
    "sub": "Potion · uncommon",
    "name": "Potion of Resistance",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Resistance to the chosen type",
+   "note": "CGA item: one Drink activity per damage type (compendium applied all ten under midi)",
    "identifier": "potion-of-resistance"
   },
   {
@@ -2396,9 +2396,9 @@
    "sub": "Potion · very rare",
    "name": "Potion of Speed",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Consumable - check the drink activity and effect",
+   "note": "Checked in v0.23.0 - the compendium potion casts Haste on the drinker without Concentration (pick Cast, not Apply Lethargy, when asked)",
    "identifier": "potion-of-speed"
   },
   {
@@ -2566,9 +2566,9 @@
    "sub": "Ring · rare · attunement",
    "name": "Ring of Evasion",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Reaction after a failed DEX save: spend a charge to succeed (prompt)",
+   "note": "Module rule (no Mass Apply; works on the character's own item): Reaction after a failed DEX save - spend a charge to succeed",
    "identifier": "ring-of-evasion"
   },
   {
@@ -2626,9 +2626,9 @@
    "sub": "Ring · rare · attunement",
    "name": "Ring of Protection",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "+1 bonuses (AC/saves/checks)",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (+1 AC/saves/checks)",
    "identifier": "ring-of-protection"
   },
   {
@@ -2648,7 +2648,7 @@
    "source": "SRD",
    "category": "verify",
    "priority": 1,
-   "note": "Resistance to the chosen type",
+   "note": "Not checked yet in v0.23.0 - Resistance to the chosen type",
    "identifier": "ring-of-resistance"
   },
   {
@@ -2878,7 +2878,7 @@
    "source": "DMG",
    "category": "verify",
    "priority": 1,
-   "note": "Charges/bonuses for spells - check casting and scaling",
+   "note": "Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling",
    "identifier": "rod-of-the-pact-keeper"
   },
   {
@@ -2996,9 +2996,9 @@
    "sub": "Armor · very rare",
    "name": "Shield, +1, +2, or +3",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Bonus to attack/damage or AC - check the compendium variants",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
    "identifier": "shield"
   },
   {
@@ -3088,7 +3088,7 @@
    "source": "SRD",
    "category": "verify",
    "priority": 1,
-   "note": "Charges/bonuses for spells - check casting and scaling",
+   "note": "Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling",
    "identifier": "spell-scroll"
   },
   {
@@ -3286,9 +3286,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Stone of Good Luck (Luckstone)",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "+1 bonuses (AC/saves/checks)",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (+1 AC/saves/checks)",
    "identifier": "stone-of-good-luck-luckstone"
   },
   {
@@ -3296,9 +3296,9 @@
    "sub": "Weapon · rare · attunement",
    "name": "Sun Blade",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "note": "Module rule (no Mass Apply; works on the character's own item): +1d8 Radiant vs Undead (compendium lacked it)",
    "identifier": "sun-blade"
   },
   {
@@ -3356,9 +3356,9 @@
    "sub": "Weapon · rare · attunement",
    "name": "Sword of Wounding",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol sample item - check it works",
+   "note": "Module rule (no Mass Apply; works on the character's own item): 2024 version - +2d6 Necrotic, DC 15 CON save or can't regain HP (repeat save end of turn). midi's sample is the 2014 item",
    "identifier": "sword-of-wounding"
   },
   {
@@ -3516,9 +3516,9 @@
    "sub": "Weapon · rare",
    "name": "Vicious Weapon",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)",
    "identifier": "vicious-weapon"
   },
   {
@@ -3586,9 +3586,9 @@
    "sub": "Wand · rare · attunement",
    "name": "Wand of Fireballs",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol sample item - check it works",
+   "note": "CGA item: direct DC 15 Fireball save, +1d6 per extra charge (midi's sample ignored extra charges)",
    "identifier": "wand-of-fireballs"
   },
   {
@@ -3596,9 +3596,9 @@
    "sub": "Wand · rare · attunement",
    "name": "Wand of Lightning Bolts",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Charges/bonuses for spells - check casting and scaling",
+   "note": "CGA item: direct DC 15 Lightning Bolt line save, +1d6 per extra charge",
    "identifier": "wand-of-lightning-bolts"
   },
   {
@@ -3616,9 +3616,9 @@
    "sub": "Wand · uncommon",
    "name": "Wand of Magic Missiles",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Charges/bonuses for spells - check casting and scaling",
+   "note": "CGA item: casts the module's Magic Missile (dnd5e's rolled one dart); level picker = charges",
    "identifier": "wand-of-magic-missiles"
   },
   {
@@ -3678,7 +3678,7 @@
    "source": "SRD",
    "category": "verify",
    "priority": 1,
-   "note": "Charges/bonuses for spells - check casting and scaling",
+   "note": "Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling",
    "identifier": "1-wand-of-the-war-mage"
   },
   {
@@ -3716,9 +3716,9 @@
    "sub": "Weapon · very rare",
    "name": "Weapon, +1, +2, or +3",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Bonus to attack/damage or AC - check the compendium variants",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
    "identifier": "weapon-1-2-or-3"
   },
   {
@@ -4356,9 +4356,9 @@
    "sub": "Mastery property",
    "name": "Mastery: Cleave",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon again...",
+   "note": "Checked in v0.23.0 - Automated Masteries 5e asks (push distance / second target) and applies it",
    "identifier": "mastery-cleave"
   },
   {
@@ -4366,9 +4366,9 @@
    "sub": "Mastery property",
    "name": "Mastery: Graze",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifi...",
+   "note": "Checked in v0.23.0 - Automated Masteries 5e applies it under midi-qol",
    "identifier": "mastery-graze"
   },
   {
@@ -4376,9 +4376,9 @@
    "sub": "Mastery property",
    "name": "Mastery: Nick",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus...",
+   "note": "Checked in v0.23.0 - Automated Masteries 5e shows a reminder (the extra Light attack is bookkeeping)",
    "identifier": "mastery-nick"
   },
   {
@@ -4386,9 +4386,9 @@
    "sub": "Mastery property",
    "name": "Mastery: Push",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Lar...",
+   "note": "Checked in v0.23.0 - Automated Masteries 5e asks (push distance / second target) and applies it",
    "identifier": "mastery-push"
   },
   {
@@ -4396,9 +4396,9 @@
    "sub": "Mastery property",
    "name": "Mastery: Sap",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your ...",
+   "note": "Checked in v0.23.0 - Automated Masteries 5e applies it under midi-qol",
    "identifier": "mastery-sap"
   },
   {
@@ -4406,9 +4406,9 @@
    "sub": "Mastery property",
    "name": "Mastery: Slow",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of you...",
+   "note": "Checked in v0.23.0 - Automated Masteries 5e applies it under midi-qol",
    "identifier": "mastery-slow"
   },
   {
@@ -4416,9 +4416,9 @@
    "sub": "Mastery property",
    "name": "Mastery: Topple",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ab...",
+   "note": "Checked in v0.23.0 - Automated Masteries 5e applies it under midi-qol",
    "identifier": "mastery-topple"
   },
   {
@@ -4426,9 +4426,9 @@
    "sub": "Mastery property",
    "name": "Mastery: Vex",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll agai...",
+   "note": "Checked in v0.23.0 - Automated Masteries 5e applies it under midi-qol",
    "identifier": "mastery-vex"
   },
   {
@@ -4436,9 +4436,9 @@
    "sub": "25 GP",
    "name": "Acid",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Replace an attack: DEX save or 2d6 Acid",
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (DC 8 + DEX + PB, 2d6 Acid)",
    "identifier": "acid"
   },
   {
@@ -4446,9 +4446,9 @@
    "sub": "50 GP",
    "name": "Alchemist’s Fire",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Replace an attack: DEX save or 1d4 Fire and Burning - check Burning applies",
+   "note": "CGA item: applies Burning with 1d4 Fire at the start of each turn (compendium effect had neither)",
    "identifier": "alchemists-fire"
   },
   {
@@ -4506,9 +4506,9 @@
    "sub": "25 GP",
    "name": "Holy Water",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Replace an attack: DEX save or 2d8 Radiant vs Fiends/Undead",
+   "note": "Module rule (no Mass Apply; works on the character's own item): only Fiends and Undead take the 2d8 Radiant (compendium hurt anyone)",
    "identifier": "holy-water"
   },
   {
@@ -4536,9 +4536,9 @@
    "sub": "1 GP",
    "name": "Net",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Replace an attack: DEX save or Restrained (Huge+ immune)",
+   "note": "CGA item: the save now applies Restrained (compendium pointed at a missing effect)",
    "identifier": "net"
   },
   {

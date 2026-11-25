@@ -1,0 +1,1341 @@
+{
+  "_id": "cgaItmPotResist0",
+  "name": "Potion of Resistance",
+  "type": "consumable",
+  "img": "icons/consumables/potions/potion-bottle-labeled-medicine-capped-red-black.webp",
+  "system": {
+    "activities": {
+      "cgaPotResacid000": {
+        "type": "utility",
+        "name": "Drink (Acid)",
+        "_id": "cgaPotResacid000",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "rp68qDxzWquL4KsY"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotRescold000": {
+        "type": "utility",
+        "name": "Drink (Cold)",
+        "_id": "cgaPotRescold000",
+        "sort": 1,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "En6oT73Shu6Alr46"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotResfire000": {
+        "type": "utility",
+        "name": "Drink (Fire)",
+        "_id": "cgaPotResfire000",
+        "sort": 2,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "UI7peFQB9vCGuwpG"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotResforce00": {
+        "type": "utility",
+        "name": "Drink (Force)",
+        "_id": "cgaPotResforce00",
+        "sort": 3,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "CuxyOkR4W9VP8KOM"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotReslightni": {
+        "type": "utility",
+        "name": "Drink (Lightning)",
+        "_id": "cgaPotReslightni",
+        "sort": 4,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "ZPdhGzt0bhaZyVd2"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotResnecroti": {
+        "type": "utility",
+        "name": "Drink (Necrotic)",
+        "_id": "cgaPotResnecroti",
+        "sort": 5,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "29M8rjINOWKcHek6"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotRespoison0": {
+        "type": "utility",
+        "name": "Drink (Poison)",
+        "_id": "cgaPotRespoison0",
+        "sort": 6,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "VAndQR2Hu88gg4NF"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotRespsychic": {
+        "type": "utility",
+        "name": "Drink (Psychic)",
+        "_id": "cgaPotRespsychic",
+        "sort": 7,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "4YWphFJwC5ojd6Ib"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotResradiant": {
+        "type": "utility",
+        "name": "Drink (Radiant)",
+        "_id": "cgaPotResradiant",
+        "sort": 8,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "SH3poodOtfaaAiv8"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      },
+      "cgaPotResthunder": {
+        "type": "utility",
+        "name": "Drink (Thunder)",
+        "_id": "cgaPotResthunder",
+        "sort": 9,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "hSarjVpqNwhqKOB1"
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "rp68qDxzWquL4KsY",
+          "En6oT73Shu6Alr46",
+          "UI7peFQB9vCGuwpG",
+          "CuxyOkR4W9VP8KOM",
+          "ZPdhGzt0bhaZyVd2",
+          "29M8rjINOWKcHek6",
+          "VAndQR2Hu88gg4NF",
+          "4YWphFJwC5ojd6Ib",
+          "SH3poodOtfaaAiv8",
+          "hSarjVpqNwhqKOB1"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "autoDestroy": true,
+      "max": "1"
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you drink it you have Resistance to one damage type for 1 hour - pick the <strong>Drink</strong> activity for the potion's type.</p>",
+      "chat": ""
+    },
+    "identifier": "potion-of-resistance",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [
+    {
+      "name": "Potion of Acid Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/acid.svg",
+      "_id": "rp68qDxzWquL4KsY",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "e5X5mDR1kBQ8cdSh"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Cold Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/cold.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "TkRdqx844azAnESI"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "En6oT73Shu6Alr46",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Fire Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/fire.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "8pmQmBYVfRIMHS4D"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "UI7peFQB9vCGuwpG",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Force Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/force.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "force",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "gLbq6Z6ECqrchjjI"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "CuxyOkR4W9VP8KOM",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Lightning Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/lightning.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "xEE14EKIqEd2h5SW"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "ZPdhGzt0bhaZyVd2",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Necrotic Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/necrotic.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "fAgpBHcsIHpM5qnk"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "29M8rjINOWKcHek6",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Poison Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/poison.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "1OuA9BRBRjOPgHjy"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "VAndQR2Hu88gg4NF",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Psychic Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/psychic.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "YdhbDKlNLf8ifpEu"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "4YWphFJwC5ojd6Ib",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Radiant Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/radiant.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "BVEjmedBWJVD7L8W"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "SH3poodOtfaaAiv8",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Potion of Thunder Resistance",
+      "img": "systems/dnd5e/icons/svg/damage/thunder.svg",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "zp6CV3rkhQ16cg4j"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "hSarjVpqNwhqKOB1",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: One Drink activity per damage type; the compendium's single activity applied all ten resistances under midi-qol."
+      }
+    }
+  }
+}

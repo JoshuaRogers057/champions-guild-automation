@@ -1,0 +1,455 @@
+{
+  "_id": "cgaItmDaggerVnm0",
+  "name": "Dagger of Venom",
+  "type": "weapon",
+  "img": "icons/weapons/daggers/dagger-double-skull-pink.webp",
+  "system": {
+    "activities": {
+      "E5j2Kwh11vsVIUTq": {
+        "_id": "E5j2Kwh11vsVIUTq",
+        "type": "attack",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {},
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {}
+        },
+        "damage": {
+          "critical": {},
+          "includeBase": true,
+          "parts": []
+        },
+        "otherActivityId": "none"
+      },
+      "mvBETzTSBwNrYq2T": {
+        "type": "enchant",
+        "_id": "mvBETzTSBwNrYq2T",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": false,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "f0WvHHwmTfdkF3OP",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [
+                "VHStJ3hZGwHAHcUQ"
+              ],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "override": true,
+          "units": "touch",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "object",
+            "special": "The Dagger of Venom"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "identifier": "",
+          "self": true
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [
+            "simpleM"
+          ],
+          "properties": [
+            "fin",
+            "lgt",
+            "mgc",
+            "thr"
+          ],
+          "type": "weapon"
+        },
+        "name": "Coat Blade with Poison",
+        "img": "",
+        "appliedEffects": [
+          "f0WvHHwmTfdkF3OP"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true
+        }
+      },
+      "VHStJ3hZGwHAHcUQ": {
+        "type": "save",
+        "name": "Poison Save",
+        "_id": "VHStJ3hZGwHAHcUQ",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "zM8Qfv5u9OCNUrhE",
+            "onSave": false,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "value": "20",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "poison"
+              ]
+            }
+          ],
+          "onSave": "none"
+        },
+        "save": {
+          "ability": "con",
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          }
+        },
+        "img": "",
+        "appliedEffects": [
+          "zM8Qfv5u9OCNUrhE"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": false
+        },
+        "midiProperties": {
+          "otherActivityCompatible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> +1 dagger. Bonus Action (<strong>Coat Blade with Poison</strong>, once per dawn): the poison lasts 1 minute or until the dagger hits; the creature hit makes a DC 15 CON save or takes 2d10 Poison damage and has the Poisoned condition for 1 minute. The save is rolled automatically on the next hit while the blade is coated.</p>",
+      "chat": ""
+    },
+    "identifier": "dagger-of-venom",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "simpleM",
+      "baseItem": "dagger"
+    },
+    "ammunition": {},
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 4,
+        "types": [
+          "piercing"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      }
+    },
+    "magicalBonus": 1,
+    "properties": [
+      "fin",
+      "lgt",
+      "mgc",
+      "thr"
+    ],
+    "proficient": null,
+    "range": {
+      "value": 20,
+      "long": 60,
+      "reach": null,
+      "units": "ft"
+    },
+    "mastery": "nick"
+  },
+  "effects": [
+    {
+      "name": "Poisoned",
+      "img": "systems/dnd5e/icons/svg/statuses/poisoned.svg",
+      "origin": "Compendium.dnd5e.equipment24.Item.dmgDaggerOfVenom",
+      "transfer": false,
+      "_id": "zM8Qfv5u9OCNUrhE",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>The creature has the &amp;Reference[Poisoned apply=false] condition for 1 minute.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "poisoned"
+      ],
+      "sort": 0,
+      "flags": {},
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    },
+    {
+      "type": "enchantment",
+      "name": "Poison Coat",
+      "img": "icons/skills/toxins/symbol-poison-drop-skull-green.webp",
+      "disabled": true,
+      "_id": "f0WvHHwmTfdkF3OP",
+      "system": {
+        "changes": [
+          {
+            "key": "img",
+            "value": "icons/skills/melee/blade-tip-acid-poison-green.webp",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "C6vv1wMqYQ65fHDQ"
+          },
+          {
+            "key": "activities[attack].description.chatFlavor",
+            "value": "{}  On Hit: Use <em>Poison Save</em> activity.",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "C81KGTSnVHq6EcKI"
+          }
+        ]
+      },
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: The Poison Save no longer runs on every hit: the module rolls it on the first hit while the blade is coated, then the coat is used up."
+      }
+    }
+  }
+}

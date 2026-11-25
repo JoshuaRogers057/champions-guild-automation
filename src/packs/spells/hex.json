@@ -12,7 +12,7 @@
       "revision": 1
     },
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> <strong>Place Curse</strong>: pick the ability the target has Disadvantage on. Every attack roll that hits the cursed creature adds 1d6 Necrotic. If the target drops to 0 HP, use <strong>Curse New Creature</strong> (no slot) to move the curse; you keep concentrating.</p>",
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Cast Hex</strong> (spends a spell slot and starts a new casting): pick the ability the target has Disadvantage on. Every attack roll that hits the cursed creature adds 1d6 Necrotic. If the target drops to 0 HP, use <strong>Move Hex</strong> (no spell slot) to move the curse to a new creature; you keep concentrating.</p>",
       "chat": ""
     },
     "level": 1,
@@ -209,7 +209,7 @@
           "name": "",
           "formula": ""
         },
-        "name": "Place Curse",
+        "name": "Cast Hex",
         "img": "",
         "appliedEffects": [
           "ljMTBKPVmEnLPX1b",
@@ -293,7 +293,7 @@
           "name": "",
           "formula": ""
         },
-        "name": "Curse New Creature",
+        "name": "Move Hex",
         "_id": "E3f3Y8ULb3t5mBQu",
         "img": "",
         "appliedEffects": [
@@ -334,8 +334,8 @@
     },
     "cat": {
       "automation": {
-        "version": "1.1.0",
-        "notes": "Champions Guild Automation: +1d6 necrotic on attack hits vs the cursed creature; Curse New Creature moves the curse and keeps concentration."
+        "version": "1.2.0",
+        "notes": "Champions Guild Automation: +1d6 necrotic on attack hits vs the cursed creature; Cast Hex spends the slot; Move Hex moves the curse (no slot) and keeps concentration."
       }
     }
   },

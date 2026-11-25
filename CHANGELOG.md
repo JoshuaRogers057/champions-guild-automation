@@ -3,6 +3,49 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.23.0
+
+Priority-1 magic items and equipment (2024 Dungeon Master's Guide and Player's Handbook), plus a Hex label change.
+Most weapon and reaction riders are **module rules**: they find the item on the character by its identifier or name,
+so they work on the character's own D&D Beyond or compendium item, whatever base weapon it is, with no Mass Apply.
+New fixed items are in the new **CGA: Items & Equipment** compendium. DMs: update, then run **Mass Apply / Update**
+for those (it resets an item's uses, so re-count Necklace beads and wand charges afterwards).
+
+- **Hex** (1.2.0): the activities are now **Cast Hex** (spends a spell slot, starts a new casting) and **Move Hex**
+  (moves the curse to a new creature, no slot).
+- New module rules:
+  - **Holy Avenger**: +2d10 Radiant against Fiends and Undead, plus a 10-ft aura (30 ft at Paladin 17) giving you
+    and allies Advantage on saves against spells and magical effects while it's equipped.
+  - **Defender**: on the first attack each turn, asks how much of the +3 moves to AC until your next turn.
+  - **Luck Blade**: once per Long Rest, offers a reroll of a failed attack roll or save.
+  - **Gloves of Missile Snaring**: Reaction to reduce ranged or thrown weapon damage by 1d10 + DEX.
+  - **Ring of Evasion**: Reaction and a charge to turn a failed DEX save into a success.
+  - **Sun Blade**: +1d8 Radiant against Undead.
+  - **Sword of Wounding** (2024): +2d6 Necrotic, then a DC 15 CON save or the target can't regain HP, with a repeat
+    save at the end of each of its turns.
+  - **Holy Water**: only hurts Fiends and Undead.
+  - **Mantle of Spell Resistance**: Advantage on saves against spells.
+  - **Adamantine Armor**: crits against you become normal hits.
+  - **Bracers of Defense**: their +2 AC switches off in armor or with a Shield.
+  - **Boots of Speed**: Opportunity Attacks against you have Disadvantage while the boots are active.
+  - **Dagger of Venom**: a coated blade rolls its Poison Save on the next hit.
+- New items:
+  - **Necklace of Fireballs** (1.0.0): DC 15 Fireball, +1d6 per extra bead up to 5 beads.
+  - **Wand of Fireballs** and **Wand of Lightning Bolts** (1.0.0): DC 15 saves, +1d6 per extra charge.
+  - **Wand of Magic Missiles** (1.0.0): casts the module's Magic Missile, one more dart per extra charge.
+  - **Potion of Heroism** (1.0.0): now also applies Bless.
+  - **Potion of Resistance** (1.0.0): one Drink activity per damage type.
+  - **Alchemist's Fire** (1.0.0): Burning, 1d4 Fire each turn.
+  - **Net** (1.0.0): now applies Restrained.
+  - **Dagger of Venom** (1.0.0): no longer poisons on every hit.
+  - **Javelin of Lightning** (1.0.0): no Lightning Bolt pop-up after every attack; adds a separate Lightning attack.
+- Checked and working as they ship:
+  - **Protection items**: Cloak and Ring of Protection, Luckstone.
+  - **Ability-score items**: Amulet of Health, the Belts, Gauntlets of Ogre Power, Headband of Intellect.
+  - **Potions**: Healing, Invisibility, Invulnerability, Giant Strength, Speed.
+  - **Weapons**: the +1/+2/+3 items, Flame Tongue, Frost Brand, Vicious Weapon, Acid, Mace of Disruption.
+  - **Weapon masteries**: all eight, via Automated Masteries 5e.
+
 ## 0.22.0
 
 Checked the remaining class features that come from dnd5e's compendium or midi-qol's sample items (93 of them).

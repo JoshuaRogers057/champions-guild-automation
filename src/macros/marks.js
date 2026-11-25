@@ -4,7 +4,7 @@
 //    midi calls it for every damage roll the caster makes; it adds the die when an attack roll hit a creature carrying
 //    this caster's mark (cast from the spell or a scroll of it).
 // 2. Moving the mark - item onUse [preItemRoll] + [postActiveEffects] on the activity whose
-//    midiProperties.identifier is "mark-move" ("Move Mark" / "Curse New Creature"):
+//    midiProperties.identifier is "mark-move" ("Move Mark" / "Move Hex"):
 //    - preItemRoll: needs concentration on the spell; if a marked creature is still above 0 HP, asks first (the spell
 //      only lets you move the mark once the target drops to 0 HP). Refusing costs nothing.
 //    - postActiveEffects: removes this caster's old mark from every other creature. The new mark joins the existing
