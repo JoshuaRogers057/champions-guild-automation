@@ -1,0 +1,54 @@
+{
+  "name": "Maneuver: Trip Attack",
+  "type": "feat",
+  "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "maneuver-trip-attack",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Battle Master 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfmaneuver032",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: After a hit: add the die to damage; a Large or smaller target makes a STR save or falls Prone.",
+        "aliases": [
+          "trip-attack"
+        ]
+      }
+    }
+  }
+}

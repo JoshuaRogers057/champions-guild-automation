@@ -7,9 +7,9 @@
    "level": 1,
    "name": "Rage",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Rage effect: B/P/S Resistance, +Rage Damage on STR attacks (scales), Advantage on STR checks/saves, no concentration/spells; 1-round duration extended by attacking/forcing a save/Bonus Action; uses 2-6 (SR regains one)",
+   "note": "Rage effect, Rage Damage on STR attacks, ends Concentration; ends at the end of a turn you didn't attack/force a save/extend (module rule)",
    "identifier": "rage"
   },
   {
@@ -51,9 +51,9 @@
    "level": 2,
    "name": "Reckless Attack",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Prompt on first attack of the turn: Advantage on STR attacks until your next turn, attacks against you have Advantage (compendium effect is empty)",
+   "note": "Prompt before the first STR attack of your turn; Advantage for you and against you until your next turn",
    "identifier": "reckless-attack"
   },
   {
@@ -227,9 +227,9 @@
    "level": 3,
    "name": "Frenzy",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "While raging + Reckless: first STR hit each turn adds Rage-Damage-bonus d6s",
+   "note": "Automatic Rage-Damage-count d6s on the first STR hit each turn while raging and reckless",
    "identifier": "frenzy"
   },
   {
@@ -370,9 +370,9 @@
    "level": 3,
    "name": "Divine Fury",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "First hit each turn while raging: +1d6 + half Barbarian level Necrotic or Radiant",
+   "note": "First weapon/unarmed hit each turn while raging: +1d6 + half level, Necrotic or Radiant prompt",
    "identifier": "divine-fury"
   },
   {
@@ -425,9 +425,9 @@
    "level": 1,
    "name": "Bardic Inspiration",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Inspired creature gets a prompt to add the die after failing a D20 Test (midi optional flag); die scales d6-d12; uses = CHA mod",
+   "note": "Inspire gives the target an optional-bonus effect (prompt after a failed attack/save or on a check)",
    "identifier": "bardic-inspiration"
   },
   {
@@ -656,9 +656,9 @@
    "level": 3,
    "name": "Cutting Words",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Reaction: subtract Bardic die from an enemy's attack, check or damage roll (prompt)",
+   "note": "Reaction prompt when an enemy's attack within 60 ft would hit; subtract the Bardic die (damage/check uses manual)",
    "identifier": "cutting-words"
   },
   {
@@ -799,9 +799,9 @@
    "level": 7,
    "name": "Blessed Strikes",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Divine Strike (+1d8 Necrotic/Radiant once per turn on weapon hit) or Potent Spellcasting (+WIS to cantrip damage)",
+   "note": "Divine Strike (once per turn prompt for the type) and Potent Spellcasting (+WIS to Cleric cantrips) items",
    "identifier": "blessed-strikes"
   },
   {
@@ -854,9 +854,9 @@
    "level": 3,
    "name": "Disciple of Life",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Slot healing spells add 2 + slot level (automatic)",
+   "note": "Slot healing spells add 2 + slot level automatically",
    "identifier": "disciple-of-life"
   },
   {
@@ -1041,9 +1041,9 @@
    "level": 3,
    "name": "War Priest",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Bonus Action weapon attack, WIS-mod uses per SR",
+   "note": "Bonus Action attack activity (pick the weapon), WIS-mod uses per Short Rest",
    "identifier": "war-priest"
   },
   {
@@ -1162,9 +1162,9 @@
    "level": 7,
    "name": "Elemental Fury",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Potent Spellcasting (+WIS to cantrip damage) or Primal Strike (+1d8 elemental once per turn)",
+   "note": "Primal Strike (once per turn prompt for the type) and Potent Spellcasting (+WIS to Druid cantrips) items",
    "identifier": "elemental-fury"
   },
   {
@@ -1602,9 +1602,9 @@
    "level": 3,
    "name": "Combat Superiority",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Superiority dice pool (4-6, d8-d12, SR) used by the maneuvers",
+   "note": "Superiority Dice; maneuver prompt after hits; Precision/Parry module rules; Riposte reaction",
    "identifier": "combat-superiority"
   },
   {
@@ -1712,9 +1712,9 @@
    "level": null,
    "name": "Disarming Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+die damage, STR save drop item",
+   "note": "In the maneuver prompt (STR save; dropping the item is manual)",
    "identifier": "disarming-attack"
   },
   {
@@ -1723,9 +1723,9 @@
    "level": null,
    "name": "Distracting Strike",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+die damage, next attack vs target has Advantage",
+   "note": "In the maneuver prompt",
    "identifier": "distracting-strike"
   },
   {
@@ -1756,9 +1756,9 @@
    "level": null,
    "name": "Goading Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+die damage, WIS save or Disadvantage vs others",
+   "note": "In the maneuver prompt (WIS save)",
    "identifier": "goading-attack"
   },
   {
@@ -1789,9 +1789,9 @@
    "level": null,
    "name": "Menacing Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+die damage, WIS save or Frightened",
+   "note": "In the maneuver prompt (WIS save, Frightened)",
    "identifier": "menacing-attack"
   },
   {
@@ -1800,9 +1800,9 @@
    "level": null,
    "name": "Parry",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Reaction reduce melee damage by die + STR/DEX",
+   "note": "Reaction prompt when a melee attack damages you (module rule)",
    "identifier": "parry"
   },
   {
@@ -1811,9 +1811,9 @@
    "level": null,
    "name": "Precision Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+die to a missed attack roll (prompt)",
+   "note": "Prompt when your attack would miss by no more than the die (module rule)",
    "identifier": "precision-attack"
   },
   {
@@ -1822,9 +1822,9 @@
    "level": null,
    "name": "Pushing Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+die damage, STR save or push 15 ft",
+   "note": "In the maneuver prompt (STR save, push 15 ft)",
    "identifier": "pushing-attack"
   },
   {
@@ -1844,9 +1844,9 @@
    "level": null,
    "name": "Riposte",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Reaction attack when missed, + die damage",
+   "note": "Reaction when missed in melee: attack with your melee weapon + die damage",
    "identifier": "riposte"
   },
   {
@@ -1877,9 +1877,9 @@
    "level": null,
    "name": "Trip Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+die damage, STR save or Prone",
+   "note": "In the maneuver prompt (STR save, Prone)",
    "identifier": "trip-attack"
   },
   {
@@ -2020,9 +2020,9 @@
    "level": 3,
    "name": "Psionic Power",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Psionic Energy dice pool; Protective Field reaction (reduce damage), Psionic Strike (+die + INT force), Telekinetic Movement",
+   "note": "Psionic Energy Dice; Psionic Strike prompt; Protective Field reaction (module rule); Telekinetic Movement activity",
    "identifier": "psionic-power"
   },
   {
@@ -2075,9 +2075,9 @@
    "level": 1,
    "name": "Martial Arts",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Martial Arts die on Unarmed/Monk weapons (scales d6-d12), DEX for attacks, Bonus Action Unarmed Strike; check compendium enchant works",
+   "note": "Martial Arts die on Unarmed/Monk weapons; Finesse + better of STR/DEX added to them by the module",
    "identifier": "martial-arts"
   },
   {
@@ -2097,9 +2097,9 @@
    "level": 2,
    "name": "Monk’s Focus",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Focus Points (= level, SR): Flurry of Blows, Patient Defense (Disengage/Dodge), Step of the Wind - check compendium activities and point use",
+   "note": "Flurry of Blows makes the Unarmed Strikes; Focus = Monk level",
    "identifier": "monks-focus"
   },
   {
@@ -2130,9 +2130,9 @@
    "level": 3,
    "name": "Deflect Attacks",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Reaction when hit by B/P/S attack: reduce 1d10 + DEX + level; at 0 spend Focus to redirect (DEX save, 2 MA dice)",
+   "note": "Reaction prompt when hit (module rule), Redirect save + damage when reduced to 0",
    "identifier": "deflect-attacks"
   },
   {
@@ -2185,9 +2185,9 @@
    "level": 5,
    "name": "Stunning Strike",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Once per turn on Monk weapon/Unarmed hit: prompt to spend Focus, CON save or Stunned (success: half Speed + Advantage)",
+   "note": "Prompt after Monk weapon/unarmed hits (once per turn, 1 Focus); Stunned or Slowed + Off Balance",
    "identifier": "stunning-strike"
   },
   {
@@ -2207,9 +2207,9 @@
    "level": 7,
    "name": "Evasion",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "No damage on successful DEX half save, half on fail (midi superSaver/semiSuperSaver)",
+   "note": "superSaver/semiSuperSaver on DEX (not while Incapacitated)",
    "identifier": "evasion"
   },
   {
@@ -2317,9 +2317,9 @@
    "level": 3,
    "name": "Hand of Harm",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Once per turn on Unarmed hit spend Focus: +MA die + WIS Necrotic",
+   "note": "Prompt after unarmed hits (1 Focus): +MA die + WIS Necrotic; Poisoned from level 6",
    "identifier": "hand-of-harm"
   },
   {
@@ -2328,9 +2328,9 @@
    "level": 3,
    "name": "Hand of Healing",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Focus: heal MA die + WIS; free in Flurry",
+   "note": "Heal activity: MA die + WIS, 1 Focus",
    "identifier": "hand-of-healing"
   },
   {
@@ -2482,9 +2482,9 @@
    "level": 3,
    "name": "Open Hand Technique",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "On Flurry hit prompt Addle / Push (STR save 15 ft) / Topple (DEX save Prone) - compendium has activities to wire",
+   "note": "Prompt after Flurry hits: Addle / Push / Topple",
    "identifier": "open-hand-technique"
   },
   {
@@ -2636,9 +2636,9 @@
    "level": 6,
    "name": "Aura of Protection",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "10-ft aura (30 ft at 18): you and allies add CHA mod to saves; off while Incapacitated; only one paladin aura",
+   "note": "+CHA to saves for you and allies in 10/30 ft, kept up to date as tokens move (module rule)",
    "identifier": "aura-of-protection"
   },
   {
@@ -3175,9 +3175,9 @@
    "level": 3,
    "name": "Dreadful Strikes",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Weapon hit: +1d4 (1d6 at 11) Psychic once per turn per target",
+   "note": "Automatic +1d4/1d6 Psychic once per turn per target",
    "identifier": "dreadful-strikes"
   },
   {
@@ -3241,9 +3241,9 @@
    "level": 3,
    "name": "Dread Ambusher",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+WIS to Initiative, +10 ft first turn, Dreadful Strike +2d6 Psychic (WIS-mod per LR, once per turn)",
+   "note": "+WIS Initiative; Dreadful Strike prompt (WIS-mod uses per Long Rest)",
    "identifier": "dread-ambusher"
   },
   {
@@ -3318,9 +3318,9 @@
    "level": 3,
    "name": "Hunter’s Prey",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Colossus Slayer (+1d8 once per turn vs damaged target) or Horde Breaker (extra attack); swap on rest",
+   "note": "Choose Option activity; Colossus Slayer automatic, Horde Breaker manual",
    "identifier": "hunters-prey"
   },
   {
@@ -3373,9 +3373,9 @@
    "level": 1,
    "name": "Sneak Attack",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol ships Auto Sneak Attack; verify it with 2024 rules (Advantage or ally within 5 ft, Finesse/Ranged, once per turn)",
+   "note": "CGA's own Sneak Attack (2024 rules: Advantage or ally within 5 ft, Finesse/Ranged, once per turn) - replaces midi's",
    "identifier": "sneak-attack"
   },
   {
@@ -3450,9 +3450,9 @@
    "level": 5,
    "name": "Cunning Strike",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Forgo Sneak Attack dice for Poison/Trip/Withdraw (choice when Sneak Attack lands)",
+   "note": "Choice in the Sneak Attack prompt (Poison/Trip/Withdraw; Daze/Obscure/Knock Out at 14); saves run automatically",
    "identifier": "cunning-strike"
   },
   {
@@ -3472,9 +3472,9 @@
    "level": 7,
    "name": "Evasion",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "No damage on successful DEX half save, half on fail",
+   "note": "superSaver/semiSuperSaver on DEX (not while Incapacitated)",
    "identifier": "evasion"
   },
   {
@@ -3615,9 +3615,9 @@
    "level": 3,
    "name": "Assassinate",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Advantage on Initiative; first round Advantage vs creatures that haven't acted and +Rogue level damage on Sneak Attack",
+   "note": "Advantage on Initiative; first-round Advantage vs creatures that haven't acted, +Rogue level on Sneak Attack",
    "identifier": "assassinate"
   },
   {
@@ -3681,9 +3681,9 @@
    "level": 3,
    "name": "Psychic Blades",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Psychic Blade weapon (1d6 psychic, finesse, thrown 60/120, Vex) and 1d4 bonus blade",
+   "note": "Psychic Blade (melee/thrown) and Bonus Blade attack activities (count for Sneak Attack)",
    "identifier": "psychic-blades"
   },
   {
@@ -4649,9 +4649,9 @@
    "level": 3,
    "name": "Steps of the Fey",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Free Misty Steps (CHA-mod) + Refreshing Step temp HP / Taunting Step WIS save",
+   "note": "Free Misty Step uses with Refreshing/Taunting (+ Disappearing/Dreadful at 6); move the token yourself",
    "identifier": "steps-of-the-fey"
   },
   {
@@ -4704,9 +4704,9 @@
    "level": 3,
    "name": "Healing Light",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Pool of d6s (1 + level), Bonus Action heal up to CHA-mod dice",
+   "note": "Heal activity spending d6s from the pool",
    "identifier": "healing-light"
   },
   {
@@ -4748,9 +4748,9 @@
    "level": 3,
    "name": "Dark One’s Blessing",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Temp HP = CHA + level when you (or someone near you) drop an enemy to 0 (automatic)",
+   "note": "Automatic temp HP when an enemy drops to 0 by you or within 10 ft (module rule)",
    "identifier": "dark-ones-blessing"
   },
   {
@@ -5056,9 +5056,9 @@
    "level": 3,
    "name": "Portent",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Two (three at 14) d20s rolled on LR; replace a D20 Test before rolling",
+   "note": "Long Rest foretelling rolls (module rule); Use Portent sets the targeted creature's next d20",
    "identifier": "portent"
   },
   {

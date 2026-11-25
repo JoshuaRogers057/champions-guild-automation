@@ -40,8 +40,12 @@ if (!pick || pick === "no") return done();
 chain.leapsLeft -= 1;
 const next = fromUuidSync(pick);
 next?.object?.setTarget?.(true, { releaseOthers: true });
+// Leaps use the hidden "(leap)" copy of this damage type's activity: same attack, but no 90-ft limit from the caster
+// (the new target only has to be within 30 ft of the creature the orb leaps from).
+const leapActivity = activity.midiProperties?.identifier?.startsWith("orb-leap") ? activity
+  : spell.system.activities.find((a) => a.midiProperties?.identifier === `orb-leap-${activity.id}`) ?? activity;
 try {
-  await MidiQOL.completeActivityUse(activity, {
+  await MidiQOL.completeActivityUse(leapActivity, {
     midiOptions: { targetUuids: [pick], workflowOptions: { targetConfirmation: "none", cgaOrbChain: chainId } },
     spell: { slot: level > 0 ? `spell${level}` : undefined }, consume: { spellSlot: false, resources: false }, concentration: { begin: false, end: null },
     create: { measuredTemplate: false }

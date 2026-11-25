@@ -3,6 +3,35 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.18.0
+
+The first class features: 40 priority-1 class and subclass features from the 2024 Player's Handbook, plus a
+Chromatic Orb fix. DMs: update, then run **Mass Apply / Update** on each character. Aura of Protection, Deflect
+Attacks, Parry, Protective Field, Precision Attack, Cutting Words, Dark One's Blessing, Portent's Long Rest roll,
+Rage upkeep and the Martial Arts Finesse property are module rules, so they work as soon as the module updates.
+
+- Barbarian: **Rage** (resistance, STR advantage, Rage Damage on Strength attacks, ends Concentration, ends at the
+  end of a turn you didn't attack, force a save or use Extend Rage; not from level 15), **Reckless Attack** prompt,
+  **Frenzy**, **Divine Fury**.
+- Bard: **Bardic Inspiration** (the inspired creature is asked to add the die after a failed attack or save, or on a
+  check), **Cutting Words** (Reaction prompt when an enemy's attack within 60 ft would hit).
+- Cleric: **Divine Strike** and **Potent Spellcasting**, **Disciple of Life**, **War Priest**.
+  Druid: **Primal Strike** and **Potent Spellcasting**.
+- Fighter: **Combat Superiority** with the maneuver prompt after hits (Distracting Strike, Goading, Menacing,
+  Pushing, Trip, Disarming), **Precision Attack**, **Parry**, **Riposte**; Psi Warrior **Psionic Power** (Psionic
+  Strike, Protective Field, Telekinetic Movement).
+- Monk: **Martial Arts** (die, Finesse and the better of STR/DEX on Monk weapons and the Unarmed Strike),
+  **Monk's Focus** (Flurry of Blows makes the strikes), **Deflect Attacks** (with Redirect), **Stunning Strike**,
+  **Evasion**, Mercy's **Hand of Harm** and **Hand of Healing**, **Open Hand Technique**.
+- Paladin: **Aura of Protection** for you and allies in range, updated as tokens move.
+- Ranger: **Dreadful Strikes**, **Dread Ambusher**, **Hunter's Prey** (Colossus Slayer automatic).
+- Rogue: our own **Sneak Attack** (2024 rules) with **Cunning Strike** choices, **Evasion**, **Assassinate**,
+  **Psychic Blades**.
+- Warlock: **Steps of the Fey**, **Healing Light**, **Dark One's Blessing**. Wizard: **Portent** (rolled on every Long
+  Rest; Use Portent sets the targeted creature's next d20).
+- Fixed: **Chromatic Orb** (1.0.1) - once the orb leaps it no longer needs to be within 90 ft of you, only within
+  30 ft of the creature it leaps from.
+
 ## 0.17.0
 
 - New module setting **Saving throw cards** (Configure Settings -> Champions Guild Automation), default

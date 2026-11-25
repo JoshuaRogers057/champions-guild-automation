@@ -1,0 +1,54 @@
+{
+  "name": "Maneuver: Parry",
+  "type": "feat",
+  "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "maneuver-parry",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Battle Master 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfmaneuver035",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: When a melee attack damages you, you're offered your Reaction and a die to reduce the damage by the die + your STR or DEX modifier.",
+        "aliases": [
+          "parry"
+        ]
+      }
+    }
+  }
+}

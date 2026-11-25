@@ -4,11 +4,11 @@
 #   category: done | midi (midi-qol ships a CAT automation - verify it) | verify (compendium version looks right, test it) |
 #             build (needs automation work) | skip (choices/proficiencies/spells the sheet handles, or manual/roleplay)
 #   priority: 1 = core, used in most fights; 2 = regular; 3 = high level or rare
-Barbarian||1|Rage|SRD|build|1|Rage effect: B/P/S Resistance, +Rage Damage on STR attacks (scales), Advantage on STR checks/saves, no concentration/spells; 1-round duration extended by attacking/forcing a save/Bonus Action; uses 2-6 (SR regains one)
+Barbarian||1|Rage|SRD|done|1|Rage effect, Rage Damage on STR attacks, ends Concentration; ends at the end of a turn you didn't attack/force a save/extend (module rule)
 Barbarian||1|Unarmored Defense|SRD|verify|1|Compendium AC calc unarmoredBarb
 Barbarian||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
 Barbarian||2|Danger Sense|SRD|verify|1|Compendium: Advantage on DEX saves (should drop while Incapacitated)
-Barbarian||2|Reckless Attack|SRD|build|1|Prompt on first attack of the turn: Advantage on STR attacks until your next turn, attacks against you have Advantage (compendium effect is empty)
+Barbarian||2|Reckless Attack|SRD|done|1|Prompt before the first STR attack of your turn; Advantage for you and against you until your next turn
 Barbarian||3|Barbarian Subclass|PHB|skip|3|Sheet/advancement or manual
 Barbarian||3|Primal Knowledge|SRD|skip|3|Sheet/advancement or manual
 Barbarian||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
@@ -24,7 +24,7 @@ Barbarian||17|Improved Brutal Strike|SRD|build|3|Staggering Blow / Sundering Blo
 Barbarian||18|Indomitable Might|SRD|build|3|STR checks/saves use your STR score if the roll is lower
 Barbarian||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Barbarian||20|Primal Champion|SRD|skip|3|+4 STR/CON from advancement
-Barbarian|Path of the Berserker|3|Frenzy|SRD|build|1|While raging + Reckless: first STR hit each turn adds Rage-Damage-bonus d6s
+Barbarian|Path of the Berserker|3|Frenzy|SRD|done|1|Automatic Rage-Damage-count d6s on the first STR hit each turn while raging and reckless
 Barbarian|Path of the Berserker|6|Mindless Rage|SRD|build|2|Charmed/Frightened immunity only while raging (compendium grants it always)
 Barbarian|Path of the Berserker|10|Retaliation|SRD|build|2|Reaction melee attack when damaged by a creature within 5 ft (prompt)
 Barbarian|Path of the Berserker|14|Intimidating Presence|SRD|verify|3|Compendium WIS save + Frightened with repeat save; recharge by spending Rage
@@ -37,12 +37,12 @@ Barbarian|Path of the World Tree|3|Vitality of the Tree|PHB|build|2|Temp HP = Ba
 Barbarian|Path of the World Tree|6|Branches of the Tree|PHB|build|2|Reaction: creature starting turn within 30 ft makes STR save or is teleported next to you (Speed 0)
 Barbarian|Path of the World Tree|10|Battering Roots|PHB|skip|3|+10 ft reach and extra Push/Topple mastery - manual
 Barbarian|Path of the World Tree|14|Travel along the Tree|PHB|build|3|Teleport 60 ft on Rage / Bonus Action; once per Rage 150 ft with allies
-Barbarian|Path of the Zealot|3|Divine Fury|PHB|build|1|First hit each turn while raging: +1d6 + half Barbarian level Necrotic or Radiant
+Barbarian|Path of the Zealot|3|Divine Fury|PHB|done|1|First weapon/unarmed hit each turn while raging: +1d6 + half level, Necrotic or Radiant prompt
 Barbarian|Path of the Zealot|3|Warrior of the Gods|PHB|build|2|Pool of d12s (4-7), Bonus Action spend to heal
 Barbarian|Path of the Zealot|6|Fanatical Focus|PHB|build|2|Once per Rage reroll a failed save with +Rage bonus (prompt)
 Barbarian|Path of the Zealot|10|Zealous Presence|PHB|build|2|Up to ten creatures within 60 ft: Advantage on attacks and saves until your next turn; recharge via Rage
 Barbarian|Path of the Zealot|14|Rage of the Gods|PHB|build|3|Divine warrior form: fly, Necrotic/Psychic/Radiant resistance, Revivification reaction
-Bard||1|Bardic Inspiration|SRD|build|1|Inspired creature gets a prompt to add the die after failing a D20 Test (midi optional flag); die scales d6-d12; uses = CHA mod
+Bard||1|Bardic Inspiration|SRD|done|1|Inspire gives the target an optional-bonus effect (prompt after a failed attack/save or on a check)
 Bard||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Bard||2|Expertise|SRD|skip|3|Sheet/advancement or manual
 Bard||2|Jack of All Trades|SRD|verify|1|Compendium flag
@@ -63,7 +63,7 @@ Bard|College of Glamour|3|Mantle of Inspiration|PHB|build|2|Spend Inspiration: u
 Bard|College of Glamour|6|Mantle of Majesty|PHB|build|3|Free Command as Bonus Action each turn for 1 min (concentration)
 Bard|College of Glamour|14|Unbreakable Majesty|PHB|build|3|First hit on you each turn: attacker CHA save or it misses
 Bard|College of Lore|3|Bonus Proficiencies|SRD|skip|3|Sheet/advancement or manual
-Bard|College of Lore|3|Cutting Words|SRD|build|1|Reaction: subtract Bardic die from an enemy's attack, check or damage roll (prompt)
+Bard|College of Lore|3|Cutting Words|SRD|done|1|Reaction prompt when an enemy's attack within 60 ft would hit; subtract the Bardic die (damage/check uses manual)
 Bard|College of Lore|6|Magical Discoveries|SRD|skip|3|Sheet/advancement or manual
 Bard|College of Lore|14|Peerless Skill|SRD|build|3|Add Bardic die to your failed check/attack; not spent on a failure
 Bard|College of Valor|3|Combat Inspiration|PHB|build|2|Inspired creature can add the die to AC when hit or to damage after hitting
@@ -76,12 +76,12 @@ Cleric||2|Channel Divinity|SRD|verify|1|Compendium Divine Spark (heal/save) and 
 Cleric||3|Cleric Subclass|PHB|skip|3|Sheet/advancement or manual
 Cleric||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Cleric||5|Sear Undead|SRD|build|2|Turn Undead also deals WIS-mod d8 Radiant to Undead that fail
-Cleric||7|Blessed Strikes|SRD|build|1|Divine Strike (+1d8 Necrotic/Radiant once per turn on weapon hit) or Potent Spellcasting (+WIS to cantrip damage)
+Cleric||7|Blessed Strikes|SRD|done|1|Divine Strike (once per turn prompt for the type) and Potent Spellcasting (+WIS to Cleric cantrips) items
 Cleric||10|Divine Intervention|SRD|skip|3|Cast any level 5- Cleric spell free - manual
 Cleric||14|Improved Blessed Strikes|SRD|build|3|Divine Strike 2d8 / Potent Spellcasting temp HP
 Cleric||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Cleric||20|Greater Divine Intervention|SRD|skip|3|Wish - manual
-Cleric|Life Domain|3|Disciple of Life|SRD|build|1|Slot healing spells add 2 + slot level (automatic)
+Cleric|Life Domain|3|Disciple of Life|SRD|done|1|Slot healing spells add 2 + slot level automatically
 Cleric|Life Domain|3|Life Domain Spells|SRD|skip|3|Sheet/advancement or manual
 Cleric|Life Domain|3|Preserve Life|SRD|midi|2|
 Cleric|Life Domain|6|Blessed Healer|SRD|midi|2|
@@ -98,7 +98,7 @@ Cleric|Trickery Domain|6|Trickster’s Transposition|PHB|build|3|Swap places wit
 Cleric|Trickery Domain|17|Improved Duplicity|PHB|build|3|Allies get Advantage near the illusion; heal on end
 Cleric|War Domain|3|Guided Strike|PHB|build|2|Channel Divinity: +10 to a missed attack (yours or a nearby creature's)
 Cleric|War Domain|3|War Domain Spells|PHB|skip|3|Sheet/advancement or manual
-Cleric|War Domain|3|War Priest|PHB|build|1|Bonus Action weapon attack, WIS-mod uses per SR
+Cleric|War Domain|3|War Priest|PHB|done|1|Bonus Action attack activity (pick the weapon), WIS-mod uses per Short Rest
 Cleric|War Domain|6|War God’s Blessing|PHB|build|3|Channel Divinity cast of Shield of Faith/Spiritual Weapon without concentration
 Cleric|War Domain|17|Avatar of Battle|PHB|build|3|B/P/S Resistance
 Druid||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
@@ -109,7 +109,7 @@ Druid||2|Wild Companion|SRD|verify|2|Compendium summon via slot or Wild Shape (F
 Druid||3|Druid Subclass|PHB|skip|3|Sheet/advancement or manual
 Druid||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Druid||5|Wild Resurgence|SRD|verify|2|Compendium slot <-> Wild Shape conversions
-Druid||7|Elemental Fury|SRD|build|1|Potent Spellcasting (+WIS to cantrip damage) or Primal Strike (+1d8 elemental once per turn)
+Druid||7|Elemental Fury|SRD|done|1|Primal Strike (once per turn prompt for the type) and Potent Spellcasting (+WIS to Druid cantrips) items
 Druid||15|Improved Elemental Fury|SRD|build|3|Primal Strike 2d8 / cantrip range +300 ft
 Druid||18|Beast Spells|SRD|skip|3|Sheet/advancement or manual
 Druid||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
@@ -149,7 +149,7 @@ Fighter||11|Two Extra Attacks|SRD|skip|3|Sheet/advancement or manual
 Fighter||13|Studied Attacks|SRD|build|3|After a miss, Advantage on next attack vs that creature
 Fighter||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Fighter||20|Three Extra Attacks|SRD|skip|3|Sheet/advancement or manual
-Fighter|Battle Master|3|Combat Superiority|PHB|build|1|Superiority dice pool (4-6, d8-d12, SR) used by the maneuvers
+Fighter|Battle Master|3|Combat Superiority|PHB|done|1|Superiority Dice; maneuver prompt after hits; Precision/Parry module rules; Riposte reaction
 Fighter|Battle Master|3|Student of War|PHB|skip|3|Sheet/advancement or manual
 Fighter|Battle Master|7|Know Your Enemy|PHB|skip|3|DM tells resistances - manual
 Fighter|Battle Master|10|Improved Combat Superiority|PHB|build|2|d10 dice (scale)
@@ -159,22 +159,22 @@ Fighter|Maneuver||Ambush|PHB|build|2|+die to Stealth or Initiative
 Fighter|Maneuver||Bait and Switch|PHB|build|3|Swap places + AC bonus - manual move
 Fighter|Maneuver||Commander’s Strike|PHB|build|2|Ally reaction attack + die damage
 Fighter|Maneuver||Commanding Presence|PHB|build|3|+die to CHA checks
-Fighter|Maneuver||Disarming Attack|PHB|build|2|+die damage, STR save drop item
-Fighter|Maneuver||Distracting Strike|PHB|build|1|+die damage, next attack vs target has Advantage
+Fighter|Maneuver||Disarming Attack|PHB|done|2|In the maneuver prompt (STR save; dropping the item is manual)
+Fighter|Maneuver||Distracting Strike|PHB|done|1|In the maneuver prompt
 Fighter|Maneuver||Evasive Footwork|PHB|build|2|Bonus Action Disengage + die AC
 Fighter|Maneuver||Feinting Attack|PHB|build|2|Bonus Action: Advantage on next attack + die damage
-Fighter|Maneuver||Goading Attack|PHB|build|1|+die damage, WIS save or Disadvantage vs others
+Fighter|Maneuver||Goading Attack|PHB|done|1|In the maneuver prompt (WIS save)
 Fighter|Maneuver||Lunging Attack|PHB|build|2|Bonus Action Dash + die damage after moving 5 ft
 Fighter|Maneuver||Maneuvering Attack|PHB|build|2|+die damage, ally moves half speed
-Fighter|Maneuver||Menacing Attack|PHB|build|1|+die damage, WIS save or Frightened
-Fighter|Maneuver||Parry|PHB|build|1|Reaction reduce melee damage by die + STR/DEX
-Fighter|Maneuver||Precision Attack|PHB|build|1|+die to a missed attack roll (prompt)
-Fighter|Maneuver||Pushing Attack|PHB|build|1|+die damage, STR save or push 15 ft
+Fighter|Maneuver||Menacing Attack|PHB|done|1|In the maneuver prompt (WIS save, Frightened)
+Fighter|Maneuver||Parry|PHB|done|1|Reaction prompt when a melee attack damages you (module rule)
+Fighter|Maneuver||Precision Attack|PHB|done|1|Prompt when your attack would miss by no more than the die (module rule)
+Fighter|Maneuver||Pushing Attack|PHB|done|1|In the maneuver prompt (STR save, push 15 ft)
 Fighter|Maneuver||Rally|PHB|build|2|Ally temp HP = die + half Fighter level
-Fighter|Maneuver||Riposte|PHB|build|1|Reaction attack when missed, + die damage
+Fighter|Maneuver||Riposte|PHB|done|1|Reaction when missed in melee: attack with your melee weapon + die damage
 Fighter|Maneuver||Sweeping Attack|PHB|build|2|Die damage to a second creature
 Fighter|Maneuver||Tactical Assessment|PHB|build|3|+die to History/Investigation/Insight
-Fighter|Maneuver||Trip Attack|PHB|build|1|+die damage, STR save or Prone
+Fighter|Maneuver||Trip Attack|PHB|done|1|In the maneuver prompt (STR save, Prone)
 Fighter|Champion|3|Improved Critical|SRD|verify|1|Compendium crit 19 (should include Unarmed Strike)
 Fighter|Champion|3|Remarkable Athlete|SRD|verify|2|Compendium flag; post-crit move is manual
 Fighter|Champion|7|Additional Fighting Style|SRD|skip|3|Sheet/advancement or manual
@@ -187,24 +187,24 @@ Fighter|Eldritch Knight|7|War Magic|PHB|skip|2|Cantrip in place of an attack - m
 Fighter|Eldritch Knight|10|Eldritch Strike|PHB|build|2|Weapon hit: Disadvantage on the target's next save vs your spell
 Fighter|Eldritch Knight|15|Arcane Charge|PHB|skip|3|Teleport on Action Surge - manual
 Fighter|Eldritch Knight|18|Improved War Magic|PHB|skip|3|Manual
-Fighter|Psi Warrior|3|Psionic Power|PHB|build|1|Psionic Energy dice pool; Protective Field reaction (reduce damage), Psionic Strike (+die + INT force), Telekinetic Movement
+Fighter|Psi Warrior|3|Psionic Power|PHB|done|1|Psionic Energy Dice; Psionic Strike prompt; Protective Field reaction (module rule); Telekinetic Movement activity
 Fighter|Psi Warrior|7|Telekinetic Adept|PHB|build|2|Psi-Powered Leap fly; Telekinetic Thrust STR save Prone/move 10 ft
 Fighter|Psi Warrior|10|Guarded Mind|PHB|build|3|Psychic Resistance; end Charmed/Frightened with a die
 Fighter|Psi Warrior|15|Bulwark of Force|PHB|build|3|Half Cover for INT-mod creatures 1 min
 Fighter|Psi Warrior|18|Telekinetic Master|PHB|build|3|Free Telekinesis + Bonus Action attack while concentrating
-Monk||1|Martial Arts|SRD|build|1|Martial Arts die on Unarmed/Monk weapons (scales d6-d12), DEX for attacks, Bonus Action Unarmed Strike; check compendium enchant works
+Monk||1|Martial Arts|SRD|done|1|Martial Arts die on Unarmed/Monk weapons; Finesse + better of STR/DEX added to them by the module
 Monk||1|Unarmored Defense|SRD|verify|1|Compendium AC calc unarmoredMonk
-Monk||2|Monk’s Focus|SRD|build|1|Focus Points (= level, SR): Flurry of Blows, Patient Defense (Disengage/Dodge), Step of the Wind - check compendium activities and point use
+Monk||2|Monk’s Focus|SRD|done|1|Flurry of Blows makes the Unarmed Strikes; Focus = Monk level
 Monk||2|Unarmored Movement|SRD|verify|1|Compendium scale (should be off in armor/shield)
 Monk||2|Uncanny Metabolism|SRD|verify|2|Compendium heal; should also restore Focus on Initiative
-Monk||3|Deflect Attacks|SRD|build|1|Reaction when hit by B/P/S attack: reduce 1d10 + DEX + level; at 0 spend Focus to redirect (DEX save, 2 MA dice)
+Monk||3|Deflect Attacks|SRD|done|1|Reaction prompt when hit (module rule), Redirect save + damage when reduced to 0
 Monk||3|Monk Subclass|PHB|skip|3|Sheet/advancement or manual
 Monk||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Monk||4|Slow Fall|SRD|verify|3|Compendium reduce fall damage
 Monk||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
-Monk||5|Stunning Strike|SRD|build|1|Once per turn on Monk weapon/Unarmed hit: prompt to spend Focus, CON save or Stunned (success: half Speed + Advantage)
+Monk||5|Stunning Strike|SRD|done|1|Prompt after Monk weapon/unarmed hits (once per turn, 1 Focus); Stunned or Slowed + Off Balance
 Monk||6|Empowered Strikes|SRD|build|2|Unarmed damage can be Force (choice)
-Monk||7|Evasion|SRD|build|1|No damage on successful DEX half save, half on fail (midi superSaver/semiSuperSaver)
+Monk||7|Evasion|SRD|done|1|superSaver/semiSuperSaver on DEX (not while Incapacitated)
 Monk||9|Acrobatic Movement|SRD|skip|3|Sheet/advancement or manual
 Monk||10|Heightened Focus|SRD|build|2|Flurry 3 strikes, Patient Defense temp HP, Step of the Wind carry
 Monk||10|Self-Restoration|PHB|skip|3|End Charmed/Frightened/Poisoned at end of turn - manual
@@ -214,8 +214,8 @@ Monk||15|Perfect Focus|SRD|build|3|On Initiative regain Focus up to 4
 Monk||18|Superior Defense|SRD|verify|3|Compendium resistance effect (3 Focus)
 Monk||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Monk||20|Body and Mind|SRD|skip|3|+4 DEX/WIS from advancement
-Monk|Warrior of Mercy|3|Hand of Harm|PHB|build|1|Once per turn on Unarmed hit spend Focus: +MA die + WIS Necrotic
-Monk|Warrior of Mercy|3|Hand of Healing|PHB|build|1|Focus: heal MA die + WIS; free in Flurry
+Monk|Warrior of Mercy|3|Hand of Harm|PHB|done|1|Prompt after unarmed hits (1 Focus): +MA die + WIS Necrotic; Poisoned from level 6
+Monk|Warrior of Mercy|3|Hand of Healing|PHB|done|1|Heal activity: MA die + WIS, 1 Focus
 Monk|Warrior of Mercy|3|Implements of Mercy|PHB|skip|3|Sheet/advancement or manual
 Monk|Warrior of Mercy|6|Physician’s Touch|PHB|build|2|Hand of Harm Poisons; Hand of Healing ends conditions
 Monk|Warrior of Mercy|11|Flurry of Healing and Harm|PHB|build|3|Free uses in Flurry (WIS-mod per LR)
@@ -229,7 +229,7 @@ Monk|Warrior of the Elements|3|Manipulate Elements|PHB|skip|3|Sheet/advancement 
 Monk|Warrior of the Elements|6|Elemental Burst|PHB|build|2|2 Focus: 20-ft sphere DEX save 3 MA dice of chosen type
 Monk|Warrior of the Elements|11|Stride of the Elements|PHB|build|3|Fly/swim while attuned
 Monk|Warrior of the Elements|17|Elemental Epitome|PHB|build|3|Resistance choice, Destructive Stride, extra MA die once per turn
-Monk|Warrior of the Open Hand|3|Open Hand Technique|SRD|build|1|On Flurry hit prompt Addle / Push (STR save 15 ft) / Topple (DEX save Prone) - compendium has activities to wire
+Monk|Warrior of the Open Hand|3|Open Hand Technique|SRD|done|1|Prompt after Flurry hits: Addle / Push / Topple
 Monk|Warrior of the Open Hand|6|Wholeness of Body|SRD|verify|2|Compendium heal
 Monk|Warrior of the Open Hand|11|Fleet Step|SRD|skip|3|Manual
 Monk|Warrior of the Open Hand|17|Quivering Palm|SRD|verify|3|Compendium instill/end vibrations
@@ -243,7 +243,7 @@ Paladin||3|Paladin Subclass|PHB|skip|3|Sheet/advancement or manual
 Paladin||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Paladin||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
 Paladin||5|Faithful Steed|SRD|verify|2|Find Steed free cast - check summon
-Paladin||6|Aura of Protection|SRD|build|1|10-ft aura (30 ft at 18): you and allies add CHA mod to saves; off while Incapacitated; only one paladin aura
+Paladin||6|Aura of Protection|SRD|done|1|+CHA to saves for you and allies in 10/30 ft, kept up to date as tokens move (module rule)
 Paladin||9|Abjure Foes|SRD|verify|2|Compendium WIS save Frightened (ends on damage)
 Paladin||10|Aura of Courage|SRD|build|2|Allies in your aura are immune to Frightened
 Paladin||11|Radiant Strikes|SRD|midi|1|
@@ -292,34 +292,34 @@ Ranger|Beast Master|3|Primal Companion|PHB|build|1|Summon Beast of the Land/Sea/
 Ranger|Beast Master|7|Exceptional Training|PHB|build|2|Beast Bonus Action Dash/Disengage/Dodge/Help; Force damage option
 Ranger|Beast Master|11|Bestial Fury|PHB|build|3|Beast's Strike twice; extra Force vs Hunter's Mark target
 Ranger|Beast Master|15|Share Spells|PHB|skip|3|Manual
-Ranger|Fey Wanderer|3|Dreadful Strikes|PHB|build|1|Weapon hit: +1d4 (1d6 at 11) Psychic once per turn per target
+Ranger|Fey Wanderer|3|Dreadful Strikes|PHB|done|1|Automatic +1d4/1d6 Psychic once per turn per target
 Ranger|Fey Wanderer|3|Fey Wanderer Spells|PHB|skip|3|Sheet/advancement or manual
 Ranger|Fey Wanderer|3|Otherworldly Glamour|PHB|build|2|+WIS to CHA checks (min +1)
 Ranger|Fey Wanderer|7|Beguiling Twist|PHB|build|3|Advantage vs Charmed/Frightened; reaction to charm/frighten another
 Ranger|Fey Wanderer|11|Fey Reinforcements|PHB|skip|3|Free Summon Fey without concentration - manual
 Ranger|Fey Wanderer|15|Misty Wanderer|PHB|build|3|Free Misty Step uses + bring a creature
-Ranger|Gloom Stalker|3|Dread Ambusher|PHB|build|1|+WIS to Initiative, +10 ft first turn, Dreadful Strike +2d6 Psychic (WIS-mod per LR, once per turn)
+Ranger|Gloom Stalker|3|Dread Ambusher|PHB|done|1|+WIS Initiative; Dreadful Strike prompt (WIS-mod uses per Long Rest)
 Ranger|Gloom Stalker|3|Gloom Stalker Spells|PHB|skip|3|Sheet/advancement or manual
 Ranger|Gloom Stalker|3|Umbral Sight|PHB|build|2|Darkvision 60 (+60); invisible to darkvision in darkness
 Ranger|Gloom Stalker|7|Iron Mind|PHB|skip|3|Sheet/advancement or manual
 Ranger|Gloom Stalker|11|Stalker’s Flurry|PHB|build|3|Dreadful Strike 2d8 + Sudden Strike / Mass Fear
 Ranger|Gloom Stalker|15|Shadowy Dodge|PHB|build|3|Reaction Disadvantage on an attack + teleport 30 ft
 Ranger|Hunter|3|Hunter’s Lore|SRD|skip|3|DM tells resistances - manual
-Ranger|Hunter|3|Hunter’s Prey|SRD|build|1|Colossus Slayer (+1d8 once per turn vs damaged target) or Horde Breaker (extra attack); swap on rest
+Ranger|Hunter|3|Hunter’s Prey|SRD|done|1|Choose Option activity; Colossus Slayer automatic, Horde Breaker manual
 Ranger|Hunter|7|Defensive Tactics|SRD|build|2|Escape the Horde (OA Disadvantage) or Multiattack Defense (Disadvantage on further attacks this turn)
 Ranger|Hunter|11|Superior Hunter’s Prey|SRD|build|3|Hunter's Mark damage also hits a second creature within 30 ft once per turn
 Ranger|Hunter|15|Superior Hunter’s Defense|SRD|verify|3|Compendium reaction resistance by type
 Rogue||1|Expertise|SRD|skip|3|Sheet/advancement or manual
-Rogue||1|Sneak Attack|SRD|midi|1|midi-qol ships Auto Sneak Attack; verify it with 2024 rules (Advantage or ally within 5 ft, Finesse/Ranged, once per turn)
+Rogue||1|Sneak Attack|SRD|done|1|CGA's own Sneak Attack (2024 rules: Advantage or ally within 5 ft, Finesse/Ranged, once per turn) - replaces midi's
 Rogue||1|Thieves’ Cant|SRD|skip|3|Sheet/advancement or manual
 Rogue||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
 Rogue||2|Cunning Action|SRD|verify|1|Compendium Dash/Disengage/Hide
 Rogue||3|Rogue Subclass|PHB|skip|3|Sheet/advancement or manual
 Rogue||3|Steady Aim|SRD|build|2|Advantage on next attack this turn, Speed 0 (compendium utility only)
 Rogue||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Rogue||5|Cunning Strike|SRD|build|1|Forgo Sneak Attack dice for Poison/Trip/Withdraw (choice when Sneak Attack lands)
+Rogue||5|Cunning Strike|SRD|done|1|Choice in the Sneak Attack prompt (Poison/Trip/Withdraw; Daze/Obscure/Knock Out at 14); saves run automatically
 Rogue||5|Uncanny Dodge|SRD|midi|1|
-Rogue||7|Evasion|SRD|build|1|No damage on successful DEX half save, half on fail
+Rogue||7|Evasion|SRD|done|1|superSaver/semiSuperSaver on DEX (not while Incapacitated)
 Rogue||7|Reliable Talent|SRD|verify|2|Compendium flag
 Rogue||11|Improved Cunning Strike|SRD|build|3|Two Cunning Strike effects
 Rogue||14|Devious Strikes|SRD|build|3|Daze / Knock Out / Obscure Cunning Strike options
@@ -332,13 +332,13 @@ Rogue|Arcane Trickster|3|Mage Hand Legerdemain|PHB|skip|3|Sheet/advancement or m
 Rogue|Arcane Trickster|9|Magical Ambush|PHB|build|3|Invisible caster: target has Disadvantage on saves vs your spell this turn
 Rogue|Arcane Trickster|13|Versatile Trickster|PHB|skip|3|Manual
 Rogue|Arcane Trickster|17|Spell Thief|PHB|skip|3|Manual
-Rogue|Assassin|3|Assassinate|PHB|build|1|Advantage on Initiative; first round Advantage vs creatures that haven't acted and +Rogue level damage on Sneak Attack
+Rogue|Assassin|3|Assassinate|PHB|done|1|Advantage on Initiative; first-round Advantage vs creatures that haven't acted, +Rogue level on Sneak Attack
 Rogue|Assassin|3|Assassin’s Tools|PHB|skip|3|Sheet/advancement or manual
 Rogue|Assassin|9|Infiltration Expertise|PHB|skip|3|Sheet/advancement or manual
 Rogue|Assassin|13|Envenom Weapons|PHB|build|3|Poison Cunning Strike also deals 2d6 Poison ignoring resistance
 Rogue|Assassin|17|Death Strike|PHB|build|3|First-round Sneak Attack: CON save or damage doubled
 Rogue|Soulknife|3|Psionic Power|PHB|build|2|Psionic Energy dice; Psi-Bolstered Knack on failed checks; Psychic Whispers
-Rogue|Soulknife|3|Psychic Blades|PHB|build|1|Psychic Blade weapon (1d6 psychic, finesse, thrown 60/120, Vex) and 1d4 bonus blade
+Rogue|Soulknife|3|Psychic Blades|PHB|done|1|Psychic Blade (melee/thrown) and Bonus Blade attack activities (count for Sneak Attack)
 Rogue|Soulknife|9|Soul Blades|PHB|build|2|Homing Strikes (+die to missed blade attack), Psychic Teleportation
 Rogue|Soulknife|13|Psychic Veil|PHB|build|3|Invisible 1 hour, ends on damage/save
 Rogue|Soulknife|17|Rend Mind|PHB|build|3|Sneak Attack with blades: WIS save or Stunned
@@ -426,16 +426,16 @@ Warlock|Eldritch Invocation||Visions of Distant Realms|SRD|verify|3|Compendium
 Warlock|Eldritch Invocation||Whispers of the Grave|SRD|verify|3|Compendium
 Warlock|Eldritch Invocation||Witch Sight|SRD|verify|3|Compendium truesight 30
 Warlock|Archfey Patron|3|Archfey Spells|PHB|skip|3|Sheet/advancement or manual
-Warlock|Archfey Patron|3|Steps of the Fey|PHB|build|1|Free Misty Steps (CHA-mod) + Refreshing Step temp HP / Taunting Step WIS save
+Warlock|Archfey Patron|3|Steps of the Fey|PHB|done|1|Free Misty Step uses with Refreshing/Taunting (+ Disappearing/Dreadful at 6); move the token yourself
 Warlock|Archfey Patron|6|Misty Escape|PHB|build|2|Misty Step reaction on damage; Disappearing/Dreadful Step options
 Warlock|Archfey Patron|10|Beguiling Defenses|PHB|build|3|Charm immunity; reaction halve damage + WIS save psychic reflect
 Warlock|Archfey Patron|14|Bewitching Magic|PHB|skip|3|Free Misty Step after an enchantment/illusion spell - manual
 Warlock|Celestial Patron|3|Celestial Spells|PHB|skip|3|Sheet/advancement or manual
-Warlock|Celestial Patron|3|Healing Light|PHB|build|1|Pool of d6s (1 + level), Bonus Action heal up to CHA-mod dice
+Warlock|Celestial Patron|3|Healing Light|PHB|done|1|Heal activity spending d6s from the pool
 Warlock|Celestial Patron|6|Radiant Soul|PHB|build|2|Radiant Resistance; +CHA to one radiant/fire spell damage once per turn
 Warlock|Celestial Patron|10|Celestial Resilience|PHB|build|3|Temp HP on rests/Magical Cunning for you and five allies
 Warlock|Celestial Patron|14|Searing Vengeance|PHB|build|3|Death save replacement: heal half, radiant burst + Blinded
-Warlock|Fiend Patron|3|Dark One’s Blessing|SRD|build|1|Temp HP = CHA + level when you (or someone near you) drop an enemy to 0 (automatic)
+Warlock|Fiend Patron|3|Dark One’s Blessing|SRD|done|1|Automatic temp HP when an enemy drops to 0 by you or within 10 ft (module rule)
 Warlock|Fiend Patron|3|Fiend Spells|SRD|skip|3|Sheet/advancement or manual
 Warlock|Fiend Patron|6|Dark One’s Own Luck|SRD|build|2|Add 1d10 to a check/save after seeing it (prompt), CHA-mod uses
 Warlock|Fiend Patron|10|Fiendish Resilience|SRD|verify|3|Compendium resistance choice
@@ -463,7 +463,7 @@ Wizard|Abjurer|6|Projected Ward|PHB|build|2|Reaction: the ward absorbs damage fo
 Wizard|Abjurer|10|Spell Breaker|PHB|skip|3|Sheet/advancement or manual
 Wizard|Abjurer|14|Spell Resistance|PHB|build|3|Advantage on saves vs spells, resistance to spell damage
 Wizard|Diviner|3|Divination Savant|PHB|skip|3|Sheet/advancement or manual
-Wizard|Diviner|3|Portent|PHB|build|1|Two (three at 14) d20s rolled on LR; replace a D20 Test before rolling
+Wizard|Diviner|3|Portent|PHB|done|1|Long Rest foretelling rolls (module rule); Use Portent sets the targeted creature's next d20
 Wizard|Diviner|6|Expert Divination|PHB|build|2|Regain a lower slot after a level 2+ Divination spell
 Wizard|Diviner|10|The Third Eye|PHB|build|3|Darkvision 120 / read languages / See Invisibility
 Wizard|Diviner|14|Greater Portent|PHB|build|3|Three portent dice

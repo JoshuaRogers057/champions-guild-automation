@@ -1,0 +1,54 @@
+{
+  "name": "Maneuver: Distracting Strike",
+  "type": "feat",
+  "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "maneuver-distracting-strike",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Battle Master 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfmaneuver028",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: After a hit: add the Superiority Die to damage; the next attack against the target by someone else before your next turn has Advantage.",
+        "aliases": [
+          "distracting-strike"
+        ]
+      }
+    }
+  }
+}

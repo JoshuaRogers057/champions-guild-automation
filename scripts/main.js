@@ -158,8 +158,8 @@ Hooks.on("updateActor", async (actor, changes) => {
 //   flags.champions-guild-automation.wardingBond = true            Warding Bond: the caster (the effect's origin)
 //                                                                   takes the same damage
 const resistanceUsed = new Map(); // actor uuid -> combat turn key
-const turnKey = () => (game.combat?.started ? `${game.combat.id}:${game.combat.round}:${game.combat.turn}` : `t${Math.floor(Date.now() / 6000)}`);
-function reduceDamage(ditem, amount, types) {
+export const turnKey = () => (game.combat?.started ? `${game.combat.id}:${game.combat.round}:${game.combat.turn}` : `t${Math.floor(Date.now() / 6000)}`);
+export function reduceDamage(ditem, amount, types) {
   let left = amount;
   for (const d of ditem.damageDetail ?? []) {
     if (left <= 0) break;
@@ -185,7 +185,7 @@ function reduceDamage(ditem, amount, types) {
 }
 const effectsWith = (actor, flag) => Array.from(actor?.effects ?? []).filter((e) => !e.disabled && !e.isSuppressed
   && (e.system?.changes ?? e.changes ?? []).some((c) => c.key === `flags.${MODULE_ID}.${flag}`));
-const hasFeat = (actor, identifier) => !!actor?.items?.some((i) => i.system?.identifier === identifier);
+export const hasFeat = (actor, identifier) => !!actor?.items?.some((i) => i.system?.identifier === identifier);
 const wearingHeavyArmor = (actor) => actor.items.some((i) => i.type === "equipment" && i.system.equipped && i.system.type?.value === "heavy");
 // Boon of the Night Spirit: Resistance to everything but Psychic and Radiant while in Dim Light or Darkness.
 function inBrightLight(tokenDoc) {
@@ -402,7 +402,7 @@ const SUMMON_AURAS = {
   "faithful-hound": { actorItem: "bite", range: 5, triggers: ["casterTurnStart"], enemiesOnly: true, maxTargets: 1 }
 };
 const auraUsed = new Set();
-function edgeDistance(a, b, scene) {
+export function edgeDistance(a, b, scene) {
   // Distance between two token footprints in feet (grid squares, diagonals count as 5 ft), from top-left positions.
   const g = scene.grid.size, d = scene.grid.distance;
   const ca = { x: a.x + (a.width * g) / 2, y: a.y + (a.height * g) / 2 }, cb = { x: b.x + (b.width * g) / 2, y: b.y + (b.height * g) / 2 };
@@ -591,7 +591,7 @@ async function askYesNoHere(title, html, seconds = 30) {
   });
 }
 // Ask the player who controls `actor` (or the GM when no owner is online). Resolves false on no answer.
-async function askOwner(actor, title, html) {
+export async function askOwner(actor, title, html) {
   const user = responsibleUser(actor);
   if (!user) return false;
   if (user.isSelf) return askYesNoHere(title, html);
@@ -603,7 +603,7 @@ async function askOwner(actor, title, html) {
 //    that attack and on attacks against the target until the start of your next turn.
 //  - Interception: when a creature hits a target within 5 ft of you and you hold a Shield or a weapon, Reaction: reduce
 //    the damage by 1d10 + your Proficiency Bonus.
-const holdsShield = (a) => a.items.some((i) => i.type === "equipment" && i.system.equipped && i.system.type?.value === "shield");
+export const holdsShield = (a) => a.items.some((i) => i.type === "equipment" && i.system.equipped && i.system.type?.value === "shield");
 const holdsWeapon = (a) => a.items.some((i) => i.type === "weapon" && i.system.equipped && ["simpleM", "simpleR", "martialM", "martialR"].includes(i.system.type?.value)
   && i.system.identifier !== "unarmed-strike");
 function guardians(targetDoc, attacker, identifier, canUse) {
@@ -658,7 +658,7 @@ async function swapInitiativeAsGM(combatId, aId, bId) {
   }
   return true;
 }
-const isIncapacitated = (actor) => !!actor?.statuses?.has("incapacitated") || ["paralyzed", "petrified", "stunned", "unconscious"].some((s) => actor?.statuses?.has(s));
+export const isIncapacitated = (actor) => !!actor?.statuses?.has("incapacitated") || ["paralyzed", "petrified", "stunned", "unconscious"].some((s) => actor?.statuses?.has(s));
 const sideOf = (c) => (c.token?.disposition === CONST.TOKEN_DISPOSITIONS.HOSTILE ? -1 : c.token?.disposition === CONST.TOKEN_DISPOSITIONS.FRIENDLY ? 1 : 0);
 export async function alertSwap(combatant, { auto = false } = {}) {
   const combat = combatant?.parent;
@@ -689,7 +689,7 @@ export async function alertSwap(combatant, { auto = false } = {}) {
     content: `<p><strong>Alert:</strong> ${esc(combatant.name)} swaps Initiative with ${esc(other.name)}: ${esc(combatant.name)} is now on <strong>${theirs}</strong>, ${esc(other.name)} on <strong>${mine}</strong>.</p>` });
 }
 const alertAsked = new Set();
-function responsibleUser(actor) {
+export function responsibleUser(actor) {
   return game.users.find((u) => u.active && !u.isGM && actor?.testUserPermission(u, "OWNER")) ?? game.users.activeGM;
 }
 Hooks.on("updateCombatant", (combatant, changes, options) => {
