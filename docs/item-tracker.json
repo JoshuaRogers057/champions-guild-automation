@@ -1,0 +1,4825 @@
+{
+ "updated": "2026-11-25",
+ "items": [
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · uncommon",
+   "name": "Adamantine Armor",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Defensive effect - check conditions (unarmored, crits, Advantage vs spells)",
+   "identifier": "adamantine-armor"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon",
+   "name": "Adamantine Weapon",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "adamantine-weapon"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Alchemy Jug",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "alchemy-jug"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare",
+   "name": "Ammunition, +1, +2, or +3",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Bonus to attack/damage or AC - check the compendium variants",
+   "identifier": "ammunition-1-2-or-3"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare",
+   "name": "Ammunition of Slaying",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Chosen creature type takes damage: CON save, 6d10 Force (half on success)",
+   "identifier": "ammunition-of-slaying"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Amulet of Health",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Sets an ability score - check it doesn't lower a higher score",
+   "identifier": "amulet-of-health"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Amulet of Proof against Detection and Location",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "amulet-of-proof-against-detection-and-location"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Amulet of the Planes",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "amulet-of-the-planes"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare · attunement",
+   "name": "Animated Shield",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "animated-shield"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Apparatus of Kwalish",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "apparatus-of-kwalish"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare",
+   "name": "Armor, +1, +2, or +3",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Bonus to attack/damage or AC - check the compendium variants",
+   "identifier": "armor-1-2-or-3"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · common",
+   "name": "Armor of Gleaming",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "armor-of-gleaming"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · legendary · attunement",
+   "name": "Armor of Invulnerability",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "armor-of-invulnerability"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · rare · attunement",
+   "name": "Armor of Resistance",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Resistance to the chosen type",
+   "identifier": "armor-of-resistance"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · rare · attunement",
+   "name": "Armor of Vulnerability",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "armor-of-vulnerability"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · rare · attunement",
+   "name": "Arrow-Catching Shield",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+2 AC vs ranged attacks; Reaction to become the target of a ranged attack on a creature within 5 ft",
+   "identifier": "arrow-catching-shield"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Weapon · artifact · attunement",
+   "name": "Axe of the Dwarvish Lords",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "axe-of-the-dwarvish-lords"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Baba Yaga’s Dancing Broom",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "baba-yagas-dancing-broom"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Bag of Beans",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "bag-of-beans"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Bag of Devouring",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "bag-of-devouring"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Bag of Holding",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "bag-of-holding"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Bag of Tricks",
+   "source": "DMG",
+   "category": "build",
+   "priority": 3,
+   "note": "Random creature summons by bag colour",
+   "identifier": "bag-of-tricks"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Bead of Force",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "bead-of-force"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Bead of Nourishment",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "bead-of-nourishment"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Bead of Refreshment",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "bead-of-refreshment"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Belt of Dwarvenkind",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "belt-of-dwarvenkind"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · varies · attunement",
+   "name": "Belt of Giant Strength",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Sets an ability score - check it doesn't lower a higher score",
+   "identifier": "belt-of-giant-strength"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare · attunement",
+   "name": "Berserker Axe",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "+1, +1 HP per level; curse: Disadvantage with other weapons, WIS save to go berserk when damaged",
+   "identifier": "berserker-axe"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Weapon · artifact · attunement",
+   "name": "Blackrazor",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "blackrazor"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Wondrous Item · artifact · attunement",
+   "name": "Book of Exalted Deeds",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "book-of-exalted-deeds"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Wondrous Item · artifact · attunement",
+   "name": "Book of Vile Darkness",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "book-of-vile-darkness"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Boots of Elvenkind",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "boots-of-elvenkind"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common · attunement",
+   "name": "Boots of False Tracks",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "boots-of-false-tracks"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Boots of Levitation",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "boots-of-levitation"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Boots of Speed",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Defensive effect - check conditions (unarmored, crits, Advantage vs spells)",
+   "identifier": "boots-of-speed"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Boots of Striding and Springing",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "boots-of-striding-and-springing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Boots of the Winterlands",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "boots-of-the-winterlands"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Bowl of Commanding Water Elementals",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "bowl-of-commanding-water-elementals"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Bracers of Archery",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "bracers-of-archery"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Bracers of Defense",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Defensive effect - check conditions (unarmored, crits, Advantage vs spells)",
+   "identifier": "bracers-of-defense"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Brazier of Commanding Fire Elementals",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "brazier-of-commanding-fire-elementals"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Brooch of Shielding",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "brooch-of-shielding"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Broom of Flying",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "broom-of-flying"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Candle of Invocation",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Lit: Advantage on D20 Tests in its light; free level 1 spells for Clerics/Druids",
+   "identifier": "candle-of-invocation"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Candle of the Deep",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "candle-of-the-deep"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Cape of the Mountebank",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "cape-of-the-mountebank"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Cap of Water Breathing",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "cap-of-water-breathing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Carpet of Flying",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "carpet-of-flying"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · common",
+   "name": "Cast-Off Armor",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "cast-off-armor"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Cauldron of Rebirth",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "cauldron-of-rebirth"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Censer of Controlling Air Elementals",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "censer-of-controlling-air-elementals"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common · attunement",
+   "name": "Charlatan’s Die",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "charlatans-die"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Chime of Opening",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "chime-of-opening"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Circlet of Blasting",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "circlet-of-blasting"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Cloak of Arachnida",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "cloak-of-arachnida"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Cloak of Billowing",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "cloak-of-billowing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Cloak of Displacement",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "cloak-of-displacement"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Cloak of Elvenkind",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "cloak-of-elvenkind"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Cloak of Invisibility",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "cloak-of-invisibility"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Cloak of Many Fashions",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "cloak-of-many-fashions"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Cloak of Protection",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "+1 bonuses (AC/saves/checks)",
+   "identifier": "cloak-of-protection"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Cloak of the Bat",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "cloak-of-the-bat"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Cloak of the Manta Ray",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "cloak-of-the-manta-ray"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Clockwork Amulet",
+   "source": "DMG",
+   "category": "build",
+   "priority": 3,
+   "note": "Once per dawn take a 10 on an attack roll instead of rolling (prompt)",
+   "identifier": "clockwork-amulet"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Clothes of Mending",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "clothes-of-mending"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Crystal Ball",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "crystal-ball"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Crystal Ball of Mind Reading",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "mind-reading-crystal-ball-of"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Crystal Ball of Telepathy",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "telepathy-crystal-ball-of"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Crystal Ball of True Seeing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "true-seeing-crystal-ball-of"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Cube of Force",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "cube-of-force"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Cube of Summoning",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "cube-of-summoning"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Cubic Gate",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "cubic-gate"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Daern’s Instant Fortress",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "daerns-instant-fortress"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare",
+   "name": "Dagger of Venom",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "identifier": "dagger-of-venom"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Dancing Sword",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Bonus Action hovering sword that attacks (4 attacks) - summon/token",
+   "identifier": "dancing-sword"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common · attunement",
+   "name": "Dark Shard Amulet",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "dark-shard-amulet"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Decanter of Endless Water",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "decanter-of-endless-water"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Deck of Illusions",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "deck-of-illusions"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Deck of Many Things",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "deck-of-many-things"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Defender",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "First attack each turn: prompt to move some of the +3 to AC until your next turn",
+   "identifier": "defender"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare · attunement",
+   "name": "Demon Armor",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "demon-armor"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Wondrous Item · artifact · attunement",
+   "name": "Demonomicon of Iggwilv",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "demonomicon-of-iggwilv"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Dimensional Shackles",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "dimensional-shackles"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare · attunement",
+   "name": "Dragon Scale Mail",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "dragon-scale-mail"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare",
+   "name": "Dragon Slayer",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "dragon-slayer"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Dread Helm",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "dread-helm"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Driftglobe",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "driftglobe"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Dust of Disappearance",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "dust-of-disappearance"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Dust of Dryness",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "dust-of-dryness"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Dust of Sneezing and Choking",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "dust-of-sneezing-and-choking"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare",
+   "name": "Dwarven Plate",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "+2 AC; Reaction to reduce forced movement by 10 ft",
+   "identifier": "dwarven-plate"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Dwarven Thrower",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+3, returns; thrown hit +1d8 Force (+2d8 vs Giants)",
+   "identifier": "dwarven-thrower"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Ear Horn of Hearing",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ear-horn-of-hearing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Efreeti Bottle",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "efreeti-bottle"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · legendary · attunement",
+   "name": "Efreeti Chain",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "efreeti-chain"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Elemental Gem",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "elemental-gem"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Elixir of Health",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "elixir-of-health"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · rare",
+   "name": "Elven Chain",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "elven-chain"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Enduring Spellbook",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "enduring-spellbook"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Energy Bow",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+1 Force arrows (light); Arrow of Restraint (STR save or Restrained instead of damage); Transport/Ladder utility",
+   "identifier": "energy-bow"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · varies · attunement",
+   "name": "Enspelled Armor",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Template item - check how a chosen spell is attached",
+   "identifier": "enspelled-armor"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · varies · attunement",
+   "name": "Enspelled Staff",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Template item - check how a chosen spell is attached",
+   "identifier": "enspelled-staff"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · varies · attunement",
+   "name": "Enspelled Weapon",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Template item - check how a chosen spell is attached",
+   "identifier": "enspelled-weapon"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Ersatz Eye",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ersatz-eye"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Eversmoking Bottle",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "eversmoking-bottle"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare",
+   "name": "Executioner’s Axe",
+   "source": "DMG",
+   "category": "build",
+   "priority": 2,
+   "note": "+1; Humanoid hit: +2d6 Slashing and temp HP equal to it",
+   "identifier": "executioners-axe"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Wondrous Item · artifact · attunement",
+   "name": "Eye and Hand of Vecna",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "eye-and-hand-of-vecna"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Eyes of Charming",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "eyes-of-charming"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Eyes of Minute Seeing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "eyes-of-minute-seeing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Eyes of the Eagle",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "eyes-of-the-eagle"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · varies",
+   "name": "Figurine of Wondrous Power",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Listed by variant below",
+   "identifier": "figurine-of-wondrous-power"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Figurine of Wondrous Power (Bronze Griffon)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-bronze-griffon"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Figurine of Wondrous Power (Ebony Fly)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-ebony-fly"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Figurine of Wondrous Power (Golden Lions)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-golden-lions"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Figurine of Wondrous Power (Ivory Goats)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-ivory-goats"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Figurine of Wondrous Power (Marble Elephant)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-marble-elephant"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Figurine of Wondrous Power (Obsidian Steed)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-obsidian-steed"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Figurine of Wondrous Power (Onyx Dog)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-onyx-dog"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Figurine of Wondrous Power (Serpentine Owl)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-serpentine-owl"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Figurine of Wondrous Power (Silver Raven)",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "figurine-of-wondrous-power-silver-raven"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare · attunement",
+   "name": "Flame Tongue",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "identifier": "flame-tongue"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Folding Boat",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "folding-boat"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Frost Brand",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "identifier": "frost-brand"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Gauntlets of Ogre Power",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Sets an ability score - check it doesn't lower a higher score",
+   "identifier": "gauntlets-of-ogre-power"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Gem of Brightness",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "gem-of-brightness"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Gem of Seeing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "gem-of-seeing"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare",
+   "name": "Giant Slayer",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+1; Giant hit: +2d6 and STR save or Prone",
+   "identifier": "giant-slayer"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · rare",
+   "name": "Glamoured Studded Leather",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "glamoured-studded-leather"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Gloves of Missile Snaring",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Reaction when hit by a ranged/thrown weapon: reduce damage by 1d10 + DEX (prompt)",
+   "identifier": "gloves-of-missile-snaring"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Gloves of Swimming and Climbing",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "gloves-of-swimming-and-climbing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Gloves of Thievery",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "gloves-of-thievery"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Goggles of Night",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "goggles-of-night"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Hag Eye",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "hag-eye"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Hammer of Thunderbolts",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+1; charge throw: thunderclap CON save or Stunned within 30 ft; Giant's Bane with a strength item",
+   "identifier": "hammer-of-thunderbolts"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Hat of Disguise",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "hat-of-disguise"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Hat of Many Spells",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "hat-of-many-spells"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Hat of Vermin",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "hat-of-vermin"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common · attunement",
+   "name": "Hat of Wizardry",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "hat-of-wizardry"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Headband of Intellect",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Sets an ability score - check it doesn't lower a higher score",
+   "identifier": "headband-of-intellect"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Helm of Brilliance",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Gem spells, fire-opal weapon flames, ruby fire resistance, diamond undead aura, explosion risk",
+   "identifier": "helm-of-brilliance"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Helm of Comprehending Languages",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "helm-of-comprehending-languages"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Helm of Telepathy",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "helm-of-telepathy"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Helm of Teleportation",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "helm-of-teleportation"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Heward’s Handy Haversack",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "hewards-handy-haversack"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Heward’s Handy Spice Pouch",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "hewards-handy-spice-pouch"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Holy Avenger",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "+3, 2d10 Radiant vs Fiends/Undead, and a 10/30-ft aura of Advantage on saves vs spells/magical effects for allies (module aura)",
+   "identifier": "holy-avenger"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Horn of Blasting",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "horn-of-blasting"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Horn of Silent Alarm",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "horn-of-silent-alarm"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Horn of Valhalla",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "horn-of-valhalla"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Horseshoes of a Zephyr",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "horseshoes-of-a-zephyr"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Horseshoes of Speed",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "horseshoes-of-speed"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · uncommon",
+   "name": "Immovable Rod",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "immovable-rod"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Instrument of Illusions",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "instrument-of-illusions"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Instrument of Scribing",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "instrument-of-scribing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · varies · attunement",
+   "name": "Instrument of the Bards",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "instrument-of-the-bards"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · varies · attunement",
+   "name": "Ioun Stone",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Listed by variant below",
+   "identifier": "ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Ioun Stone (Absorption)",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Reaction to cancel a spell (level 4-/8-), tracking 20 levels",
+   "identifier": "absorption-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Ioun Stone (Agility)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "agility-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Ioun Stone (Awareness)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "awareness-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Ioun Stone (Fortitude)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "fortitude-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Ioun Stone (Greater Absorption)",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Reaction to cancel a spell (level 4-/8-), tracking 20 levels",
+   "identifier": "greater-absorption-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Ioun Stone (Insight)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "insight-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Ioun Stone (Intellect)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "intellect-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Ioun Stone (Leadership)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "leadership-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Ioun Stone (Mastery)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "mastery-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Ioun Stone (Protection)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "protection-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Ioun Stone (Regeneration)",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "regeneration-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Ioun Stone (Reserve)",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "reserve-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Ioun Stone (Strength)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stat/AC/initiative bonus - check the effect",
+   "identifier": "strength-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Ioun Stone (Sustenance)",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "sustenance-ioun-stone"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Iron Bands of Bilarro",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "iron-bands-of-bilarro"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Iron Flask",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "iron-flask"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon",
+   "name": "Javelin of Lightning",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "identifier": "javelin-of-lightning"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Keoghtom’s Ointment",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "keoghtoms-ointment"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Lantern of Revealing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "lantern-of-revealing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Lock of Trickery",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "lock-of-trickery"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Luck Blade",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "+1 saves while carried; once per dawn reroll a failed D20 Test (prompt); Wish charges",
+   "identifier": "luck-blade"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare",
+   "name": "Lute of Thunderous Thumping",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "lute-of-thunderous-thumping"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare · attunement",
+   "name": "Mace of Disruption",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "mace-of-disruption"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare",
+   "name": "Mace of Smiting",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+1 (+3 vs Constructs); natural 20: +7 (+14 vs Constructs), destroys a Construct at 25 HP or less",
+   "identifier": "mace-of-smiting"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare · attunement",
+   "name": "Mace of Terror",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "mace-of-terror"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Mantle of Spell Resistance",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Defensive effect - check conditions (unarmored, crits, Advantage vs spells)",
+   "identifier": "mantle-of-spell-resistance"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Manual of Bodily Health",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "manual-of-bodily-health"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Manual of Gainful Exercise",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "manual-of-gainful-exercise"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Manual of Golems",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "manual-of-golems"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Manual of Quickness of Action",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "manual-of-quickness-of-action"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · uncommon",
+   "name": "Mariner’s Armor",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "mariners-armor"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Medallion of Thoughts",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "medallion-of-thoughts"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Mirror of Life Trapping",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "mirror-of-life-trapping"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · uncommon",
+   "name": "Mithral Armor",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "mithral-armor"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Moonblade",
+   "source": "DMG",
+   "category": "build",
+   "priority": 3,
+   "note": "Rune properties (random), sentience - build per blade",
+   "identifier": "moonblade"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · common",
+   "name": "Moon-Touched Sword",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "moon-touched-sword"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Mystery Key",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "mystery-key"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Nature’s Mantle",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "natures-mantle"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Necklace of Adaptation",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "necklace-of-adaptation"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Necklace of Fireballs",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Throw one or more beads: Fireball +1d6 per extra bead (max 12d6); bead count as uses",
+   "identifier": "necklace-of-fireballs"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Necklace of Prayer Beads",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "necklace-of-prayer-beads"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Nine Lives Stealer",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+2; natural 20 vs a creature under 100 HP: CON save or slain (charges)",
+   "identifier": "nine-lives-stealer"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Nolzur’s Marvelous Pigments",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "nolzurs-marvelous-pigments"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Oathbow",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Sworn enemy: Advantage, ignores cover/long range, +3d6 Piercing; Disadvantage with other weapons",
+   "identifier": "oathbow"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Oil of Etherealness",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "oil-of-etherealness"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · very rare",
+   "name": "Oil of Sharpness",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "oil-of-sharpness"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Oil of Slipperiness",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "oil-of-slipperiness"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Orb of Direction",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "orb-of-direction"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Wondrous Item · artifact · attunement",
+   "name": "Orb of Dragonkind",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "orb-of-dragonkind"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Orb of Time",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "orb-of-time"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Pearl of Power",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "pearl-of-power"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Perfume of Bewitching",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "perfume-of-bewitching"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Periapt of Health",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "periapt-of-health"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Periapt of Proof against Poison",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "periapt-of-proof-against-poison"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Periapt of Wound Closure",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Death saves of 9 or lower count as 10; Hit Point Dice heal double",
+   "identifier": "periapt-of-wound-closure"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Philter of Love",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "philter-of-love"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Pipe of Smoke Monsters",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "pipe-of-smoke-monsters"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Pipes of Haunting",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "pipes-of-haunting"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Pipes of the Sewers",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "pipes-of-the-sewers"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · legendary · attunement",
+   "name": "Plate Armor of Etherealness",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "plate-armor-of-etherealness"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Pole of Angling",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "pole-of-angling"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Pole of Collapsing",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "pole-of-collapsing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Portable Hole",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "portable-hole"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Animal Friendship",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-animal-friendship"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Potion of Clairvoyance",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "potion-of-clairvoyance"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · common",
+   "name": "Potion of Climbing",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-climbing"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · common",
+   "name": "Potion of Comprehension",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "potion-of-comprehension"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Potion of Diminution",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-diminution"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Fire Breath",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-fire-breath"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · very rare",
+   "name": "Potion of Flying",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-flying"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Potion of Gaseous Form",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-gaseous-form"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · varies",
+   "name": "Potion of Giant Strength",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Consumable - check the drink activity and effect",
+   "identifier": "potion-of-giant-strength"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · very rare",
+   "name": "Potion of Greater Invisibility",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-greater-invisibility"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Growth",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-growth"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · varies",
+   "name": "Potions of Healing",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Consumable - check the drink activity and effect",
+   "identifier": "potion-of-healing"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Potion of Heroism",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Consumable - check the drink activity and effect",
+   "identifier": "potion-of-heroism"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Potion of Invisibility",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Consumable - check the drink activity and effect",
+   "identifier": "potion-of-invisibility"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Potion of Invulnerability",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Consumable - check the drink activity and effect",
+   "identifier": "potion-of-invulnerability"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · very rare",
+   "name": "Potion of Longevity",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "potion-of-longevity"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · rare",
+   "name": "Potion of Mind Reading",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "potion-of-mind-reading"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Poison",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-poison"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Pugilism",
+   "source": "DMG",
+   "category": "build",
+   "priority": 2,
+   "note": "Unarmed Strikes deal +1d6 Force for 10 minutes",
+   "identifier": "potion-of-pugilism"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Resistance",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Resistance to the chosen type",
+   "identifier": "potion-of-resistance"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · very rare",
+   "name": "Potion of Speed",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Consumable - check the drink activity and effect",
+   "identifier": "potion-of-speed"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · very rare",
+   "name": "Potion of Vitality",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "potion-of-vitality"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Water Breathing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "potion-of-water-breathing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Pot of Awakening",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "pot-of-awakening"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Prosthetic Limb",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "prosthetic-limb"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · varies",
+   "name": "Quaal’s Feather Token",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Listed by variant below",
+   "identifier": "quaals-feather-token"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Quaal’s Feather Token (Anchor)",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "quaals-feather-token-anchor"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Quaal’s Feather Token (Bird)",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "quaals-feather-token-bird"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Quaal’s Feather Token (Fan)",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "quaals-feather-token-fan"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Quaal’s Feather Token (Swan Boat)",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "quaals-feather-token-swan-boat"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Quaal’s Feather Token (Tree)",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "quaals-feather-token-tree"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Quaal’s Feather Token (Whip)",
+   "source": "DMG",
+   "category": "build",
+   "priority": 3,
+   "note": "Floating whip: Bonus Action melee spell attack +9, 1d6+5 Force",
+   "identifier": "quaals-feather-token-whip"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Quarterstaff of the Acrobat",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+2; Reaction +5 AC vs an attack (short rest); thrown and returns; Acrobatics Advantage",
+   "identifier": "quarterstaff-of-the-acrobat"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Quiver of Ehlonna",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "quiver-of-ehlonna"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare",
+   "name": "Ring of Animal Influence",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-animal-influence"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · legendary · attunement",
+   "name": "Ring of Djinni Summoning",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-djinni-summoning"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · legendary · attunement",
+   "name": "Ring of Elemental Command",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Elemental bane/compulsion, plane benefits and charge spells",
+   "identifier": "ring-of-elemental-command"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare · attunement",
+   "name": "Ring of Evasion",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Reaction after a failed DEX save: spend a charge to succeed (prompt)",
+   "identifier": "ring-of-evasion"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare · attunement",
+   "name": "Ring of Feather Falling",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-feather-falling"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare · attunement",
+   "name": "Ring of Free Action",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "ring-of-free-action"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · legendary · attunement",
+   "name": "Ring of Invisibility",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "ring-of-invisibility"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon · attunement",
+   "name": "Ring of Jumping",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-jumping"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon · attunement",
+   "name": "Ring of Mind Shielding",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-mind-shielding"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare · attunement",
+   "name": "Ring of Protection",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "+1 bonuses (AC/saves/checks)",
+   "identifier": "ring-of-protection"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · very rare · attunement",
+   "name": "Ring of Regeneration",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "ring-of-regeneration"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare",
+   "name": "Ring of Resistance",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Resistance to the chosen type",
+   "identifier": "ring-of-resistance"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · very rare · attunement",
+   "name": "Ring of Shooting Stars",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "ring-of-shooting-stars"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare · attunement",
+   "name": "Ring of Spell Storing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-spell-storing"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · legendary · attunement",
+   "name": "Ring of Spell Turning",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Advantage on saves vs spells; a successful save negates (level 7-); Reaction to turn a single-target spell back",
+   "identifier": "ring-of-spell-turning"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon",
+   "name": "Ring of Swimming",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "ring-of-swimming"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · very rare · attunement",
+   "name": "Ring of Telekinesis",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "ring-of-telekinesis"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare · attunement",
+   "name": "Ring of the Ram",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "ring-of-the-ram"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · legendary",
+   "name": "Ring of Three Wishes",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-three-wishes"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon · attunement",
+   "name": "Ring of Warmth",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Reduce Cold damage by 2d8",
+   "identifier": "ring-of-warmth"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon",
+   "name": "Ring of Water Walking",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-water-walking"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · rare · attunement",
+   "name": "Ring of X-ray Vision",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ring-of-x-ray-vision"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Rival Coin",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "rival-coin"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Robe of Eyes",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "robe-of-eyes"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Robe of Scintillating Colors",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Charge: attackers have Disadvantage, WIS save or Stunned in the light",
+   "identifier": "robe-of-scintillating-colors"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare · attunement",
+   "name": "Robe of Stars",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "robe-of-stars"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Robe of the Archmagi",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Unarmored AC 15 + DEX; Advantage on saves vs spells and magical effects; +2 spell save DC and spell attacks",
+   "identifier": "robe-of-the-archmagi"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Robe of Useful Items",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "robe-of-useful-items"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · very rare · attunement",
+   "name": "Rod of Absorption",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)",
+   "identifier": "rod-of-absorption"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · very rare · attunement",
+   "name": "Rod of Alertness",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)",
+   "identifier": "rod-of-alertness"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · legendary · attunement",
+   "name": "Rod of Lordly Might",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)",
+   "identifier": "rod-of-lordly-might"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · legendary · attunement",
+   "name": "Rod of Resurrection",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "rod-of-resurrection"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · rare · attunement",
+   "name": "Rod of Rulership",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "rod-of-rulership"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · very rare",
+   "name": "Rod of Security",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "rod-of-security"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · very rare · attunement",
+   "name": "Rod of the Pact Keeper",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 1,
+   "note": "Charges/bonuses for spells - check casting and scaling",
+   "identifier": "rod-of-the-pact-keeper"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Rope of Climbing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "rope-of-climbing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Rope of Entanglement",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "rope-of-entanglement"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Rope of Mending",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "rope-of-mending"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common · attunement",
+   "name": "Ruby of the War Mage",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ruby-of-the-war-mage"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Saddle of the Cavalier",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "saddle-of-the-cavalier"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Scarab of Protection",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "+1 AC, Advantage on saves vs spells, charges to turn failed saves vs Necromancy/Undead into successes",
+   "identifier": "scarab-of-protection"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Scimitar of Speed",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "scimitar-of-speed"
+  },
+  {
+   "group": "Scrolls",
+   "sub": "Scroll · rare",
+   "name": "Scroll of Protection",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "scroll-of-protection"
+  },
+  {
+   "group": "Scrolls",
+   "sub": "Scroll · legendary",
+   "name": "Scroll of Titan Summoning",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "scroll-of-titan-summoning"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Sending Stones",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "sending-stones"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · uncommon",
+   "name": "Sentinel Shield",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Armor property - check the effect",
+   "identifier": "sentinel-shield"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare",
+   "name": "Shield, +1, +2, or +3",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Bonus to attack/damage or AC - check the compendium variants",
+   "identifier": "shield"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · common",
+   "name": "Shield of Expression",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "shield-of-expression"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · rare · attunement",
+   "name": "Shield of Missile Attraction",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Ranged resistance + curse redirect; +2 AC, Forceful Bash and Protective Field",
+   "identifier": "shield-of-missile-attraction"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare · attunement",
+   "name": "Shield of the Cavalier",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Ranged resistance + curse redirect; +2 AC, Forceful Bash and Protective Field",
+   "identifier": "shield-of-the-cavalier"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · common",
+   "name": "Silvered Weapon",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "silvered-weapon"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Slippers of Spider Climbing",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "slippers-of-spider-climbing"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · common",
+   "name": "Smoldering Armor",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "smoldering-armor"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Sovereign Glue",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "sovereign-glue"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare · attunement",
+   "name": "Spellguard Shield",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Advantage on saves vs spells/magical effects; spell attacks against you have Disadvantage",
+   "identifier": "spellguard-shield"
+  },
+  {
+   "group": "Scrolls",
+   "sub": "Scroll · varies",
+   "name": "Spell Scroll",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Charges/bonuses for spells - check casting and scaling",
+   "identifier": "spell-scroll"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Sphere of Annihilation",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "sphere-of-annihilation"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Spirit Board",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "spirit-board"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · common",
+   "name": "Staff of Adornment",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "staff-of-adornment"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · common",
+   "name": "Staff of Birdcalls",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "staff-of-birdcalls"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · rare · attunement",
+   "name": "Staff of Charming",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "staff-of-charming"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · very rare · attunement",
+   "name": "Staff of Fire",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "staff-of-fire"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · common",
+   "name": "Staff of Flowers",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "staff-of-flowers"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · very rare · attunement",
+   "name": "Staff of Frost",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "staff-of-frost"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · rare · attunement",
+   "name": "Staff of Healing",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "staff-of-healing"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · very rare · attunement",
+   "name": "Staff of Power",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+2 staff, +2 AC/saves/spell attacks, spells by charges, Retributive Strike",
+   "identifier": "staff-of-power"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · very rare · attunement",
+   "name": "Staff of Striking",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+3; on a melee hit spend up to 3 charges for +1d6 Force each (prompt)",
+   "identifier": "staff-of-striking"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · rare · attunement",
+   "name": "Staff of Swarming Insects",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "staff-of-swarming-insects"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · uncommon · attunement",
+   "name": "Staff of the Adder",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "staff-of-the-adder"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · legendary · attunement",
+   "name": "Staff of the Magi",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+2 staff, +2 spell attacks, Advantage on saves vs spells, Spell Absorption reaction, spells by charges, Retributive Strike",
+   "identifier": "staff-of-the-magi"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · uncommon · attunement",
+   "name": "Staff of the Python",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "staff-of-the-python"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · rare · attunement",
+   "name": "Staff of the Woodlands",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "staff-of-the-woodlands"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · very rare · attunement",
+   "name": "Staff of Thunder and Lightning",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+2; Lightning/Thunder on-hit options once per dawn (prompt), Lightning Strike line, Thunderclap emanation",
+   "identifier": "staff-of-thunder-and-lightning"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · rare · attunement",
+   "name": "Staff of Withering",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Charge on hit: +2d10 Necrotic and CON save or Disadvantage on STR/CON checks and saves for 1 hour",
+   "identifier": "staff-of-withering"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Stone of Controlling Earth Elementals",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Summons a creature - check the summon activity",
+   "identifier": "stone-of-controlling-earth-elementals"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Stone of Good Luck (Luckstone)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "+1 bonuses (AC/saves/checks)",
+   "identifier": "stone-of-good-luck-luckstone"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare · attunement",
+   "name": "Sun Blade",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "identifier": "sun-blade"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Sword of Answering",
+   "source": "DMG",
+   "category": "build",
+   "priority": 2,
+   "note": "+3; Reaction melee attack with Advantage against a creature in reach that damages you, ignoring resistance/immunity",
+   "identifier": "sword-of-answering"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Weapon · artifact · attunement",
+   "name": "Sword of Kas",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "sword-of-kas"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare · attunement",
+   "name": "Sword of Life Stealing",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "sword-of-life-stealing"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Sword of Sharpness",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "sword-of-sharpness"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon · attunement",
+   "name": "Sword of Vengeance",
+   "source": "DMG",
+   "category": "build",
+   "priority": 3,
+   "note": "+1; curse: WIS save when damaged or attack that creature",
+   "identifier": "sword-of-vengeance"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare · attunement",
+   "name": "Sword of Wounding",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "sword-of-wounding"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · common · attunement",
+   "name": "Sylvan Talon",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "sylvan-talon"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Talisman of Pure Good",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Holy symbol +2 spell attacks; charge fissure (DEX save or destroyed)",
+   "identifier": "talisman-of-pure-good"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Talisman of the Sphere",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "talisman-of-the-sphere"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Talisman of Ultimate Evil",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Holy symbol +2 spell attacks; charge fissure (DEX save or destroyed)",
+   "identifier": "talisman-of-ultimate-evil"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common · attunement",
+   "name": "Talking Doll",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "talking-doll"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Tankard of Sobriety",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "tankard-of-sobriety"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · rare · attunement",
+   "name": "Tentacle Rod",
+   "source": "DMG",
+   "category": "build",
+   "priority": 2,
+   "note": "Three tentacle attacks (+9, 1d6 Psychic); all three hit: DEX save or Restrained with 3d6 Psychic each turn",
+   "identifier": "tentacle-rod"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare · attunement",
+   "name": "Thunderous Greatclub",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "STR 20, +1d8 Thunder; Clap of Thunder cone (STR save or Prone); Earthquake",
+   "identifier": "thunderous-greatclub"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Tome of Clear Thought",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "tome-of-clear-thought"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Tome of Leadership and Influence",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "tome-of-leadership-and-influence"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Tome of the Stilled Tongue",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "tome-of-the-stilled-tongue"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Tome of Understanding",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "tome-of-understanding"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon · attunement",
+   "name": "Trident of Fish Command",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "trident-of-fish-command"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Universal Solvent",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "universal-solvent"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Veteran’s Cane",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "veterans-cane"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare",
+   "name": "Vicious Weapon",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Weapon extra damage/rider - check it rolls with midi",
+   "identifier": "vicious-weapon"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Vorpal Sword",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+3, ignores Slashing resistance; natural 20 decapitates (or +30 Slashing)",
+   "identifier": "vorpal-sword"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · common",
+   "name": "Walloping Ammunition",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Consumable or simple charge item - check it",
+   "identifier": "walloping-ammunition"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · rare · attunement",
+   "name": "Wand of Binding",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "wand-of-binding"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · common",
+   "name": "Wand of Conducting",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "wand-of-conducting"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · rare · attunement",
+   "name": "Wand of Enemy Detection",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "wand-of-enemy-detection"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · rare · attunement",
+   "name": "Wand of Fear",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "wand-of-fear"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · rare · attunement",
+   "name": "Wand of Fireballs",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "midi-qol sample item - check it works",
+   "identifier": "wand-of-fireballs"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · rare · attunement",
+   "name": "Wand of Lightning Bolts",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Charges/bonuses for spells - check casting and scaling",
+   "identifier": "wand-of-lightning-bolts"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · uncommon",
+   "name": "Wand of Magic Detection",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "wand-of-magic-detection"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · uncommon",
+   "name": "Wand of Magic Missiles",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Charges/bonuses for spells - check casting and scaling",
+   "identifier": "wand-of-magic-missiles"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Wand · artifact · attunement",
+   "name": "Wand of Orcus",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "wand-of-orcus"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · rare · attunement",
+   "name": "Wand of Paralysis",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "wand-of-paralysis"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · very rare · attunement",
+   "name": "Wand of Polymorph",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "wand-of-polymorph"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · common",
+   "name": "Wand of Pyrotechnics",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "wand-of-pyrotechnics"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · uncommon",
+   "name": "Wand of Secrets",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "wand-of-secrets"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · very rare · attunement",
+   "name": "Wand of the War Mage, +1, +2, or +3",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Charges/bonuses for spells - check casting and scaling",
+   "identifier": "1-wand-of-the-war-mage"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · uncommon · attunement",
+   "name": "Wand of Web",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "wand-of-web"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · rare · attunement",
+   "name": "Wand of Wonder",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "d100 random effect table",
+   "identifier": "wand-of-wonder"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Weapon · artifact · attunement",
+   "name": "Wave",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "wave"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare",
+   "name": "Weapon, +1, +2, or +3",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Bonus to attack/damage or AC - check the compendium variants",
+   "identifier": "weapon-1-2-or-3"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon · attunement",
+   "name": "Weapon of Warning",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "You and allies within 30 ft have Advantage on Initiative (module rule)",
+   "identifier": "weapon-of-warning"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary",
+   "name": "Well of Many Worlds",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "well-of-many-worlds"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Weapon · artifact · attunement",
+   "name": "Whelm",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - automate on request when one enters a campaign",
+   "identifier": "whelm"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Wind Fan",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Charges or spells from the item - check activities and save DCs",
+   "identifier": "wind-fan"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Winged Boots",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "winged-boots"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Wings of Flying",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "wings-of-flying"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Wraps of Unarmed Power",
+   "source": "DMG",
+   "category": "verify",
+   "priority": 2,
+   "note": "Passive or simple activated effect - check it",
+   "identifier": "wraps-of-unarmed-power"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d4 Bludgeoning",
+   "name": "Club",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d4 Bludgeoning; Light); its mastery comes from Automated Masteries 5e",
+   "identifier": "club"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d4 Piercing",
+   "name": "Dagger",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d4 Piercing; Finesse, Light, Thrown (Range 20/60)); its mastery comes from Automated Masteries 5e",
+   "identifier": "dagger"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Bludgeoning",
+   "name": "Greatclub",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Bludgeoning; Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "greatclub"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Slashing",
+   "name": "Handaxe",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Slashing; Light, Thrown (Range 20/60)); its mastery comes from Automated Masteries 5e",
+   "identifier": "handaxe"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Piercing",
+   "name": "Javelin",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Piercing; Thrown (Range 30/120)); its mastery comes from Automated Masteries 5e",
+   "identifier": "javelin"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d4 Bludgeoning",
+   "name": "Light Hammer",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d4 Bludgeoning; Light, Thrown (Range 20/60)); its mastery comes from Automated Masteries 5e",
+   "identifier": "light-hammer"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Bludgeoning",
+   "name": "Mace",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Bludgeoning; —); its mastery comes from Automated Masteries 5e",
+   "identifier": "mace"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Bludgeoning",
+   "name": "Quarterstaff",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Bludgeoning; Versatile (1d8)); its mastery comes from Automated Masteries 5e",
+   "identifier": "quarterstaff"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d4 Slashing",
+   "name": "Sickle",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d4 Slashing; Light); its mastery comes from Automated Masteries 5e",
+   "identifier": "sickle"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Piercing",
+   "name": "Spear",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Piercing; Thrown (Range 20/60), Versatile (1d8)); its mastery comes from Automated Masteries 5e",
+   "identifier": "spear"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d4 Piercing",
+   "name": "Dart",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d4 Piercing; Finesse, Thrown (Range 20/60)); its mastery comes from Automated Masteries 5e",
+   "identifier": "dart"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Piercing",
+   "name": "Light Crossbow",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Piercing; Ammunition (Range 80/320; Bolt), Loading, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "light-crossbow"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Piercing",
+   "name": "Shortbow",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Piercing; Ammunition (Range 80/320; Arrow), Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "shortbow"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d4 Bludgeoning",
+   "name": "Sling",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d4 Bludgeoning; Ammunition (Range 30/120; Bullet)); its mastery comes from Automated Masteries 5e",
+   "identifier": "sling"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Slashing",
+   "name": "Battleaxe",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Slashing; Versatile (1d10)); its mastery comes from Automated Masteries 5e",
+   "identifier": "battleaxe"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Bludgeoning",
+   "name": "Flail",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Bludgeoning; —); its mastery comes from Automated Masteries 5e",
+   "identifier": "flail"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d10 Slashing",
+   "name": "Glaive",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d10 Slashing; Heavy, Reach, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "glaive"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d12 Slashing",
+   "name": "Greataxe",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d12 Slashing; Heavy, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "greataxe"
+  },
+  {
+   "group": "Weapons",
+   "sub": "2d6 Slashing",
+   "name": "Greatsword",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (2d6 Slashing; Heavy, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "greatsword"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d10 Slashing",
+   "name": "Halberd",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d10 Slashing; Heavy, Reach, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "halberd"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d10 Piercing",
+   "name": "Lance",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d10 Piercing; Heavy, Reach, Two-Handed (unless mounted)); its mastery comes from Automated Masteries 5e",
+   "identifier": "lance"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Slashing",
+   "name": "Longsword",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Slashing; Versatile (1d10)); its mastery comes from Automated Masteries 5e",
+   "identifier": "longsword"
+  },
+  {
+   "group": "Weapons",
+   "sub": "2d6 Bludgeoning",
+   "name": "Maul",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (2d6 Bludgeoning; Heavy, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "maul"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Piercing",
+   "name": "Morningstar",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Piercing; —); its mastery comes from Automated Masteries 5e",
+   "identifier": "morningstar"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d10 Piercing",
+   "name": "Pike",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d10 Piercing; Heavy, Reach, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "pike"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Piercing",
+   "name": "Rapier",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Piercing; Finesse); its mastery comes from Automated Masteries 5e",
+   "identifier": "rapier"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Slashing",
+   "name": "Scimitar",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Slashing; Finesse, Light); its mastery comes from Automated Masteries 5e",
+   "identifier": "scimitar"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Piercing",
+   "name": "Shortsword",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Piercing; Finesse, Light); its mastery comes from Automated Masteries 5e",
+   "identifier": "shortsword"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Piercing",
+   "name": "Trident",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Piercing; Thrown (Range 20/60), Versatile (1d10)); its mastery comes from Automated Masteries 5e",
+   "identifier": "trident"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Bludgeoning",
+   "name": "Warhammer",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Bludgeoning; Versatile (1d10)); its mastery comes from Automated Masteries 5e",
+   "identifier": "warhammer"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Piercing",
+   "name": "War Pick",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Piercing; Versatile (1d10)); its mastery comes from Automated Masteries 5e",
+   "identifier": "war-pick"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d4 Slashing",
+   "name": "Whip",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d4 Slashing; Finesse, Reach); its mastery comes from Automated Masteries 5e",
+   "identifier": "whip"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1 Piercing",
+   "name": "Blowgun",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1 Piercing; Ammunition (Range 25/100; Needle), Loading); its mastery comes from Automated Masteries 5e",
+   "identifier": "blowgun"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d6 Piercing",
+   "name": "Hand Crossbow",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d6 Piercing; Ammunition (Range 30/120; Bolt), Light, Loading); its mastery comes from Automated Masteries 5e",
+   "identifier": "hand-crossbow"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d10 Piercing",
+   "name": "Heavy Crossbow",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d10 Piercing; Ammunition (Range 100/400; Bolt), Heavy, Loading, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "heavy-crossbow"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d8 Piercing",
+   "name": "Longbow",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d8 Piercing; Ammunition (Range 150/600; Arrow), Heavy, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "longbow"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d12 Piercing",
+   "name": "Musket",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d12 Piercing; Ammunition (Range 40/120; Bullet), Loading, Two-Handed); its mastery comes from Automated Masteries 5e",
+   "identifier": "musket"
+  },
+  {
+   "group": "Weapons",
+   "sub": "1d10 Piercing",
+   "name": "Pistol",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Compendium weapon (1d10 Piercing; Ammunition (Range 30/90; Bullet), Loading); its mastery comes from Automated Masteries 5e",
+   "identifier": "pistol"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 11 + Dex modifier",
+   "name": "Padded Armor",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 11 + Dex modifier)",
+   "identifier": "padded-armor"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 11 + Dex modifier",
+   "name": "Leather Armor",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 11 + Dex modifier)",
+   "identifier": "leather-armor"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 12 + Dex modifier",
+   "name": "Studded Leather Armor",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 12 + Dex modifier)",
+   "identifier": "studded-leather-armor"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 12 + Dex modifier (max 2)",
+   "name": "Hide Armor",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 12 + Dex modifier (max 2))",
+   "identifier": "hide-armor"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 13 + Dex modifier (max 2)",
+   "name": "Chain Shirt",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 13 + Dex modifier (max 2))",
+   "identifier": "chain-shirt"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 14 + Dex modifier (max 2)",
+   "name": "Scale Mail",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 14 + Dex modifier (max 2))",
+   "identifier": "scale-mail"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 14 + Dex modifier (max 2)",
+   "name": "Breastplate",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 14 + Dex modifier (max 2))",
+   "identifier": "breastplate"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 15 + Dex modifier (max 2)",
+   "name": "Half Plate Armor",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 15 + Dex modifier (max 2))",
+   "identifier": "half-plate-armor"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 14",
+   "name": "Ring Mail",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 14)",
+   "identifier": "ring-mail"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 16",
+   "name": "Chain Mail",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 16; Str 13)",
+   "identifier": "chain-mail"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 17",
+   "name": "Splint Armor",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 17; Str 15)",
+   "identifier": "splint-armor"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC 18",
+   "name": "Plate Armor",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC 18; Str 15)",
+   "identifier": "plate-armor"
+  },
+  {
+   "group": "Armor",
+   "sub": "AC +2",
+   "name": "Shield",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet AC (AC +2)",
+   "identifier": "shield"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "AC 20",
+   "name": "Arrows",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ammunition - tracked by the weapon",
+   "identifier": "arrows"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "AC 20",
+   "name": "Bolts",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ammunition - tracked by the weapon",
+   "identifier": "bolts"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "AC 10",
+   "name": "Bullets, Firearm",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ammunition - tracked by the weapon",
+   "identifier": "bullets-firearm"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "AC 20",
+   "name": "Bullets, Sling",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ammunition - tracked by the weapon",
+   "identifier": "bullets-sling"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "AC 50",
+   "name": "Needles",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ammunition - tracked by the weapon",
+   "identifier": "needles"
+  },
+  {
+   "group": "Weapon masteries",
+   "sub": "Mastery property",
+   "name": "Mastery: Cleave",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon again...",
+   "identifier": "mastery-cleave"
+  },
+  {
+   "group": "Weapon masteries",
+   "sub": "Mastery property",
+   "name": "Mastery: Graze",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifi...",
+   "identifier": "mastery-graze"
+  },
+  {
+   "group": "Weapon masteries",
+   "sub": "Mastery property",
+   "name": "Mastery: Nick",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus...",
+   "identifier": "mastery-nick"
+  },
+  {
+   "group": "Weapon masteries",
+   "sub": "Mastery property",
+   "name": "Mastery: Push",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Lar...",
+   "identifier": "mastery-push"
+  },
+  {
+   "group": "Weapon masteries",
+   "sub": "Mastery property",
+   "name": "Mastery: Sap",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your ...",
+   "identifier": "mastery-sap"
+  },
+  {
+   "group": "Weapon masteries",
+   "sub": "Mastery property",
+   "name": "Mastery: Slow",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of you...",
+   "identifier": "mastery-slow"
+  },
+  {
+   "group": "Weapon masteries",
+   "sub": "Mastery property",
+   "name": "Mastery: Topple",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ab...",
+   "identifier": "mastery-topple"
+  },
+  {
+   "group": "Weapon masteries",
+   "sub": "Mastery property",
+   "name": "Mastery: Vex",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll agai...",
+   "identifier": "mastery-vex"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "25 GP",
+   "name": "Acid",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Replace an attack: DEX save or 2d6 Acid",
+   "identifier": "acid"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "50 GP",
+   "name": "Alchemist’s Fire",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Replace an attack: DEX save or 1d4 Fire and Burning - check Burning applies",
+   "identifier": "alchemists-fire"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "50 GP",
+   "name": "Antitoxin",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "midi-qol sample item - Advantage vs Poisoned for 1 hour",
+   "identifier": "antitoxin"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 GP",
+   "name": "Ball Bearings",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Area: DEX save or Prone",
+   "identifier": "ball-bearings"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 GP",
+   "name": "Caltrops",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Area: DEX save or 1 Piercing and Speed 0",
+   "identifier": "caltrops"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 GP",
+   "name": "Chain",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "chain"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 GP",
+   "name": "Healer’s Kit",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Stabilize a creature at 0 HP (10 uses)",
+   "identifier": "healers-kit"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "25 GP",
+   "name": "Holy Water",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Replace an attack: DEX save or 2d8 Radiant vs Fiends/Undead",
+   "identifier": "holy-water"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 GP",
+   "name": "Hunting Trap",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "DEX save or 1d4 Piercing and Speed 0; STR check to escape",
+   "identifier": "hunting-trap"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "2 GP",
+   "name": "Manacles",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "manacles"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 GP",
+   "name": "Net",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Replace an attack: DEX save or Restrained (Huge+ immune)",
+   "identifier": "net"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 SP",
+   "name": "Oil",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Douse a creature (+5 Fire when it takes fire) or a space (burning area)",
+   "identifier": "oil"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "100 GP",
+   "name": "Poison, Basic",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Coated weapon/ammunition: +1d4 Poison on a Piercing/Slashing hit for 1 minute",
+   "identifier": "poison-basic"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "50 GP",
+   "name": "Potion of Healing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Same item as Potions of Healing (magic items)",
+   "identifier": "potion-of-healing"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 GP",
+   "name": "Rope",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "rope"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "Cantrip, 30 GP Level 1, 50 GP",
+   "name": "Spell Scroll",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Same item as Spell Scroll (magic items)",
+   "identifier": "spell-scroll"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 CP",
+   "name": "Torch",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "midi-qol sample item (light, improvised attack 1 Fire)",
+   "identifier": "torch"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 SP",
+   "name": "Lamp",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "midi-qol sample item (light)",
+   "identifier": "lamp"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "10 GP",
+   "name": "Lantern, Bullseye",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "midi-qol sample item (light)",
+   "identifier": "lantern-bullseye"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 GP",
+   "name": "Lantern, Hooded",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "midi-qol sample item (light)",
+   "identifier": "lantern-hooded"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 CP",
+   "name": "Candle",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "midi-qol sample item (light)",
+   "identifier": "candle"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "25 GP",
+   "name": "Climber’s Kit",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "climbers-kit"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "2 GP",
+   "name": "Grappling Hook",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "grappling-hook"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "2 GP",
+   "name": "Crowbar",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "crowbar"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "100 GP",
+   "name": "Magnifying Glass",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "magnifying-glass"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 GP",
+   "name": "Costume",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "costume"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 GP",
+   "name": "Perfume",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "perfume"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "25 GP",
+   "name": "Book",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "book"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 GP",
+   "name": "Map",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "map"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 CP",
+   "name": "Pole",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "pole"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "4 GP",
+   "name": "Ram, Portable",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "ram-portable"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 CP",
+   "name": "Signal Whistle",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "signal-whistle"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1,000 GP",
+   "name": "Spyglass",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "spyglass"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 GP",
+   "name": "Bell",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "bell"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 SP",
+   "name": "Blanket",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "blanket"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "1 GP",
+   "name": "Bedroll",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "bedroll"
+  },
+  {
+   "group": "Adventuring gear",
+   "sub": "5 SP",
+   "name": "Tinderbox",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Gear - nothing to automate",
+   "identifier": "tinderbox"
+  },
+  {
+   "group": "Tools",
+   "sub": "Tool",
+   "name": "Poisoner’s Kit",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Tool - crafting and checks on the sheet",
+   "identifier": "poisoners-kit"
+  },
+  {
+   "group": "Tools",
+   "sub": "Tool",
+   "name": "Herbalism Kit",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Tool - crafting and checks on the sheet",
+   "identifier": "herbalism-kit"
+  }
+ ]
+}

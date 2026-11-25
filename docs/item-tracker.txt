@@ -1,0 +1,486 @@
+# Champions Guild Automation - item tracker (2024 Dungeon Master's Guide chapter 7 magic items, 2024 Player's Handbook chapter 6 equipment)
+# One item per line: group | kind | name | source | category | priority | note | identifier
+#   source:   SRD = in the free dnd5e 2024 compendium (equipment24), DMG/PHB = book only
+#   category: done | midi | verify | build | skip
+Magic armor and shields|Armor · uncommon|Adamantine Armor|SRD|verify|1|Defensive effect - check conditions (unarmored, crits, Advantage vs spells)|adamantine-armor
+Magic weapons|Weapon · uncommon|Adamantine Weapon|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|adamantine-weapon
+Wondrous items|Wondrous Item · uncommon|Alchemy Jug|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|alchemy-jug
+Magic weapons|Weapon · very rare|Ammunition, +1, +2, or +3|SRD|verify|1|Bonus to attack/damage or AC - check the compendium variants|ammunition-1-2-or-3
+Magic weapons|Weapon · very rare|Ammunition of Slaying|SRD|build|2|Chosen creature type takes damage: CON save, 6d10 Force (half on success)|ammunition-of-slaying
+Wondrous items|Wondrous Item · rare · attunement|Amulet of Health|SRD|verify|1|Sets an ability score - check it doesn't lower a higher score|amulet-of-health
+Wondrous items|Wondrous Item · uncommon · attunement|Amulet of Proof against Detection and Location|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|amulet-of-proof-against-detection-and-location
+Wondrous items|Wondrous Item · very rare · attunement|Amulet of the Planes|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|amulet-of-the-planes
+Magic armor and shields|Armor · very rare · attunement|Animated Shield|SRD|verify|2|Armor property - check the effect|animated-shield
+Wondrous items|Wondrous Item · legendary|Apparatus of Kwalish|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|apparatus-of-kwalish
+Magic armor and shields|Armor · very rare|Armor, +1, +2, or +3|SRD|verify|1|Bonus to attack/damage or AC - check the compendium variants|armor-1-2-or-3
+Magic armor and shields|Armor · common|Armor of Gleaming|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|armor-of-gleaming
+Magic armor and shields|Armor · legendary · attunement|Armor of Invulnerability|SRD|verify|2|Armor property - check the effect|armor-of-invulnerability
+Magic armor and shields|Armor · rare · attunement|Armor of Resistance|SRD|verify|1|Resistance to the chosen type|armor-of-resistance
+Magic armor and shields|Armor · rare · attunement|Armor of Vulnerability|SRD|verify|2|Armor property - check the effect|armor-of-vulnerability
+Magic armor and shields|Armor · rare · attunement|Arrow-Catching Shield|SRD|build|2|+2 AC vs ranged attacks; Reaction to become the target of a ranged attack on a creature within 5 ft|arrow-catching-shield
+Artifacts|Weapon · artifact · attunement|Axe of the Dwarvish Lords|DMG|skip|3|Artifact - automate on request when one enters a campaign|axe-of-the-dwarvish-lords
+Wondrous items|Wondrous Item · uncommon · attunement|Baba Yaga’s Dancing Broom|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|baba-yagas-dancing-broom
+Wondrous items|Wondrous Item · rare|Bag of Beans|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-beans
+Wondrous items|Wondrous Item · very rare|Bag of Devouring|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-devouring
+Wondrous items|Wondrous Item · uncommon|Bag of Holding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-holding
+Wondrous items|Wondrous Item · uncommon|Bag of Tricks|DMG|build|3|Random creature summons by bag colour|bag-of-tricks
+Wondrous items|Wondrous Item · rare|Bead of Force|SRD|verify|2|Consumable or simple charge item - check it|bead-of-force
+Wondrous items|Wondrous Item · common|Bead of Nourishment|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bead-of-nourishment
+Wondrous items|Wondrous Item · common|Bead of Refreshment|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|bead-of-refreshment
+Wondrous items|Wondrous Item · rare · attunement|Belt of Dwarvenkind|SRD|verify|2|Stat/AC/initiative bonus - check the effect|belt-of-dwarvenkind
+Wondrous items|Wondrous Item · varies · attunement|Belt of Giant Strength|SRD|verify|1|Sets an ability score - check it doesn't lower a higher score|belt-of-giant-strength
+Magic weapons|Weapon · rare · attunement|Berserker Axe|SRD|build|3|+1, +1 HP per level; curse: Disadvantage with other weapons, WIS save to go berserk when damaged|berserker-axe
+Artifacts|Weapon · artifact · attunement|Blackrazor|DMG|skip|3|Artifact - automate on request when one enters a campaign|blackrazor
+Artifacts|Wondrous Item · artifact · attunement|Book of Exalted Deeds|DMG|skip|3|Artifact - automate on request when one enters a campaign|book-of-exalted-deeds
+Artifacts|Wondrous Item · artifact · attunement|Book of Vile Darkness|DMG|skip|3|Artifact - automate on request when one enters a campaign|book-of-vile-darkness
+Wondrous items|Wondrous Item · uncommon|Boots of Elvenkind|SRD|verify|2|Passive or simple activated effect - check it|boots-of-elvenkind
+Wondrous items|Wondrous Item · common · attunement|Boots of False Tracks|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|boots-of-false-tracks
+Wondrous items|Wondrous Item · rare · attunement|Boots of Levitation|SRD|verify|2|Passive or simple activated effect - check it|boots-of-levitation
+Wondrous items|Wondrous Item · rare · attunement|Boots of Speed|SRD|verify|1|Defensive effect - check conditions (unarmored, crits, Advantage vs spells)|boots-of-speed
+Wondrous items|Wondrous Item · uncommon · attunement|Boots of Striding and Springing|SRD|verify|2|Passive or simple activated effect - check it|boots-of-striding-and-springing
+Wondrous items|Wondrous Item · uncommon · attunement|Boots of the Winterlands|SRD|verify|2|Passive or simple activated effect - check it|boots-of-the-winterlands
+Wondrous items|Wondrous Item · rare|Bowl of Commanding Water Elementals|SRD|verify|2|Summons a creature - check the summon activity|bowl-of-commanding-water-elementals
+Wondrous items|Wondrous Item · uncommon · attunement|Bracers of Archery|SRD|midi|2|midi-qol sample item - check it works|bracers-of-archery
+Wondrous items|Wondrous Item · rare · attunement|Bracers of Defense|SRD|verify|1|Defensive effect - check conditions (unarmored, crits, Advantage vs spells)|bracers-of-defense
+Wondrous items|Wondrous Item · rare|Brazier of Commanding Fire Elementals|SRD|verify|2|Summons a creature - check the summon activity|brazier-of-commanding-fire-elementals
+Wondrous items|Wondrous Item · uncommon · attunement|Brooch of Shielding|SRD|midi|2|midi-qol sample item - check it works|brooch-of-shielding
+Wondrous items|Wondrous Item · uncommon · attunement|Broom of Flying|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|broom-of-flying
+Wondrous items|Wondrous Item · very rare · attunement|Candle of Invocation|SRD|build|3|Lit: Advantage on D20 Tests in its light; free level 1 spells for Clerics/Druids|candle-of-invocation
+Wondrous items|Wondrous Item · common|Candle of the Deep|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|candle-of-the-deep
+Wondrous items|Wondrous Item · rare|Cape of the Mountebank|SRD|verify|2|Charges or spells from the item - check activities and save DCs|cape-of-the-mountebank
+Wondrous items|Wondrous Item · uncommon|Cap of Water Breathing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cap-of-water-breathing
+Wondrous items|Wondrous Item · very rare|Carpet of Flying|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|carpet-of-flying
+Magic armor and shields|Armor · common|Cast-Off Armor|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cast-off-armor
+Wondrous items|Wondrous Item · very rare · attunement|Cauldron of Rebirth|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cauldron-of-rebirth
+Wondrous items|Wondrous Item · rare|Censer of Controlling Air Elementals|SRD|verify|2|Summons a creature - check the summon activity|censer-of-controlling-air-elementals
+Wondrous items|Wondrous Item · common · attunement|Charlatan’s Die|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|charlatans-die
+Wondrous items|Wondrous Item · rare|Chime of Opening|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|chime-of-opening
+Wondrous items|Wondrous Item · uncommon|Circlet of Blasting|SRD|verify|2|Charges or spells from the item - check activities and save DCs|circlet-of-blasting
+Wondrous items|Wondrous Item · very rare · attunement|Cloak of Arachnida|SRD|verify|2|Passive or simple activated effect - check it|cloak-of-arachnida
+Wondrous items|Wondrous Item · common|Cloak of Billowing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cloak-of-billowing
+Wondrous items|Wondrous Item · rare · attunement|Cloak of Displacement|SRD|midi|2|midi-qol sample item - check it works|cloak-of-displacement
+Wondrous items|Wondrous Item · uncommon · attunement|Cloak of Elvenkind|SRD|verify|2|Passive or simple activated effect - check it|cloak-of-elvenkind
+Wondrous items|Wondrous Item · legendary · attunement|Cloak of Invisibility|SRD|verify|2|Passive or simple activated effect - check it|cloak-of-invisibility
+Wondrous items|Wondrous Item · common|Cloak of Many Fashions|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cloak-of-many-fashions
+Wondrous items|Wondrous Item · uncommon · attunement|Cloak of Protection|SRD|verify|1|+1 bonuses (AC/saves/checks)|cloak-of-protection
+Wondrous items|Wondrous Item · rare · attunement|Cloak of the Bat|SRD|verify|2|Passive or simple activated effect - check it|cloak-of-the-bat
+Wondrous items|Wondrous Item · uncommon · attunement|Cloak of the Manta Ray|SRD|verify|2|Passive or simple activated effect - check it|cloak-of-the-manta-ray
+Wondrous items|Wondrous Item · common|Clockwork Amulet|DMG|build|3|Once per dawn take a 10 on an attack roll instead of rolling (prompt)|clockwork-amulet
+Wondrous items|Wondrous Item · common|Clothes of Mending|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|clothes-of-mending
+Wondrous items|Wondrous Item · very rare · attunement|Crystal Ball|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|crystal-ball
+Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Mind Reading|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mind-reading-crystal-ball-of
+Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Telepathy|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|telepathy-crystal-ball-of
+Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of True Seeing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|true-seeing-crystal-ball-of
+Wondrous items|Wondrous Item · rare · attunement|Cube of Force|SRD|verify|2|Charges or spells from the item - check activities and save DCs|cube-of-force
+Wondrous items|Wondrous Item · rare|Cube of Summoning|DMG|verify|2|Summons a creature - check the summon activity|cube-of-summoning
+Wondrous items|Wondrous Item · legendary|Cubic Gate|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|cubic-gate
+Wondrous items|Wondrous Item · rare · attunement|Daern’s Instant Fortress|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|daerns-instant-fortress
+Magic weapons|Weapon · rare|Dagger of Venom|SRD|verify|1|Weapon extra damage/rider - check it rolls with midi|dagger-of-venom
+Magic weapons|Weapon · very rare · attunement|Dancing Sword|SRD|build|2|Bonus Action hovering sword that attacks (4 attacks) - summon/token|dancing-sword
+Wondrous items|Wondrous Item · common · attunement|Dark Shard Amulet|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|dark-shard-amulet
+Wondrous items|Wondrous Item · uncommon|Decanter of Endless Water|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|decanter-of-endless-water
+Wondrous items|Wondrous Item · uncommon|Deck of Illusions|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|deck-of-illusions
+Wondrous items|Wondrous Item · legendary|Deck of Many Things|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|deck-of-many-things
+Magic weapons|Weapon · legendary · attunement|Defender|SRD|build|1|First attack each turn: prompt to move some of the +3 to AC until your next turn|defender
+Magic armor and shields|Armor · very rare · attunement|Demon Armor|SRD|verify|2|Armor property - check the effect|demon-armor
+Artifacts|Wondrous Item · artifact · attunement|Demonomicon of Iggwilv|DMG|skip|3|Artifact - automate on request when one enters a campaign|demonomicon-of-iggwilv
+Wondrous items|Wondrous Item · rare|Dimensional Shackles|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|dimensional-shackles
+Magic armor and shields|Armor · very rare · attunement|Dragon Scale Mail|SRD|verify|2|Armor property - check the effect|dragon-scale-mail
+Magic weapons|Weapon · rare|Dragon Slayer|SRD|midi|2|midi-qol sample item - check it works|dragon-slayer
+Wondrous items|Wondrous Item · common|Dread Helm|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|dread-helm
+Wondrous items|Wondrous Item · uncommon|Driftglobe|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|driftglobe
+Wondrous items|Wondrous Item · uncommon|Dust of Disappearance|SRD|verify|2|Consumable or simple charge item - check it|dust-of-disappearance
+Wondrous items|Wondrous Item · uncommon|Dust of Dryness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|dust-of-dryness
+Wondrous items|Wondrous Item · uncommon|Dust of Sneezing and Choking|SRD|verify|2|Consumable or simple charge item - check it|dust-of-sneezing-and-choking
+Magic armor and shields|Armor · very rare|Dwarven Plate|SRD|build|3|+2 AC; Reaction to reduce forced movement by 10 ft|dwarven-plate
+Magic weapons|Weapon · very rare · attunement|Dwarven Thrower|SRD|build|2|+3, returns; thrown hit +1d8 Force (+2d8 vs Giants)|dwarven-thrower
+Wondrous items|Wondrous Item · common|Ear Horn of Hearing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ear-horn-of-hearing
+Wondrous items|Wondrous Item · very rare|Efreeti Bottle|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|efreeti-bottle
+Magic armor and shields|Armor · legendary · attunement|Efreeti Chain|SRD|verify|2|Armor property - check the effect|efreeti-chain
+Wondrous items|Wondrous Item · uncommon|Elemental Gem|SRD|verify|2|Summons a creature - check the summon activity|elemental-gem
+Potions and oils|Potion · rare|Elixir of Health|SRD|verify|2|Consumable or simple charge item - check it|elixir-of-health
+Magic armor and shields|Armor · rare|Elven Chain|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|elven-chain
+Wondrous items|Wondrous Item · common|Enduring Spellbook|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|enduring-spellbook
+Magic weapons|Weapon · very rare · attunement|Energy Bow|SRD|build|2|+1 Force arrows (light); Arrow of Restraint (STR save or Restrained instead of damage); Transport/Ladder utility|energy-bow
+Magic armor and shields|Armor · varies · attunement|Enspelled Armor|DMG|verify|2|Template item - check how a chosen spell is attached|enspelled-armor
+Staffs|Staff · varies · attunement|Enspelled Staff|DMG|verify|2|Template item - check how a chosen spell is attached|enspelled-staff
+Magic weapons|Weapon · varies · attunement|Enspelled Weapon|DMG|verify|2|Template item - check how a chosen spell is attached|enspelled-weapon
+Wondrous items|Wondrous Item · common|Ersatz Eye|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ersatz-eye
+Wondrous items|Wondrous Item · uncommon|Eversmoking Bottle|SRD|midi|3|midi-qol sample item - check it works|eversmoking-bottle
+Magic weapons|Weapon · very rare|Executioner’s Axe|DMG|build|2|+1; Humanoid hit: +2d6 Slashing and temp HP equal to it|executioners-axe
+Artifacts|Wondrous Item · artifact · attunement|Eye and Hand of Vecna|DMG|skip|3|Artifact - automate on request when one enters a campaign|eye-and-hand-of-vecna
+Wondrous items|Wondrous Item · uncommon · attunement|Eyes of Charming|SRD|verify|2|Charges or spells from the item - check activities and save DCs|eyes-of-charming
+Wondrous items|Wondrous Item · uncommon|Eyes of Minute Seeing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|eyes-of-minute-seeing
+Wondrous items|Wondrous Item · uncommon|Eyes of the Eagle|SRD|verify|2|Passive or simple activated effect - check it|eyes-of-the-eagle
+Wondrous items|Wondrous Item · varies|Figurine of Wondrous Power|SRD|skip|3|Listed by variant below|figurine-of-wondrous-power
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Bronze Griffon)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-bronze-griffon
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Ebony Fly)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-ebony-fly
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Golden Lions)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-golden-lions
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Ivory Goats)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-ivory-goats
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Marble Elephant)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-marble-elephant
+Wondrous items|Wondrous Item · very rare|Figurine of Wondrous Power (Obsidian Steed)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-obsidian-steed
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Onyx Dog)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-onyx-dog
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Serpentine Owl)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-serpentine-owl
+Wondrous items|Wondrous Item · uncommon|Figurine of Wondrous Power (Silver Raven)|DMG|verify|2|Summons a creature - check the summon activity|figurine-of-wondrous-power-silver-raven
+Magic weapons|Weapon · rare · attunement|Flame Tongue|SRD|verify|1|Weapon extra damage/rider - check it rolls with midi|flame-tongue
+Wondrous items|Wondrous Item · rare|Folding Boat|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|folding-boat
+Magic weapons|Weapon · very rare · attunement|Frost Brand|SRD|verify|1|Weapon extra damage/rider - check it rolls with midi|frost-brand
+Wondrous items|Wondrous Item · uncommon · attunement|Gauntlets of Ogre Power|SRD|verify|1|Sets an ability score - check it doesn't lower a higher score|gauntlets-of-ogre-power
+Wondrous items|Wondrous Item · uncommon|Gem of Brightness|SRD|verify|2|Charges or spells from the item - check activities and save DCs|gem-of-brightness
+Wondrous items|Wondrous Item · rare · attunement|Gem of Seeing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|gem-of-seeing
+Magic weapons|Weapon · rare|Giant Slayer|SRD|build|2|+1; Giant hit: +2d6 and STR save or Prone|giant-slayer
+Magic armor and shields|Armor · rare|Glamoured Studded Leather|SRD|verify|2|Armor property - check the effect|glamoured-studded-leather
+Wondrous items|Wondrous Item · uncommon · attunement|Gloves of Missile Snaring|SRD|build|1|Reaction when hit by a ranged/thrown weapon: reduce damage by 1d10 + DEX (prompt)|gloves-of-missile-snaring
+Wondrous items|Wondrous Item · uncommon · attunement|Gloves of Swimming and Climbing|SRD|verify|2|Passive or simple activated effect - check it|gloves-of-swimming-and-climbing
+Wondrous items|Wondrous Item · uncommon|Gloves of Thievery|SRD|verify|2|Passive or simple activated effect - check it|gloves-of-thievery
+Wondrous items|Wondrous Item · uncommon|Goggles of Night|SRD|midi|3|midi-qol sample item - check it works|goggles-of-night
+Wondrous items|Wondrous Item · uncommon|Hag Eye|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hag-eye
+Magic weapons|Weapon · legendary · attunement|Hammer of Thunderbolts|SRD|build|2|+1; charge throw: thunderclap CON save or Stunned within 30 ft; Giant's Bane with a strength item|hammer-of-thunderbolts
+Wondrous items|Wondrous Item · uncommon · attunement|Hat of Disguise|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-disguise
+Wondrous items|Wondrous Item · very rare · attunement|Hat of Many Spells|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-many-spells
+Wondrous items|Wondrous Item · common|Hat of Vermin|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-vermin
+Wondrous items|Wondrous Item · common · attunement|Hat of Wizardry|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-wizardry
+Wondrous items|Wondrous Item · uncommon · attunement|Headband of Intellect|SRD|verify|1|Sets an ability score - check it doesn't lower a higher score|headband-of-intellect
+Wondrous items|Wondrous Item · very rare · attunement|Helm of Brilliance|SRD|build|3|Gem spells, fire-opal weapon flames, ruby fire resistance, diamond undead aura, explosion risk|helm-of-brilliance
+Wondrous items|Wondrous Item · uncommon|Helm of Comprehending Languages|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-comprehending-languages
+Wondrous items|Wondrous Item · uncommon · attunement|Helm of Telepathy|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-telepathy
+Wondrous items|Wondrous Item · rare · attunement|Helm of Teleportation|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-teleportation
+Wondrous items|Wondrous Item · rare|Heward’s Handy Haversack|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hewards-handy-haversack
+Wondrous items|Wondrous Item · common|Heward’s Handy Spice Pouch|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hewards-handy-spice-pouch
+Magic weapons|Weapon · legendary · attunement|Holy Avenger|SRD|build|1|+3, 2d10 Radiant vs Fiends/Undead, and a 10/30-ft aura of Advantage on saves vs spells/magical effects for allies (module aura)|holy-avenger
+Wondrous items|Wondrous Item · rare|Horn of Blasting|SRD|verify|2|Charges or spells from the item - check activities and save DCs|horn-of-blasting
+Wondrous items|Wondrous Item · common|Horn of Silent Alarm|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|horn-of-silent-alarm
+Wondrous items|Wondrous Item · very rare|Horn of Valhalla|SRD|verify|2|Summons a creature - check the summon activity|horn-of-valhalla
+Wondrous items|Wondrous Item · very rare|Horseshoes of a Zephyr|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|horseshoes-of-a-zephyr
+Wondrous items|Wondrous Item · rare|Horseshoes of Speed|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|horseshoes-of-speed
+Rods|Rod · uncommon|Immovable Rod|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|immovable-rod
+Wondrous items|Wondrous Item · common|Instrument of Illusions|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-illusions
+Wondrous items|Wondrous Item · common|Instrument of Scribing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-scribing
+Wondrous items|Wondrous Item · varies · attunement|Instrument of the Bards|DMG|verify|2|Charges or spells from the item - check activities and save DCs|instrument-of-the-bards
+Wondrous items|Wondrous Item · varies · attunement|Ioun Stone|SRD|skip|3|Listed by variant below|ioun-stone
+Wondrous items|Wondrous Item · very rare|Ioun Stone (Absorption)|SRD|build|3|Reaction to cancel a spell (level 4-/8-), tracking 20 levels|absorption-ioun-stone
+Wondrous items|Wondrous Item · very rare|Ioun Stone (Agility)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|agility-ioun-stone
+Wondrous items|Wondrous Item · rare|Ioun Stone (Awareness)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|awareness-ioun-stone
+Wondrous items|Wondrous Item · very rare|Ioun Stone (Fortitude)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|fortitude-ioun-stone
+Wondrous items|Wondrous Item · legendary|Ioun Stone (Greater Absorption)|SRD|build|3|Reaction to cancel a spell (level 4-/8-), tracking 20 levels|greater-absorption-ioun-stone
+Wondrous items|Wondrous Item · very rare|Ioun Stone (Insight)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|insight-ioun-stone
+Wondrous items|Wondrous Item · very rare|Ioun Stone (Intellect)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|intellect-ioun-stone
+Wondrous items|Wondrous Item · very rare|Ioun Stone (Leadership)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|leadership-ioun-stone
+Wondrous items|Wondrous Item · legendary|Ioun Stone (Mastery)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|mastery-ioun-stone
+Wondrous items|Wondrous Item · rare|Ioun Stone (Protection)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|protection-ioun-stone
+Wondrous items|Wondrous Item · legendary|Ioun Stone (Regeneration)|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|regeneration-ioun-stone
+Wondrous items|Wondrous Item · rare|Ioun Stone (Reserve)|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|reserve-ioun-stone
+Wondrous items|Wondrous Item · very rare|Ioun Stone (Strength)|SRD|verify|2|Stat/AC/initiative bonus - check the effect|strength-ioun-stone
+Wondrous items|Wondrous Item · rare|Ioun Stone (Sustenance)|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sustenance-ioun-stone
+Wondrous items|Wondrous Item · rare|Iron Bands of Bilarro|DMG|verify|2|Charges or spells from the item - check activities and save DCs|iron-bands-of-bilarro
+Wondrous items|Wondrous Item · legendary|Iron Flask|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|iron-flask
+Magic weapons|Weapon · uncommon|Javelin of Lightning|SRD|verify|1|Weapon extra damage/rider - check it rolls with midi|javelin-of-lightning
+Wondrous items|Wondrous Item · uncommon|Keoghtom’s Ointment|DMG|verify|2|Consumable or simple charge item - check it|keoghtoms-ointment
+Wondrous items|Wondrous Item · uncommon|Lantern of Revealing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|lantern-of-revealing
+Wondrous items|Wondrous Item · common|Lock of Trickery|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|lock-of-trickery
+Magic weapons|Weapon · legendary · attunement|Luck Blade|SRD|build|1|+1 saves while carried; once per dawn reroll a failed D20 Test (prompt); Wish charges|luck-blade
+Magic weapons|Weapon · very rare|Lute of Thunderous Thumping|DMG|verify|2|Charges or spells from the item - check activities and save DCs|lute-of-thunderous-thumping
+Magic weapons|Weapon · rare · attunement|Mace of Disruption|SRD|midi|1|midi-qol sample item - check it works|mace-of-disruption
+Magic weapons|Weapon · rare|Mace of Smiting|SRD|build|2|+1 (+3 vs Constructs); natural 20: +7 (+14 vs Constructs), destroys a Construct at 25 HP or less|mace-of-smiting
+Magic weapons|Weapon · rare · attunement|Mace of Terror|SRD|verify|2|Charges or spells from the item - check activities and save DCs|mace-of-terror
+Wondrous items|Wondrous Item · rare · attunement|Mantle of Spell Resistance|SRD|verify|1|Defensive effect - check conditions (unarmored, crits, Advantage vs spells)|mantle-of-spell-resistance
+Wondrous items|Wondrous Item · very rare|Manual of Bodily Health|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-bodily-health
+Wondrous items|Wondrous Item · very rare|Manual of Gainful Exercise|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-gainful-exercise
+Wondrous items|Wondrous Item · very rare|Manual of Golems|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-golems
+Wondrous items|Wondrous Item · very rare|Manual of Quickness of Action|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-quickness-of-action
+Magic armor and shields|Armor · uncommon|Mariner’s Armor|DMG|verify|2|Armor property - check the effect|mariners-armor
+Wondrous items|Wondrous Item · uncommon · attunement|Medallion of Thoughts|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|medallion-of-thoughts
+Wondrous items|Wondrous Item · very rare|Mirror of Life Trapping|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mirror-of-life-trapping
+Magic armor and shields|Armor · uncommon|Mithral Armor|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mithral-armor
+Magic weapons|Weapon · legendary · attunement|Moonblade|DMG|build|3|Rune properties (random), sentience - build per blade|moonblade
+Magic weapons|Weapon · common|Moon-Touched Sword|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|moon-touched-sword
+Wondrous items|Wondrous Item · common|Mystery Key|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|mystery-key
+Wondrous items|Wondrous Item · uncommon · attunement|Nature’s Mantle|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|natures-mantle
+Wondrous items|Wondrous Item · uncommon · attunement|Necklace of Adaptation|SRD|verify|2|Passive or simple activated effect - check it|necklace-of-adaptation
+Wondrous items|Wondrous Item · rare|Necklace of Fireballs|SRD|build|1|Throw one or more beads: Fireball +1d6 per extra bead (max 12d6); bead count as uses|necklace-of-fireballs
+Wondrous items|Wondrous Item · rare · attunement|Necklace of Prayer Beads|SRD|verify|2|Charges or spells from the item - check activities and save DCs|necklace-of-prayer-beads
+Magic weapons|Weapon · very rare · attunement|Nine Lives Stealer|SRD|build|2|+2; natural 20 vs a creature under 100 HP: CON save or slain (charges)|nine-lives-stealer
+Wondrous items|Wondrous Item · very rare|Nolzur’s Marvelous Pigments|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|nolzurs-marvelous-pigments
+Magic weapons|Weapon · very rare · attunement|Oathbow|SRD|build|2|Sworn enemy: Advantage, ignores cover/long range, +3d6 Piercing; Disadvantage with other weapons|oathbow
+Potions and oils|Potion · rare|Oil of Etherealness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|oil-of-etherealness
+Potions and oils|Potion · very rare|Oil of Sharpness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|oil-of-sharpness
+Potions and oils|Potion · uncommon|Oil of Slipperiness|SRD|verify|2|Consumable or simple charge item - check it|oil-of-slipperiness
+Wondrous items|Wondrous Item · common|Orb of Direction|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|orb-of-direction
+Artifacts|Wondrous Item · artifact · attunement|Orb of Dragonkind|DMG|skip|3|Artifact - automate on request when one enters a campaign|orb-of-dragonkind
+Wondrous items|Wondrous Item · common|Orb of Time|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|orb-of-time
+Wondrous items|Wondrous Item · uncommon · attunement|Pearl of Power|SRD|verify|2|Consumable or simple charge item - check it|pearl-of-power
+Wondrous items|Wondrous Item · common|Perfume of Bewitching|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|perfume-of-bewitching
+Wondrous items|Wondrous Item · uncommon · attunement|Periapt of Health|SRD|verify|2|Passive or simple activated effect - check it|periapt-of-health
+Wondrous items|Wondrous Item · rare · attunement|Periapt of Proof against Poison|SRD|verify|2|Passive or simple activated effect - check it|periapt-of-proof-against-poison
+Wondrous items|Wondrous Item · uncommon · attunement|Periapt of Wound Closure|SRD|build|2|Death saves of 9 or lower count as 10; Hit Point Dice heal double|periapt-of-wound-closure
+Potions and oils|Potion · uncommon|Philter of Love|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|philter-of-love
+Wondrous items|Wondrous Item · common|Pipe of Smoke Monsters|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|pipe-of-smoke-monsters
+Wondrous items|Wondrous Item · uncommon|Pipes of Haunting|SRD|verify|2|Charges or spells from the item - check activities and save DCs|pipes-of-haunting
+Wondrous items|Wondrous Item · uncommon · attunement|Pipes of the Sewers|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|pipes-of-the-sewers
+Magic armor and shields|Armor · legendary · attunement|Plate Armor of Etherealness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|plate-armor-of-etherealness
+Wondrous items|Wondrous Item · common|Pole of Angling|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|pole-of-angling
+Wondrous items|Wondrous Item · common|Pole of Collapsing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|pole-of-collapsing
+Wondrous items|Wondrous Item · rare|Portable Hole|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|portable-hole
+Potions and oils|Potion · uncommon|Potion of Animal Friendship|SRD|verify|2|Consumable or simple charge item - check it|potion-of-animal-friendship
+Potions and oils|Potion · rare|Potion of Clairvoyance|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-clairvoyance
+Potions and oils|Potion · common|Potion of Climbing|SRD|verify|2|Consumable or simple charge item - check it|potion-of-climbing
+Potions and oils|Potion · common|Potion of Comprehension|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-comprehension
+Potions and oils|Potion · rare|Potion of Diminution|SRD|verify|2|Consumable or simple charge item - check it|potion-of-diminution
+Potions and oils|Potion · uncommon|Potion of Fire Breath|DMG|verify|2|Consumable or simple charge item - check it|potion-of-fire-breath
+Potions and oils|Potion · very rare|Potion of Flying|SRD|verify|2|Consumable or simple charge item - check it|potion-of-flying
+Potions and oils|Potion · rare|Potion of Gaseous Form|SRD|verify|2|Consumable or simple charge item - check it|potion-of-gaseous-form
+Potions and oils|Potion · varies|Potion of Giant Strength|SRD|verify|1|Consumable - check the drink activity and effect|potion-of-giant-strength
+Potions and oils|Potion · very rare|Potion of Greater Invisibility|DMG|verify|2|Consumable or simple charge item - check it|potion-of-greater-invisibility
+Potions and oils|Potion · uncommon|Potion of Growth|SRD|verify|2|Consumable or simple charge item - check it|potion-of-growth
+Potions and oils|Potion · varies|Potions of Healing|SRD|verify|1|Consumable - check the drink activity and effect|potion-of-healing
+Potions and oils|Potion · rare|Potion of Heroism|SRD|verify|1|Consumable - check the drink activity and effect|potion-of-heroism
+Potions and oils|Potion · rare|Potion of Invisibility|SRD|verify|1|Consumable - check the drink activity and effect|potion-of-invisibility
+Potions and oils|Potion · rare|Potion of Invulnerability|SRD|verify|1|Consumable - check the drink activity and effect|potion-of-invulnerability
+Potions and oils|Potion · very rare|Potion of Longevity|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-longevity
+Potions and oils|Potion · rare|Potion of Mind Reading|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-mind-reading
+Potions and oils|Potion · uncommon|Potion of Poison|SRD|verify|2|Consumable or simple charge item - check it|potion-of-poison
+Potions and oils|Potion · uncommon|Potion of Pugilism|DMG|build|2|Unarmed Strikes deal +1d6 Force for 10 minutes|potion-of-pugilism
+Potions and oils|Potion · uncommon|Potion of Resistance|SRD|verify|1|Resistance to the chosen type|potion-of-resistance
+Potions and oils|Potion · very rare|Potion of Speed|SRD|verify|1|Consumable - check the drink activity and effect|potion-of-speed
+Potions and oils|Potion · very rare|Potion of Vitality|SRD|verify|2|Consumable or simple charge item - check it|potion-of-vitality
+Potions and oils|Potion · uncommon|Potion of Water Breathing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-water-breathing
+Wondrous items|Wondrous Item · common|Pot of Awakening|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|pot-of-awakening
+Wondrous items|Wondrous Item · common|Prosthetic Limb|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|prosthetic-limb
+Wondrous items|Wondrous Item · varies|Quaal’s Feather Token|DMG|skip|3|Listed by variant below|quaals-feather-token
+Wondrous items|Wondrous Item · uncommon|Quaal’s Feather Token (Anchor)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-anchor
+Wondrous items|Wondrous Item · rare|Quaal’s Feather Token (Bird)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-bird
+Wondrous items|Wondrous Item · uncommon|Quaal’s Feather Token (Fan)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-fan
+Wondrous items|Wondrous Item · rare|Quaal’s Feather Token (Swan Boat)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-swan-boat
+Wondrous items|Wondrous Item · uncommon|Quaal’s Feather Token (Tree)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-tree
+Wondrous items|Wondrous Item · rare|Quaal’s Feather Token (Whip)|DMG|build|3|Floating whip: Bonus Action melee spell attack +9, 1d6+5 Force|quaals-feather-token-whip
+Magic weapons|Weapon · very rare · attunement|Quarterstaff of the Acrobat|SRD|build|2|+2; Reaction +5 AC vs an attack (short rest); thrown and returns; Acrobatics Advantage|quarterstaff-of-the-acrobat
+Wondrous items|Wondrous Item · uncommon|Quiver of Ehlonna|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quiver-of-ehlonna
+Rings|Ring · rare|Ring of Animal Influence|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-animal-influence
+Rings|Ring · legendary · attunement|Ring of Djinni Summoning|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-djinni-summoning
+Rings|Ring · legendary · attunement|Ring of Elemental Command|SRD|build|3|Elemental bane/compulsion, plane benefits and charge spells|ring-of-elemental-command
+Rings|Ring · rare · attunement|Ring of Evasion|SRD|build|1|Reaction after a failed DEX save: spend a charge to succeed (prompt)|ring-of-evasion
+Rings|Ring · rare · attunement|Ring of Feather Falling|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-feather-falling
+Rings|Ring · rare · attunement|Ring of Free Action|SRD|verify|2|Passive or simple activated effect - check it|ring-of-free-action
+Rings|Ring · legendary · attunement|Ring of Invisibility|SRD|verify|2|Passive or simple activated effect - check it|ring-of-invisibility
+Rings|Ring · uncommon · attunement|Ring of Jumping|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-jumping
+Rings|Ring · uncommon · attunement|Ring of Mind Shielding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-mind-shielding
+Rings|Ring · rare · attunement|Ring of Protection|SRD|verify|1|+1 bonuses (AC/saves/checks)|ring-of-protection
+Rings|Ring · very rare · attunement|Ring of Regeneration|SRD|verify|2|Consumable or simple charge item - check it|ring-of-regeneration
+Rings|Ring · rare|Ring of Resistance|SRD|verify|1|Resistance to the chosen type|ring-of-resistance
+Rings|Ring · very rare · attunement|Ring of Shooting Stars|SRD|verify|2|Charges or spells from the item - check activities and save DCs|ring-of-shooting-stars
+Rings|Ring · rare · attunement|Ring of Spell Storing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-spell-storing
+Rings|Ring · legendary · attunement|Ring of Spell Turning|SRD|build|2|Advantage on saves vs spells; a successful save negates (level 7-); Reaction to turn a single-target spell back|ring-of-spell-turning
+Rings|Ring · uncommon|Ring of Swimming|SRD|verify|2|Passive or simple activated effect - check it|ring-of-swimming
+Rings|Ring · very rare · attunement|Ring of Telekinesis|SRD|verify|2|Charges or spells from the item - check activities and save DCs|ring-of-telekinesis
+Rings|Ring · rare · attunement|Ring of the Ram|SRD|verify|2|Charges or spells from the item - check activities and save DCs|ring-of-the-ram
+Rings|Ring · legendary|Ring of Three Wishes|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-three-wishes
+Rings|Ring · uncommon · attunement|Ring of Warmth|SRD|build|3|Reduce Cold damage by 2d8|ring-of-warmth
+Rings|Ring · uncommon|Ring of Water Walking|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-water-walking
+Rings|Ring · rare · attunement|Ring of X-ray Vision|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-x-ray-vision
+Wondrous items|Wondrous Item · common|Rival Coin|DMG|verify|2|Charges or spells from the item - check activities and save DCs|rival-coin
+Wondrous items|Wondrous Item · rare · attunement|Robe of Eyes|SRD|verify|2|Passive or simple activated effect - check it|robe-of-eyes
+Wondrous items|Wondrous Item · very rare · attunement|Robe of Scintillating Colors|SRD|build|3|Charge: attackers have Disadvantage, WIS save or Stunned in the light|robe-of-scintillating-colors
+Wondrous items|Wondrous Item · very rare · attunement|Robe of Stars|SRD|verify|2|Passive or simple activated effect - check it|robe-of-stars
+Wondrous items|Wondrous Item · legendary · attunement|Robe of the Archmagi|SRD|build|2|Unarmored AC 15 + DEX; Advantage on saves vs spells and magical effects; +2 spell save DC and spell attacks|robe-of-the-archmagi
+Wondrous items|Wondrous Item · uncommon|Robe of Useful Items|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|robe-of-useful-items
+Rods|Rod · very rare · attunement|Rod of Absorption|SRD|build|3|Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)|rod-of-absorption
+Rods|Rod · very rare · attunement|Rod of Alertness|SRD|build|3|Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)|rod-of-alertness
+Rods|Rod · legendary · attunement|Rod of Lordly Might|SRD|build|3|Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)|rod-of-lordly-might
+Rods|Rod · legendary · attunement|Rod of Resurrection|SRD|verify|2|Charges or spells from the item - check activities and save DCs|rod-of-resurrection
+Rods|Rod · rare · attunement|Rod of Rulership|SRD|verify|2|Charges or spells from the item - check activities and save DCs|rod-of-rulership
+Rods|Rod · very rare|Rod of Security|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|rod-of-security
+Rods|Rod · very rare · attunement|Rod of the Pact Keeper|DMG|verify|1|Charges/bonuses for spells - check casting and scaling|rod-of-the-pact-keeper
+Wondrous items|Wondrous Item · uncommon|Rope of Climbing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|rope-of-climbing
+Wondrous items|Wondrous Item · rare|Rope of Entanglement|SRD|verify|2|Charges or spells from the item - check activities and save DCs|rope-of-entanglement
+Wondrous items|Wondrous Item · common|Rope of Mending|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|rope-of-mending
+Wondrous items|Wondrous Item · common · attunement|Ruby of the War Mage|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ruby-of-the-war-mage
+Wondrous items|Wondrous Item · uncommon|Saddle of the Cavalier|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|saddle-of-the-cavalier
+Wondrous items|Wondrous Item · legendary · attunement|Scarab of Protection|SRD|build|3|+1 AC, Advantage on saves vs spells, charges to turn failed saves vs Necromancy/Undead into successes|scarab-of-protection
+Magic weapons|Weapon · very rare · attunement|Scimitar of Speed|SRD|verify|2|Consumable or simple charge item - check it|scimitar-of-speed
+Scrolls|Scroll · rare|Scroll of Protection|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|scroll-of-protection
+Scrolls|Scroll · legendary|Scroll of Titan Summoning|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|scroll-of-titan-summoning
+Wondrous items|Wondrous Item · uncommon|Sending Stones|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sending-stones
+Magic armor and shields|Armor · uncommon|Sentinel Shield|SRD|verify|2|Armor property - check the effect|sentinel-shield
+Magic armor and shields|Armor · very rare|Shield, +1, +2, or +3|SRD|verify|1|Bonus to attack/damage or AC - check the compendium variants|shield
+Magic armor and shields|Armor · common|Shield of Expression|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|shield-of-expression
+Magic armor and shields|Armor · rare · attunement|Shield of Missile Attraction|SRD|build|3|Ranged resistance + curse redirect; +2 AC, Forceful Bash and Protective Field|shield-of-missile-attraction
+Magic armor and shields|Armor · very rare · attunement|Shield of the Cavalier|SRD|build|3|Ranged resistance + curse redirect; +2 AC, Forceful Bash and Protective Field|shield-of-the-cavalier
+Magic weapons|Weapon · common|Silvered Weapon|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|silvered-weapon
+Wondrous items|Wondrous Item · uncommon · attunement|Slippers of Spider Climbing|SRD|verify|2|Passive or simple activated effect - check it|slippers-of-spider-climbing
+Magic armor and shields|Armor · common|Smoldering Armor|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|smoldering-armor
+Wondrous items|Wondrous Item · legendary|Sovereign Glue|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sovereign-glue
+Magic armor and shields|Armor · very rare · attunement|Spellguard Shield|SRD|build|2|Advantage on saves vs spells/magical effects; spell attacks against you have Disadvantage|spellguard-shield
+Scrolls|Scroll · varies|Spell Scroll|SRD|verify|1|Charges/bonuses for spells - check casting and scaling|spell-scroll
+Wondrous items|Wondrous Item · legendary|Sphere of Annihilation|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sphere-of-annihilation
+Wondrous items|Wondrous Item · very rare|Spirit Board|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|spirit-board
+Staffs|Staff · common|Staff of Adornment|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|staff-of-adornment
+Staffs|Staff · common|Staff of Birdcalls|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|staff-of-birdcalls
+Staffs|Staff · rare · attunement|Staff of Charming|SRD|verify|2|Charges or spells from the item - check activities and save DCs|staff-of-charming
+Staffs|Staff · very rare · attunement|Staff of Fire|SRD|verify|2|Charges or spells from the item - check activities and save DCs|staff-of-fire
+Staffs|Staff · common|Staff of Flowers|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|staff-of-flowers
+Staffs|Staff · very rare · attunement|Staff of Frost|SRD|verify|2|Charges or spells from the item - check activities and save DCs|staff-of-frost
+Staffs|Staff · rare · attunement|Staff of Healing|SRD|verify|2|Charges or spells from the item - check activities and save DCs|staff-of-healing
+Staffs|Staff · very rare · attunement|Staff of Power|SRD|build|2|+2 staff, +2 AC/saves/spell attacks, spells by charges, Retributive Strike|staff-of-power
+Staffs|Staff · very rare · attunement|Staff of Striking|SRD|build|2|+3; on a melee hit spend up to 3 charges for +1d6 Force each (prompt)|staff-of-striking
+Staffs|Staff · rare · attunement|Staff of Swarming Insects|SRD|verify|2|Charges or spells from the item - check activities and save DCs|staff-of-swarming-insects
+Staffs|Staff · uncommon · attunement|Staff of the Adder|DMG|verify|2|Charges or spells from the item - check activities and save DCs|staff-of-the-adder
+Staffs|Staff · legendary · attunement|Staff of the Magi|SRD|build|2|+2 staff, +2 spell attacks, Advantage on saves vs spells, Spell Absorption reaction, spells by charges, Retributive Strike|staff-of-the-magi
+Staffs|Staff · uncommon · attunement|Staff of the Python|SRD|verify|2|Summons a creature - check the summon activity|staff-of-the-python
+Staffs|Staff · rare · attunement|Staff of the Woodlands|SRD|verify|2|Charges or spells from the item - check activities and save DCs|staff-of-the-woodlands
+Staffs|Staff · very rare · attunement|Staff of Thunder and Lightning|SRD|build|2|+2; Lightning/Thunder on-hit options once per dawn (prompt), Lightning Strike line, Thunderclap emanation|staff-of-thunder-and-lightning
+Staffs|Staff · rare · attunement|Staff of Withering|SRD|build|2|Charge on hit: +2d10 Necrotic and CON save or Disadvantage on STR/CON checks and saves for 1 hour|staff-of-withering
+Wondrous items|Wondrous Item · rare|Stone of Controlling Earth Elementals|SRD|verify|2|Summons a creature - check the summon activity|stone-of-controlling-earth-elementals
+Wondrous items|Wondrous Item · uncommon · attunement|Stone of Good Luck (Luckstone)|SRD|verify|1|+1 bonuses (AC/saves/checks)|stone-of-good-luck-luckstone
+Magic weapons|Weapon · rare · attunement|Sun Blade|SRD|verify|1|Weapon extra damage/rider - check it rolls with midi|sun-blade
+Magic weapons|Weapon · legendary · attunement|Sword of Answering|DMG|build|2|+3; Reaction melee attack with Advantage against a creature in reach that damages you, ignoring resistance/immunity|sword-of-answering
+Artifacts|Weapon · artifact · attunement|Sword of Kas|DMG|skip|3|Artifact - automate on request when one enters a campaign|sword-of-kas
+Magic weapons|Weapon · rare · attunement|Sword of Life Stealing|SRD|midi|2|midi-qol sample item - check it works|sword-of-life-stealing
+Magic weapons|Weapon · very rare · attunement|Sword of Sharpness|SRD|midi|2|midi-qol sample item - check it works|sword-of-sharpness
+Magic weapons|Weapon · uncommon · attunement|Sword of Vengeance|DMG|build|3|+1; curse: WIS save when damaged or attack that creature|sword-of-vengeance
+Magic weapons|Weapon · rare · attunement|Sword of Wounding|SRD|midi|1|midi-qol sample item - check it works|sword-of-wounding
+Magic weapons|Weapon · common · attunement|Sylvan Talon|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|sylvan-talon
+Wondrous items|Wondrous Item · legendary · attunement|Talisman of Pure Good|SRD|build|3|Holy symbol +2 spell attacks; charge fissure (DEX save or destroyed)|talisman-of-pure-good
+Wondrous items|Wondrous Item · legendary · attunement|Talisman of the Sphere|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|talisman-of-the-sphere
+Wondrous items|Wondrous Item · legendary · attunement|Talisman of Ultimate Evil|SRD|build|3|Holy symbol +2 spell attacks; charge fissure (DEX save or destroyed)|talisman-of-ultimate-evil
+Wondrous items|Wondrous Item · common · attunement|Talking Doll|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|talking-doll
+Wondrous items|Wondrous Item · common|Tankard of Sobriety|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|tankard-of-sobriety
+Rods|Rod · rare · attunement|Tentacle Rod|DMG|build|2|Three tentacle attacks (+9, 1d6 Psychic); all three hit: DEX save or Restrained with 3d6 Psychic each turn|tentacle-rod
+Magic weapons|Weapon · very rare · attunement|Thunderous Greatclub|SRD|build|3|STR 20, +1d8 Thunder; Clap of Thunder cone (STR save or Prone); Earthquake|thunderous-greatclub
+Wondrous items|Wondrous Item · very rare|Tome of Clear Thought|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-clear-thought
+Wondrous items|Wondrous Item · very rare|Tome of Leadership and Influence|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-leadership-and-influence
+Wondrous items|Wondrous Item · legendary · attunement|Tome of the Stilled Tongue|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-the-stilled-tongue
+Wondrous items|Wondrous Item · very rare|Tome of Understanding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-understanding
+Magic weapons|Weapon · uncommon · attunement|Trident of Fish Command|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|trident-of-fish-command
+Wondrous items|Wondrous Item · legendary|Universal Solvent|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|universal-solvent
+Wondrous items|Wondrous Item · common|Veteran’s Cane|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|veterans-cane
+Magic weapons|Weapon · rare|Vicious Weapon|SRD|verify|1|Weapon extra damage/rider - check it rolls with midi|vicious-weapon
+Magic weapons|Weapon · legendary · attunement|Vorpal Sword|SRD|build|2|+3, ignores Slashing resistance; natural 20 decapitates (or +30 Slashing)|vorpal-sword
+Magic weapons|Weapon · common|Walloping Ammunition|DMG|verify|2|Consumable or simple charge item - check it|walloping-ammunition
+Wands|Wand · rare · attunement|Wand of Binding|SRD|verify|2|Charges or spells from the item - check activities and save DCs|wand-of-binding
+Wands|Wand · common|Wand of Conducting|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-conducting
+Wands|Wand · rare · attunement|Wand of Enemy Detection|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-enemy-detection
+Wands|Wand · rare · attunement|Wand of Fear|SRD|verify|2|Charges or spells from the item - check activities and save DCs|wand-of-fear
+Wands|Wand · rare · attunement|Wand of Fireballs|SRD|midi|1|midi-qol sample item - check it works|wand-of-fireballs
+Wands|Wand · rare · attunement|Wand of Lightning Bolts|SRD|verify|1|Charges/bonuses for spells - check casting and scaling|wand-of-lightning-bolts
+Wands|Wand · uncommon|Wand of Magic Detection|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-magic-detection
+Wands|Wand · uncommon|Wand of Magic Missiles|SRD|verify|1|Charges/bonuses for spells - check casting and scaling|wand-of-magic-missiles
+Artifacts|Wand · artifact · attunement|Wand of Orcus|DMG|skip|3|Artifact - automate on request when one enters a campaign|wand-of-orcus
+Wands|Wand · rare · attunement|Wand of Paralysis|SRD|verify|2|Charges or spells from the item - check activities and save DCs|wand-of-paralysis
+Wands|Wand · very rare · attunement|Wand of Polymorph|SRD|verify|2|Charges or spells from the item - check activities and save DCs|wand-of-polymorph
+Wands|Wand · common|Wand of Pyrotechnics|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-pyrotechnics
+Wands|Wand · uncommon|Wand of Secrets|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-secrets
+Wands|Wand · very rare · attunement|Wand of the War Mage, +1, +2, or +3|SRD|verify|1|Charges/bonuses for spells - check casting and scaling|1-wand-of-the-war-mage
+Wands|Wand · uncommon · attunement|Wand of Web|SRD|verify|2|Charges or spells from the item - check activities and save DCs|wand-of-web
+Wands|Wand · rare · attunement|Wand of Wonder|SRD|build|3|d100 random effect table|wand-of-wonder
+Artifacts|Weapon · artifact · attunement|Wave|DMG|skip|3|Artifact - automate on request when one enters a campaign|wave
+Magic weapons|Weapon · very rare|Weapon, +1, +2, or +3|SRD|verify|1|Bonus to attack/damage or AC - check the compendium variants|weapon-1-2-or-3
+Magic weapons|Weapon · uncommon · attunement|Weapon of Warning|SRD|build|3|You and allies within 30 ft have Advantage on Initiative (module rule)|weapon-of-warning
+Wondrous items|Wondrous Item · legendary|Well of Many Worlds|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|well-of-many-worlds
+Artifacts|Weapon · artifact · attunement|Whelm|DMG|skip|3|Artifact - automate on request when one enters a campaign|whelm
+Wondrous items|Wondrous Item · uncommon|Wind Fan|SRD|verify|2|Charges or spells from the item - check activities and save DCs|wind-fan
+Wondrous items|Wondrous Item · uncommon · attunement|Winged Boots|SRD|verify|2|Passive or simple activated effect - check it|winged-boots
+Wondrous items|Wondrous Item · rare · attunement|Wings of Flying|SRD|verify|2|Passive or simple activated effect - check it|wings-of-flying
+Wondrous items|Wondrous Item · very rare|Wraps of Unarmed Power|DMG|verify|2|Passive or simple activated effect - check it|wraps-of-unarmed-power
+Weapons|1d4 Bludgeoning|Club|SRD|verify|2|Compendium weapon (1d4 Bludgeoning; Light); its mastery comes from Automated Masteries 5e|club
+Weapons|1d4 Piercing|Dagger|SRD|verify|2|Compendium weapon (1d4 Piercing; Finesse, Light, Thrown (Range 20/60)); its mastery comes from Automated Masteries 5e|dagger
+Weapons|1d8 Bludgeoning|Greatclub|SRD|verify|2|Compendium weapon (1d8 Bludgeoning; Two-Handed); its mastery comes from Automated Masteries 5e|greatclub
+Weapons|1d6 Slashing|Handaxe|SRD|verify|2|Compendium weapon (1d6 Slashing; Light, Thrown (Range 20/60)); its mastery comes from Automated Masteries 5e|handaxe
+Weapons|1d6 Piercing|Javelin|SRD|verify|2|Compendium weapon (1d6 Piercing; Thrown (Range 30/120)); its mastery comes from Automated Masteries 5e|javelin
+Weapons|1d4 Bludgeoning|Light Hammer|SRD|verify|2|Compendium weapon (1d4 Bludgeoning; Light, Thrown (Range 20/60)); its mastery comes from Automated Masteries 5e|light-hammer
+Weapons|1d6 Bludgeoning|Mace|SRD|verify|2|Compendium weapon (1d6 Bludgeoning; —); its mastery comes from Automated Masteries 5e|mace
+Weapons|1d6 Bludgeoning|Quarterstaff|SRD|verify|2|Compendium weapon (1d6 Bludgeoning; Versatile (1d8)); its mastery comes from Automated Masteries 5e|quarterstaff
+Weapons|1d4 Slashing|Sickle|SRD|verify|2|Compendium weapon (1d4 Slashing; Light); its mastery comes from Automated Masteries 5e|sickle
+Weapons|1d6 Piercing|Spear|SRD|verify|2|Compendium weapon (1d6 Piercing; Thrown (Range 20/60), Versatile (1d8)); its mastery comes from Automated Masteries 5e|spear
+Weapons|1d4 Piercing|Dart|SRD|verify|2|Compendium weapon (1d4 Piercing; Finesse, Thrown (Range 20/60)); its mastery comes from Automated Masteries 5e|dart
+Weapons|1d8 Piercing|Light Crossbow|SRD|verify|2|Compendium weapon (1d8 Piercing; Ammunition (Range 80/320; Bolt), Loading, Two-Handed); its mastery comes from Automated Masteries 5e|light-crossbow
+Weapons|1d6 Piercing|Shortbow|SRD|verify|2|Compendium weapon (1d6 Piercing; Ammunition (Range 80/320; Arrow), Two-Handed); its mastery comes from Automated Masteries 5e|shortbow
+Weapons|1d4 Bludgeoning|Sling|SRD|verify|2|Compendium weapon (1d4 Bludgeoning; Ammunition (Range 30/120; Bullet)); its mastery comes from Automated Masteries 5e|sling
+Weapons|1d8 Slashing|Battleaxe|SRD|verify|2|Compendium weapon (1d8 Slashing; Versatile (1d10)); its mastery comes from Automated Masteries 5e|battleaxe
+Weapons|1d8 Bludgeoning|Flail|SRD|verify|2|Compendium weapon (1d8 Bludgeoning; —); its mastery comes from Automated Masteries 5e|flail
+Weapons|1d10 Slashing|Glaive|SRD|verify|2|Compendium weapon (1d10 Slashing; Heavy, Reach, Two-Handed); its mastery comes from Automated Masteries 5e|glaive
+Weapons|1d12 Slashing|Greataxe|SRD|verify|2|Compendium weapon (1d12 Slashing; Heavy, Two-Handed); its mastery comes from Automated Masteries 5e|greataxe
+Weapons|2d6 Slashing|Greatsword|SRD|verify|2|Compendium weapon (2d6 Slashing; Heavy, Two-Handed); its mastery comes from Automated Masteries 5e|greatsword
+Weapons|1d10 Slashing|Halberd|SRD|verify|2|Compendium weapon (1d10 Slashing; Heavy, Reach, Two-Handed); its mastery comes from Automated Masteries 5e|halberd
+Weapons|1d10 Piercing|Lance|SRD|verify|2|Compendium weapon (1d10 Piercing; Heavy, Reach, Two-Handed (unless mounted)); its mastery comes from Automated Masteries 5e|lance
+Weapons|1d8 Slashing|Longsword|SRD|verify|2|Compendium weapon (1d8 Slashing; Versatile (1d10)); its mastery comes from Automated Masteries 5e|longsword
+Weapons|2d6 Bludgeoning|Maul|SRD|verify|2|Compendium weapon (2d6 Bludgeoning; Heavy, Two-Handed); its mastery comes from Automated Masteries 5e|maul
+Weapons|1d8 Piercing|Morningstar|SRD|verify|2|Compendium weapon (1d8 Piercing; —); its mastery comes from Automated Masteries 5e|morningstar
+Weapons|1d10 Piercing|Pike|SRD|verify|2|Compendium weapon (1d10 Piercing; Heavy, Reach, Two-Handed); its mastery comes from Automated Masteries 5e|pike
+Weapons|1d8 Piercing|Rapier|SRD|verify|2|Compendium weapon (1d8 Piercing; Finesse); its mastery comes from Automated Masteries 5e|rapier
+Weapons|1d6 Slashing|Scimitar|SRD|verify|2|Compendium weapon (1d6 Slashing; Finesse, Light); its mastery comes from Automated Masteries 5e|scimitar
+Weapons|1d6 Piercing|Shortsword|SRD|verify|2|Compendium weapon (1d6 Piercing; Finesse, Light); its mastery comes from Automated Masteries 5e|shortsword
+Weapons|1d8 Piercing|Trident|SRD|verify|2|Compendium weapon (1d8 Piercing; Thrown (Range 20/60), Versatile (1d10)); its mastery comes from Automated Masteries 5e|trident
+Weapons|1d8 Bludgeoning|Warhammer|SRD|verify|2|Compendium weapon (1d8 Bludgeoning; Versatile (1d10)); its mastery comes from Automated Masteries 5e|warhammer
+Weapons|1d8 Piercing|War Pick|SRD|verify|2|Compendium weapon (1d8 Piercing; Versatile (1d10)); its mastery comes from Automated Masteries 5e|war-pick
+Weapons|1d4 Slashing|Whip|SRD|verify|2|Compendium weapon (1d4 Slashing; Finesse, Reach); its mastery comes from Automated Masteries 5e|whip
+Weapons|1 Piercing|Blowgun|SRD|verify|2|Compendium weapon (1 Piercing; Ammunition (Range 25/100; Needle), Loading); its mastery comes from Automated Masteries 5e|blowgun
+Weapons|1d6 Piercing|Hand Crossbow|SRD|verify|2|Compendium weapon (1d6 Piercing; Ammunition (Range 30/120; Bolt), Light, Loading); its mastery comes from Automated Masteries 5e|hand-crossbow
+Weapons|1d10 Piercing|Heavy Crossbow|SRD|verify|2|Compendium weapon (1d10 Piercing; Ammunition (Range 100/400; Bolt), Heavy, Loading, Two-Handed); its mastery comes from Automated Masteries 5e|heavy-crossbow
+Weapons|1d8 Piercing|Longbow|SRD|verify|2|Compendium weapon (1d8 Piercing; Ammunition (Range 150/600; Arrow), Heavy, Two-Handed); its mastery comes from Automated Masteries 5e|longbow
+Weapons|1d12 Piercing|Musket|SRD|verify|2|Compendium weapon (1d12 Piercing; Ammunition (Range 40/120; Bullet), Loading, Two-Handed); its mastery comes from Automated Masteries 5e|musket
+Weapons|1d10 Piercing|Pistol|SRD|verify|2|Compendium weapon (1d10 Piercing; Ammunition (Range 30/90; Bullet), Loading); its mastery comes from Automated Masteries 5e|pistol
+Armor|AC 11 + Dex modifier|Padded Armor|SRD|skip|3|Sheet AC (AC 11 + Dex modifier)|padded-armor
+Armor|AC 11 + Dex modifier|Leather Armor|SRD|skip|3|Sheet AC (AC 11 + Dex modifier)|leather-armor
+Armor|AC 12 + Dex modifier|Studded Leather Armor|SRD|skip|3|Sheet AC (AC 12 + Dex modifier)|studded-leather-armor
+Armor|AC 12 + Dex modifier (max 2)|Hide Armor|SRD|skip|3|Sheet AC (AC 12 + Dex modifier (max 2))|hide-armor
+Armor|AC 13 + Dex modifier (max 2)|Chain Shirt|SRD|skip|3|Sheet AC (AC 13 + Dex modifier (max 2))|chain-shirt
+Armor|AC 14 + Dex modifier (max 2)|Scale Mail|SRD|skip|3|Sheet AC (AC 14 + Dex modifier (max 2))|scale-mail
+Armor|AC 14 + Dex modifier (max 2)|Breastplate|SRD|skip|3|Sheet AC (AC 14 + Dex modifier (max 2))|breastplate
+Armor|AC 15 + Dex modifier (max 2)|Half Plate Armor|SRD|skip|3|Sheet AC (AC 15 + Dex modifier (max 2))|half-plate-armor
+Armor|AC 14|Ring Mail|SRD|skip|3|Sheet AC (AC 14)|ring-mail
+Armor|AC 16|Chain Mail|SRD|skip|3|Sheet AC (AC 16; Str 13)|chain-mail
+Armor|AC 17|Splint Armor|SRD|skip|3|Sheet AC (AC 17; Str 15)|splint-armor
+Armor|AC 18|Plate Armor|SRD|skip|3|Sheet AC (AC 18; Str 15)|plate-armor
+Armor|AC +2|Shield|SRD|skip|3|Sheet AC (AC +2)|shield
+Adventuring gear|AC 20|Arrows|SRD|skip|3|Ammunition - tracked by the weapon|arrows
+Adventuring gear|AC 20|Bolts|SRD|skip|3|Ammunition - tracked by the weapon|bolts
+Adventuring gear|AC 10|Bullets, Firearm|SRD|skip|3|Ammunition - tracked by the weapon|bullets-firearm
+Adventuring gear|AC 20|Bullets, Sling|SRD|skip|3|Ammunition - tracked by the weapon|bullets-sling
+Adventuring gear|AC 50|Needles|SRD|skip|3|Ammunition - tracked by the weapon|needles
+Weapon masteries|Mastery property|Mastery: Cleave|SRD|verify|1|Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with a melee attack roll using this weapon, you can make a melee attack roll with the weapon again...|mastery-cleave
+Weapon masteries|Mastery property|Mastery: Graze|SRD|verify|1|Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If your attack roll with this weapon misses a creature, you can deal damage to that creature equal to the ability modifi...|mastery-graze
+Weapon masteries|Mastery property|Mastery: Nick|SRD|verify|1|Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: When you make the extra attack of the Light property, you can make it as part of the Attack action instead of as a Bonus...|mastery-nick
+Weapon masteries|Mastery property|Mastery: Push|SRD|verify|1|Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, you can push the creature up to 10 feet straight away from yourself if it is Lar...|mastery-push
+Weapon masteries|Mastery property|Mastery: Sap|SRD|verify|1|Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, that creature has Disadvantage on its next attack roll before the start of your ...|mastery-sap
+Weapon masteries|Mastery property|Mastery: Slow|SRD|verify|1|Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon and deal damage to it, you can reduce its Speed by 10 feet until the start of you...|mastery-slow
+Weapon masteries|Mastery property|Mastery: Topple|SRD|verify|1|Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon, you can force the creature to make a Constitution saving throw (DC 8 plus the ab...|mastery-topple
+Weapon masteries|Mastery property|Mastery: Vex|SRD|verify|1|Automated Masteries 5e (wm5e) handles it - check it works with midi-qol: If you hit a creature with this weapon and deal damage to the creature, you have Advantage on your next attack roll agai...|mastery-vex
+Adventuring gear|25 GP|Acid|SRD|verify|1|Replace an attack: DEX save or 2d6 Acid|acid
+Adventuring gear|50 GP|Alchemist’s Fire|SRD|verify|1|Replace an attack: DEX save or 1d4 Fire and Burning - check Burning applies|alchemists-fire
+Adventuring gear|50 GP|Antitoxin|SRD|midi|2|midi-qol sample item - Advantage vs Poisoned for 1 hour|antitoxin
+Adventuring gear|1 GP|Ball Bearings|SRD|verify|2|Area: DEX save or Prone|ball-bearings
+Adventuring gear|1 GP|Caltrops|SRD|verify|2|Area: DEX save or 1 Piercing and Speed 0|caltrops
+Adventuring gear|5 GP|Chain|SRD|skip|3|Gear - nothing to automate|chain
+Adventuring gear|5 GP|Healer’s Kit|SRD|verify|2|Stabilize a creature at 0 HP (10 uses)|healers-kit
+Adventuring gear|25 GP|Holy Water|SRD|verify|1|Replace an attack: DEX save or 2d8 Radiant vs Fiends/Undead|holy-water
+Adventuring gear|5 GP|Hunting Trap|SRD|verify|3|DEX save or 1d4 Piercing and Speed 0; STR check to escape|hunting-trap
+Adventuring gear|2 GP|Manacles|SRD|skip|3|Gear - nothing to automate|manacles
+Adventuring gear|1 GP|Net|SRD|verify|1|Replace an attack: DEX save or Restrained (Huge+ immune)|net
+Adventuring gear|1 SP|Oil|SRD|verify|2|Douse a creature (+5 Fire when it takes fire) or a space (burning area)|oil
+Adventuring gear|100 GP|Poison, Basic|SRD|build|2|Coated weapon/ammunition: +1d4 Poison on a Piercing/Slashing hit for 1 minute|poison-basic
+Adventuring gear|50 GP|Potion of Healing|SRD|skip|3|Same item as Potions of Healing (magic items)|potion-of-healing
+Adventuring gear|1 GP|Rope|SRD|skip|3|Gear - nothing to automate|rope
+Adventuring gear|Cantrip, 30 GP Level 1, 50 GP|Spell Scroll|SRD|skip|3|Same item as Spell Scroll (magic items)|spell-scroll
+Adventuring gear|1 CP|Torch|SRD|midi|3|midi-qol sample item (light, improvised attack 1 Fire)|torch
+Adventuring gear|5 SP|Lamp|SRD|midi|3|midi-qol sample item (light)|lamp
+Adventuring gear|10 GP|Lantern, Bullseye|SRD|midi|3|midi-qol sample item (light)|lantern-bullseye
+Adventuring gear|5 GP|Lantern, Hooded|SRD|midi|3|midi-qol sample item (light)|lantern-hooded
+Adventuring gear|1 CP|Candle|SRD|midi|3|midi-qol sample item (light)|candle
+Adventuring gear|25 GP|Climber’s Kit|SRD|skip|3|Gear - nothing to automate|climbers-kit
+Adventuring gear|2 GP|Grappling Hook|SRD|skip|3|Gear - nothing to automate|grappling-hook
+Adventuring gear|2 GP|Crowbar|SRD|skip|3|Gear - nothing to automate|crowbar
+Adventuring gear|100 GP|Magnifying Glass|SRD|skip|3|Gear - nothing to automate|magnifying-glass
+Adventuring gear|5 GP|Costume|SRD|skip|3|Gear - nothing to automate|costume
+Adventuring gear|5 GP|Perfume|SRD|skip|3|Gear - nothing to automate|perfume
+Adventuring gear|25 GP|Book|SRD|skip|3|Gear - nothing to automate|book
+Adventuring gear|1 GP|Map|SRD|skip|3|Gear - nothing to automate|map
+Adventuring gear|5 CP|Pole|SRD|skip|3|Gear - nothing to automate|pole
+Adventuring gear|4 GP|Ram, Portable|SRD|skip|3|Gear - nothing to automate|ram-portable
+Adventuring gear|5 CP|Signal Whistle|SRD|skip|3|Gear - nothing to automate|signal-whistle
+Adventuring gear|1,000 GP|Spyglass|SRD|skip|3|Gear - nothing to automate|spyglass
+Adventuring gear|1 GP|Bell|SRD|skip|3|Gear - nothing to automate|bell
+Adventuring gear|5 SP|Blanket|SRD|skip|3|Gear - nothing to automate|blanket
+Adventuring gear|1 GP|Bedroll|SRD|skip|3|Gear - nothing to automate|bedroll
+Adventuring gear|5 SP|Tinderbox|SRD|skip|3|Gear - nothing to automate|tinderbox
+Tools|Tool|Poisoner’s Kit|SRD|skip|3|Tool - crafting and checks on the sheet|poisoners-kit
+Tools|Tool|Herbalism Kit|SRD|skip|3|Tool - crafting and checks on the sheet|herbalism-kit

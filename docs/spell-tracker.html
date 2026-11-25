@@ -87,6 +87,7 @@ footer { color: var(--muted); font-size: 13px; }
     <button type="button" role="tab" id="tab-spells" data-kind="spells" aria-selected="true">Spells</button>
     <button type="button" role="tab" id="tab-feats" data-kind="feats" aria-selected="false">Feats</button>
     <button type="button" role="tab" id="tab-features" data-kind="features" aria-selected="false">Class features</button>
+    <button type="button" role="tab" id="tab-items" data-kind="items" aria-selected="false">Items</button>
   </div>
 
   <div class="summary" id="summary" aria-label="Progress by category"></div>
@@ -100,9 +101,9 @@ footer { color: var(--muted); font-size: 13px; }
       <option value="3">Priority 3</option>
     </select>
     <select id="src" aria-label="Source">
-      <option value="all">SRD + PHB</option>
+      <option value="all">SRD + book</option>
       <option value="SRD">SRD only</option>
-      <option value="PHB">PHB-only</option>
+      <option value="book">Book-only</option>
     </select>
     <div class="grow"><input type="search" id="q" placeholder="Search names or notes" aria-label="Search names or notes"></div>
     <span class="count" id="count"></span>
@@ -133,11 +134,15 @@ const KINDS = {
     lede: "Every class and subclass feature in the 2024 Player's Handbook, plus Battle Master maneuvers, Metamagic options and Eldritch Invocations. Spell lists, proficiencies, Expertise and ability increases come from the sheet's advancement, so those are Skip. Priority 1 is what shows up in most fights.",
     groups: (rows) => [...new Set(rows.map((s) => s.group))], groupOf: (s) => s.group, groupLabel: (g) => g,
     sub: (s) => `${s.sub || "Class feature"}${s.level ? " · level " + s.level : ""}`,
-    sort: (a, b) => (a.sub ? 1 : 0) - (b.sub ? 1 : 0) || a.sub.localeCompare(b.sub) || (a.level ?? 0) - (b.level ?? 0) || a.name.localeCompare(b.name) }
+    sort: (a, b) => (a.sub ? 1 : 0) - (b.sub ? 1 : 0) || a.sub.localeCompare(b.sub) || (a.level ?? 0) - (b.level ?? 0) || a.name.localeCompare(b.name) },
+  items: { one: "item", many: "items", file: "items.json", title: "Item automation tracker", book: "2024 Dungeon Master's Guide and Player's Handbook",
+    lede: "Every magic item in the 2024 Dungeon Master's Guide and every weapon, armor, mastery and gear item in the 2024 Player's Handbook. Plain bonuses and spells cast from charges are Verify; on-hit riders, reactions and auras are Build. Weapon masteries come from Automated Masteries 5e. Priority 1 is what shows up in most fights.",
+    groups: (rows) => ["Weapon masteries", "Weapons", "Armor", "Adventuring gear", "Tools", "Magic weapons", "Magic armor and shields", "Potions and oils", "Rings", "Rods", "Scrolls", "Staffs", "Wands", "Wondrous items", "Artifacts"].filter((g) => rows.some((s) => s.group === g)),
+    groupOf: (s) => s.group, groupLabel: (g) => g, sub: (s) => s.sub }
 };
-const data = { spells: null, feats: null, features: null };
+const data = { spells: null, feats: null, features: null, items: null };
 const state = { kind: "spells", cats: new Set(["build", "verify", "midi"]), prio: "all", src: "all", q: "" };
-try { const saved = JSON.parse(localStorage.getItem("cga-tracker") || "null"); if (saved) { state.cats = new Set(saved.cats); state.prio = saved.prio; state.src = saved.src; if (KINDS[saved.kind]) state.kind = saved.kind; } } catch (e) {}
+try { const saved = JSON.parse(localStorage.getItem("cga-tracker") || "null"); if (saved) { state.cats = new Set(saved.cats); state.prio = saved.prio; state.src = saved.src === "PHB" ? "book" : saved.src; if (KINDS[saved.kind]) state.kind = saved.kind; } } catch (e) {}
 const save = () => { try { localStorage.setItem("cga-tracker", JSON.stringify({ kind: state.kind, cats: [...state.cats], prio: state.prio, src: state.src })); } catch (e) {} };
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 let spells = [];
@@ -157,7 +162,7 @@ function render() {
   const q = state.q.trim().toLowerCase();
   const rows = spells.filter((s) => state.cats.has(s.category)
     && (state.prio === "all" || String(s.priority) === state.prio)
-    && (state.src === "all" || s.source === state.src)
+    && (state.src === "all" || (state.src === "SRD") === (s.source === "SRD"))
     && (!q || `${s.name} ${s.aka ?? ""} ${s.sub ?? ""} ${s.note} ${s.identifier}`.toLowerCase().includes(q)));
   document.getElementById("count").textContent = `${rows.length} of ${spells.length} ${K().many}`;
   const list = document.getElementById("list");
@@ -205,12 +210,13 @@ function show() {
   if (!d) { document.getElementById("list").innerHTML = `<div class="empty">The ${k.one} list didn't load. Reload the page to try again.</div>`; return; }
   spells = d.rows;
   const extra = state.kind === "spells" ? " SRD names that differ from the book are shown under the spell name; their CGA fixes carry both identifiers." : "";
-  document.getElementById("foot").textContent = `List updated ${d.updated}. 2024 Player's Handbook: ${spells.filter((s) => s.source === "SRD").length} SRD ${k.many} + ${spells.filter((s) => s.source === "PHB").length} PHB-only ${k.many}.${extra}`;
+  const books = [...new Set(spells.map((s) => s.source).filter((x) => x !== "SRD"))].map((b) => `${spells.filter((s) => s.source === b).length} ${b}-only`).join(" + ");
+  document.getElementById("foot").textContent = `List updated ${d.updated}. ${k.book ?? "2024 Player's Handbook"}: ${spells.filter((s) => s.source === "SRD").length} SRD ${k.many} + ${books} ${k.many}.${extra}`;
   renderSummary(); render();
 }
 
 Promise.all(Object.entries(KINDS).map(([kind, k]) => fetch(k.file).then((r) => r.json())
-  .then((d) => { data[kind] = { updated: d.updated, rows: d.spells ?? d.feats ?? d.features }; }).catch(() => {})))
+  .then((d) => { data[kind] = { updated: d.updated, rows: d.spells ?? d.feats ?? d.features ?? d.items }; }).catch(() => {})))
   .then(() => {
     document.getElementById("prio").value = state.prio;
     document.getElementById("src").value = state.src;
