@@ -3,6 +3,14 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.17.0
+
+- New module setting **Saving throw cards** (Configure Settings -> Champions Guild Automation), default
+  **Condensed**: saving throws are listed on the spell or ability card that forced them (one row per creature with
+  its roll and pass/fail), instead of a separate chat card per save. It turns on dnd5e's per-player "Summary Chat
+  Cards" setting for everyone (and midi-qol's saves-section summary). "Separate cards" turns it off for everyone;
+  "Each player's choice" leaves it alone. No Mass Apply needed.
+
 ## 0.16.0
 
 The last feats: the priority-3 general feats and the Epic Boons. Every feat in the Player's Handbook is now

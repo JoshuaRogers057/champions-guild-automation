@@ -22,7 +22,34 @@ Hooks.once("init", () => {
     type: String,
     default: ""
   });
+  // Saving throws on the spell's own card (one row per creature: roll, pass/fail) instead of a separate chat card per
+  // save. That's dnd5e's "Summary Chat Cards" with midi-qol's saves section; dnd5e keeps it per player (client), so
+  // this world setting applies it on every client.
+  game.settings.register(MODULE_ID, "saveCards", {
+    name: "Saving throw cards",
+    hint: "Condensed: saving throws are listed on the spell or ability card that forced them (roll, pass or fail), like "
+      + "midi-qol used to. Separate: every save gets its own chat card. Player's choice: leave dnd5e's \"Summary Chat "
+      + "Cards\" setting to each player.",
+    scope: "world",
+    config: true,
+    type: String,
+    choices: { condensed: "Condensed (on the spell's card)", separate: "Separate cards", player: "Each player's choice" },
+    default: "condensed",
+    onChange: () => applySaveCards()
+  });
 });
+async function applySaveCards() {
+  const mode = game.settings.get(MODULE_ID, "saveCards");
+  if (mode === "player" || !game.settings.settings.has("dnd5e.chatCardSummary")) return;
+  const want = mode === "condensed";
+  if (game.settings.get("dnd5e", "chatCardSummary") !== want) await game.settings.set("dnd5e", "chatCardSummary", want);
+  // midi-qol's own saves section is the summary that matches the old look.
+  if (want && game.user.isGM) {
+    const cfg = foundry.utils.duplicate(game.settings.get("midi-qol", "ConfigSettings") ?? {});
+    if (cfg.saveSummaryStyle && cfg.saveSummaryStyle !== "midi") { cfg.saveSummaryStyle = "midi"; await game.settings.set("midi-qol", "ConfigSettings", cfg); }
+  }
+}
+Hooks.once("ready", () => { applySaveCards().catch((err) => console.warn(`${MODULE_ID} | couldn't apply the saving throw card setting`, err)); });
 
 Hooks.once("catReady", async () => {
   const api = globalThis.cat?.api;
