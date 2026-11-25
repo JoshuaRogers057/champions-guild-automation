@@ -3,6 +3,38 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.7.0
+
+25 more priority-2 spells, each tested in a live v14 world. DMs: update, then run **Mass Apply / Update**.
+
+- **Repeat saves** (rolled automatically at the end of the creature's turn, against the caster's DC):
+  Blindness/Deafness (now you pick which), Ray of Enfeeblement (a successful save gives Disadvantage on its next
+  attack), Slow (also no Reactions), Phantasmal Killer (Disadvantage on checks and attacks, psychic damage again on
+  each failed save; the compendium copy never asked for a save), Synaptic Static (new, -1d6 to attacks, checks and
+  concentration saves).
+- **Tasha's Hideous Laughter**: repeat save at the end of each turn, and with Advantage each time it takes damage.
+- **Smites** (also offered by the Paladin's Smite prompt): Shining Smite (attacks against the target have
+  Advantage), and new Blinding Smite (Blinded, repeat CON save), Staggering Smite (WIS save or Stunned until the end
+  of your next turn) and Banishing Smite (a target left at 50 HP or fewer is banished until the spell ends).
+- **Banishment**: the banished creature's token is hidden until the spell ends.
+- **Heroism**: temp HP equal to your spellcasting modifier at the start of each of the target's turns.
+- **Fire Shield**: pick warm or chill; melee attackers within 5 ft take 2d8 Fire or Cold.
+- **Repeatable spells** (a no-slot activity for later turns): Vampiric Touch (you heal half the damage),
+  Call Lightning (Call Another Bolt), Witch Bolt (new; Arc Lightning as a Bonus Action), Heat Metal (Reheat; the
+  hot object now gives Disadvantage).
+- **Protection from Evil and Good**: Aberrations, Celestials, Elementals, Fey, Fiends and Undead have Disadvantage
+  attacking the target.
+- **Beacon of Hope**: healing on the targets is maximized.
+- **Death Ward**: the first drop to 0 HP becomes 1 HP, and the spell ends.
+- **Resistance**: pick the damage type; 1d4 less damage of it, once per turn.
+- **Warding Bond**: whenever the target takes damage, the caster takes the same amount.
+- **Arms of Hadar** (new): STR save necrotic within 10 ft; no Reactions on a failure.
+- **Compelled Duel** (new): Disadvantage on attacks against anyone but the caster.
+- **Fear**: the compendium version works; the save to end it (only when the creature is out of your sight) is the
+  DM's to roll.
+- **New module rules**: Resistance, Death Ward and Warding Bond are handled by the module when damage is applied, so
+  they work with any attack or spell that midi-qol rolls.
+
 ## 0.6.0
 
 26 priority-2 spells, each cast in a live v14 world. DMs: update, then run **Mass Apply / Update**.
