@@ -5,21 +5,21 @@
 #             build (needs automation work) | skip (choices/proficiencies/spells the sheet handles, or manual/roleplay)
 #   priority: 1 = core, used in most fights; 2 = regular; 3 = high level or rare
 Barbarian||1|Rage|SRD|done|1|Rage effect, Rage Damage on STR attacks, ends Concentration; ends at the end of a turn you didn't attack/force a save/extend (module rule)
-Barbarian||1|Unarmored Defense|SRD|verify|1|Compendium AC calc unarmoredBarb
+Barbarian||1|Unarmored Defense|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredBarb
 Barbarian||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
-Barbarian||2|Danger Sense|SRD|verify|1|Compendium: Advantage on DEX saves (should drop while Incapacitated)
+Barbarian||2|Danger Sense|SRD|done|1|Fixed copy: DEX save Advantage that switches off while Incapacitated (module rule).
 Barbarian||2|Reckless Attack|SRD|done|1|Prompt before the first STR attack of your turn; Advantage for you and against you until your next turn
 Barbarian||3|Barbarian Subclass|PHB|skip|3|Sheet/advancement or manual
 Barbarian||3|Primal Knowledge|SRD|skip|3|Sheet/advancement or manual
 Barbarian||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Barbarian||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
-Barbarian||5|Fast Movement|SRD|verify|1|Compendium +10 ft (should be off in Heavy armor)
-Barbarian||7|Feral Instinct|SRD|verify|2|Compendium Advantage on Initiative
+Barbarian||5|Fast Movement|SRD|done|1|Fixed copy: +10 ft unless in Heavy armor (module rule).
+Barbarian||7|Feral Instinct|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on Initiative
 Barbarian||7|Instinctive Pounce|SRD|skip|2|Move half Speed when raging - manual
 Barbarian||9|Brutal Strike|SRD|done|2|Prompt before a reckless STR attack; extra 1d10/2d10 and the chosen Brutal Strike effect.
 Barbarian||11|Relentless Rage|SRD|done|2|Automatic CON save at 0 HP while raging (DC 10 +5 per use, reset on rests) - module rule.
 Barbarian||13|Improved Brutal Strike|SRD|done|3|Handled by Brutal Strike (extra options at 13, 2d10 and two effects at 17).
-Barbarian||15|Persistent Rage|SRD|verify|3|Compendium recharge-on-Initiative activity; Rage no longer needs extending
+Barbarian||15|Persistent Rage|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Rage count worked out from your Barbarian level.
 Barbarian||17|Improved Brutal Strike|SRD|done|3|Handled by Brutal Strike (extra options at 13, 2d10 and two effects at 17).
 Barbarian||18|Indomitable Might|SRD|done|3|STR check/save totals raised to your STR score (module rule).
 Barbarian||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
@@ -27,7 +27,7 @@ Barbarian||20|Primal Champion|SRD|skip|3|+4 STR/CON from advancement
 Barbarian|Path of the Berserker|3|Frenzy|SRD|done|1|Automatic Rage-Damage-count d6s on the first STR hit each turn while raging and reckless
 Barbarian|Path of the Berserker|6|Mindless Rage|SRD|done|2|Charmed/Frightened immunity on the Rage effect while raging.
 Barbarian|Path of the Berserker|10|Retaliation|SRD|done|2|Reaction prompt when damaged in melee; attacks with your melee weapon.
-Barbarian|Path of the Berserker|14|Intimidating Presence|SRD|verify|3|Compendium WIS save + Frightened with repeat save; recharge by spending Rage
+Barbarian|Path of the Berserker|14|Intimidating Presence|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Barbarian|Path of the Wild Heart|3|Animal Speaker|PHB|skip|3|Sheet/advancement or manual
 Barbarian|Path of the Wild Heart|3|Rage of the Wilds|PHB|done|2|Choice when Rage starts: Bear resistances on the Rage effect, Eagle reminder, Wolf aura (module rule).
 Barbarian|Path of the Wild Heart|6|Aspect of the Wilds|PHB|done|3|Choose Aspect activity sets the Owl/Panther/Salmon effect.
@@ -45,10 +45,10 @@ Barbarian|Path of the Zealot|14|Rage of the Gods|PHB|done|3|Divine Warrior Form 
 Bard||1|Bardic Inspiration|SRD|done|1|Inspire gives the target an optional-bonus effect (prompt after a failed attack/save or on a check)
 Bard||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Bard||2|Expertise|SRD|skip|3|Sheet/advancement or manual
-Bard||2|Jack of All Trades|SRD|verify|1|Compendium flag
+Bard||2|Jack of All Trades|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium flag
 Bard||3|Bard Subclass|PHB|skip|3|Sheet/advancement or manual
 Bard||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Bard||5|Font of Inspiration|SRD|verify|2|Compendium: spend a slot to regain a use; SR recharge from level 5
+Bard||5|Font of Inspiration|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium: spend a slot to regain a use; SR recharge from level 5
 Bard||7|Countercharm|SRD|done|2|Reaction prompt after a failed save vs Charmed/Frightened; reroll with Advantage (module rule).
 Bard||10|Magical Secrets|SRD|skip|3|Sheet/advancement or manual
 Bard||18|Superior Inspiration|SRD|done|3|Bardic Inspiration back to 2 on Initiative (module rule).
@@ -72,7 +72,7 @@ Bard|College of Valor|6|Extra Attack|SRD|skip|3|Sheet/advancement or manual
 Bard|College of Valor|14|Battle Magic|PHB|skip|3|Bonus Action weapon attack after an action spell - manual
 Cleric||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Cleric||1|Divine Order|SRD|skip|3|Sheet/advancement or manual
-Cleric||2|Channel Divinity|SRD|verify|1|Compendium Divine Spark (heal/save) and Turn Undead; check scaling and uses
+Cleric||2|Channel Divinity|SRD|done|1|Fixed copy: Divine Spark dice worked out from your Cleric level (no scale values needed).
 Cleric||3|Cleric Subclass|PHB|skip|3|Sheet/advancement or manual
 Cleric||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Cleric||5|Sear Undead|SRD|done|2|Turn Undead failures take WIS-mod d8 Radiant.
@@ -83,12 +83,12 @@ Cleric||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Cleric||20|Greater Divine Intervention|SRD|skip|3|Wish - manual
 Cleric|Life Domain|3|Disciple of Life|SRD|done|1|Slot healing spells add 2 + slot level automatically
 Cleric|Life Domain|3|Life Domain Spells|SRD|skip|3|Sheet/advancement or manual
-Cleric|Life Domain|3|Preserve Life|SRD|midi|2|
-Cleric|Life Domain|6|Blessed Healer|SRD|midi|2|
+Cleric|Life Domain|3|Preserve Life|SRD|done|2|midi-qol sample item checked (activities run)
+Cleric|Life Domain|6|Blessed Healer|SRD|done|2|midi-qol sample item checked (activities run)
 Cleric|Life Domain|17|Supreme Healing|SRD|done|3|Healing dice maximized on your spells and Channel Divinity.
 Cleric|Light Domain|3|Light Domain Spells|PHB|skip|3|Sheet/advancement or manual
 Cleric|Light Domain|3|Radiance of the Dawn|PHB|done|2|Channel Divinity 30-ft emanation CON save, 2d10 + Cleric level Radiant (half).
-Cleric|Light Domain|3|Warding Flare|PHB|midi|1|
+Cleric|Light Domain|3|Warding Flare|PHB|done|1|midi-qol sample item checked (activities run)
 Cleric|Light Domain|6|Improved Warding Flare|PHB|done|2|Warding Flare recharges on Short Rests (module rule); temp HP prompt after using it.
 Cleric|Light Domain|17|Corona of Light|PHB|done|3|Light and an enemy save-Disadvantage aura for 1 minute (module rule).
 Cleric|Trickery Domain|3|Blessing of the Trickster|PHB|done|2|Activity effect: Advantage on Stealth until a Long Rest.
@@ -105,20 +105,20 @@ Druid||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Druid||1|Druidic|SRD|skip|3|Sheet/advancement or manual
 Druid||1|Primal Order|SRD|skip|3|Sheet/advancement or manual
 Druid||2|Wild Shape|SRD|done|1|dnd5e Transform (Wild Shape preset): Compendium Browser of CR-limited Beasts (no fly before 8), keeps HP/mental/features, temp HP = Druid level
-Druid||2|Wild Companion|SRD|verify|2|Compendium summon via slot or Wild Shape (Fey familiar)
+Druid||2|Wild Companion|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Druid||3|Druid Subclass|PHB|skip|3|Sheet/advancement or manual
 Druid||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Druid||5|Wild Resurgence|SRD|verify|2|Compendium slot <-> Wild Shape conversions
+Druid||5|Wild Resurgence|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Druid||7|Elemental Fury|SRD|done|1|Primal Strike (once per turn prompt for the type) and Potent Spellcasting (+WIS to Druid cantrips) items
 Druid||15|Improved Elemental Fury|SRD|done|3|Primal Strike 2d8 handled by Elemental Fury; range extension manual.
 Druid||18|Beast Spells|SRD|skip|3|Sheet/advancement or manual
 Druid||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Druid||20|Archdruid|SRD|verify|3|Compendium Nature Magician / recharge on Initiative
+Druid||20|Archdruid|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Wild Shape uses worked out from your Druid level.
 Druid|Circle of the Land|3|Circle of the Land Spells|SRD|done|2|Choose Land activity adds the land's spells (always prepared) and removes the old ones.
-Druid|Circle of the Land|3|Land’s Aid|SRD|verify|2|Compendium save + heal
-Druid|Circle of the Land|6|Natural Recovery|SRD|verify|2|Compendium activities
-Druid|Circle of the Land|10|Nature’s Ward|SRD|midi|3|
-Druid|Circle of the Land|14|Nature’s Sanctuary|SRD|verify|3|Compendium cube + resistances
+Druid|Circle of the Land|3|Land’s Aid|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Dice worked out from your Druid level.
+Druid|Circle of the Land|6|Natural Recovery|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium activities
+Druid|Circle of the Land|10|Nature’s Ward|SRD|done|3|midi-qol sample item checked (activities run)
+Druid|Circle of the Land|14|Nature’s Sanctuary|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Druid|Circle of the Moon|3|Circle Forms|PHB|done|1|Wild Shape (Circle Forms) transform: CR level/3, AC 13 + WIS, temp HP 3x Druid level, Moon spells castable; spends a Wild Shape use
 Druid|Circle of the Moon|3|Circle of the Moon Spells|PHB|skip|3|Sheet/advancement or manual
 Druid|Circle of the Moon|6|Improved Circle Forms|PHB|done|2|Beast form gets +WIS to CON saves and a once-per-form Radiant option (module rule + macro).
@@ -135,16 +135,16 @@ Druid|Circle of the Stars|6|Cosmic Omen|PHB|done|2|Long Rest Weal/Woe roll (modu
 Druid|Circle of the Stars|10|Twinkling Constellations|PHB|done|3|Part of Starry Form: 2d8, Dragon fly 20 + hover, Change Constellation activity
 Druid|Circle of the Stars|14|Full of Stars|PHB|done|3|Part of Starry Form: B/P/S resistance at 14
 Fighter||1|Fighting Style|SRD|skip|3|Sheet/advancement or manual
-Fighter||1|Second Wind|SRD|verify|1|Compendium heal 1d10 + level; check uses scale
+Fighter||1|Second Wind|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium heal 1d10 + level; check uses scale
 Fighter||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
-Fighter||2|Action Surge|SRD|verify|1|Compendium utility (extra action is manual)
+Fighter||2|Action Surge|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium utility (extra action is manual)
 Fighter||2|Tactical Mind|SRD|done|2|Optional +1d10 on a failed check, spending a Second Wind use.
 Fighter||3|Fighter Subclass|PHB|skip|3|Sheet/advancement or manual
 Fighter||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Fighter||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
 Fighter||5|Tactical Shift|SRD|skip|2|Move half speed on Second Wind - manual
 Fighter||9|Indomitable|SRD|done|2|Optional reroll of a failed save + Fighter level, using Indomitable uses.
-Fighter||9|Tactical Master|SRD|verify|2|Compendium mastery swap
+Fighter||9|Tactical Master|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium mastery swap
 Fighter||11|Two Extra Attacks|SRD|skip|3|Sheet/advancement or manual
 Fighter||13|Studied Attacks|SRD|done|3|Miss: Advantage on your next attack against that creature.
 Fighter||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
@@ -175,11 +175,11 @@ Fighter|Maneuver||Riposte|PHB|done|1|Reaction when missed in melee: attack with 
 Fighter|Maneuver||Sweeping Attack|PHB|done|2|After a melee hit: spend a die; if your attack roll would hit a second creature within 5 ft of the target and of you, it takes the die's roll in damage (offered in the maneuver prompt).
 Fighter|Maneuver||Tactical Assessment|PHB|done|3|Optional Superiority Die on those checks (module rule keeps the die size).
 Fighter|Maneuver||Trip Attack|PHB|done|1|In the maneuver prompt (STR save, Prone)
-Fighter|Champion|3|Improved Critical|SRD|verify|1|Compendium crit 19 (should include Unarmed Strike)
-Fighter|Champion|3|Remarkable Athlete|SRD|verify|2|Compendium flag; post-crit move is manual
+Fighter|Champion|3|Improved Critical|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium crit 19 (should include Unarmed Strike)
+Fighter|Champion|3|Remarkable Athlete|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium flag; post-crit move is manual
 Fighter|Champion|7|Additional Fighting Style|SRD|skip|3|Sheet/advancement or manual
 Fighter|Champion|10|Heroic Warrior|SRD|done|2|Heroic Inspiration at the start of your turn (module rule).
-Fighter|Champion|15|Superior Critical|SRD|verify|3|Compendium crit 18
+Fighter|Champion|15|Superior Critical|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium crit 18
 Fighter|Champion|18|Survivor|SRD|done|3|Death save Advantage; turn-start heal while Bloodied.
 Fighter|Eldritch Knight|3|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Fighter|Eldritch Knight|3|War Bond|PHB|skip|3|Bonded weapon - roleplay
@@ -193,14 +193,14 @@ Fighter|Psi Warrior|10|Guarded Mind|PHB|done|3|Psychic resistance; activity spen
 Fighter|Psi Warrior|15|Bulwark of Force|PHB|done|3|Half Cover effect on the targets for 1 minute.
 Fighter|Psi Warrior|18|Telekinetic Master|PHB|done|3|Telekinesis cast activity (once per Long Rest).
 Monk||1|Martial Arts|SRD|done|1|Martial Arts die on Unarmed/Monk weapons; Finesse + better of STR/DEX added to them by the module
-Monk||1|Unarmored Defense|SRD|verify|1|Compendium AC calc unarmoredMonk
+Monk||1|Unarmored Defense|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredMonk
 Monk||2|Monk’s Focus|SRD|done|1|Flurry of Blows makes the Unarmed Strikes; Focus = Monk level
-Monk||2|Unarmored Movement|SRD|verify|1|Compendium scale (should be off in armor/shield)
-Monk||2|Uncanny Metabolism|SRD|verify|2|Compendium heal; should also restore Focus on Initiative
+Monk||2|Unarmored Movement|SRD|done|1|Fixed copy: Speed bonus by Monk level while unarmored and without a Shield (module rule).
+Monk||2|Uncanny Metabolism|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Martial Arts die worked out from your Monk level; offered on Initiative (module rule).
 Monk||3|Deflect Attacks|SRD|done|1|Reaction prompt when hit (module rule), Redirect save + damage when reduced to 0
 Monk||3|Monk Subclass|PHB|skip|3|Sheet/advancement or manual
 Monk||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Monk||4|Slow Fall|SRD|verify|3|Compendium reduce fall damage
+Monk||4|Slow Fall|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium reduce fall damage
 Monk||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
 Monk||5|Stunning Strike|SRD|done|1|Prompt after Monk weapon/unarmed hits (once per turn, 1 Focus); Stunned or Slowed + Off Balance
 Monk||6|Empowered Strikes|SRD|done|2|Unarmed Strike damage becomes Force (toggle).
@@ -211,7 +211,7 @@ Monk||10|Self-Restoration|PHB|skip|3|End Charmed/Frightened/Poisoned at end of t
 Monk||13|Deflect Energy|SRD|done|3|Deflect Attacks covers every damage type from level 13 (module rule).
 Monk||14|Disciplined Survivor|SRD|done|3|All save proficiencies; optional reroll spending Focus.
 Monk||15|Perfect Focus|SRD|done|3|Focus back to 4 on Initiative (module rule).
-Monk||18|Superior Defense|SRD|verify|3|Compendium resistance effect (3 Focus)
+Monk||18|Superior Defense|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Monk||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Monk||20|Body and Mind|SRD|skip|3|+4 DEX/WIS from advancement
 Monk|Warrior of Mercy|3|Hand of Harm|PHB|done|1|Prompt after unarmed hits (1 Focus): +MA die + WIS Necrotic; Poisoned from level 6
@@ -224,37 +224,37 @@ Monk|Warrior of Shadow|3|Shadow Arts|PHB|done|2|Darkvision effect; Darkness (1 F
 Monk|Warrior of Shadow|6|Shadow Step|PHB|done|2|Bonus Action Advantage on your next melee attack this turn.
 Monk|Warrior of Shadow|11|Improved Shadow Step|PHB|done|3|Reminder (spend the Focus and make the strike yourself).
 Monk|Warrior of Shadow|17|Cloak of Shadows|PHB|done|3|Invisible effect for 1 minute (3 Focus).
-Monk|Warrior of the Elements|3|Elemental Attunement|PHB|midi|1|
+Monk|Warrior of the Elements|3|Elemental Attunement|PHB|done|1|midi-qol sample item checked (activities run)
 Monk|Warrior of the Elements|3|Manipulate Elements|PHB|skip|3|Sheet/advancement or manual
 Monk|Warrior of the Elements|6|Elemental Burst|PHB|done|2|20-ft sphere DEX save, 3 Martial Arts dice of the chosen element (half).
 Monk|Warrior of the Elements|11|Stride of the Elements|PHB|done|3|Fly and swim speed effect for 10 minutes.
 Monk|Warrior of the Elements|17|Elemental Epitome|PHB|done|3|Choose Element sets the resistance; once-per-turn extra Martial Arts die.
 Monk|Warrior of the Open Hand|3|Open Hand Technique|SRD|done|1|Prompt after Flurry hits: Addle / Push / Topple
-Monk|Warrior of the Open Hand|6|Wholeness of Body|SRD|verify|2|Compendium heal
+Monk|Warrior of the Open Hand|6|Wholeness of Body|SRD|done|2|Fixed copy: Martial Arts die worked out from your Monk level (no scale values needed).
 Monk|Warrior of the Open Hand|11|Fleet Step|SRD|skip|3|Manual
-Monk|Warrior of the Open Hand|17|Quivering Palm|SRD|verify|3|Compendium instill/end vibrations
-Paladin||1|Lay On Hands|SRD|verify|1|Compendium pool heal + remove Poisoned; check pool = 5x level and amount choice
+Monk|Warrior of the Open Hand|17|Quivering Palm|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
+Paladin||1|Lay On Hands|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium pool heal + remove Poisoned; check pool = 5x level and amount choice
 Paladin||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Paladin||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
 Paladin||2|Fighting Style|SRD|skip|3|Sheet/advancement or manual
 Paladin||2|Paladin’s Smite|SRD|done|1|Free Divine Smite + smite prompt after melee hits
-Paladin||3|Channel Divinity|SRD|verify|2|Compendium Divine Sense
+Paladin||3|Channel Divinity|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium Divine Sense
 Paladin||3|Paladin Subclass|PHB|skip|3|Sheet/advancement or manual
 Paladin||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Paladin||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
-Paladin||5|Faithful Steed|SRD|verify|2|Find Steed free cast - check summon
+Paladin||5|Faithful Steed|SRD|done|2|Fixed copy: Adds a free Find Steed cast (the compendium item had no activity).
 Paladin||6|Aura of Protection|SRD|done|1|+CHA to saves for you and allies in 10/30 ft, kept up to date as tokens move (module rule)
-Paladin||9|Abjure Foes|SRD|verify|2|Compendium WIS save Frightened (ends on damage)
+Paladin||9|Abjure Foes|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium WIS save Frightened (ends on damage)
 Paladin||10|Aura of Courage|SRD|done|2|Frightened immunity aura (module rule).
-Paladin||11|Radiant Strikes|SRD|midi|1|
+Paladin||11|Radiant Strikes|SRD|done|1|midi-qol sample item checked (activities run)
 Paladin||14|Restoring Touch|SRD|done|3|Spends 5 Lay on Hands points and ends a chosen condition.
 Paladin||18|Aura Expansion|SRD|done|3|Aura ranges grow at 18 in the aura automation.
 Paladin||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Paladin|Oath of Devotion|3|Oath of Devotion Spells|SRD|skip|3|Sheet/advancement or manual
-Paladin|Oath of Devotion|3|Sacred Weapon|SRD|verify|1|Compendium enchant (+CHA to attacks, radiant, light)
+Paladin|Oath of Devotion|3|Sacred Weapon|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium enchant (+CHA to attacks, radiant, light)
 Paladin|Oath of Devotion|7|Aura of Devotion|SRD|done|2|Charmed immunity aura (module rule).
 Paladin|Oath of Devotion|15|Smite of Protection|SRD|done|3|Divine Smite: Half Cover for allies in your aura.
-Paladin|Oath of Devotion|20|Holy Nimbus|SRD|verify|3|Compendium aura damage
+Paladin|Oath of Devotion|20|Holy Nimbus|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium aura damage
 Paladin|Oath of Glory|3|Inspiring Smite|PHB|done|2|Prompt after Divine Smite; split 2d8 + level temp HP.
 Paladin|Oath of Glory|3|Oath of Glory Spells|PHB|skip|3|Sheet/advancement or manual
 Paladin|Oath of Glory|3|Peerless Athlete|PHB|done|2|Channel Divinity: Advantage on Athletics and Acrobatics for 1 hour.
@@ -267,25 +267,25 @@ Paladin|Oath of the Ancients|7|Aura of Warding|PHB|done|2|Necrotic/Psychic/Radia
 Paladin|Oath of the Ancients|15|Undying Sentinel|PHB|done|3|Automatic once per Long Rest at 0 HP (module rule).
 Paladin|Oath of the Ancients|20|Elder Champion|PHB|done|3|Regeneration and an enemy save-Disadvantage aura for 1 minute (module rule).
 Paladin|Oath of Vengeance|3|Oath of Vengeance Spells|PHB|skip|3|Sheet/advancement or manual
-Paladin|Oath of Vengeance|3|Vow of Enmity|PHB|midi|1|
+Paladin|Oath of Vengeance|3|Vow of Enmity|PHB|done|1|midi-qol sample item checked (activities run)
 Paladin|Oath of Vengeance|7|Relentless Avenger|PHB|done|2|Opportunity Attack hit: target's Speed 0 this turn.
 Paladin|Oath of Vengeance|15|Soul of Vengeance|PHB|done|3|Reaction activity: melee attack against the targeted creature.
 Paladin|Oath of Vengeance|20|Avenging Angel|PHB|done|3|Fly 60 effect; frightful aura at enemy turn starts (module rule).
 Ranger||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
-Ranger||1|Favored Enemy|SRD|verify|1|Compendium free Hunter's Mark casts (CGA Hunter's Mark spell is fixed)
+Ranger||1|Favored Enemy|SRD|done|1|Fixed copy: Free Hunter's Mark casts use the module's automated Hunter's Mark spell.
 Ranger||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
 Ranger||2|Deft Explorer|SRD|skip|3|Sheet/advancement or manual
 Ranger||2|Fighting Style|SRD|skip|3|Sheet/advancement or manual
 Ranger||3|Ranger Subclass|PHB|skip|3|Sheet/advancement or manual
 Ranger||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Ranger||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
-Ranger||6|Roving|SRD|verify|2|Compendium +10 ft, climb/swim
+Ranger||6|Roving|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium +10 ft, climb/swim
 Ranger||9|Expertise|SRD|skip|3|Sheet/advancement or manual
-Ranger||10|Tireless|SRD|verify|2|Compendium temp HP / exhaustion
+Ranger||10|Tireless|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium temp HP / exhaustion
 Ranger||13|Relentless Hunter|SRD|done|3|Damage doesn't call for a Concentration save on Hunter's Mark (module rule).
-Ranger||14|Nature’s Veil|SRD|verify|3|Compendium Invisible until end of next turn
+Ranger||14|Nature’s Veil|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium Invisible until end of next turn
 Ranger||17|Precise Hunter|SRD|done|3|Advantage against your Hunter's Mark target.
-Ranger||18|Feral Senses|SRD|verify|3|Compendium Blindsight 30
+Ranger||18|Feral Senses|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium Blindsight 30
 Ranger||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Ranger||20|Foe Slayer|SRD|done|3|Hunter's Mark die becomes d10 (Hunter's Mark automation).
 Ranger|Beast Master|3|Primal Companion|PHB|done|1|Summon Beast of the Land/Sea/Sky (AC 13+WIS, HP by Ranger level, spell attack, +WIS damage, Primal Bond); a new beast replaces the old (module rule)
@@ -308,19 +308,19 @@ Ranger|Hunter|3|Hunter’s Lore|SRD|skip|3|DM tells resistances - manual
 Ranger|Hunter|3|Hunter’s Prey|SRD|done|1|Choose Option activity; Colossus Slayer automatic, Horde Breaker manual
 Ranger|Hunter|7|Defensive Tactics|SRD|done|2|Choose Option: Escape the Horde effect or Multiattack Defense (module rule).
 Ranger|Hunter|11|Superior Hunter’s Prey|SRD|done|3|Once per turn, the Hunter's Mark die to a second creature within 30 ft.
-Ranger|Hunter|15|Superior Hunter’s Defense|SRD|verify|3|Compendium reaction resistance by type
+Ranger|Hunter|15|Superior Hunter’s Defense|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium reaction resistance by type
 Rogue||1|Expertise|SRD|skip|3|Sheet/advancement or manual
 Rogue||1|Sneak Attack|SRD|done|1|CGA's own Sneak Attack (2024 rules: Advantage or ally within 5 ft, Finesse/Ranged, once per turn) - replaces midi's
 Rogue||1|Thieves’ Cant|SRD|skip|3|Sheet/advancement or manual
 Rogue||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
-Rogue||2|Cunning Action|SRD|verify|1|Compendium Dash/Disengage/Hide
+Rogue||2|Cunning Action|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium Dash/Disengage/Hide
 Rogue||3|Rogue Subclass|PHB|skip|3|Sheet/advancement or manual
 Rogue||3|Steady Aim|SRD|done|2|Activity effects: Advantage on the next attack this turn, Speed 0.
 Rogue||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Rogue||5|Cunning Strike|SRD|done|1|Choice in the Sneak Attack prompt (Poison/Trip/Withdraw; Daze/Obscure/Knock Out at 14); saves run automatically
-Rogue||5|Uncanny Dodge|SRD|midi|1|
+Rogue||5|Uncanny Dodge|SRD|done|1|midi-qol sample item checked (activities run)
 Rogue||7|Evasion|SRD|done|1|superSaver/semiSuperSaver on DEX (not while Incapacitated)
-Rogue||7|Reliable Talent|SRD|verify|2|Compendium flag
+Rogue||7|Reliable Talent|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium flag
 Rogue||11|Improved Cunning Strike|SRD|done|3|Second Cunning Strike effect in the Sneak Attack prompt.
 Rogue||14|Devious Strikes|SRD|done|3|Daze/Knock Out/Obscure in the Cunning Strike choices.
 Rogue||15|Slippery Mind|SRD|skip|3|Sheet/advancement or manual
@@ -343,30 +343,30 @@ Rogue|Soulknife|9|Soul Blades|PHB|done|2|Homing Strikes prompt (module rule); Ps
 Rogue|Soulknife|13|Psychic Veil|PHB|done|3|Invisible effect for 1 hour (ends when you deal damage).
 Rogue|Soulknife|17|Rend Mind|PHB|done|3|Prompt after a Psychic Blade Sneak Attack; WIS save or Stunned.
 Rogue|Thief|3|Fast Hands|SRD|skip|3|Sheet/advancement or manual
-Rogue|Thief|3|Second-Story Work|SRD|verify|2|Compendium climb speed
+Rogue|Thief|3|Second-Story Work|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium climb speed
 Rogue|Thief|9|Supreme Sneak|SRD|skip|3|Manual
 Rogue|Thief|13|Use Magic Device|SRD|skip|3|Sheet/advancement or manual
 Rogue|Thief|17|Thief’s Reflexes|SRD|skip|3|Two turns in round 1 - manual
 Sorcerer||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
-Sorcerer||1|Innate Sorcery|SRD|midi|1|
-Sorcerer||2|Font of Magic|SRD|verify|1|Compendium slot <-> sorcery point conversions
+Sorcerer||1|Innate Sorcery|SRD|done|1|midi-qol sample item checked (activities run)
+Sorcerer||2|Font of Magic|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium slot <-> sorcery point conversions
 Sorcerer||2|Metamagic|SRD|skip|3|Sheet/advancement or manual
 Sorcerer||3|Sorcerer Subclass|PHB|skip|3|Sheet/advancement or manual
 Sorcerer||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Sorcerer||5|Sorcerous Restoration|SRD|verify|2|Compendium SR restore
-Sorcerer||7|Sorcery Incarnate|SRD|verify|2|Compendium restore Innate Sorcery
+Sorcerer||5|Sorcerous Restoration|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
+Sorcerer||7|Sorcery Incarnate|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Sorcerer||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Sorcerer||20|Arcane Apotheosis|SRD|skip|3|Free Metamagic once per turn - manual
-Sorcerer|Metamagic||Careful Spell|SRD|midi|1|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Distant Spell|SRD|midi|2|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Empowered Spell|SRD|midi|2|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Extended Spell|SRD|midi|2|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Heightened Spell|SRD|midi|1|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Quickened Spell|SRD|midi|1|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Seeking Spell|SRD|midi|2|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Subtle Spell|SRD|midi|1|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Transmuted Spell|SRD|midi|2|midi-qol ships it (verify with 2024 costs)
-Sorcerer|Metamagic||Twinned Spell|SRD|midi|1|midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Careful Spell|SRD|done|1|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Distant Spell|SRD|done|2|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Empowered Spell|SRD|done|2|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Extended Spell|SRD|done|2|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Heightened Spell|SRD|done|1|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Quickened Spell|SRD|done|1|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Seeking Spell|SRD|done|2|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Subtle Spell|SRD|done|1|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Transmuted Spell|SRD|done|2|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
+Sorcerer|Metamagic||Twinned Spell|SRD|done|1|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
 Sorcerer|Aberrant Sorcery|3|Psionic Spells|PHB|skip|3|Sheet/advancement or manual
 Sorcerer|Aberrant Sorcery|3|Telepathic Speech|PHB|skip|3|Sheet/advancement or manual
 Sorcerer|Aberrant Sorcery|6|Psionic Sorcery|PHB|done|3|Reminder; spend Sorcery Points by hand.
@@ -378,10 +378,10 @@ Sorcerer|Clockwork Sorcery|3|Restore Balance|PHB|done|2|Reaction prompt to cance
 Sorcerer|Clockwork Sorcery|6|Bastion of Law|PHB|done|2|Ward of d8s (Sorcery Points); damage prompt spends dice (module rule).
 Sorcerer|Clockwork Sorcery|14|Trance of Order|PHB|done|3|No Advantage against you; d20 minimum 10 on your tests.
 Sorcerer|Clockwork Sorcery|18|Clockwork Cavalcade|PHB|done|3|Use tracker; effects are applied by hand.
-Sorcerer|Draconic Sorcery|3|Draconic Resilience|SRD|verify|2|Compendium AC + HP
+Sorcerer|Draconic Sorcery|3|Draconic Resilience|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium AC + HP
 Sorcerer|Draconic Sorcery|3|Draconic Spells|SRD|skip|3|Sheet/advancement or manual
 Sorcerer|Draconic Sorcery|6|Elemental Affinity|SRD|done|2|Choose Type sets resistance; +CHA to spell damage of that type.
-Sorcerer|Draconic Sorcery|14|Dragon Wings|SRD|verify|3|Compendium fly 60
+Sorcerer|Draconic Sorcery|14|Dragon Wings|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Sorcerer|Draconic Sorcery|18|Dragon Companion|SRD|skip|3|Summon Dragon without concentration - manual
 Sorcerer|Wild Magic Sorcery|3|Wild Magic Surge|PHB|done|2|d20 surge check after Sorcerer slot spells; d100 roll on a surge.
 Sorcerer|Wild Magic Sorcery|3|Tides of Chaos|PHB|done|2|Advantage on your next D20 Test; recharges with a forced surge.
@@ -390,41 +390,41 @@ Sorcerer|Wild Magic Sorcery|14|Controlled Chaos|PHB|done|3|Wild Magic Surge roll
 Sorcerer|Wild Magic Sorcery|18|Tamed Surge|PHB|done|3|Use tracker; pick the effect yourself.
 Warlock||1|Eldritch Invocations|SRD|skip|3|Sheet/advancement or manual
 Warlock||1|Pact Magic|SRD|skip|3|Sheet/advancement or manual
-Warlock||2|Magical Cunning|SRD|verify|2|Compendium regain half pact slots
+Warlock||2|Magical Cunning|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium regain half pact slots
 Warlock||3|Warlock Subclass|PHB|skip|3|Sheet/advancement or manual
 Warlock||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Warlock||9|Contact Patron|SRD|skip|3|Sheet/advancement or manual
 Warlock||11|Mystic Arcanum|SRD|skip|3|Sheet/advancement or manual
 Warlock||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Warlock||20|Eldritch Master|SRD|verify|3|Compendium
+Warlock||20|Eldritch Master|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Warlock|Eldritch Invocation||Agonizing Blast|SRD|done|1|Eldritch Blast fix adds CHA automatically
-Warlock|Eldritch Invocation||Armor of Shadows|SRD|verify|1|Compendium Mage Armor
-Warlock|Eldritch Invocation||Ascendant Step|SRD|verify|3|Compendium
-Warlock|Eldritch Invocation||Devil’s Sight|SRD|verify|1|Compendium darkvision 120 (sees magical darkness)
+Warlock|Eldritch Invocation||Armor of Shadows|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium Mage Armor
+Warlock|Eldritch Invocation||Ascendant Step|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Devil’s Sight|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium darkvision 120 (sees magical darkness)
 Warlock|Eldritch Invocation||Devouring Blade|SRD|skip|3|Extra attack
-Warlock|Eldritch Invocation||Eldritch Mind|SRD|verify|1|Compendium Advantage on concentration
+Warlock|Eldritch Invocation||Eldritch Mind|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on concentration
 Warlock|Eldritch Invocation||Eldritch Smite|SRD|done|2|Weapon-hit prompt: spend a pact slot for (1 + level)d8 Force + Prone.
-Warlock|Eldritch Invocation||Eldritch Spear|SRD|verify|2|Compendium range enchant
-Warlock|Eldritch Invocation||Fiendish Vigor|SRD|verify|2|Compendium max temp HP
+Warlock|Eldritch Invocation||Eldritch Spear|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium range enchant
+Warlock|Eldritch Invocation||Fiendish Vigor|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium max temp HP
 Warlock|Eldritch Invocation||Gaze of Two Minds|SRD|skip|3|Manual
-Warlock|Eldritch Invocation||Gift of the Depths|SRD|verify|3|Compendium
+Warlock|Eldritch Invocation||Gift of the Depths|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
 Warlock|Eldritch Invocation||Gift of the Protectors|SRD|done|3|Reminder; apply the 1 HP by hand.
-Warlock|Eldritch Invocation||Investment of the Chain Master|SRD|verify|2|Compendium familiar options
+Warlock|Eldritch Invocation||Investment of the Chain Master|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium familiar options
 Warlock|Eldritch Invocation||Lessons of the First Ones|SRD|skip|3|Sheet/advancement or manual
 Warlock|Eldritch Invocation||Lifedrinker|SRD|done|2|Once per turn +1d6 (type choice) and an optional Hit Die heal.
-Warlock|Eldritch Invocation||Mask of Many Faces|SRD|verify|3|Compendium
-Warlock|Eldritch Invocation||Master of Myriad Forms|SRD|verify|3|Compendium
-Warlock|Eldritch Invocation||Misty Visions|SRD|verify|3|Compendium
-Warlock|Eldritch Invocation||One with Shadows|SRD|verify|3|Compendium
-Warlock|Eldritch Invocation||Otherworldly Leap|SRD|verify|3|Compendium
-Warlock|Eldritch Invocation||Pact of the Blade|SRD|verify|1|Compendium pact weapon enchant (CHA attacks, damage type)
-Warlock|Eldritch Invocation||Pact of the Chain|SRD|verify|1|Compendium Find Familiar
+Warlock|Eldritch Invocation||Mask of Many Faces|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Master of Myriad Forms|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Misty Visions|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||One with Shadows|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Otherworldly Leap|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Pact of the Blade|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium pact weapon enchant (CHA attacks, damage type)
+Warlock|Eldritch Invocation||Pact of the Chain|SRD|done|1|Fixed copy: Find Familiar without a spell slot (the compendium version tried to spend a resource that doesn't exist).
 Warlock|Eldritch Invocation||Pact of the Tome|SRD|skip|3|Sheet/advancement or manual
 Warlock|Eldritch Invocation||Repelling Blast|SRD|done|1|Repelling Blast toggle
 Warlock|Eldritch Invocation||Thirsting Blade|SRD|skip|2|Extra Attack with pact weapon
-Warlock|Eldritch Invocation||Visions of Distant Realms|SRD|verify|3|Compendium
-Warlock|Eldritch Invocation||Whispers of the Grave|SRD|verify|3|Compendium
-Warlock|Eldritch Invocation||Witch Sight|SRD|verify|3|Compendium truesight 30
+Warlock|Eldritch Invocation||Visions of Distant Realms|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Whispers of the Grave|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Witch Sight|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium truesight 30
 Warlock|Archfey Patron|3|Archfey Spells|PHB|skip|3|Sheet/advancement or manual
 Warlock|Archfey Patron|3|Steps of the Fey|PHB|done|1|Free Misty Step uses with Refreshing/Taunting (+ Disappearing/Dreadful at 6); move the token yourself
 Warlock|Archfey Patron|6|Misty Escape|PHB|done|2|Reaction when damaged: runs Steps of the Fey (or your Misty Step spell).
@@ -438,8 +438,8 @@ Warlock|Celestial Patron|14|Searing Vengeance|PHB|done|3|Turn-start prompt at 0 
 Warlock|Fiend Patron|3|Dark One’s Blessing|SRD|done|1|Automatic temp HP when an enemy drops to 0 by you or within 10 ft (module rule)
 Warlock|Fiend Patron|3|Fiend Spells|SRD|skip|3|Sheet/advancement or manual
 Warlock|Fiend Patron|6|Dark One’s Own Luck|SRD|done|2|Optional +1d10 on checks and saves, using this feature's uses.
-Warlock|Fiend Patron|10|Fiendish Resilience|SRD|verify|3|Compendium resistance choice
-Warlock|Fiend Patron|14|Hurl Through Hell|SRD|verify|3|Compendium CHA save 8d10 psychic
+Warlock|Fiend Patron|10|Fiendish Resilience|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium resistance choice
+Warlock|Fiend Patron|14|Hurl Through Hell|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium CHA save 8d10 psychic
 Warlock|Great Old One Patron|3|Awakened Mind|PHB|skip|3|Sheet/advancement or manual
 Warlock|Great Old One Patron|3|Great Old One Spells|PHB|skip|3|Sheet/advancement or manual
 Warlock|Great Old One Patron|3|Psychic Spells|PHB|done|2|Prompt to change Warlock spell damage to Psychic.
@@ -449,16 +449,16 @@ Warlock|Great Old One Patron|10|Thought Shield|PHB|done|3|Psychic resistance; ps
 Warlock|Great Old One Patron|14|Create Thrall|PHB|skip|3|Summon Aberration without concentration - manual
 Wizard||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Wizard||1|Ritual Adept|SRD|skip|3|Sheet/advancement or manual
-Wizard||1|Arcane Recovery|SRD|verify|1|Compendium recover slots
+Wizard||1|Arcane Recovery|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium recover slots
 Wizard||2|Scholar|SRD|skip|3|Sheet/advancement or manual
 Wizard||3|Wizard Subclass|PHB|skip|3|Sheet/advancement or manual
 Wizard||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
 Wizard||5|Memorize Spell|SRD|skip|3|Sheet/advancement or manual
-Wizard||18|Spell Mastery|SRD|verify|3|Compendium enchant
+Wizard||18|Spell Mastery|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium enchant
 Wizard||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Wizard||20|Signature Spells|SRD|verify|3|Compendium
+Wizard||20|Signature Spells|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
 Wizard|Abjurer|3|Abjuration Savant|PHB|skip|3|Sheet/advancement or manual
-Wizard|Abjurer|3|Arcane Ward|PHB|midi|1|midi ships Arcane Ward; an older one-character fix exists in Macros (Ambrose)
+Wizard|Abjurer|3|Arcane Ward|PHB|done|1|midi-qol sample item checked (activities run) - midi ships Arcane Ward; an older one-character fix exists in Macros (Ambrose)
 Wizard|Abjurer|6|Projected Ward|PHB|done|2|Reaction prompt to absorb an ally's damage with your Arcane Ward (module rule).
 Wizard|Abjurer|10|Spell Breaker|PHB|skip|3|Sheet/advancement or manual
 Wizard|Abjurer|14|Spell Resistance|PHB|done|3|Advantage on saves vs spells; spell damage halved (module rule).

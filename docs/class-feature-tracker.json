@@ -18,9 +18,9 @@
    "level": 1,
    "name": "Unarmored Defense",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium AC calc unarmoredBarb",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredBarb",
    "identifier": "unarmored-defense"
   },
   {
@@ -40,9 +40,9 @@
    "level": 2,
    "name": "Danger Sense",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium: Advantage on DEX saves (should drop while Incapacitated)",
+   "note": "Fixed copy: DEX save Advantage that switches off while Incapacitated (module rule).",
    "identifier": "danger-sense"
   },
   {
@@ -106,9 +106,9 @@
    "level": 5,
    "name": "Fast Movement",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium +10 ft (should be off in Heavy armor)",
+   "note": "Fixed copy: +10 ft unless in Heavy armor (module rule).",
    "identifier": "fast-movement"
   },
   {
@@ -117,9 +117,9 @@
    "level": 7,
    "name": "Feral Instinct",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium Advantage on Initiative",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on Initiative",
    "identifier": "feral-instinct"
   },
   {
@@ -172,9 +172,9 @@
    "level": 15,
    "name": "Persistent Rage",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium recharge-on-Initiative activity; Rage no longer needs extending",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Rage count worked out from your Barbarian level.",
    "identifier": "persistent-rage"
   },
   {
@@ -260,9 +260,9 @@
    "level": 14,
    "name": "Intimidating Presence",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium WIS save + Frightened with repeat save; recharge by spending Rage",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "intimidating-presence"
   },
   {
@@ -458,9 +458,9 @@
    "level": 2,
    "name": "Jack of All Trades",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium flag",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium flag",
    "identifier": "jack-of-all-trades"
   },
   {
@@ -491,9 +491,9 @@
    "level": 5,
    "name": "Font of Inspiration",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium: spend a slot to regain a use; SR recharge from level 5",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium: spend a slot to regain a use; SR recharge from level 5",
    "identifier": "font-of-inspiration"
   },
   {
@@ -755,9 +755,9 @@
    "level": 2,
    "name": "Channel Divinity",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium Divine Spark (heal/save) and Turn Undead; check scaling and uses",
+   "note": "Fixed copy: Divine Spark dice worked out from your Cleric level (no scale values needed).",
    "identifier": "channel-divinity"
   },
   {
@@ -876,9 +876,9 @@
    "level": 3,
    "name": "Preserve Life",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 2,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "preserve-life"
   },
   {
@@ -887,9 +887,9 @@
    "level": 6,
    "name": "Blessed Healer",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 2,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "blessed-healer"
   },
   {
@@ -931,9 +931,9 @@
    "level": 3,
    "name": "Warding Flare",
    "source": "PHB",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "warding-flare"
   },
   {
@@ -1118,9 +1118,9 @@
    "level": 2,
    "name": "Wild Companion",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium summon via slot or Wild Shape (Fey familiar)",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "wild-companion"
   },
   {
@@ -1151,9 +1151,9 @@
    "level": 5,
    "name": "Wild Resurgence",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium slot <-> Wild Shape conversions",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "wild-resurgence"
   },
   {
@@ -1206,9 +1206,9 @@
    "level": 20,
    "name": "Archdruid",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium Nature Magician / recharge on Initiative",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Wild Shape uses worked out from your Druid level.",
    "identifier": "archdruid"
   },
   {
@@ -1228,9 +1228,9 @@
    "level": 3,
    "name": "Land’s Aid",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium save + heal",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Dice worked out from your Druid level.",
    "identifier": "lands-aid"
   },
   {
@@ -1239,9 +1239,9 @@
    "level": 6,
    "name": "Natural Recovery",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium activities",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium activities",
    "identifier": "natural-recovery"
   },
   {
@@ -1250,9 +1250,9 @@
    "level": 10,
    "name": "Nature’s Ward",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 3,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "natures-ward"
   },
   {
@@ -1261,9 +1261,9 @@
    "level": 14,
    "name": "Nature’s Sanctuary",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium cube + resistances",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "natures-sanctuary"
   },
   {
@@ -1448,9 +1448,9 @@
    "level": 1,
    "name": "Second Wind",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium heal 1d10 + level; check uses scale",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium heal 1d10 + level; check uses scale",
    "identifier": "second-wind"
   },
   {
@@ -1470,9 +1470,9 @@
    "level": 2,
    "name": "Action Surge",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium utility (extra action is manual)",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium utility (extra action is manual)",
    "identifier": "action-surge"
   },
   {
@@ -1547,9 +1547,9 @@
    "level": 9,
    "name": "Tactical Master",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium mastery swap",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium mastery swap",
    "identifier": "tactical-master"
   },
   {
@@ -1888,9 +1888,9 @@
    "level": 3,
    "name": "Improved Critical",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium crit 19 (should include Unarmed Strike)",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium crit 19 (should include Unarmed Strike)",
    "identifier": "improved-critical"
   },
   {
@@ -1899,9 +1899,9 @@
    "level": 3,
    "name": "Remarkable Athlete",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium flag; post-crit move is manual",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium flag; post-crit move is manual",
    "identifier": "remarkable-athlete"
   },
   {
@@ -1932,9 +1932,9 @@
    "level": 15,
    "name": "Superior Critical",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium crit 18",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium crit 18",
    "identifier": "superior-critical"
   },
   {
@@ -2086,9 +2086,9 @@
    "level": 1,
    "name": "Unarmored Defense",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium AC calc unarmoredMonk",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredMonk",
    "identifier": "unarmored-defense"
   },
   {
@@ -2108,9 +2108,9 @@
    "level": 2,
    "name": "Unarmored Movement",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium scale (should be off in armor/shield)",
+   "note": "Fixed copy: Speed bonus by Monk level while unarmored and without a Shield (module rule).",
    "identifier": "unarmored-movement"
   },
   {
@@ -2119,9 +2119,9 @@
    "level": 2,
    "name": "Uncanny Metabolism",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium heal; should also restore Focus on Initiative",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Martial Arts die worked out from your Monk level; offered on Initiative (module rule).",
    "identifier": "uncanny-metabolism"
   },
   {
@@ -2163,9 +2163,9 @@
    "level": 4,
    "name": "Slow Fall",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium reduce fall damage",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium reduce fall damage",
    "identifier": "slow-fall"
   },
   {
@@ -2284,9 +2284,9 @@
    "level": 18,
    "name": "Superior Defense",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium resistance effect (3 Focus)",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "superior-defense"
   },
   {
@@ -2427,9 +2427,9 @@
    "level": 3,
    "name": "Elemental Attunement",
    "source": "PHB",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "elemental-attunement"
   },
   {
@@ -2493,9 +2493,9 @@
    "level": 6,
    "name": "Wholeness of Body",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium heal",
+   "note": "Fixed copy: Martial Arts die worked out from your Monk level (no scale values needed).",
    "identifier": "wholeness-of-body"
   },
   {
@@ -2515,9 +2515,9 @@
    "level": 17,
    "name": "Quivering Palm",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium instill/end vibrations",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "quivering-palm"
   },
   {
@@ -2526,9 +2526,9 @@
    "level": 1,
    "name": "Lay On Hands",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium pool heal + remove Poisoned; check pool = 5x level and amount choice",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium pool heal + remove Poisoned; check pool = 5x level and amount choice",
    "identifier": "lay-on-hands"
   },
   {
@@ -2581,9 +2581,9 @@
    "level": 3,
    "name": "Channel Divinity",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium Divine Sense",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Divine Sense",
    "identifier": "channel-divinity"
   },
   {
@@ -2625,9 +2625,9 @@
    "level": 5,
    "name": "Faithful Steed",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Find Steed free cast - check summon",
+   "note": "Fixed copy: Adds a free Find Steed cast (the compendium item had no activity).",
    "identifier": "faithful-steed"
   },
   {
@@ -2647,9 +2647,9 @@
    "level": 9,
    "name": "Abjure Foes",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium WIS save Frightened (ends on damage)",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium WIS save Frightened (ends on damage)",
    "identifier": "abjure-foes"
   },
   {
@@ -2669,9 +2669,9 @@
    "level": 11,
    "name": "Radiant Strikes",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "radiant-strikes"
   },
   {
@@ -2724,9 +2724,9 @@
    "level": 3,
    "name": "Sacred Weapon",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium enchant (+CHA to attacks, radiant, light)",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium enchant (+CHA to attacks, radiant, light)",
    "identifier": "sacred-weapon"
   },
   {
@@ -2757,9 +2757,9 @@
    "level": 20,
    "name": "Holy Nimbus",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium aura damage",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium aura damage",
    "identifier": "holy-nimbus"
   },
   {
@@ -2900,9 +2900,9 @@
    "level": 3,
    "name": "Vow of Enmity",
    "source": "PHB",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "vow-of-enmity"
   },
   {
@@ -2955,9 +2955,9 @@
    "level": 1,
    "name": "Favored Enemy",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium free Hunter's Mark casts (CGA Hunter's Mark spell is fixed)",
+   "note": "Fixed copy: Free Hunter's Mark casts use the module's automated Hunter's Mark spell.",
    "identifier": "favored-enemy"
   },
   {
@@ -3032,9 +3032,9 @@
    "level": 6,
    "name": "Roving",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium +10 ft, climb/swim",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium +10 ft, climb/swim",
    "identifier": "roving"
   },
   {
@@ -3054,9 +3054,9 @@
    "level": 10,
    "name": "Tireless",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium temp HP / exhaustion",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium temp HP / exhaustion",
    "identifier": "tireless"
   },
   {
@@ -3076,9 +3076,9 @@
    "level": 14,
    "name": "Nature’s Veil",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium Invisible until end of next turn",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Invisible until end of next turn",
    "identifier": "natures-veil"
   },
   {
@@ -3098,9 +3098,9 @@
    "level": 18,
    "name": "Feral Senses",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium Blindsight 30",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Blindsight 30",
    "identifier": "feral-senses"
   },
   {
@@ -3351,9 +3351,9 @@
    "level": 15,
    "name": "Superior Hunter’s Defense",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium reaction resistance by type",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium reaction resistance by type",
    "identifier": "superior-hunters-defense"
   },
   {
@@ -3406,9 +3406,9 @@
    "level": 2,
    "name": "Cunning Action",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium Dash/Disengage/Hide",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Dash/Disengage/Hide",
    "identifier": "cunning-action"
   },
   {
@@ -3461,9 +3461,9 @@
    "level": 5,
    "name": "Uncanny Dodge",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "uncanny-dodge"
   },
   {
@@ -3483,9 +3483,9 @@
    "level": 7,
    "name": "Reliable Talent",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium flag",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium flag",
    "identifier": "reliable-talent"
   },
   {
@@ -3736,9 +3736,9 @@
    "level": 3,
    "name": "Second-Story Work",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium climb speed",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium climb speed",
    "identifier": "second-story-work"
   },
   {
@@ -3791,9 +3791,9 @@
    "level": 1,
    "name": "Innate Sorcery",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol sample item checked (activities run)",
    "identifier": "innate-sorcery"
   },
   {
@@ -3802,9 +3802,9 @@
    "level": 2,
    "name": "Font of Magic",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium slot <-> sorcery point conversions",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium slot <-> sorcery point conversions",
    "identifier": "font-of-magic"
   },
   {
@@ -3846,9 +3846,9 @@
    "level": 5,
    "name": "Sorcerous Restoration",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium SR restore",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "sorcerous-restoration"
   },
   {
@@ -3857,9 +3857,9 @@
    "level": 7,
    "name": "Sorcery Incarnate",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium restore Innate Sorcery",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "sorcery-incarnate"
   },
   {
@@ -3890,9 +3890,9 @@
    "level": null,
    "name": "Careful Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "careful-spell"
   },
   {
@@ -3901,9 +3901,9 @@
    "level": null,
    "name": "Distant Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 2,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "distant-spell"
   },
   {
@@ -3912,9 +3912,9 @@
    "level": null,
    "name": "Empowered Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 2,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "empowered-spell"
   },
   {
@@ -3923,9 +3923,9 @@
    "level": null,
    "name": "Extended Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 2,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "extended-spell"
   },
   {
@@ -3934,9 +3934,9 @@
    "level": null,
    "name": "Heightened Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "heightened-spell"
   },
   {
@@ -3945,9 +3945,9 @@
    "level": null,
    "name": "Quickened Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "quickened-spell"
   },
   {
@@ -3956,9 +3956,9 @@
    "level": null,
    "name": "Seeking Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 2,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "seeking-spell"
   },
   {
@@ -3967,9 +3967,9 @@
    "level": null,
    "name": "Subtle Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "subtle-spell"
   },
   {
@@ -3978,9 +3978,9 @@
    "level": null,
    "name": "Transmuted Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 2,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "transmuted-spell"
   },
   {
@@ -3989,9 +3989,9 @@
    "level": null,
    "name": "Twinned Spell",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi-qol ships it (verify with 2024 costs)",
+   "note": "midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)",
    "identifier": "twinned-spell"
   },
   {
@@ -4121,9 +4121,9 @@
    "level": 3,
    "name": "Draconic Resilience",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium AC + HP",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium AC + HP",
    "identifier": "draconic-resilience"
   },
   {
@@ -4154,9 +4154,9 @@
    "level": 14,
    "name": "Dragon Wings",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium fly 60",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "dragon-wings"
   },
   {
@@ -4253,9 +4253,9 @@
    "level": 2,
    "name": "Magical Cunning",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium regain half pact slots",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium regain half pact slots",
    "identifier": "magical-cunning"
   },
   {
@@ -4319,9 +4319,9 @@
    "level": 20,
    "name": "Eldritch Master",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.",
    "identifier": "eldritch-master"
   },
   {
@@ -4341,9 +4341,9 @@
    "level": null,
    "name": "Armor of Shadows",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium Mage Armor",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Mage Armor",
    "identifier": "armor-of-shadows"
   },
   {
@@ -4352,9 +4352,9 @@
    "level": null,
    "name": "Ascendant Step",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "ascendant-step"
   },
   {
@@ -4363,9 +4363,9 @@
    "level": null,
    "name": "Devil’s Sight",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium darkvision 120 (sees magical darkness)",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium darkvision 120 (sees magical darkness)",
    "identifier": "devils-sight"
   },
   {
@@ -4385,9 +4385,9 @@
    "level": null,
    "name": "Eldritch Mind",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium Advantage on concentration",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on concentration",
    "identifier": "eldritch-mind"
   },
   {
@@ -4407,9 +4407,9 @@
    "level": null,
    "name": "Eldritch Spear",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium range enchant",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium range enchant",
    "identifier": "eldritch-spear"
   },
   {
@@ -4418,9 +4418,9 @@
    "level": null,
    "name": "Fiendish Vigor",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium max temp HP",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium max temp HP",
    "identifier": "fiendish-vigor"
   },
   {
@@ -4440,9 +4440,9 @@
    "level": null,
    "name": "Gift of the Depths",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "gift-of-the-depths"
   },
   {
@@ -4462,9 +4462,9 @@
    "level": null,
    "name": "Investment of the Chain Master",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Compendium familiar options",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium familiar options",
    "identifier": "investment-of-the-chain-master"
   },
   {
@@ -4495,9 +4495,9 @@
    "level": null,
    "name": "Mask of Many Faces",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "mask-of-many-faces"
   },
   {
@@ -4506,9 +4506,9 @@
    "level": null,
    "name": "Master of Myriad Forms",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "master-of-myriad-forms"
   },
   {
@@ -4517,9 +4517,9 @@
    "level": null,
    "name": "Misty Visions",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "misty-visions"
   },
   {
@@ -4528,9 +4528,9 @@
    "level": null,
    "name": "One with Shadows",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "one-with-shadows"
   },
   {
@@ -4539,9 +4539,9 @@
    "level": null,
    "name": "Otherworldly Leap",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "otherworldly-leap"
   },
   {
@@ -4550,9 +4550,9 @@
    "level": null,
    "name": "Pact of the Blade",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium pact weapon enchant (CHA attacks, damage type)",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium pact weapon enchant (CHA attacks, damage type)",
    "identifier": "pact-of-the-blade"
   },
   {
@@ -4561,9 +4561,9 @@
    "level": null,
    "name": "Pact of the Chain",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium Find Familiar",
+   "note": "Fixed copy: Find Familiar without a spell slot (the compendium version tried to spend a resource that doesn't exist).",
    "identifier": "pact-of-the-chain"
   },
   {
@@ -4605,9 +4605,9 @@
    "level": null,
    "name": "Visions of Distant Realms",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "visions-of-distant-realms"
   },
   {
@@ -4616,9 +4616,9 @@
    "level": null,
    "name": "Whispers of the Grave",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "whispers-of-the-grave"
   },
   {
@@ -4627,9 +4627,9 @@
    "level": null,
    "name": "Witch Sight",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium truesight 30",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium truesight 30",
    "identifier": "witch-sight"
   },
   {
@@ -4781,9 +4781,9 @@
    "level": 10,
    "name": "Fiendish Resilience",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium resistance choice",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium resistance choice",
    "identifier": "fiendish-resilience"
   },
   {
@@ -4792,9 +4792,9 @@
    "level": 14,
    "name": "Hurl Through Hell",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium CHA save 8d10 psychic",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium CHA save 8d10 psychic",
    "identifier": "hurl-through-hell"
   },
   {
@@ -4902,9 +4902,9 @@
    "level": 1,
    "name": "Arcane Recovery",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium recover slots",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium recover slots",
    "identifier": "arcane-recovery"
   },
   {
@@ -4957,9 +4957,9 @@
    "level": 18,
    "name": "Spell Mastery",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium enchant",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium enchant",
    "identifier": "spell-mastery"
   },
   {
@@ -4979,9 +4979,9 @@
    "level": 20,
    "name": "Signature Spells",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium",
+   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "signature-spells"
   },
   {
@@ -5001,9 +5001,9 @@
    "level": 3,
    "name": "Arcane Ward",
    "source": "PHB",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "midi ships Arcane Ward; an older one-character fix exists in Macros (Ambrose)",
+   "note": "midi-qol sample item checked (activities run) - midi ships Arcane Ward; an older one-character fix exists in Macros (Ambrose)",
    "identifier": "arcane-ward"
   },
   {

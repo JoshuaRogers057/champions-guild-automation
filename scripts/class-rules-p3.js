@@ -5,6 +5,7 @@
 //  - Start of turn: Avenging Angel's frightful aura, Searing Vengeance.
 //  - Relentless Hunter (damage doesn't break Hunter's Mark concentration), Indomitable Might (STR score floor).
 //  - Rests: Celestial Resilience temp HP, Overchannel resets. Light from Corona of Light goes back when it ends.
+//  - Fast Movement, Unarmored Movement and Danger Sense effects kept up to date; Uncanny Metabolism on Initiative.
 import { MODULE_ID, reduceDamage, hasFeat, askOwner, askChoice, edgeDistance, isIncapacitated } from "./main.js";
 import { classLevel, featItem, bardicDie, rageEffect } from "./class-rules.js";
 
@@ -259,4 +260,52 @@ Hooks.on("deleteActiveEffect", async (effect) => {
     if (!prev || !t.document.isOwner) continue;
     await t.document.update({ "light.bright": prev.bright ?? 0, "light.dim": prev.dim ?? 0, "flags.world.-=cgaLightPrev": null }).catch(() => {});
   }
+});
+
+// ------------------------------------------------------------------ Movement and Danger Sense effects kept up to date
+//  - Fast Movement (Barbarian 5): +10 ft while not wearing Heavy armor.
+//  - Unarmored Movement (Monk 2): +10/15/20/25/30 ft while wearing no armor and no Shield.
+//  - Danger Sense (Barbarian 2): Advantage on DEX saves unless Incapacitated.
+const moveBusy = new Set();
+async function ensureClassEffects(actor) {
+  if (!isGM() || !actor?.items || moveBusy.has(actor.uuid)) return;
+  moveBusy.add(actor.uuid);
+  try {
+    const armor = actor.system.attributes.ac?.equippedArmor;
+    const shield = actor.system.attributes.ac?.equippedShield;
+    const want = [];
+    if (hasFeat(actor, "fast-movement") && armor?.system?.type?.value !== "heavy")
+      want.push({ key: "fast", name: "Fast Movement (+10 ft)", img: "icons/skills/movement/figure-running-gray.webp", changes: [["system.attributes.movement.walk", "10", "add"]] });
+    const ml = classLevel(actor, "monk");
+    if (hasFeat(actor, "unarmored-movement") && ml >= 2 && !armor && !shield) {
+      const ft = ml >= 18 ? 30 : ml >= 14 ? 25 : ml >= 10 ? 20 : ml >= 6 ? 15 : 10;
+      want.push({ key: "unarmored", name: `Unarmored Movement (+${ft} ft)`, img: "icons/skills/movement/feet-winged-boots-glowing-yellow.webp", changes: [["system.attributes.movement.walk", String(ft), "add"]] });
+    }
+    if (hasFeat(actor, "danger-sense") && !isIncapacitated(actor))
+      want.push({ key: "danger", name: "Danger Sense", img: "icons/magic/perception/eye-ringed-glow-angry-small-red.webp", changes: [["flags.midi-qol.advantage.save.dex", "1", "override"]] });
+    for (const key of ["fast", "unarmored", "danger"]) {
+      const have = actor.effects.filter((e) => e.flags?.[MODULE_ID]?.classEffect === key);
+      const w = want.find((x) => x.key === key);
+      const keep = w ? have.find((e) => e.name === w.name) : null;
+      const drop = have.filter((e) => e !== keep);
+      if (drop.length) await actor.deleteEmbeddedDocuments("ActiveEffect", drop.map((e) => e.id)).catch(() => {});
+      if (w && !keep) await actor.createEmbeddedDocuments("ActiveEffect", [{ name: w.name, img: w.img, transfer: false,
+        system: { changes: w.changes.map(([k, value, type]) => ({ key: k, value, type, priority: 20, phase: "initial" })) }, flags: { [MODULE_ID]: { classEffect: key } } }]).catch(() => {});
+    }
+  } finally { moveBusy.delete(actor.uuid); }
+}
+for (const h of ["createItem", "deleteItem"]) Hooks.on(h, (item) => { if (item.parent instanceof Actor) ensureClassEffects(item.parent); });
+Hooks.on("updateItem", (item, changes) => { if (item.parent instanceof Actor && (foundry.utils.hasProperty(changes, "system.equipped") || foundry.utils.hasProperty(changes, "system.levels"))) ensureClassEffects(item.parent); });
+for (const h of ["createActiveEffect", "deleteActiveEffect"]) Hooks.on(h, (e) => { if (e.parent instanceof Actor && e.statuses?.size && !e.flags?.[MODULE_ID]?.classEffect) ensureClassEffects(e.parent); });
+Hooks.once("ready", () => { if (isGM()) for (const a of game.actors) if (a.type === "character") ensureClassEffects(a); });
+
+// Uncanny Metabolism (Monk 2): when you roll Initiative, regain all Focus and heal (once per Long Rest).
+Hooks.on("updateCombatant", async (combatant, changes) => {
+  if (!isGM() || !("initiative" in changes) || changes.initiative == null || foundry.utils.hasProperty(changes, "flags.world.cgaTandem")) return;
+  const actor = combatant.actor;
+  const um = featItem(actor, "uncanny-metabolism");
+  if (!um || usesLeft(um) <= 0) return;
+  if (!(await askOwner(actor, `Uncanny Metabolism: ${actor.name}`, "<p>Regain all your Focus Points and heal (Martial Arts die + Monk level)? Once per Long Rest.</p>"))) return;
+  const act = um.system.activities.contents[0];
+  if (act) await MidiQOL.completeActivityUse(act, { midiOptions: { targetUuids: [combatant.token?.uuid].filter(Boolean), workflowOptions: { targetConfirmation: "none" } } }, { configure: false }, {}).catch((err) => console.warn(`${MODULE_ID} | Uncanny Metabolism failed`, err));
 });
