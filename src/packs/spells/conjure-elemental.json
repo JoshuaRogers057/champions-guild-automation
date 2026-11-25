@@ -104,7 +104,7 @@
           "hd": "",
           "hp": "",
           "attackDamage": "",
-          "saveDamage": "(@scaling)d8",
+          "saveDamage": "(@scaling.increase)d8",
           "healing": ""
         },
         "creatureSizes": [],
@@ -1242,7 +1242,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: summons the spirit; an enemy entering its space or starting its turn within 5 ft makes a DEX save (8d8 of the element's type and Restrained) while it holds no one; the Restrained creature saves at the start of its turns (4d8 on a failure)."
       }
     }

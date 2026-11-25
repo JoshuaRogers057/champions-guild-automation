@@ -1,0 +1,267 @@
+{
+  "name": "Compulsion",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Creatures of your choice within range make a WIS save or are Charmed while you concentrate. As a Bonus Action you name a direction; each Charmed target must use its movement to go that way on its next turn, then repeats the save at the end of its turn, ending the spell on itself on a success.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "enc",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "VMGUJweP1J6ZQUsG",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0
+      },
+      "compulsionOTSave": {
+        "_id": "compulsionOTSave",
+        "type": "save",
+        "name": "Compulsion: Repeat Save",
+        "sort": 900000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "End of each of the target's turns",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "range": {
+          "override": true,
+          "units": "any",
+          "value": null,
+          "special": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": true,
+          "concentration": false
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "turnChoice": "end",
+          "saveRemoves": true,
+          "rollAs": "source",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "identifier": "compulsionSave",
+          "otherActivityCompatible": false
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "compulsion",
+    "prepared": 0
+  },
+  "_id": "cgasplCompulsion",
+  "type": "spell",
+  "img": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp",
+  "effects": [
+    {
+      "name": "Charmed",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplCompulsion",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {},
+      "img": "systems/dnd5e/icons/svg/statuses/charmed.svg",
+      "_id": "VMGUJweP1J6ZQUsG",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "value": "compulsionSave",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP3e0000004",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>You can take a Bonus Action to designate a direction that is horizontal to you. Each &amp;Reference[Charmed apply=false] target must use as much of its movement as possible to move in that direction on its next turn, taking the safest route. After moving in this way, a target repeats the [[/save ability=wis]] save, ending the spell on itself on a success.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [
+        "charmed"
+      ],
+      "sort": 0,
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: WIS save or Charmed; it repeats the save at the end of each of its turns (after moving the way you point, which the DM applies)."
+      }
+    }
+  }
+}

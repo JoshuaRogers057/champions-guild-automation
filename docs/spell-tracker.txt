@@ -129,7 +129,7 @@
 2|Flame Blade|SRD|done|2|
 2|Flaming Sphere|SRD|done|2|Summoned sphere: end-of-turn DEX save damage; ram as a bonus action
 2|Gentle Repose|SRD|skip|3|
-2|Gust of Wind|SRD|build|3|Push 15 ft on failed STR save; line
+2|Gust of Wind|SRD|done|3|Push 15 ft on failed STR save; line
 2|Heat Metal|SRD|done|2|Bonus action to repeat damage; drop the object or disadvantage
 2|Hold Person|SRD|done|1|Paralyzed; repeat WIS save end of each turn; extra target per slot
 2|Invisibility|SRD|midi|1|
@@ -170,7 +170,7 @@
 3|Beacon of Hope|SRD|done|2|Healing is maximized (needs a midi flag), advantage on WIS and death saves
 3|Bestow Curse|SRD|done|2|Pick a curse; the extra 1d8 necrotic option needs a damage rider
 3|Blinding Smite|PHB|done|2|Smite prompt; Blinded with repeat CON save
-3|Blink|SRD|build|3|d6 at end of each turn to blink to the Ethereal Plane
+3|Blink|SRD|done|3|d6 at end of each turn to blink to the Ethereal Plane
 3|Call Lightning|SRD|done|2|Repeat the bolt as an action each turn
 3|Clairvoyance|SRD|skip|3|
 3|Conjure Animals|SRD|done|2|2024: pack of spirits deals damage to creatures near it
@@ -179,7 +179,7 @@
 3|Create Food and Water|SRD|skip|3|
 3|Crusader's Mantle|PHB|done|2|Aura: allies' weapon hits deal +1d4 radiant
 3|Daylight|SRD|skip|3|
-3|Dispel Magic|SRD|build|3|End spell effects on a target (check for higher levels)
+3|Dispel Magic|SRD|done|3|End spell effects on a target (check for higher levels)
 3|Elemental Weapon|PHB|done|2|+1 attack and +1d4 elemental damage on the weapon
 3|Fear|SRD|done|2|Frightened, drop held item, must Dash away; save only out of sight
 3|Feign Death|PHB|skip|3|
@@ -204,7 +204,7 @@
 3|Remove Curse|SRD|skip|3|
 3|Revivify|SRD|done|3|Returns to 1 HP
 3|Sending|SRD|skip|3|
-3|Sleet Storm|SRD|build|3|Zone: DEX save or Prone; concentration checks
+3|Sleet Storm|SRD|done|3|Zone: DEX save or Prone; concentration checks
 3|Slow|SRD|done|2|-2 AC/DEX saves, half speed, one action; repeat WIS save end of each turn
 3|Speak with Dead|SRD|skip|3|
 3|Speak with Plants|SRD|skip|3|
@@ -216,14 +216,14 @@
 3|Vampiric Touch|SRD|done|2|Heal half the damage dealt; repeat the touch as an action
 3|Water Breathing|SRD|skip|3|
 3|Water Walk|SRD|skip|3|
-3|Wind Wall|SRD|build|3|Wall; ranged attacks through it
+3|Wind Wall|SRD|done|3|Wall; ranged attacks through it
 4|Arcane Eye|SRD|skip|3|
-4|Aura of Life|SRD|build|3|Necrotic resistance; creatures at 0 HP regain 1 HP
+4|Aura of Life|SRD|done|3|Necrotic resistance; creatures at 0 HP regain 1 HP
 4|Aura of Purity|PHB|build|3|Aura: poison resistance, advantage on saves vs conditions
 4|Banishment|SRD|done|2|Remove the target (hide token) until the spell ends
 4|Blight|SRD|done|2|
 4|Charm Monster|SRD|done|3|
-4|Compulsion|SRD|build|3|Forced movement each turn
+4|Compulsion|SRD|done|3|Forced movement each turn
 4|Confusion|SRD|done|2|d10 behaviour roll each turn; repeat save
 4|Conjure Minor Elementals|SRD|done|2|2024: your attacks deal +2d8 elemental near you
 4|Conjure Woodland Beings|SRD|done|2|2024: aura damage around you
@@ -236,7 +236,7 @@
 4|Fabricate|SRD|skip|3|
 4|Fire Shield|SRD|done|2|Melee attackers take 2d8 fire/cold; resistance
 4|Freedom of Movement|SRD|done|3|
-4|Giant Insect|SRD|build|3|Summon
+4|Giant Insect|SRD|done|3|Summon
 4|Grasping Vine|PHB|build|3|Pull 30 ft on a failed save; bonus action each turn
 4|Greater Invisibility|SRD|midi|2|
 4|Guardian of Faith|SRD|done|2|Guardian deals 20 radiant on entering/starting turn, up to 60 total
@@ -244,7 +244,7 @@
 4|Ice Storm|SRD|done|2|
 4|Leomund's Secret Chest|SRD|skip|3|aka Secret Chest
 4|Locate Creature|SRD|skip|3|
-4|Mordenkainen's Faithful Hound|SRD|build|3|aka Faithful Hound. Bites invisible intruders
+4|Mordenkainen's Faithful Hound|SRD|done|3|aka Faithful Hound. Bites invisible intruders
 4|Mordenkainen's Private Sanctum|SRD|skip|3|aka Private Sanctum
 4|Otiluke's Resilient Sphere|SRD|done|3|aka Resilient Sphere
 4|Phantasmal Killer|SRD|done|2|Frightened; repeat WIS save end of turn with psychic damage
@@ -309,16 +309,16 @@
 6|Blade Barrier|SRD|done|2|Wall: DEX save slashing on entering/starting turn
 6|Chain Lightning|SRD|done|2|Primary target + three leaps
 6|Circle of Death|SRD|done|2|
-6|Conjure Fey|SRD|build|3|2024: fey spirit attacks
+6|Conjure Fey|SRD|done|3|2024: fey spirit attacks
 6|Contingency|SRD|skip|3|
-6|Create Undead|SRD|build|3|Summon
+6|Create Undead|SRD|done|3|Summon
 6|Disintegrate|SRD|done|2|Dust at 0 HP
 6|Drawmij's Instant Summons|SRD|skip|3|aka Instant Summons
 6|Eyebite|SRD|midi|3|
 6|Find the Path|SRD|skip|3|
 6|Flesh to Stone|SRD|midi|3|
 6|Forbiddance|SRD|skip|3|
-6|Globe of Invulnerability|SRD|build|3|Blocks spells of 5th level and lower
+6|Globe of Invulnerability|SRD|done|3|Blocks spells of 5th level and lower
 6|Guards and Wards|SRD|skip|3|
 6|Harm|SRD|midi|2|
 6|Heal|SRD|done|2|
@@ -336,11 +336,11 @@
 6|Tasha's Bubbling Cauldron|PHB|skip|3|
 6|Transport via Plants|SRD|skip|3|
 6|True Seeing|SRD|done|3|
-6|Wall of Ice|SRD|build|3|Wall: damage + cold zone
-6|Wall of Thorns|SRD|build|3|Wall: damage on entering
+6|Wall of Ice|SRD|done|3|Wall: damage + cold zone
+6|Wall of Thorns|SRD|done|3|Wall: damage on entering
 6|Wind Walk|SRD|skip|3|
 6|Word of Recall|SRD|skip|3|
-7|Conjure Celestial|SRD|build|3|2024: light aura heals or damages
+7|Conjure Celestial|SRD|done|3|2024: light aura heals or damages
 7|Delayed Blast Fireball|SRD|midi|3|
 7|Divine Word|SRD|midi|3|
 7|Etherealness|SRD|skip|3|
@@ -359,7 +359,7 @@
 7|Reverse Gravity|SRD|midi|3|
 7|Sequester|SRD|skip|3|
 7|Simulacrum|SRD|skip|3|
-7|Symbol|SRD|build|3|Triggered glyph with several effects
+7|Symbol|SRD|done|3|Triggered glyph with several effects
 7|Teleport|SRD|skip|3|
 8|Animal Shapes|SRD|skip|3|
 8|Antimagic Field|SRD|skip|3|
@@ -369,15 +369,15 @@
 8|Control Weather|SRD|skip|3|
 8|Demiplane|SRD|skip|3|
 8|Dominate Monster|SRD|done|3|
-8|Earthquake|SRD|build|3|Zone: prone, concentration saves, fissures
+8|Earthquake|SRD|done|3|Zone: prone, concentration saves, fissures
 8|Glibness|SRD|skip|3|
 8|Holy Aura|SRD|done|3|Advantage on saves, attackers have disadvantage; fiend/undead blinded
-8|Incendiary Cloud|SRD|build|3|Moving zone: DEX save fire
+8|Incendiary Cloud|SRD|done|3|Moving zone: DEX save fire
 8|Maze|SRD|done|3|
 8|Mind Blank|SRD|done|3|
 8|Power Word Stun|SRD|midi|3|
 8|Sunburst|SRD|done|3|Blinded with repeat saves
-8|Tsunami|SRD|build|3|Moving wall
+8|Tsunami|SRD|done|3|Moving wall
 9|Astral Projection|SRD|skip|3|
 9|Foresight|SRD|midi|3|
 9|Gate|SRD|skip|3|
@@ -385,8 +385,8 @@
 9|Mass Heal|SRD|midi|3|
 9|Meteor Swarm|SRD|midi|3|
 9|Power Word Heal|SRD|done|3|
-9|Power Word Kill|SRD|build|3|Dies at 100 HP or less, otherwise 12d12 psychic
-9|Prismatic Wall|SRD|build|3|Layered wall effects
+9|Power Word Kill|SRD|done|3|Dies at 100 HP or less, otherwise 12d12 psychic
+9|Prismatic Wall|SRD|done|3|Layered wall effects
 9|Shapechange|SRD|midi|3|
 9|Storm of Vengeance|SRD|midi|3|
 9|Time Stop|SRD|skip|3|

@@ -1,0 +1,736 @@
+{
+  "name": "Symbol",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Inscribe a glyph with a trigger and one effect: Death (10d10 Necrotic, CON save for half), Discord, Fear, Pain, Sleep or Stunning (each a save). When it triggers, use that effect's activity on the creatures within 60 ft.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "dstr"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "object",
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 7,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "powdered diamond worth 1,000+ GP, which the spell consumes",
+      "consumed": true,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "lKMEFyE8pOME8eWD": {
+        "type": "utility",
+        "_id": "lKMEFyE8pOME8eWD",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "circle",
+            "size": "1",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "object",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Inscribe Glyph",
+        "img": "systems/dnd5e/icons/svg/activity/summon.svg",
+        "appliedEffects": []
+      },
+      "oCs1sUAtUAQJwxPU": {
+        "type": "save",
+        "name": "Death",
+        "_id": "oCs1sUAtUAQJwxPU",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "sphere",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature"
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 10,
+              "denomination": "10",
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "scaling": {
+                "mode": ""
+              }
+            }
+          ],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": "con",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "img": "",
+        "appliedEffects": []
+      },
+      "DHsotF5GdSA4Nrpz": {
+        "type": "save",
+        "name": "Discord",
+        "_id": "DHsotF5GdSA4Nrpz",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": true,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "YAwLt85sPQpUCIBI"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "sphere",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "img": "",
+        "appliedEffects": [
+          "YAwLt85sPQpUCIBI"
+        ]
+      },
+      "7mW8h9xFzr7NNsrr": {
+        "type": "save",
+        "name": "Fear",
+        "_id": "7mW8h9xFzr7NNsrr",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": true,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "C5k5nGmPclTf9tZn"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "sphere",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "img": "",
+        "appliedEffects": [
+          "C5k5nGmPclTf9tZn"
+        ]
+      },
+      "doNUpTnMIKmfuCIa": {
+        "type": "save",
+        "_id": "doNUpTnMIKmfuCIa",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [
+          {
+            "_id": "D8tOj85XIpMRp3Yl"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "sphere",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": "con",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "name": "Pain",
+        "img": "",
+        "appliedEffects": [
+          "D8tOj85XIpMRp3Yl"
+        ]
+      },
+      "a2n9gGZMabXdO8Sp": {
+        "type": "save",
+        "name": "Sleep",
+        "_id": "a2n9gGZMabXdO8Sp",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": true,
+          "value": "10"
+        },
+        "effects": [
+          {
+            "_id": "A1VA7t5gB7ODNsr6"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "sphere",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "img": "",
+        "appliedEffects": [
+          "A1VA7t5gB7ODNsr6"
+        ]
+      },
+      "4TPw3B0RROokuGNg": {
+        "type": "save",
+        "name": "Stunning",
+        "_id": "4TPw3B0RROokuGNg",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "minute",
+          "concentration": false,
+          "override": true,
+          "value": "1"
+        },
+        "effects": [
+          {
+            "_id": "zZerWADc4a5rGJ9r"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "sphere",
+            "size": "60",
+            "count": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": "wis",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "img": "",
+        "appliedEffects": [
+          "zZerWADc4a5rGJ9r"
+        ]
+      }
+    },
+    "identifier": "symbol",
+    "prepared": 0
+  },
+  "_id": "cgasplSymbol0000",
+  "type": "spell",
+  "img": "icons/magic/symbols/rune-sigil-green-purple.webp",
+  "effects": [
+    {
+      "name": "Arguing",
+      "img": "icons/skills/wounds/injury-face-impact-orange.webp",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplSymbol0000",
+      "transfer": false,
+      "_id": "YAwLt85sPQpUCIBI",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>The target is incapable of meaningful communication and has Disadvantage on attack rolls and ability checks.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Frightened",
+      "img": "systems/dnd5e/icons/svg/statuses/frightened.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplSymbol0000",
+      "transfer": false,
+      "_id": "C5k5nGmPclTf9tZn",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>While Frightened, the target must move at least 30 feet away from the glyph on each of its turns, if able.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "frightened"
+      ],
+      "sort": 0,
+      "flags": {},
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    },
+    {
+      "name": "Incapacitated",
+      "img": "systems/dnd5e/icons/svg/statuses/incapacitated.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplSymbol0000",
+      "transfer": false,
+      "_id": "D8tOj85XIpMRp3Yl",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "incapacitated"
+      ],
+      "sort": 0,
+      "flags": {},
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    },
+    {
+      "name": "Sleeping",
+      "img": "systems/dnd5e/icons/svg/statuses/unconscious.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplSymbol0000",
+      "transfer": false,
+      "_id": "A1VA7t5gB7ODNsr6",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>A creature awakens if it takes damage or if someone takes an action to shake it awake.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "unconscious"
+      ],
+      "sort": 0,
+      "flags": {},
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    },
+    {
+      "name": "Stunned",
+      "img": "systems/dnd5e/icons/svg/statuses/stunned.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplSymbol0000",
+      "transfer": false,
+      "_id": "zZerWADc4a5rGJ9r",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "stunned"
+      ],
+      "sort": 0,
+      "flags": {},
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: inscribe the glyph, then use the matching effect activity (Death, Discord, Fear, Pain, Sleep or Stunning) on creatures that trigger it."
+      }
+    }
+  }
+}

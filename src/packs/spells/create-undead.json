@@ -1,0 +1,318 @@
+{
+  "name": "Create Undead",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> At night, turn up to three corpses into Ghouls under your control for 24 hours (more, or stronger undead, with higher slots). Command them as a Bonus Action.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "only at night",
+      "value": 1
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "@item.level - 3",
+        "type": "creatureOrObject",
+        "special": "corpse of Medium or Small Humanoid or previously created undead"
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "ft",
+      "special": "",
+      "value": "10"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 6,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "one 150+ GP black onyx stone for each corpse",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "ExyqLKqLhGbaJVVd": {
+        "type": "summon",
+        "_id": "ExyqLKqLhGbaJVVd",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "@item.level - 3",
+            "type": "object",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "disposition": true,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "count": "@item.level - 3",
+            "name": "",
+            "_id": "AD8SieTZpNO367vu",
+            "uuid": "Compendium.dnd5e.monsters.Actor.OBujQLLPSmlJiZnL",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "@item.level - 6",
+            "name": "",
+            "_id": "wxjtP08Cq6Qx4DNt",
+            "uuid": "Compendium.dnd5e.monsters.Actor.IyIybE5t2adMEVUM",
+            "level": {
+              "min": 8,
+              "max": null
+            }
+          },
+          {
+            "count": "@item.level - 6",
+            "name": "",
+            "_id": "1VEmzIL2JMUEG9aD",
+            "uuid": "Compendium.dnd5e.monsters.Actor.rbyp54px2D0ql4QK",
+            "level": {
+              "min": 8,
+              "max": null
+            }
+          },
+          {
+            "count": "2",
+            "name": "",
+            "_id": "oegT9SQrB7ZuMGie",
+            "uuid": "Compendium.dnd5e.monsters.Actor.t8WYD7ak07X7xpx8",
+            "level": {
+              "min": 9,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "name": "Animate Corpses",
+        "img": "icons/magic/death/hand-dirt-undead-zombie.webp",
+        "appliedEffects": []
+      },
+      "BepVtap2tWyUwaxk": {
+        "type": "utility",
+        "_id": "BepVtap2tWyUwaxk",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "concentration": false,
+          "override": true,
+          "value": "24"
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "@item.level - 3",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Reassert Control",
+        "img": "icons/magic/death/skull-humanoid-crown-white-blue.webp",
+        "appliedEffects": []
+      },
+      "CIv9t4XuVEcgmX9n": {
+        "type": "utility",
+        "_id": "CIv9t4XuVEcgmX9n",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "ft",
+          "special": "",
+          "value": "120"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Mentally Command",
+        "img": "icons/magic/death/skull-energy-light-purple.webp",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "create-undead",
+    "prepared": 0
+  },
+  "_id": "cgasplCreateUnde",
+  "type": "spell",
+  "img": "icons/magic/death/skull-flames-white-blue.webp",
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: animates ghouls (more powerful undead with higher slots) under your control for 24 hours."
+      }
+    }
+  }
+}

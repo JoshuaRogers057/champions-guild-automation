@@ -1,0 +1,264 @@
+{
+  "name": "Tsunami",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A wall of water up to 300 ft long and high and 50 ft thick. Creatures in it make a STR save: 6d10 Bludgeoning, half on a success. Each round it moves 50 ft away from you, dealing 5d10 (1d10 less each round) to creatures it engulfs, and shrinks until it's gone.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "6",
+      "units": "round"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "wall",
+        "size": "300",
+        "width": "50",
+        "height": "300",
+        "count": ""
+      }
+    },
+    "range": {
+      "units": "mi",
+      "special": "",
+      "value": "1"
+    },
+    "uses": {
+      "max": "6",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 8,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "XrJhKOVyHfLOkJ8b": {
+        "type": "save",
+        "_id": "XrJhKOVyHfLOkJ8b",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "-6",
+              "scaling": {
+                "mode": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 6,
+              "denomination": 10,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "name": "Create Tsunami"
+      },
+      "o7MOuS6uL1ZV3dhe": {
+        "type": "save",
+        "_id": "o7MOuS6uL1ZV3dhe",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": "start of each of your turns"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "override": true,
+          "units": "ft",
+          "special": "moves away from you",
+          "value": "50"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "creature",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [
+            {
+              "custom": {
+                "enabled": true,
+                "formula": "(@item.uses.value)d10"
+              },
+              "number": null,
+              "denomination": 0,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "scaling": {
+                "mode": "",
+                "number": 1
+              }
+            }
+          ],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "name": "Start of Turn Effects",
+        "img": "systems/dnd5e/icons/svg/statuses/concentrating.svg"
+      }
+    },
+    "identifier": "tsunami",
+    "prepared": 0
+  },
+  "_id": "cgasplTsunami000",
+  "type": "spell",
+  "img": "icons/magic/water/wave-water-blue.webp",
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: STR save 6d10 bludgeoning when the wave appears; its movement and weakening each round are the DM's to run (use Start of Turn Effects)."
+      }
+    }
+  }
+}

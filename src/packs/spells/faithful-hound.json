@@ -1,0 +1,227 @@
+{
+  "name": "Faithful Hound",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Conjure an invisible, invulnerable watchdog for 8 hours. It barks at intruders within 30 ft who don't say the password. At the start of each of your turns it bites one enemy within 5 ft: DEX save or 4d8 Force damage (rolled automatically). Move it 30 ft with a Magic action.</p>",
+      "chat": ""
+    },
+    "activities": {
+      "oXwEMXLXZLw2Ub0g": {
+        "type": "summon",
+        "_id": "oXwEMXLXZLw2Ub0g",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": true
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "pSAhMaxc9fsGX7nk",
+            "uuid": "Compendium.dnd5e.actors24.Actor.phbmobFaithfulHo",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": ""
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": []
+      },
+      "vIOe9RHtAUBrnsR6": {
+        "type": "utility",
+        "name": "Move Hound",
+        "_id": "vIOe9RHtAUBrnsR6",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "units": "hour",
+      "value": "8"
+    },
+    "level": 4,
+    "materials": {
+      "value": "a silver whistle",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "range": {
+      "units": "ft",
+      "special": "",
+      "value": "30"
+    },
+    "school": "con",
+    "target": {
+      "template": {
+        "contiguous": false,
+        "units": "ft",
+        "type": ""
+      },
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "space",
+        "special": ""
+      }
+    },
+    "identifier": "faithful-hound",
+    "prepared": 0
+  },
+  "_id": "cgaFaithfulHound",
+  "type": "spell",
+  "img": "icons/creatures/abilities/wolf-howl-moon-purple.webp",
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: summons the invisible hound; at the start of each of your turns it bites the nearest enemy within 5 ft (DEX save, 4d8 force) automatically.",
+        "aliases": [
+          "mordenkainens-faithful-hound"
+        ]
+      }
+    }
+  }
+}

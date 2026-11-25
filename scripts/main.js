@@ -284,6 +284,7 @@ Hooks.on("updateRegion", (region) => scheduleRegionSweep(region.parent));
 //   turnStart / turnEnd: the creature starts / ends its turn within range of the summon
 //   enter: the creature moves to within range;  summonMove: the summon moves to within range of the creature
 //   ownTurnStart: the summon starts its own turn (every creature in range)
+//   casterTurnStart: the caster starts their turn (up to maxTargets creatures in range, nearest first)
 // An entry can instead name an ability of the summoned creature (actorItem = the item's identifier), limited to one form
 // (form = text in the summon's name), e.g. the Putrid Undead Spirit's Festering Aura.
 const SUMMON_AURAS = {
@@ -293,7 +294,8 @@ const SUMMON_AURAS = {
   "conjure-elemental": { range: 5, triggers: ["enter", "turnStart"], enemiesOnly: true, oneRestrained: true },
   "summon-undead": { form: "putrid", actorItem: "festering-aura", range: 5, triggers: ["turnStart"], excludeCaster: true },
   "summon-construct": { form: "stone", actorItem: "stony-lethargy", range: 10, triggers: ["turnStart"], enemiesOnly: true },
-  "summon-aberration": { form: "mind flayer", actorItem: "whispering-aura", range: 5, triggers: ["ownTurnStart"], excludeCaster: true, needsActive: true }
+  "summon-aberration": { form: "mind flayer", actorItem: "whispering-aura", range: 5, triggers: ["ownTurnStart"], excludeCaster: true, needsActive: true },
+  "faithful-hound": { actorItem: "bite", range: 5, triggers: ["casterTurnStart"], enemiesOnly: true, maxTargets: 1 }
 };
 const auraUsed = new Set();
 function edgeDistance(a, b, scene) {
@@ -373,6 +375,12 @@ Hooks.on("updateCombat", async (combat, changed) => {
   }
   for (const aura of auras) {
     if (curr && aura.cfg.triggers.includes("turnStart") && edgeDistance(aura.token, curr, scene) <= aura.cfg.range) await triggerAura(aura, curr, "turn start");
+    if (curr && aura.cfg.triggers.includes("casterTurnStart") && curr.actorId === aura.spell.actor?.id) {
+      const near = scene.tokens.filter((o) => o.id !== aura.token.id && o.actor && edgeDistance(aura.token, o, scene) <= aura.cfg.range
+        && o.disposition !== curr.disposition && (o.actor.system.attributes?.hp?.value ?? 0) > 0)
+        .sort((a, b) => edgeDistance(aura.token, a, scene) - edgeDistance(aura.token, b, scene));
+      for (const o of near.slice(0, aura.cfg.maxTargets ?? near.length)) await triggerAura(aura, o, "caster's turn start");
+    }
     if (curr?.id === aura.token.id && aura.cfg.triggers.includes("ownTurnStart")) {
       for (const other of scene.tokens) {
         if (other.id !== aura.token.id && edgeDistance(aura.token, other, scene) <= aura.cfg.range) await triggerAura(aura, other, "its turn start");
