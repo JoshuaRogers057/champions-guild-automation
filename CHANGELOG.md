@@ -3,6 +3,30 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.11.0
+
+The 29 priority-3 spells to verify, each cast in a live v14 world. DMs: update, then run **Mass Apply / Update**.
+
+- Worked as-is (now shipped so every table gets the same version): Levitate, Mind Spike, See Invisibility,
+  Spider Climb, Suggestion, Gaseous Form, Revivify, Freedom of Movement, Antilife Shell, True Seeing, Fire Storm,
+  Mind Blank, Power Word Heal.
+- Fixed:
+  - **Charm Person / Charm Monster**: the charm now ends when the target takes damage.
+  - **Dominate Beast / Person / Monster**: the target repeats the save each time it takes damage.
+  - **Calm Emotions**: applied both effects at once; now you pick one (the indifference ends on damage).
+  - **Glyph of Warding**: Explosive Rune always dealt Acid with fast-forwarded rolls; now pick the type.
+  - **Freezing Sphere**: its damage had no type; it's Cold.
+  - **Resilient Sphere**: the enclosed creature can't be damaged from outside.
+  - **Contagion**: pick the ability; the repeat saves are rolled and counted (three successes end it, three failures
+    make it last 7 days).
+  - **Sunburst**: Blinded creatures repeat the save at the end of each turn.
+  - **Maze**: the banished creature's token is hidden until the spell ends.
+  - **Holy Aura**: a 30-ft aura that moves with you; allies inside get Advantage on saves and attackers have
+    Disadvantage; a Fiend or Undead that hits one in melee makes the CON save or is Blinded.
+  - **Arcane Vigor**: heals you (it rolled but healed no one) with the Hit Die size you pick, more dice when upcast.
+  - **Heroes' Feast**: Consume Feast now raises the Hit Point maximum by 2d10 as well.
+- New: **Power Word Fortify** (Player's Handbook): divide 120 temporary hit points between up to six creatures.
+
 ## 0.10.0
 
 The 8 Player's Handbook Summon spells, with their spirits in a new compendium, **CGA: Summoned Creatures** (24
