@@ -1,7 +1,7 @@
 {
   "name": "Dreadful Strikes",
   "type": "feat",
-  "img": "icons/magic/control/fear-fright-monster-grin-purple.webp",
+  "img": "icons/magic/control/fear-fright-mask-orange.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -40,7 +40,7 @@
     {
       "_id": "cgaCffxdreadf061",
       "name": "Dreadful Strikes (automation)",
-      "img": "icons/magic/control/fear-fright-monster-grin-purple.webp",
+      "img": "icons/magic/control/fear-fright-mask-orange.webp",
       "type": "base",
       "transfer": true,
       "disabled": false,
@@ -100,7 +100,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Automatic +1d4/1d6 psychic, once per turn per target."
       }
     }

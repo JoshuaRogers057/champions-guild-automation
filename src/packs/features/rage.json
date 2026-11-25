@@ -445,7 +445,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.1.0",
+        "version": "1.2.0",
         "notes": "Champions Guild Automation: Rage effect (B/P/S resistance, STR advantage), Rage Damage on STR attacks, ends Concentration; ends at the end of a turn you didn't attack/force a save/extend (module rule)."
       }
     }

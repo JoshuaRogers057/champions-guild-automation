@@ -1,7 +1,7 @@
 {
   "name": "Circle Forms",
   "type": "feat",
-  "img": "icons/creatures/mammals/bear-standing-snarl-brown.webp",
+  "img": "icons/commodities/claws/claw-bear-brown.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -260,7 +260,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Moon Wild Shape transform (CR level/3, AC 13 + WIS, temp HP 3x level) spending a Wild Shape use."
       }
     }

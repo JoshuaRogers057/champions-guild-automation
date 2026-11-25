@@ -161,9 +161,9 @@
    "level": 13,
    "name": "Improved Brutal Strike",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Staggering Blow / Sundering Blow options; at 17 2d10 and two effects",
+   "note": "Handled by Brutal Strike (extra options at 13, 2d10 and two effects at 17).",
    "identifier": "improved-brutal-strike"
   },
   {
@@ -183,9 +183,9 @@
    "level": 17,
    "name": "Improved Brutal Strike",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Staggering Blow / Sundering Blow options; at 17 2d10 and two effects",
+   "note": "Handled by Brutal Strike (extra options at 13, 2d10 and two effects at 17).",
    "identifier": "improved-brutal-strike"
   },
   {
@@ -194,9 +194,9 @@
    "level": 18,
    "name": "Indomitable Might",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "STR checks/saves use your STR score if the roll is lower",
+   "note": "STR check/save totals raised to your STR score (module rule).",
    "identifier": "indomitable-might"
   },
   {
@@ -293,9 +293,9 @@
    "level": 6,
    "name": "Aspect of the Wilds",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Owl darkvision / Panther climb / Salmon swim - choice activity",
+   "note": "Choose Aspect activity sets the Owl/Panther/Salmon effect.",
    "identifier": "aspect-of-the-wilds"
   },
   {
@@ -315,9 +315,9 @@
    "level": 14,
    "name": "Power of the Wilds",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "On Rage pick Falcon fly / Lion disadvantage aura / Ram knock Prone",
+   "note": "Choice when Rage starts: Falcon fly, Lion aura (module rule), Ram Prone on melee hits.",
    "identifier": "power-of-the-wilds"
   },
   {
@@ -359,9 +359,9 @@
    "level": 14,
    "name": "Travel along the Tree",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Teleport 60 ft on Rage / Bonus Action; once per Rage 150 ft with allies",
+   "note": "Reminder when the Rage starts; Travel activity (move tokens yourself).",
    "identifier": "travel-along-the-tree"
   },
   {
@@ -414,9 +414,9 @@
    "level": 14,
    "name": "Rage of the Gods",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Divine warrior form: fly, Necrotic/Psychic/Radiant resistance, Revivification reaction",
+   "note": "Divine Warrior Form effect; Revivification Reaction prompt (module rule).",
    "identifier": "rage-of-the-gods"
   },
   {
@@ -524,9 +524,9 @@
    "level": 18,
    "name": "Superior Inspiration",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "On Initiative regain uses up to 2",
+   "note": "Bardic Inspiration back to 2 on Initiative (module rule).",
    "identifier": "superior-inspiration"
   },
   {
@@ -579,9 +579,9 @@
    "level": 6,
    "name": "Tandem Footwork",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Spend Inspiration on Initiative: you and allies within 30 ft add the roll",
+   "note": "Initiative prompt; adds the Bardic die to you and allies within 30 ft (module rule).",
    "identifier": "tandem-footwork"
   },
   {
@@ -590,9 +590,9 @@
    "level": 14,
    "name": "Leading Evasion",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Evasion, shareable with creatures within 5 ft",
+   "note": "superSaver/semiSuperSaver on DEX (shared by hand).",
    "identifier": "leading-evasion"
   },
   {
@@ -623,9 +623,9 @@
    "level": 6,
    "name": "Mantle of Majesty",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Free Command as Bonus Action each turn for 1 min (concentration)",
+   "note": "Mantle effect with Concentration; Command cast activity without a slot.",
    "identifier": "mantle-of-majesty"
   },
   {
@@ -634,9 +634,9 @@
    "level": 14,
    "name": "Unbreakable Majesty",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "First hit on you each turn: attacker CHA save or it misses",
+   "note": "Majesty effect; first hit each turn: attacker CHA save or it misses (module rule).",
    "identifier": "unbreakable-majesty"
   },
   {
@@ -678,9 +678,9 @@
    "level": 14,
    "name": "Peerless Skill",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Add Bardic die to your failed check/attack; not spent on a failure",
+   "note": "Optional Bardic die on a failed check (module rule keeps the die size).",
    "identifier": "peerless-skill"
   },
   {
@@ -821,9 +821,9 @@
    "level": 14,
    "name": "Improved Blessed Strikes",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Divine Strike 2d8 / Potent Spellcasting temp HP",
+   "note": "Divine Strike 2d8 (Blessed Strikes); cantrip temp HP prompt.",
    "identifier": "improved-blessed-strikes"
   },
   {
@@ -898,9 +898,9 @@
    "level": 17,
    "name": "Supreme Healing",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Healing dice from spells/Channel Divinity are maximized",
+   "note": "Healing dice maximized on your spells and Channel Divinity.",
    "identifier": "supreme-healing"
   },
   {
@@ -953,9 +953,9 @@
    "level": 17,
    "name": "Corona of Light",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Sunlight aura; enemies have Disadvantage on saves vs your fire/radiant",
+   "note": "Light and an enemy save-Disadvantage aura for 1 minute (module rule).",
    "identifier": "corona-of-light"
   },
   {
@@ -997,9 +997,9 @@
    "level": 6,
    "name": "Trickster’s Transposition",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Swap places with the duplicate",
+   "note": "Swaps your token with the duplicate.",
    "identifier": "tricksters-transposition"
   },
   {
@@ -1008,9 +1008,9 @@
    "level": 17,
    "name": "Improved Duplicity",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Allies get Advantage near the illusion; heal on end",
+   "note": "Ally Advantage near the duplicate and a heal when it ends (module rule).",
    "identifier": "improved-duplicity"
   },
   {
@@ -1052,9 +1052,9 @@
    "level": 6,
    "name": "War God’s Blessing",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Channel Divinity cast of Shield of Faith/Spiritual Weapon without concentration",
+   "note": "Cast activities spending Channel Divinity, without Concentration.",
    "identifier": "war-gods-blessing"
   },
   {
@@ -1063,9 +1063,9 @@
    "level": 17,
    "name": "Avatar of Battle",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "B/P/S Resistance",
+   "note": "B/P/S resistance.",
    "identifier": "avatar-of-battle"
   },
   {
@@ -1173,9 +1173,9 @@
    "level": 15,
    "name": "Improved Elemental Fury",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Primal Strike 2d8 / cantrip range +300 ft",
+   "note": "Primal Strike 2d8 handled by Elemental Fury; range extension manual.",
    "identifier": "improved-elemental-fury"
   },
   {
@@ -1316,9 +1316,9 @@
    "level": 14,
    "name": "Lunar Form",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+2d10 Radiant once per turn in Wild Shape; bring a creature on Moonlight Step",
+   "note": "Once per turn +2d10 Radiant while in Wild Shape.",
    "identifier": "lunar-form"
   },
   {
@@ -1371,9 +1371,9 @@
    "level": 14,
    "name": "Oceanic Gift",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Put the emanation on an ally",
+   "note": "Reminder; the emanation's placement is up to you.",
    "identifier": "oceanic-gift"
   },
   {
@@ -1569,9 +1569,9 @@
    "level": 13,
    "name": "Studied Attacks",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "After a miss, Advantage on next attack vs that creature",
+   "note": "Miss: Advantage on your next attack against that creature.",
    "identifier": "studied-attacks"
   },
   {
@@ -1646,9 +1646,9 @@
    "level": 15,
    "name": "Relentless",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Once per turn use 1d8 instead of spending a die",
+   "note": "Free d8 maneuver once per turn when out of dice (Combat Superiority prompt).",
    "identifier": "relentless"
   },
   {
@@ -1657,9 +1657,9 @@
    "level": 18,
    "name": "Ultimate Combat Superiority",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "d12 dice (scale)",
+   "note": "Die size worked out from your Fighter level.",
    "identifier": "ultimate-combat-superiority"
   },
   {
@@ -1679,9 +1679,9 @@
    "level": null,
    "name": "Bait and Switch",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Swap places + AC bonus - manual move",
+   "note": "Rolls the die and gives the AC bonus to you or the ally.",
    "identifier": "bait-and-switch"
   },
   {
@@ -1701,9 +1701,9 @@
    "level": null,
    "name": "Commanding Presence",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+die to CHA checks",
+   "note": "Optional Superiority Die on those checks (module rule keeps the die size).",
    "identifier": "commanding-presence"
   },
   {
@@ -1866,9 +1866,9 @@
    "level": null,
    "name": "Tactical Assessment",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+die to History/Investigation/Insight",
+   "note": "Optional Superiority Die on those checks (module rule keeps the die size).",
    "identifier": "tactical-assessment"
   },
   {
@@ -1943,9 +1943,9 @@
    "level": 18,
    "name": "Survivor",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Advantage on death saves, 18-20 counts as 20, turn-start heal 5+CON while Bloodied",
+   "note": "Death save Advantage; turn-start heal while Bloodied.",
    "identifier": "survivor"
   },
   {
@@ -2042,9 +2042,9 @@
    "level": 10,
    "name": "Guarded Mind",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Psychic Resistance; end Charmed/Frightened with a die",
+   "note": "Psychic resistance; activity spends a psi die to end Charmed/Frightened.",
    "identifier": "guarded-mind"
   },
   {
@@ -2053,9 +2053,9 @@
    "level": 15,
    "name": "Bulwark of Force",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Half Cover for INT-mod creatures 1 min",
+   "note": "Half Cover effect on the targets for 1 minute.",
    "identifier": "bulwark-of-force"
   },
   {
@@ -2064,9 +2064,9 @@
    "level": 18,
    "name": "Telekinetic Master",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Free Telekinesis + Bonus Action attack while concentrating",
+   "note": "Telekinesis cast activity (once per Long Rest).",
    "identifier": "telekinetic-master"
   },
   {
@@ -2251,9 +2251,9 @@
    "level": 13,
    "name": "Deflect Energy",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Deflect Attacks against any damage type",
+   "note": "Deflect Attacks covers every damage type from level 13 (module rule).",
    "identifier": "deflect-energy"
   },
   {
@@ -2262,9 +2262,9 @@
    "level": 14,
    "name": "Disciplined Survivor",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "All save proficiencies; spend Focus to reroll a failed save (prompt)",
+   "note": "All save proficiencies; optional reroll spending Focus.",
    "identifier": "disciplined-survivor"
   },
   {
@@ -2273,9 +2273,9 @@
    "level": 15,
    "name": "Perfect Focus",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "On Initiative regain Focus up to 4",
+   "note": "Focus back to 4 on Initiative (module rule).",
    "identifier": "perfect-focus"
   },
   {
@@ -2361,9 +2361,9 @@
    "level": 11,
    "name": "Flurry of Healing and Harm",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Free uses in Flurry (WIS-mod per LR)",
+   "note": "Free Hand of Harm uses during Flurry of Blows (Hand of Harm prompt).",
    "identifier": "flurry-of-healing-and-harm"
   },
   {
@@ -2405,9 +2405,9 @@
    "level": 11,
    "name": "Improved Shadow Step",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Focus to ignore light, Unarmed Strike after teleport",
+   "note": "Reminder (spend the Focus and make the strike yourself).",
    "identifier": "improved-shadow-step"
   },
   {
@@ -2416,9 +2416,9 @@
    "level": 17,
    "name": "Cloak of Shadows",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Invisible 1 min, free Flurry",
+   "note": "Invisible effect for 1 minute (3 Focus).",
    "identifier": "cloak-of-shadows"
   },
   {
@@ -2460,9 +2460,9 @@
    "level": 11,
    "name": "Stride of the Elements",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Fly/swim while attuned",
+   "note": "Fly and swim speed effect for 10 minutes.",
    "identifier": "stride-of-the-elements"
   },
   {
@@ -2471,9 +2471,9 @@
    "level": 17,
    "name": "Elemental Epitome",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Resistance choice, Destructive Stride, extra MA die once per turn",
+   "note": "Choose Element sets the resistance; once-per-turn extra Martial Arts die.",
    "identifier": "elemental-epitome"
   },
   {
@@ -2680,9 +2680,9 @@
    "level": 14,
    "name": "Restoring Touch",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Lay On Hands removes conditions for 5 points each",
+   "note": "Spends 5 Lay on Hands points and ends a chosen condition.",
    "identifier": "restoring-touch"
   },
   {
@@ -2691,9 +2691,9 @@
    "level": 18,
    "name": "Aura Expansion",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Auras become 30 ft (part of the aura automation)",
+   "note": "Aura ranges grow at 18 in the aura automation.",
    "identifier": "aura-expansion"
   },
   {
@@ -2746,9 +2746,9 @@
    "level": 15,
    "name": "Smite of Protection",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "After Divine Smite allies in aura get Half Cover",
+   "note": "Divine Smite: Half Cover for allies in your aura.",
    "identifier": "smite-of-protection"
   },
   {
@@ -2812,9 +2812,9 @@
    "level": 15,
    "name": "Glorious Defense",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Reaction +CHA AC to you/ally hit within 10 ft; attack back on a miss",
+   "note": "Reaction prompt: +CHA AC, then a counterattack (module rule).",
    "identifier": "glorious-defense"
   },
   {
@@ -2823,9 +2823,9 @@
    "level": 20,
    "name": "Living Legend",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Advantage on CHA checks, reroll failed saves, turn a miss into a hit once per turn",
+   "note": "Effect: CHA check Advantage, once-per-turn miss-to-hit and Reaction save reroll options.",
    "identifier": "living-legend"
   },
   {
@@ -2867,9 +2867,9 @@
    "level": 15,
    "name": "Undying Sentinel",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Once per LR at 0 HP drop to 1 and heal 3x Paladin level",
+   "note": "Automatic once per Long Rest at 0 HP (module rule).",
    "identifier": "undying-sentinel"
   },
   {
@@ -2878,9 +2878,9 @@
    "level": 20,
    "name": "Elder Champion",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Aura: enemy Disadvantage on saves, regen 10, Bonus Action spells",
+   "note": "Regeneration and an enemy save-Disadvantage aura for 1 minute (module rule).",
    "identifier": "elder-champion"
   },
   {
@@ -2922,9 +2922,9 @@
    "level": 15,
    "name": "Soul of Vengeance",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Reaction melee attack after the vowed creature attacks",
+   "note": "Reaction activity: melee attack against the targeted creature.",
    "identifier": "soul-of-vengeance"
   },
   {
@@ -2933,9 +2933,9 @@
    "level": 20,
    "name": "Avenging Angel",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Fly 60 and Frightful Aura",
+   "note": "Fly 60 effect; frightful aura at enemy turn starts (module rule).",
    "identifier": "avenging-angel"
   },
   {
@@ -3065,9 +3065,9 @@
    "level": 13,
    "name": "Relentless Hunter",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Damage can't break Hunter's Mark concentration",
+   "note": "Damage doesn't call for a Concentration save on Hunter's Mark (module rule).",
    "identifier": "relentless-hunter"
   },
   {
@@ -3087,9 +3087,9 @@
    "level": 17,
    "name": "Precise Hunter",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Advantage on attacks vs your Hunter's Mark target",
+   "note": "Advantage against your Hunter's Mark target.",
    "identifier": "precise-hunter"
   },
   {
@@ -3120,9 +3120,9 @@
    "level": 20,
    "name": "Foe Slayer",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Hunter's Mark die d10 (marks.js)",
+   "note": "Hunter's Mark die becomes d10 (Hunter's Mark automation).",
    "identifier": "foe-slayer"
   },
   {
@@ -3153,9 +3153,9 @@
    "level": 11,
    "name": "Bestial Fury",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Beast's Strike twice; extra Force vs Hunter's Mark target",
+   "note": "Reminder; the beast's attacks are made from its own sheet.",
    "identifier": "bestial-fury"
   },
   {
@@ -3208,9 +3208,9 @@
    "level": 7,
    "name": "Beguiling Twist",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Advantage vs Charmed/Frightened; reaction to charm/frighten another",
+   "note": "Advantage vs Charm/Fear; Reaction save that Charms or Frightens.",
    "identifier": "beguiling-twist"
   },
   {
@@ -3230,9 +3230,9 @@
    "level": 15,
    "name": "Misty Wanderer",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Free Misty Step uses + bring a creature",
+   "note": "Misty Step cast activity with WIS-mod free uses.",
    "identifier": "misty-wanderer"
   },
   {
@@ -3285,9 +3285,9 @@
    "level": 11,
    "name": "Stalker’s Flurry",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Dreadful Strike 2d8 + Sudden Strike / Mass Fear",
+   "note": "Prompt after Dreadful Strike: Sudden Strike reminder or Mass Fear saves.",
    "identifier": "stalkers-flurry"
   },
   {
@@ -3296,9 +3296,9 @@
    "level": 15,
    "name": "Shadowy Dodge",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Reaction Disadvantage on an attack + teleport 30 ft",
+   "note": "Reaction prompt: Disadvantage on the attack (module rule).",
    "identifier": "shadowy-dodge"
   },
   {
@@ -3340,9 +3340,9 @@
    "level": 11,
    "name": "Superior Hunter’s Prey",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Hunter's Mark damage also hits a second creature within 30 ft once per turn",
+   "note": "Once per turn, the Hunter's Mark die to a second creature within 30 ft.",
    "identifier": "superior-hunters-prey"
   },
   {
@@ -3494,9 +3494,9 @@
    "level": 11,
    "name": "Improved Cunning Strike",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Two Cunning Strike effects",
+   "note": "Second Cunning Strike effect in the Sneak Attack prompt.",
    "identifier": "improved-cunning-strike"
   },
   {
@@ -3505,9 +3505,9 @@
    "level": 14,
    "name": "Devious Strikes",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Daze / Knock Out / Obscure Cunning Strike options",
+   "note": "Daze/Knock Out/Obscure in the Cunning Strike choices.",
    "identifier": "devious-strikes"
   },
   {
@@ -3527,9 +3527,9 @@
    "level": 18,
    "name": "Elusive",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "No attack has Advantage against you unless Incapacitated",
+   "note": "Attacks against you can't have Advantage.",
    "identifier": "elusive"
   },
   {
@@ -3549,9 +3549,9 @@
    "level": 20,
    "name": "Stroke of Luck",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Turn a failed D20 Test into a 20 (prompt), SR",
+   "note": "Optional: a failed D20 Test becomes a 20.",
    "identifier": "stroke-of-luck"
   },
   {
@@ -3582,9 +3582,9 @@
    "level": 9,
    "name": "Magical Ambush",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Invisible caster: target has Disadvantage on saves vs your spell this turn",
+   "note": "Spell targets get Disadvantage on their save when you cast while Invisible.",
    "identifier": "magical-ambush"
   },
   {
@@ -3648,9 +3648,9 @@
    "level": 13,
    "name": "Envenom Weapons",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Poison Cunning Strike also deals 2d6 Poison ignoring resistance",
+   "note": "Poison Cunning Strike adds 2d6 Poison.",
    "identifier": "envenom-weapons"
   },
   {
@@ -3659,9 +3659,9 @@
    "level": 17,
    "name": "Death Strike",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "First-round Sneak Attack: CON save or damage doubled",
+   "note": "First-round Sneak Attack: CON save or the damage again.",
    "identifier": "death-strike"
   },
   {
@@ -3703,9 +3703,9 @@
    "level": 13,
    "name": "Psychic Veil",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Invisible 1 hour, ends on damage/save",
+   "note": "Invisible effect for 1 hour (ends when you deal damage).",
    "identifier": "psychic-veil"
   },
   {
@@ -3714,9 +3714,9 @@
    "level": 17,
    "name": "Rend Mind",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Sneak Attack with blades: WIS save or Stunned",
+   "note": "Prompt after a Psychic Blade Sneak Attack; WIS save or Stunned.",
    "identifier": "rend-mind"
   },
   {
@@ -4022,9 +4022,9 @@
    "level": 6,
    "name": "Psionic Sorcery",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Cast psionic spells with sorcery points",
+   "note": "Reminder; spend Sorcery Points by hand.",
    "identifier": "psionic-sorcery"
   },
   {
@@ -4044,9 +4044,9 @@
    "level": 14,
    "name": "Revelation in Flesh",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Choose benefits per sorcery point",
+   "note": "Checkbox prompt; spends Sorcery Points and applies the chosen benefits.",
    "identifier": "revelation-in-flesh"
   },
   {
@@ -4055,9 +4055,9 @@
    "level": 18,
    "name": "Warping Implosion",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Teleport + 30-ft STR save 3d10 force pull",
+   "note": "30-ft emanation STR save, 3d10 Force (half).",
    "identifier": "warping-implosion"
   },
   {
@@ -4099,9 +4099,9 @@
    "level": 14,
    "name": "Trance of Order",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "No Advantage against you; d20 9- counts as 10",
+   "note": "No Advantage against you; d20 minimum 10 on your tests.",
    "identifier": "trance-of-order"
   },
   {
@@ -4110,9 +4110,9 @@
    "level": 18,
    "name": "Clockwork Cavalcade",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Heal 100 / repair / dispel in a cube",
+   "note": "Use tracker; effects are applied by hand.",
    "identifier": "clockwork-cavalcade"
   },
   {
@@ -4198,9 +4198,9 @@
    "level": 6,
    "name": "Bend Luck",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Reaction 1 point: +/-1d4 to another creature's roll",
+   "note": "Spends a Sorcery Point; +1d4 optional bonus or -1d4 on the next D20 Test.",
    "identifier": "bend-luck"
   },
   {
@@ -4209,9 +4209,9 @@
    "level": 14,
    "name": "Controlled Chaos",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Roll surge table twice",
+   "note": "Wild Magic Surge rolls the d100 twice.",
    "identifier": "controlled-chaos"
   },
   {
@@ -4220,9 +4220,9 @@
    "level": 18,
    "name": "Tamed Surge",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Choose a surge effect",
+   "note": "Use tracker; pick the effect yourself.",
    "identifier": "tamed-surge"
   },
   {
@@ -4451,9 +4451,9 @@
    "level": null,
    "name": "Gift of the Protectors",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Named creatures drop to 1 HP instead of 0 once per LR",
+   "note": "Reminder; apply the 1 HP by hand.",
    "identifier": "gift-of-the-protectors"
   },
   {
@@ -4671,9 +4671,9 @@
    "level": 10,
    "name": "Beguiling Defenses",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Charm immunity; reaction halve damage + WIS save psychic reflect",
+   "note": "Charm immunity; Reaction prompt halves damage and reflects it as Psychic (module rule).",
    "identifier": "beguiling-defenses"
   },
   {
@@ -4726,9 +4726,9 @@
    "level": 10,
    "name": "Celestial Resilience",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Temp HP on rests/Magical Cunning for you and five allies",
+   "note": "Temp HP for you after rests (module rule); allies by hand.",
    "identifier": "celestial-resilience"
   },
   {
@@ -4737,9 +4737,9 @@
    "level": 14,
    "name": "Searing Vengeance",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Death save replacement: heal half, radiant burst + Blinded",
+   "note": "Turn-start prompt at 0 HP: heal half, radiant burst + Blinded (module rule).",
    "identifier": "searing-vengeance"
   },
   {
@@ -4836,9 +4836,9 @@
    "level": 6,
    "name": "Clairvoyant Combatant",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "WIS save: Disadvantage vs you, Advantage for you",
+   "note": "WIS save; on a failure Disadvantage against you and Advantage for you.",
    "identifier": "clairvoyant-combatant"
   },
   {
@@ -4858,9 +4858,9 @@
    "level": 10,
    "name": "Thought Shield",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Psychic Resistance and reflect psychic damage",
+   "note": "Psychic resistance; psychic damage reflected (module rule).",
    "identifier": "thought-shield"
   },
   {
@@ -5034,9 +5034,9 @@
    "level": 14,
    "name": "Spell Resistance",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Advantage on saves vs spells, resistance to spell damage",
+   "note": "Advantage on saves vs spells; spell damage halved (module rule).",
    "identifier": "spell-resistance"
   },
   {
@@ -5078,9 +5078,9 @@
    "level": 10,
    "name": "The Third Eye",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Darkvision 120 / read languages / See Invisibility",
+   "note": "Choice effect until a Short or Long Rest.",
    "identifier": "the-third-eye"
   },
   {
@@ -5089,9 +5089,9 @@
    "level": 14,
    "name": "Greater Portent",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Three portent dice",
+   "note": "Three foretelling rolls (Portent module rule).",
    "identifier": "greater-portent"
   },
   {
@@ -5144,9 +5144,9 @@
    "level": 14,
    "name": "Overchannel",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Max damage on a 1-5 slot spell; 2d12/level necrotic on repeat",
+   "note": "Next level 1-5 damage spell maximized; repeat-use Necrotic to you.",
    "identifier": "overchannel"
   },
   {

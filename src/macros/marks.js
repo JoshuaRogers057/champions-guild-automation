@@ -69,7 +69,10 @@ if (pass === "DamageBonus") {
   workflow.cgaMarkBonus ??= {};
   if (now - (workflow.cgaMarkBonus[key] ?? 0) < 2000) return;
   workflow.cgaMarkBonus[key] = now;
-  return { damageRoll: cfg.formula ?? "1d6", damageType: cfg.type, flavor: spell.name };
+  workflow.cgaMarkHit = marked.document?.uuid; // Superior Hunter's Prey (Hunter 11) follows up on this
+  // Foe Slayer (Ranger 20): the Hunter's Mark die becomes a d10.
+  const foeSlayer = /hunter/i.test(cfg.match) && workflow.actor?.items?.some((i) => i.system?.identifier === "foe-slayer");
+  return { damageRoll: foeSlayer ? "1d10" : (cfg.formula ?? "1d6"), damageType: cfg.type, flavor: spell.name };
 }
 
 // ---------- 2. moving the mark ----------

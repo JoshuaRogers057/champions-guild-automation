@@ -1,7 +1,7 @@
 {
   "name": "Shadow Step",
   "type": "feat",
-  "img": "icons/magic/movement/portal-vortex-purple.webp",
+  "img": "icons/magic/movement/portal-vortex-orange.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -200,7 +200,7 @@
     {
       "_id": "cgaCffxshadow589",
       "name": "Shadow Step",
-      "img": "icons/magic/movement/portal-vortex-purple.webp",
+      "img": "icons/magic/movement/portal-vortex-orange.webp",
       "type": "base",
       "transfer": false,
       "disabled": false,
@@ -263,7 +263,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Bonus Action Advantage on your next melee attack this turn."
       }
     }

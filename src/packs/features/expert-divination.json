@@ -1,7 +1,7 @@
 {
   "name": "Expert Divination",
   "type": "feat",
-  "img": "icons/magic/perception/eye-ringed-glow-yellow.webp",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -40,7 +40,7 @@
     {
       "_id": "cgaCffxexpert646",
       "name": "Expert Divination (automation)",
-      "img": "icons/magic/perception/eye-ringed-glow-yellow.webp",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
       "type": "base",
       "transfer": true,
       "disabled": false,
@@ -100,7 +100,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Divination slot spell restores the highest lower expended slot (max 5)."
       }
     }

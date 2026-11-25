@@ -166,12 +166,12 @@
   },
   "_id": "cgaSplThornWhip0",
   "type": "spell",
-  "img": "icons/magic/nature/root-vine-thorned-coiled-green.webp",
+  "img": "icons/magic/nature/root-vine-beanstolk-green.webp",
   "effects": [],
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: melee spell attack (30 ft reach); a hit pulls a Large or smaller creature up to 10 ft toward you (no token spin)."
       }
     },

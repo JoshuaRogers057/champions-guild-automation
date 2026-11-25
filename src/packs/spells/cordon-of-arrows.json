@@ -282,12 +282,12 @@
   },
   "_id": "cgaSplCordonArro",
   "type": "spell",
-  "img": "icons/weapons/ammunition/arrows-fletching-green.webp",
+  "img": "icons/containers/ammunition/arrows-quiver-green.webp",
   "effects": [],
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: plants 4 pieces of ammunition (+2 per slot level above 2nd) guarding 30 ft; each enemy that enters the area or ends its turn there makes a DEX save or takes 2d4 piercing, using up a piece. The spell ends when none are left."
       }
     },

@@ -1,7 +1,7 @@
 {
   "name": "Soul Blades",
   "type": "feat",
-  "img": "icons/weapons/daggers/dagger-glowing-purple.webp",
+  "img": "icons/weapons/daggers/dagger-curved-purple.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -209,7 +209,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Homing Strikes prompt (module rule); Psychic Teleportation distance roll."
       }
     }

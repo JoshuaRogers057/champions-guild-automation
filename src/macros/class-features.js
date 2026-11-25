@@ -103,6 +103,16 @@ async function rageRiders(rage) {
     if (pick === "eagle") say("Eagle: you take the Dash and Disengage actions as part of this Bonus Action, and can take both as a Bonus Action on later turns while raging.");
     if (pick === "wolf") say("Wolf: while you rage, your allies have Advantage on attack rolls against enemies within 5 ft of you.");
   }
+  if (has("power-of-the-wilds")) {
+    const pick = await choose("Power of the Wilds", "<p>Which power do you take for this Rage?</p>", [
+      { action: "falcon", label: "Falcon (Fly Speed equal to your Speed, if you aren't wearing armor)", default: true },
+      { action: "lion", label: "Lion (enemies within 5 ft have Disadvantage attacking anyone but you)" },
+      { action: "ram", label: "Ram (your melee hits knock a Large or smaller target Prone)" }]);
+    if (pick === "falcon" && !actor.system.attributes.ac?.equippedArmor) add.push(["system.attributes.movement.fly", String(Number(actor.system.attributes.movement.walk) || 30), "upgrade"]);
+    if (pick) await rage.setFlag("world", "cgaPower", pick);
+  }
+  // Travel along the Tree (World Tree 14): a teleport when the Rage starts.
+  if (has("travel-along-the-tree")) say("Travel along the Tree: you can teleport up to 60 ft to an unoccupied space you can see (move your token).");
   if (add.length) await rage.update({ "system.changes": [...rage.toObject().system.changes, ...add.map(([key, value, type]) => ({ key, value, type, priority: 50, phase: "initial" }))] });
   if (has("vitality-of-the-tree")) {
     const temp = lvl("barbarian");
@@ -247,18 +257,19 @@ switch (id) {
     };
     const known = Object.entries(MANEUVERS).filter(([k]) => has(`maneuver-${k}`) || has(k));
     if (pass === "DamageBonus") {
-      if (!activity?.attack || !known.length || left(feat) <= 0 || !firstCall(pass)) return;
+      const relentless = left(feat) <= 0 && has("relentless") && !usedThisTurn("relentless");
+      if (!activity?.attack || !known.length || (left(feat) <= 0 && !relentless) || !firstCall(pass)) return;
       const t = hitTokens().find((x) => x.actor && x !== me);
       if (!t) return;
-      const die = supDie();
+      const die = relentless ? 8 : supDie();
       const opts = known.filter(([, m]) => !m.large || largeOrSmaller(t));
       if (!opts.length) return;
       const buttons = opts.map(([k, m]) => ({ action: k, label: m.label }));
       buttons.push({ action: "none", label: "No maneuver", default: true });
-      const pick = await choose("Maneuver", `<p>You hit <strong>${esc(t.name)}</strong>. Spend a Superiority Die (d${die}, ${left(feat)} left)?</p><ul>${opts.map(([, m]) => `<li><strong>${m.label}</strong>: ${m.note}</li>`).join("")}</ul>`, buttons);
+      const pick = await choose("Maneuver", `<p>You hit <strong>${esc(t.name)}</strong>. ${relentless ? "Relentless: use a free d8" : `Spend a Superiority Die (d${die}, ${left(feat)} left)`}?</p><ul>${opts.map(([, m]) => `<li><strong>${m.label}</strong>: ${m.note}</li>`).join("")}</ul>`, buttons);
       if (!pick || pick === "none") return;
-      await spend(feat);
-      wf.cgaManeuver = { key: pick, target: t.document.uuid };
+      if (relentless) await markUsed("relentless"); else await spend(feat);
+      wf.cgaManeuver = { key: pick, target: t.document.uuid, die };
       if (MANEUVERS[pick].sweep) return; // the die goes to the second creature
       return { damageRoll: `1d${die}`, damageType: wf.defaultDamageType, flavor: MANEUVERS[pick].label };
     }
@@ -285,7 +296,7 @@ switch (id) {
           const o = near.find((x) => x.id === pick2);
           if (!o) return;
           if (total < Number(o.actor.system.attributes.ac?.value ?? 10)) return say(`your attack roll (${total}) misses ${esc(o.name)}.`);
-          const r = await new Roll(`1d${supDie()}`).evaluate();
+          const r = await new Roll(`1d${wf.cgaManeuver.die ?? supDie()}`).evaluate();
           await r.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Sweeping Attack: ${esc(o.name)}` });
           await MidiQOL.applyTokenDamage([{ value: r.total, type: wf.defaultDamageType ?? "bludgeoning" }], r.total, new Set([o.object]), feat, new Set(), {});
         }
@@ -447,6 +458,7 @@ switch (id) {
     const dice = lvl("ranger") >= 11 ? "2d8" : "2d6";
     if (!(await confirm("Dreadful Strike", `<p>Deal an extra ${dice} Psychic damage (${left(feat)} uses left)?</p>`))) return;
     await spend(feat); await markUsed();
+    if (has("stalkers-flurry")) wf.cgaFlurryOf = hitTokens()[0]?.document?.uuid;
     return { damageRoll: dice, damageType: "psychic", flavor: "Dreadful Strike" };
   }
   case "hunters-prey": {
@@ -491,22 +503,32 @@ switch (id) {
             [...usable.map(([k, label]) => ({ action: k, label })), { action: "none", label: `No - full ${n}d6`, default: true }]);
           const o = usable.find(([k]) => k === pick);
           if (o) { n -= o[2]; wf.cgaCunning = { key: o[0], target: t.document.uuid }; }
+          // Improved Cunning Strike (Rogue 11): a second, different effect
+          const more = o && lvl("rogue") >= 11 ? usable.filter(([k, , cost]) => k !== o[0] && cost <= n) : [];
+          if (more.length) {
+            const pick2 = await choose("Improved Cunning Strike", `<p>${n}d6 left. Add a second Cunning Strike effect?</p>`,
+              [...more.map(([k, label]) => ({ action: k, label })), { action: "none", label: "No", default: true }]);
+            const o2 = more.find(([k]) => k === pick2);
+            if (o2) { n -= o2[2]; wf.cgaCunning2 = { key: o2[0], target: t.document.uuid }; }
+          }
         }
       }
       // Assassinate (Assassin 3): extra damage equal to Rogue level in the first round
       const extra = has("assassinate") && combat?.round === 1 ? ` + ${lvl("rogue")}` : "";
+      wf.cgaSneak = t.document.uuid; // Death Strike / Rend Mind / Envenom Weapons follow up on this hit
       if (n <= 0 && !extra) return;
       return { damageRoll: `${Math.max(0, n)}d6${extra}`, damageType: wf.defaultDamageType, flavor: "Sneak Attack" };
     }
     if (pass === "postActiveEffects" && wf?.cgaCunning && firstCall("cunning")) {
-      const { key, target } = wf.cgaCunning;
-      const t = canvas.tokens.placeables.find((p) => p.document.uuid === target);
       const cunning = item("cunning-strike");
-      if (!t?.actor || !cunning) return;
-      later(async () => {
-        if (key === "withdraw") return say("Withdraw: move up to half your Speed without provoking Opportunity Attacks.");
-        if (await runSave(`cunning-${key}`, t, cunning)) say(`${esc(t.name)} fails the Cunning Strike save.`);
-      });
+      for (const { key, target } of [wf.cgaCunning, wf.cgaCunning2].filter(Boolean)) {
+        const t = canvas.tokens.placeables.find((p) => p.document.uuid === target);
+        if (!t?.actor || !cunning) continue;
+        later(async () => {
+          if (key === "withdraw") return say("Withdraw: move up to half your Speed without provoking Opportunity Attacks.");
+          if (await runSave(`cunning-${key}`, t, cunning)) say(`${esc(t.name)} fails the Cunning Strike save.`);
+        }, key === wf.cgaCunning.key ? 400 : 1800);
+      }
     }
     return;
   }

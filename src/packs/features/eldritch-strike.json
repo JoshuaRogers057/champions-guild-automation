@@ -1,7 +1,7 @@
 {
   "name": "Eldritch Strike",
   "type": "feat",
-  "img": "icons/magic/lightning/bolt-strike-sword-blue.webp",
+  "img": "icons/magic/lightning/bolt-strike-blue-white.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -40,7 +40,7 @@
     {
       "_id": "cgaCffxeldrit573",
       "name": "Eldritch Strike (automation)",
-      "img": "icons/magic/lightning/bolt-strike-sword-blue.webp",
+      "img": "icons/magic/lightning/bolt-strike-blue-white.webp",
       "type": "base",
       "transfer": true,
       "disabled": false,
@@ -100,7 +100,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Weapon hit: target gets Disadvantage on its next save against your spell."
       }
     }

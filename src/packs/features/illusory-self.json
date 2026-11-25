@@ -1,7 +1,7 @@
 {
   "name": "Illusory Self",
   "type": "feat",
-  "img": "icons/magic/control/silhouette-aura-blue.webp",
+  "img": "icons/magic/control/silhouette-aura-energy.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -52,7 +52,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Reaction prompt when hit: the attack misses (module rule)."
       }
     }

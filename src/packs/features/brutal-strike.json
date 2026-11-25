@@ -118,7 +118,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "notes": "Champions Guild Automation: Prompt before a reckless STR attack; extra 1d10/2d10 and the chosen Brutal Strike effect."
       }
     }

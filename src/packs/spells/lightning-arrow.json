@@ -160,12 +160,12 @@
   },
   "_id": "cgaSplLightArrow",
   "type": "spell",
-  "img": "icons/magic/lightning/bolt-arrow-blue.webp",
+  "img": "icons/magic/lightning/bolt-strike-blue-white.webp",
   "effects": [
     {
       "_id": "cgaLightArrowFx0",
       "name": "Lightning Arrow (offered after ranged attacks)",
-      "img": "icons/magic/lightning/bolt-arrow-blue.webp",
+      "img": "icons/magic/lightning/bolt-strike-blue-white.webp",
       "type": "base",
       "transfer": true,
       "disabled": false,
@@ -245,7 +245,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.2",
+        "version": "1.0.3",
         "notes": "Champions Guild Automation: after a ranged weapon attack (hit or miss) you're asked whether to cast it (Bonus Action, pick the slot): 4d8 lightning instead of the weapon's damage (half on a miss), and each other creature within 10 ft makes a DEX save, 2d8 lightning (half on a success); both +1d8 per slot level above 3rd."
       }
     },

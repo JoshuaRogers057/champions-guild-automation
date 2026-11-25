@@ -126,17 +126,25 @@ switch (id) {
       const opts = [["forceful", "Forceful Blow: push 15 ft (you can move half your Speed toward it)"], ["hamstring", "Hamstring Blow: its Speed drops 15 ft"]];
       if (lvl("barbarian") >= 13) opts.push(["staggering", "Staggering Blow: Disadvantage on its next save, no Opportunity Attacks"], ["sundering", "Sundering Blow: +5 to the next attack against it"]);
       const pick = await choose("Brutal Strike", `<p>You hit <strong>${esc(t.name)}</strong>. Pick the effect:</p>`, opts.map(([k, l], i) => ({ action: k, label: l, default: i === 0 })));
-      wf.cgaBrutalPick = { key: pick ?? "forceful", target: t.document.uuid };
+      wf.cgaBrutalPick = { key: pick ?? "forceful", keys: [pick ?? "forceful"], target: t.document.uuid };
+      // Improved Brutal Strike (17): two different effects
+      if (lvl("barbarian") >= 17) {
+        const rest = opts.filter(([k]) => k !== wf.cgaBrutalPick.key);
+        const pick2 = await choose("Brutal Strike", "<p>Pick a second, different effect:</p>", rest.map(([k, l], i) => ({ action: k, label: l, default: i === 0 })));
+        if (pick2) wf.cgaBrutalPick.keys.push(pick2);
+      }
       return { damageRoll: lvl("barbarian") >= 17 ? "2d10" : "1d10", damageType: wf.defaultDamageType, flavor: "Brutal Strike" };
     }
     if (pass === "postActiveEffects" && wf?.cgaBrutalPick && firstCall("brutal-effect")) {
-      const { key, target } = wf.cgaBrutalPick;
+      const { keys, target } = wf.cgaBrutalPick;
       const t = canvas.tokens.placeables.find((p) => p.document.uuid === target);
       if (!t?.actor) return;
+      for (const key of keys) {
       if (key === "forceful") await pushAway(t, 15);
       else if (key === "hamstring") await effectOn(t, "Hamstrung", [["system.attributes.movement.walk", "-15", "add"]], { special: ["turnStartSource"], seconds: 12 });
       else if (key === "staggering") await effectOn(t, "Staggered", [["flags.midi-qol.disadvantage.save.all", "1"], ["flags.midi-qol.actions.reactionsUsed", "1"], ["flags.midi-qol.actions.reaction", "true"]], { special: ["turnStartSource"], seconds: 12 });
       else if (key === "sundering") await effectOn(t, "Sundered", [["flags.midi-qol.grants.attack.bonus.all", "5", "add"]], { special: ["isAttacked", "turnStartSource"], seconds: 12 });
+      }
     }
     return;
   }
@@ -508,8 +516,12 @@ switch (id) {
     }
     if (forced) { await tides.update({ "system.uses.spent": 0 }); await tides.unsetFlag("world", "cgaTidesUsed"); say("Tides of Chaos recharges, and wild magic surges."); }
     if (surge) {
-      const d = await new Roll("1d100").evaluate();
-      await d.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: "Wild Magic Surge! Look this roll up on the Wild Magic Surge table." });
+      // Controlled Chaos (Wild Magic 14): roll twice and pick either result.
+      const times = has("controlled-chaos") ? 2 : 1;
+      for (let i = 0; i < times; i++) {
+        const d = await new Roll("1d100").evaluate();
+        await d.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: times > 1 ? `Wild Magic Surge (Controlled Chaos roll ${i + 1} of 2 - pick one)` : "Wild Magic Surge! Look this roll up on the Wild Magic Surge table." });
+      }
     }
     return;
   }

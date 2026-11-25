@@ -1,7 +1,7 @@
 {
   "name": "Assassinate",
   "type": "feat",
-  "img": "icons/weapons/daggers/dagger-curved-poison-green.webp",
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -40,7 +40,7 @@
     {
       "_id": "cgaCffxassass081",
       "name": "Assassinate (automation)",
-      "img": "icons/weapons/daggers/dagger-curved-poison-green.webp",
+      "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
       "type": "base",
       "transfer": true,
       "disabled": false,
@@ -110,7 +110,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Advantage on Initiative; first-round Advantage vs creatures that haven't acted; +Rogue level on first-round Sneak Attack."
       }
     }

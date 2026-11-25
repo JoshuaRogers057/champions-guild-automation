@@ -146,7 +146,7 @@
   },
   "_id": "cgaSplConjureVol",
   "type": "spell",
-  "img": "icons/weapons/ammunition/arrows-war-blue.webp",
+  "img": "icons/containers/ammunition/arrows-quiver-blue.webp",
   "effects": [],
   "flags": {
     "dnd5e": {
@@ -157,7 +157,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: 40-ft-radius cylinder within 150 ft, DEX save, 8d8 Force, half on a success."
       }
     }

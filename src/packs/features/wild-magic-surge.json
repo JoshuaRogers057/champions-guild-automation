@@ -100,7 +100,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "notes": "Champions Guild Automation: d20 surge check after Sorcerer slot spells; d100 roll on a surge."
       }
     }

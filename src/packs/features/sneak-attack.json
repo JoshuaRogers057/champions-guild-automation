@@ -108,7 +108,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "notes": "Champions Guild Automation: Automatic Sneak Attack (2024 rules); Cunning Strike choice; Assassinate first-round damage.",
         "aliases": [
           "sneak-attack-2024"

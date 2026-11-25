@@ -1,0 +1,186 @@
+{
+  "_id": "cgaCfdiscipli762",
+  "name": "Disciplined Survivor",
+  "type": "feat",
+  "img": "icons/skills/wounds/injury-pain-body-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 14,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "enchant": {},
+    "identifier": "disciplined-survivor"
+  },
+  "effects": [
+    {
+      "_id": "cgaCffxdiscip763",
+      "name": "Disciplined Survivor",
+      "img": "icons/skills/wounds/injury-pain-body-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.proficient",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaFtChg80160000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.abilities.dex.proficient",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaFtChg80170000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.abilities.con.proficient",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaFtChg80180000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.abilities.int.proficient",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaFtChg80190000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.abilities.wis.proficient",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaFtChg80200000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.abilities.cha.proficient",
+            "value": "1",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaFtChg80210000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaDiscipline.label",
+            "value": "Disciplined Survivor: spend 1 Focus to reroll",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg80220000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaDiscipline.save.fail.all",
+            "value": "reroll",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg80230000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaDiscipline.count",
+            "value": "ItemUses.identifier.monks-focus",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg80240000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: All save proficiencies; optional reroll spending Focus."
+      }
+    }
+  }
+}

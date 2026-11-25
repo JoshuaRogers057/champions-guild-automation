@@ -317,12 +317,12 @@
   },
   "_id": "cgaSplCloudDagge",
   "type": "spell",
-  "img": "icons/weapons/daggers/dagger-straight-thin-blue.webp",
+  "img": "icons/weapons/daggers/dagger-straight-thin-black.webp",
   "effects": [],
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.1",
+        "version": "1.0.2",
         "notes": "Champions Guild Automation: 4d4 slashing to creatures in the cube, and to any creature that enters it or ends its turn there (once per turn). Drag the area to move it."
       }
     }

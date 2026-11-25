@@ -1,7 +1,7 @@
 {
   "name": "Invoke Duplicity",
   "type": "feat",
-  "img": "icons/magic/control/silhouette-aura-blue.webp",
+  "img": "icons/magic/control/silhouette-aura-energy.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -201,7 +201,7 @@
     {
       "_id": "cgaCffxinvoke538",
       "name": "Invoke Duplicity",
-      "img": "icons/magic/control/silhouette-aura-blue.webp",
+      "img": "icons/magic/control/silhouette-aura-energy.webp",
       "type": "base",
       "transfer": false,
       "disabled": false,
@@ -249,7 +249,7 @@
     {
       "_id": "cgaCffxinvoke539",
       "name": "Invoke Duplicity (automation)",
-      "img": "icons/magic/control/silhouette-aura-blue.webp",
+      "img": "icons/magic/control/silhouette-aura-energy.webp",
       "type": "base",
       "transfer": true,
       "disabled": false,
@@ -311,7 +311,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Creates a duplicate token (removed with the effect); Advantage when you and it flank a target."
       }
     }

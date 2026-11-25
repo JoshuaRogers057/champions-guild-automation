@@ -1,7 +1,7 @@
 {
   "name": "Rage of the Wilds",
   "type": "feat",
-  "img": "icons/creatures/mammals/bear-standing-snarl-brown.webp",
+  "img": "icons/commodities/claws/claw-bear-brown.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -43,7 +43,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Choice when Rage starts: Bear resistances on the Rage effect, Eagle reminder, Wolf aura (module rule)."
       }
     }

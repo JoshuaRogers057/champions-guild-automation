@@ -160,12 +160,12 @@
   },
   "_id": "cgaSplHailThorns",
   "type": "spell",
-  "img": "icons/magic/nature/thorns-hand-green.webp",
+  "img": "icons/magic/nature/thorns-hand-glow-green.webp",
   "effects": [
     {
       "_id": "cgaHailThornsFx0",
       "name": "Hail of Thorns (offered after ranged attacks)",
-      "img": "icons/magic/nature/thorns-hand-green.webp",
+      "img": "icons/magic/nature/thorns-hand-glow-green.webp",
       "type": "base",
       "transfer": true,
       "disabled": false,
@@ -227,7 +227,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.2",
+        "version": "1.0.3",
         "notes": "Champions Guild Automation: after you hit with a ranged weapon attack you're asked whether to cast it (Bonus Action, pick the slot): the target and each creature within 5 ft make a DEX save, 1d10 piercing (half on a success), +1d10 per slot level above 1st."
       }
     },

@@ -1,0 +1,49 @@
+{
+  "_id": "cgaCfimproved739",
+  "name": "Improved Elemental Fury",
+  "type": "feat",
+  "img": "icons/magic/nature/leaf-arrowheads-glow-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 15,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Druid",
+    "activities": {},
+    "enchant": {},
+    "identifier": "improved-elemental-fury"
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Primal Strike 2d8 handled by Elemental Fury; range extension manual."
+      }
+    }
+  }
+}

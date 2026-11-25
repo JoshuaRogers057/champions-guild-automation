@@ -335,7 +335,23 @@ async function ensureDieEffects(actor) {
         ["flags.midi-qol.optional.cgaAmbush.label", `Ambush: spend a Superiority Die (+${d})`], ["flags.midi-qol.optional.cgaAmbush.skill.ste", d],
         ["flags.midi-qol.optional.cgaAmbush.count", "ItemUses.identifier.combat-superiority"]] });
     }
-    for (const key of ["knack", "ambush"]) {
+    // Peerless Skill (Lore 14): the Bardic Inspiration die on a failed check
+    if (hasFeat(actor, "peerless-skill") && featItem(actor, "bardic-inspiration")) {
+      const l = classLevel(actor, "bard"); const d = `1d${l >= 15 ? 12 : l >= 10 ? 10 : l >= 5 ? 8 : 6}`;
+      want.push({ key: "peerless", name: `Peerless Skill (${d})`, img: "icons/skills/trades/academics-study-reading-book.webp", changes: [
+        ["flags.midi-qol.optional.cgaPeerless.label", `Peerless Skill: spend Bardic Inspiration (+${d})`], ["flags.midi-qol.optional.cgaPeerless.check.fail.all", d], ["flags.midi-qol.optional.cgaPeerless.skill.fail.all", d],
+        ["flags.midi-qol.optional.cgaPeerless.count", "ItemUses.identifier.bardic-inspiration"]] });
+    }
+    // Commanding Presence / Tactical Assessment maneuvers: the Superiority Die on those skill checks
+    for (const [key, ident, label, skills] of [["presence", "commanding-presence", "Commanding Presence", ["itm", "prf", "per"]], ["assessment", "tactical-assessment", "Tactical Assessment", ["his", "inv", "ins"]]]) {
+      if (!(hasFeat(actor, `maneuver-${ident}`) || hasFeat(actor, ident)) || !featItem(actor, "combat-superiority")) continue;
+      const d = `1d${superiorityDie(actor)}`;
+      const name = label.replace(/s/g, "");
+      want.push({ key, name: `${label} (${d})`, img: "icons/skills/melee/maneuver-sword-katana-yellow.webp", changes: [
+        [`flags.midi-qol.optional.cga${name}.label`, `${label}: spend a Superiority Die (+${d})`], ...skills.map((sk) => [`flags.midi-qol.optional.cga${name}.skill.${sk}`, d]),
+        [`flags.midi-qol.optional.cga${name}.count`, "ItemUses.identifier.combat-superiority"]] });
+    }
+    for (const key of ["knack", "ambush", "peerless", "presence", "assessment"]) {
       const have = actor.effects.filter((e) => e.flags?.[MODULE_ID]?.dieEffect === key);
       const w = want.find((x) => x.key === key);
       const keep = w ? have.find((e) => e.name === w.name) : null;

@@ -1,7 +1,7 @@
 {
   "name": "Telekinetic Adept",
   "type": "feat",
-  "img": "icons/magic/control/debuff-energy-hold-levitate-blue.webp",
+  "img": "icons/magic/control/debuff-energy-hold-levitate-blue-yellow.webp",
   "system": {
     "description": {
       "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
@@ -372,7 +372,7 @@
     {
       "_id": "cgaCffxteleki577",
       "name": "Telekinetic Adept (automation)",
-      "img": "icons/magic/control/debuff-energy-hold-levitate-blue.webp",
+      "img": "icons/magic/control/debuff-energy-hold-levitate-blue-yellow.webp",
       "type": "base",
       "transfer": true,
       "disabled": false,
@@ -434,7 +434,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Psi-Powered Leap fly effect; Telekinetic Thrust save after Psionic Strike."
       }
     }

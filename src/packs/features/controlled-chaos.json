@@ -1,0 +1,51 @@
+{
+  "name": "Controlled Chaos",
+  "type": "feat",
+  "img": "icons/magic/control/energy-stream-link-large-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "controlled-chaos",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Wild Magic Sorcery 14",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfcontroll841",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Wild Magic Surge rolls the d100 twice."
+      }
+    }
+  }
+}

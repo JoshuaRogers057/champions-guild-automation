@@ -49,7 +49,21 @@ const AURAS = [
   { feature: "rage-of-the-wilds", key: "wilds-wolf", targets: "enemies", range: () => 5, value: () => 1,
     active: (a) => rageEffect(a)?.getFlag("world", "cgaWilds") === "wolf",
     effect: (a, v, src) => ({ name: "Rage of the Wilds: Wolf's Prey", img: "icons/creatures/mammals/wolf-howl-moon-gray.webp",
-      changes: [chg("flags.midi-qol.grants.advantage.attack.all", `workflow?.token?.document?.disposition === ${src.disposition} && workflow?.actor?.uuid !== "${a.uuid}"`)] }) }
+      changes: [chg("flags.midi-qol.grants.advantage.attack.all", `workflow?.token?.document?.disposition === ${src.disposition} && workflow?.actor?.uuid !== "${a.uuid}"`)] }) },
+  // Power of the Wilds (Lion): enemies within 5 ft of the raging barbarian have Disadvantage attacking anyone else.
+  { feature: "power-of-the-wilds", key: "wilds-lion", targets: "enemies", range: () => 5, value: () => 1,
+    active: (a) => rageEffect(a)?.getFlag("world", "cgaPower") === "lion",
+    effect: (a) => ({ name: "Power of the Wilds: Lion's Roar", img: "icons/creatures/abilities/lion-roar-yellow.webp",
+      changes: [chg("flags.midi-qol.disadvantage.attack.all", `targetActorUuid !== "${a.uuid}"`)] }) },
+  // Corona of Light (Light 17) and Elder Champion (Ancients 20): enemies in range have Disadvantage on saves against you.
+  { feature: "corona-of-light", key: "corona", targets: "enemies", range: () => 60, value: () => 1,
+    active: (a) => a.effects.some((e) => e.flags?.world?.cgaAuraSource === "corona" && !e.disabled),
+    effect: (a) => ({ name: "Corona of Light", img: "icons/magic/light/explosion-star-glow-yellow.webp",
+      changes: [chg("flags.midi-qol.disadvantage.save.all", `workflow?.actor?.uuid === "${a.uuid}"`)] }) },
+  { feature: "elder-champion", key: "elder", targets: "enemies", range: () => 10, value: () => 1,
+    active: (a) => a.effects.some((e) => e.flags?.world?.cgaAuraSource === "elder" && !e.disabled),
+    effect: (a) => ({ name: "Elder Champion", img: "icons/magic/nature/tree-spirit-black.webp",
+      changes: [chg("flags.midi-qol.disadvantage.save.all", `workflow?.actor?.uuid === "${a.uuid}"`)] }) }
 ];
 function chg(key, value, type = "override") { return { key, value, type, priority: 20, phase: "initial" }; }
 const auraTimers = new Map();
@@ -96,7 +110,7 @@ async function sweepAuras(scene) {
 for (const h of ["moveToken", "createToken", "deleteToken"]) Hooks.on(h, (doc) => scheduleAuras(doc.parent));
 Hooks.on("updateToken", (doc, changes) => { if (["disposition", "hidden", "x", "y", "elevation"].some((k) => k in changes)) scheduleAuras(doc.parent); });
 for (const h of ["createActiveEffect", "deleteActiveEffect", "updateActiveEffect"]) Hooks.on(h, (e) => {
-  if (e.flags?.[MODULE_ID]?.aura || !(e.parent instanceof Actor) || !(e.statuses?.size || e.flags?.world?.cgaRage)) return;
+  if (e.flags?.[MODULE_ID]?.aura || !(e.parent instanceof Actor) || !(e.statuses?.size || e.flags?.world?.cgaRage || e.flags?.world?.cgaAuraSource)) return;
   for (const t of e.parent.getActiveTokens?.() ?? []) scheduleAuras(t.document.parent);
 });
 Hooks.on("updateActor", (actor, changes) => {
