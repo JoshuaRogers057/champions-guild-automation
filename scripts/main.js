@@ -58,6 +58,41 @@ async function rankFirstOnce(mod) {
   console.log(`${mod.title} | added to the top of CAT's Automation Sources`);
 }
 
+// Summons end with the concentration that sustains them. dnd5e leaves the summoned tokens on the map when
+// concentration ends (Spiritual Weapon, Bigby's Hand, Flaming Sphere, Summon ...), so the active GM removes every
+// token whose actor was summoned by that spell item. When the same spell is cast again, dnd5e places the new summon
+// first and only then ends the old concentration, so summons from the last few seconds are left alone.
+export function summonedBy(effect) {
+  const actor = effect.parent;
+  if (!(actor instanceof Actor)) return [];
+  const itemId = effect.flags?.dnd5e?.item?.id;
+  const origins = new Set([effect.origin, itemId ? `${actor.uuid}.Item.${itemId}` : null].filter(Boolean));
+  if (!origins.size) return [];
+  const cutoff = Date.now() - 4000;
+  const found = [];
+  for (const scene of game.scenes) {
+    for (const t of scene.tokens) {
+      if (!origins.has(t.actor?.flags?.dnd5e?.summon?.origin)) continue;
+      if ((summonTimes.get(t.uuid) ?? 0) >= cutoff) continue;
+      found.push(t);
+    }
+  }
+  return found;
+}
+// Embedded tokens carry no creation time, so remember when each summoned token appeared.
+const summonTimes = new Map();
+Hooks.on("createToken", (token) => { if (token.actor?.flags?.dnd5e?.summon?.origin) summonTimes.set(token.uuid, Date.now()); });
+Hooks.on("deleteToken", (token) => summonTimes.delete(token.uuid));
+Hooks.on("deleteActiveEffect", async (effect) => {
+  if (!game.users.activeGM?.isSelf || !effect.statuses?.has("concentrating")) return;
+  const tokens = summonedBy(effect);
+  for (const scene of new Set(tokens.map((t) => t.parent))) {
+    const ids = tokens.filter((t) => t.parent === scene).map((t) => t.id);
+    try { await scene.deleteEmbeddedDocuments("Token", ids); }
+    catch (err) { console.warn(`${MODULE_ID} | couldn't remove summons for ${effect.name}`, err); }
+  }
+});
+
 // After an update, tell the GM once that there are new fixes to apply.
 Hooks.once("ready", async () => {
   if (!game.user.isGM) return;

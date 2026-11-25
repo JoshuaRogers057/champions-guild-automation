@@ -3,6 +3,31 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.5.0
+
+The rest of the priority-1 spells: 13 that needed real automation, each tested in a live v14 world. DMs: update,
+then run **Mass Apply / Update**.
+
+- **Mind Sliver** (new, PHB): INT save psychic; a failed save subtracts 1d4 from its next saving throw.
+- **Thorn Whip** (new, PHB): 30-ft melee spell attack; a hit pulls a Large or smaller creature 10 ft toward you.
+- **Armor of Agathys** (new, PHB): temp HP; melee attackers take cold damage while it lasts (5 per slot level);
+  ends when the temp HP is gone.
+- **Scorching Ray**: one attack per ray, more rays at higher levels, split between targets.
+- **Mirror Image**: duplicates absorb hits (d6 roll of 3+ each); Blindsight, Truesight or a Blinded attacker
+  isn't fooled.
+- **Faerie Fire**: attack rolls against outlined creatures have advantage.
+- **Blur**: attack rolls against you have disadvantage unless the attacker has Blindsight or Truesight.
+- **Hold Person / Hold Monster**: Paralyzed with a repeat save at the end of each turn, against the caster's DC.
+- **Hypnotic Pattern**: ends for a creature when it takes damage.
+- **Moonbeam**: the beam becomes an area that makes creatures save when they enter it or end their turn in it
+  (once per turn). Drag the area to move the beam.
+- **Spirit Guardians**: 15-ft area that follows the caster. Enemies save when they enter or end their turn in it,
+  or when it moves onto them, and have half speed inside.
+- **Spiritual Weapon**: the official summon already worked (spell attack, scaling damage).
+- **New module rule (all summons):** when a caster's concentration ends, creatures summoned by that spell are
+  removed from the map (Spiritual Weapon, Bigby's Hand, Flaming Sphere, the Summon spells...). Re-casting the
+  spell keeps the new summon and removes the old one.
+
 ## 0.4.0
 
 33 priority-1 spells, each tested with midi-qol + CAT (damage, half on a successful save, cantrip and upcast

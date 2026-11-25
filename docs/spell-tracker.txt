@@ -19,7 +19,7 @@
 0|Mage Hand|SRD|skip|3|
 0|Mending|SRD|skip|3|
 0|Message|SRD|skip|3|
-0|Mind Sliver|PHB|build|1|INT save psychic damage; failed save subtracts 1d4 from its next saving throw
+0|Mind Sliver|PHB|done|1|INT save psychic damage; failed save subtracts 1d4 from its next saving throw
 0|Minor Illusion|SRD|skip|3|
 0|Poison Spray|SRD|done|1|2024 version is a ranged spell attack
 0|Prestidigitation|SRD|skip|3|
@@ -33,7 +33,7 @@
 0|Spare the Dying|SRD|midi|2|
 0|Starry Wisp|SRD|verify|2|Target can't be invisible until end of your next turn
 0|Thaumaturgy|SRD|skip|3|
-0|Thorn Whip|PHB|build|1|Melee spell attack; pull Large or smaller 10 ft toward you (no token spin)
+0|Thorn Whip|PHB|done|1|Melee spell attack; pull Large or smaller 10 ft toward you (no token spin)
 0|Thunderclap|PHB|done|1|CON save, every creature within 5 ft
 0|Toll the Dead|PHB|midi|1|d12 vs wounded targets
 0|True Strike|SRD|done|1|Weapon attack with spellcasting ability; extra radiant at 5th+
@@ -41,7 +41,7 @@
 0|Word of Radiance|PHB|done|1|CON save, creatures of your choice within 5 ft
 1|Alarm|SRD|skip|3|
 1|Animal Friendship|SRD|skip|3|
-1|Armor of Agathys|PHB|build|1|Temp HP; while it lasts, melee attackers take cold damage
+1|Armor of Agathys|PHB|done|1|Temp HP; while it lasts, melee attackers take cold damage
 1|Arms of Hadar|PHB|build|2|STR save necrotic all around; failed save = no reactions until its next turn
 1|Bane|SRD|done|1|-1d4 to attacks and saves for creatures that fail (concentration)
 1|Bless|SRD|done|1|+1d4 to attacks and saves; extra target per slot level (concentration)
@@ -64,7 +64,7 @@
 1|Ensnaring Strike|SRD|midi|2|
 1|Entangle|SRD|build|2|Restrained on failed STR save; action STR check to escape; difficult terrain
 1|Expeditious Retreat|SRD|skip|3|
-1|Faerie Fire|SRD|build|1|Outlined creatures: attacks against them have advantage, no invisibility
+1|Faerie Fire|SRD|done|1|Outlined creatures: attacks against them have advantage, no invisibility
 1|False Life|SRD|done|1|Temp HP
 1|Feather Fall|SRD|skip|3|
 1|Find Familiar|SRD|build|2|Summon; per-caster familiar pattern exists (necromancy familiar)
@@ -111,7 +111,7 @@
 2|Augury|SRD|skip|3|
 2|Barkskin|SRD|done|1|AC can't be lower than 17
 2|Blindness/Deafness|SRD|build|2|Repeat CON save at the end of each of its turns
-2|Blur|SRD|build|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
+2|Blur|SRD|done|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
 2|Calm Emotions|SRD|verify|3|
 2|Cloud of Daggers|PHB|build|2|Zone: 4d4 slashing on entering or starting turn there
 2|Continual Flame|SRD|skip|3|
@@ -131,7 +131,7 @@
 2|Gentle Repose|SRD|skip|3|
 2|Gust of Wind|SRD|build|3|Push 15 ft on failed STR save; line
 2|Heat Metal|SRD|build|2|Bonus action to repeat damage; drop the object or disadvantage
-2|Hold Person|SRD|build|1|Paralyzed; repeat WIS save end of each turn; extra target per slot
+2|Hold Person|SRD|done|1|Paralyzed; repeat WIS save end of each turn; extra target per slot
 2|Invisibility|SRD|midi|1|
 2|Knock|SRD|skip|3|
 2|Lesser Restoration|SRD|midi|2|
@@ -142,9 +142,9 @@
 2|Magic Weapon|SRD|verify|2|+1 weapon (+2/+3 at higher slots)
 2|Melf's Acid Arrow|SRD|verify|2|aka Acid Arrow. Half on miss; extra acid at end of target's next turn
 2|Mind Spike|SRD|verify|3|
-2|Mirror Image|SRD|build|1|Duplicates absorb hits; mirror-image macro exists (needs the PHB-module flag replaced)
+2|Mirror Image|SRD|done|1|Duplicates absorb hits; mirror-image macro exists (needs the PHB-module flag replaced)
 2|Misty Step|SRD|done|1|Teleport
-2|Moonbeam|SRD|build|1|Zone: CON save radiant on entering/starting turn; move the beam as a bonus action
+2|Moonbeam|SRD|done|1|Zone: CON save radiant on entering/starting turn; move the beam as a bonus action
 2|Nystul's Magic Aura|SRD|skip|3|aka Arcanist's Magic Aura
 2|Pass without Trace|SRD|midi|2|
 2|Phantasmal Force|SRD|midi|3|
@@ -152,14 +152,14 @@
 2|Protection from Poison|SRD|verify|2|
 2|Ray of Enfeeblement|SRD|build|2|Weaker damage + STR disadvantage; repeat save end of each turn
 2|Rope Trick|SRD|skip|3|
-2|Scorching Ray|SRD|build|1|One attack per ray; beams macro already handles it, just package it
+2|Scorching Ray|SRD|done|1|One attack per ray; beams macro already handles it, just package it
 2|See Invisibility|SRD|verify|3|
 2|Shatter|SRD|done|1|
 2|Shining Smite|SRD|build|2|Check it works from the Paladin's Smite prompt (glowing, no invisibility)
 2|Silence|SRD|skip|3|
 2|Spider Climb|SRD|verify|3|
 2|Spike Growth|SRD|build|2|2d4 piercing per 5 ft moved inside the area
-2|Spiritual Weapon|SRD|build|1|Summoned weapon; bonus-action melee spell attack; move it
+2|Spiritual Weapon|SRD|done|1|Summoned weapon; bonus-action melee spell attack; move it
 2|Suggestion|SRD|verify|3|
 2|Summon Beast|PHB|build|2|Summon (Land/Sea/Air stat block)
 2|Warding Bond|SRD|build|2|+1 AC/saves, resistance; caster takes the same damage
@@ -189,7 +189,7 @@
 3|Glyph of Warding|SRD|verify|3|
 3|Haste|SRD|done|1|+2 AC, double speed, extra action; check the lethargy when it ends
 3|Hunger of Hadar|PHB|build|2|Zone: cold at turn start, acid at turn end, blinded inside
-3|Hypnotic Pattern|SRD|build|1|Charmed + Incapacitated; must end when the creature takes damage
+3|Hypnotic Pattern|SRD|done|1|Charmed + Incapacitated; must end when the creature takes damage
 3|Leomund's Tiny Hut|SRD|skip|3|aka Tiny Hut
 3|Lightning Arrow|PHB|build|2|Next ranged weapon attack becomes lightning + burst
 3|Lightning Bolt|SRD|done|1|
@@ -208,7 +208,7 @@
 3|Slow|SRD|build|2|-2 AC/DEX saves, half speed, one action; repeat WIS save end of each turn
 3|Speak with Dead|SRD|skip|3|
 3|Speak with Plants|SRD|skip|3|
-3|Spirit Guardians|SRD|build|1|Aura: WIS save on entering/starting turn; half speed for enemies
+3|Spirit Guardians|SRD|done|1|Aura: WIS save on entering/starting turn; half speed for enemies
 3|Stinking Cloud|SRD|build|2|Zone: CON save at turn start or lose the action (Poisoned)
 3|Summon Fey|PHB|build|2|Summon
 3|Summon Undead|PHB|build|2|Summon
@@ -280,7 +280,7 @@
 5|Geas|SRD|skip|3|
 5|Greater Restoration|SRD|skip|3|
 5|Hallow|SRD|skip|3|
-5|Hold Monster|SRD|build|1|Paralyzed; repeat WIS save end of each turn
+5|Hold Monster|SRD|done|1|Paralyzed; repeat WIS save end of each turn
 5|Insect Plague|SRD|build|2|Zone: CON save piercing on entering/starting turn
 5|Jallarzi's Storm of Radiance|PHB|build|3|Zone: radiant + thunder, deafened, blinded
 5|Legend Lore|SRD|skip|3|
