@@ -1,7 +1,7 @@
 // Banishment and Banishing Smite (2024): the banished creature vanishes from the map until the spell ends.
 //   DAE macro.itemMacro on the "Banished" effect: "on" hides the token, "off" brings it back.
 //   Banishing Smite item onUse [postActiveEffects]: after the smite's damage, a creature hit with 50 HP or fewer left
-//   is banished (the item's "Banished" effect is applied to it).
+//   makes a Charisma save and, on a failure, is banished (the item's "Banished" effect is applied to it).
 const pass = args[0]?.macroPass;
 if (pass === "postActiveEffects") {
   const wf = args[0]?.workflow ?? workflow;
@@ -13,6 +13,12 @@ if (pass === "postActiveEffects") {
     const hp = target?.system?.attributes?.hp?.value ?? 999;
     if (!target || hp > 50 || hp <= 0) continue;
     if (target.effects.some((e) => e.name === banished.name && e.origin === spell.uuid)) continue;
+    // The target gets a Charisma save against your spell save DC to resist.
+    const dc = Number(wf.actor.system.attributes?.spell?.dc ?? 10);
+    let rolls = null;
+    try { rolls = await target.rollSavingThrow({ ability: "cha", target: dc }, { configure: false }, { data: { flavor: `${spell.name}: resist banishment (DC ${dc})` } }); }
+    catch (err) { console.warn("Banishing Smite | save failed to roll", err); }
+    if (((Array.isArray(rolls) ? rolls[0] : rolls)?.total ?? 0) >= dc) continue;
     const data = banished.toObject();
     delete data._id;
     Object.assign(data, { origin: spell.uuid, transfer: false, disabled: false });

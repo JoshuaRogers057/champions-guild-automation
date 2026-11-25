@@ -47,8 +47,7 @@
     "level": 3,
     "school": "trs",
     "properties": [
-      "vocal",
-      "concentration"
+      "vocal"
     ],
     "materials": {
       "value": "",
@@ -289,7 +288,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.1",
+        "version": "1.0.2",
         "notes": "Champions Guild Automation: extra 3d8 radiant on the hit and Blinded; CON save at the end of each of its turns ends it."
       }
     }

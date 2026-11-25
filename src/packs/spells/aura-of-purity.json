@@ -1,0 +1,244 @@
+{
+  "name": "Aura of Purity",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A 30-ft aura moves with you while you concentrate (10 minutes). You and your allies inside have Resistance to Poison damage and Advantage on saving throws to avoid or end effects that include the Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned or Stunned condition (roll those saves with Advantage).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "ally"
+      },
+      "template": {
+        "units": "ft",
+        "type": "radius",
+        "size": "30",
+        "contiguous": false,
+        "count": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "override": true,
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "30",
+            "stationary": false
+          },
+          "affects": {
+            "type": "ally",
+            "count": "",
+            "choice": false,
+            "special": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Create Aura",
+        "img": "systems/dnd5e/icons/svg/trait-damage-immunities.svg",
+        "behaviors": [
+          {
+            "name": "",
+            "_id": "UEv5tgbar7amV4k5",
+            "type": "applyActiveEffect",
+            "config": {
+              "effects": [
+                "Compendium.dnd5e.effects.ActiveEffect.phbeffAuraLife00"
+              ],
+              "sizes": [],
+              "types": []
+            },
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 1,
+          "excludeSource": false,
+          "oncePerTurn": false,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "caster",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "entry",
+              "action": "applyEffect",
+              "targetId": "cgaAuraPurityFx0"
+            }
+          ]
+        }
+      }
+    },
+    "identifier": "aura-of-purity",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgaSplAuraPurity",
+  "type": "spell",
+  "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+  "effects": [
+    {
+      "_id": "cgaAuraPurityFx0",
+      "name": "Aura of Purity",
+      "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "description": "",
+      "sort": 0,
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [],
+          "showIcon": true
+        }
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3f0000002",
+            "conditions": "{}"
+          }
+        ],
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        }
+      }
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: 30-ft aura that moves with you: you and allies inside resist poison damage. Their Advantage on saves against Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned or Stunned effects is the player's to claim."
+      }
+    }
+  }
+}

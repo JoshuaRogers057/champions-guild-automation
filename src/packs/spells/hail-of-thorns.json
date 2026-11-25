@@ -2,7 +2,7 @@
   "name": "Hail of Thorns",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> Bonus Action, concentration. The next time you hit a creature with a ranged weapon attack, the target and each creature within 5 ft of it make a DEX save: 1d10 Piercing, half on a success (+1d10 per slot level above 1st). The spell then ends.</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Right after you hit a creature with a ranged weapon attack, you're asked whether to cast this (Bonus Action). The target and each creature within 5 ft of it make a DEX save: 1d10 Piercing, half on a success (+1d10 per slot level above 1st). You can also cast it by hand, targeting those creatures.</p>",
       "chat": ""
     },
     "source": {
@@ -16,11 +16,11 @@
     "activation": {
       "type": "bonus",
       "value": 1,
-      "condition": ""
+      "condition": "Right after a ranged weapon attack"
     },
     "duration": {
-      "value": "1",
-      "units": "minute"
+      "value": "",
+      "units": "inst"
     },
     "target": {
       "affects": {
@@ -45,8 +45,7 @@
     "level": 1,
     "school": "con",
     "properties": [
-      "vocal",
-      "concentration"
+      "vocal"
     ],
     "materials": {
       "value": "",
@@ -59,71 +58,15 @@
       "prepared": false
     },
     "activities": {
-      "dnd5eactivity000": {
-        "_id": "dnd5eactivity000",
-        "type": "utility",
-        "activation": {
-          "type": "action",
-          "value": null,
-          "override": false
-        },
-        "consumption": {
-          "targets": [],
-          "scaling": {
-            "allowed": false,
-            "max": ""
-          }
-        },
-        "description": {
-          "chatFlavor": ""
-        },
-        "duration": {
-          "units": "inst",
-          "override": false
-        },
-        "effects": [
-          {
-            "_id": "cgaHailThornsFx0"
-          }
-        ],
-        "range": {
-          "override": false
-        },
-        "target": {
-          "prompt": false,
-          "template": {
-            "contiguous": false,
-            "units": "ft"
-          },
-          "affects": {
-            "type": "self",
-            "count": "",
-            "choice": false
-          },
-          "override": true
-        },
-        "roll": {
-          "formula": "",
-          "name": "",
-          "prompt": false,
-          "visible": false
-        },
-        "uses": {
-          "spent": 0,
-          "recovery": []
-        },
-        "sort": 0,
-        "name": "Cast"
-      },
       "hailThornsBurst0": {
         "type": "save",
-        "name": "Hail of Thorns: Thorns",
+        "name": "Hail of Thorns",
         "_id": "hailThornsBurst0",
-        "sort": 900000,
+        "sort": 100000,
         "activation": {
-          "type": "special",
-          "value": null,
-          "condition": "Triggered by the next ranged weapon attack",
+          "type": "bonus",
+          "value": 1,
+          "condition": "Right after a ranged weapon attack",
           "override": true
         },
         "consumption": {
@@ -131,7 +74,7 @@
             "allowed": false,
             "max": ""
           },
-          "spellSlot": false,
+          "spellSlot": true,
           "targets": []
         },
         "description": {
@@ -141,8 +84,8 @@
           "value": "",
           "units": "inst",
           "special": "",
-          "concentration": false,
-          "override": true
+          "override": false,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -157,14 +100,13 @@
           "affects": {
             "type": "creature",
             "count": "",
-            "choice": false,
+            "choice": true,
             "special": ""
           },
           "template": {
             "contiguous": false,
             "units": "ft",
-            "type": "",
-            "stationary": false
+            "type": ""
           }
         },
         "uses": {
@@ -207,7 +149,7 @@
         "img": "",
         "appliedEffects": [],
         "midiProperties": {
-          "automationOnly": true,
+          "automationOnly": false,
           "otherActivityCompatible": false,
           "identifier": "hail-of-thorns-burst"
         }
@@ -222,10 +164,10 @@
   "effects": [
     {
       "_id": "cgaHailThornsFx0",
-      "name": "Hail of Thorns",
+      "name": "Hail of Thorns (offered after ranged attacks)",
       "img": "icons/magic/nature/thorns-hand-green.webp",
       "type": "base",
-      "transfer": false,
+      "transfer": true,
       "disabled": false,
       "statuses": [],
       "description": "",
@@ -233,47 +175,31 @@
       "start": null,
       "origin": null,
       "tint": "#ffffff",
-      "showIcon": 1,
+      "showIcon": 0,
       "folder": null,
       "duration": {
-        "value": 60,
+        "value": null,
         "units": "seconds",
-        "expiry": "turnStart",
+        "expiry": null,
         "expired": false
       },
       "flags": {
         "dae": {
           "stackable": "noneName",
           "specialDuration": [],
-          "showIcon": true
-        },
-        "world": {
-          "cgaRangedRider": {
-            "spell": "hail-of-thorns",
-            "radius": 5,
-            "onHitOnly": true,
-            "level": 1
-          }
+          "showIcon": false,
+          "transfer": true
         }
       },
       "system": {
         "changes": [
           {
             "key": "flags.midi-qol.onUseMacroName",
-            "value": "ItemMacro,postDamageRoll",
-            "priority": 20,
-            "type": "custom",
-            "phase": "initial",
-            "_id": "cgaChgP2d0000002",
-            "conditions": "{}"
-          },
-          {
-            "key": "flags.midi-qol.onUseMacroName",
             "value": "ItemMacro,postActiveEffects",
             "priority": 20,
             "type": "custom",
             "phase": "initial",
-            "_id": "cgaChgP2d0000003",
+            "_id": "cgaChgP3c0000001",
             "conditions": "{}"
           }
         ],
@@ -301,13 +227,17 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.1",
-        "notes": "Champions Guild Automation: Bonus Action; your next ranged weapon hit makes the target and every creature within 5 ft of it save (DEX, 1d10 piercing, half on a success). The spell then ends."
+        "version": "1.0.2",
+        "notes": "Champions Guild Automation: after you hit with a ranged weapon attack you're asked whether to cast it (Bonus Action, pick the slot): the target and each creature within 5 ft make a DEX save, 1d10 piercing (half on a success), +1d10 per slot level above 1st."
       }
     },
-    "midi-qol": {
-      "onUseMacroName": "[postActiveEffects]ItemMacro"
+    "world": {
+      "cgaRangedSpell": {
+        "when": "hit",
+        "radius": 5,
+        "includeTarget": true
+      }
     }
   },
-  "_cgaMacro": "ranged-rider.js"
+  "_cgaMacro": "ranged-prompt.js"
 }

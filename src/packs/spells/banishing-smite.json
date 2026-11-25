@@ -2,7 +2,7 @@
   "name": "Banishing Smite",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> The target hit takes an extra 5d10 Force (+1d10 per slot level above 5th). If that leaves it with 50 Hit Points or fewer, it's banished: Incapacitated and gone from the map until the spell ends.</p>",
+      "value": "<p><em>Champions Guild Automation:</em> The target hit takes an extra 5d10 Force. If that leaves it with 50 Hit Points or fewer, it makes a CHA save (rolled automatically) or is banished: Incapacitated and gone from the map until the spell ends.</p>",
       "chat": ""
     },
     "source": {
@@ -203,8 +203,8 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
-        "notes": "Champions Guild Automation: extra 5d10 force on the hit; a target left with 50 HP or fewer is banished (Incapacitated, token hidden) until the spell ends."
+        "version": "1.0.1",
+        "notes": "Champions Guild Automation: extra 5d10 force on the hit; a target left with 50 HP or fewer makes a CHA save or is banished (Incapacitated, token hidden) until the spell ends."
       }
     },
     "midi-qol": {

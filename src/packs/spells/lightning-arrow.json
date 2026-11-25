@@ -2,7 +2,7 @@
   "name": "Lightning Arrow",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> Bonus Action, concentration. Your next ranged weapon attack deals 4d8 Lightning instead of the weapon's damage on a hit, or half that on a miss. Hit or miss, each creature within 10 ft of the target makes a DEX save: 2d8 Lightning, half on a success. Both increase by 1d8 per slot level above 3rd. The spell then ends.</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Right after a ranged weapon attack, hit or miss, you're asked whether to cast this (Bonus Action). Instead of the attack's damage and effects, the target takes 4d8 Lightning on a hit or half on a miss, and each creature within 10 ft of it makes a DEX save: 2d8 Lightning, half on a success. Both increase by 1d8 per slot level above 3rd.</p>",
       "chat": ""
     },
     "source": {
@@ -16,11 +16,11 @@
     "activation": {
       "type": "bonus",
       "value": 1,
-      "condition": ""
+      "condition": "Right after a ranged weapon attack"
     },
     "duration": {
-      "value": "1",
-      "units": "minute"
+      "value": "",
+      "units": "inst"
     },
     "target": {
       "affects": {
@@ -45,8 +45,7 @@
     "level": 3,
     "school": "trs",
     "properties": [
-      "vocal",
-      "concentration"
+      "vocal"
     ],
     "materials": {
       "value": "",
@@ -59,71 +58,15 @@
       "prepared": false
     },
     "activities": {
-      "dnd5eactivity000": {
-        "_id": "dnd5eactivity000",
-        "type": "utility",
-        "activation": {
-          "type": "action",
-          "value": null,
-          "override": false
-        },
-        "consumption": {
-          "targets": [],
-          "scaling": {
-            "allowed": false,
-            "max": ""
-          }
-        },
-        "description": {
-          "chatFlavor": ""
-        },
-        "duration": {
-          "units": "inst",
-          "override": false
-        },
-        "effects": [
-          {
-            "_id": "cgaLightArrowFx0"
-          }
-        ],
-        "range": {
-          "override": false
-        },
-        "target": {
-          "prompt": false,
-          "template": {
-            "contiguous": false,
-            "units": "ft"
-          },
-          "affects": {
-            "type": "self",
-            "count": "",
-            "choice": false
-          },
-          "override": true
-        },
-        "roll": {
-          "formula": "",
-          "name": "",
-          "prompt": false,
-          "visible": false
-        },
-        "uses": {
-          "spent": 0,
-          "recovery": []
-        },
-        "sort": 0,
-        "name": "Cast"
-      },
       "lightArrowBurst0": {
         "type": "save",
-        "name": "Lightning Arrow: Burst",
+        "name": "Lightning Arrow",
         "_id": "lightArrowBurst0",
-        "sort": 900000,
+        "sort": 100000,
         "activation": {
-          "type": "special",
-          "value": null,
-          "condition": "Triggered by the next ranged weapon attack",
+          "type": "bonus",
+          "value": 1,
+          "condition": "Right after a ranged weapon attack",
           "override": true
         },
         "consumption": {
@@ -131,7 +74,7 @@
             "allowed": false,
             "max": ""
           },
-          "spellSlot": false,
+          "spellSlot": true,
           "targets": []
         },
         "description": {
@@ -141,8 +84,8 @@
           "value": "",
           "units": "inst",
           "special": "",
-          "concentration": false,
-          "override": true
+          "override": false,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -157,14 +100,13 @@
           "affects": {
             "type": "creature",
             "count": "",
-            "choice": false,
+            "choice": true,
             "special": ""
           },
           "template": {
             "contiguous": false,
             "units": "ft",
-            "type": "",
-            "stationary": false
+            "type": ""
           }
         },
         "uses": {
@@ -207,7 +149,7 @@
         "img": "",
         "appliedEffects": [],
         "midiProperties": {
-          "automationOnly": true,
+          "automationOnly": false,
           "otherActivityCompatible": false,
           "identifier": "lightning-arrow-burst"
         }
@@ -222,10 +164,10 @@
   "effects": [
     {
       "_id": "cgaLightArrowFx0",
-      "name": "Lightning Arrow",
+      "name": "Lightning Arrow (offered after ranged attacks)",
       "img": "icons/magic/lightning/bolt-arrow-blue.webp",
       "type": "base",
-      "transfer": false,
+      "transfer": true,
       "disabled": false,
       "statuses": [],
       "description": "",
@@ -233,42 +175,40 @@
       "start": null,
       "origin": null,
       "tint": "#ffffff",
-      "showIcon": 1,
+      "showIcon": 0,
       "folder": null,
       "duration": {
-        "value": 60,
+        "value": null,
         "units": "seconds",
-        "expiry": "turnStart",
+        "expiry": null,
         "expired": false
       },
       "flags": {
         "dae": {
           "stackable": "noneName",
           "specialDuration": [],
-          "showIcon": true
-        },
-        "world": {
-          "cgaRangedRider": {
-            "spell": "lightning-arrow",
-            "radius": 10,
-            "onHitOnly": false,
-            "replace": {
-              "dice": 4,
-              "type": "lightning"
-            },
-            "level": 3
-          }
+          "showIcon": false,
+          "transfer": true
         }
       },
       "system": {
         "changes": [
           {
             "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,postAttackRoll",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaChgP3c0000001",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.onUseMacroName",
             "value": "ItemMacro,postDamageRoll",
             "priority": 20,
             "type": "custom",
             "phase": "initial",
-            "_id": "cgaChgP2d0000004",
+            "_id": "cgaChgP3c0000002",
             "conditions": "{}"
           },
           {
@@ -277,7 +217,7 @@
             "priority": 20,
             "type": "custom",
             "phase": "initial",
-            "_id": "cgaChgP2d0000005",
+            "_id": "cgaChgP3c0000003",
             "conditions": "{}"
           }
         ],
@@ -305,13 +245,22 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.1",
-        "notes": "Champions Guild Automation: Bonus Action; your next ranged weapon attack deals 4d8 lightning instead of its damage (half on a miss), and every creature within 10 ft of the target saves (DEX, 2d8 lightning). The spell then ends."
+        "version": "1.0.2",
+        "notes": "Champions Guild Automation: after a ranged weapon attack (hit or miss) you're asked whether to cast it (Bonus Action, pick the slot): 4d8 lightning instead of the weapon's damage (half on a miss), and each other creature within 10 ft makes a DEX save, 2d8 lightning (half on a success); both +1d8 per slot level above 3rd."
       }
     },
-    "midi-qol": {
-      "onUseMacroName": "[postActiveEffects]ItemMacro"
+    "world": {
+      "cgaRangedSpell": {
+        "when": "any",
+        "radius": 10,
+        "includeTarget": false,
+        "replace": {
+          "dice": 4,
+          "faces": 8,
+          "type": "lightning"
+        }
+      }
     }
   },
-  "_cgaMacro": "ranged-rider.js"
+  "_cgaMacro": "ranged-prompt.js"
 }

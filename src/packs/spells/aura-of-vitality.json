@@ -2,7 +2,7 @@
   "name": "Aura of Vitality",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> A 30-ft aura of healing surrounds you while you concentrate (1 minute). When you cast it, and as a Bonus Action on later turns (Heal in the Aura), one creature in the aura (you included) regains 2d6 Hit Points.</p>",
+      "value": "<p><em>Champions Guild Automation:</em> A 30-ft aura surrounds you while you concentrate (1 minute). When you create it, and at the start of each of your turns, you can restore 2d6 Hit Points to one creature in it (use Heal at Turn Start).</p>",
       "chat": ""
     },
     "source": {
@@ -125,9 +125,9 @@
         "_id": "auraVitalityHeal",
         "type": "heal",
         "activation": {
-          "type": "bonus",
-          "value": 1,
-          "condition": "While concentrating on Aura of Vitality",
+          "type": "special",
+          "value": null,
+          "condition": "At the start of each of your turns while the aura lasts",
           "override": true
         },
         "consumption": {
@@ -185,7 +185,7 @@
           "recovery": []
         },
         "sort": 200000,
-        "name": "Heal in the Aura"
+        "name": "Heal at Turn Start"
       }
     },
     "identifier": "aura-of-vitality",
@@ -204,8 +204,8 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.1",
-        "notes": "Champions Guild Automation: heal one creature in the 30-ft aura for 2d6 when you cast, and again with Heal in the Aura (Bonus Action, no slot) on later turns."
+        "version": "1.0.2",
+        "notes": "Champions Guild Automation: heal one creature in the 30-ft aura for 2d6 when you cast, and again at the start of each of your turns (Heal at Turn Start, no slot)."
       }
     }
   }

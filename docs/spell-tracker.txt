@@ -111,12 +111,13 @@
 2|Augury|SRD|skip|3|
 2|Barkskin|SRD|done|1|AC can't be lower than 17
 2|Blindness/Deafness|SRD|done|2|Repeat CON save at the end of each of its turns
+2|Beast Sense|PHB|skip|3|
 2|Blur|SRD|done|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
 2|Calm Emotions|SRD|done|3|
 2|Cloud of Daggers|PHB|done|2|Zone: 4d4 slashing on entering or starting turn there
 2|Continual Flame|SRD|skip|3|
-2|Cordon of Arrows|PHB|build|3|Trap: arrows fire at creatures entering 30 ft
-2|Crown of Madness|PHB|build|3|Charmed; forced melee attack each turn; repeat save
+2|Cordon of Arrows|PHB|done|3|Trap: arrows fire at creatures entering 30 ft
+2|Crown of Madness|PHB|done|3|Charmed; forced melee attack each turn; repeat save
 2|Darkness|SRD|skip|3|
 2|Darkvision|SRD|done|2|
 2|Detect Thoughts|SRD|skip|3|
@@ -219,7 +220,7 @@
 3|Wind Wall|SRD|done|3|Wall; ranged attacks through it
 4|Arcane Eye|SRD|skip|3|
 4|Aura of Life|SRD|done|3|Necrotic resistance; creatures at 0 HP regain 1 HP
-4|Aura of Purity|PHB|build|3|Aura: poison resistance, advantage on saves vs conditions
+4|Aura of Purity|PHB|done|3|Aura: poison resistance, advantage on saves vs conditions
 4|Banishment|SRD|done|2|Remove the target (hide token) until the spell ends
 4|Blight|SRD|done|2|
 4|Charm Monster|SRD|done|3|
@@ -235,9 +236,10 @@
 4|Evard's Black Tentacles|SRD|done|2|aka Black Tentacles. Zone: restrained + bludgeoning
 4|Fabricate|SRD|skip|3|
 4|Fire Shield|SRD|done|2|Melee attackers take 2d8 fire/cold; resistance
+4|Fount of Moonlight|PHB|done|3|Radiant resistance, +2d6 radiant on melee hits, reaction CON save or Blinded
 4|Freedom of Movement|SRD|done|3|
 4|Giant Insect|SRD|done|3|Summon
-4|Grasping Vine|PHB|build|3|Pull 30 ft on a failed save; bonus action each turn
+4|Grasping Vine|PHB|done|3|Pull 30 ft on a failed save; bonus action each turn
 4|Greater Invisibility|SRD|midi|2|
 4|Guardian of Faith|SRD|done|2|Guardian deals 20 radiant on entering/starting turn, up to 60 total
 4|Hallucinatory Terrain|SRD|skip|3|
@@ -262,7 +264,7 @@
 5|Awaken|SRD|skip|3|
 5|Banishing Smite|PHB|done|2|Smite prompt; banish at 50 HP or less
 5|Bigby's Hand|SRD|done|2|aka Arcane Hand. Per-caster summon built before (see Bigby's Hand notes)
-5|Circle of Power|PHB|build|3|Aura: advantage on saves vs spells, no damage on success
+5|Circle of Power|PHB|done|3|Aura: advantage on saves vs spells, no damage on success
 5|Cloudkill|SRD|done|2|Moving zone: CON save poison at turn start
 5|Commune|SRD|skip|3|
 5|Commune with Nature|SRD|skip|3|
@@ -282,7 +284,7 @@
 5|Hallow|SRD|skip|3|
 5|Hold Monster|SRD|done|1|Paralyzed; repeat WIS save end of each turn
 5|Insect Plague|SRD|done|2|Zone: CON save piercing on entering/starting turn
-5|Jallarzi's Storm of Radiance|PHB|build|3|Zone: radiant + thunder, deafened, blinded
+5|Jallarzi's Storm of Radiance|PHB|done|3|Zone: radiant + thunder, deafened, blinded
 5|Legend Lore|SRD|skip|3|
 5|Mass Cure Wounds|SRD|midi|2|
 5|Mislead|SRD|skip|3|
@@ -297,14 +299,14 @@
 5|Steel Wind Strike|PHB|done|2|Melee spell attack against up to 5 targets, then teleport
 5|Summon Celestial|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 5|Summon Dragon|SRD|done|2|Summon
-5|Swift Quiver|PHB|build|3|Two bonus-action weapon attacks each turn
+5|Swift Quiver|PHB|done|3|Two bonus-action weapon attacks each turn
 5|Synaptic Static|PHB|done|2|INT save psychic; failed save: -1d6 on attacks and checks, repeat save
 5|Telekinesis|SRD|skip|3|
 5|Teleportation Circle|SRD|skip|3|
 5|Tree Stride|SRD|skip|3|
 5|Wall of Force|SRD|skip|3|
 5|Wall of Stone|SRD|skip|3|
-5|Yolande's Regal Presence|PHB|build|3|Zone: WIS save psychic, prone or pushed
+5|Yolande's Regal Presence|PHB|done|3|Zone: WIS save psychic, prone or pushed
 6|Arcane Gate|PHB|skip|3|
 6|Blade Barrier|SRD|done|2|Wall: DEX save slashing on entering/starting turn
 6|Chain Lightning|SRD|done|2|Primary target + three leaps
@@ -329,7 +331,6 @@
 6|Otiluke's Freezing Sphere|SRD|done|3|aka Freezing Sphere
 6|Otto's Irresistible Dance|SRD|midi|3|aka Irresistible Dance
 6|Planar Ally|SRD|skip|3|
-6|Primordial Ward|PHB|build|3|Resistances; reaction to turn one into immunity
 6|Programmed Illusion|SRD|skip|3|
 6|Summon Fiend|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 6|Sunbeam|SRD|midi|2|
@@ -364,6 +365,7 @@
 8|Animal Shapes|SRD|skip|3|
 8|Antimagic Field|SRD|skip|3|
 8|Antipathy/Sympathy|SRD|skip|3|
+8|Telepathy|PHB|skip|3|
 8|Befuddlement|SRD|midi|3|
 8|Clone|SRD|skip|3|
 8|Control Weather|SRD|skip|3|

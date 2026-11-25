@@ -2,7 +2,7 @@
   "name": "Hunger of Hadar",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> A 20-ft-radius sphere of blackness. Creatures inside are Blinded. A creature that starts its turn inside takes 2d6 Cold; one that ends its turn inside makes a DEX save or takes 2d6 Acid (each +1d6 per slot level above 3rd).</p>",
+      "value": "<p><em>Champions Guild Automation:</em> A 20-ft-radius sphere of blackness (difficult terrain). Creatures fully inside are Blinded. A creature that starts its turn inside takes 2d6 Cold; one that ends its turn inside makes a DEX save or takes 2d6 Acid. Each slot level above 3rd adds 1d6 to the Cold (the book lets you pick Cold or Acid; the DM adjusts if you pick Acid).</p>",
       "chat": ""
     },
     "source": {
@@ -367,8 +367,8 @@
                 "formula": ""
               },
               "scaling": {
-                "mode": "whole",
-                "number": 1,
+                "mode": "",
+                "number": null,
                 "formula": ""
               }
             }
@@ -487,8 +487,8 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.1",
-        "notes": "Champions Guild Automation: 20-ft sphere: Blinded inside, 2d6 cold at the start of a turn there, DEX save or 2d6 acid at the end of a turn there."
+        "version": "1.0.2",
+        "notes": "Champions Guild Automation: 20-ft sphere: Blinded inside, 2d6 cold at the start of a turn there, DEX save or 2d6 acid at the end of a turn there. Upcasting adds 1d6 to the cold."
       }
     }
   }
