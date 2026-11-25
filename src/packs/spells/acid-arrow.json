@@ -1,0 +1,303 @@
+{
+  "name": "Acid Arrow",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> On a hit: 4d4 Acid now and 2d4 Acid at the end of the target's next turn (each +1d4 per slot level above 2nd). On a miss the spell deals half the initial damage; apply that by hand.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false
+      },
+      "template": {
+        "type": "",
+        "units": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "value": "90",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 2,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "powdered rhubarb leaf",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "UvDr2eESFyDiTwTX": {
+        "type": "attack",
+        "name": "Cast and Attack",
+        "_id": "UvDr2eESFyDiTwTX",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "NgglkyjzTbDh5Loa"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": ""
+          },
+          "ability": "",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 4,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "acid"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "img": "",
+        "appliedEffects": []
+      },
+      "uAyE5DrJp0YpElcw": {
+        "type": "damage",
+        "name": "Lingering Acid Damage",
+        "_id": "uAyE5DrJp0YpElcw",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "End of the target's next turn",
+          "override": true
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "critical": {
+            "allow": false
+          },
+          "parts": [
+            {
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "number": 2,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "acid"
+              ],
+              "scaling": {
+                "mode": "whole",
+                "number": 1
+              }
+            }
+          ]
+        },
+        "img": "",
+        "appliedEffects": [],
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "turnChoice": "end",
+          "saveRemoves": false,
+          "rollAs": "source",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "acidArrowLinger"
+        }
+      }
+    },
+    "identifier": "acid-arrow",
+    "prepared": 0
+  },
+  "_id": "cgasplMelfsAcidA",
+  "type": "spell",
+  "img": "icons/skills/ranged/arrow-flying-poisoned-green.webp",
+  "effects": [
+    {
+      "name": "Lingering Acid",
+      "img": "icons/magic/acid/dissolve-arm-flesh.webp",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplMelfsAcidA",
+      "transfer": false,
+      "_id": "NgglkyjzTbDh5Loa",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "type": "override",
+            "value": "acidArrowLinger",
+            "phase": "initial",
+            "priority": 20,
+            "_id": "cgaOTacidArrowLi"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>On a hit, the target takes 4d4 Acid damage and [[/damage 2d4 type=acid]] (plus 1d4 per spell slot level above 2) Acid damage at the end of its next turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "specialDuration": [
+            "turnEnd"
+          ]
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: on a hit, the lingering 2d4 Acid (+1d4 per slot level above 2nd) is dealt at the end of the target's next turn."
+      }
+    }
+  }
+}

@@ -1,0 +1,548 @@
+{
+  "name": "Enlarge/Reduce",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Pick Enlarge or Reduce when you cast. Willing creatures are affected without a save; use a (CON save) activity on an unwilling one. Enlarged: one size larger, Advantage on STR checks and saves, +1d4 weapon damage. Reduced: one size smaller, Disadvantage on STR checks and saves, -1d4 weapon damage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creatureOrObject",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a pinch of powdered iron",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "Wi2E10l7n6Ka8k6u",
+            "onSave": false,
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 100000,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "name": "Enlarge (willing)",
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        }
+      },
+      "enlargeReduceRdW": {
+        "_id": "enlargeReduceRdW",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "NXdtOxX4HvPeodml",
+            "onSave": false,
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 200000,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "name": "Reduce (willing)",
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        }
+      },
+      "enlargeReduceEnU": {
+        "_id": "enlargeReduceEnU",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "Wi2E10l7n6Ka8k6u",
+            "onSave": false,
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 300000,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "name": "Enlarge (CON save)"
+      },
+      "enlargeReduceRdU": {
+        "_id": "enlargeReduceRdU",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "NXdtOxX4HvPeodml",
+            "onSave": false,
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 400000,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "name": "Reduce (CON save)"
+      }
+    },
+    "identifier": "enlarge-reduce",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgasplEnlargeRed",
+  "type": "spell",
+  "img": "icons/consumables/mushrooms/mushroom-spotted-red.webp",
+  "effects": [
+    {
+      "name": "Enlarged",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEnlargeRed",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "icons/magic/control/silhouette-grow-shrink-tan.webp",
+      "_id": "Wi2E10l7n6Ka8k6u",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.rolls.damage.mwak.bonus",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "liAne1IbyyUNiCd4",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.rolls.damage.rwak.bonus",
+            "value": "1d4",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "1tyB0m0RWR13wAn5",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "PclGL5LwNTZqjO7v",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "rwlTBEmpSIHiE04n",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.size",
+            "type": "add",
+            "value": 1,
+            "phase": "initial",
+            "_id": "qavAEe7zJsBCoVvd",
+            "conditions": "{}",
+            "priority": null
+          }
+        ],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "description": "<p>The target’s size increases by one category—from Medium to Large, for example. The target also has Advantage on Strength checks and Strength saving throws. The target’s attacks with its enlarged weapons or Unarmed Strikes deal an extra 1d4 damage on a hit.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Reduced",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEnlargeRed",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
+      "_id": "NXdtOxX4HvPeodml",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.rolls.damage.mwak.bonus",
+            "value": "1d4",
+            "priority": null,
+            "type": "subtract",
+            "phase": "initial",
+            "_id": "Y6EVhD7qmhHWwX7S",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.rolls.damage.rwak.bonus",
+            "value": "1d4",
+            "priority": null,
+            "type": "subtract",
+            "phase": "initial",
+            "_id": "1tSKjRN5ozmQODHH",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "8hcR8EZuZfBZjX1r",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "RfEQNZwYek96Scpu",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.size",
+            "type": "subtract",
+            "value": 1,
+            "phase": "initial",
+            "_id": "alrq1Wu0gwWCg3EA",
+            "conditions": "{}",
+            "priority": null
+          }
+        ],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "description": "<p>The target’s size decreases by one category—from Medium to Small, for example. The target also has Disadvantage on Strength checks and Strength saving throws. The target’s attacks with its reduced weapons or Unarmed Strikes deal 1d4 less damage on a hit (this can’t reduce the damage below 1).</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: separate Enlarge and Reduce activities (the compendium copy applied both, which cancel out). Willing targets skip the save."
+      }
+    }
+  }
+}

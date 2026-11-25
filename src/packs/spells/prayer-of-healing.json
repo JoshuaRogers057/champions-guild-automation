@@ -1,0 +1,175 @@
+{
+  "name": "Prayer of Healing",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Up to five creatures regain 2d8 + your spellcasting modifier Hit Points (+1d8 per slot level above 2nd) after a 10-minute rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 10
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "5",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "value": "30",
+      "units": "ft"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "abj",
+    "properties": [
+      "vocal"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "heal",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "BrBVse9ezicC6IVW"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "healing": {
+          "number": 2,
+          "denomination": 8,
+          "bonus": "@mod",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "whole",
+            "number": 1,
+            "formula": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "prayer-of-healing",
+    "prepared": 0
+  },
+  "_id": "cgasplPrayerofHe",
+  "type": "spell",
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+  "effects": [
+    {
+      "name": "Healed by Prayer",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplPrayerofHe",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {},
+      "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+      "_id": "BrBVse9ezicC6IVW",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "description": "<p>A creature can’t be affected by the @UUID[Compendium.dnd5e.spells24.Item.phbsplPrayerofHe] spell again until that creature finishes a Long Rest.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: heals 2d8 + your spellcasting modifier (the compendium copy left the modifier out)."
+      }
+    }
+  }
+}

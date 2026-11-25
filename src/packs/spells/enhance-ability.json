@@ -1,0 +1,614 @@
+{
+  "name": "Enhance Ability",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Pick the ability when you cast: the target has Advantage on ability checks with it while you concentrate. One extra target per slot level above 2nd.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "@item.level - 1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "fur or a feather",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "gg9dU0SnvU03C803"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 100000,
+        "name": "Strength",
+        "img": "",
+        "appliedEffects": [
+          "gg9dU0SnvU03C803",
+          "GGEj4zNginSIp6VV",
+          "NTaFTBr1uam93jHS",
+          "EGnngHgGBzTyThW6",
+          "e02u2XLDltCT5D5x"
+        ]
+      },
+      "enhanceAbilDex00": {
+        "_id": "enhanceAbilDex00",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "GGEj4zNginSIp6VV"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 200000,
+        "name": "Dexterity",
+        "img": "",
+        "appliedEffects": [
+          "gg9dU0SnvU03C803",
+          "GGEj4zNginSIp6VV",
+          "NTaFTBr1uam93jHS",
+          "EGnngHgGBzTyThW6",
+          "e02u2XLDltCT5D5x"
+        ]
+      },
+      "enhanceAbilInt00": {
+        "_id": "enhanceAbilInt00",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "NTaFTBr1uam93jHS"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 300000,
+        "name": "Intelligence",
+        "img": "",
+        "appliedEffects": [
+          "gg9dU0SnvU03C803",
+          "GGEj4zNginSIp6VV",
+          "NTaFTBr1uam93jHS",
+          "EGnngHgGBzTyThW6",
+          "e02u2XLDltCT5D5x"
+        ]
+      },
+      "enhanceAbilWis00": {
+        "_id": "enhanceAbilWis00",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "EGnngHgGBzTyThW6"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 400000,
+        "name": "Wisdom",
+        "img": "",
+        "appliedEffects": [
+          "gg9dU0SnvU03C803",
+          "GGEj4zNginSIp6VV",
+          "NTaFTBr1uam93jHS",
+          "EGnngHgGBzTyThW6",
+          "e02u2XLDltCT5D5x"
+        ]
+      },
+      "enhanceAbilCha00": {
+        "_id": "enhanceAbilCha00",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "e02u2XLDltCT5D5x"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 500000,
+        "name": "Charisma",
+        "img": "",
+        "appliedEffects": [
+          "gg9dU0SnvU03C803",
+          "GGEj4zNginSIp6VV",
+          "NTaFTBr1uam93jHS",
+          "EGnngHgGBzTyThW6",
+          "e02u2XLDltCT5D5x"
+        ]
+      }
+    },
+    "identifier": "enhance-ability",
+    "prepared": 0
+  },
+  "_id": "cgasplEnhanceAbi",
+  "type": "spell",
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "effects": [
+    {
+      "name": "Enhanced Strength",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEnhanceAbi",
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/strength.svg",
+      "_id": "gg9dU0SnvU03C803",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "AkcqH7hULxgokY4c"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Enhanced Dexterity",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEnhanceAbi",
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/dexterity.svg",
+      "_id": "GGEj4zNginSIp6VV",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.dex.check.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "qk12W6qK1EhHCpzl"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Enhanced Intelligence",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEnhanceAbi",
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/intelligence.svg",
+      "_id": "NTaFTBr1uam93jHS",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.int.check.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "w6jqTDsF8wK8SSox"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Enhanced Wisdom",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEnhanceAbi",
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/wisdom.svg",
+      "_id": "EGnngHgGBzTyThW6",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.wis.check.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "GC6VnOVv88IXVVOy"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Enhanced Charisma",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplEnhanceAbi",
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "systems/dnd5e/icons/svg/abilities/charisma.svg",
+      "_id": "e02u2XLDltCT5D5x",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.cha.check.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "kTdrxAlrDsMCuFVq"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>The target has Advantage on ability checks made with the chosen ability.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: one activity per ability, so only the chosen one is applied."
+      }
+    }
+  }
+}
