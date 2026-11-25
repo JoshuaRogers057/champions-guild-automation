@@ -1,0 +1,403 @@
+{
+  "name": "Holy Aura",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A 30-ft aura moves with you while you concentrate. You and your allies inside have Advantage on all saving throws, and attack rolls against them have Disadvantage. When a Fiend or Undead hits one of them with a melee attack, it makes a CON save or is Blinded until the end of its next turn (rolled automatically).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": true,
+        "count": "",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "radius",
+        "size": "30",
+        "count": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 8,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a reliquary worth 1,000+ GP",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "jbvvkjZ7szK9wjeA": {
+        "type": "utility",
+        "_id": "jbvvkjZ7szK9wjeA",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "override": true,
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "30",
+            "stationary": false
+          },
+          "affects": {
+            "type": "ally",
+            "count": "",
+            "choice": false,
+            "special": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Create Aura",
+        "img": "systems/dnd5e/icons/svg/trait-damage-immunities.svg",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 1,
+          "excludeSource": false,
+          "oncePerTurn": false,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "caster",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "entry",
+              "action": "applyEffect",
+              "targetId": "csA26qg5YSsji1ZZ"
+            }
+          ]
+        }
+      },
+      "0kylpwRauH0WgW0G": {
+        "type": "save",
+        "_id": "0kylpwRauH0WgW0G",
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": true,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "wqBjgsd2xRnmSm8Z",
+            "uuid": null,
+            "level": {},
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": true,
+          "units": "any",
+          "value": null,
+          "special": ""
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "name": "Holy Aura: Blinding Light",
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false,
+          "identifier": "holyAuraBlind"
+        }
+      }
+    },
+    "identifier": "holy-aura",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgasplHolyAura00",
+  "type": "spell",
+  "img": "icons/magic/life/ankh-shadow-green.webp",
+  "effects": [
+    {
+      "name": "Holy Protection",
+      "img": "icons/svg/mage-shield.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplHolyAura00",
+      "transfer": false,
+      "_id": "csA26qg5YSsji1ZZ",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "EV62Bc7O88IABjNl",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.dex.save.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "iJzk8PkKQ4anoeT6",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.con.save.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "gI8xMnwgAUqtqTrh",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.int.save.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ITkZAF4CX6jTJwse",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.wis.save.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "i4hUJGQtMR5VpKfJ",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.cha.save.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "D7PVYGPG1Bgq5IfK",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.grants.disadvantage.attack.all",
+            "value": "1",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000031",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Blinded",
+      "img": "systems/dnd5e/icons/svg/statuses/blinded.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplHolyAura00",
+      "transfer": false,
+      "_id": "wqBjgsd2xRnmSm8Z",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": "targetEnd",
+        "expired": false
+      },
+      "description": "<p>The attacker has the &amp;Reference[Blinded apply=false] condition until the end of its next turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [
+        "blinded"
+      ],
+      "sort": 0,
+      "flags": {
+        "dae": {
+          "specialDuration": [
+            "turnEnd"
+          ]
+        }
+      },
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: 30-ft aura that moves with you: you and allies inside have Advantage on saves and attacks against them have Disadvantage; a Fiend or Undead that hits one in melee makes a CON save or is Blinded until the end of its next turn."
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "name": "See Invisibility",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> For 1 hour you see Invisible creatures and objects as if they were visible, and you can see into the Ethereal Plane.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "self",
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "div",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a pinch of talc",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "BRwB0T8buWhJAuDx"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0
+      }
+    },
+    "identifier": "see-invisibility",
+    "prepared": 0
+  },
+  "_id": "cgasplSeeInvisib",
+  "type": "spell",
+  "img": "icons/magic/perception/orb-eye-scrying.webp",
+  "effects": [
+    {
+      "name": "See Invisibility",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplSeeInvisib",
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {},
+      "img": "icons/magic/perception/orb-eye-scrying.webp",
+      "_id": "BRwB0T8buWhJAuDx",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.special",
+            "value": ";Invisible creatures",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "xBhJxDANaZY2d0a0"
+          },
+          {
+            "key": "system.attributes.senses.special",
+            "value": ";Ethereal Plane",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "rkt8S73dY1NOs4tv"
+          }
+        ],
+        "magical": true
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: you see Invisible creatures and into the Ethereal Plane."
+      }
+    }
+  }
+}

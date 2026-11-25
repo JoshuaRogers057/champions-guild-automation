@@ -1,0 +1,289 @@
+{
+  "name": "Heroes' Feast",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A feast for up to twelve creatures. After an hour of eating, each creature has Resistance to Poison damage, is immune to Frightened and Poisoned, and its Hit Point maximum rises by 2d10 (and it gains those Hit Points) for 24 hours.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "minute",
+      "condition": "",
+      "value": 10
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "space",
+        "special": "unoccupied"
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "type": "cube",
+        "size": "10",
+        "count": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "12",
+      "spent": 12,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "loseAll"
+        }
+      ]
+    },
+    "level": 6,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a gem-encrusted bowl worth 1,000+ GP, which the spell consumes",
+      "consumed": true,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "ooQ2IAF9MIDJssGp": {
+        "type": "utility",
+        "_id": "ooQ2IAF9MIDJssGp",
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "-12",
+              "target": "",
+              "scaling": {
+                "mode": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "concentration": false,
+          "override": false,
+          "value": "24"
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Conjure Feast",
+        "img": "systems/dnd5e/icons/svg/activity/summon.svg",
+        "appliedEffects": []
+      },
+      "6GsLAWV31TuE6ysp": {
+        "type": "utility",
+        "_id": "6GsLAWV31TuE6ysp",
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": false,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": ""
+              }
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "Hit Point maximum increased by healing amount"
+        },
+        "duration": {
+          "units": "hour",
+          "concentration": false,
+          "override": true,
+          "value": "24"
+        },
+        "effects": [
+          {
+            "_id": "wGsbKojtJs43Pjyx"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Consume Feast",
+        "img": "",
+        "appliedEffects": [],
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        }
+      }
+    },
+    "identifier": "heroes-feast",
+    "prepared": 0
+  },
+  "_id": "cgasplHeroesFeas",
+  "type": "spell",
+  "img": "icons/consumables/food/cooked-hock-glowing-orange.webp",
+  "effects": [
+    {
+      "name": "Feast's Benefits",
+      "img": "icons/consumables/food/cooked-ribs-rack-glazed-bones-brown-white.webp",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplHeroesFeas",
+      "transfer": false,
+      "_id": "wGsbKojtJs43Pjyx",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "wD3eGV3YbsUQJNYP"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "frightened",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "g1sHm5U5wlcOfZDC"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "poisoned",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "nXpsBXcCYaBZ5yRk"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 86400,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>The creature has &amp;Reference[damageResistance]{Resistance} to Poison damage, and it has Immunity to the &amp;Reference[Frightened] and &amp;Reference[Poisoned] conditions. Its Hit Point maximum also increases by 2d10, and it gains the same number of Hit Points.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Conjure Feast, then Consume Feast for each diner: resistance to poison, immune to Frightened and Poisoned, and +2d10 maximum HP (and HP) for 24 hours."
+      }
+    },
+    "midi-qol": {
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
+    }
+  },
+  "_cgaMacro": "heroes-feast.js"
+}

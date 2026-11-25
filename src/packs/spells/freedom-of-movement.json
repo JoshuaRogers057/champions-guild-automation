@@ -1,0 +1,213 @@
+{
+  "name": "Freedom of Movement",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> For 1 hour the creature you touch isn't slowed by difficult terrain, can't be Paralyzed or Restrained by magic, and has a Swim Speed equal to its Speed.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "willing",
+        "count": "@item.level - 3",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a leather strap",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "bcTPZ6dJ4kHwaBRD"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "bcTPZ6dJ4kHwaBRD"
+        ]
+      }
+    },
+    "identifier": "freedom-of-movement",
+    "prepared": 0
+  },
+  "_id": "cgasplFreedomofM",
+  "type": "spell",
+  "img": "icons/magic/water/elemental-water.webp",
+  "effects": [
+    {
+      "name": "Unrestricted Movement",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplFreedomofM",
+      "duration": {
+        "value": 3600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "img": "icons/skills/movement/feet-bladed-boots-fire.webp",
+      "_id": "bcTPZ6dJ4kHwaBRD",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.ci.value",
+            "value": "paralyzed",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "iuBB9q0P9lG84qEL"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "restrained",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Giipbxums5KcP5D7"
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "value": "@attributes.movement.walk",
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "6gj4UCUQ0Rg6Zo8U"
+          },
+          {
+            "key": "system.attributes.movement.ignoredDifficultTerrain",
+            "value": "all",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "n9YzyKopKuY8hAuH"
+          }
+        ],
+        "magical": true
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: immune to Paralyzed and Restrained, ignores difficult terrain, swim speed."
+      }
+    }
+  }
+}

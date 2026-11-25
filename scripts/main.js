@@ -439,6 +439,26 @@ async function refreshSummonCopies() {
   } catch (err) { console.warn(`${MODULE_ID} | couldn't remove outdated summon copies`, err); }
 }
 
+// Holy Aura: when a Fiend or Undead hits a creature protected by the aura with a melee attack, it makes the spell's
+// CON save or is Blinded. The protection comes from the aura's region, so find the spell through the region behavior.
+Hooks.on("midi-qol.RollComplete", async (wf) => {
+  try {
+    if (!["mwak", "msak"].includes(wf?.activity?.actionType) || !wf.hitTargets?.size) return;
+    if (!["fiend", "undead"].includes(wf.actor?.system?.details?.type?.value)) return;
+    for (const target of wf.hitTargets) {
+      const prot = Array.from(target.actor?.effects ?? []).find((e) => e.name === "Holy Protection");
+      if (!prot) continue;
+      const behavior = prot.origin?.includes(".RegionBehavior.") ? fromUuidSync(prot.origin) : null;
+      const spell = behavior ? fromUuidSync(Array.from(behavior.system?.effects ?? [])[0] ?? "")?.parent : spellOfOrigin(String(prot.origin ?? ""));
+      const save = spell?.system?.activities?.find((a) => a.midiProperties?.identifier === "holyAuraBlind");
+      if (!save || !wf.token) return;
+      await MidiQOL.completeActivityUse(save, { midiOptions: { targetUuids: [wf.token.document.uuid], workflowOptions: { targetConfirmation: "none" } },
+        consume: { spellSlot: false, resources: false }, concentration: { begin: false, end: null }, create: { measuredTemplate: false } }, { configure: false }, {});
+      return; // once per attack
+    }
+  } catch (err) { console.warn(`${MODULE_ID} | Holy Aura failed`, err); }
+});
+
 // After an update, tell the GM once that there are new fixes to apply.
 Hooks.once("ready", async () => {
   if (!game.user.isGM) return;

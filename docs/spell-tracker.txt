@@ -46,7 +46,7 @@
 1|Bane|SRD|done|1|-1d4 to attacks and saves for creatures that fail (concentration)
 1|Bless|SRD|done|1|+1d4 to attacks and saves; extra target per slot level (concentration)
 1|Burning Hands|SRD|done|1|
-1|Charm Person|SRD|verify|3|WIS save or Charmed
+1|Charm Person|SRD|done|3|WIS save or Charmed
 1|Chromatic Orb|SRD|done|2|Choose damage type; matching dice leap to another target
 1|Color Spray|SRD|done|1|Blinded until end of your next turn
 1|Command|SRD|midi|1|
@@ -107,12 +107,12 @@
 2|Alter Self|SRD|skip|3|
 2|Animal Messenger|SRD|skip|3|
 2|Arcane Lock|SRD|skip|3|
-2|Arcane Vigor|SRD|verify|3|Spend Hit Point Dice to heal
+2|Arcane Vigor|SRD|done|3|Spend Hit Point Dice to heal
 2|Augury|SRD|skip|3|
 2|Barkskin|SRD|done|1|AC can't be lower than 17
 2|Blindness/Deafness|SRD|done|2|Repeat CON save at the end of each of its turns
 2|Blur|SRD|done|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
-2|Calm Emotions|SRD|verify|3|
+2|Calm Emotions|SRD|done|3|
 2|Cloud of Daggers|PHB|done|2|Zone: 4d4 slashing on entering or starting turn there
 2|Continual Flame|SRD|skip|3|
 2|Cordon of Arrows|PHB|build|3|Trap: arrows fire at creatures entering 30 ft
@@ -135,13 +135,13 @@
 2|Invisibility|SRD|midi|1|
 2|Knock|SRD|skip|3|
 2|Lesser Restoration|SRD|midi|2|
-2|Levitate|SRD|verify|3|
+2|Levitate|SRD|done|3|
 2|Locate Animals or Plants|SRD|skip|3|
 2|Locate Object|SRD|skip|3|
 2|Magic Mouth|SRD|skip|3|
 2|Magic Weapon|SRD|done|2|+1 weapon (+2/+3 at higher slots)
 2|Melf's Acid Arrow|SRD|done|2|aka Acid Arrow. Half on miss; extra acid at end of target's next turn
-2|Mind Spike|SRD|verify|3|
+2|Mind Spike|SRD|done|3|
 2|Mirror Image|SRD|done|1|Duplicates absorb hits; mirror-image macro exists (needs the PHB-module flag replaced)
 2|Misty Step|SRD|done|1|Teleport
 2|Moonbeam|SRD|done|1|Zone: CON save radiant on entering/starting turn; move the beam as a bonus action
@@ -153,14 +153,14 @@
 2|Ray of Enfeeblement|SRD|done|2|Weaker damage + STR disadvantage; repeat save end of each turn
 2|Rope Trick|SRD|skip|3|
 2|Scorching Ray|SRD|done|1|One attack per ray; beams macro already handles it, just package it
-2|See Invisibility|SRD|verify|3|
+2|See Invisibility|SRD|done|3|
 2|Shatter|SRD|done|1|
 2|Shining Smite|SRD|done|2|Check it works from the Paladin's Smite prompt (glowing, no invisibility)
 2|Silence|SRD|skip|3|
-2|Spider Climb|SRD|verify|3|
+2|Spider Climb|SRD|done|3|
 2|Spike Growth|SRD|done|2|2d4 piercing per 5 ft moved inside the area
 2|Spiritual Weapon|SRD|done|1|Summoned weapon; bonus-action melee spell attack; move it
-2|Suggestion|SRD|verify|3|
+2|Suggestion|SRD|done|3|
 2|Summon Beast|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 2|Warding Bond|SRD|done|2|+1 AC/saves, resistance; caster takes the same damage
 2|Web|SRD|midi|2|
@@ -185,8 +185,8 @@
 3|Feign Death|PHB|skip|3|
 3|Fireball|SRD|done|1|
 3|Fly|SRD|done|1|
-3|Gaseous Form|SRD|verify|3|
-3|Glyph of Warding|SRD|verify|3|
+3|Gaseous Form|SRD|done|3|
+3|Glyph of Warding|SRD|done|3|
 3|Haste|SRD|done|1|+2 AC, double speed, extra action; check the lethargy when it ends
 3|Hunger of Hadar|PHB|done|2|Zone: cold at turn start, acid at turn end, blinded inside
 3|Hypnotic Pattern|SRD|done|1|Charmed + Incapacitated; must end when the creature takes damage
@@ -202,7 +202,7 @@
 3|Plant Growth|SRD|skip|3|
 3|Protection from Energy|SRD|done|2|Resistance to the chosen type
 3|Remove Curse|SRD|skip|3|
-3|Revivify|SRD|verify|3|Returns to 1 HP
+3|Revivify|SRD|done|3|Returns to 1 HP
 3|Sending|SRD|skip|3|
 3|Sleet Storm|SRD|build|3|Zone: DEX save or Prone; concentration checks
 3|Slow|SRD|done|2|-2 AC/DEX saves, half speed, one action; repeat WIS save end of each turn
@@ -222,7 +222,7 @@
 4|Aura of Purity|PHB|build|3|Aura: poison resistance, advantage on saves vs conditions
 4|Banishment|SRD|done|2|Remove the target (hide token) until the spell ends
 4|Blight|SRD|done|2|
-4|Charm Monster|SRD|verify|3|
+4|Charm Monster|SRD|done|3|
 4|Compulsion|SRD|build|3|Forced movement each turn
 4|Confusion|SRD|done|2|d10 behaviour roll each turn; repeat save
 4|Conjure Minor Elementals|SRD|done|2|2024: your attacks deal +2d8 elemental near you
@@ -231,11 +231,11 @@
 4|Death Ward|SRD|done|2|First drop to 0 HP becomes 1 HP instead
 4|Dimension Door|SRD|done|2|Teleport (+ a willing creature)
 4|Divination|SRD|skip|3|
-4|Dominate Beast|SRD|verify|3|
+4|Dominate Beast|SRD|done|3|
 4|Evard's Black Tentacles|SRD|done|2|aka Black Tentacles. Zone: restrained + bludgeoning
 4|Fabricate|SRD|skip|3|
 4|Fire Shield|SRD|done|2|Melee attackers take 2d8 fire/cold; resistance
-4|Freedom of Movement|SRD|verify|3|
+4|Freedom of Movement|SRD|done|3|
 4|Giant Insect|SRD|build|3|Summon
 4|Grasping Vine|PHB|build|3|Pull 30 ft on a failed save; bonus action each turn
 4|Greater Invisibility|SRD|midi|2|
@@ -246,7 +246,7 @@
 4|Locate Creature|SRD|skip|3|
 4|Mordenkainen's Faithful Hound|SRD|build|3|aka Faithful Hound. Bites invisible intruders
 4|Mordenkainen's Private Sanctum|SRD|skip|3|aka Private Sanctum
-4|Otiluke's Resilient Sphere|SRD|verify|3|aka Resilient Sphere
+4|Otiluke's Resilient Sphere|SRD|done|3|aka Resilient Sphere
 4|Phantasmal Killer|SRD|done|2|Frightened; repeat WIS save end of turn with psychic damage
 4|Polymorph|SRD|done|2|Transform into a beast; revert at 0 HP
 4|Staggering Smite|PHB|done|2|Smite prompt; Stunned until end of your next turn on a failed save
@@ -258,7 +258,7 @@
 4|Vitriolic Sphere|SRD|done|2|Plus acid at the end of the target's next turn
 4|Wall of Fire|SRD|done|2|Wall: damage on entering/ending turn near the hot side
 5|Animate Objects|SRD|done|2|Summon animated objects
-5|Antilife Shell|SRD|verify|3|
+5|Antilife Shell|SRD|done|3|
 5|Awaken|SRD|skip|3|
 5|Banishing Smite|PHB|done|2|Smite prompt; banish at 50 HP or less
 5|Bigby's Hand|SRD|done|2|aka Arcane Hand. Per-caster summon built before (see Bigby's Hand notes)
@@ -270,11 +270,11 @@
 5|Conjure Elemental|SRD|done|2|2024: elemental spirit, restrains/damages nearby
 5|Conjure Volley|PHB|done|2|
 5|Contact Other Plane|SRD|skip|3|
-5|Contagion|SRD|verify|3|Poisoned; repeat saves
+5|Contagion|SRD|done|3|Poisoned; repeat saves
 5|Creation|SRD|skip|3|
 5|Destructive Wave|PHB|done|2|CON save, creatures of your choice; knocked Prone
 5|Dispel Evil and Good|SRD|skip|3|
-5|Dominate Person|SRD|verify|3|
+5|Dominate Person|SRD|done|3|
 5|Dream|SRD|skip|3|
 5|Flame Strike|SRD|done|1|
 5|Geas|SRD|skip|3|
@@ -322,11 +322,11 @@
 6|Guards and Wards|SRD|skip|3|
 6|Harm|SRD|midi|2|
 6|Heal|SRD|done|2|
-6|Heroes' Feast|SRD|verify|3|
+6|Heroes' Feast|SRD|done|3|
 6|Magic Jar|SRD|skip|3|
 6|Mass Suggestion|SRD|skip|3|
 6|Move Earth|SRD|skip|3|
-6|Otiluke's Freezing Sphere|SRD|verify|3|aka Freezing Sphere
+6|Otiluke's Freezing Sphere|SRD|done|3|aka Freezing Sphere
 6|Otto's Irresistible Dance|SRD|midi|3|aka Irresistible Dance
 6|Planar Ally|SRD|skip|3|
 6|Primordial Ward|PHB|build|3|Resistances; reaction to turn one into immunity
@@ -335,7 +335,7 @@
 6|Sunbeam|SRD|midi|2|
 6|Tasha's Bubbling Cauldron|PHB|skip|3|
 6|Transport via Plants|SRD|skip|3|
-6|True Seeing|SRD|verify|3|
+6|True Seeing|SRD|done|3|
 6|Wall of Ice|SRD|build|3|Wall: damage + cold zone
 6|Wall of Thorns|SRD|build|3|Wall: damage on entering
 6|Wind Walk|SRD|skip|3|
@@ -345,13 +345,13 @@
 7|Divine Word|SRD|midi|3|
 7|Etherealness|SRD|skip|3|
 7|Finger of Death|SRD|midi|3|
-7|Fire Storm|SRD|verify|3|
+7|Fire Storm|SRD|done|3|
 7|Forcecage|SRD|skip|3|
 7|Mirage Arcane|SRD|skip|3|
 7|Mordenkainen's Magnificent Mansion|SRD|skip|3|aka Magnificent Mansion
 7|Mordenkainen's Sword|SRD|done|2|aka Arcane Sword. Summoned sword, bonus-action attacks
 7|Plane Shift|SRD|skip|3|
-7|Power Word Fortify|PHB|verify|3|Split 120 temp HP between creatures
+7|Power Word Fortify|PHB|done|3|Split 120 temp HP between creatures
 7|Prismatic Spray|SRD|midi|3|
 7|Project Image|SRD|skip|3|
 7|Regenerate|SRD|midi|3|
@@ -368,15 +368,15 @@
 8|Clone|SRD|skip|3|
 8|Control Weather|SRD|skip|3|
 8|Demiplane|SRD|skip|3|
-8|Dominate Monster|SRD|verify|3|
+8|Dominate Monster|SRD|done|3|
 8|Earthquake|SRD|build|3|Zone: prone, concentration saves, fissures
 8|Glibness|SRD|skip|3|
-8|Holy Aura|SRD|verify|3|Advantage on saves, attackers have disadvantage; fiend/undead blinded
+8|Holy Aura|SRD|done|3|Advantage on saves, attackers have disadvantage; fiend/undead blinded
 8|Incendiary Cloud|SRD|build|3|Moving zone: DEX save fire
-8|Maze|SRD|verify|3|
-8|Mind Blank|SRD|verify|3|
+8|Maze|SRD|done|3|
+8|Mind Blank|SRD|done|3|
 8|Power Word Stun|SRD|midi|3|
-8|Sunburst|SRD|verify|3|Blinded with repeat saves
+8|Sunburst|SRD|done|3|Blinded with repeat saves
 8|Tsunami|SRD|build|3|Moving wall
 9|Astral Projection|SRD|skip|3|
 9|Foresight|SRD|midi|3|
@@ -384,7 +384,7 @@
 9|Imprisonment|SRD|midi|3|
 9|Mass Heal|SRD|midi|3|
 9|Meteor Swarm|SRD|midi|3|
-9|Power Word Heal|SRD|verify|3|
+9|Power Word Heal|SRD|done|3|
 9|Power Word Kill|SRD|build|3|Dies at 100 HP or less, otherwise 12d12 psychic
 9|Prismatic Wall|SRD|build|3|Layered wall effects
 9|Shapechange|SRD|midi|3|

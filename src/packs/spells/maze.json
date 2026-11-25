@@ -1,0 +1,187 @@
+{
+  "name": "Maze",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Banish a creature you can see into a maze while you concentrate (its token is hidden). It can take the Study action to make a DC 20 INT (Investigation) check, escaping and ending the spell on a success (the DM ends it). It reappears where it left.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "creature",
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "ft",
+      "special": "",
+      "value": "60"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 8,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "XUv40HG2L2uG3wM7": {
+        "type": "check",
+        "_id": "XUv40HG2L2uG3wM7",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "y7cYsJ0DCzXt4Tvy"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "check": {
+          "dc": {
+            "calculation": "",
+            "formula": "20"
+          },
+          "associated": "inv",
+          "ability": ""
+        },
+        "name": "Banish to Maze",
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "maze",
+    "prepared": 0
+  },
+  "_id": "cgasplMaze000000",
+  "type": "spell",
+  "img": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp",
+  "effects": [
+    {
+      "name": "Banished",
+      "img": "icons/sundries/misc/lock-steel-blue.webp",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplMaze000000",
+      "transfer": false,
+      "_id": "y7cYsJ0DCzXt4Tvy",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "macro.itemMacro",
+            "value": "",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000030",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>The target can take a Study action to try to escape. When it does so, it makes a [[/check ability=int skill=inv dc=20]] check. If it succeeds, it escapes, and the spell ends.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the target vanishes (token hidden) into the maze; it can try a DC 20 INT (Investigation) check as an action to escape."
+      }
+    }
+  },
+  "_cgaMacro": "banish.js"
+}

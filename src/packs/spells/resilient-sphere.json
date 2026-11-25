@@ -1,0 +1,299 @@
+{
+  "name": "Resilient Sphere",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A Large or smaller creature (DEX save if unwilling) is sealed in a sphere for 1 minute: nothing passes in or out, and it can't be damaged from outside (nor damage anything outside). It can roll the sphere at half its Speed. Disintegrate destroys the sphere.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "creatureOrObject",
+        "special": "Large or smaller"
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "ft",
+      "special": "",
+      "value": "30"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 4,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a glass sphere",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "t8inBXcX3WVtXJzC": {
+        "type": "save",
+        "_id": "t8inBXcX3WVtXJzC",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "U5UciD171a5jcc7s"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "damage": {
+          "parts": [],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": "dex",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [
+          "U5UciD171a5jcc7s"
+        ]
+      }
+    },
+    "identifier": "resilient-sphere",
+    "prepared": 0
+  },
+  "_id": "cgasplOtilukesRe",
+  "type": "spell",
+  "img": "icons/commodities/gems/pearl-swirl-teal.webp",
+  "effects": [
+    {
+      "name": "Enclosed in Sphere",
+      "img": "icons/commodities/gems/gem-amber-insect-orange.webp",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplOtilukesRe",
+      "transfer": false,
+      "_id": "U5UciD171a5jcc7s",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "acid",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000004",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "bludgeoning",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000005",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "cold",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000006",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "fire",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000007",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "force",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000008",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "lightning",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000009",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "necrotic",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000010",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "piercing",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000011",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "poison",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000012",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "psychic",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000013",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "radiant",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000014",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "slashing",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000015",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.traits.di.value",
+            "value": "thunder",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaChgP3a0000016",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>An enclosed creature can take an action to push against the sphere’s walls and thus roll the sphere at up to half the creature’s Speed.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: DEX save (if unwilling) or enclosed: immune to damage from outside (it can't hurt anything outside either; the DM enforces that)."
+      }
+    }
+  }
+}
