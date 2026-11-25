@@ -5,14 +5,14 @@
 #             build (needs automation work) | skip (roleplay / DM-handled)
 #   priority: 1 = common in combat, do first; 2 = regular; 3 = rare / high level
 # Names use the PHB names; "aka" in the note is the SRD name, which the CGA item must list as an alias.
-0|Acid Splash|SRD|verify|1|DEX save, up to two creatures within 5 ft of each other; cantrip scaling
+0|Acid Splash|SRD|done|1|DEX save, up to two creatures within 5 ft of each other; cantrip scaling
 0|Blade Ward|PHB|build|2|Attackers subtract 1d4 from attack rolls against you (concentration)
 0|Chill Touch|SRD|midi|1|
 0|Dancing Lights|SRD|skip|3|
 0|Druidcraft|SRD|skip|3|
 0|Eldritch Blast|SRD|done|1|One attack per beam, Agonizing Blast, Repelling Blast push
 0|Elementalism|SRD|skip|3|
-0|Fire Bolt|SRD|verify|1|
+0|Fire Bolt|SRD|done|1|
 0|Friends|PHB|skip|3|
 0|Guidance|SRD|done|1|Skill picker, +1d4
 0|Light|SRD|skip|3|midi-qol has one
@@ -21,51 +21,51 @@
 0|Message|SRD|skip|3|
 0|Mind Sliver|PHB|build|1|INT save psychic damage; failed save subtracts 1d4 from its next saving throw
 0|Minor Illusion|SRD|skip|3|
-0|Poison Spray|SRD|verify|1|2024 version is a ranged spell attack
+0|Poison Spray|SRD|done|1|2024 version is a ranged spell attack
 0|Prestidigitation|SRD|skip|3|
-0|Produce Flame|SRD|verify|1|
-0|Ray of Frost|SRD|verify|1|Speed -10 ft until your next turn
+0|Produce Flame|SRD|done|1|
+0|Ray of Frost|SRD|done|1|Speed -10 ft until your next turn
 0|Resistance|SRD|build|2|Reduce one damage type by 1d4 once per turn (concentration)
-0|Sacred Flame|SRD|verify|1|No benefit from cover
-0|Shillelagh|SRD|verify|1|Spellcasting ability + bigger damage die on the club/staff
-0|Shocking Grasp|SRD|verify|1|No reactions until its next turn
+0|Sacred Flame|SRD|done|1|No benefit from cover
+0|Shillelagh|SRD|done|1|Spellcasting ability + bigger damage die on the club/staff
+0|Shocking Grasp|SRD|done|1|No reactions until its next turn
 0|Sorcerous Burst|SRD|build|2|Damage dice explode on 8s, up to spellcasting-modifier extra dice
 0|Spare the Dying|SRD|midi|2|
 0|Starry Wisp|SRD|verify|2|Target can't be invisible until end of your next turn
 0|Thaumaturgy|SRD|skip|3|
 0|Thorn Whip|PHB|build|1|Melee spell attack; pull Large or smaller 10 ft toward you (no token spin)
-0|Thunderclap|PHB|verify|1|CON save, every creature within 5 ft
+0|Thunderclap|PHB|done|1|CON save, every creature within 5 ft
 0|Toll the Dead|PHB|midi|1|d12 vs wounded targets
-0|True Strike|SRD|verify|1|Weapon attack with spellcasting ability; extra radiant at 5th+
-0|Vicious Mockery|SRD|verify|1|Failed save: disadvantage on its next attack roll
-0|Word of Radiance|PHB|verify|1|CON save, creatures of your choice within 5 ft
+0|True Strike|SRD|done|1|Weapon attack with spellcasting ability; extra radiant at 5th+
+0|Vicious Mockery|SRD|done|1|Failed save: disadvantage on its next attack roll
+0|Word of Radiance|PHB|done|1|CON save, creatures of your choice within 5 ft
 1|Alarm|SRD|skip|3|
 1|Animal Friendship|SRD|skip|3|
 1|Armor of Agathys|PHB|build|1|Temp HP; while it lasts, melee attackers take cold damage
 1|Arms of Hadar|PHB|build|2|STR save necrotic all around; failed save = no reactions until its next turn
-1|Bane|SRD|verify|1|-1d4 to attacks and saves for creatures that fail (concentration)
-1|Bless|SRD|verify|1|+1d4 to attacks and saves; extra target per slot level (concentration)
-1|Burning Hands|SRD|verify|1|
+1|Bane|SRD|done|1|-1d4 to attacks and saves for creatures that fail (concentration)
+1|Bless|SRD|done|1|+1d4 to attacks and saves; extra target per slot level (concentration)
+1|Burning Hands|SRD|done|1|
 1|Charm Person|SRD|verify|3|WIS save or Charmed
 1|Chromatic Orb|SRD|build|2|Choose damage type; matching dice leap to another target
-1|Color Spray|SRD|verify|1|Blinded until end of your next turn
+1|Color Spray|SRD|done|1|Blinded until end of your next turn
 1|Command|SRD|midi|1|
 1|Compelled Duel|PHB|build|2|Mirjam's compelled-duel macro exists (disadvantage vs others, end conditions)
 1|Comprehend Languages|SRD|skip|3|
 1|Create or Destroy Water|SRD|skip|3|
-1|Cure Wounds|SRD|verify|1|
+1|Cure Wounds|SRD|done|1|
 1|Detect Evil and Good|SRD|skip|3|
 1|Detect Magic|SRD|skip|3|midi-qol has one
 1|Detect Poison and Disease|SRD|skip|3|
 1|Disguise Self|SRD|skip|3|
 1|Dissonant Whispers|SRD|verify|2|Half on save; the forced Reaction move is DM-handled
-1|Divine Favor|SRD|verify|1|+1d4 radiant on weapon hits
+1|Divine Favor|SRD|done|1|+1d4 radiant on weapon hits
 1|Divine Smite|SRD|done|1|Via Paladin's Smite prompt
 1|Ensnaring Strike|SRD|midi|2|
 1|Entangle|SRD|build|2|Restrained on failed STR save; action STR check to escape; difficult terrain
 1|Expeditious Retreat|SRD|skip|3|
 1|Faerie Fire|SRD|build|1|Outlined creatures: attacks against them have advantage, no invisibility
-1|False Life|SRD|verify|1|Temp HP
+1|False Life|SRD|done|1|Temp HP
 1|Feather Fall|SRD|skip|3|
 1|Find Familiar|SRD|build|2|Summon; per-caster familiar pattern exists (necromancy familiar)
 1|Fog Cloud|SRD|skip|3|
@@ -73,18 +73,18 @@
 1|Grease|SRD|build|2|Prone on failed DEX save; save again entering or ending turn in it
 1|Guiding Bolt|SRD|midi|1|
 1|Hail of Thorns|PHB|build|2|Next ranged weapon hit: DEX save in a 5-ft area around the target
-1|Healing Word|SRD|verify|1|
+1|Healing Word|SRD|done|1|
 1|Hellish Rebuke|SRD|midi|1|
 1|Heroism|SRD|build|2|Temp HP = spellcasting mod at the start of each turn; immune to Frightened
 1|Hex|SRD|done|1|+1d6 on hits, Curse New Creature
 1|Hunter's Mark|SRD|done|1|+1d6 on hits, Move Mark
-1|Ice Knife|SRD|verify|1|Attack, then DEX save for everything within 5 ft
+1|Ice Knife|SRD|done|1|Attack, then DEX save for everything within 5 ft
 1|Identify|SRD|skip|3|midi-qol has one
 1|Illusory Script|SRD|skip|3|
-1|Inflict Wounds|SRD|verify|1|2024: CON save, half on success
+1|Inflict Wounds|SRD|done|1|2024: CON save, half on success
 1|Jump|SRD|skip|3|
 1|Longstrider|SRD|verify|2|Speed +10 ft
-1|Mage Armor|SRD|verify|1|AC 13 + DEX
+1|Mage Armor|SRD|done|1|AC 13 + DEX
 1|Magic Missile|SRD|done|1|Darts by slot, split between targets, one roll
 1|Protection from Evil and Good|SRD|build|2|Aberration/celestial/elemental/fey/fiend/undead attackers have disadvantage; charm/fear immunity vs them
 1|Purify Food and Drink|SRD|skip|3|
@@ -92,7 +92,7 @@
 1|Sanctuary|SRD|midi|2|
 1|Searing Smite|SRD|done|1|Via Paladin's Smite prompt
 1|Shield|SRD|midi|1|
-1|Shield of Faith|SRD|verify|1|+2 AC (concentration)
+1|Shield of Faith|SRD|done|1|+2 AC (concentration)
 1|Silent Image|SRD|skip|3|
 1|Sleep|SRD|midi|1|
 1|Speak with Animals|SRD|skip|3|
@@ -109,7 +109,7 @@
 2|Arcane Lock|SRD|skip|3|
 2|Arcane Vigor|SRD|verify|3|Spend Hit Point Dice to heal
 2|Augury|SRD|skip|3|
-2|Barkskin|SRD|verify|1|AC can't be lower than 17
+2|Barkskin|SRD|done|1|AC can't be lower than 17
 2|Blindness/Deafness|SRD|build|2|Repeat CON save at the end of each of its turns
 2|Blur|SRD|build|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
 2|Calm Emotions|SRD|verify|3|
@@ -143,7 +143,7 @@
 2|Melf's Acid Arrow|SRD|verify|2|aka Acid Arrow. Half on miss; extra acid at end of target's next turn
 2|Mind Spike|SRD|verify|3|
 2|Mirror Image|SRD|build|1|Duplicates absorb hits; mirror-image macro exists (needs the PHB-module flag replaced)
-2|Misty Step|SRD|verify|1|Teleport
+2|Misty Step|SRD|done|1|Teleport
 2|Moonbeam|SRD|build|1|Zone: CON save radiant on entering/starting turn; move the beam as a bonus action
 2|Nystul's Magic Aura|SRD|skip|3|aka Arcanist's Magic Aura
 2|Pass without Trace|SRD|midi|2|
@@ -154,7 +154,7 @@
 2|Rope Trick|SRD|skip|3|
 2|Scorching Ray|SRD|build|1|One attack per ray; beams macro already handles it, just package it
 2|See Invisibility|SRD|verify|3|
-2|Shatter|SRD|verify|1|
+2|Shatter|SRD|done|1|
 2|Shining Smite|SRD|build|2|Check it works from the Paladin's Smite prompt (glowing, no invisibility)
 2|Silence|SRD|skip|3|
 2|Spider Climb|SRD|verify|3|
@@ -183,16 +183,16 @@
 3|Elemental Weapon|PHB|build|2|+1 attack and +1d4 elemental damage on the weapon
 3|Fear|SRD|build|2|Frightened, drop held item, must Dash away; save only out of sight
 3|Feign Death|PHB|skip|3|
-3|Fireball|SRD|verify|1|
-3|Fly|SRD|verify|1|
+3|Fireball|SRD|done|1|
+3|Fly|SRD|done|1|
 3|Gaseous Form|SRD|verify|3|
 3|Glyph of Warding|SRD|verify|3|
-3|Haste|SRD|verify|1|+2 AC, double speed, extra action; check the lethargy when it ends
+3|Haste|SRD|done|1|+2 AC, double speed, extra action; check the lethargy when it ends
 3|Hunger of Hadar|PHB|build|2|Zone: cold at turn start, acid at turn end, blinded inside
 3|Hypnotic Pattern|SRD|build|1|Charmed + Incapacitated; must end when the creature takes damage
 3|Leomund's Tiny Hut|SRD|skip|3|aka Tiny Hut
 3|Lightning Arrow|PHB|build|2|Next ranged weapon attack becomes lightning + burst
-3|Lightning Bolt|SRD|verify|1|
+3|Lightning Bolt|SRD|done|1|
 3|Magic Circle|SRD|skip|3|
 3|Major Image|SRD|skip|3|
 3|Mass Healing Word|SRD|verify|2|
@@ -266,7 +266,7 @@
 5|Cloudkill|SRD|build|2|Moving zone: CON save poison at turn start
 5|Commune|SRD|skip|3|
 5|Commune with Nature|SRD|skip|3|
-5|Cone of Cold|SRD|verify|1|
+5|Cone of Cold|SRD|done|1|
 5|Conjure Elemental|SRD|build|2|2024: elemental spirit, restrains/damages nearby
 5|Conjure Volley|PHB|verify|2|
 5|Contact Other Plane|SRD|skip|3|
@@ -276,7 +276,7 @@
 5|Dispel Evil and Good|SRD|skip|3|
 5|Dominate Person|SRD|verify|3|
 5|Dream|SRD|skip|3|
-5|Flame Strike|SRD|verify|1|
+5|Flame Strike|SRD|done|1|
 5|Geas|SRD|skip|3|
 5|Greater Restoration|SRD|skip|3|
 5|Hallow|SRD|skip|3|

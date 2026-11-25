@@ -3,6 +3,24 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.4.0
+
+33 priority-1 spells, each tested with midi-qol + CAT (damage, half on a successful save, cantrip and upcast
+scaling, effects, AC, healing). DMs: run **Mass Apply / Update** so every character's copy, whether from
+Plutonium, D&D Beyond or the compendium, gets the tested version.
+
+- Worked as-is (now shipped so every table gets the same version): Acid Splash, Fire Bolt, Poison Spray,
+  Produce Flame, Ray of Frost, Sacred Flame, Shillelagh, True Strike, Bane, Bless, Burning Hands, Color Spray,
+  Cure Wounds, Divine Favor, False Life, Healing Word, Ice Knife, Inflict Wounds, Mage Armor, Shield of Faith,
+  Barkskin, Misty Step, Shatter, Fireball, Fly, Lightning Bolt, Cone of Cold, Flame Strike.
+- Fixed:
+  - **Shocking Grasp**: the target really can't take reactions until its next turn.
+  - **Vicious Mockery**: real disadvantage on the target's next attack roll.
+  - **Haste**: Lethargy (Incapacitated, speed 0 until the end of its next turn) when the spell ends.
+- New (Player's Handbook cantrips that aren't in the free compendium):
+  - **Thunderclap**: CON save, every creature within 5 ft.
+  - **Word of Radiance**: CON save, the creatures you target within 5 ft.
+
 ## 0.3.0
 
 - **Magic Missile** (2024) - new fix 1.0.0. 3 darts at 1st level, +1 per slot level above 1st.

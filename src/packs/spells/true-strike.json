@@ -1,0 +1,429 @@
+{
+  "name": "True Strike",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> tested with midi-qol and CAT.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 0,
+    "school": "div",
+    "properties": [
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a weapon with which you have proficiency and that is worth 1+ CP",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "always",
+      "prepared": false
+    },
+    "activities": {
+      "4TlVwMTDg8tqME2z": {
+        "type": "enchant",
+        "_id": "4TlVwMTDg8tqME2z",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "SouQfUgwb9LlUraq",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [
+                "CiLsaHBi9F6eIXUS"
+              ],
+              "effect": [],
+              "item": []
+            }
+          },
+          {
+            "_id": "Zsx8UvC9DmdrA1E1",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [
+                "cGNXKjpoRima6wjQ"
+              ],
+              "effect": [],
+              "item": []
+            }
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {},
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "weapon"
+        },
+        "name": "Enchant Weapon",
+        "img": "",
+        "appliedEffects": [
+          "SouQfUgwb9LlUraq",
+          "Zsx8UvC9DmdrA1E1"
+        ]
+      },
+      "CiLsaHBi9F6eIXUS": {
+        "type": "attack",
+        "name": "Spellcasting Attack",
+        "_id": "CiLsaHBi9F6eIXUS",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          },
+          "ability": "spellcasting",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "img": "systems/dnd5e/icons/svg/damage/bludgeoning.svg",
+        "appliedEffects": []
+      },
+      "cGNXKjpoRima6wjQ": {
+        "type": "attack",
+        "name": "Spellcasting Attack",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "attack": {
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          },
+          "ability": "spellcasting",
+          "bonus": ""
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "_id": "cGNXKjpoRima6wjQ",
+        "img": "systems/dnd5e/icons/svg/damage/piercing.svg",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "true-strike",
+    "prepared": 0
+  },
+  "_id": "cgasplTrueStrike",
+  "type": "spell",
+  "img": "icons/magic/unholy/hand-weapon-glow-black-green.webp",
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "True Strike",
+      "img": "icons/magic/unholy/hand-weapon-glow-black-green.webp",
+      "disabled": false,
+      "_id": "SouQfUgwb9LlUraq",
+      "system": {
+        "changes": [
+          {
+            "key": "system.damage.base.types",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "NqPYDvYbRpTtg6YE"
+          },
+          {
+            "key": "name",
+            "value": "{} (True Strike)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "beEX5KQ4LurYy6xo"
+          },
+          {
+            "key": "system.damage.parts",
+            "value": [
+              [
+                "(floor((@details.level + 1) / 6))d6",
+                "radiant"
+              ]
+            ],
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "rzGxK5IPNeHBwkwR"
+          },
+          {
+            "key": "activities[attack].attack.ability",
+            "value": "spellcasting",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "dGQhUxdn5EEAAmem"
+          }
+        ]
+      },
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "type": "enchantment",
+      "name": "Ranged Weapon",
+      "img": "icons/skills/ranged/arrow-strike-glowing-teal.webp",
+      "disabled": false,
+      "system": {
+        "changes": [
+          {
+            "key": "system.damage.base.types",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "2FVE25dNNx55RNCB"
+          },
+          {
+            "key": "name",
+            "value": "{} (True Strike)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "scvchDGqZDWNGn5x"
+          },
+          {
+            "key": "system.damage.base.bonus",
+            "value": "(floor((@details.level + 1) / 6))d6[radiant]",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "gOksBhqQo3z8qwfC"
+          }
+        ]
+      },
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "Zsx8UvC9DmdrA1E1",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [
+          "CiLsaHBi9F6eIXUS",
+          "cGNXKjpoRima6wjQ"
+        ],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: tested (damage, saves, scaling, effects)."
+      }
+    }
+  }
+}
