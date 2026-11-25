@@ -3,6 +3,49 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.20.0
+
+All 81 priority-2 class features from the 2024 Player's Handbook. DMs: update, then run **Mass Apply / Update** on
+each character. The rules marked "(module rule)" work as soon as the module updates; the new module code is in
+`scripts/class-rules-p2.js`.
+
+- Barbarian: **Brutal Strike** (prompt before a reckless Strength attack: extra d10s and Forceful/Hamstring, at 13
+  Staggering/Sundering), **Relentless Rage** (automatic CON save at 0 HP, module rule), **Retaliation** (Reaction
+  when damaged). Wild Heart **Rage of the Wilds** (Bear resistances, Eagle, Wolf aura), World Tree **Vitality of the
+  Tree** and **Branches of the Tree** (turn-start prompts, module rule), Berserker **Mindless Rage**, Zealot
+  **Warrior of the Gods**, **Fanatical Focus** and **Zealous Presence**. These riders are added when your Rage starts.
+- Bard: **Countercharm** (reroll with Advantage, module rule). Valor **Combat Inspiration** (your Bardic Inspiration
+  can also add to damage or to AC). Dance **Dazzling Footwork**. Glamour **Beguiling Magic** and **Mantle of
+  Inspiration**.
+- Cleric: **Sear Undead**. Light **Radiance of the Dawn** and **Improved Warding Flare**. Trickery **Blessing of the
+  Trickster** and **Invoke Duplicity** (a duplicate token; Advantage when you flank with it). War **Guided Strike**
+  (+10 to a near miss, module rule).
+- Druid: **Circle of the Land Spells** (Choose Land adds that land's spells), Moon **Improved Circle Forms** (+WIS to
+  CON saves and a Radiant option in beast form) and **Moonlight Step**, Sea **Aquatic Affinity**, Stars **Star Map**
+  (free Guiding Bolts) and **Cosmic Omen** (Weal/Woe rolled on a Long Rest).
+- Fighter: **Tactical Mind**, **Indomitable** and **Heroic Warrior**; Battle Master **Ambush**, **Commander's
+  Strike**, **Evasive Footwork**, **Feinting Attack**, **Lunging Attack**, **Maneuvering Attack**, **Rally** and
+  **Sweeping Attack**; Eldritch Knight **Eldritch Strike**; Psi Warrior **Telekinetic Adept**.
+- Monk: **Empowered Strikes** (Force Unarmed Strikes), **Heightened Focus** (Patient Defense temp HP), Mercy
+  **Physician's Touch** (Hand of Healing ends a condition), Shadow **Shadow Arts** and **Shadow Step**, Elements
+  **Elemental Burst**.
+- Paladin: **Aura of Courage**, **Aura of Devotion**, **Aura of Warding** and **Aura of Alacrity** (kept up to date
+  as tokens move), Glory **Inspiring Smite** and **Peerless Athlete**, Ancients **Nature's Wrath**, Vengeance
+  **Relentless Avenger**.
+- Ranger: Fey Wanderer **Otherworldly Glamour**, Gloom Stalker **Umbral Sight**, Hunter **Defensive Tactics**
+  (Multiattack Defense is a module rule), Beast Master **Exceptional Training** (a reminder item).
+- Rogue: **Steady Aim**; Soulknife **Psi-Bolstered Knack** and **Soul Blades** (Homing Strikes, Psychic Teleportation).
+- Sorcerer: Aberrant **Psychic Defenses**, Clockwork **Restore Balance** and **Bastion of Law**, Draconic
+  **Elemental Affinity**, Wild Magic **Wild Magic Surge** and **Tides of Chaos**.
+- Warlock: **Eldritch Smite**, **Lifedrinker**, Archfey **Misty Escape**, Celestial **Radiant Soul**, Fiend **Dark
+  One's Own Luck**, Great Old One **Psychic Spells** and **Eldritch Hex**.
+- Wizard: Abjurer **Projected Ward** (works with midi-qol's Arcane Ward), Diviner **Expert Divination**, Evoker
+  **Potent Cantrip**, **Sculpt Spells** and **Empowered Evocation**, Illusionist **Illusory Self**.
+- Updated: Rage, Bardic Inspiration, Combat Superiority, Martial Arts, Monk's Focus, Hand of Healing, Wrath of the Sea
+  (1.1.0) and Psionic Power (1.1.0, the Soulknife now gets the right number of dice).
+- Fix: **Heat Metal** (1.0.1) and **Phantasmal Killer** (1.0.2) now really give Disadvantage on ability checks (they
+  used the wrong midi-qol flag).
+
 ## 0.19.0
 
 The rest of the priority-1 class features: Druid forms and the Beast Master's companion. DMs: update, then run
