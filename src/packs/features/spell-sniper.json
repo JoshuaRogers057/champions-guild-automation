@@ -1,0 +1,118 @@
+{
+  "name": "Spell Sniper",
+  "type": "feat",
+  "_id": "cgaFtSpelSnip000",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your spell attacks ignore Half and Three-Quarters Cover, and an enemy within 5 feet doesn't give them Disadvantage. The range of spell attacks is extended (midi-qol doubles it; the book adds 60 feet to spells with a range of 10 feet or more).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "spell-sniper",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaSpellSniperFx",
+      "name": "Spell Sniper",
+      "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.spellSniper",
+            "value": "true",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg05020000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.ignoreNearbyFoes",
+            "value": "(activity?.actionType === \"rwak\" && items.some((i) => i.identifier === \"sharpshooter\")) || (activity?.actionType === \"rsak\" && items.some((i) => i.identifier === \"spell-sniper\")) || (/crossbow/.test(workflow?.item?.system?.type?.baseItem ?? \"\") && items.some((i) => i.identifier === \"crossbow-expert\"))",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg05030000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Spell attacks ignore Half/Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; midi-qol doubles spell attack range (book: +60 ft)."
+      }
+    }
+  }
+}

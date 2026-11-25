@@ -1,0 +1,51 @@
+{
+  "name": "Interception",
+  "type": "feat",
+  "_id": "cgaFtInte0000000",
+  "img": "icons/magic/defensive/shield-barrier-deflect-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When a creature hits an ally within 5 feet of you while you hold a Shield or a Simple or Martial weapon, you're asked whether to use your Reaction to reduce the damage by 1d10 + your Proficiency Bonus.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "interception",
+    "type": {
+      "value": "feat",
+      "subtype": "fightingStyle"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Reaction prompt when an ally within 5 ft is hit: damage reduced by 1d10 + PB (module rule)."
+      }
+    }
+  }
+}

@@ -34,7 +34,7 @@
    "source": "PHB",
    "category": "done",
    "priority": 1,
-   "note": "Luck Points (PB per Long Rest): a failed saving throw offers a Luck Point for Advantage (reroll, keep the higher); use the feat for Advantage on your next d20 Test or Disadvantage on an attack against you",
+   "note": "Luck Points (PB per Long Rest): before a saving throw without Advantage you are asked whether to spend one for Advantage (module rule); use the feat for Advantage on your next d20 Test; attacks against you offer Disadvantage",
    "identifier": "lucky"
   },
   {
@@ -50,7 +50,7 @@
    "group": "Origin",
    "name": "Musician",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Encouraging Song: at the end of a Short or Long Rest, give Heroic Inspiration to up to PB allies",
    "identifier": "musician"
@@ -77,7 +77,7 @@
    "group": "Origin",
    "name": "Tavern Brawler",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Unarmed Strike deals 1d4 + STR Bludgeoning, reroll 1s on its damage dice, push 5 ft once per turn on a hit during the Attack action. Improvised weapon proficiency is the dnd5e tavernBrawlerFeat flag",
    "identifier": "tavern-brawler"
@@ -122,7 +122,7 @@
    "group": "General",
    "name": "Charger",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Charge Attack: once per turn after a melee hit in the Attack action, choose +1d8 damage or push the target up to 10 ft (no more than one size larger). Improved Dash +10 ft is manual",
    "identifier": "charger"
@@ -140,7 +140,7 @@
    "group": "General",
    "name": "Crossbow Expert",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "No Disadvantage on crossbow attacks with an enemy within 5 ft. Ignoring Loading and the Light-crossbow damage modifier are manual",
    "identifier": "crossbow-expert"
@@ -149,7 +149,7 @@
    "group": "General",
    "name": "Crusher",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Once per turn after a Bludgeoning hit, push the target 5 ft (no more than one size larger). Crit with Bludgeoning: attacks against the target have Advantage until the start of your next turn",
    "identifier": "crusher"
@@ -176,7 +176,7 @@
    "group": "General",
    "name": "Durable",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Advantage on Death Saving Throws; Speedy Recovery: Bonus Action, spend a Hit Die and heal the roll",
    "identifier": "durable"
@@ -185,7 +185,7 @@
    "group": "General",
    "name": "Elemental Adept",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Choose Acid/Cold/Fire/Lightning/Thunder: your spells ignore Resistance to it and treat 1s on its damage dice as 2s (one activity or toggle per type)",
    "identifier": "elemental-adept"
@@ -203,7 +203,7 @@
    "group": "General",
    "name": "Grappler",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Advantage on attacks against a creature you are grappling (compendium has none; an older v13 fix exists in Macros). Punch and Grab / Fast Wrestler are manual",
    "identifier": "grappler"
@@ -239,7 +239,7 @@
    "group": "General",
    "name": "Inspiring Leader",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Bolstering Performance: after a Short or Long Rest, up to six allies within 30 ft gain Temporary HP = character level + the feat's ability modifier",
    "identifier": "inspiring-leader"
@@ -320,7 +320,7 @@
    "group": "General",
    "name": "Piercer",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Once per turn on a Piercing hit, reroll one damage die (the lowest). Crit with Piercing: one extra damage die",
    "identifier": "piercer"
@@ -392,7 +392,7 @@
    "group": "General",
    "name": "Shield Master",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Shield Bash: once per turn after a melee hit in the Attack action, STR save (DC 8 + STR + PB) or pushed 5 ft / knocked Prone (your choice). Interpose Shield: Reaction to take no damage on a successful DEX save for half (with a Shield)",
    "identifier": "shield-master"
@@ -419,7 +419,7 @@
    "group": "General",
    "name": "Slasher",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Once per turn on a Slashing hit, the target's Speed drops by 10 ft until the start of your next turn. Crit with Slashing: the target has Disadvantage on attacks until the start of your next turn",
    "identifier": "slasher"
@@ -428,7 +428,7 @@
    "group": "General",
    "name": "Speedy",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Speed +10 ft; Opportunity Attacks have Disadvantage against you. Dashing through Difficult Terrain is manual",
    "identifier": "speedy"
@@ -437,16 +437,16 @@
    "group": "General",
    "name": "Spell Sniper",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Spell attacks ignore Half and Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; +60 ft range on spell attacks with a range of 10 ft or more (midi spellSniper)",
+   "note": "Spell attacks ignore Half and Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; midi-qol doubles spell attack range (book: +60 ft)",
    "identifier": "spell-sniper"
   },
   {
    "group": "General",
    "name": "Telekinetic",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Telekinetic Shove: Bonus Action, one creature within 30 ft makes a STR save (DC 8 + mod + PB) or is moved 5 ft toward or away from you. Mage Hand comes from the advancement",
    "identifier": "telekinetic"
@@ -491,7 +491,7 @@
    "group": "Fighting Style",
    "name": "Blind Fighting",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Blindsight 10 ft",
    "identifier": "blind-fighting"
@@ -527,7 +527,7 @@
    "group": "Fighting Style",
    "name": "Interception",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Reaction when a creature within 5 ft of you is hit: reduce the damage by 1d10 + PB (needs a Shield or weapon)",
    "identifier": "interception"
@@ -536,7 +536,7 @@
    "group": "Fighting Style",
    "name": "Protection",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Reaction when a creature attacks a target within 5 ft of you: Disadvantage on that attack and on attacks against the target until the start of your next turn (needs a Shield)",
    "identifier": "protection"
@@ -545,7 +545,7 @@
    "group": "Fighting Style",
    "name": "Thrown Weapon Fighting",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "+2 damage on ranged attacks with a Thrown weapon",
    "identifier": "thrown-weapon-fighting"
@@ -563,7 +563,7 @@
    "group": "Fighting Style",
    "name": "Unarmed Fighting",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Unarmed Strike deals 1d6 + STR Bludgeoning (1d8 with no weapons or Shield); at the start of your turn, 1d4 Bludgeoning to one creature you are grappling",
    "identifier": "unarmed-fighting"

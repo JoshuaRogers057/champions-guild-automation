@@ -10,30 +10,30 @@
 Origin|Alert|SRD|done|1|Proficiency Bonus to Initiative (dnd5e initiativeAlert flag). Initiative Swap prompt (module rule): after Initiative is rolled, offer to swap with a willing ally (neither Incapacitated)
 Origin|Crafter|PHB|skip|3|Tool proficiencies, shop discount and Fast Crafting are bookkeeping
 Origin|Healer|PHB|done|1|Battle Medic: Utilize action, expend a Healer's Kit use, target within 5 ft spends a Hit Die and heals that roll + Proficiency Bonus. Healing Rerolls: reroll 1s on healing dice of your spells and Battle Medic
-Origin|Lucky|PHB|done|1|Luck Points (PB per Long Rest): a failed saving throw offers a Luck Point for Advantage (reroll, keep the higher); use the feat for Advantage on your next d20 Test or Disadvantage on an attack against you
+Origin|Lucky|PHB|done|1|Luck Points (PB per Long Rest): before a saving throw without Advantage you are asked whether to spend one for Advantage (module rule); use the feat for Advantage on your next d20 Test; attacks against you offer Disadvantage
 Origin|Magic Initiate|SRD|skip|2|Spell choices come from the advancement; the free cast is the spell's own once-per-Long-Rest use
-Origin|Musician|PHB|build|2|Encouraging Song: at the end of a Short or Long Rest, give Heroic Inspiration to up to PB allies
+Origin|Musician|PHB|done|2|Encouraging Song: at the end of a Short or Long Rest, give Heroic Inspiration to up to PB allies
 Origin|Savage Attacker|SRD|done|1|Once per turn on a weapon hit, roll the weapon's damage dice twice and keep the higher (compendium has no automation)
 Origin|Skilled|SRD|skip|3|Proficiencies come from the advancement
-Origin|Tavern Brawler|PHB|build|2|Unarmed Strike deals 1d4 + STR Bludgeoning, reroll 1s on its damage dice, push 5 ft once per turn on a hit during the Attack action. Improvised weapon proficiency is the dnd5e tavernBrawlerFeat flag
+Origin|Tavern Brawler|PHB|done|2|Unarmed Strike deals 1d4 + STR Bludgeoning, reroll 1s on its damage dice, push 5 ft once per turn on a hit during the Attack action. Improvised weapon proficiency is the dnd5e tavernBrawlerFeat flag
 Origin|Tough|PHB|done|1|HP max +2 per character level (hp.bonuses.level = 2)
 General|Ability Score Improvement|SRD|skip|3|Advancement
 General|Actor|PHB|skip|3|Advantage on disguise Deception/Performance checks and mimicry are DM calls
 General|Athlete|PHB|build|3|Climb Speed equal to your Speed. Hop Up and Jumping are movement rules
-General|Charger|PHB|build|2|Charge Attack: once per turn after a melee hit in the Attack action, choose +1d8 damage or push the target up to 10 ft (no more than one size larger). Improved Dash +10 ft is manual
+General|Charger|PHB|done|2|Charge Attack: once per turn after a melee hit in the Attack action, choose +1d8 damage or push the target up to 10 ft (no more than one size larger). Improved Dash +10 ft is manual
 General|Chef|PHB|build|3|Bolstering Treats: PB treats, a Bonus Action to eat one for PB Temporary HP. Replenishing Meal (+1d8 when spending Hit Dice on a Short Rest) is manual
-General|Crossbow Expert|PHB|build|2|No Disadvantage on crossbow attacks with an enemy within 5 ft. Ignoring Loading and the Light-crossbow damage modifier are manual
-General|Crusher|PHB|build|2|Once per turn after a Bludgeoning hit, push the target 5 ft (no more than one size larger). Crit with Bludgeoning: attacks against the target have Advantage until the start of your next turn
+General|Crossbow Expert|PHB|done|2|No Disadvantage on crossbow attacks with an enemy within 5 ft. Ignoring Loading and the Light-crossbow damage modifier are manual
+General|Crusher|PHB|done|2|Once per turn after a Bludgeoning hit, push the target 5 ft (no more than one size larger). Crit with Bludgeoning: attacks against the target have Advantage until the start of your next turn
 General|Defensive Duelist|PHB|done|1|Parry: Reaction when hit by a melee attack while holding a Finesse weapon, +PB AC against melee attacks until the start of your next turn
 General|Dual Wielder|PHB|build|3|dnd5e enhancedDualWielding flag lets non-Light one-handed melee weapons make the off-hand attack. Quick Draw is manual
-General|Durable|PHB|build|2|Advantage on Death Saving Throws; Speedy Recovery: Bonus Action, spend a Hit Die and heal the roll
-General|Elemental Adept|PHB|build|2|Choose Acid/Cold/Fire/Lightning/Thunder: your spells ignore Resistance to it and treat 1s on its damage dice as 2s (one activity or toggle per type)
+General|Durable|PHB|done|2|Advantage on Death Saving Throws; Speedy Recovery: Bonus Action, spend a Hit Die and heal the roll
+General|Elemental Adept|PHB|done|2|Choose Acid/Cold/Fire/Lightning/Thunder: your spells ignore Resistance to it and treat 1s on its damage dice as 2s (one activity or toggle per type)
 General|Fey Touched|PHB|skip|2|Misty Step + one spell from the advancement, each castable once per Long Rest without a slot (spell uses)
-General|Grappler|SRD|build|2|Advantage on attacks against a creature you are grappling (compendium has none; an older v13 fix exists in Macros). Punch and Grab / Fast Wrestler are manual
+General|Grappler|SRD|done|2|Advantage on attacks against a creature you are grappling (compendium has none; an older v13 fix exists in Macros). Punch and Grab / Fast Wrestler are manual
 General|Great Weapon Master|PHB|done|1|Heavy Weapon Mastery: +PB damage when you hit with a Heavy weapon on your turn. Hew: after a melee crit or dropping a creature to 0 HP, offer a Bonus Action attack with the same weapon
 General|Heavily Armored|PHB|skip|3|Armor training from the advancement
 General|Heavy Armor Master|PHB|done|1|While wearing Heavy armor, Bludgeoning/Piercing/Slashing damage from an attack that hits you is reduced by PB
-General|Inspiring Leader|PHB|build|2|Bolstering Performance: after a Short or Long Rest, up to six allies within 30 ft gain Temporary HP = character level + the feat's ability modifier
+General|Inspiring Leader|PHB|done|2|Bolstering Performance: after a Short or Long Rest, up to six allies within 30 ft gain Temporary HP = character level + the feat's ability modifier
 General|Keen Mind|PHB|skip|3|Skill from the advancement; Study as a Bonus Action is manual
 General|Lightly Armored|PHB|skip|3|Armor training from the advancement
 General|Mage Slayer|PHB|done|1|Concentration Breaker: creatures you damage have Disadvantage on the Concentration save. Guarded Mind: once per Short/Long Rest, turn a failed INT/WIS/CHA save into a success (prompt after the failed save)
@@ -42,7 +42,7 @@ General|Medium Armor Master|PHB|build|3|Medium armor adds up to +3 DEX to AC whe
 General|Moderately Armored|PHB|skip|3|Armor training from the advancement
 General|Mounted Combatant|PHB|skip|3|Mounted rules are DM-handled
 General|Observant|PHB|skip|3|Skill from the advancement; Search as a Bonus Action is manual
-General|Piercer|PHB|build|2|Once per turn on a Piercing hit, reroll one damage die (the lowest). Crit with Piercing: one extra damage die
+General|Piercer|PHB|done|2|Once per turn on a Piercing hit, reroll one damage die (the lowest). Crit with Piercing: one extra damage die
 General|Poisoner|PHB|build|3|Poison damage you deal ignores Resistance. Brew Poison: Bonus Action to coat a weapon or ammunition for 1 minute; the next creature it damages makes a CON save (DC 8 + mod + PB) or takes 2d8 Poison and is Poisoned until the end of your next turn
 General|Polearm Master|PHB|done|1|Pole Strike: Bonus Action attack after the Attack action with a Quarterstaff, Spear or Heavy+Reach weapon (d4 Bludgeoning). Reactive Strike (Reaction attack when a creature enters your reach) stays a manual Reaction
 General|Resilient|PHB|skip|2|Saving throw proficiency from the advancement
@@ -50,26 +50,26 @@ General|Ritual Caster|PHB|skip|3|Ritual spells from the advancement; Quick Ritua
 General|Sentinel|PHB|done|1|Halt: when you hit with an Opportunity Attack, the target's Speed becomes 0 for the turn. Guardian (Opportunity Attack when a creature within 5 ft Disengages or hits someone else) is a manual Reaction
 General|Shadow Touched|PHB|skip|2|Invisibility + one spell from the advancement, each castable once per Long Rest without a slot (spell uses)
 General|Sharpshooter|PHB|done|1|Ranged weapon attacks ignore Half and Three-Quarters Cover, no Disadvantage at long range or with an enemy within 5 ft (midi sharpShooter + ignoreNearbyFoes)
-General|Shield Master|PHB|build|2|Shield Bash: once per turn after a melee hit in the Attack action, STR save (DC 8 + STR + PB) or pushed 5 ft / knocked Prone (your choice). Interpose Shield: Reaction to take no damage on a successful DEX save for half (with a Shield)
+General|Shield Master|PHB|done|2|Shield Bash: once per turn after a melee hit in the Attack action, STR save (DC 8 + STR + PB) or pushed 5 ft / knocked Prone (your choice). Interpose Shield: Reaction to take no damage on a successful DEX save for half (with a Shield)
 General|Skill Expert|PHB|skip|3|Skill and Expertise from the advancement
 General|Skulker|PHB|build|3|Blindsight 10 ft. Advantage on Stealth for the Hide action in combat and staying hidden on a miss are manual
-General|Slasher|PHB|build|2|Once per turn on a Slashing hit, the target's Speed drops by 10 ft until the start of your next turn. Crit with Slashing: the target has Disadvantage on attacks until the start of your next turn
-General|Speedy|PHB|build|2|Speed +10 ft; Opportunity Attacks have Disadvantage against you. Dashing through Difficult Terrain is manual
-General|Spell Sniper|PHB|build|2|Spell attacks ignore Half and Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; +60 ft range on spell attacks with a range of 10 ft or more (midi spellSniper)
-General|Telekinetic|PHB|build|2|Telekinetic Shove: Bonus Action, one creature within 30 ft makes a STR save (DC 8 + mod + PB) or is moved 5 ft toward or away from you. Mage Hand comes from the advancement
+General|Slasher|PHB|done|2|Once per turn on a Slashing hit, the target's Speed drops by 10 ft until the start of your next turn. Crit with Slashing: the target has Disadvantage on attacks until the start of your next turn
+General|Speedy|PHB|done|2|Speed +10 ft; Opportunity Attacks have Disadvantage against you. Dashing through Difficult Terrain is manual
+General|Spell Sniper|PHB|done|2|Spell attacks ignore Half and Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; midi-qol doubles spell attack range (book: +60 ft)
+General|Telekinetic|PHB|done|2|Telekinetic Shove: Bonus Action, one creature within 30 ft makes a STR save (DC 8 + mod + PB) or is moved 5 ft toward or away from you. Mage Hand comes from the advancement
 General|Telepathic|PHB|skip|3|Telepathy is roleplay; Detect Thoughts from the advancement (once per Long Rest without a slot)
 General|War Caster|PHB|done|1|Advantage on Concentration saves. Reactive Spell and Somatic Components are manual
 General|Weapon Master|PHB|skip|3|Weapon Mastery choice from the advancement
 Fighting Style|Archery|SRD|verify|1|Compendium: +2 to ranged weapon attack rolls
-Fighting Style|Blind Fighting|PHB|build|2|Blindsight 10 ft
+Fighting Style|Blind Fighting|PHB|done|2|Blindsight 10 ft
 Fighting Style|Defense|SRD|verify|1|Compendium: +1 AC (should apply only while wearing armor)
 Fighting Style|Dueling|PHB|done|1|+2 damage with a melee weapon held in one hand when you hold no other weapon
 Fighting Style|Great Weapon Fighting|SRD|done|1|Treat 1s and 2s on damage dice as 3s for melee attacks with a Two-Handed or Versatile weapon held in two hands (compendium has none)
-Fighting Style|Interception|PHB|build|2|Reaction when a creature within 5 ft of you is hit: reduce the damage by 1d10 + PB (needs a Shield or weapon)
-Fighting Style|Protection|PHB|build|2|Reaction when a creature attacks a target within 5 ft of you: Disadvantage on that attack and on attacks against the target until the start of your next turn (needs a Shield)
-Fighting Style|Thrown Weapon Fighting|PHB|build|2|+2 damage on ranged attacks with a Thrown weapon
+Fighting Style|Interception|PHB|done|2|Reaction when a creature within 5 ft of you is hit: reduce the damage by 1d10 + PB (needs a Shield or weapon)
+Fighting Style|Protection|PHB|done|2|Reaction when a creature attacks a target within 5 ft of you: Disadvantage on that attack and on attacks against the target until the start of your next turn (needs a Shield)
+Fighting Style|Thrown Weapon Fighting|PHB|done|2|+2 damage on ranged attacks with a Thrown weapon
 Fighting Style|Two-Weapon Fighting|SRD|done|1|Add your ability modifier to the damage of the Light-property extra attack (dnd5e's off-hand attack mode leaves it out)
-Fighting Style|Unarmed Fighting|PHB|build|2|Unarmed Strike deals 1d6 + STR Bludgeoning (1d8 with no weapons or Shield); at the start of your turn, 1d4 Bludgeoning to one creature you are grappling
+Fighting Style|Unarmed Fighting|PHB|done|2|Unarmed Strike deals 1d6 + STR Bludgeoning (1d8 with no weapons or Shield); at the start of your turn, 1d4 Bludgeoning to one creature you are grappling
 Epic Boon|Boon of Combat Prowess|SRD|build|3|Peerless Aim: once per turn, turn a missed attack roll into a hit (prompt after the miss)
 Epic Boon|Boon of Dimensional Travel|SRD|verify|3|Compendium Teleport activity (30 ft after the Attack or Magic action)
 Epic Boon|Boon of Energy Resistance|PHB|build|3|Resistance to two chosen types; Energy Redirection Reaction: DEX save (DC 8 + CON + PB) or 2d12 + CON of that type to a creature within 60 ft

@@ -3,6 +3,41 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.15.0
+
+The priority-2 feats, and Lucky now asks before you roll. DMs: update, then run **Mass Apply / Update** on each
+character. Lucky's saving-throw prompt, Interception and Protection are module rules, so they work as soon as the
+module updates.
+
+- Changed: **Lucky** (1.2.0). Before you roll a saving throw that doesn't already have Advantage, you're asked
+  whether to spend a Luck Point for Advantage (real Advantage, decided before any die is rolled). The 0.14.0
+  "reroll after a failed save" prompt is gone. Saves that already have Advantage (War Caster on Concentration,
+  Magic Resistance against spells, effects) don't ask.
+- New feats:
+  - **Charger**: after a melee hit on your turn, if you moved 10+ ft this turn, pick +1d8 damage or a 10-ft push
+    (once per turn).
+  - **Crusher**: push 5 ft prompt on a Bludgeoning hit (once per turn); a Bludgeoning crit gives attacks against the
+    target Advantage until your next turn.
+  - **Slasher**: a Slashing hit cuts the target's Speed by 10 ft until your next turn (once per turn); a Slashing crit
+    gives it Disadvantage on attacks.
+  - **Piercer**: rerolls the lowest Piercing damage die if it's below average (once per turn); a Piercing crit rolls
+    one extra die.
+  - **Shield Master**: Shield Bash prompt (STR save, push 5 ft or Prone) once per turn; Interpose Shield means no
+    damage on a successful DEX save while holding a Shield (automatic; mark your Reaction yourself).
+  - **Grappler**: Advantage against creatures you grapple; Punch and Grab prompt after an Unarmed Strike hit.
+  - **Tavern Brawler** and **Unarmed Fighting**: bigger Unarmed Strike damage (1d4 rerolling 1s / 1d6, 1d8 with no
+    weapon or Shield), Tavern Brawler's push, Unarmed Fighting's Grapple Damage activity.
+  - **Crossbow Expert**, **Spell Sniper** (midi-qol doubles spell attack range; the book adds 60 ft) and **Speedy**
+    (+10 ft; melee attacks against you on your own turn have Disadvantage).
+  - **Durable** (Advantage on Death Saves; Speedy Recovery), **Musician** (Heroic Inspiration to up to PB allies),
+    **Inspiring Leader** (Temp HP = level + WIS/CHA modifier, up to six), **Telekinetic** (Telekinetic Shove).
+  - **Elemental Adept**: pick the type once; your damage of that type ignores Resistance (book: spells only) and your
+    spells' 1s on its dice count as 2s.
+  - Fighting styles: **Blind Fighting**, **Thrown Weapon Fighting**, **Interception** and **Protection** (the last
+    two ask the ally's player before the attack/damage).
+- **Sharpshooter** 1.0.1: shares its "no Disadvantage with an enemy nearby" setting with Crossbow Expert and Spell
+  Sniper so owning several of them works.
+
 ## 0.14.0
 
 The first batch of feats: the 16 priority-1 feats from the 2024 Player's Handbook. DMs: update, then run

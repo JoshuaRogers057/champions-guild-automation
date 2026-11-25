@@ -62,17 +62,17 @@
             "priority": 20,
             "type": "override",
             "phase": "initial",
-            "_id": "cgaFtChg00070000",
+            "_id": "cgaFtChg00040000",
             "conditions": "{}",
             "replacement": ""
           },
           {
             "key": "flags.midi-qol.ignoreNearbyFoes",
-            "value": "activity?.actionType === \"rwak\"",
+            "value": "(activity?.actionType === \"rwak\" && items.some((i) => i.identifier === \"sharpshooter\")) || (activity?.actionType === \"rsak\" && items.some((i) => i.identifier === \"spell-sniper\")) || (/crossbow/.test(workflow?.item?.system?.type?.baseItem ?? \"\") && items.some((i) => i.identifier === \"crossbow-expert\"))",
             "priority": 20,
             "type": "override",
             "phase": "initial",
-            "_id": "cgaFtChg00080000",
+            "_id": "cgaFtChg00050000",
             "conditions": "{}",
             "replacement": ""
           }
@@ -110,7 +110,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Ranged weapon attacks ignore Half/Three-Quarters Cover, no Disadvantage at long range or with an enemy within 5 ft."
       }
     }

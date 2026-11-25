@@ -171,6 +171,8 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
       const cut = reduceDamage(ditem, Number(actor.system.attributes.prof ?? 0), ["bludgeoning", "piercing", "slashing"]);
       if (cut) ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Heavy Armor Master:</strong> ${actor.name} takes ${cut} less damage.</p>` });
     }
+    // Interception (fighting style): an ally within 5 ft may use its Reaction to cut the damage.
+    if (wasHit && (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0) > 0) await interception(token, ditem, workflow);
     // Mage Slayer: a concentrating creature damaged by someone with the feat has Disadvantage on that Concentration save.
     if (hasFeat(workflow?.actor, "mage-slayer") && workflow.actor !== actor && actor.statuses?.has("concentrating")
       && (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0) > 0) {
@@ -494,7 +496,73 @@ let cgaSocket = null;
 Hooks.once("socketlib.ready", () => {
   cgaSocket = socketlib.registerModule(MODULE_ID);
   cgaSocket.register("swapInitiative", swapInitiativeAsGM);
+  cgaSocket.register("askYesNo", askYesNoHere);
 });
+async function askYesNoHere(title, html, seconds = 30) {
+  return new Promise((resolve) => {
+    let done = false;
+    const finish = (v) => { if (!done) { done = true; resolve(!!v); } };
+    const dlg = foundry.applications.api.DialogV2.confirm({ window: { title }, content: `${html}<p><em>(${seconds} seconds to decide)</em></p>`, rejectClose: false })
+      .then(finish, () => finish(false));
+    setTimeout(() => { finish(false); for (const app of foundry.applications.instances.values()) if (app.options?.window?.title === title) app.close(); }, seconds * 1000);
+  });
+}
+// Ask the player who controls `actor` (or the GM when no owner is online). Resolves false on no answer.
+async function askOwner(actor, title, html) {
+  const user = responsibleUser(actor);
+  if (!user) return false;
+  if (user.isSelf) return askYesNoHere(title, html);
+  try { return !!(await cgaSocket?.executeAsUser("askYesNo", user.id, title, html)); } catch (err) { return false; }
+}
+
+// Fighting styles that react to attacks on someone else (the attacker's client runs these):
+//  - Protection: when a creature attacks a target within 5 ft of you and you hold a Shield, Reaction: Disadvantage on
+//    that attack and on attacks against the target until the start of your next turn.
+//  - Interception: when a creature hits a target within 5 ft of you and you hold a Shield or a weapon, Reaction: reduce
+//    the damage by 1d10 + your Proficiency Bonus.
+const holdsShield = (a) => a.items.some((i) => i.type === "equipment" && i.system.equipped && i.system.type?.value === "shield");
+const holdsWeapon = (a) => a.items.some((i) => i.type === "weapon" && i.system.equipped && ["simpleM", "simpleR", "martialM", "martialR"].includes(i.system.type?.value)
+  && i.system.identifier !== "unarmed-strike");
+function guardians(targetDoc, attacker, identifier, canUse) {
+  const scene = targetDoc?.parent;
+  if (!scene) return [];
+  return scene.tokens.filter((t) => t !== targetDoc && t.actor && t.actor !== attacker && !t.hidden && hasFeat(t.actor, identifier)
+    && t.disposition === targetDoc.disposition && !isIncapacitated(t.actor) && !MidiQOL.hasUsedReaction?.(t.actor)
+    && (t.actor.system.attributes.hp.value ?? 0) > 0 && edgeDistance(t, targetDoc, scene) <= 5 && canUse(t.actor));
+}
+Hooks.on("midi-qol.preAttackRoll", async (workflow) => {
+  try {
+    if (!workflow?.activity?.attack || workflow.targets?.size !== 1) return;
+    const target = Array.from(workflow.targets)[0];
+    const targetDoc = target.document ?? target;
+    for (const g of guardians(targetDoc, workflow.actor, "protection", holdsShield)) {
+      const ok = await askOwner(g.actor, `Protection: ${g.name}`,
+        `<p><strong>${workflow.actor?.name}</strong> is attacking <strong>${targetDoc.name}</strong> next to you. Use your Reaction to interpose your Shield (Disadvantage on this attack and on attacks against ${targetDoc.name} until the start of your next turn)?</p>`);
+      if (!ok) continue;
+      const feat = g.actor.items.find((i) => i.system?.identifier === "protection");
+      await MidiQOL.socket().executeAsGM("createEffects", { actorUuid: targetDoc.actor.uuid, effects: [{
+        name: `Protection (${g.name})`, img: feat?.img ?? "icons/equipment/shield/heater-steel-worn.webp", transfer: false, origin: feat?.uuid,
+        system: { changes: [{ key: "flags.midi-qol.grants.disadvantage.attack.all", value: "1", type: "override", priority: 50, phase: "initial" }] },
+        flags: { dae: { specialDuration: ["turnStartSource"], stackable: "noneName" } } }] });
+      await MidiQOL.setReactionUsed?.(g.actor);
+      ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: g.actor }), content: `<p><strong>Protection:</strong> ${g.name} interposes a Shield to protect ${targetDoc.name}.</p>` });
+      break;
+    }
+  } catch (err) { console.warn(`${MODULE_ID} | Protection failed`, err); }
+});
+async function interception(token, ditem, workflow) {
+  const tokenDoc = token.document ?? token;
+  for (const g of guardians(tokenDoc, workflow.actor, "interception", (a) => holdsShield(a) || holdsWeapon(a))) {
+    const ok = await askOwner(g.actor, `Interception: ${g.name}`,
+      `<p><strong>${tokenDoc.name}</strong> is hit for ${ditem.hpDamage + (ditem.tempDamage ?? 0)} damage next to you. Use your Reaction to reduce it by 1d10 + your Proficiency Bonus?</p>`);
+    if (!ok) continue;
+    const roll = await new Roll(`1d10 + ${Number(g.actor.system.attributes.prof ?? 0)}`).evaluate();
+    const cut = reduceDamage(ditem, roll.total);
+    await MidiQOL.setReactionUsed?.(g.actor);
+    roll.toMessage({ speaker: ChatMessage.getSpeaker({ actor: g.actor }), flavor: `Interception: ${g.name} reduces the damage to ${tokenDoc.name} by ${cut}` });
+    return;
+  }
+}
 async function swapInitiativeAsGM(combatId, aId, bId) {
   const combat = game.combats.get(combatId);
   const a = combat?.combatants.get(aId); const b = combat?.combatants.get(bId);
@@ -557,6 +625,49 @@ Hooks.on("updateCombatant", (combatant, changes, options) => {
 Hooks.on("deleteCombat", (combat) => { for (const k of [...alertAsked]) if (k.startsWith(`${combat.id}.`)) alertAsked.delete(k); });
 Hooks.once("init", () => {
   game.modules.get(MODULE_ID).api = { alertSwap, alertSwapFor: (actor) => alertSwap(game.combat?.combatants.find((c) => c.actor === actor || c.actorId === actor?.id)) };
+});
+
+// Lucky (2024): before a creature with Lucky rolls a saving throw that doesn't already have Advantage, its owner is
+// asked whether to spend a Luck Point for Advantage (the choice comes before any d20 is rolled). Wraps
+// Actor#rollSavingThrow, so it covers saves midi-qol requests, Concentration saves and saves rolled from the sheet.
+const truthy = (v) => v !== undefined && v !== null && v !== false && v !== 0 && v !== "0" && v !== "" && v !== "false";
+function saveHasAdvantage(actor, config, message) {
+  const abl = config?.ability;
+  if (config?.advantage || config?.midiOptions?.advantage || config?.rolls?.some?.((r) => r?.options?.advantage)) return true;
+  const mf = actor.flags?.["midi-qol"] ?? {};
+  const adv = mf.advantage ?? {};
+  const isConc = !!(config?.isConcentration || config?.midiOptions?.isConcentrationCheck
+    || message?.data?.flags?.["midi-qol"]?.isConcentrationCheck || config?.workflow?.item?.flags?.["midi-qol"]?.isConcentrationCheck);
+  const flags = [adv.all, adv.ability?.all, adv.ability?.save?.all, adv.ability?.save?.[abl], adv.save?.all, adv.save?.[abl], isConc ? adv.concentration : undefined];
+  if (flags.some(truthy)) return true;
+  const magic = config?.isMagicSave || config?.midiOptions?.isMagicSave || config?.workflow?.item?.type === "spell";
+  if (magic && (truthy(mf.magicResistance?.all) || truthy(mf.magicResistance?.[abl]))) return true;
+  if (Number(actor.system?.abilities?.[abl]?.save?.roll?.mode ?? 0) > 0 || Number(actor.system?.rolls?.ability?.save?.mode ?? 0) > 0) return true;
+  return false;
+}
+async function luckyBeforeSave(actor, config, message) {
+  if (!actor || config?.cgaLucky !== undefined) return config;
+  const lucky = actor.items?.find((i) => i.system?.identifier === "lucky");
+  const left = Number(lucky?.system?.uses?.value ?? 0);
+  if (!lucky || left <= 0 || saveHasAdvantage(actor, config, message)) return config;
+  const label = CONFIG.DND5E.abilities[config.ability]?.label ?? "saving";
+  const ok = await askOwner(actor, `Lucky: ${actor.name}`,
+    `<p><strong>${foundry.utils.escapeHTML(actor.name)}</strong> is about to make a <strong>${label} saving throw</strong>. Spend a Luck Point for Advantage? (${left} left)</p>`);
+  config = { ...config, cgaLucky: !!ok };
+  if (!ok) return config;
+  try { await lucky.update({ "system.uses.spent": Number(lucky.system.uses.spent ?? 0) + 1 }); }
+  catch (err) { await MidiQOL.socket().executeAsGM("updateItems", { actorUuid: actor.uuid, updates: [{ _id: lucky.id, "system.uses.spent": Number(lucky.system.uses.spent ?? 0) + 1 }] }).catch(() => {}); }
+  ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Lucky:</strong> ${foundry.utils.escapeHTML(actor.name)} spends a Luck Point for Advantage on the ${label} saving throw.</p>` });
+  config.advantage = true;
+  config.midiOptions = { ...(config.midiOptions ?? {}), advantage: true };
+  return config;
+}
+Hooks.once("setup", () => {
+  if (!globalThis.libWrapper) return console.warn(`${MODULE_ID} | libWrapper missing: Lucky's saving-throw prompt is off`);
+  libWrapper.register(MODULE_ID, "CONFIG.Actor.documentClass.prototype.rollSavingThrow", async function (wrapped, config = {}, dialog = {}, message = {}) {
+    try { config = await luckyBeforeSave(this, config, message); } catch (err) { console.warn(`${MODULE_ID} | Lucky prompt failed`, err); }
+    return wrapped(config, dialog, message);
+  }, "WRAPPER");
 });
 
 // After an update, tell the GM once that there are new fixes to apply.
