@@ -354,9 +354,11 @@
           "value": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
+          "special": "",
           "concentration": false,
-          "override": false
+          "override": true
         },
         "effects": [],
         "range": {
@@ -460,7 +462,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: DEX save 6d10 force (half) when it appears, and when a creature enters the wall or ends its turn in it (once per turn)."
       }
     }

@@ -212,8 +212,10 @@
           "value": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false,
+          "special": "",
+          "override": true,
           "concentration": false
         },
         "effects": [],
@@ -320,7 +322,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: 4d4 slashing to creatures in the cube, and to any creature that enters it or ends its turn there (once per turn). Drag the area to move it."
       }
     }

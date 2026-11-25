@@ -661,9 +661,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
+          "special": "",
           "concentration": false,
-          "override": false
+          "override": true
         },
         "effects": [],
         "range": {
@@ -1183,7 +1185,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: pick the curse (and the ability for Curse Ability). Attacks: Disadvantage attacking you. Actions: WIS save at the start of each turn or Dodge. Resilience: +1d8 necrotic when you damage it."
       }
     },

@@ -142,8 +142,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -201,7 +204,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: heal one creature in the 30-ft aura for 2d6 when you cast, and again with Heal in the Aura (Bonus Action, no slot) on later turns."
       }
     }

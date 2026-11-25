@@ -174,8 +174,11 @@
           "special": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": true
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "uses": {
@@ -371,7 +374,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: failed CON save: Disadvantage on STR d20 tests and -1d8 damage, repeat save at the end of each turn; successful save: Disadvantage on its next attack roll."
       }
     },

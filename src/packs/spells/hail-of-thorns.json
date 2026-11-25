@@ -138,9 +138,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
+          "special": "",
           "concentration": false,
-          "override": false
+          "override": true
         },
         "effects": [],
         "range": {
@@ -299,7 +301,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Bonus Action; your next ranged weapon hit makes the target and every creature within 5 ft of it save (DEX, 1d10 piercing, half on a success). The spell then ends."
       }
     },

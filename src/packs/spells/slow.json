@@ -181,8 +181,11 @@
           "special": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": true
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "uses": {
@@ -324,7 +327,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: half speed, -2 AC and DEX saves, no reactions; WIS save at the end of each of its turns."
       }
     }

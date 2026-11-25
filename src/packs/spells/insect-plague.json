@@ -204,8 +204,10 @@
           "value": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false,
+          "special": "",
+          "override": true,
           "concentration": false
         },
         "effects": [],
@@ -310,7 +312,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: CON save 4d10 piercing (half) when it appears, and when a creature enters or ends its turn in it (once per turn)."
       }
     }

@@ -178,8 +178,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -266,7 +269,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: CON save 5d8 poison (half) when it appears, and when a creature enters or ends its turn in it (once per turn). Drag the area 10 ft away from you at the start of your turns."
       }
     }

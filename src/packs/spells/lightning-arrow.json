@@ -138,9 +138,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
+          "special": "",
           "concentration": false,
-          "override": false
+          "override": true
         },
         "effects": [],
         "range": {
@@ -303,7 +305,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Bonus Action; your next ranged weapon attack deals 4d8 lightning instead of its damage (half on a miss), and every creature within 10 ft of the target saves (DEX, 2d8 lightning). The spell then ends."
       }
     },

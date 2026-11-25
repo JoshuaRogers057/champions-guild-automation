@@ -67,7 +67,7 @@
 1|Faerie Fire|SRD|done|1|Outlined creatures: attacks against them have advantage, no invisibility
 1|False Life|SRD|done|1|Temp HP
 1|Feather Fall|SRD|skip|3|
-1|Find Familiar|SRD|build|2|Summon; per-caster familiar pattern exists (necromancy familiar)
+1|Find Familiar|SRD|done|2|Summon; per-caster familiar pattern exists (necromancy familiar)
 1|Fog Cloud|SRD|skip|3|
 1|Goodberry|SRD|skip|3|
 1|Grease|SRD|done|2|Prone on failed DEX save; save again entering or ending turn in it
@@ -124,10 +124,10 @@
 2|Enhance Ability|SRD|done|2|Advantage on checks with the chosen ability
 2|Enlarge/Reduce|SRD|done|2|Size, STR checks/saves, +/-1d4 weapon damage
 2|Enthrall|SRD|skip|3|
-2|Find Steed|SRD|build|2|Summon; older v13 "Find Steed (Free)" fix exists in Macros
+2|Find Steed|SRD|done|2|Summon; older v13 "Find Steed (Free)" fix exists in Macros
 2|Find Traps|SRD|skip|3|
 2|Flame Blade|SRD|done|2|
-2|Flaming Sphere|SRD|build|2|Summoned sphere: end-of-turn DEX save damage; ram as a bonus action
+2|Flaming Sphere|SRD|done|2|Summoned sphere: end-of-turn DEX save damage; ram as a bonus action
 2|Gentle Repose|SRD|skip|3|
 2|Gust of Wind|SRD|build|3|Push 15 ft on failed STR save; line
 2|Heat Metal|SRD|done|2|Bonus action to repeat damage; drop the object or disadvantage
@@ -161,11 +161,11 @@
 2|Spike Growth|SRD|done|2|2d4 piercing per 5 ft moved inside the area
 2|Spiritual Weapon|SRD|done|1|Summoned weapon; bonus-action melee spell attack; move it
 2|Suggestion|SRD|verify|3|
-2|Summon Beast|PHB|build|2|Summon (Land/Sea/Air stat block)
+2|Summon Beast|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
 2|Warding Bond|SRD|done|2|+1 AC/saves, resistance; caster takes the same damage
 2|Web|SRD|midi|2|
 2|Zone of Truth|SRD|skip|3|
-3|Animate Dead|SRD|build|2|Summon skeletons/zombies; command as bonus action
+3|Animate Dead|SRD|done|2|Summon skeletons/zombies; command as bonus action
 3|Aura of Vitality|PHB|done|2|Bonus action: heal 2d6 to a creature in the aura
 3|Beacon of Hope|SRD|done|2|Healing is maximized (needs a midi flag), advantage on WIS and death saves
 3|Bestow Curse|SRD|done|2|Pick a curse; the extra 1d8 necrotic option needs a damage rider
@@ -173,7 +173,7 @@
 3|Blink|SRD|build|3|d6 at end of each turn to blink to the Ethereal Plane
 3|Call Lightning|SRD|done|2|Repeat the bolt as an action each turn
 3|Clairvoyance|SRD|skip|3|
-3|Conjure Animals|SRD|build|2|2024: pack of spirits deals damage to creatures near it
+3|Conjure Animals|SRD|done|2|2024: pack of spirits deals damage to creatures near it
 3|Conjure Barrage|PHB|done|2|Cone DEX save
 3|Counterspell|SRD|done|2|Reaction; the target caster makes a CON save
 3|Create Food and Water|SRD|skip|3|
@@ -210,8 +210,8 @@
 3|Speak with Plants|SRD|skip|3|
 3|Spirit Guardians|SRD|done|1|Aura: WIS save on entering/starting turn; half speed for enemies
 3|Stinking Cloud|SRD|done|2|Zone: CON save at turn start or lose the action (Poisoned)
-3|Summon Fey|PHB|build|2|Summon
-3|Summon Undead|PHB|build|2|Summon
+3|Summon Fey|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+3|Summon Undead|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
 3|Tongues|SRD|skip|3|
 3|Vampiric Touch|SRD|done|2|Heal half the damage dealt; repeat the touch as an action
 3|Water Breathing|SRD|skip|3|
@@ -225,8 +225,8 @@
 4|Charm Monster|SRD|verify|3|
 4|Compulsion|SRD|build|3|Forced movement each turn
 4|Confusion|SRD|done|2|d10 behaviour roll each turn; repeat save
-4|Conjure Minor Elementals|SRD|build|2|2024: your attacks deal +2d8 elemental near you
-4|Conjure Woodland Beings|SRD|build|2|2024: aura damage around you
+4|Conjure Minor Elementals|SRD|done|2|2024: your attacks deal +2d8 elemental near you
+4|Conjure Woodland Beings|SRD|done|2|2024: aura damage around you
 4|Control Water|SRD|skip|3|
 4|Death Ward|SRD|done|2|First drop to 0 HP becomes 1 HP instead
 4|Dimension Door|SRD|done|2|Teleport (+ a willing creature)
@@ -239,7 +239,7 @@
 4|Giant Insect|SRD|build|3|Summon
 4|Grasping Vine|PHB|build|3|Pull 30 ft on a failed save; bonus action each turn
 4|Greater Invisibility|SRD|midi|2|
-4|Guardian of Faith|SRD|build|2|Guardian deals 20 radiant on entering/starting turn, up to 60 total
+4|Guardian of Faith|SRD|done|2|Guardian deals 20 radiant on entering/starting turn, up to 60 total
 4|Hallucinatory Terrain|SRD|skip|3|
 4|Ice Storm|SRD|done|2|
 4|Leomund's Secret Chest|SRD|skip|3|aka Secret Chest
@@ -248,26 +248,26 @@
 4|Mordenkainen's Private Sanctum|SRD|skip|3|aka Private Sanctum
 4|Otiluke's Resilient Sphere|SRD|verify|3|aka Resilient Sphere
 4|Phantasmal Killer|SRD|done|2|Frightened; repeat WIS save end of turn with psychic damage
-4|Polymorph|SRD|build|2|Transform into a beast; revert at 0 HP
+4|Polymorph|SRD|done|2|Transform into a beast; revert at 0 HP
 4|Staggering Smite|PHB|done|2|Smite prompt; Stunned until end of your next turn on a failed save
 4|Stone Shape|SRD|skip|3|
 4|Stoneskin|SRD|done|2|Resistance to B/P/S
-4|Summon Aberration|PHB|build|2|Summon
-4|Summon Construct|PHB|build|2|Summon
-4|Summon Elemental|PHB|build|2|Summon
+4|Summon Aberration|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+4|Summon Construct|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+4|Summon Elemental|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
 4|Vitriolic Sphere|SRD|done|2|Plus acid at the end of the target's next turn
 4|Wall of Fire|SRD|done|2|Wall: damage on entering/ending turn near the hot side
-5|Animate Objects|SRD|build|2|Summon animated objects
+5|Animate Objects|SRD|done|2|Summon animated objects
 5|Antilife Shell|SRD|verify|3|
 5|Awaken|SRD|skip|3|
 5|Banishing Smite|PHB|done|2|Smite prompt; banish at 50 HP or less
-5|Bigby's Hand|SRD|build|2|aka Arcane Hand. Per-caster summon built before (see Bigby's Hand notes)
+5|Bigby's Hand|SRD|done|2|aka Arcane Hand. Per-caster summon built before (see Bigby's Hand notes)
 5|Circle of Power|PHB|build|3|Aura: advantage on saves vs spells, no damage on success
 5|Cloudkill|SRD|done|2|Moving zone: CON save poison at turn start
 5|Commune|SRD|skip|3|
 5|Commune with Nature|SRD|skip|3|
 5|Cone of Cold|SRD|done|1|
-5|Conjure Elemental|SRD|build|2|2024: elemental spirit, restrains/damages nearby
+5|Conjure Elemental|SRD|done|2|2024: elemental spirit, restrains/damages nearby
 5|Conjure Volley|PHB|done|2|
 5|Contact Other Plane|SRD|skip|3|
 5|Contagion|SRD|verify|3|Poisoned; repeat saves
@@ -295,8 +295,8 @@
 5|Scrying|SRD|skip|3|
 5|Seeming|SRD|skip|3|
 5|Steel Wind Strike|PHB|done|2|Melee spell attack against up to 5 targets, then teleport
-5|Summon Celestial|PHB|build|2|Summon
-5|Summon Dragon|SRD|build|2|Summon
+5|Summon Celestial|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
+5|Summon Dragon|SRD|done|2|Summon
 5|Swift Quiver|PHB|build|3|Two bonus-action weapon attacks each turn
 5|Synaptic Static|PHB|done|2|INT save psychic; failed save: -1d6 on attacks and checks, repeat save
 5|Telekinesis|SRD|skip|3|
@@ -331,7 +331,7 @@
 6|Planar Ally|SRD|skip|3|
 6|Primordial Ward|PHB|build|3|Resistances; reaction to turn one into immunity
 6|Programmed Illusion|SRD|skip|3|
-6|Summon Fiend|PHB|build|2|Summon
+6|Summon Fiend|PHB|build|2|Summon; needs the Player's Handbook stat block (not in the free compendium)
 6|Sunbeam|SRD|midi|2|
 6|Tasha's Bubbling Cauldron|PHB|skip|3|
 6|Transport via Plants|SRD|skip|3|
@@ -349,7 +349,7 @@
 7|Forcecage|SRD|skip|3|
 7|Mirage Arcane|SRD|skip|3|
 7|Mordenkainen's Magnificent Mansion|SRD|skip|3|aka Magnificent Mansion
-7|Mordenkainen's Sword|SRD|build|2|aka Arcane Sword. Summoned sword, bonus-action attacks
+7|Mordenkainen's Sword|SRD|done|2|aka Arcane Sword. Summoned sword, bonus-action attacks
 7|Plane Shift|SRD|skip|3|
 7|Power Word Fortify|PHB|verify|3|Split 120 temp HP between creatures
 7|Prismatic Spray|SRD|midi|3|

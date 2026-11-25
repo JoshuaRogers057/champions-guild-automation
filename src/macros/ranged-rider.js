@@ -50,7 +50,7 @@ if (burst && caught.length) {
   try {
     await MidiQOL.completeActivityUse(burst, {
       midiOptions: { targetUuids: caught.map((t) => t.document.uuid), workflowOptions: { targetConfirmation: "none" } },
-      spell: { slot: `spell${level}` }, consume: { spellSlot: false, resources: false }, create: { measuredTemplate: false }
+      spell: { slot: `spell${level}` }, consume: { spellSlot: false, resources: false }, concentration: { begin: false, end: null }, create: { measuredTemplate: false }
     }, { configure: false }, {});
   } catch (err) { console.warn(`${spell.name} | burst failed`, err); }
 }

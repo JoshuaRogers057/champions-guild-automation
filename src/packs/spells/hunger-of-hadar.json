@@ -203,8 +203,10 @@
           "value": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false,
+          "special": "",
+          "override": true,
           "concentration": false
         },
         "effects": [],
@@ -321,8 +323,10 @@
           "value": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false,
+          "special": "",
+          "override": true,
           "concentration": false
         },
         "effects": [],
@@ -483,7 +487,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: 20-ft sphere: Blinded inside, 2d6 cold at the start of a turn there, DEX save or 2d6 acid at the end of a turn there."
       }
     }

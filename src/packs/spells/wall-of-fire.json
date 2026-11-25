@@ -313,9 +313,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
+          "special": "",
           "concentration": false,
-          "override": false
+          "override": true
         },
         "effects": [],
         "range": {
@@ -396,7 +398,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: DEX save 5d8 fire (half) when it appears; 5d8 fire to a creature that enters the wall or ends its turn in it (once per turn). The 10 ft beside the burning side is the DM's to apply."
       }
     }

@@ -43,7 +43,7 @@ next?.object?.setTarget?.(true, { releaseOthers: true });
 try {
   await MidiQOL.completeActivityUse(activity, {
     midiOptions: { targetUuids: [pick], workflowOptions: { targetConfirmation: "none", cgaOrbChain: chainId } },
-    spell: { slot: level > 0 ? `spell${level}` : undefined }, consume: { spellSlot: false, resources: false },
+    spell: { slot: level > 0 ? `spell${level}` : undefined }, consume: { spellSlot: false, resources: false }, concentration: { begin: false, end: null },
     create: { measuredTemplate: false }
   }, { configure: false }, {});
 } catch (err) { console.warn("Chromatic Orb | leap failed", err); done(); }

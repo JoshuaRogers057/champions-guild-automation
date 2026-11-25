@@ -84,8 +84,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": true
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -226,7 +229,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: tested (damage, saves, scaling, effects)."
       }
     }

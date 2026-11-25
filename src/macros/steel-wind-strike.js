@@ -14,7 +14,7 @@ for (const t of targets) {
   try {
     await MidiQOL.completeActivityUse(strike, {
       midiOptions: { targetUuids: [t.document.uuid], workflowOptions: { targetConfirmation: "none" } },
-      spell: { slot: `spell${level}` }, consume: { spellSlot: false, resources: false }, create: { measuredTemplate: false }
+      spell: { slot: `spell${level}` }, consume: { spellSlot: false, resources: false }, concentration: { begin: false, end: null }, create: { measuredTemplate: false }
     }, { configure: false }, {});
   } catch (err) { console.warn(`Steel Wind Strike | attack on ${t.name} failed`, err); }
 }

@@ -219,8 +219,10 @@
           "value": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false,
+          "special": "",
+          "override": true,
           "concentration": false
         },
         "effects": [],
@@ -363,7 +365,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.1",
+        "version": "1.0.2",
         "notes": "Champions Guild Automation: 15-ft emanation that follows you; enemies entering it or ending their turn in it make the WIS save (once per turn) and have half speed inside."
       }
     }

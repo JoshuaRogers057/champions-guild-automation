@@ -180,8 +180,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -264,7 +267,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: CON save when cast, then for any creature entering the beam or ending its turn there (once per turn). Move the beam by dragging its region."
       }
     }

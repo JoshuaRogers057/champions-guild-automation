@@ -227,8 +227,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -301,7 +304,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: DEX save 3d10 lightning within 5 ft of the point; Call Another Bolt repeats it each turn without a slot."
       }
     }

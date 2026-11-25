@@ -165,8 +165,11 @@
           "special": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": true
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "uses": {
@@ -258,7 +261,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Paralyzed; repeat WIS save at the end of each of its turns; one extra target per slot level."
       }
     }

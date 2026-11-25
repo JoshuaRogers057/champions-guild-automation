@@ -164,8 +164,11 @@
           "special": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": true
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "uses": {
@@ -276,7 +279,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Prone + Incapacitated; WIS save at the end of each of its turns, and with Advantage each time it takes damage.",
         "aliases": [
           "tashas-hideous-laughter"

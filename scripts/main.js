@@ -249,6 +249,137 @@ Hooks.on("moveToken", (tokenDoc) => scheduleRegionSweep(tokenDoc.parent));
 Hooks.on("deleteRegion", (region) => scheduleRegionSweep(region.parent));
 Hooks.on("updateRegion", (region) => scheduleRegionSweep(region.parent));
 
+// Summons that hurt creatures near them. dnd5e places the summoned token (its actor's flags.dnd5e.summon names the spell
+// and slot level); the active GM watches turns and movement and runs the spell's hidden save activity (midi identifier
+// "<spell identifier>-aura", or "-aura-<element>" for Conjure Elemental) on each creature that qualifies, once per turn.
+//   turnStart / turnEnd: the creature starts / ends its turn within range of the summon
+//   enter: the creature moves to within range;  summonMove: the summon moves to within range of the creature
+const SUMMON_AURAS = {
+  "flaming-sphere": { range: 5, triggers: ["turnEnd", "summonMove"], enemiesOnly: false },
+  "conjure-animals": { range: 10, triggers: ["enter", "turnEnd", "summonMove"], enemiesOnly: true },
+  "guardian-of-faith": { range: 10, triggers: ["enter", "turnStart"], enemiesOnly: true, damageCap: 60 },
+  "conjure-elemental": { range: 5, triggers: ["enter", "turnStart"], enemiesOnly: true, oneRestrained: true }
+};
+const auraUsed = new Set();
+function edgeDistance(a, b, scene) {
+  // Distance between two token footprints in feet (grid squares, diagonals count as 5 ft), from top-left positions.
+  const g = scene.grid.size, d = scene.grid.distance;
+  const ca = { x: a.x + (a.width * g) / 2, y: a.y + (a.height * g) / 2 }, cb = { x: b.x + (b.width * g) / 2, y: b.y + (b.height * g) / 2 };
+  const dx = Math.max(0, Math.abs(ca.x - cb.x) - ((a.width + b.width) * g) / 2);
+  const dy = Math.max(0, Math.abs(ca.y - cb.y) - ((a.height + b.height) * g) / 2);
+  return Math.round(Math.max(dx, dy) / g) * d + d; // adjacent squares are 5 ft apart
+}
+function auraSummons(scene) {
+  const out = [];
+  for (const t of scene?.tokens ?? []) {
+    const summon = t.actor?.flags?.dnd5e?.summon;
+    if (!summon?.origin) continue;
+    const spell = fromUuidSync(summon.origin);
+    const cfg = SUMMON_AURAS[spell?.system?.identifier];
+    if (cfg) out.push({ token: t, spell, cfg, level: Number(summon.level) || spell.system.level });
+  }
+  return out;
+}
+async function triggerAura(aura, creature, why) {
+  const { token: summonToken, spell, cfg, level } = aura;
+  if (!creature?.actor || creature.id === summonToken.id || creature.hidden) return;
+  if (creature.actor.flags?.dnd5e?.summon?.origin === spell.uuid) return; // its own summons
+  if ((creature.actor.system.attributes?.hp?.value ?? 0) <= 0) return;
+  const casterToken = spell.actor?.getActiveTokens?.()[0]?.document;
+  if (creature.id === casterToken?.id && cfg.enemiesOnly) return;
+  if (cfg.enemiesOnly && casterToken && creature.disposition === casterToken.disposition) return;
+  const key = `${summonToken.id}|${creature.id}|${turnKey()}`;
+  if (auraUsed.has(key)) return;
+  let ident = `${spell.system.identifier}-aura`;
+  if (spell.system.identifier === "conjure-elemental") {
+    const element = ["air", "earth", "fire", "water"].find((e) => summonToken.name.toLowerCase().includes(e) || summonToken.actor?.name?.toLowerCase().includes(e)) ?? "air";
+    ident += `-${element}`;
+  }
+  const activity = spell.system.activities.find((a) => a.midiProperties?.identifier === ident);
+  if (!activity) return;
+  if (cfg.oneRestrained) {
+    // Conjure Elemental: only while the spirit has no creature Restrained.
+    const held = canvas.scene?.tokens.some((t) => t.actor?.effects.some((e) => e.statuses?.has("restrained") && String(e.origin ?? "").startsWith(spell.actor.uuid) && e.name.startsWith(spell.name)));
+    if (held) return;
+  }
+  auraUsed.add(key);
+  try {
+    const wf = await MidiQOL.completeActivityUse(activity, {
+      midiOptions: { targetUuids: [creature.uuid], workflowOptions: { targetConfirmation: "none" } },
+      spell: { slot: `spell${level}` }, consume: { spellSlot: false, resources: false }, concentration: { begin: false, end: null }, create: { measuredTemplate: false }
+    }, { configure: false }, {});
+    if (cfg.damageCap) {
+      const dealt = (wf?.damageList ?? []).reduce((s, d) => s + Math.max(0, (d.hpDamage ?? 0) + (d.tempDamage ?? 0)), 0);
+      const total = (summonToken.getFlag(MODULE_ID, "dealt") ?? 0) + dealt;
+      if (total >= cfg.damageCap) {
+        ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: spell.actor }), content: `<p><strong>${spell.name}</strong> has dealt ${total} damage and vanishes.</p>` });
+        await summonToken.delete();
+      } else await summonToken.setFlag(MODULE_ID, "dealt", total);
+    }
+  } catch (err) { console.warn(`${MODULE_ID} | ${spell.name} (${why}) failed`, err); }
+}
+Hooks.on("updateCombat", async (combat, changed) => {
+  if (!game.users.activeGM?.isSelf || !("turn" in changed || "round" in changed)) return;
+  const scene = combat.scene ?? canvas.scene;
+  const auras = auraSummons(scene);
+  if (!auras.length) return;
+  const prev = combat.previous?.tokenId ? scene.tokens.get(combat.previous.tokenId) : null;
+  const curr = combat.combatant?.token;
+  for (const aura of auras) {
+    if (prev && aura.cfg.triggers.includes("turnEnd") && edgeDistance(aura.token, prev, scene) <= aura.cfg.range) {
+      // The end of the previous turn still counts as that turn for once-per-turn purposes.
+      await triggerAura(aura, prev, "turn end");
+    }
+  }
+  for (const aura of auras) {
+    if (curr && aura.cfg.triggers.includes("turnStart") && edgeDistance(aura.token, curr, scene) <= aura.cfg.range) await triggerAura(aura, curr, "turn start");
+  }
+});
+Hooks.on("moveToken", async (tokenDoc, movement) => {
+  if (!game.users.activeGM?.isSelf || !movement?.origin) return;
+  const scene = tokenDoc.parent;
+  const auras = auraSummons(scene);
+  if (!auras.length) return;
+  const before = { x: movement.origin.x, y: movement.origin.y, width: tokenDoc.width, height: tokenDoc.height };
+  const after = { x: movement.destination?.x ?? tokenDoc.x, y: movement.destination?.y ?? tokenDoc.y, width: tokenDoc.width, height: tokenDoc.height };
+  for (const aura of auras) {
+    if (aura.token.id === tokenDoc.id) {
+      if (!aura.cfg.triggers.includes("summonMove")) continue;
+      for (const other of scene.tokens) {
+        if (other.id === tokenDoc.id) continue;
+        if (edgeDistance(before, other, scene) > aura.cfg.range && edgeDistance(after, other, scene) <= aura.cfg.range) await triggerAura(aura, other, "summon moved");
+      }
+    } else if (aura.cfg.triggers.includes("enter")) {
+      if (edgeDistance(aura.token, before, scene) > aura.cfg.range && edgeDistance(aura.token, after, scene) <= aura.cfg.range) await triggerAura(aura, tokenDoc, "entered");
+    }
+  }
+});
+
+// Effects a concentration spell puts on creatures end with that concentration. dnd5e links the ones the casting itself
+// applies, but not those applied later by the spell's areas, repeat saves or summons (Black Tentacles' Restrained from
+// entering the area, Conjure Elemental's Restrained ...). The active GM links those to the caster's concentration.
+function spellOfOrigin(origin) {
+  if (!origin?.includes(".Item.")) return null;
+  let doc = null;
+  try { doc = fromUuidSync(origin); } catch (err) { return null; }
+  if (doc instanceof Item) return doc;
+  if (doc?.item instanceof Item) return doc.item;
+  if (doc?.parent instanceof Item) return doc.parent;
+  return null;
+}
+Hooks.on("createActiveEffect", async (effect) => {
+  if (!game.users.activeGM?.isSelf) return;
+  if (!(effect.parent instanceof Actor) || effect.transfer || effect.statuses?.has("concentrating")) return;
+  if (effect.flags?.dnd5e?.dependentOn) return;
+  const spell = spellOfOrigin(String(effect.origin ?? ""));
+  const props = spell?.system?.properties;
+  if (spell?.type !== "spell" || !(props?.has?.("concentration") ?? props?.includes?.("concentration"))) return;
+  const conc = Array.from(spell.actor?.effects ?? []).find((e) => e.statuses?.has("concentrating") && e.flags?.dnd5e?.item?.id === spell.id);
+  if (!conc || conc === effect) return;
+  try { await MidiQOL.addDependent(conc, effect); }
+  catch (err) { console.warn(`${MODULE_ID} | couldn't tie ${effect.name} to ${spell.name}'s concentration`, err); }
+});
+
 // After an update, tell the GM once that there are new fixes to apply.
 Hooks.once("ready", async () => {
   if (!game.user.isGM) return;

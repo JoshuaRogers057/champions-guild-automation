@@ -145,8 +145,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -223,8 +226,11 @@
           "chatFlavor": "1: moves in a random direction, no action. 2-6: no move or action. 7-8: melee attack against a random creature in reach (or nothing). 9-10: acts and moves normally."
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [],
         "range": {
@@ -357,7 +363,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: WIS save or Confused: no Reactions, a d10 behaviour roll at the start of each of its turns, a repeat save at the end."
       }
     }

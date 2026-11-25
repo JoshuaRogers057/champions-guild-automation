@@ -215,8 +215,10 @@
           "value": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false,
+          "special": "",
+          "override": true,
           "concentration": false
         },
         "effects": [
@@ -362,7 +364,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: STR save: 3d6 bludgeoning and Restrained, when it appears and when a creature enters or ends its turn there (once per turn).",
         "aliases": [
           "evards-black-tentacles"

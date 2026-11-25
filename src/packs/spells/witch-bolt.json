@@ -185,8 +185,10 @@
           "value": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": false,
+          "special": "",
+          "override": true,
           "concentration": false
         },
         "effects": [],
@@ -265,7 +267,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: ranged spell attack 2d12 lightning; Arc Lightning (Bonus Action, no slot) deals 1d12 automatically on each later turn."
       }
     }

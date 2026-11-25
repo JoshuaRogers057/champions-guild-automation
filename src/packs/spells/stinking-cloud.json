@@ -87,8 +87,11 @@
           "chatFlavor": ""
         },
         "duration": {
+          "value": "",
           "units": "inst",
-          "override": true
+          "special": "",
+          "override": true,
+          "concentration": false
         },
         "effects": [
           {
@@ -266,7 +269,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: a creature starting its turn in the cloud makes a CON save or is Poisoned (no action or Bonus Action) until the end of that turn."
       }
     }
