@@ -3,6 +3,39 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.14.0
+
+The first batch of feats: the 16 priority-1 feats from the 2024 Player's Handbook. DMs: update, then run
+**Mass Apply / Update** on each character. Heavy Armor Master, Mage Slayer's Concentration Breaker and Alert's
+Initiative Swap prompt are module rules, so they work as soon as the module updates.
+
+- New feats:
+  - **Alert**: Proficiency Bonus to Initiative. Once everyone on your side has rolled Initiative, you're asked
+    whether to swap with a willing ally (neither Incapacitated); the Initiative Swap activity opens it again.
+  - **Tough**: Hit Point maximum +2 per character level.
+  - **Savage Attacker**: once per turn on a weapon hit, the weapon's damage is rolled twice and the higher counts.
+  - **Healer**: Battle Medic (uses a Healer's Kit use and one of the target's Hit Point Dice; heals the die, 1s
+    rerolled, + Proficiency Bonus) and Healing Rerolls on your spells' healing dice.
+  - **Great Weapon Master**: +Proficiency Bonus damage on Heavy weapon hits on your turn; after a melee crit or
+    dropping a creature to 0 HP you're offered the Hew Bonus Action attack.
+  - **Sharpshooter**: ranged weapon attacks ignore Half/Three-Quarters Cover and get no Disadvantage at long range
+    or with an enemy within 5 ft.
+  - **War Caster**: Advantage on Concentration saves.
+  - **Mage Slayer**: creatures you damage have Disadvantage on the Concentration save; Guarded Mind offers to turn a
+    failed INT/WIS/CHA save into a success (once per Short or Long Rest).
+  - **Heavy Armor Master**: in Heavy armor, Bludgeoning/Piercing/Slashing damage from an attack that hits you is
+    reduced by your Proficiency Bonus.
+  - **Defensive Duelist**: Parry Reaction when a melee attack hits you while you hold a Finesse weapon (+PB AC until
+    the start of your next turn).
+  - **Polearm Master**: Pole Strike Bonus Action attack (d4 + STR Bludgeoning).
+  - **Sentinel**: Halt - after a melee hit on someone else's turn you're asked whether it was an Opportunity Attack;
+    if so the target's Speed is 0 for the rest of the turn.
+  - **Great Weapon Fighting**, **Dueling** and **Two-Weapon Fighting** fighting styles.
+- Changed: **Lucky** (1.1.0) now asks whether to spend a Luck Point when you fail a saving throw (the save is
+  rerolled and the higher roll counts, the same odds as Advantage).
+- The module now uses socketlib (already installed with midi-qol) so a player's Alert swap can change an ally's
+  Initiative.
+
 ## 0.13.0
 
 The last Player's Handbook spells, built from the book text, plus fixes where earlier versions didn't match the book.

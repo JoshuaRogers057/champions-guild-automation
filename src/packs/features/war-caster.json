@@ -1,0 +1,108 @@
+{
+  "name": "War Caster",
+  "type": "feat",
+  "_id": "cgaFtWarCast0000",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> You have Advantage on Constitution saving throws to maintain Concentration. Reactive Spell (casting a spell instead of an Opportunity Attack) and performing Somatic components with your hands full are up to you.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "war-caster",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaWarCasterFx00",
+      "name": "War Caster",
+      "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.advantage.concentration",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00060000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Advantage on Concentration saves. Reactive Spell is manual."
+      }
+    }
+  }
+}

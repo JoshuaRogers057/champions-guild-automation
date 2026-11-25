@@ -1,0 +1,119 @@
+{
+  "name": "Great Weapon Master",
+  "type": "feat",
+  "_id": "cgaFtGreaWeapMas",
+  "img": "icons/skills/melee/strike-hammer-destructive-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you hit with a Heavy weapon on your turn, it deals extra damage equal to your Proficiency Bonus. Hew: right after you score a Critical Hit with a melee weapon or drop a creature to 0 Hit Points with one, you're asked whether to attack again with it as a Bonus Action.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "great-weapon-master",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaGWMasterFx000",
+      "name": "Great Weapon Master",
+      "img": "icons/skills/melee/strike-hammer-destructive-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,damageBonus",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaFtChg00160000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,postActiveEffects",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaFtChg00170000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: +PB damage on Heavy weapon hits on your turn; Hew prompt for a Bonus Action attack after a melee crit or dropping a creature to 0 HP."
+      }
+    }
+  },
+  "_cgaMacro": "feats.js"
+}

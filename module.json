@@ -11,6 +11,7 @@
     "verified": "14.370",
     "maximum": "14"
   },
+  "socket": true,
   "esmodules": [
     "scripts/main.js"
   ],
@@ -26,7 +27,8 @@
       { "id": "cat", "type": "module", "compatibility": { "minimum": "0.1.8" } },
       { "id": "midi-qol", "type": "module", "compatibility": { "minimum": "14.6.5" } },
       { "id": "dae", "type": "module", "compatibility": { "minimum": "14.6.4" } },
-      { "id": "lib-wrapper", "type": "module" }
+      { "id": "lib-wrapper", "type": "module" },
+      { "id": "socketlib", "type": "module" }
     ]
   },
   "packs": [

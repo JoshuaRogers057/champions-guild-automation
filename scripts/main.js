@@ -158,10 +158,29 @@ function reduceDamage(ditem, amount, types) {
 }
 const effectsWith = (actor, flag) => Array.from(actor?.effects ?? []).filter((e) => !e.disabled && !e.isSuppressed
   && (e.system?.changes ?? e.changes ?? []).some((c) => c.key === `flags.${MODULE_ID}.${flag}`));
-Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem }) => {
+const hasFeat = (actor, identifier) => !!actor?.items?.some((i) => i.system?.identifier === identifier);
+const wearingHeavyArmor = (actor) => actor.items.some((i) => i.type === "equipment" && i.system.equipped && i.system.type?.value === "heavy");
+Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow }) => {
   const actor = token?.actor;
   if (!actor || !ditem || (ditem.totalDamage ?? 0) <= 0) return;
   try {
+    // Heavy Armor Master: while wearing Heavy armor, an attack that hits you deals PB less Bludgeoning/Piercing/Slashing.
+    const tokenDoc = token.document ?? token;
+    const wasHit = !!workflow?.activity?.attack && Array.from(workflow.hitTargets ?? []).some((t) => (t.document ?? t) === tokenDoc);
+    if (wasHit && hasFeat(actor, "heavy-armor-master") && wearingHeavyArmor(actor)) {
+      const cut = reduceDamage(ditem, Number(actor.system.attributes.prof ?? 0), ["bludgeoning", "piercing", "slashing"]);
+      if (cut) ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Heavy Armor Master:</strong> ${actor.name} takes ${cut} less damage.</p>` });
+    }
+    // Mage Slayer: a concentrating creature damaged by someone with the feat has Disadvantage on that Concentration save.
+    if (hasFeat(workflow?.actor, "mage-slayer") && workflow.actor !== actor && actor.statuses?.has("concentrating")
+      && (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0) > 0) {
+      await MidiQOL.socket().executeAsGM("createEffects", { actorUuid: actor.uuid, effects: [{
+        name: "Mage Slayer: Disadvantage on Concentration", img: "icons/magic/control/debuff-energy-hold-teal-blue.webp", transfer: false,
+        duration: { seconds: 6 },
+        system: { changes: [{ key: "flags.midi-qol.disadvantage.concentration", value: "1", type: "override", priority: 50, phase: "initial" }] },
+        flags: { dae: { specialDuration: ["isSave"], stackable: "noneName" } }
+      }] }).catch((err) => console.warn(`${MODULE_ID} | Mage Slayer failed`, err));
+    }
     // Resistance (cantrip)
     const types = foundry.utils.getProperty(actor, `flags.${MODULE_ID}.resistance`);
     if (types && resistanceUsed.get(actor.uuid) !== turnKey()) {
@@ -465,6 +484,79 @@ Hooks.on("midi-qol.RollComplete", async (wf) => {
       return; // once per attack
     }
   } catch (err) { console.warn(`${MODULE_ID} | Holy Aura failed`, err); }
+});
+
+// Alert (2024): right after Initiative is rolled, the creature with Alert may swap Initiative with a willing ally in the
+// same combat (neither Incapacitated). Once every combatant on its side has rolled, the owner (a player if one is
+// online, otherwise the GM) gets a prompt; "Keep my Initiative" is the default. The swap itself runs on the GM's client.
+// The feat's "Initiative Swap" activity opens the same prompt by hand.
+let cgaSocket = null;
+Hooks.once("socketlib.ready", () => {
+  cgaSocket = socketlib.registerModule(MODULE_ID);
+  cgaSocket.register("swapInitiative", swapInitiativeAsGM);
+});
+async function swapInitiativeAsGM(combatId, aId, bId) {
+  const combat = game.combats.get(combatId);
+  const a = combat?.combatants.get(aId); const b = combat?.combatants.get(bId);
+  if (!a || !b) return false;
+  const currentId = combat.started ? combat.combatant?.id : null;
+  await combat.updateEmbeddedDocuments("Combatant", [{ _id: a.id, initiative: b.initiative }, { _id: b.id, initiative: a.initiative }], { cgaAlertSwap: true });
+  if (currentId) {
+    const idx = combat.turns.findIndex((c) => c.id === currentId);
+    if (idx >= 0 && idx !== combat.turn) await combat.update({ turn: idx });
+  }
+  return true;
+}
+const isIncapacitated = (actor) => !!actor?.statuses?.has("incapacitated") || ["paralyzed", "petrified", "stunned", "unconscious"].some((s) => actor?.statuses?.has(s));
+const sideOf = (c) => (c.token?.disposition === CONST.TOKEN_DISPOSITIONS.HOSTILE ? -1 : c.token?.disposition === CONST.TOKEN_DISPOSITIONS.FRIENDLY ? 1 : 0);
+export async function alertSwap(combatant, { auto = false } = {}) {
+  const combat = combatant?.parent;
+  const esc = (s) => foundry.utils.escapeHTML(String(s ?? ""));
+  const warn = (m) => { if (!auto) ui.notifications.warn(`Alert: ${m}`); };
+  if (!combat) return warn("there is no active combat.");
+  if (combatant.initiative === null || combatant.initiative === undefined) return warn(`${combatant.name} hasn't rolled Initiative yet.`);
+  if (isIncapacitated(combatant.actor)) return warn(`${combatant.name} is Incapacitated and can't swap.`);
+  const allies = combat.combatants.filter((c) => c.id !== combatant.id && !c.defeated && sideOf(c) === sideOf(combatant)
+    && c.initiative !== null && c.initiative !== undefined && !isIncapacitated(c.actor) && c.initiative !== combatant.initiative)
+    .sort((a, b) => b.initiative - a.initiative);
+  if (!allies.length) return warn("no ally to swap with.");
+  const buttons = allies.map((c) => ({ action: c.id, label: `${c.name} (${c.initiative})` }));
+  buttons.push({ action: "keep", label: "Keep my Initiative", default: true });
+  const choice = await foundry.applications.api.DialogV2.wait({
+    window: { title: `Alert: Initiative Swap - ${combatant.name}` },
+    content: `<p><strong>${esc(combatant.name)}</strong> rolled <strong>${combatant.initiative}</strong>. Swap Initiative with a willing ally?</p>`,
+    buttons, rejectClose: false
+  }).catch(() => null);
+  if (!choice || choice === "keep") return;
+  const other = combat.combatants.get(choice);
+  if (!other) return;
+  const [mine, theirs] = [combatant.initiative, other.initiative];
+  const done = game.user.isGM ? await swapInitiativeAsGM(combat.id, combatant.id, other.id)
+    : await cgaSocket?.executeAsGM("swapInitiative", combat.id, combatant.id, other.id).catch(() => false);
+  if (!done) return ui.notifications.warn("Alert: the swap needs a GM online.");
+  ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: combatant.actor }),
+    content: `<p><strong>Alert:</strong> ${esc(combatant.name)} swaps Initiative with ${esc(other.name)}: ${esc(combatant.name)} is now on <strong>${theirs}</strong>, ${esc(other.name)} on <strong>${mine}</strong>.</p>` });
+}
+const alertAsked = new Set();
+function responsibleUser(actor) {
+  return game.users.find((u) => u.active && !u.isGM && actor?.testUserPermission(u, "OWNER")) ?? game.users.activeGM;
+}
+Hooks.on("updateCombatant", (combatant, changes, options) => {
+  if (!("initiative" in changes) || options?.cgaAlertSwap) return;
+  const combat = combatant.parent;
+  for (const c of combat.combatants) {
+    const key = `${combat.id}.${c.id}`;
+    if (alertAsked.has(key) || c.initiative === null || c.initiative === undefined || !hasFeat(c.actor, "alert")) continue;
+    if (responsibleUser(c.actor)?.id !== game.user.id) continue;
+    // Wait until everyone on its side has rolled, so the prompt can offer every ally.
+    if (combat.combatants.some((o) => sideOf(o) === sideOf(c) && (o.initiative === null || o.initiative === undefined))) continue;
+    alertAsked.add(key);
+    setTimeout(() => alertSwap(c, { auto: true }), 500);
+  }
+});
+Hooks.on("deleteCombat", (combat) => { for (const k of [...alertAsked]) if (k.startsWith(`${combat.id}.`)) alertAsked.delete(k); });
+Hooks.once("init", () => {
+  game.modules.get(MODULE_ID).api = { alertSwap, alertSwapFor: (actor) => alertSwap(game.combat?.combatants.find((c) => c.actor === actor || c.actorId === actor?.id)) };
 });
 
 // After an update, tell the GM once that there are new fixes to apply.

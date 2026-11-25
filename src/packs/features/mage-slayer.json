@@ -1,0 +1,153 @@
+{
+  "name": "Mage Slayer",
+  "type": "feat",
+  "_id": "cgaFtMageSlay000",
+  "img": "icons/magic/control/debuff-energy-hold-teal-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you damage a concentrating creature, it has Disadvantage on the save to keep Concentration. Guarded Mind: when you fail an Intelligence, Wisdom or Charisma saving throw, you're asked whether to succeed instead (once per Short or Long Rest).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "mage-slayer",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaMageSlayerFx0",
+      "name": "Mage Slayer: Guarded Mind",
+      "img": "icons/magic/control/debuff-energy-hold-teal-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.cgaGuardedMind.label",
+            "value": "Guarded Mind: succeed instead (once per Short or Long Rest)",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00090000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaGuardedMind.save.fail.int",
+            "value": "success",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00100000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaGuardedMind.save.fail.wis",
+            "value": "success",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00110000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaGuardedMind.save.fail.cha",
+            "value": "success",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00120000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaGuardedMind.count",
+            "value": "ItemUses.identifier.mage-slayer",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00130000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Creatures you damage have Disadvantage on the Concentration save (module rule). Guarded Mind: a failed INT/WIS/CHA save offers to succeed instead, once per Short or Long Rest."
+      }
+    }
+  }
+}

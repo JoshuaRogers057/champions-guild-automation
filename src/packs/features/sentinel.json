@@ -1,0 +1,109 @@
+{
+  "name": "Sentinel",
+  "type": "feat",
+  "_id": "cgaFtSent0000000",
+  "img": "icons/skills/melee/sword-shield-stylized-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Halt: when you hit a creature with an Opportunity Attack, its Speed becomes 0 for the rest of the turn (you're asked to confirm after a melee hit on someone else's turn). Guardian (an Opportunity Attack when a creature within 5 feet Disengages or hits someone else) is a Reaction you take yourself.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "sentinel",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaSentinelFx000",
+      "name": "Sentinel",
+      "img": "icons/skills/melee/sword-shield-stylized-white.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,postActiveEffects",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaFtChg00200000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Halt: after a melee hit on another creature's turn, confirm it was an Opportunity Attack and the target's Speed drops to 0 for the turn. Guardian is a manual Reaction."
+      }
+    }
+  },
+  "_cgaMacro": "feats.js"
+}

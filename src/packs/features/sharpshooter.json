@@ -1,0 +1,118 @@
+{
+  "name": "Sharpshooter",
+  "type": "feat",
+  "_id": "cgaFtShar0000000",
+  "img": "icons/skills/ranged/arrow-flying-white-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your ranged weapon attacks ignore Half and Three-Quarters Cover, and neither long range nor an enemy within 5 feet gives them Disadvantage.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "sharpshooter",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaSharpshootFx0",
+      "name": "Sharpshooter",
+      "img": "icons/skills/ranged/arrow-flying-white-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.sharpShooter",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00070000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.ignoreNearbyFoes",
+            "value": "activity?.actionType === \"rwak\"",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00080000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Ranged weapon attacks ignore Half/Three-Quarters Cover, no Disadvantage at long range or with an enemy within 5 ft."
+      }
+    }
+  }
+}

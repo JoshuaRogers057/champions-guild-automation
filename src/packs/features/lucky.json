@@ -5,7 +5,7 @@
   "img": "icons/equipment/neck/necklace-charm-clover.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> Spend a Luck Point for Advantage on your next d20 Test, or to give an attack against you Disadvantage (doesn't use your Reaction).</p>",
+      "value": "<p><em>Champions Guild Automation:</em> You have Luck Points equal to your Proficiency Bonus (regained on a Long Rest). When you fail a saving throw, you're asked whether to spend one for Advantage (the save is rerolled and the higher roll counts). You can also use the feat before a d20 Test for Advantage on it, or when a creature attacks you to give that attack Disadvantage (no Reaction needed).</p>",
       "chat": ""
     },
     "source": {
@@ -530,6 +530,82 @@
       "tint": "#ffffff",
       "folder": null,
       "sort": 0
+    },
+    {
+      "_id": "luckySaveFx00000",
+      "name": "Lucky: Luck Point on a failed save",
+      "img": "icons/equipment/neck/necklace-charm-clover.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.cgaLucky.label",
+            "value": "Lucky: spend a Luck Point for Advantage (reroll, keep the higher)",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00010000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaLucky.save.fail.all",
+            "value": "reroll-kh",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00020000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaLucky.count",
+            "value": "ItemUses.identifier.lucky",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg00030000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
     }
   ],
   "flags": {
@@ -539,8 +615,8 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
-        "notes": "Champions Guild Automation: Advantage on next d20 Test, or Disadvantage on an attack against you without spending your Reaction."
+        "version": "1.1.0",
+        "notes": "Champions Guild Automation: Luck Points (PB per Long Rest). A failed saving throw offers a Luck Point for Advantage (reroll, keep the higher). Use the feat for Advantage on your next d20 Test, or for Disadvantage on an attack against you without spending your Reaction."
       }
     }
   }
