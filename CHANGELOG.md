@@ -3,6 +3,28 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.6.0
+
+26 priority-2 spells, each cast in a live v14 world. DMs: update, then run **Mass Apply / Update**.
+
+- Worked as-is (now shipped so every table gets the same version): Starry Wisp, Dissonant Whispers, Longstrider,
+  Ray of Sickness, Darkvision, Flame Blade, Magic Weapon, Protection from Poison, Mass Healing Word, Blight,
+  Dimension Door, Ice Storm, Stoneskin, Chain Lightning, Circle of Death, Disintegrate, Heal.
+- Fixed:
+  - **Acid Arrow**: the extra 2d4 Acid was dealt right away; now it lands at the end of the target's next turn
+    (and scales with the slot).
+  - **Vitriolic Sphere**: creatures that fail the save now take the extra 5d4 Acid at the end of their next turn.
+  - **Prayer of Healing**: adds your spellcasting modifier to the healing.
+  - **Protection from Energy**: gave all five resistances at once; now you pick one damage type.
+  - **Enhance Ability**: gave Advantage on all five abilities; now you pick one.
+  - **Enlarge/Reduce**: applied both effects, which cancelled out. Now there are Enlarge and Reduce activities;
+    willing targets skip the save, and the "(CON save)" versions are for unwilling ones.
+- New (Player's Handbook spells that aren't in the free compendium):
+  - **Conjure Barrage**: 60-ft cone, DEX save, 5d8 Force.
+  - **Conjure Volley**: 40-ft-radius cylinder, DEX save, 8d8 Force.
+  - **Destructive Wave**: creatures you target within 30 ft, CON save, 5d6 Thunder + 5d6 Radiant or Necrotic
+    and Prone.
+
 ## 0.5.0
 
 The rest of the priority-1 spells: 13 that needed real automation, each tested in a live v14 world. DMs: update,
