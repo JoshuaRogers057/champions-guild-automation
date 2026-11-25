@@ -3,6 +3,28 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.12.0
+
+21 priority-3 spells, each tested in a live v14 world. DMs: update, then run **Mass Apply / Update**.
+
+- **Areas**:
+  - Gust of Wind: STR save or pushed 15 ft, again for a creature ending its turn in the line.
+  - Sleet Storm: DEX save or Prone and lose Concentration on entering or starting a turn there.
+  - Wall of Thorns: the slashing save on entering the wall or ending a turn in it.
+  - Incendiary Cloud: the fire save on entering or ending a turn in the cloud.
+  - Earthquake: Prone and lose Concentration when cast and for creatures ending their turn in the area.
+  - Conjure Celestial: your allies in the pillar are healed, everyone else makes the searing save.
+  - Aura of Life: a 30-ft aura that moves with you; necrotic resistance, and allies at 0 HP regain 1 HP.
+- **Summons**: Giant Insect, Faithful Hound (it bites the nearest enemy within 5 ft at the start of your turn),
+  Conjure Fey (its extra damage dice counted one slot level too many; fixed), Create Undead.
+- **Blink**: the d6 is rolled at the end of each of your turns; 4-6 makes you Ethereal until your next turn.
+- **Dispel Magic**: ends spell effects on the target up to the slot level and rolls the check for higher ones.
+- **Compulsion**: repeat save at the end of each turn.
+- **Power Word Kill**: a creature at 100 HP or fewer dies; otherwise 12d12 psychic.
+- Compendium versions with notes for the parts the DM runs: Wind Wall, Globe of Invulnerability, Wall of Ice,
+  Symbol, Tsunami, Prismatic Wall.
+- **Conjure Elemental** 1.0.1: the spirit's own save damage counted one slot level too many.
+
 ## 0.11.0
 
 The 29 priority-3 spells to verify, each cast in a live v14 world. DMs: update, then run **Mass Apply / Update**.
