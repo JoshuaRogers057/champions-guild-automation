@@ -160,10 +160,51 @@ const effectsWith = (actor, flag) => Array.from(actor?.effects ?? []).filter((e)
   && (e.system?.changes ?? e.changes ?? []).some((c) => c.key === `flags.${MODULE_ID}.${flag}`));
 const hasFeat = (actor, identifier) => !!actor?.items?.some((i) => i.system?.identifier === identifier);
 const wearingHeavyArmor = (actor) => actor.items.some((i) => i.type === "equipment" && i.system.equipped && i.system.type?.value === "heavy");
+// Boon of the Night Spirit: Resistance to everything but Psychic and Radiant while in Dim Light or Darkness.
+function inBrightLight(tokenDoc) {
+  const t = tokenDoc?.object;
+  if (!t || tokenDoc.parent !== canvas.scene) return true; // can't tell off-canvas: no bonus
+  if (canvas.environment?.globalLightSource?.active) return true;
+  const c = t.center;
+  for (const s of canvas.effects?.lightSources ?? []) {
+    if (!s.active || s.isDarkness || s.constructor?.name === "GlobalLightSource") continue;
+    const bright = Number(s.data?.bright ?? 0);
+    if (bright > 0 && Math.hypot(c.x - s.x, c.y - s.y) <= bright && (s.shape?.contains?.(c.x, c.y) ?? true)) return true;
+  }
+  return false;
+}
+const fortitudeUsed = new Map(); // actor uuid -> turn key
 Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow }) => {
   const actor = token?.actor;
-  if (!actor || !ditem || (ditem.totalDamage ?? 0) <= 0) return;
+  if (!actor || !ditem) return;
+  // Boon of Fortitude: once per turn, healing restores an extra CON modifier.
   try {
+    if ((ditem.hpDamage ?? 0) < 0 && hasFeat(actor, "boon-of-fortitude") && fortitudeUsed.get(actor.uuid) !== turnKey()) {
+      const con = Math.max(0, Number(actor.system.abilities.con?.mod ?? 0));
+      const max = Number(actor.system.attributes.hp.max ?? 0);
+      const gain = Math.min(con, Math.max(0, max - Number(ditem.newHP ?? 0)));
+      if (gain > 0) {
+        const heal = (ditem.damageDetail ?? []).find((d) => d.type === "healing");
+        if (heal) heal.value += (heal.value < 0 ? -gain : gain); // midi stores healing as a negative value
+        ditem.newHP += gain; ditem.hpDamage -= gain; ditem.totalDamage -= gain;
+        fortitudeUsed.set(actor.uuid, turnKey());
+        ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Boon of Fortitude:</strong> ${actor.name} regains ${gain} extra Hit Points.</p>` });
+      }
+    }
+  } catch (err) { console.warn(`${MODULE_ID} | Boon of Fortitude failed`, err); }
+  if ((ditem.totalDamage ?? 0) <= 0) return;
+  try {
+    // Boon of the Night Spirit: halve damage (not Psychic/Radiant) outside Bright Light, unless already resistant.
+    if (hasFeat(actor, "boon-of-the-night-spirit") && !inBrightLight(token.document ?? token)) {
+      const tr = actor.system.traits ?? {};
+      const resisted = (type) => tr.dr?.value?.has?.(type) || tr.di?.value?.has?.(type) || tr.dr?.all || tr.di?.all;
+      let cut = 0;
+      for (const d of ditem.damageDetail ?? []) {
+        if (["psychic", "radiant", "healing", "temphp"].includes(d.type) || (d.value ?? 0) <= 0 || resisted(d.type)) continue;
+        cut += reduceDamage(ditem, d.value - Math.floor(d.value / 2), [d.type]);
+      }
+      if (cut) ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Shadowy Form:</strong> ${actor.name} resists ${cut} damage in the dark.</p>` });
+    }
     // Heavy Armor Master: while wearing Heavy armor, an attack that hits you deals PB less Bludgeoning/Piercing/Slashing.
     const tokenDoc = token.document ?? token;
     const wasHit = !!workflow?.activity?.attack && Array.from(workflow.hitTargets ?? []).some((t) => (t.document ?? t) === tokenDoc);
@@ -207,6 +248,21 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
       const wards = effectsWith(actor, "deathWard");
       ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Death Ward:</strong> ${actor.name} drops to 1 Hit Point instead of 0, and the spell ends.</p>` });
       for (const e of wards) MidiQOL.socket().executeAsGM("removeEffect", { effectUuid: e.uuid }).catch(() => {});
+    }
+    // Boon of Recovery - Last Stand: once per Long Rest, drop to 1 HP instead of 0 and regain half your HP maximum.
+    const stand = (ditem.oldHP ?? 0) > 0 && (ditem.newHP ?? 1) <= 0
+      ? actor.items.find((i) => i.system?.identifier === "boon-of-recovery")?.system.activities.find((a) => a.midiProperties?.identifier === "last-stand") : null;
+    if (stand && Number(stand.uses?.value ?? 0) > 0) {
+      const dealt = (ditem.damageDetail ?? []).reduce((s, d) => s + (["temphp", "healing"].includes(d.type) ? 0 : Math.max(0, d.value ?? 0)), 0);
+      const allowed = Math.max(0, (ditem.oldHP ?? 0) - 1 + (ditem.oldTempHP ?? 0));
+      if (dealt > allowed) reduceDamage(ditem, dealt - allowed);
+      ditem.newHP = 1;
+      ditem.hpDamage = (ditem.oldHP ?? 1) - 1;
+      const half = Math.floor(Number(actor.system.attributes.hp.max ?? 0) / 2);
+      try { await stand.update({ "uses.spent": Number(stand.uses.spent ?? 0) + 1 }); } catch (err) { console.warn(`${MODULE_ID} | Last Stand use not recorded`, err); }
+      ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Last Stand:</strong> ${actor.name} drops to 1 Hit Point instead of 0 and regains ${half} Hit Points.</p>` });
+      setTimeout(() => MidiQOL.applyTokenDamage([{ value: half, type: "healing" }], half, new Set([token]), null, new Set(), {})
+        .catch((err) => console.warn(`${MODULE_ID} | Last Stand healing failed`, err)), 600);
     }
     // Warding Bond: the caster takes the same amount (after the target's own resistances and the spell's).
     if (foundry.utils.getProperty(actor, `flags.${MODULE_ID}.wardingBond`)) {
@@ -625,6 +681,41 @@ Hooks.on("updateCombatant", (combatant, changes, options) => {
 Hooks.on("deleteCombat", (combat) => { for (const k of [...alertAsked]) if (k.startsWith(`${combat.id}.`)) alertAsked.delete(k); });
 Hooks.once("init", () => {
   game.modules.get(MODULE_ID).api = { alertSwap, alertSwapFor: (actor) => alertSwap(game.combat?.combatants.find((c) => c.actor === actor || c.actorId === actor?.id)) };
+});
+
+// Medium Armor Master: in Medium armor with DEX 16+, AC gets +1 (DEX adds 3 instead of 2). The feat's AC effect is
+// switched on and off by the active GM whenever armor, the feat or Dexterity changes.
+async function syncMediumArmorMaster(actor) {
+  if (!game.users.activeGM?.isSelf || !actor?.items) return;
+  const feat = actor.items.find((i) => i.system?.identifier === "medium-armor-master");
+  const eff = feat?.effects.find((e) => e.flags?.world?.cgaMediumArmor);
+  if (!eff) return;
+  const medium = actor.items.some((i) => i.type === "equipment" && i.system.equipped && i.system.type?.value === "medium");
+  const want = medium && Number(actor.system.abilities?.dex?.value ?? 0) >= 16;
+  if (eff.disabled === want) await eff.update({ disabled: !want }).catch(() => {});
+}
+for (const hook of ["createItem", "updateItem", "deleteItem"]) Hooks.on(hook, (item) => { if (item.parent instanceof Actor) syncMediumArmorMaster(item.parent); });
+Hooks.on("updateActor", (actor, changes) => { if (foundry.utils.hasProperty(changes, "system.abilities.dex")) syncMediumArmorMaster(actor); });
+
+// Boon of Spell Recall - Free Casting: casting with a level 1-4 slot rolls 1d4; on a match the slot isn't expended.
+// dnd5e's consumption hook knows which slot is being spent, so the slot update is simply dropped.
+Hooks.on("dnd5e.activityConsumption", (activity, usageConfig, messageConfig, updates) => {
+  try {
+    const actor = activity?.actor;
+    const slot = usageConfig?.spell?.slot;
+    if (!slot || activity.item?.type !== "spell" || !hasFeat(actor, "boon-of-spell-recall")) return;
+    const level = Number(actor.system.spells?.[slot]?.level ?? 0);
+    const key = `system.spells.${slot}.value`;
+    const upd = updates?.actor ?? {};
+    const flat = key in upd;
+    if (level < 1 || level > 4 || (!flat && foundry.utils.getProperty(upd, key) === undefined)) return;
+    // The hook is synchronous, so draw the d4 directly (dice rolls are asynchronous).
+    const d4 = Math.min(4, Math.max(1, Math.ceil(CONFIG.Dice.randomUniform() * 4)));
+    const saved = d4 === level;
+    ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Boon of Spell Recall:</strong> Free Casting with a level ${level} slot - 1d4 rolls <strong>${d4}</strong>${saved ? ": the slot isn't expended." : "."}</p>` });
+    if (!saved) return;
+    if (flat) delete upd[key]; else foundry.utils.setProperty(upd, key, actor.system.spells[slot].value);
+  } catch (err) { console.warn(`${MODULE_ID} | Spell Recall failed`, err); }
 });
 
 // Lucky (2024): before a creature with Lucky rolls a saving throw that doesn't already have Advantage, its owner is

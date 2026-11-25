@@ -19,13 +19,13 @@ Origin|Tavern Brawler|PHB|done|2|Unarmed Strike deals 1d4 + STR Bludgeoning, rer
 Origin|Tough|PHB|done|1|HP max +2 per character level (hp.bonuses.level = 2)
 General|Ability Score Improvement|SRD|skip|3|Advancement
 General|Actor|PHB|skip|3|Advantage on disguise Deception/Performance checks and mimicry are DM calls
-General|Athlete|PHB|build|3|Climb Speed equal to your Speed. Hop Up and Jumping are movement rules
+General|Athlete|PHB|done|3|Climb Speed equal to your Speed. Hop Up and Jumping are movement rules
 General|Charger|PHB|done|2|Charge Attack: once per turn after a melee hit in the Attack action, choose +1d8 damage or push the target up to 10 ft (no more than one size larger). Improved Dash +10 ft is manual
-General|Chef|PHB|build|3|Bolstering Treats: PB treats, a Bonus Action to eat one for PB Temporary HP. Replenishing Meal (+1d8 when spending Hit Dice on a Short Rest) is manual
+General|Chef|PHB|done|3|Bolstering Treats: PB treats, a Bonus Action to eat one for PB Temporary HP. Replenishing Meal (+1d8 when spending Hit Dice on a Short Rest) is manual
 General|Crossbow Expert|PHB|done|2|No Disadvantage on crossbow attacks with an enemy within 5 ft. Ignoring Loading and the Light-crossbow damage modifier are manual
 General|Crusher|PHB|done|2|Once per turn after a Bludgeoning hit, push the target 5 ft (no more than one size larger). Crit with Bludgeoning: attacks against the target have Advantage until the start of your next turn
 General|Defensive Duelist|PHB|done|1|Parry: Reaction when hit by a melee attack while holding a Finesse weapon, +PB AC against melee attacks until the start of your next turn
-General|Dual Wielder|PHB|build|3|dnd5e enhancedDualWielding flag lets non-Light one-handed melee weapons make the off-hand attack. Quick Draw is manual
+General|Dual Wielder|PHB|done|3|dnd5e enhancedDualWielding flag lets non-Light one-handed melee weapons make the off-hand attack. Quick Draw is manual
 General|Durable|PHB|done|2|Advantage on Death Saving Throws; Speedy Recovery: Bonus Action, spend a Hit Die and heal the roll
 General|Elemental Adept|PHB|done|2|Choose Acid/Cold/Fire/Lightning/Thunder: your spells ignore Resistance to it and treat 1s on its damage dice as 2s (one activity or toggle per type)
 General|Fey Touched|PHB|skip|2|Misty Step + one spell from the advancement, each castable once per Long Rest without a slot (spell uses)
@@ -38,12 +38,12 @@ General|Keen Mind|PHB|skip|3|Skill from the advancement; Study as a Bonus Action
 General|Lightly Armored|PHB|skip|3|Armor training from the advancement
 General|Mage Slayer|PHB|done|1|Concentration Breaker: creatures you damage have Disadvantage on the Concentration save. Guarded Mind: once per Short/Long Rest, turn a failed INT/WIS/CHA save into a success (prompt after the failed save)
 General|Martial Weapon Training|PHB|skip|3|Proficiency from the advancement
-General|Medium Armor Master|PHB|build|3|Medium armor adds up to +3 DEX to AC when DEX is 16+ (needs an AC formula change)
+General|Medium Armor Master|PHB|done|3|Medium armor adds up to +3 DEX to AC when DEX is 16+ (needs an AC formula change)
 General|Moderately Armored|PHB|skip|3|Armor training from the advancement
 General|Mounted Combatant|PHB|skip|3|Mounted rules are DM-handled
 General|Observant|PHB|skip|3|Skill from the advancement; Search as a Bonus Action is manual
 General|Piercer|PHB|done|2|Once per turn on a Piercing hit, reroll one damage die (the lowest). Crit with Piercing: one extra damage die
-General|Poisoner|PHB|build|3|Poison damage you deal ignores Resistance. Brew Poison: Bonus Action to coat a weapon or ammunition for 1 minute; the next creature it damages makes a CON save (DC 8 + mod + PB) or takes 2d8 Poison and is Poisoned until the end of your next turn
+General|Poisoner|PHB|done|3|Poison damage you deal ignores Resistance. Brew Poison: Bonus Action to coat a weapon or ammunition for 1 minute; the next creature it damages makes a CON save (DC 8 + mod + PB) or takes 2d8 Poison and is Poisoned until the end of your next turn
 General|Polearm Master|PHB|done|1|Pole Strike: Bonus Action attack after the Attack action with a Quarterstaff, Spear or Heavy+Reach weapon (d4 Bludgeoning). Reactive Strike (Reaction attack when a creature enters your reach) stays a manual Reaction
 General|Resilient|PHB|skip|2|Saving throw proficiency from the advancement
 General|Ritual Caster|PHB|skip|3|Ritual spells from the advancement; Quick Ritual is manual
@@ -52,7 +52,7 @@ General|Shadow Touched|PHB|skip|2|Invisibility + one spell from the advancement,
 General|Sharpshooter|PHB|done|1|Ranged weapon attacks ignore Half and Three-Quarters Cover, no Disadvantage at long range or with an enemy within 5 ft (midi sharpShooter + ignoreNearbyFoes)
 General|Shield Master|PHB|done|2|Shield Bash: once per turn after a melee hit in the Attack action, STR save (DC 8 + STR + PB) or pushed 5 ft / knocked Prone (your choice). Interpose Shield: Reaction to take no damage on a successful DEX save for half (with a Shield)
 General|Skill Expert|PHB|skip|3|Skill and Expertise from the advancement
-General|Skulker|PHB|build|3|Blindsight 10 ft. Advantage on Stealth for the Hide action in combat and staying hidden on a miss are manual
+General|Skulker|PHB|done|3|Blindsight 10 ft. Advantage on Stealth for the Hide action in combat and staying hidden on a miss are manual
 General|Slasher|PHB|done|2|Once per turn on a Slashing hit, the target's Speed drops by 10 ft until the start of your next turn. Crit with Slashing: the target has Disadvantage on attacks until the start of your next turn
 General|Speedy|PHB|done|2|Speed +10 ft; Opportunity Attacks have Disadvantage against you. Dashing through Difficult Terrain is manual
 General|Spell Sniper|PHB|done|2|Spell attacks ignore Half and Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; midi-qol doubles spell attack range (book: +60 ft)
@@ -70,15 +70,15 @@ Fighting Style|Protection|PHB|done|2|Reaction when a creature attacks a target w
 Fighting Style|Thrown Weapon Fighting|PHB|done|2|+2 damage on ranged attacks with a Thrown weapon
 Fighting Style|Two-Weapon Fighting|SRD|done|1|Add your ability modifier to the damage of the Light-property extra attack (dnd5e's off-hand attack mode leaves it out)
 Fighting Style|Unarmed Fighting|PHB|done|2|Unarmed Strike deals 1d6 + STR Bludgeoning (1d8 with no weapons or Shield); at the start of your turn, 1d4 Bludgeoning to one creature you are grappling
-Epic Boon|Boon of Combat Prowess|SRD|build|3|Peerless Aim: once per turn, turn a missed attack roll into a hit (prompt after the miss)
+Epic Boon|Boon of Combat Prowess|SRD|done|3|Peerless Aim: once per round, a missed attack offers +99 to hit instead (a hit, not a critical)
 Epic Boon|Boon of Dimensional Travel|SRD|verify|3|Compendium Teleport activity (30 ft after the Attack or Magic action)
-Epic Boon|Boon of Energy Resistance|PHB|build|3|Resistance to two chosen types; Energy Redirection Reaction: DEX save (DC 8 + CON + PB) or 2d12 + CON of that type to a creature within 60 ft
-Epic Boon|Boon of Fate|SRD|build|3|Improve Fate: after you or a creature within 60 ft rolls a D20 Test, add or subtract 2d4 (once per Initiative or rest). Compendium has a roll-only activity
-Epic Boon|Boon of Fortitude|PHB|build|3|HP max +40; once per turn when you regain HP, regain CON modifier extra
-Epic Boon|Boon of Irresistible Offense|SRD|build|3|Your Bludgeoning/Piercing/Slashing damage ignores Resistance; on a natural 20, extra damage equal to the increased ability score
-Epic Boon|Boon of Recovery|PHB|build|3|Last Stand: once per Long Rest, drop to 1 HP instead of 0 and heal half your HP max. Recover Vitality: pool of ten d10s, Bonus Action to roll some and heal
+Epic Boon|Boon of Energy Resistance|PHB|done|3|Resistance to two chosen types; Energy Redirection Reaction: DEX save (DC 8 + CON + PB) or 2d12 + CON of that type to a creature within 60 ft
+Epic Boon|Boon of Fate|SRD|done|3|Improve Fate: after you or a creature within 60 ft rolls a D20 Test, add or subtract 2d4 (once per Initiative or rest). Compendium has a roll-only activity
+Epic Boon|Boon of Fortitude|PHB|done|3|HP max +40; once per turn when you regain HP, regain CON modifier extra
+Epic Boon|Boon of Irresistible Offense|SRD|done|3|Your Bludgeoning/Piercing/Slashing damage ignores Resistance; on a natural 20, extra damage equal to the increased ability score
+Epic Boon|Boon of Recovery|PHB|done|3|Last Stand: once per Long Rest, drop to 1 HP instead of 0 and heal half your HP max. Recover Vitality: pool of ten d10s, Bonus Action to roll some and heal
 Epic Boon|Boon of Skill|PHB|skip|3|Proficiency in all skills + Expertise from the advancement
-Epic Boon|Boon of Speed|PHB|build|3|Speed +30 ft; Escape Artist: Bonus Action Disengage that also ends Grappled
-Epic Boon|Boon of Spell Recall|SRD|build|3|Free Casting: when you cast with a level 1-4 slot, roll 1d4 and refund the slot on a match (compendium only has a manual roll)
-Epic Boon|Boon of the Night Spirit|SRD|build|3|Compendium gives the Resistances all the time; they should apply only in Dim Light or Darkness. Merge with Shadows: Bonus Action Invisible, ends after you act
+Epic Boon|Boon of Speed|PHB|done|3|Speed +30 ft; Escape Artist: Bonus Action Disengage that also ends Grappled
+Epic Boon|Boon of Spell Recall|SRD|done|3|Free Casting (module rule): casting with a level 1-4 slot rolls 1d4; on a match the slot is not expended
+Epic Boon|Boon of the Night Spirit|SRD|done|3|Resistance (not Psychic/Radiant) only outside Bright Light, checked against the scene lighting (module rule); Merge with Shadows makes you Invisible until you act
 Epic Boon|Boon of Truesight|SRD|verify|3|Compendium: Truesight 60 ft

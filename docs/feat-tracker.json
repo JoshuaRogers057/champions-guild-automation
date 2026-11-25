@@ -113,7 +113,7 @@
    "group": "General",
    "name": "Athlete",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Climb Speed equal to your Speed. Hop Up and Jumping are movement rules",
    "identifier": "athlete"
@@ -131,7 +131,7 @@
    "group": "General",
    "name": "Chef",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Bolstering Treats: PB treats, a Bonus Action to eat one for PB Temporary HP. Replenishing Meal (+1d8 when spending Hit Dice on a Short Rest) is manual",
    "identifier": "chef"
@@ -167,7 +167,7 @@
    "group": "General",
    "name": "Dual Wielder",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "dnd5e enhancedDualWielding flag lets non-Light one-handed melee weapons make the off-hand attack. Quick Draw is manual",
    "identifier": "dual-wielder"
@@ -284,7 +284,7 @@
    "group": "General",
    "name": "Medium Armor Master",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Medium armor adds up to +3 DEX to AC when DEX is 16+ (needs an AC formula change)",
    "identifier": "medium-armor-master"
@@ -329,7 +329,7 @@
    "group": "General",
    "name": "Poisoner",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Poison damage you deal ignores Resistance. Brew Poison: Bonus Action to coat a weapon or ammunition for 1 minute; the next creature it damages makes a CON save (DC 8 + mod + PB) or takes 2d8 Poison and is Poisoned until the end of your next turn",
    "identifier": "poisoner"
@@ -410,7 +410,7 @@
    "group": "General",
    "name": "Skulker",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Blindsight 10 ft. Advantage on Stealth for the Hide action in combat and staying hidden on a miss are manual",
    "identifier": "skulker"
@@ -572,9 +572,9 @@
    "group": "Epic Boon",
    "name": "Boon of Combat Prowess",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Peerless Aim: once per turn, turn a missed attack roll into a hit (prompt after the miss)",
+   "note": "Peerless Aim: once per round, a missed attack offers +99 to hit instead (a hit, not a critical)",
    "identifier": "boon-of-combat-prowess"
   },
   {
@@ -590,7 +590,7 @@
    "group": "Epic Boon",
    "name": "Boon of Energy Resistance",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Resistance to two chosen types; Energy Redirection Reaction: DEX save (DC 8 + CON + PB) or 2d12 + CON of that type to a creature within 60 ft",
    "identifier": "boon-of-energy-resistance"
@@ -599,7 +599,7 @@
    "group": "Epic Boon",
    "name": "Boon of Fate",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Improve Fate: after you or a creature within 60 ft rolls a D20 Test, add or subtract 2d4 (once per Initiative or rest). Compendium has a roll-only activity",
    "identifier": "boon-of-fate"
@@ -608,7 +608,7 @@
    "group": "Epic Boon",
    "name": "Boon of Fortitude",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "HP max +40; once per turn when you regain HP, regain CON modifier extra",
    "identifier": "boon-of-fortitude"
@@ -617,7 +617,7 @@
    "group": "Epic Boon",
    "name": "Boon of Irresistible Offense",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Your Bludgeoning/Piercing/Slashing damage ignores Resistance; on a natural 20, extra damage equal to the increased ability score",
    "identifier": "boon-of-irresistible-offense"
@@ -626,7 +626,7 @@
    "group": "Epic Boon",
    "name": "Boon of Recovery",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Last Stand: once per Long Rest, drop to 1 HP instead of 0 and heal half your HP max. Recover Vitality: pool of ten d10s, Bonus Action to roll some and heal",
    "identifier": "boon-of-recovery"
@@ -644,7 +644,7 @@
    "group": "Epic Boon",
    "name": "Boon of Speed",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Speed +30 ft; Escape Artist: Bonus Action Disengage that also ends Grappled",
    "identifier": "boon-of-speed"
@@ -653,18 +653,18 @@
    "group": "Epic Boon",
    "name": "Boon of Spell Recall",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Free Casting: when you cast with a level 1-4 slot, roll 1d4 and refund the slot on a match (compendium only has a manual roll)",
+   "note": "Free Casting (module rule): casting with a level 1-4 slot rolls 1d4; on a match the slot is not expended",
    "identifier": "boon-of-spell-recall"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of the Night Spirit",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium gives the Resistances all the time; they should apply only in Dim Light or Darkness. Merge with Shadows: Bonus Action Invisible, ends after you act",
+   "note": "Resistance (not Psychic/Radiant) only outside Bright Light, checked against the scene lighting (module rule); Merge with Shadows makes you Invisible until you act",
    "identifier": "boon-of-the-night-spirit"
   },
   {

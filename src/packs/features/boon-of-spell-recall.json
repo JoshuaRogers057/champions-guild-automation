@@ -1,0 +1,51 @@
+{
+  "name": "Boon of Spell Recall",
+  "type": "feat",
+  "_id": "cgaFtBoonOfSpelR",
+  "img": "icons/magic/time/clock-stopwatch-white-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Free Casting: whenever you cast a spell with a level 1-4 spell slot, 1d4 is rolled; if it matches the slot's level, the slot isn't expended (automatic).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "boon-of-spell-recall",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Casting with a level 1-4 slot rolls 1d4; on a match the slot isn't expended (module rule)."
+      }
+    }
+  }
+}

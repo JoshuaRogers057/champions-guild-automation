@@ -1,0 +1,108 @@
+{
+  "name": "Skulker",
+  "type": "feat",
+  "_id": "cgaFtSkul0000000",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> You have Blindsight with a range of 10 feet. Advantage on Stealth checks for the Hide action in combat, and staying hidden when you miss, are up to you.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "skulker",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaSkulkerFx0000",
+      "name": "Skulker",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-small-red.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.blindsight",
+            "value": "10",
+            "priority": 20,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "cgaFtChg08060000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Blindsight 10 ft. Fog of War and Sniper are manual."
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "name": "Boon of Combat Prowess",
+  "type": "feat",
+  "_id": "cgaFtBoonOfCombP",
+  "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Peerless Aim: when you miss with an attack roll, you're asked whether to hit instead. Once used, it's back at the start of your next turn (tracked per round).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "boon-of-combat-prowess",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaPeerlessAimFx",
+      "name": "Boon of Combat Prowess",
+      "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.optional.cgaPeerlessAim.label",
+            "value": "Peerless Aim: hit instead (adds 99, not a critical)",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg08070000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaPeerlessAim.attack.fail.all",
+            "value": "+99",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg08080000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.optional.cgaPeerlessAim.count",
+            "value": "each-round",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg08090000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Peerless Aim prompt after a missed attack: turn it into a hit (once per round)."
+      }
+    }
+  }
+}

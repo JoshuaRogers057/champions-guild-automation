@@ -3,6 +3,32 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.16.0
+
+The last feats: the priority-3 general feats and the Epic Boons. Every feat in the Player's Handbook is now
+automated, verified as standard, or left to the sheet/table. DMs: update, then run **Mass Apply / Update**. Medium
+Armor Master's switch, Boon of Fortitude's healing, Last Stand, Shadowy Form and Free Casting are module rules.
+
+- New feats:
+  - **Athlete** (Climb Speed = Speed), **Dual Wielder** (off-hand attacks with any one-handed melee weapon),
+    **Skulker** (Blindsight 10 ft).
+  - **Chef**: Bolstering Treat activity (PB treats per Long Rest, PB Temp HP each).
+  - **Medium Armor Master**: +1 AC switches on automatically in Medium armor with DEX 16+.
+  - **Poisoner**: your Poison damage ignores Resistance; Apply Poison uses a dose and the coated weapon's next
+    damaging hit forces a CON save (2d8 Poison and Poisoned until the end of your next turn).
+- New Epic Boons:
+  - **Combat Prowess**: Peerless Aim offers +99 to a missed attack (a hit, not a critical), once per round.
+  - **Energy Resistance**: Choose Resistances activity; Energy Redirection Reaction sends 2d12 + CON of a chosen
+    type at a creature (DEX save).
+  - **Fate**: +2d4 prompt on your own missed attack or failed save; Improve Fate activity for others' rolls.
+    Recharges on Initiative or a rest.
+  - **Fortitude**: HP max +40; healing adds your CON modifier once per turn.
+  - **Irresistible Offense**: B/P/S damage ignores Resistance; a natural 20 adds your STR or DEX score.
+  - **Recovery**: Last Stand (drop to 1 HP and heal half your max, once per Long Rest, automatic) and Recover
+    Vitality (spend d10s from a pool of ten).
+  - **Speed** (+30 ft; Escape Artist ends Grappled), **Spell Recall** (Free Casting), **Night Spirit**
+    (Resistance only outside Bright Light; Merge with Shadows).
+
 ## 0.15.0
 
 The priority-2 feats, and Lucky now asks before you roll. DMs: update, then run **Mass Apply / Update** on each

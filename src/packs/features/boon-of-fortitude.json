@@ -1,0 +1,108 @@
+{
+  "name": "Boon of Fortitude",
+  "type": "feat",
+  "_id": "cgaFtBoonOfFort0",
+  "img": "icons/magic/life/heart-cross-strong-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your Hit Point maximum increases by 40. Once per turn, when you regain Hit Points, you regain extra Hit Points equal to your Constitution modifier (applied automatically).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "boon-of-fortitude",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaFortitudeFx00",
+      "name": "Boon of Fortitude",
+      "img": "icons/magic/life/heart-cross-strong-green.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.hp.bonuses.overall",
+            "value": "40",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaFtChg08140000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: HP max +40; once per turn healing adds your CON modifier (module rule)."
+      }
+    }
+  }
+}

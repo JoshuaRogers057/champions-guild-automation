@@ -1,0 +1,578 @@
+{
+  "name": "Poisoner",
+  "type": "feat",
+  "_id": "cgaFtPois0000000",
+  "img": "icons/skills/wounds/injury-stitched-flesh-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your Poison damage ignores Resistance to Poison. Brew Poison: set this feat's uses back to full (your Proficiency Bonus in doses) after an hour of brewing with a Poisoner's Kit and 50 GP of materials. Apply Poison (Bonus Action) coats your weapon for 1 minute; the next creature it damages makes a Constitution save (DC 8 + your higher of Dexterity or Intelligence modifier + Proficiency Bonus) or takes 2d8 Poison damage and is Poisoned until the end of your next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "poisoner",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "poisonerApply000": {
+        "_id": "poisonerApply000",
+        "type": "utility",
+        "name": "Apply Poison",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "cgaPoisonCoatFx0",
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "type": "self",
+            "choice": false
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "override": false,
+          "prompt": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "followUp": false,
+          "followUpTargets": "default",
+          "followUpCondition": "",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": false,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "targetMustBeSeen": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "statuses": []
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true
+      },
+      "poisonerDose0000": {
+        "_id": "poisonerDose0000",
+        "type": "save",
+        "name": "Poison Dose",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "cgaPoisonedFx000",
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "units": "any",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "override": false,
+          "prompt": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "ignoreTraits": {
+          "idi": false,
+          "idr": false,
+          "idv": false,
+          "ida": false,
+          "idm": false
+        },
+        "midiProperties": {
+          "ignoreTraits": [],
+          "triggeredActivityId": "none",
+          "triggeredActivityConditionText": "",
+          "triggeredActivityTargets": "targets",
+          "triggeredActivityRollAs": "self",
+          "triggeredActivityConsume": true,
+          "triggeredActivityConfigure": true,
+          "followUp": false,
+          "followUpTargets": "default",
+          "followUpCondition": "",
+          "autoConsume": false,
+          "forceConsumeDialog": "default",
+          "forceRollDialog": "default",
+          "forceDamageDialog": "default",
+          "confirmTargets": "default",
+          "autoTargetType": "any",
+          "autoTargetAction": "default",
+          "automationOnly": true,
+          "otherActivityCompatible": true,
+          "otherActivityAsParentType": true,
+          "identifier": "poisoner-dose",
+          "displayActivityName": false,
+          "rollMode": "default",
+          "chooseEffects": false,
+          "toggleEffect": false,
+          "ignoreFullCover": false,
+          "targetMustBeSeen": false,
+          "removeChatButtons": "default",
+          "magicEffect": false,
+          "magicDamage": false,
+          "noConcentrationCheck": false,
+          "skipConcentrationCheck": false,
+          "autoCEEffects": "default",
+          "statuses": []
+        },
+        "isOverTimeFlag": false,
+        "overTimeProperties": {
+          "saveRemoves": true,
+          "rollAs": "target",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "regionBehavior": {
+          "enabled": false,
+          "dispositionFilter": -1,
+          "excludeSource": true,
+          "oncePerTurn": true,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "default",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": []
+        },
+        "regionLight": {
+          "enabled": false,
+          "dim": 0,
+          "bright": 0,
+          "color": null,
+          "alpha": 0.5,
+          "luminosity": 0.5,
+          "animationType": "",
+          "animationSpeed": 5,
+          "animationIntensity": 5
+        },
+        "otherActivityAsParentType": true,
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "8 + max(@abilities.dex.mod, @abilities.int.mod) + @prof"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "poison"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaPoisonerFx000",
+      "name": "Poisoner: Potent Poison",
+      "img": "icons/skills/wounds/injury-stitched-flesh-red.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.idr.value",
+            "value": "poison",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaFtChg08040000",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,postActiveEffects",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaFtChg08050000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    },
+    {
+      "_id": "cgaPoisonCoatFx0",
+      "name": "Poisoner: Poisoned Weapon",
+      "img": "icons/skills/ranged/arrow-flying-white-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 1,
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": false,
+          "showIcon": true
+        },
+        "world": {
+          "cgaPoisonCoat": true
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    },
+    {
+      "_id": "cgaPoisonedFx000",
+      "name": "Poisoner: Poisoned",
+      "img": "icons/skills/wounds/injury-stitched-flesh-red.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [
+        "poisoned"
+      ],
+      "showIcon": 1,
+      "system": {
+        "changes": [],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [
+            "turnEndSource"
+          ],
+          "stackable": "noneName",
+          "transfer": false,
+          "showIcon": true
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Poison damage ignores Resistance; Apply Poison uses a dose; the coated weapon's next damaging hit forces the CON save (2d8 Poison + Poisoned)."
+      }
+    }
+  },
+  "_cgaMacro": "feats.js"
+}

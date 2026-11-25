@@ -19,6 +19,9 @@
 //   thrown-weapon-fighting damageBonus      +2 on thrown ranged attacks
 //   elemental-adept        postDamageRoll   1s count as 2s; item macro "Choose Damage Type"
 //   durable / musician / telekinetic       item macros for their activities
+//   poisoner               postActiveEffects  a coated weapon's next hit runs the hidden "poisoner-dose" save
+//   boon-of-irresistible-offense damageBonus  natural 20: + the higher of STR/DEX score
+//   boon-of-speed / boon-of-energy-resistance item macros (Escape Artist; choose types / Energy Redirection)
 // Heavy Armor Master, Mage Slayer's Concentration Breaker, Alert's Initiative Swap, Interception, Protection and
 // Lucky's saving-throw prompt are module rules in main.js.
 const pass = args[0]?.macroPass;
@@ -349,6 +352,61 @@ switch (id) {
       if (pick === "away") await pushAway(t, 5);
       else if (pick === "toward") await pullToward(t, 5);
     }
+    return;
+  }
+
+  // ---------------------------------------------------------------- Poisoner
+  case "poisoner": {
+    // A coated weapon: the self effect from Apply Poison. The next weapon hit that deals damage runs the dose's save.
+    if (pass !== "postActiveEffects" || !isWeapon || !activity?.attack || !firstCall(pass)) return;
+    const coat = actor.effects.find((e) => e.flags?.world?.cgaPoisonCoat && !e.disabled);
+    const t = hitTokens().find((x) => x.actor && x !== me);
+    if (!coat || !t || !(wf.damageTotal > 0 || (wf.damageRolls ?? []).length)) return;
+    try { await coat.delete(); } catch (err) { /* already gone */ }
+    later(async () => { await failsSave("poisoner-dose", t); }, 300);
+    return;
+  }
+
+  // ---------------------------------------------------------------- Epic Boons
+  case "boon-of-irresistible-offense": {
+    if (pass !== "DamageBonus" || !activity?.attack || !firstCall(pass)) return;
+    const natural = wf.attackRoll?.dice?.[0]?.results?.find((r) => r.active !== false && !r.discarded)?.result ?? wf.diceRoll;
+    if (natural !== 20 || !hitTokens().length) return;
+    const score = Math.max(Number(actor.system.abilities.str?.value ?? 0), Number(actor.system.abilities.dex?.value ?? 0));
+    return { damageRoll: `${score}`, damageType: wf.defaultDamageType, flavor: "Overwhelming Strike" };
+  }
+  case "boon-of-speed": {
+    if (pass !== "postActiveEffects" || activity?.item?.id !== feat.id) return;
+    const grapples = actor.effects.filter((e) => e.statuses?.has("grappled"));
+    if (grapples.length) await actor.deleteEmbeddedDocuments("ActiveEffect", grapples.map((e) => e.id)).catch(() => {});
+    say(`takes the Disengage action${grapples.length ? " and breaks free of the grapple" : ""}.`);
+    return;
+  }
+  case "boon-of-energy-resistance": {
+    if (pass !== "postActiveEffects" || activity?.item?.id !== feat.id) return;
+    const TYPES = ["acid", "cold", "fire", "lightning", "necrotic", "poison", "psychic", "radiant", "thunder"];
+    const chosen = feat.getFlag("world", "cgaEnergyTypes") ?? [];
+    if (activity.midiProperties?.identifier === "choose-resistances") {
+      const boxes = TYPES.map((d) => `<label style="display:inline-block;width:32%"><input type="checkbox" name="${d}" ${chosen.includes(d) ? "checked" : ""}> ${CONFIG.DND5E.damageTypes[d]?.label ?? d}</label>`).join("");
+      const picked = await foundry.applications.api.DialogV2.prompt({ window: { title: `${feat.name}: Energy Resistances` },
+        content: `<p>Pick two damage types to resist (you can change them after a Long Rest):</p><div>${boxes}</div>`,
+        ok: { label: "Save", callback: (ev, btn) => TYPES.filter((d) => btn.form.elements[d]?.checked) }, rejectClose: false }).catch(() => null);
+      if (!picked) return;
+      const two = picked.slice(0, 2);
+      await feat.setFlag("world", "cgaEnergyTypes", two);
+      const eff = feat.effects.find((e) => e.flags?.world?.cgaEnergyResist);
+      if (eff) await eff.update({ "system.changes": two.map((d) => ({ key: "system.traits.dr.value", value: d, type: "add", priority: 20, phase: "initial" })) });
+      say(`resists ${two.join(" and ") || "nothing yet"}.`);
+      return;
+    }
+    // Energy Redirection (Reaction): pick which of your types to send back, then the target makes the DEX save.
+    // (The hidden "redirect-<type>" saves come back through here too; ignore them.)
+    if (activity.midiProperties?.identifier !== "energy-redirection") return;
+    const t = asTokens(wf.targets).find((x) => x.actor && x !== me);
+    if (!t || !chosen.length) return ui.notifications.warn(`${feat.name}: choose your resistances first, and target the creature.`);
+    const type = chosen.length === 1 ? chosen[0] : await choose("Energy Redirection", `<p>Which damage type do you redirect at <strong>${esc(t.name)}</strong>?</p>`,
+      chosen.map((d, i) => ({ action: d, label: CONFIG.DND5E.damageTypes[d]?.label ?? d, default: i === 0 })));
+    if (type) await failsSave(`redirect-${type}`, t);
     return;
   }
 

@@ -1,0 +1,108 @@
+{
+  "name": "Dual Wielder",
+  "type": "feat",
+  "_id": "cgaFtDualWiel000",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your off-hand attack (the extra attack after attacking with a Light weapon) can be made with any one-handed melee weapon, not just a Light one. Drawing or stowing two weapons at once is up to you.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "dual-wielder",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaDualWieldFx00",
+      "name": "Dual Wielder",
+      "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.enhancedDualWielding",
+            "value": "true",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaFtChg08020000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Off-hand attack mode on non-Light one-handed melee weapons (dnd5e enhancedDualWielding). Quick Draw is manual."
+      }
+    }
+  }
+}

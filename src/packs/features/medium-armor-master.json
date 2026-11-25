@@ -1,0 +1,111 @@
+{
+  "name": "Medium Armor Master",
+  "type": "feat",
+  "_id": "cgaFtMediArmoMas",
+  "img": "icons/equipment/chest/breastplate-banded-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> While you wear Medium armor and have a Dexterity score of 16 or higher, you add 3 instead of 2 to your AC from Dexterity (the +1 turns on and off automatically).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identifier": "medium-armor-master",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaMedArmorFx000",
+      "name": "Medium Armor Master (+1 AC)",
+      "img": "icons/equipment/chest/breastplate-banded-steel.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": true,
+      "description": "",
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "statuses": [],
+      "showIcon": 0,
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "1",
+            "priority": 20,
+            "type": "add",
+            "phase": "initial",
+            "_id": "cgaFtChg08030000",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "flags": {
+        "dae": {
+          "specialDuration": [],
+          "stackable": "noneName",
+          "transfer": true,
+          "showIcon": false
+        },
+        "world": {
+          "cgaMediumArmor": true
+        }
+      },
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "folder": null,
+      "sort": 0
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: +1 AC while wearing Medium armor with DEX 16+ (switched by the module)."
+      }
+    }
+  }
+}
