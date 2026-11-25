@@ -3,6 +3,37 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.13.0
+
+The last Player's Handbook spells, built from the book text, plus fixes where earlier versions didn't match the book.
+Every spell on the list is now automated or deliberately left to the table. DMs: update, then run
+**Mass Apply / Update**.
+
+- New:
+  - **Cordon of Arrows**: 4 pieces of ammunition (+2 per slot level) guard 30 ft; each enemy entering or ending its
+    turn there saves or takes 2d4 piercing, using up a piece; the area disappears when none are left.
+  - **Crown of Madness**: Charmed with forced attacks; repeat save at the end of each turn.
+  - **Aura of Purity**: poison resistance in a 30-ft aura (Advantage on the condition saves is the player's to
+    claim).
+  - **Circle of Power**: Advantage on saves against magic, and no damage on a successful half-damage save, in a
+    30-ft aura.
+  - **Fount of Moonlight**: radiant resistance, +2d6 radiant on melee hits, and the Reaction that blinds an attacker.
+  - **Grasping Vine**: 4d8 bludgeoning and Grappled, Lash Again as a Bonus Action (drag the pull yourself).
+  - **Jallarzi's Storm of Radiance**: Blinded and Deafened inside; radiant and thunder save on appearing, entering
+    or ending a turn there.
+  - **Swift Quiver**: two bow or crossbow attacks now and with Two More Shots each turn, no ammunition used.
+  - **Yolande's Regal Presence**: enemies in the 10-ft emanation save or take psychic damage, fall Prone and are
+    pushed 10 ft.
+- Fixed to match the book:
+  - **Hail of Thorns** and **Lightning Arrow**: now instantaneous, with no concentration. After a ranged weapon
+    attack (a hit, for Hail of Thorns) you're asked whether to cast it and with which slot. Lightning Arrow's 4d8
+    replaces the weapon's damage, or deals half on a miss.
+  - **Blinding Smite**: lasts 1 minute without concentration.
+  - **Banishing Smite**: the target now gets a Charisma save before it's banished.
+  - **Aura of Vitality**: the repeat heal happens at the start of your turns, not as a Bonus Action.
+  - **Hunger of Hadar**: upcasting adds to the cold damage only (the book has you pick one).
+- Tracker: Primordial Ward removed (it isn't in the 2024 Player's Handbook); Fount of Moonlight added.
+
 ## 0.12.0
 
 21 priority-3 spells, each tested in a live v14 world. DMs: update, then run **Mass Apply / Update**.
