@@ -3,6 +3,34 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.8.0
+
+23 more priority-2 spells, each tested in a live v14 world. DMs: update, then run **Mass Apply / Update**.
+
+- **Areas** (the placed template becomes an area that acts on creatures automatically, once per turn):
+  - Cloud of Daggers (new), Grease, Evard's Black Tentacles, Cloudkill, Insect Plague, Blade Barrier, Wall of Fire:
+    damage or a save when the area appears, when a creature enters it and when it ends its turn there.
+  - Stinking Cloud: CON save at the start of each turn in the cloud; Poisoned until the end of that turn.
+  - Hunger of Hadar (new): Blinded inside, cold at the start of a turn there, DEX save or acid at the end.
+  - Spike Growth: 2d4 Piercing for every 5 ft a creature moves into or within the area, rolled when the token moves.
+  - Entangle: the compendium version works (the escape check stays manual).
+  - Drag an area to move it (Cloud of Daggers, Cloudkill).
+- **Type choices** (fast-forwarded rolls always picked the first damage type, so each type is its own activity):
+  Sorcerous Burst, Chromatic Orb (matching dice let the orb leap to another creature within 30 ft, once per slot
+  level), Elemental Weapon (new; +1/+2/+3 and 1d4/2d4/3d4 by slot).
+- **Your next ranged weapon attack**: Hail of Thorns (new; thorns burst around the target on a hit) and Lightning
+  Arrow (new; 4d8 lightning instead of the weapon's damage, half on a miss, and a burst within 10 ft).
+- **Bestow Curse**: pick the curse and ability; the attack curse gives Disadvantage only against you, the action curse
+  asks for a WIS save each turn, and the resilience curse adds 1d8 necrotic to your attacks and spells against it.
+- **Confusion**: no Reactions, a d10 behaviour roll at the start of each turn, and a repeat save at the end.
+- **Blade Ward** (new): attackers subtract 1d4. **Aura of Vitality** (new): 2d6 heal now and as a Bonus Action
+  each turn. **Crusader's Mantle** (new): you and allies within 30 ft add 1d4 radiant to weapon hits.
+  **Steel Wind Strike** (new): a separate attack against each of up to five creatures, then teleport.
+  **Counterspell**: the compendium version works.
+- **Module fix (no Mass Apply needed)**: effects that an area gives while a creature stands in it (Spirit Guardians'
+  half speed, Hunger of Hadar's blindness, Crusader's Mantle) now end when the creature leaves the area or the spell
+  ends. Before, Spirit Guardians' half speed stayed on.
+
 ## 0.7.0
 
 25 more priority-2 spells, each tested in a live v14 world. DMs: update, then run **Mass Apply / Update**.
