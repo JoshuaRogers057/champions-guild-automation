@@ -3,6 +3,28 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.22.0
+
+Checked the remaining class features that come from dnd5e's compendium or midi-qol's sample items (93 of them).
+Most work as they are. 22 got fixed copies in this module, mainly because dnd5e's version spends another feature's
+uses through a compendium link that D&D Beyond-imported characters don't have (so nothing happened when you used
+them), or reads class scale values for its dice. DMs: update, then run **Mass Apply / Update**.
+
+- Now spend the right uses on imported characters: **Persistent Rage**, **Intimidating Presence** (Recharge with
+  Rage), **Wild Companion**, **Wild Resurgence**, **Archdruid**, **Land's Aid**, **Nature's Sanctuary**, **Uncanny
+  Metabolism**, **Superior Defense**, **Quivering Palm**, **Sorcerous Restoration**, **Sorcery Incarnate**, **Dragon
+  Wings** (restore), **Eldritch Master**.
+- Dice from class levels instead of scale values: **Channel Divinity** (Cleric, Divine Spark), **Land's Aid**,
+  **Uncanny Metabolism**, **Wholeness of Body**.
+- **Uncanny Metabolism** is offered when you roll Initiative (module rule).
+- **Fast Movement** switches off in Heavy armor, **Unarmored Movement** switches off with armor or a Shield and grows
+  with your Monk level, and **Danger Sense** switches off while you're Incapacitated (module rules).
+- **Favored Enemy** casts the module's automated Hunter's Mark; **Faithful Steed** gets its free Find Steed cast
+  (the compendium item had none); **Pact of the Chain** casts Find Familiar without trying to spend a resource that
+  doesn't exist.
+- Everything else on the list was checked and works as dnd5e or midi-qol ship it. The class-feature tracker has no
+  rows left to build or check (the rest are skipped as manual or sheet-only).
+
 ## 0.21.0
 
 The priority-3 class features: every class and subclass feature on the tracker that needed building is now done.
