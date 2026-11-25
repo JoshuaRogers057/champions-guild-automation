@@ -93,6 +93,88 @@ Hooks.on("deleteActiveEffect", async (effect) => {
   }
 });
 
+// Damage rules that dnd5e and midi-qol can't express with plain effect changes. A spell's effect sets one of these
+// flags on the creature it protects; midi-qol calls this hook (on the client running the attack or spell) before the
+// damage is applied, and the damage entry can still be changed:
+//   flags.champions-guild-automation.resistance = "<damage type>"  Resistance cantrip: 1d4 less damage of that type,
+//                                                                   once per turn
+//   flags.champions-guild-automation.deathWard = true              Death Ward: drop to 1 HP instead of 0, once
+//   flags.champions-guild-automation.wardingBond = true            Warding Bond: the caster (the effect's origin)
+//                                                                   takes the same damage
+const resistanceUsed = new Map(); // actor uuid -> combat turn key
+const turnKey = () => (game.combat?.started ? `${game.combat.id}:${game.combat.round}:${game.combat.turn}` : `t${Math.floor(Date.now() / 6000)}`);
+function reduceDamage(ditem, amount, types) {
+  let left = amount;
+  for (const d of ditem.damageDetail ?? []) {
+    if (left <= 0) break;
+    if (types && !types.includes(d.type)) continue;
+    if (d.type === "temphp" || d.type === "healing" || (d.value ?? 0) <= 0) continue;
+    const cut = Math.min(left, d.value);
+    d.value -= cut;
+    left -= cut;
+  }
+  const done = amount - left;
+  if (!done) return 0;
+  ditem.totalDamage = Math.max(0, (ditem.totalDamage ?? 0) - done);
+  // Take the reduction from HP damage first, then from temp HP damage.
+  const fromHp = Math.min(done, Math.max(0, ditem.hpDamage ?? 0));
+  ditem.hpDamage = (ditem.hpDamage ?? 0) - fromHp;
+  ditem.newHP = (ditem.newHP ?? 0) + fromHp;
+  const fromTemp = done - fromHp;
+  if (fromTemp > 0) {
+    ditem.tempDamage = Math.max(0, (ditem.tempDamage ?? 0) - fromTemp);
+    ditem.newTempHP = (ditem.newTempHP ?? 0) + fromTemp;
+  }
+  return done;
+}
+const effectsWith = (actor, flag) => Array.from(actor?.effects ?? []).filter((e) => !e.disabled && !e.isSuppressed
+  && (e.system?.changes ?? e.changes ?? []).some((c) => c.key === `flags.${MODULE_ID}.${flag}`));
+Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem }) => {
+  const actor = token?.actor;
+  if (!actor || !ditem || (ditem.totalDamage ?? 0) <= 0) return;
+  try {
+    // Resistance (cantrip)
+    const types = foundry.utils.getProperty(actor, `flags.${MODULE_ID}.resistance`);
+    if (types && resistanceUsed.get(actor.uuid) !== turnKey()) {
+      const list = String(types).split(/[,;|\s]+/).filter(Boolean);
+      if ((ditem.damageDetail ?? []).some((d) => list.includes(d.type) && d.value > 0)) {
+        const roll = await new Roll("1d4").evaluate();
+        const cut = reduceDamage(ditem, roll.total, list);
+        if (cut) {
+          resistanceUsed.set(actor.uuid, turnKey());
+          roll.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Resistance: ${actor.name} takes ${cut} less ${list.join("/")} damage` });
+        }
+      }
+    }
+    // Death Ward
+    if (foundry.utils.getProperty(actor, `flags.${MODULE_ID}.deathWard`) && (ditem.oldHP ?? 0) > 0 && (ditem.newHP ?? 1) <= 0) {
+      // midi applies the per-type damage values, so trim those until the creature keeps exactly 1 HP.
+      const dealt = (ditem.damageDetail ?? []).reduce((s, d) => s + (["temphp", "healing"].includes(d.type) ? 0 : Math.max(0, d.value ?? 0)), 0);
+      const allowed = Math.max(0, (ditem.oldHP ?? 0) - 1 + (ditem.oldTempHP ?? 0));
+      if (dealt > allowed) reduceDamage(ditem, dealt - allowed);
+      ditem.newHP = 1;
+      ditem.hpDamage = (ditem.oldHP ?? 1) - 1;
+      const wards = effectsWith(actor, "deathWard");
+      ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p><strong>Death Ward:</strong> ${actor.name} drops to 1 Hit Point instead of 0, and the spell ends.</p>` });
+      for (const e of wards) MidiQOL.socket().executeAsGM("removeEffect", { effectUuid: e.uuid }).catch(() => {});
+    }
+    // Warding Bond: the caster takes the same amount (after the target's own resistances and the spell's).
+    if (foundry.utils.getProperty(actor, `flags.${MODULE_ID}.wardingBond`)) {
+      const taken = Math.max(0, (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0));
+      const bond = effectsWith(actor, "wardingBond")[0];
+      const casterActor = bond?.origin ? (await fromUuid(bond.origin))?.actor ?? null : null;
+      const casterToken = casterActor?.getActiveTokens?.()[0];
+      if (taken > 0 && casterToken && casterActor !== actor) {
+        setTimeout(() => {
+          ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor: casterActor }), content: `<p><strong>Warding Bond:</strong> ${casterActor.name} takes ${taken} damage shared from ${actor.name}.</p>` });
+          MidiQOL.applyTokenDamage([{ value: taken, type: "none" }], taken, new Set([casterToken]), null, new Set(), {})
+            .catch((err) => console.warn(`${MODULE_ID} | Warding Bond damage failed`, err));
+        }, 250);
+      }
+    }
+  } catch (err) { console.warn(`${MODULE_ID} | damage rules failed`, err); }
+});
+
 // After an update, tell the GM once that there are new fixes to apply.
 Hooks.once("ready", async () => {
   if (!game.user.isGM) return;

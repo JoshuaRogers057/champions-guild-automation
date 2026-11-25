@@ -1,0 +1,332 @@
+{
+  "name": "Slow",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Up to six creatures in a 40-ft cube make a WIS save. On a failure: half speed, -2 to AC and DEX saves, no Reactions, an action or a Bonus Action (not both) and one attack per turn, and a 25% chance a Somatic spell fails. Repeat the save at the end of each of its turns. The action limits and spell failure are the DM's to apply.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": ""
+      },
+      "template": {
+        "units": "ft",
+        "type": "cube",
+        "size": "40",
+        "contiguous": false,
+        "count": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "value": "120",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 3,
+    "school": "trs",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "materials": {
+      "value": "a drop of molasses",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "z1lkguBohjqXRSHm",
+            "onSave": false,
+            "uuid": null,
+            "level": {}
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "slowOTSave000000": {
+        "_id": "slowOTSave000000",
+        "type": "save",
+        "name": "Slow: Repeat Save",
+        "sort": 900000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "End of each of the target's turns",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "range": {
+          "override": true,
+          "units": "any",
+          "special": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "turnChoice": "end",
+          "saveRemoves": true,
+          "rollAs": "source",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "identifier": "slowSave",
+          "otherActivityCompatible": false
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "slow",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgasplSlow000000",
+  "type": "spell",
+  "img": "icons/magic/time/clock-stopwatch-white-blue.webp",
+  "effects": [
+    {
+      "name": "Slowed",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplSlow000000",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "_id": "z1lkguBohjqXRSHm",
+      "description": "<p>An affected target’s Speed is halved, it takes a −2 penalty to AC and Dexterity saving throws, and it can’t take Reactions. On its turns, it can take either an action or a Bonus Action, not both, and it can make only one attack if it takes the Attack action. If it casts a spell with a Somatic component, there is a [[/r 1d100cs&gt;25#Spell cast successfully on 1]]{25 percent} chance the spell fails as a result of the target making the spell’s gestures too slowly.</p><p>An affected target repeats the [[/save ability=wis]] save at the end of each of its turns, ending the spell on itself on a success.</p>",
+      "transfer": false,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "statuses": []
+          }
+        }
+      },
+      "tint": "#ffffff",
+      "img": "icons/magic/time/clock-stopwatch-white-blue.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": -2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "dOfo7OvlIfELRalB",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.attributes.movement.multiplier",
+            "value": 0.5,
+            "priority": null,
+            "type": "multiply",
+            "phase": "initial",
+            "_id": "53qIYh6YPvWA0kh4",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.dex.bonuses.save",
+            "value": -2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "JoFWO8VVifosg173",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.actions.reactionsUsed",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000007",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.actions.reaction",
+            "value": "true",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000008",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "value": "slowSave",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000009",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: half speed, -2 AC and DEX saves, no reactions; WIS save at the end of each of its turns."
+      }
+    }
+  }
+}

@@ -25,7 +25,7 @@
 0|Prestidigitation|SRD|skip|3|
 0|Produce Flame|SRD|done|1|
 0|Ray of Frost|SRD|done|1|Speed -10 ft until your next turn
-0|Resistance|SRD|build|2|Reduce one damage type by 1d4 once per turn (concentration)
+0|Resistance|SRD|done|2|Reduce one damage type by 1d4 once per turn (concentration)
 0|Sacred Flame|SRD|done|1|No benefit from cover
 0|Shillelagh|SRD|done|1|Spellcasting ability + bigger damage die on the club/staff
 0|Shocking Grasp|SRD|done|1|No reactions until its next turn
@@ -42,7 +42,7 @@
 1|Alarm|SRD|skip|3|
 1|Animal Friendship|SRD|skip|3|
 1|Armor of Agathys|PHB|done|1|Temp HP; while it lasts, melee attackers take cold damage
-1|Arms of Hadar|PHB|build|2|STR save necrotic all around; failed save = no reactions until its next turn
+1|Arms of Hadar|PHB|done|2|STR save necrotic all around; failed save = no reactions until its next turn
 1|Bane|SRD|done|1|-1d4 to attacks and saves for creatures that fail (concentration)
 1|Bless|SRD|done|1|+1d4 to attacks and saves; extra target per slot level (concentration)
 1|Burning Hands|SRD|done|1|
@@ -50,7 +50,7 @@
 1|Chromatic Orb|SRD|build|2|Choose damage type; matching dice leap to another target
 1|Color Spray|SRD|done|1|Blinded until end of your next turn
 1|Command|SRD|midi|1|
-1|Compelled Duel|PHB|build|2|Mirjam's compelled-duel macro exists (disadvantage vs others, end conditions)
+1|Compelled Duel|PHB|done|2|Mirjam's compelled-duel macro exists (disadvantage vs others, end conditions)
 1|Comprehend Languages|SRD|skip|3|
 1|Create or Destroy Water|SRD|skip|3|
 1|Cure Wounds|SRD|done|1|
@@ -75,7 +75,7 @@
 1|Hail of Thorns|PHB|build|2|Next ranged weapon hit: DEX save in a 5-ft area around the target
 1|Healing Word|SRD|done|1|
 1|Hellish Rebuke|SRD|midi|1|
-1|Heroism|SRD|build|2|Temp HP = spellcasting mod at the start of each turn; immune to Frightened
+1|Heroism|SRD|done|2|Temp HP = spellcasting mod at the start of each turn; immune to Frightened
 1|Hex|SRD|done|1|+1d6 on hits, Curse New Creature
 1|Hunter's Mark|SRD|done|1|+1d6 on hits, Move Mark
 1|Ice Knife|SRD|done|1|Attack, then DEX save for everything within 5 ft
@@ -86,7 +86,7 @@
 1|Longstrider|SRD|done|2|Speed +10 ft
 1|Mage Armor|SRD|done|1|AC 13 + DEX
 1|Magic Missile|SRD|done|1|Darts by slot, split between targets, one roll
-1|Protection from Evil and Good|SRD|build|2|Aberration/celestial/elemental/fey/fiend/undead attackers have disadvantage; charm/fear immunity vs them
+1|Protection from Evil and Good|SRD|done|2|Aberration/celestial/elemental/fey/fiend/undead attackers have disadvantage; charm/fear immunity vs them
 1|Purify Food and Drink|SRD|skip|3|
 1|Ray of Sickness|SRD|done|2|Poisoned until end of your next turn on a hit
 1|Sanctuary|SRD|midi|2|
@@ -96,12 +96,12 @@
 1|Silent Image|SRD|skip|3|
 1|Sleep|SRD|midi|1|
 1|Speak with Animals|SRD|skip|3|
-1|Tasha's Hideous Laughter|SRD|build|2|aka Hideous Laughter. Prone + Incapacitated; repeat save end of turn and on damage (with advantage)
+1|Tasha's Hideous Laughter|SRD|done|2|aka Hideous Laughter. Prone + Incapacitated; repeat save end of turn and on damage (with advantage)
 1|Tenser's Floating Disk|SRD|skip|3|aka Floating Disk
 1|Thunderous Smite|PHB|done|1|Push 10 ft + Prone
 1|Thunderwave|SRD|midi|1|
 1|Unseen Servant|SRD|skip|3|
-1|Witch Bolt|PHB|build|2|Bonus action each turn for 1d12 lightning while the target stays in range
+1|Witch Bolt|PHB|done|2|Bonus action each turn for 1d12 lightning while the target stays in range
 1|Wrathful Smite|PHB|done|1|Frightened with repeat save
 2|Aid|SRD|midi|1|
 2|Alter Self|SRD|skip|3|
@@ -110,7 +110,7 @@
 2|Arcane Vigor|SRD|verify|3|Spend Hit Point Dice to heal
 2|Augury|SRD|skip|3|
 2|Barkskin|SRD|done|1|AC can't be lower than 17
-2|Blindness/Deafness|SRD|build|2|Repeat CON save at the end of each of its turns
+2|Blindness/Deafness|SRD|done|2|Repeat CON save at the end of each of its turns
 2|Blur|SRD|done|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
 2|Calm Emotions|SRD|verify|3|
 2|Cloud of Daggers|PHB|build|2|Zone: 4d4 slashing on entering or starting turn there
@@ -130,7 +130,7 @@
 2|Flaming Sphere|SRD|build|2|Summoned sphere: end-of-turn DEX save damage; ram as a bonus action
 2|Gentle Repose|SRD|skip|3|
 2|Gust of Wind|SRD|build|3|Push 15 ft on failed STR save; line
-2|Heat Metal|SRD|build|2|Bonus action to repeat damage; drop the object or disadvantage
+2|Heat Metal|SRD|done|2|Bonus action to repeat damage; drop the object or disadvantage
 2|Hold Person|SRD|done|1|Paralyzed; repeat WIS save end of each turn; extra target per slot
 2|Invisibility|SRD|midi|1|
 2|Knock|SRD|skip|3|
@@ -150,28 +150,28 @@
 2|Phantasmal Force|SRD|midi|3|
 2|Prayer of Healing|SRD|done|2|
 2|Protection from Poison|SRD|done|2|
-2|Ray of Enfeeblement|SRD|build|2|Weaker damage + STR disadvantage; repeat save end of each turn
+2|Ray of Enfeeblement|SRD|done|2|Weaker damage + STR disadvantage; repeat save end of each turn
 2|Rope Trick|SRD|skip|3|
 2|Scorching Ray|SRD|done|1|One attack per ray; beams macro already handles it, just package it
 2|See Invisibility|SRD|verify|3|
 2|Shatter|SRD|done|1|
-2|Shining Smite|SRD|build|2|Check it works from the Paladin's Smite prompt (glowing, no invisibility)
+2|Shining Smite|SRD|done|2|Check it works from the Paladin's Smite prompt (glowing, no invisibility)
 2|Silence|SRD|skip|3|
 2|Spider Climb|SRD|verify|3|
 2|Spike Growth|SRD|build|2|2d4 piercing per 5 ft moved inside the area
 2|Spiritual Weapon|SRD|done|1|Summoned weapon; bonus-action melee spell attack; move it
 2|Suggestion|SRD|verify|3|
 2|Summon Beast|PHB|build|2|Summon (Land/Sea/Air stat block)
-2|Warding Bond|SRD|build|2|+1 AC/saves, resistance; caster takes the same damage
+2|Warding Bond|SRD|done|2|+1 AC/saves, resistance; caster takes the same damage
 2|Web|SRD|midi|2|
 2|Zone of Truth|SRD|skip|3|
 3|Animate Dead|SRD|build|2|Summon skeletons/zombies; command as bonus action
 3|Aura of Vitality|PHB|build|2|Bonus action: heal 2d6 to a creature in the aura
-3|Beacon of Hope|SRD|build|2|Healing is maximized (needs a midi flag), advantage on WIS and death saves
+3|Beacon of Hope|SRD|done|2|Healing is maximized (needs a midi flag), advantage on WIS and death saves
 3|Bestow Curse|SRD|build|2|Pick a curse; the extra 1d8 necrotic option needs a damage rider
-3|Blinding Smite|PHB|build|2|Smite prompt; Blinded with repeat CON save
+3|Blinding Smite|PHB|done|2|Smite prompt; Blinded with repeat CON save
 3|Blink|SRD|build|3|d6 at end of each turn to blink to the Ethereal Plane
-3|Call Lightning|SRD|build|2|Repeat the bolt as an action each turn
+3|Call Lightning|SRD|done|2|Repeat the bolt as an action each turn
 3|Clairvoyance|SRD|skip|3|
 3|Conjure Animals|SRD|build|2|2024: pack of spirits deals damage to creatures near it
 3|Conjure Barrage|PHB|done|2|Cone DEX save
@@ -181,7 +181,7 @@
 3|Daylight|SRD|skip|3|
 3|Dispel Magic|SRD|build|3|End spell effects on a target (check for higher levels)
 3|Elemental Weapon|PHB|build|2|+1 attack and +1d4 elemental damage on the weapon
-3|Fear|SRD|build|2|Frightened, drop held item, must Dash away; save only out of sight
+3|Fear|SRD|done|2|Frightened, drop held item, must Dash away; save only out of sight
 3|Feign Death|PHB|skip|3|
 3|Fireball|SRD|done|1|
 3|Fly|SRD|done|1|
@@ -205,7 +205,7 @@
 3|Revivify|SRD|verify|3|Returns to 1 HP
 3|Sending|SRD|skip|3|
 3|Sleet Storm|SRD|build|3|Zone: DEX save or Prone; concentration checks
-3|Slow|SRD|build|2|-2 AC/DEX saves, half speed, one action; repeat WIS save end of each turn
+3|Slow|SRD|done|2|-2 AC/DEX saves, half speed, one action; repeat WIS save end of each turn
 3|Speak with Dead|SRD|skip|3|
 3|Speak with Plants|SRD|skip|3|
 3|Spirit Guardians|SRD|done|1|Aura: WIS save on entering/starting turn; half speed for enemies
@@ -213,14 +213,14 @@
 3|Summon Fey|PHB|build|2|Summon
 3|Summon Undead|PHB|build|2|Summon
 3|Tongues|SRD|skip|3|
-3|Vampiric Touch|SRD|build|2|Heal half the damage dealt; repeat the touch as an action
+3|Vampiric Touch|SRD|done|2|Heal half the damage dealt; repeat the touch as an action
 3|Water Breathing|SRD|skip|3|
 3|Water Walk|SRD|skip|3|
 3|Wind Wall|SRD|build|3|Wall; ranged attacks through it
 4|Arcane Eye|SRD|skip|3|
 4|Aura of Life|SRD|build|3|Necrotic resistance; creatures at 0 HP regain 1 HP
 4|Aura of Purity|PHB|build|3|Aura: poison resistance, advantage on saves vs conditions
-4|Banishment|SRD|build|2|Remove the target (hide token) until the spell ends
+4|Banishment|SRD|done|2|Remove the target (hide token) until the spell ends
 4|Blight|SRD|done|2|
 4|Charm Monster|SRD|verify|3|
 4|Compulsion|SRD|build|3|Forced movement each turn
@@ -228,13 +228,13 @@
 4|Conjure Minor Elementals|SRD|build|2|2024: your attacks deal +2d8 elemental near you
 4|Conjure Woodland Beings|SRD|build|2|2024: aura damage around you
 4|Control Water|SRD|skip|3|
-4|Death Ward|SRD|build|2|First drop to 0 HP becomes 1 HP instead
+4|Death Ward|SRD|done|2|First drop to 0 HP becomes 1 HP instead
 4|Dimension Door|SRD|done|2|Teleport (+ a willing creature)
 4|Divination|SRD|skip|3|
 4|Dominate Beast|SRD|verify|3|
 4|Evard's Black Tentacles|SRD|build|2|aka Black Tentacles. Zone: restrained + bludgeoning
 4|Fabricate|SRD|skip|3|
-4|Fire Shield|SRD|build|2|Melee attackers take 2d8 fire/cold; resistance
+4|Fire Shield|SRD|done|2|Melee attackers take 2d8 fire/cold; resistance
 4|Freedom of Movement|SRD|verify|3|
 4|Giant Insect|SRD|build|3|Summon
 4|Grasping Vine|PHB|build|3|Pull 30 ft on a failed save; bonus action each turn
@@ -247,9 +247,9 @@
 4|Mordenkainen's Faithful Hound|SRD|build|3|aka Faithful Hound. Bites invisible intruders
 4|Mordenkainen's Private Sanctum|SRD|skip|3|aka Private Sanctum
 4|Otiluke's Resilient Sphere|SRD|verify|3|aka Resilient Sphere
-4|Phantasmal Killer|SRD|build|2|Frightened; repeat WIS save end of turn with psychic damage
+4|Phantasmal Killer|SRD|done|2|Frightened; repeat WIS save end of turn with psychic damage
 4|Polymorph|SRD|build|2|Transform into a beast; revert at 0 HP
-4|Staggering Smite|PHB|build|2|Smite prompt; Stunned until end of your next turn on a failed save
+4|Staggering Smite|PHB|done|2|Smite prompt; Stunned until end of your next turn on a failed save
 4|Stone Shape|SRD|skip|3|
 4|Stoneskin|SRD|done|2|Resistance to B/P/S
 4|Summon Aberration|PHB|build|2|Summon
@@ -260,7 +260,7 @@
 5|Animate Objects|SRD|build|2|Summon animated objects
 5|Antilife Shell|SRD|verify|3|
 5|Awaken|SRD|skip|3|
-5|Banishing Smite|PHB|build|2|Smite prompt; banish at 50 HP or less
+5|Banishing Smite|PHB|done|2|Smite prompt; banish at 50 HP or less
 5|Bigby's Hand|SRD|build|2|aka Arcane Hand. Per-caster summon built before (see Bigby's Hand notes)
 5|Circle of Power|PHB|build|3|Aura: advantage on saves vs spells, no damage on success
 5|Cloudkill|SRD|build|2|Moving zone: CON save poison at turn start
@@ -298,7 +298,7 @@
 5|Summon Celestial|PHB|build|2|Summon
 5|Summon Dragon|SRD|build|2|Summon
 5|Swift Quiver|PHB|build|3|Two bonus-action weapon attacks each turn
-5|Synaptic Static|PHB|build|2|INT save psychic; failed save: -1d6 on attacks and checks, repeat save
+5|Synaptic Static|PHB|done|2|INT save psychic; failed save: -1d6 on attacks and checks, repeat save
 5|Telekinesis|SRD|skip|3|
 5|Teleportation Circle|SRD|skip|3|
 5|Tree Stride|SRD|skip|3|

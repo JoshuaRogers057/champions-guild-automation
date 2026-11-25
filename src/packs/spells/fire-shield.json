@@ -1,0 +1,300 @@
+{
+  "name": "Fire Shield",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Pick a warm shield (Resistance to Cold) or a chill shield (Resistance to Fire). Whenever a creature within 5 ft hits you with a melee attack roll, it takes 2d8 Fire (warm) or 2d8 Cold (chill).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "10",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "units": "self"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 4,
+    "school": "evo",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a bit of phosphorus or a firefly",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "YbUr13GTnMrootmf"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": false,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "type": "self",
+            "count": "",
+            "choice": false
+          },
+          "override": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "name": "Warm Shield"
+      },
+      "fireShieldChill0": {
+        "_id": "fireShieldChill0",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "CMEUOmIT16kjGT5J"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": false,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "type": "self",
+            "count": "",
+            "choice": false
+          },
+          "override": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 200000,
+        "name": "Chill Shield"
+      }
+    },
+    "identifier": "fire-shield",
+    "prepared": 0
+  },
+  "_id": "cgasplFireShield",
+  "type": "spell",
+  "img": "icons/equipment/shield/heater-stone-orange.webp",
+  "effects": [
+    {
+      "name": "Warm Shield",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplFireShield",
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "world": {
+          "cgaRetaliate": {
+            "formula": "2d8",
+            "type": "fire"
+          }
+        }
+      },
+      "img": "icons/equipment/shield/heater-steel-crystal-red.webp",
+      "_id": "YbUr13GTnMrootmf",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "E6MJetHYpN4maTCD"
+          },
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,isHit",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000015",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>Whenever a creature within 5 feet of you hits you with a melee attack roll, the attacker takes [[/damage 2d8 type=fire]] damage.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Chill Shield",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplFireShield",
+      "duration": {
+        "value": 600,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "world": {
+          "cgaRetaliate": {
+            "formula": "2d8",
+            "type": "cold"
+          }
+        }
+      },
+      "img": "icons/equipment/shield/heater-crystal-blue.webp",
+      "_id": "CMEUOmIT16kjGT5J",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "c7c8UKEFlUljMzxR"
+          },
+          {
+            "key": "flags.midi-qol.onUseMacroName",
+            "value": "ItemMacro,isHit",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000016",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "description": "<p>Whenever a creature within 5 feet of you hits you with a melee attack roll, the attacker takes [[/damage 2d8 type=cold]] damage.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: pick warm (Cold resistance, 2d8 Fire back) or chill (Fire resistance, 2d8 Cold back); melee hitters within 5 ft take the damage."
+      }
+    }
+  },
+  "_cgaMacro": "fire-shield.js"
+}

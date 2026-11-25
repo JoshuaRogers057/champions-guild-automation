@@ -1,0 +1,383 @@
+{
+  "name": "Ray of Enfeeblement",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> CON save. On a failure the target has Disadvantage on Strength-based D20 Tests and subtracts 1d8 from its damage rolls, repeating the save at the end of each of its turns. On a success it has Disadvantage on its next attack roll before the start of your next turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false
+      },
+      "template": {
+        "units": "ft",
+        "contiguous": false,
+        "stationary": false
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft"
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "nec",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "save",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [
+          {
+            "_id": "uaHZaHEalgWa6eoC",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false
+        },
+        "damage": {
+          "onSave": "half",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "img": null,
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {},
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        }
+      },
+      "rayEnfeebleOTSav": {
+        "_id": "rayEnfeebleOTSav",
+        "type": "save",
+        "name": "Ray of Enfeeblement: Repeat Save",
+        "sort": 900000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "End of each of the target's turns",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          }
+        },
+        "range": {
+          "override": true,
+          "units": "any",
+          "special": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": true
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          },
+          "visible": true
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "turnChoice": "end",
+          "saveRemoves": true,
+          "rollAs": "source",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "identifier": "rayEnfeeblementSave",
+          "otherActivityCompatible": false
+        },
+        "otherActivityId": "none"
+      }
+    },
+    "identifier": "ray-of-enfeeblement",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgasplRayofEnfee",
+  "type": "spell",
+  "img": "icons/magic/lightning/bolt-strike-beam-purple.webp",
+  "effects": [
+    {
+      "name": "Brief Enfeeblement",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplRayofEnfee",
+      "duration": {
+        "value": 1,
+        "units": "rounds",
+        "expiry": "sourceStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dae": {
+          "specialDuration": [
+            "1Attack"
+          ]
+        }
+      },
+      "img": "icons/skills/melee/sword-damaged-broken-glow-red.webp",
+      "_id": "yril8uhQgO1dR507",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "value": "1",
+            "priority": 20,
+            "type": "custom",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000004",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "description": "<p>The target has Disadvantage on the next attack roll it makes until the start of your next turn.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Enervated",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplRayofEnfee",
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "disabled": false,
+      "flags": {
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "img": "icons/skills/wounds/blood-cells-disease-green.webp",
+      "_id": "uaHZaHEalgWa6eoC",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.mwak.damage",
+            "value": "- 1d8",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ogXXyFIH4SZaHtGc",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.bonuses.rwak.damage",
+            "value": "- 1d8",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "U6mQsDGcLB1Gi9eC",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.bonuses.msak.damage",
+            "value": "- 1d8",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "0fEsVBVIa4MQxEHl",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.bonuses.rsak.damage",
+            "value": "- 1d8",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "sUz6h4vGlJHEPjER",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.str.check.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "WeGsSzxJX8j4qy1F",
+            "conditions": "{}"
+          },
+          {
+            "key": "system.abilities.str.save.roll.mode",
+            "value": -1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "72BZsWuUnO9SncJg",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "value": "rayEnfeeblementSave",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000003",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}"
+      },
+      "description": "<p>The target has Disadvantage on Strength-based D20 Tests for the duration. During that time, it also subtracts 1d8 from all its damage rolls. The target repeats the [[/save ability=con]] save at the end of each of its turns, ending the spell on a success.</p>",
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: failed CON save: Disadvantage on STR d20 tests and -1d8 damage, repeat save at the end of each turn; successful save: Disadvantage on its next attack roll."
+      }
+    },
+    "midi-qol": {
+      "onUseMacroName": "[postActiveEffects]ItemMacro"
+    }
+  },
+  "_cgaMacro": "ray-of-enfeeblement.js"
+}

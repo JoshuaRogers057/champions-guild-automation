@@ -1,0 +1,241 @@
+{
+  "name": "Arms of Hadar",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Each creature within 10 ft of you makes a STR save: 2d6 Necrotic and no Reactions until the start of its next turn on a failure, half damage on a success (+1d6 per slot level above 1st).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "",
+        "choice": false,
+        "special": "Each creature within 5 feet of you, other than you"
+      },
+      "template": {
+        "type": "radius",
+        "size": "10",
+        "units": "ft",
+        "contiguous": false,
+        "count": "",
+        "width": "",
+        "height": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "value": null,
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 1,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "always",
+      "prepared": false
+    },
+    "activities": {
+      "dTJW1b6fCd5TyMEa": {
+        "type": "save",
+        "name": "",
+        "_id": "dTJW1b6fCd5TyMEa",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "cgaArmsHadarFx00",
+            "onSave": false
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "damage": {
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "necrotic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ],
+          "onSave": "half"
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "img": "",
+        "appliedEffects": []
+      }
+    },
+    "identifier": "arms-of-hadar",
+    "prepared": 0
+  },
+  "_id": "cgaSplArmsHadar0",
+  "type": "spell",
+  "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+  "effects": [
+    {
+      "_id": "cgaArmsHadarFx00",
+      "name": "Arms of Hadar: No Reactions",
+      "img": "icons/magic/unholy/strike-body-explode-disintegrate.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "description": "",
+      "sort": 0,
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "duration": {
+        "value": null,
+        "units": "turns",
+        "expiry": "targetStart",
+        "expired": false
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [],
+          "showIcon": true
+        }
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.actions.reactionsUsed",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000037",
+            "conditions": "{}"
+          },
+          {
+            "key": "flags.midi-qol.actions.reaction",
+            "value": "true",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000038",
+            "conditions": "{}"
+          }
+        ],
+        "conditions": "{}",
+        "magical": true,
+        "rider": {
+          "statuses": []
+        },
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        }
+      }
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: every creature within 10 ft: STR save, 2d6 necrotic (half on a success); a failure means no Reactions until its next turn."
+      }
+    }
+  }
+}

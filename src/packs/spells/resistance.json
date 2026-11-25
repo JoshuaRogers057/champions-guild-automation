@@ -1,0 +1,1265 @@
+{
+  "name": "Resistance",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Touch a willing creature and pick a damage type. When it takes damage of that type, it takes 1d4 less, once per turn, while you concentrate.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "1",
+        "type": "willing",
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "units": "touch",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "level": 0,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "always",
+      "prepared": false
+    },
+    "activities": {
+      "resistanceAcid00": {
+        "type": "utility",
+        "_id": "resistanceAcid00",
+        "sort": 100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "u2mf5JowVgwqCARq"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Acid",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistanceBludge": {
+        "type": "utility",
+        "_id": "resistanceBludge",
+        "sort": 200000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "XYOXUUgKLjXXGt9W"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Bludgeoning",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistanceCold00": {
+        "type": "utility",
+        "_id": "resistanceCold00",
+        "sort": 300000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "Wpc5zvXyw2FSCJSD"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Cold",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistanceFire00": {
+        "type": "utility",
+        "_id": "resistanceFire00",
+        "sort": 400000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "S7XVvtgRT8uEP1iw"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Fire",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistanceLightn": {
+        "type": "utility",
+        "_id": "resistanceLightn",
+        "sort": 500000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "E8jlVJoTlfjKcz1r"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Lightning",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistanceNecrot": {
+        "type": "utility",
+        "_id": "resistanceNecrot",
+        "sort": 600000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "2TZhhhCDUC2pqqNg"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Necrotic",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistancePierce": {
+        "type": "utility",
+        "_id": "resistancePierce",
+        "sort": 700000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "iR95ZjBkbXXD3Ena"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Piercing",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistancePoison": {
+        "type": "utility",
+        "_id": "resistancePoison",
+        "sort": 800000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "KZdzty5DTXdpGukZ"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Poison",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistanceRadian": {
+        "type": "utility",
+        "_id": "resistanceRadian",
+        "sort": 900000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "9EhogBhAM9yIoREK"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Radiant",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistanceSlashi": {
+        "type": "utility",
+        "_id": "resistanceSlashi",
+        "sort": 1000000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "sBrdZmXfn33LhYwh"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Slashing",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      },
+      "resistanceThunde": {
+        "type": "utility",
+        "_id": "resistanceThunde",
+        "sort": 1100000,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "jP1TZyrEYtskdWXf"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Damage Reduction",
+          "formula": "1d4"
+        },
+        "name": "Thunder",
+        "img": "",
+        "appliedEffects": [
+          "u2mf5JowVgwqCARq",
+          "XYOXUUgKLjXXGt9W",
+          "Wpc5zvXyw2FSCJSD",
+          "S7XVvtgRT8uEP1iw",
+          "E8jlVJoTlfjKcz1r",
+          "2TZhhhCDUC2pqqNg",
+          "iR95ZjBkbXXD3Ena",
+          "KZdzty5DTXdpGukZ",
+          "9EhogBhAM9yIoREK",
+          "sBrdZmXfn33LhYwh",
+          "jP1TZyrEYtskdWXf"
+        ]
+      }
+    },
+    "identifier": "resistance",
+    "prepared": 0
+  },
+  "_id": "cgasplResistance",
+  "type": "spell",
+  "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+  "effects": [
+    {
+      "name": "Acid Protection",
+      "img": "systems/dnd5e/icons/svg/damage/acid.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "_id": "u2mf5JowVgwqCARq",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "acid",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000020",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Bludgeoning Protection",
+      "img": "systems/dnd5e/icons/svg/damage/bludgeoning.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "bludgeoning",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000021",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "XYOXUUgKLjXXGt9W",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Cold Protection",
+      "img": "systems/dnd5e/icons/svg/damage/cold.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "cold",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000022",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "Wpc5zvXyw2FSCJSD",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fire Protection",
+      "img": "systems/dnd5e/icons/svg/damage/fire.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "fire",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000023",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "S7XVvtgRT8uEP1iw",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Lightning Protection",
+      "img": "systems/dnd5e/icons/svg/damage/lightning.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "lightning",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000024",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "E8jlVJoTlfjKcz1r",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Necrotic Protection",
+      "img": "systems/dnd5e/icons/svg/damage/necrotic.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "necrotic",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000025",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "2TZhhhCDUC2pqqNg",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Piercing Protection",
+      "img": "systems/dnd5e/icons/svg/damage/piercing.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "piercing",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000026",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "iR95ZjBkbXXD3Ena",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Poison Protection",
+      "img": "systems/dnd5e/icons/svg/damage/poison.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "poison",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000027",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "KZdzty5DTXdpGukZ",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Radiant Protection",
+      "img": "systems/dnd5e/icons/svg/damage/radiant.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "radiant",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000028",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "9EhogBhAM9yIoREK",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Slashing Protection",
+      "img": "systems/dnd5e/icons/svg/damage/slashing.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "slashing",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000029",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "sBrdZmXfn33LhYwh",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Thunder Protection",
+      "img": "systems/dnd5e/icons/svg/damage/thunder.svg",
+      "origin": "Compendium.dnd5e.spells24.Item.phbsplResistance",
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.champions-guild-automation.resistance",
+            "value": "thunder",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgP2b0000030",
+            "conditions": "{}"
+          }
+        ],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>When the creature takes damage of the chosen type before the spell ends, the creature reduces the total damage taken by [[/r 1d4]]. A creature can benefit from this spell only once per turn.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "jP1TZyrEYtskdWXf",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: pick the damage type; the target takes 1d4 less damage of that type, once per turn."
+      }
+    }
+  }
+}
