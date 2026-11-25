@@ -1,0 +1,176 @@
+<title>CGA Spell Tracker</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a working ledger - status summary on top, filter bar, then one table per spell level. */
+:root {
+  --bg: #f2f4f7; --surface: #ffffff; --ink: #18202c; --muted: #5d6878; --line: #d9dee6; --accent: #1f5f8b;
+  --done: #2f7d4f; --done-bg: #e2f2e8; --midi: #2c62b5; --midi-bg: #e3ecfa;
+  --verify: #9a6400; --verify-bg: #fbf0d9; --build: #b4412e; --build-bg: #fbe5e0; --skip: #6b7280; --skip-bg: #eceef1;
+  --f-display: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #12161d; --surface: #1a2029; --ink: #e5e9ef; --muted: #9aa5b4; --line: #2c3442; --accent: #6fb0e0;
+  --done: #6cc792; --done-bg: #1c3326; --midi: #7ea8ee; --midi-bg: #1d2a44;
+  --verify: #e3b45a; --verify-bg: #3a2e14; --build: #f08a76; --build-bg: #40211b; --skip: #a3abb7; --skip-bg: #262c36;
+  color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #12161d; --surface: #1a2029; --ink: #e5e9ef; --muted: #9aa5b4; --line: #2c3442; --accent: #6fb0e0;
+  --done: #6cc792; --done-bg: #1c3326; --midi: #7ea8ee; --midi-bg: #1d2a44;
+  --verify: #e3b45a; --verify-bg: #3a2e14; --build: #f08a76; --build-bg: #40211b; --skip: #a3abb7; --skip-bg: #262c36;
+  color-scheme: dark }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 14px/1.5 var(--f-body); }
+.wrap { max-width: 1180px; margin: 0 auto; padding-block: 28px 64px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 22px; }
+header { display: grid; gap: 6px; }
+.eyebrow { font: 600 12px/1 var(--f-display); letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+h1 { font: 700 clamp(28px, 4vw, 40px)/1.05 var(--f-display); margin: 0; text-wrap: balance; }
+.lede { color: var(--muted); max-width: 70ch; margin: 0; }
+.summary { display: grid; gap: 10px; }
+.bar { display: flex; height: 14px; border-radius: 7px; overflow: hidden; background: var(--line); }
+.bar span { display: block; height: 100%; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--muted); }
+.legend b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+.filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); padding-block: 10px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; border-bottom: 1px solid var(--line); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font: 500 13px/1 var(--f-body); border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 999px; padding: 7px 11px; cursor: pointer; display: inline-flex; gap: 6px; align-items: center; }
+.chip[aria-pressed="true"] { color: var(--ink); border-color: currentColor; }
+.chip[aria-pressed="true"][data-cat] { color: var(--c); background: var(--cbg); border-color: var(--c); }
+.chip .n { font-variant-numeric: tabular-nums; opacity: .8; }
+.chip:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.grow { flex: 1 1 180px; min-width: 0; }
+input[type="search"], select { font: 14px var(--f-body); color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 7px 10px; width: 100%; }
+select { width: auto; }
+.count { color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+section.level { display: grid; gap: 8px; }
+section.level h2 { font: 600 20px/1.2 var(--f-display); margin: 0; display: flex; gap: 10px; align-items: baseline; }
+section.level h2 small { font: 400 13px var(--f-body); color: var(--muted); }
+.tablewrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; }
+table { width: 100%; border-collapse: collapse; min-width: 720px; }
+th { font: 600 11px/1 var(--f-display); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+td { padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+tr:last-child td { border-bottom: 0; }
+td.name { font-weight: 600; white-space: nowrap; }
+td.name .aka { display: block; font: 400 12px var(--f-body); color: var(--muted); }
+td.note { color: var(--muted); min-width: 260px; }
+td.id { font: 12px var(--f-mono); color: var(--muted); white-space: nowrap; }
+.pill { display: inline-block; font: 600 12px/1 var(--f-body); padding: 5px 9px; border-radius: 999px; color: var(--c); background: var(--cbg); white-space: nowrap; }
+.prio { font: 600 12px var(--f-mono); color: var(--muted); }
+.prio.p1 { color: var(--build); }
+.src { font: 12px var(--f-mono); color: var(--muted); }
+.empty { padding: 28px; text-align: center; color: var(--muted); background: var(--surface); border: 1px dashed var(--line); border-radius: 10px; }
+[data-c="done"] { --c: var(--done); --cbg: var(--done-bg); }
+[data-c="midi"] { --c: var(--midi); --cbg: var(--midi-bg); }
+[data-c="verify"] { --c: var(--verify); --cbg: var(--verify-bg); }
+[data-c="build"] { --c: var(--build); --cbg: var(--build-bg); }
+[data-c="skip"] { --c: var(--skip); --cbg: var(--skip-bg); }
+footer { color: var(--muted); font-size: 13px; }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Champions Guild Automation</div>
+    <h1>Spell automation tracker</h1>
+    <p class="lede">Every spell in the 2024 Player's Handbook, sorted by how much automation work it needs before CAT's Mass Apply can hand it to your tables. Priority 1 is what shows up in most fights.</p>
+  </header>
+
+  <div class="summary" id="summary" aria-label="Progress by category"></div>
+
+  <div class="filters" role="search">
+    <div class="chips" id="catChips" aria-label="Category"></div>
+    <select id="prio" aria-label="Priority">
+      <option value="all">Any priority</option>
+      <option value="1">Priority 1</option>
+      <option value="2">Priority 2</option>
+      <option value="3">Priority 3</option>
+    </select>
+    <select id="src" aria-label="Source">
+      <option value="all">SRD + PHB</option>
+      <option value="SRD">SRD only</option>
+      <option value="PHB">PHB-only</option>
+    </select>
+    <div class="grow"><input type="search" id="q" placeholder="Search spells or notes" aria-label="Search spells or notes"></div>
+    <span class="count" id="count"></span>
+  </div>
+
+  <div id="list" aria-live="polite"><div class="empty">Loading the spell list...</div></div>
+
+  <footer id="foot"></footer>
+</div>
+
+<script>
+const CATS = {
+  done:   { label: "Done",     desc: "Fixed in Champions Guild Automation" },
+  midi:   { label: "midi-qol", desc: "midi-qol ships a CAT automation; check it works" },
+  verify: { label: "Verify",   desc: "Standard spell; test it, fix if needed" },
+  build:  { label: "Build",    desc: "Needs automation work" },
+  skip:   { label: "Skip",     desc: "Roleplay or DM-handled" }
+};
+const LEVEL = (l) => l === 0 ? "Cantrips" : `${l}${["st","nd","rd"][l - 1] || "th"} level`;
+const state = { cats: new Set(["build", "verify", "midi"]), prio: "all", src: "all", q: "" };
+try { const saved = JSON.parse(localStorage.getItem("cga-tracker") || "null"); if (saved) { state.cats = new Set(saved.cats); state.prio = saved.prio; state.src = saved.src; } } catch (e) {}
+const save = () => { try { localStorage.setItem("cga-tracker", JSON.stringify({ cats: [...state.cats], prio: state.prio, src: state.src })); } catch (e) {} };
+const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+let spells = [];
+
+function renderSummary() {
+  const total = spells.length;
+  const counts = Object.fromEntries(Object.keys(CATS).map((c) => [c, spells.filter((s) => s.category === c).length]));
+  document.getElementById("summary").innerHTML =
+    `<div class="bar">${Object.keys(CATS).map((c) => `<span data-c="${c}" style="width:${(counts[c] / total) * 100}%;background:var(--c)" title="${CATS[c].label}: ${counts[c]}"></span>`).join("")}</div>
+     <div class="legend">${Object.keys(CATS).map((c) => `<span data-c="${c}"><span class="dot" style="background:var(--c)"></span>${CATS[c].label} <b>${counts[c]}</b> &middot; ${CATS[c].desc}</span>`).join("")}<span>Total <b>${total}</b></span></div>`;
+  document.getElementById("catChips").innerHTML = Object.keys(CATS).map((c) =>
+    `<button type="button" class="chip" id="chip-${c}" data-cat="${c}" data-c="${c}" aria-pressed="${state.cats.has(c)}">${CATS[c].label}<span class="n">${counts[c]}</span></button>`).join("");
+}
+
+function render() {
+  const q = state.q.trim().toLowerCase();
+  const rows = spells.filter((s) => state.cats.has(s.category)
+    && (state.prio === "all" || String(s.priority) === state.prio)
+    && (state.src === "all" || s.source === state.src)
+    && (!q || `${s.name} ${s.aka ?? ""} ${s.note} ${s.identifier}`.toLowerCase().includes(q)));
+  document.getElementById("count").textContent = `${rows.length} of ${spells.length} spells`;
+  const list = document.getElementById("list");
+  if (!rows.length) { list.innerHTML = `<div class="empty">No spells match these filters.</div>`; return; }
+  const levels = [...new Set(rows.map((s) => s.level))].sort((a, b) => a - b);
+  list.innerHTML = levels.map((l) => {
+    const r = rows.filter((s) => s.level === l).sort((a, b) => a.priority - b.priority || a.name.localeCompare(b.name));
+    return `<section class="level"><h2>${LEVEL(l)} <small>${r.length} ${r.length === 1 ? "spell" : "spells"}</small></h2>
+      <div class="tablewrap"><table>
+        <thead><tr><th>Spell</th><th>Status</th><th>Priority</th><th>Source</th><th>What it needs</th><th>CAT identifier</th></tr></thead>
+        <tbody>${r.map((s) => `<tr>
+          <td class="name">${esc(s.name)}${s.aka ? `<span class="aka">SRD: ${esc(s.aka)}</span>` : ""}</td>
+          <td><span class="pill" data-c="${s.category}">${CATS[s.category].label}</span></td>
+          <td class="prio p${s.priority}">P${s.priority}</td>
+          <td class="src">${s.source}</td>
+          <td class="note">${esc(s.note.replace(/^aka [^.]+(\.|$)\s*/, "")) || "&mdash;"}</td>
+          <td class="id">${esc(s.identifier)}</td></tr>`).join("")}</tbody>
+      </table></div></section>`;
+  }).join("");
+}
+
+document.addEventListener("click", (e) => {
+  const chip = e.target.closest(".chip[data-cat]");
+  if (!chip) return;
+  const c = chip.dataset.cat;
+  state.cats.has(c) ? state.cats.delete(c) : state.cats.add(c);
+  chip.setAttribute("aria-pressed", state.cats.has(c));
+  save(); render();
+});
+document.getElementById("prio").addEventListener("change", (e) => { state.prio = e.target.value; save(); render(); });
+document.getElementById("src").addEventListener("change", (e) => { state.src = e.target.value; save(); render(); });
+document.getElementById("q").addEventListener("input", (e) => { state.q = e.target.value; render(); });
+
+fetch("spells.json").then((r) => r.json()).then((data) => {
+  spells = data.spells;
+  document.getElementById("prio").value = state.prio;
+  document.getElementById("src").value = state.src;
+  document.getElementById("foot").textContent = `List updated ${data.updated}. 2024 Player's Handbook: ${spells.filter((s) => s.source === "SRD").length} SRD spells + ${spells.filter((s) => s.source === "PHB").length} PHB-only spells. SRD names that differ from the book are shown under the spell name; their CGA fixes carry both identifiers.`;
+  renderSummary(); render();
+}).catch(() => { document.getElementById("list").innerHTML = `<div class="empty">The spell list didn't load. Reload the page to try again.</div>`; });
+</script>

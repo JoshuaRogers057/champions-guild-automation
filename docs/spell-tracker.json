@@ -1,0 +1,3895 @@
+{
+ "updated": "2026-11-24",
+ "spells": [
+  {
+   "level": 0,
+   "name": "Acid Splash",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "DEX save, up to two creatures within 5 ft of each other; cantrip scaling",
+   "aka": null,
+   "identifier": "acid-splash"
+  },
+  {
+   "level": 0,
+   "name": "Blade Ward",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Attackers subtract 1d4 from attack rolls against you (concentration)",
+   "aka": null,
+   "identifier": "blade-ward"
+  },
+  {
+   "level": 0,
+   "name": "Chill Touch",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "chill-touch"
+  },
+  {
+   "level": 0,
+   "name": "Dancing Lights",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "dancing-lights"
+  },
+  {
+   "level": 0,
+   "name": "Druidcraft",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "druidcraft"
+  },
+  {
+   "level": 0,
+   "name": "Eldritch Blast",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "One attack per beam, Agonizing Blast, Repelling Blast push",
+   "aka": null,
+   "identifier": "eldritch-blast"
+  },
+  {
+   "level": 0,
+   "name": "Elementalism",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "elementalism"
+  },
+  {
+   "level": 0,
+   "name": "Fire Bolt",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "fire-bolt"
+  },
+  {
+   "level": 0,
+   "name": "Friends",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "friends"
+  },
+  {
+   "level": 0,
+   "name": "Guidance",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Skill picker, +1d4",
+   "aka": null,
+   "identifier": "guidance"
+  },
+  {
+   "level": 0,
+   "name": "Light",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "midi-qol has one",
+   "aka": null,
+   "identifier": "light"
+  },
+  {
+   "level": 0,
+   "name": "Mage Hand",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "mage-hand"
+  },
+  {
+   "level": 0,
+   "name": "Mending",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "mending"
+  },
+  {
+   "level": 0,
+   "name": "Message",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "message"
+  },
+  {
+   "level": 0,
+   "name": "Mind Sliver",
+   "source": "PHB",
+   "category": "build",
+   "priority": 1,
+   "note": "INT save psychic damage; failed save subtracts 1d4 from its next saving throw",
+   "aka": null,
+   "identifier": "mind-sliver"
+  },
+  {
+   "level": 0,
+   "name": "Minor Illusion",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "minor-illusion"
+  },
+  {
+   "level": 0,
+   "name": "Poison Spray",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "2024 version is a ranged spell attack",
+   "aka": null,
+   "identifier": "poison-spray"
+  },
+  {
+   "level": 0,
+   "name": "Prestidigitation",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "prestidigitation"
+  },
+  {
+   "level": 0,
+   "name": "Produce Flame",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "produce-flame"
+  },
+  {
+   "level": 0,
+   "name": "Ray of Frost",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Speed -10 ft until your next turn",
+   "aka": null,
+   "identifier": "ray-of-frost"
+  },
+  {
+   "level": 0,
+   "name": "Resistance",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Reduce one damage type by 1d4 once per turn (concentration)",
+   "aka": null,
+   "identifier": "resistance"
+  },
+  {
+   "level": 0,
+   "name": "Sacred Flame",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "No benefit from cover",
+   "aka": null,
+   "identifier": "sacred-flame"
+  },
+  {
+   "level": 0,
+   "name": "Shillelagh",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Spellcasting ability + bigger damage die on the club/staff",
+   "aka": null,
+   "identifier": "shillelagh"
+  },
+  {
+   "level": 0,
+   "name": "Shocking Grasp",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "No reactions until its next turn",
+   "aka": null,
+   "identifier": "shocking-grasp"
+  },
+  {
+   "level": 0,
+   "name": "Sorcerous Burst",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Damage dice explode on 8s, up to spellcasting-modifier extra dice",
+   "aka": null,
+   "identifier": "sorcerous-burst"
+  },
+  {
+   "level": 0,
+   "name": "Spare the Dying",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "spare-the-dying"
+  },
+  {
+   "level": 0,
+   "name": "Starry Wisp",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Target can't be invisible until end of your next turn",
+   "aka": null,
+   "identifier": "starry-wisp"
+  },
+  {
+   "level": 0,
+   "name": "Thaumaturgy",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "thaumaturgy"
+  },
+  {
+   "level": 0,
+   "name": "Thorn Whip",
+   "source": "PHB",
+   "category": "build",
+   "priority": 1,
+   "note": "Melee spell attack; pull Large or smaller 10 ft toward you (no token spin)",
+   "aka": null,
+   "identifier": "thorn-whip"
+  },
+  {
+   "level": 0,
+   "name": "Thunderclap",
+   "source": "PHB",
+   "category": "verify",
+   "priority": 1,
+   "note": "CON save, every creature within 5 ft",
+   "aka": null,
+   "identifier": "thunderclap"
+  },
+  {
+   "level": 0,
+   "name": "Toll the Dead",
+   "source": "PHB",
+   "category": "midi",
+   "priority": 1,
+   "note": "d12 vs wounded targets",
+   "aka": null,
+   "identifier": "toll-the-dead"
+  },
+  {
+   "level": 0,
+   "name": "True Strike",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Weapon attack with spellcasting ability; extra radiant at 5th+",
+   "aka": null,
+   "identifier": "true-strike"
+  },
+  {
+   "level": 0,
+   "name": "Vicious Mockery",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Failed save: disadvantage on its next attack roll",
+   "aka": null,
+   "identifier": "vicious-mockery"
+  },
+  {
+   "level": 0,
+   "name": "Word of Radiance",
+   "source": "PHB",
+   "category": "verify",
+   "priority": 1,
+   "note": "CON save, creatures of your choice within 5 ft",
+   "aka": null,
+   "identifier": "word-of-radiance"
+  },
+  {
+   "level": 1,
+   "name": "Alarm",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "alarm"
+  },
+  {
+   "level": 1,
+   "name": "Animal Friendship",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "animal-friendship"
+  },
+  {
+   "level": 1,
+   "name": "Armor of Agathys",
+   "source": "PHB",
+   "category": "build",
+   "priority": 1,
+   "note": "Temp HP; while it lasts, melee attackers take cold damage",
+   "aka": null,
+   "identifier": "armor-of-agathys"
+  },
+  {
+   "level": 1,
+   "name": "Arms of Hadar",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "STR save necrotic all around; failed save = no reactions until its next turn",
+   "aka": null,
+   "identifier": "arms-of-hadar"
+  },
+  {
+   "level": 1,
+   "name": "Bane",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "-1d4 to attacks and saves for creatures that fail (concentration)",
+   "aka": null,
+   "identifier": "bane"
+  },
+  {
+   "level": 1,
+   "name": "Bless",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "+1d4 to attacks and saves; extra target per slot level (concentration)",
+   "aka": null,
+   "identifier": "bless"
+  },
+  {
+   "level": 1,
+   "name": "Burning Hands",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "burning-hands"
+  },
+  {
+   "level": 1,
+   "name": "Charm Person",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "WIS save or Charmed",
+   "aka": null,
+   "identifier": "charm-person"
+  },
+  {
+   "level": 1,
+   "name": "Chromatic Orb",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Choose damage type; matching dice leap to another target",
+   "aka": null,
+   "identifier": "chromatic-orb"
+  },
+  {
+   "level": 1,
+   "name": "Color Spray",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Blinded until end of your next turn",
+   "aka": null,
+   "identifier": "color-spray"
+  },
+  {
+   "level": 1,
+   "name": "Command",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "command"
+  },
+  {
+   "level": 1,
+   "name": "Compelled Duel",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Mirjam's compelled-duel macro exists (disadvantage vs others, end conditions)",
+   "aka": null,
+   "identifier": "compelled-duel"
+  },
+  {
+   "level": 1,
+   "name": "Comprehend Languages",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "comprehend-languages"
+  },
+  {
+   "level": 1,
+   "name": "Create or Destroy Water",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "create-or-destroy-water"
+  },
+  {
+   "level": 1,
+   "name": "Cure Wounds",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "cure-wounds"
+  },
+  {
+   "level": 1,
+   "name": "Detect Evil and Good",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "detect-evil-and-good"
+  },
+  {
+   "level": 1,
+   "name": "Detect Magic",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "midi-qol has one",
+   "aka": null,
+   "identifier": "detect-magic"
+  },
+  {
+   "level": 1,
+   "name": "Detect Poison and Disease",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "detect-poison-and-disease"
+  },
+  {
+   "level": 1,
+   "name": "Disguise Self",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "disguise-self"
+  },
+  {
+   "level": 1,
+   "name": "Dissonant Whispers",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Half on save; the forced Reaction move is DM-handled",
+   "aka": null,
+   "identifier": "dissonant-whispers"
+  },
+  {
+   "level": 1,
+   "name": "Divine Favor",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "+1d4 radiant on weapon hits",
+   "aka": null,
+   "identifier": "divine-favor"
+  },
+  {
+   "level": 1,
+   "name": "Divine Smite",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Via Paladin's Smite prompt",
+   "aka": null,
+   "identifier": "divine-smite"
+  },
+  {
+   "level": 1,
+   "name": "Ensnaring Strike",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "ensnaring-strike"
+  },
+  {
+   "level": 1,
+   "name": "Entangle",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Restrained on failed STR save; action STR check to escape; difficult terrain",
+   "aka": null,
+   "identifier": "entangle"
+  },
+  {
+   "level": 1,
+   "name": "Expeditious Retreat",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "expeditious-retreat"
+  },
+  {
+   "level": 1,
+   "name": "Faerie Fire",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Outlined creatures: attacks against them have advantage, no invisibility",
+   "aka": null,
+   "identifier": "faerie-fire"
+  },
+  {
+   "level": 1,
+   "name": "False Life",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Temp HP",
+   "aka": null,
+   "identifier": "false-life"
+  },
+  {
+   "level": 1,
+   "name": "Feather Fall",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "feather-fall"
+  },
+  {
+   "level": 1,
+   "name": "Find Familiar",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon; per-caster familiar pattern exists (necromancy familiar)",
+   "aka": null,
+   "identifier": "find-familiar"
+  },
+  {
+   "level": 1,
+   "name": "Fog Cloud",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "fog-cloud"
+  },
+  {
+   "level": 1,
+   "name": "Goodberry",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "goodberry"
+  },
+  {
+   "level": 1,
+   "name": "Grease",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Prone on failed DEX save; save again entering or ending turn in it",
+   "aka": null,
+   "identifier": "grease"
+  },
+  {
+   "level": 1,
+   "name": "Guiding Bolt",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "guiding-bolt"
+  },
+  {
+   "level": 1,
+   "name": "Hail of Thorns",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Next ranged weapon hit: DEX save in a 5-ft area around the target",
+   "aka": null,
+   "identifier": "hail-of-thorns"
+  },
+  {
+   "level": 1,
+   "name": "Healing Word",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "healing-word"
+  },
+  {
+   "level": 1,
+   "name": "Hellish Rebuke",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "hellish-rebuke"
+  },
+  {
+   "level": 1,
+   "name": "Heroism",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Temp HP = spellcasting mod at the start of each turn; immune to Frightened",
+   "aka": null,
+   "identifier": "heroism"
+  },
+  {
+   "level": 1,
+   "name": "Hex",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "+1d6 on hits, Curse New Creature",
+   "aka": null,
+   "identifier": "hex"
+  },
+  {
+   "level": 1,
+   "name": "Hunter's Mark",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "+1d6 on hits, Move Mark",
+   "aka": null,
+   "identifier": "hunters-mark"
+  },
+  {
+   "level": 1,
+   "name": "Ice Knife",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Attack, then DEX save for everything within 5 ft",
+   "aka": null,
+   "identifier": "ice-knife"
+  },
+  {
+   "level": 1,
+   "name": "Identify",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "midi-qol has one",
+   "aka": null,
+   "identifier": "identify"
+  },
+  {
+   "level": 1,
+   "name": "Illusory Script",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "illusory-script"
+  },
+  {
+   "level": 1,
+   "name": "Inflict Wounds",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "2024: CON save, half on success",
+   "aka": null,
+   "identifier": "inflict-wounds"
+  },
+  {
+   "level": 1,
+   "name": "Jump",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "jump"
+  },
+  {
+   "level": 1,
+   "name": "Longstrider",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Speed +10 ft",
+   "aka": null,
+   "identifier": "longstrider"
+  },
+  {
+   "level": 1,
+   "name": "Mage Armor",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "AC 13 + DEX",
+   "aka": null,
+   "identifier": "mage-armor"
+  },
+  {
+   "level": 1,
+   "name": "Magic Missile",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Darts by slot, split between targets, one roll",
+   "aka": null,
+   "identifier": "magic-missile"
+  },
+  {
+   "level": 1,
+   "name": "Protection from Evil and Good",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Aberration/celestial/elemental/fey/fiend/undead attackers have disadvantage; charm/fear immunity vs them",
+   "aka": null,
+   "identifier": "protection-from-evil-and-good"
+  },
+  {
+   "level": 1,
+   "name": "Purify Food and Drink",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "purify-food-and-drink"
+  },
+  {
+   "level": 1,
+   "name": "Ray of Sickness",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Poisoned until end of your next turn on a hit",
+   "aka": null,
+   "identifier": "ray-of-sickness"
+  },
+  {
+   "level": 1,
+   "name": "Sanctuary",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "sanctuary"
+  },
+  {
+   "level": 1,
+   "name": "Searing Smite",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Via Paladin's Smite prompt",
+   "aka": null,
+   "identifier": "searing-smite"
+  },
+  {
+   "level": 1,
+   "name": "Shield",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "shield"
+  },
+  {
+   "level": 1,
+   "name": "Shield of Faith",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "+2 AC (concentration)",
+   "aka": null,
+   "identifier": "shield-of-faith"
+  },
+  {
+   "level": 1,
+   "name": "Silent Image",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "silent-image"
+  },
+  {
+   "level": 1,
+   "name": "Sleep",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "sleep"
+  },
+  {
+   "level": 1,
+   "name": "Speak with Animals",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "speak-with-animals"
+  },
+  {
+   "level": 1,
+   "name": "Tasha's Hideous Laughter",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "aka Hideous Laughter. Prone + Incapacitated; repeat save end of turn and on damage (with advantage)",
+   "aka": "Hideous Laughter",
+   "identifier": "hideous-laughter"
+  },
+  {
+   "level": 1,
+   "name": "Tenser's Floating Disk",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "aka Floating Disk",
+   "aka": "Floating Disk",
+   "identifier": "tensers-floating-disk"
+  },
+  {
+   "level": 1,
+   "name": "Thunderous Smite",
+   "source": "PHB",
+   "category": "done",
+   "priority": 1,
+   "note": "Push 10 ft + Prone",
+   "aka": null,
+   "identifier": "thunderous-smite"
+  },
+  {
+   "level": 1,
+   "name": "Thunderwave",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "thunderwave"
+  },
+  {
+   "level": 1,
+   "name": "Unseen Servant",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "unseen-servant"
+  },
+  {
+   "level": 1,
+   "name": "Witch Bolt",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Bonus action each turn for 1d12 lightning while the target stays in range",
+   "aka": null,
+   "identifier": "witch-bolt"
+  },
+  {
+   "level": 1,
+   "name": "Wrathful Smite",
+   "source": "PHB",
+   "category": "done",
+   "priority": 1,
+   "note": "Frightened with repeat save",
+   "aka": null,
+   "identifier": "wrathful-smite"
+  },
+  {
+   "level": 2,
+   "name": "Aid",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "aid"
+  },
+  {
+   "level": 2,
+   "name": "Alter Self",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "alter-self"
+  },
+  {
+   "level": 2,
+   "name": "Animal Messenger",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "animal-messenger"
+  },
+  {
+   "level": 2,
+   "name": "Arcane Lock",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "arcane-lock"
+  },
+  {
+   "level": 2,
+   "name": "Arcane Vigor",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "Spend Hit Point Dice to heal",
+   "aka": null,
+   "identifier": "arcane-vigor"
+  },
+  {
+   "level": 2,
+   "name": "Augury",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "augury"
+  },
+  {
+   "level": 2,
+   "name": "Barkskin",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "AC can't be lower than 17",
+   "aka": null,
+   "identifier": "barkskin"
+  },
+  {
+   "level": 2,
+   "name": "Blindness/Deafness",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Repeat CON save at the end of each of its turns",
+   "aka": null,
+   "identifier": "blindness-deafness"
+  },
+  {
+   "level": 2,
+   "name": "Blur",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Attacks against you have disadvantage unless the attacker has Blindsight/Truesight",
+   "aka": null,
+   "identifier": "blur"
+  },
+  {
+   "level": 2,
+   "name": "Calm Emotions",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "calm-emotions"
+  },
+  {
+   "level": 2,
+   "name": "Cloud of Daggers",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Zone: 4d4 slashing on entering or starting turn there",
+   "aka": null,
+   "identifier": "cloud-of-daggers"
+  },
+  {
+   "level": 2,
+   "name": "Continual Flame",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "continual-flame"
+  },
+  {
+   "level": 2,
+   "name": "Cordon of Arrows",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Trap: arrows fire at creatures entering 30 ft",
+   "aka": null,
+   "identifier": "cordon-of-arrows"
+  },
+  {
+   "level": 2,
+   "name": "Crown of Madness",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Charmed; forced melee attack each turn; repeat save",
+   "aka": null,
+   "identifier": "crown-of-madness"
+  },
+  {
+   "level": 2,
+   "name": "Darkness",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "darkness"
+  },
+  {
+   "level": 2,
+   "name": "Darkvision",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "darkvision"
+  },
+  {
+   "level": 2,
+   "name": "Detect Thoughts",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "detect-thoughts"
+  },
+  {
+   "level": 2,
+   "name": "Dragon's Breath",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "dragons-breath"
+  },
+  {
+   "level": 2,
+   "name": "Enhance Ability",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Advantage on checks with the chosen ability",
+   "aka": null,
+   "identifier": "enhance-ability"
+  },
+  {
+   "level": 2,
+   "name": "Enlarge/Reduce",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Size, STR checks/saves, +/-1d4 weapon damage",
+   "aka": null,
+   "identifier": "enlarge-reduce"
+  },
+  {
+   "level": 2,
+   "name": "Enthrall",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "enthrall"
+  },
+  {
+   "level": 2,
+   "name": "Find Steed",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon; older v13 \"Find Steed (Free)\" fix exists in Macros",
+   "aka": null,
+   "identifier": "find-steed"
+  },
+  {
+   "level": 2,
+   "name": "Find Traps",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "find-traps"
+  },
+  {
+   "level": 2,
+   "name": "Flame Blade",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "flame-blade"
+  },
+  {
+   "level": 2,
+   "name": "Flaming Sphere",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Summoned sphere: end-of-turn DEX save damage; ram as a bonus action",
+   "aka": null,
+   "identifier": "flaming-sphere"
+  },
+  {
+   "level": 2,
+   "name": "Gentle Repose",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "gentle-repose"
+  },
+  {
+   "level": 2,
+   "name": "Gust of Wind",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Push 15 ft on failed STR save; line",
+   "aka": null,
+   "identifier": "gust-of-wind"
+  },
+  {
+   "level": 2,
+   "name": "Heat Metal",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Bonus action to repeat damage; drop the object or disadvantage",
+   "aka": null,
+   "identifier": "heat-metal"
+  },
+  {
+   "level": 2,
+   "name": "Hold Person",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Paralyzed; repeat WIS save end of each turn; extra target per slot",
+   "aka": null,
+   "identifier": "hold-person"
+  },
+  {
+   "level": 2,
+   "name": "Invisibility",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "invisibility"
+  },
+  {
+   "level": 2,
+   "name": "Knock",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "knock"
+  },
+  {
+   "level": 2,
+   "name": "Lesser Restoration",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "lesser-restoration"
+  },
+  {
+   "level": 2,
+   "name": "Levitate",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "levitate"
+  },
+  {
+   "level": 2,
+   "name": "Locate Animals or Plants",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "locate-animals-or-plants"
+  },
+  {
+   "level": 2,
+   "name": "Locate Object",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "locate-object"
+  },
+  {
+   "level": 2,
+   "name": "Magic Mouth",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "magic-mouth"
+  },
+  {
+   "level": 2,
+   "name": "Magic Weapon",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "+1 weapon (+2/+3 at higher slots)",
+   "aka": null,
+   "identifier": "magic-weapon"
+  },
+  {
+   "level": 2,
+   "name": "Melf's Acid Arrow",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "aka Acid Arrow. Half on miss; extra acid at end of target's next turn",
+   "aka": "Acid Arrow",
+   "identifier": "acid-arrow"
+  },
+  {
+   "level": 2,
+   "name": "Mind Spike",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "mind-spike"
+  },
+  {
+   "level": 2,
+   "name": "Mirror Image",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Duplicates absorb hits; mirror-image macro exists (needs the PHB-module flag replaced)",
+   "aka": null,
+   "identifier": "mirror-image"
+  },
+  {
+   "level": 2,
+   "name": "Misty Step",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Teleport",
+   "aka": null,
+   "identifier": "misty-step"
+  },
+  {
+   "level": 2,
+   "name": "Moonbeam",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Zone: CON save radiant on entering/starting turn; move the beam as a bonus action",
+   "aka": null,
+   "identifier": "moonbeam"
+  },
+  {
+   "level": 2,
+   "name": "Nystul's Magic Aura",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "aka Arcanist's Magic Aura",
+   "aka": "Arcanist's Magic Aura",
+   "identifier": "arcanists-magic-aura"
+  },
+  {
+   "level": 2,
+   "name": "Pass without Trace",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "pass-without-trace"
+  },
+  {
+   "level": 2,
+   "name": "Phantasmal Force",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "phantasmal-force"
+  },
+  {
+   "level": 2,
+   "name": "Prayer of Healing",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "prayer-of-healing"
+  },
+  {
+   "level": 2,
+   "name": "Protection from Poison",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "protection-from-poison"
+  },
+  {
+   "level": 2,
+   "name": "Ray of Enfeeblement",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Weaker damage + STR disadvantage; repeat save end of each turn",
+   "aka": null,
+   "identifier": "ray-of-enfeeblement"
+  },
+  {
+   "level": 2,
+   "name": "Rope Trick",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "rope-trick"
+  },
+  {
+   "level": 2,
+   "name": "Scorching Ray",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "One attack per ray; beams macro already handles it, just package it",
+   "aka": null,
+   "identifier": "scorching-ray"
+  },
+  {
+   "level": 2,
+   "name": "See Invisibility",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "see-invisibility"
+  },
+  {
+   "level": 2,
+   "name": "Shatter",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "shatter"
+  },
+  {
+   "level": 2,
+   "name": "Shining Smite",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Check it works from the Paladin's Smite prompt (glowing, no invisibility)",
+   "aka": null,
+   "identifier": "shining-smite"
+  },
+  {
+   "level": 2,
+   "name": "Silence",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "silence"
+  },
+  {
+   "level": 2,
+   "name": "Spider Climb",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "spider-climb"
+  },
+  {
+   "level": 2,
+   "name": "Spike Growth",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "2d4 piercing per 5 ft moved inside the area",
+   "aka": null,
+   "identifier": "spike-growth"
+  },
+  {
+   "level": 2,
+   "name": "Spiritual Weapon",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Summoned weapon; bonus-action melee spell attack; move it",
+   "aka": null,
+   "identifier": "spiritual-weapon"
+  },
+  {
+   "level": 2,
+   "name": "Suggestion",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "suggestion"
+  },
+  {
+   "level": 2,
+   "name": "Summon Beast",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon (Land/Sea/Air stat block)",
+   "aka": null,
+   "identifier": "summon-beast"
+  },
+  {
+   "level": 2,
+   "name": "Warding Bond",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "+1 AC/saves, resistance; caster takes the same damage",
+   "aka": null,
+   "identifier": "warding-bond"
+  },
+  {
+   "level": 2,
+   "name": "Web",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "web"
+  },
+  {
+   "level": 2,
+   "name": "Zone of Truth",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "zone-of-truth"
+  },
+  {
+   "level": 3,
+   "name": "Animate Dead",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon skeletons/zombies; command as bonus action",
+   "aka": null,
+   "identifier": "animate-dead"
+  },
+  {
+   "level": 3,
+   "name": "Aura of Vitality",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Bonus action: heal 2d6 to a creature in the aura",
+   "aka": null,
+   "identifier": "aura-of-vitality"
+  },
+  {
+   "level": 3,
+   "name": "Beacon of Hope",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Healing is maximized (needs a midi flag), advantage on WIS and death saves",
+   "aka": null,
+   "identifier": "beacon-of-hope"
+  },
+  {
+   "level": 3,
+   "name": "Bestow Curse",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Pick a curse; the extra 1d8 necrotic option needs a damage rider",
+   "aka": null,
+   "identifier": "bestow-curse"
+  },
+  {
+   "level": 3,
+   "name": "Blinding Smite",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Smite prompt; Blinded with repeat CON save",
+   "aka": null,
+   "identifier": "blinding-smite"
+  },
+  {
+   "level": 3,
+   "name": "Blink",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "d6 at end of each turn to blink to the Ethereal Plane",
+   "aka": null,
+   "identifier": "blink"
+  },
+  {
+   "level": 3,
+   "name": "Call Lightning",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Repeat the bolt as an action each turn",
+   "aka": null,
+   "identifier": "call-lightning"
+  },
+  {
+   "level": 3,
+   "name": "Clairvoyance",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "clairvoyance"
+  },
+  {
+   "level": 3,
+   "name": "Conjure Animals",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "2024: pack of spirits deals damage to creatures near it",
+   "aka": null,
+   "identifier": "conjure-animals"
+  },
+  {
+   "level": 3,
+   "name": "Conjure Barrage",
+   "source": "PHB",
+   "category": "verify",
+   "priority": 2,
+   "note": "Cone DEX save",
+   "aka": null,
+   "identifier": "conjure-barrage"
+  },
+  {
+   "level": 3,
+   "name": "Counterspell",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Reaction; the target caster makes a CON save",
+   "aka": null,
+   "identifier": "counterspell"
+  },
+  {
+   "level": 3,
+   "name": "Create Food and Water",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "create-food-and-water"
+  },
+  {
+   "level": 3,
+   "name": "Crusader's Mantle",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Aura: allies' weapon hits deal +1d4 radiant",
+   "aka": null,
+   "identifier": "crusaders-mantle"
+  },
+  {
+   "level": 3,
+   "name": "Daylight",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "daylight"
+  },
+  {
+   "level": 3,
+   "name": "Dispel Magic",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "End spell effects on a target (check for higher levels)",
+   "aka": null,
+   "identifier": "dispel-magic"
+  },
+  {
+   "level": 3,
+   "name": "Elemental Weapon",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "+1 attack and +1d4 elemental damage on the weapon",
+   "aka": null,
+   "identifier": "elemental-weapon"
+  },
+  {
+   "level": 3,
+   "name": "Fear",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Frightened, drop held item, must Dash away; save only out of sight",
+   "aka": null,
+   "identifier": "fear"
+  },
+  {
+   "level": 3,
+   "name": "Feign Death",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "feign-death"
+  },
+  {
+   "level": 3,
+   "name": "Fireball",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "fireball"
+  },
+  {
+   "level": 3,
+   "name": "Fly",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "fly"
+  },
+  {
+   "level": 3,
+   "name": "Gaseous Form",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "gaseous-form"
+  },
+  {
+   "level": 3,
+   "name": "Glyph of Warding",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "glyph-of-warding"
+  },
+  {
+   "level": 3,
+   "name": "Haste",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "+2 AC, double speed, extra action; check the lethargy when it ends",
+   "aka": null,
+   "identifier": "haste"
+  },
+  {
+   "level": 3,
+   "name": "Hunger of Hadar",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Zone: cold at turn start, acid at turn end, blinded inside",
+   "aka": null,
+   "identifier": "hunger-of-hadar"
+  },
+  {
+   "level": 3,
+   "name": "Hypnotic Pattern",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Charmed + Incapacitated; must end when the creature takes damage",
+   "aka": null,
+   "identifier": "hypnotic-pattern"
+  },
+  {
+   "level": 3,
+   "name": "Leomund's Tiny Hut",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "aka Tiny Hut",
+   "aka": "Tiny Hut",
+   "identifier": "tiny-hut"
+  },
+  {
+   "level": 3,
+   "name": "Lightning Arrow",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Next ranged weapon attack becomes lightning + burst",
+   "aka": null,
+   "identifier": "lightning-arrow"
+  },
+  {
+   "level": 3,
+   "name": "Lightning Bolt",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "lightning-bolt"
+  },
+  {
+   "level": 3,
+   "name": "Magic Circle",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "magic-circle"
+  },
+  {
+   "level": 3,
+   "name": "Major Image",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "major-image"
+  },
+  {
+   "level": 3,
+   "name": "Mass Healing Word",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "mass-healing-word"
+  },
+  {
+   "level": 3,
+   "name": "Meld into Stone",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "meld-into-stone"
+  },
+  {
+   "level": 3,
+   "name": "Nondetection",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "nondetection"
+  },
+  {
+   "level": 3,
+   "name": "Phantom Steed",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "phantom-steed"
+  },
+  {
+   "level": 3,
+   "name": "Plant Growth",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "plant-growth"
+  },
+  {
+   "level": 3,
+   "name": "Protection from Energy",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Resistance to the chosen type",
+   "aka": null,
+   "identifier": "protection-from-energy"
+  },
+  {
+   "level": 3,
+   "name": "Remove Curse",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "remove-curse"
+  },
+  {
+   "level": 3,
+   "name": "Revivify",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "Returns to 1 HP",
+   "aka": null,
+   "identifier": "revivify"
+  },
+  {
+   "level": 3,
+   "name": "Sending",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "sending"
+  },
+  {
+   "level": 3,
+   "name": "Sleet Storm",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Zone: DEX save or Prone; concentration checks",
+   "aka": null,
+   "identifier": "sleet-storm"
+  },
+  {
+   "level": 3,
+   "name": "Slow",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "-2 AC/DEX saves, half speed, one action; repeat WIS save end of each turn",
+   "aka": null,
+   "identifier": "slow"
+  },
+  {
+   "level": 3,
+   "name": "Speak with Dead",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "speak-with-dead"
+  },
+  {
+   "level": 3,
+   "name": "Speak with Plants",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "speak-with-plants"
+  },
+  {
+   "level": 3,
+   "name": "Spirit Guardians",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Aura: WIS save on entering/starting turn; half speed for enemies",
+   "aka": null,
+   "identifier": "spirit-guardians"
+  },
+  {
+   "level": 3,
+   "name": "Stinking Cloud",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Zone: CON save at turn start or lose the action (Poisoned)",
+   "aka": null,
+   "identifier": "stinking-cloud"
+  },
+  {
+   "level": 3,
+   "name": "Summon Fey",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "summon-fey"
+  },
+  {
+   "level": 3,
+   "name": "Summon Undead",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "summon-undead"
+  },
+  {
+   "level": 3,
+   "name": "Tongues",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "tongues"
+  },
+  {
+   "level": 3,
+   "name": "Vampiric Touch",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Heal half the damage dealt; repeat the touch as an action",
+   "aka": null,
+   "identifier": "vampiric-touch"
+  },
+  {
+   "level": 3,
+   "name": "Water Breathing",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "water-breathing"
+  },
+  {
+   "level": 3,
+   "name": "Water Walk",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "water-walk"
+  },
+  {
+   "level": 3,
+   "name": "Wind Wall",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Wall; ranged attacks through it",
+   "aka": null,
+   "identifier": "wind-wall"
+  },
+  {
+   "level": 4,
+   "name": "Arcane Eye",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "arcane-eye"
+  },
+  {
+   "level": 4,
+   "name": "Aura of Life",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Necrotic resistance; creatures at 0 HP regain 1 HP",
+   "aka": null,
+   "identifier": "aura-of-life"
+  },
+  {
+   "level": 4,
+   "name": "Aura of Purity",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Aura: poison resistance, advantage on saves vs conditions",
+   "aka": null,
+   "identifier": "aura-of-purity"
+  },
+  {
+   "level": 4,
+   "name": "Banishment",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Remove the target (hide token) until the spell ends",
+   "aka": null,
+   "identifier": "banishment"
+  },
+  {
+   "level": 4,
+   "name": "Blight",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "blight"
+  },
+  {
+   "level": 4,
+   "name": "Charm Monster",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "charm-monster"
+  },
+  {
+   "level": 4,
+   "name": "Compulsion",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Forced movement each turn",
+   "aka": null,
+   "identifier": "compulsion"
+  },
+  {
+   "level": 4,
+   "name": "Confusion",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "d10 behaviour roll each turn; repeat save",
+   "aka": null,
+   "identifier": "confusion"
+  },
+  {
+   "level": 4,
+   "name": "Conjure Minor Elementals",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "2024: your attacks deal +2d8 elemental near you",
+   "aka": null,
+   "identifier": "conjure-minor-elementals"
+  },
+  {
+   "level": 4,
+   "name": "Conjure Woodland Beings",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "2024: aura damage around you",
+   "aka": null,
+   "identifier": "conjure-woodland-beings"
+  },
+  {
+   "level": 4,
+   "name": "Control Water",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "control-water"
+  },
+  {
+   "level": 4,
+   "name": "Death Ward",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "First drop to 0 HP becomes 1 HP instead",
+   "aka": null,
+   "identifier": "death-ward"
+  },
+  {
+   "level": 4,
+   "name": "Dimension Door",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Teleport (+ a willing creature)",
+   "aka": null,
+   "identifier": "dimension-door"
+  },
+  {
+   "level": 4,
+   "name": "Divination",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "divination"
+  },
+  {
+   "level": 4,
+   "name": "Dominate Beast",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "dominate-beast"
+  },
+  {
+   "level": 4,
+   "name": "Evard's Black Tentacles",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "aka Black Tentacles. Zone: restrained + bludgeoning",
+   "aka": "Black Tentacles",
+   "identifier": "black-tentacles"
+  },
+  {
+   "level": 4,
+   "name": "Fabricate",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "fabricate"
+  },
+  {
+   "level": 4,
+   "name": "Fire Shield",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Melee attackers take 2d8 fire/cold; resistance",
+   "aka": null,
+   "identifier": "fire-shield"
+  },
+  {
+   "level": 4,
+   "name": "Freedom of Movement",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "freedom-of-movement"
+  },
+  {
+   "level": 4,
+   "name": "Giant Insect",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "giant-insect"
+  },
+  {
+   "level": 4,
+   "name": "Grasping Vine",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Pull 30 ft on a failed save; bonus action each turn",
+   "aka": null,
+   "identifier": "grasping-vine"
+  },
+  {
+   "level": 4,
+   "name": "Greater Invisibility",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "greater-invisibility"
+  },
+  {
+   "level": 4,
+   "name": "Guardian of Faith",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Guardian deals 20 radiant on entering/starting turn, up to 60 total",
+   "aka": null,
+   "identifier": "guardian-of-faith"
+  },
+  {
+   "level": 4,
+   "name": "Hallucinatory Terrain",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "hallucinatory-terrain"
+  },
+  {
+   "level": 4,
+   "name": "Ice Storm",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "ice-storm"
+  },
+  {
+   "level": 4,
+   "name": "Leomund's Secret Chest",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "aka Secret Chest",
+   "aka": "Secret Chest",
+   "identifier": "secret-chest"
+  },
+  {
+   "level": 4,
+   "name": "Locate Creature",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "locate-creature"
+  },
+  {
+   "level": 4,
+   "name": "Mordenkainen's Faithful Hound",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "aka Faithful Hound. Bites invisible intruders",
+   "aka": "Faithful Hound",
+   "identifier": "faithful-hound"
+  },
+  {
+   "level": 4,
+   "name": "Mordenkainen's Private Sanctum",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "aka Private Sanctum",
+   "aka": "Private Sanctum",
+   "identifier": "private-sanctum"
+  },
+  {
+   "level": 4,
+   "name": "Otiluke's Resilient Sphere",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "aka Resilient Sphere",
+   "aka": "Resilient Sphere",
+   "identifier": "resilient-sphere"
+  },
+  {
+   "level": 4,
+   "name": "Phantasmal Killer",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Frightened; repeat WIS save end of turn with psychic damage",
+   "aka": null,
+   "identifier": "phantasmal-killer"
+  },
+  {
+   "level": 4,
+   "name": "Polymorph",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Transform into a beast; revert at 0 HP",
+   "aka": null,
+   "identifier": "polymorph"
+  },
+  {
+   "level": 4,
+   "name": "Staggering Smite",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Smite prompt; Stunned until end of your next turn on a failed save",
+   "aka": null,
+   "identifier": "staggering-smite"
+  },
+  {
+   "level": 4,
+   "name": "Stone Shape",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "stone-shape"
+  },
+  {
+   "level": 4,
+   "name": "Stoneskin",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Resistance to B/P/S",
+   "aka": null,
+   "identifier": "stoneskin"
+  },
+  {
+   "level": 4,
+   "name": "Summon Aberration",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "summon-aberration"
+  },
+  {
+   "level": 4,
+   "name": "Summon Construct",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "summon-construct"
+  },
+  {
+   "level": 4,
+   "name": "Summon Elemental",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "summon-elemental"
+  },
+  {
+   "level": 4,
+   "name": "Vitriolic Sphere",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Plus acid at the end of the target's next turn",
+   "aka": null,
+   "identifier": "vitriolic-sphere"
+  },
+  {
+   "level": 4,
+   "name": "Wall of Fire",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Wall: damage on entering/ending turn near the hot side",
+   "aka": null,
+   "identifier": "wall-of-fire"
+  },
+  {
+   "level": 5,
+   "name": "Animate Objects",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon animated objects",
+   "aka": null,
+   "identifier": "animate-objects"
+  },
+  {
+   "level": 5,
+   "name": "Antilife Shell",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "antilife-shell"
+  },
+  {
+   "level": 5,
+   "name": "Awaken",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "awaken"
+  },
+  {
+   "level": 5,
+   "name": "Banishing Smite",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Smite prompt; banish at 50 HP or less",
+   "aka": null,
+   "identifier": "banishing-smite"
+  },
+  {
+   "level": 5,
+   "name": "Bigby's Hand",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "aka Arcane Hand. Per-caster summon built before (see Bigby's Hand notes)",
+   "aka": "Arcane Hand",
+   "identifier": "arcane-hand"
+  },
+  {
+   "level": 5,
+   "name": "Circle of Power",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Aura: advantage on saves vs spells, no damage on success",
+   "aka": null,
+   "identifier": "circle-of-power"
+  },
+  {
+   "level": 5,
+   "name": "Cloudkill",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Moving zone: CON save poison at turn start",
+   "aka": null,
+   "identifier": "cloudkill"
+  },
+  {
+   "level": 5,
+   "name": "Commune",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "commune"
+  },
+  {
+   "level": 5,
+   "name": "Commune with Nature",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "commune-with-nature"
+  },
+  {
+   "level": 5,
+   "name": "Cone of Cold",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "cone-of-cold"
+  },
+  {
+   "level": 5,
+   "name": "Conjure Elemental",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "2024: elemental spirit, restrains/damages nearby",
+   "aka": null,
+   "identifier": "conjure-elemental"
+  },
+  {
+   "level": 5,
+   "name": "Conjure Volley",
+   "source": "PHB",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "conjure-volley"
+  },
+  {
+   "level": 5,
+   "name": "Contact Other Plane",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "contact-other-plane"
+  },
+  {
+   "level": 5,
+   "name": "Contagion",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "Poisoned; repeat saves",
+   "aka": null,
+   "identifier": "contagion"
+  },
+  {
+   "level": 5,
+   "name": "Creation",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "creation"
+  },
+  {
+   "level": 5,
+   "name": "Destructive Wave",
+   "source": "PHB",
+   "category": "verify",
+   "priority": 2,
+   "note": "CON save, creatures of your choice; knocked Prone",
+   "aka": null,
+   "identifier": "destructive-wave"
+  },
+  {
+   "level": 5,
+   "name": "Dispel Evil and Good",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "dispel-evil-and-good"
+  },
+  {
+   "level": 5,
+   "name": "Dominate Person",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "dominate-person"
+  },
+  {
+   "level": 5,
+   "name": "Dream",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "dream"
+  },
+  {
+   "level": 5,
+   "name": "Flame Strike",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "",
+   "aka": null,
+   "identifier": "flame-strike"
+  },
+  {
+   "level": 5,
+   "name": "Geas",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "geas"
+  },
+  {
+   "level": 5,
+   "name": "Greater Restoration",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "greater-restoration"
+  },
+  {
+   "level": 5,
+   "name": "Hallow",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "hallow"
+  },
+  {
+   "level": 5,
+   "name": "Hold Monster",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Paralyzed; repeat WIS save end of each turn",
+   "aka": null,
+   "identifier": "hold-monster"
+  },
+  {
+   "level": 5,
+   "name": "Insect Plague",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Zone: CON save piercing on entering/starting turn",
+   "aka": null,
+   "identifier": "insect-plague"
+  },
+  {
+   "level": 5,
+   "name": "Jallarzi's Storm of Radiance",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Zone: radiant + thunder, deafened, blinded",
+   "aka": null,
+   "identifier": "jallarzis-storm-of-radiance"
+  },
+  {
+   "level": 5,
+   "name": "Legend Lore",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "legend-lore"
+  },
+  {
+   "level": 5,
+   "name": "Mass Cure Wounds",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "mass-cure-wounds"
+  },
+  {
+   "level": 5,
+   "name": "Mislead",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "mislead"
+  },
+  {
+   "level": 5,
+   "name": "Modify Memory",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "modify-memory"
+  },
+  {
+   "level": 5,
+   "name": "Passwall",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "passwall"
+  },
+  {
+   "level": 5,
+   "name": "Planar Binding",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "planar-binding"
+  },
+  {
+   "level": 5,
+   "name": "Raise Dead",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "raise-dead"
+  },
+  {
+   "level": 5,
+   "name": "Rary's Telepathic Bond",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "aka Telepathic Bond",
+   "aka": "Telepathic Bond",
+   "identifier": "telepathic-bond"
+  },
+  {
+   "level": 5,
+   "name": "Reincarnate",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "reincarnate"
+  },
+  {
+   "level": 5,
+   "name": "Scrying",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "scrying"
+  },
+  {
+   "level": 5,
+   "name": "Seeming",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "seeming"
+  },
+  {
+   "level": 5,
+   "name": "Steel Wind Strike",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Melee spell attack against up to 5 targets, then teleport",
+   "aka": null,
+   "identifier": "steel-wind-strike"
+  },
+  {
+   "level": 5,
+   "name": "Summon Celestial",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "summon-celestial"
+  },
+  {
+   "level": 5,
+   "name": "Summon Dragon",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "summon-dragon"
+  },
+  {
+   "level": 5,
+   "name": "Swift Quiver",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Two bonus-action weapon attacks each turn",
+   "aka": null,
+   "identifier": "swift-quiver"
+  },
+  {
+   "level": 5,
+   "name": "Synaptic Static",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "INT save psychic; failed save: -1d6 on attacks and checks, repeat save",
+   "aka": null,
+   "identifier": "synaptic-static"
+  },
+  {
+   "level": 5,
+   "name": "Telekinesis",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "telekinesis"
+  },
+  {
+   "level": 5,
+   "name": "Teleportation Circle",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "teleportation-circle"
+  },
+  {
+   "level": 5,
+   "name": "Tree Stride",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "tree-stride"
+  },
+  {
+   "level": 5,
+   "name": "Wall of Force",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "wall-of-force"
+  },
+  {
+   "level": 5,
+   "name": "Wall of Stone",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "wall-of-stone"
+  },
+  {
+   "level": 5,
+   "name": "Yolande's Regal Presence",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Zone: WIS save psychic, prone or pushed",
+   "aka": null,
+   "identifier": "yolandes-regal-presence"
+  },
+  {
+   "level": 6,
+   "name": "Arcane Gate",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "arcane-gate"
+  },
+  {
+   "level": 6,
+   "name": "Blade Barrier",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "Wall: DEX save slashing on entering/starting turn",
+   "aka": null,
+   "identifier": "blade-barrier"
+  },
+  {
+   "level": 6,
+   "name": "Chain Lightning",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Primary target + three leaps",
+   "aka": null,
+   "identifier": "chain-lightning"
+  },
+  {
+   "level": 6,
+   "name": "Circle of Death",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "circle-of-death"
+  },
+  {
+   "level": 6,
+   "name": "Conjure Fey",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "2024: fey spirit attacks",
+   "aka": null,
+   "identifier": "conjure-fey"
+  },
+  {
+   "level": 6,
+   "name": "Contingency",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "contingency"
+  },
+  {
+   "level": 6,
+   "name": "Create Undead",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "create-undead"
+  },
+  {
+   "level": 6,
+   "name": "Disintegrate",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Dust at 0 HP",
+   "aka": null,
+   "identifier": "disintegrate"
+  },
+  {
+   "level": 6,
+   "name": "Drawmij's Instant Summons",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "aka Instant Summons",
+   "aka": "Instant Summons",
+   "identifier": "instant-summons"
+  },
+  {
+   "level": 6,
+   "name": "Eyebite",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "eyebite"
+  },
+  {
+   "level": 6,
+   "name": "Find the Path",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "find-the-path"
+  },
+  {
+   "level": 6,
+   "name": "Flesh to Stone",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "flesh-to-stone"
+  },
+  {
+   "level": 6,
+   "name": "Forbiddance",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "forbiddance"
+  },
+  {
+   "level": 6,
+   "name": "Globe of Invulnerability",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Blocks spells of 5th level and lower",
+   "aka": null,
+   "identifier": "globe-of-invulnerability"
+  },
+  {
+   "level": 6,
+   "name": "Guards and Wards",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "guards-and-wards"
+  },
+  {
+   "level": 6,
+   "name": "Harm",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "harm"
+  },
+  {
+   "level": 6,
+   "name": "Heal",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "heal"
+  },
+  {
+   "level": 6,
+   "name": "Heroes' Feast",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "heroes-feast"
+  },
+  {
+   "level": 6,
+   "name": "Magic Jar",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "magic-jar"
+  },
+  {
+   "level": 6,
+   "name": "Mass Suggestion",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "mass-suggestion"
+  },
+  {
+   "level": 6,
+   "name": "Move Earth",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "move-earth"
+  },
+  {
+   "level": 6,
+   "name": "Otiluke's Freezing Sphere",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "aka Freezing Sphere",
+   "aka": "Freezing Sphere",
+   "identifier": "freezing-sphere"
+  },
+  {
+   "level": 6,
+   "name": "Otto's Irresistible Dance",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "aka Irresistible Dance",
+   "aka": "Irresistible Dance",
+   "identifier": "ottos-irresistible-dance"
+  },
+  {
+   "level": 6,
+   "name": "Planar Ally",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "planar-ally"
+  },
+  {
+   "level": 6,
+   "name": "Primordial Ward",
+   "source": "PHB",
+   "category": "build",
+   "priority": 3,
+   "note": "Resistances; reaction to turn one into immunity",
+   "aka": null,
+   "identifier": "primordial-ward"
+  },
+  {
+   "level": 6,
+   "name": "Programmed Illusion",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "programmed-illusion"
+  },
+  {
+   "level": 6,
+   "name": "Summon Fiend",
+   "source": "PHB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon",
+   "aka": null,
+   "identifier": "summon-fiend"
+  },
+  {
+   "level": 6,
+   "name": "Sunbeam",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 2,
+   "note": "",
+   "aka": null,
+   "identifier": "sunbeam"
+  },
+  {
+   "level": 6,
+   "name": "Tasha's Bubbling Cauldron",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "tashas-bubbling-cauldron"
+  },
+  {
+   "level": 6,
+   "name": "Transport via Plants",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "transport-via-plants"
+  },
+  {
+   "level": 6,
+   "name": "True Seeing",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "true-seeing"
+  },
+  {
+   "level": 6,
+   "name": "Wall of Ice",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Wall: damage + cold zone",
+   "aka": null,
+   "identifier": "wall-of-ice"
+  },
+  {
+   "level": 6,
+   "name": "Wall of Thorns",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Wall: damage on entering",
+   "aka": null,
+   "identifier": "wall-of-thorns"
+  },
+  {
+   "level": 6,
+   "name": "Wind Walk",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "wind-walk"
+  },
+  {
+   "level": 6,
+   "name": "Word of Recall",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "word-of-recall"
+  },
+  {
+   "level": 7,
+   "name": "Conjure Celestial",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "2024: light aura heals or damages",
+   "aka": null,
+   "identifier": "conjure-celestial"
+  },
+  {
+   "level": 7,
+   "name": "Delayed Blast Fireball",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "delayed-blast-fireball"
+  },
+  {
+   "level": 7,
+   "name": "Divine Word",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "divine-word"
+  },
+  {
+   "level": 7,
+   "name": "Etherealness",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "etherealness"
+  },
+  {
+   "level": 7,
+   "name": "Finger of Death",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "finger-of-death"
+  },
+  {
+   "level": 7,
+   "name": "Fire Storm",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "fire-storm"
+  },
+  {
+   "level": 7,
+   "name": "Forcecage",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "forcecage"
+  },
+  {
+   "level": 7,
+   "name": "Mirage Arcane",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "mirage-arcane"
+  },
+  {
+   "level": 7,
+   "name": "Mordenkainen's Magnificent Mansion",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "aka Magnificent Mansion",
+   "aka": "Magnificent Mansion",
+   "identifier": "magnificent-mansion"
+  },
+  {
+   "level": 7,
+   "name": "Mordenkainen's Sword",
+   "source": "SRD",
+   "category": "build",
+   "priority": 2,
+   "note": "aka Arcane Sword. Summoned sword, bonus-action attacks",
+   "aka": "Arcane Sword",
+   "identifier": "arcane-sword"
+  },
+  {
+   "level": 7,
+   "name": "Plane Shift",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "plane-shift"
+  },
+  {
+   "level": 7,
+   "name": "Power Word Fortify",
+   "source": "PHB",
+   "category": "verify",
+   "priority": 3,
+   "note": "Split 120 temp HP between creatures",
+   "aka": null,
+   "identifier": "power-word-fortify"
+  },
+  {
+   "level": 7,
+   "name": "Prismatic Spray",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "prismatic-spray"
+  },
+  {
+   "level": 7,
+   "name": "Project Image",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "project-image"
+  },
+  {
+   "level": 7,
+   "name": "Regenerate",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "regenerate"
+  },
+  {
+   "level": 7,
+   "name": "Resurrection",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "resurrection"
+  },
+  {
+   "level": 7,
+   "name": "Reverse Gravity",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "reverse-gravity"
+  },
+  {
+   "level": 7,
+   "name": "Sequester",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "sequester"
+  },
+  {
+   "level": 7,
+   "name": "Simulacrum",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "simulacrum"
+  },
+  {
+   "level": 7,
+   "name": "Symbol",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Triggered glyph with several effects",
+   "aka": null,
+   "identifier": "symbol"
+  },
+  {
+   "level": 7,
+   "name": "Teleport",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "teleport"
+  },
+  {
+   "level": 8,
+   "name": "Animal Shapes",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "animal-shapes"
+  },
+  {
+   "level": 8,
+   "name": "Antimagic Field",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "antimagic-field"
+  },
+  {
+   "level": 8,
+   "name": "Antipathy/Sympathy",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "antipathy-sympathy"
+  },
+  {
+   "level": 8,
+   "name": "Befuddlement",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "befuddlement"
+  },
+  {
+   "level": 8,
+   "name": "Clone",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "clone"
+  },
+  {
+   "level": 8,
+   "name": "Control Weather",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "control-weather"
+  },
+  {
+   "level": 8,
+   "name": "Demiplane",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "demiplane"
+  },
+  {
+   "level": 8,
+   "name": "Dominate Monster",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "dominate-monster"
+  },
+  {
+   "level": 8,
+   "name": "Earthquake",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Zone: prone, concentration saves, fissures",
+   "aka": null,
+   "identifier": "earthquake"
+  },
+  {
+   "level": 8,
+   "name": "Glibness",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "glibness"
+  },
+  {
+   "level": 8,
+   "name": "Holy Aura",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "Advantage on saves, attackers have disadvantage; fiend/undead blinded",
+   "aka": null,
+   "identifier": "holy-aura"
+  },
+  {
+   "level": 8,
+   "name": "Incendiary Cloud",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Moving zone: DEX save fire",
+   "aka": null,
+   "identifier": "incendiary-cloud"
+  },
+  {
+   "level": 8,
+   "name": "Maze",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "maze"
+  },
+  {
+   "level": 8,
+   "name": "Mind Blank",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "mind-blank"
+  },
+  {
+   "level": 8,
+   "name": "Power Word Stun",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "power-word-stun"
+  },
+  {
+   "level": 8,
+   "name": "Sunburst",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "Blinded with repeat saves",
+   "aka": null,
+   "identifier": "sunburst"
+  },
+  {
+   "level": 8,
+   "name": "Tsunami",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Moving wall",
+   "aka": null,
+   "identifier": "tsunami"
+  },
+  {
+   "level": 9,
+   "name": "Astral Projection",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "astral-projection"
+  },
+  {
+   "level": 9,
+   "name": "Foresight",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "foresight"
+  },
+  {
+   "level": 9,
+   "name": "Gate",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "gate"
+  },
+  {
+   "level": 9,
+   "name": "Imprisonment",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "imprisonment"
+  },
+  {
+   "level": 9,
+   "name": "Mass Heal",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "mass-heal"
+  },
+  {
+   "level": 9,
+   "name": "Meteor Swarm",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "meteor-swarm"
+  },
+  {
+   "level": 9,
+   "name": "Power Word Heal",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "power-word-heal"
+  },
+  {
+   "level": 9,
+   "name": "Power Word Kill",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Dies at 100 HP or less, otherwise 12d12 psychic",
+   "aka": null,
+   "identifier": "power-word-kill"
+  },
+  {
+   "level": 9,
+   "name": "Prismatic Wall",
+   "source": "SRD",
+   "category": "build",
+   "priority": 3,
+   "note": "Layered wall effects",
+   "aka": null,
+   "identifier": "prismatic-wall"
+  },
+  {
+   "level": 9,
+   "name": "Shapechange",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "shapechange"
+  },
+  {
+   "level": 9,
+   "name": "Storm of Vengeance",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "storm-of-vengeance"
+  },
+  {
+   "level": 9,
+   "name": "Time Stop",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "time-stop"
+  },
+  {
+   "level": 9,
+   "name": "True Polymorph",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "true-polymorph"
+  },
+  {
+   "level": 9,
+   "name": "True Resurrection",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "true-resurrection"
+  },
+  {
+   "level": 9,
+   "name": "Weird",
+   "source": "SRD",
+   "category": "midi",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "weird"
+  },
+  {
+   "level": 9,
+   "name": "Wish",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "wish"
+  }
+ ]
+}
