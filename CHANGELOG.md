@@ -3,6 +3,45 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.21.0
+
+The priority-3 class features: every class and subclass feature on the tracker that needed building is now done.
+DMs: update, then run **Mass Apply / Update** on each character. New module code: `scripts/class-rules-p3.js`.
+
+- Barbarian: **Indomitable Might** (STR totals never below your score, module rule), **Improved Brutal Strike** (two
+  effects at 17), Wild Heart **Aspect of the Wilds** and **Power of the Wilds** (Falcon/Lion/Ram when you rage), World
+  Tree **Travel along the Tree**, Zealot **Rage of the Gods** (with the Revivification Reaction).
+- Bard: **Superior Inspiration**, Dance **Tandem Footwork** and **Leading Evasion**, Glamour **Mantle of Majesty** and
+  **Unbreakable Majesty**, Lore **Peerless Skill**.
+- Cleric: **Improved Blessed Strikes** (cantrip temp HP), Life **Supreme Healing**, Light **Corona of Light**,
+  Trickery **Trickster's Transposition** and **Improved Duplicity**, War **War God's Blessing** and **Avatar of Battle**.
+- Druid: Moon **Lunar Form**; **Improved Elemental Fury** and Sea **Oceanic Gift** as reminders.
+- Fighter: **Studied Attacks**; Battle Master **Relentless** (a free d8 maneuver when out of dice), **Bait and Switch**,
+  **Commanding Presence**, **Tactical Assessment**; Champion **Survivor**; Psi Warrior **Guarded Mind**, **Bulwark of
+  Force**, **Telekinetic Master**.
+- Monk: **Disciplined Survivor**, **Perfect Focus**, Mercy **Flurry of Healing and Harm** uses, Shadow **Cloak of
+  Shadows**, Elements **Stride of the Elements** and **Elemental Epitome**.
+- Paladin: **Restoring Touch**, Devotion **Smite of Protection**, Glory **Glorious Defense** and **Living Legend**,
+  Ancients **Undying Sentinel** and **Elder Champion**, Vengeance **Soul of Vengeance** and **Avenging Angel**.
+- Ranger: **Relentless Hunter**, **Precise Hunter**, **Foe Slayer** (Hunter's Mark d10), Fey Wanderer **Beguiling
+  Twist** and **Misty Wanderer**, Gloom Stalker **Stalker's Flurry** and **Shadowy Dodge**, Hunter **Superior Hunter's
+  Prey**; Beast Master **Bestial Fury** as a reminder.
+- Rogue: **Improved Cunning Strike** (a second effect), **Elusive**, **Stroke of Luck**, Arcane Trickster **Magical
+  Ambush**, Assassin **Envenom Weapons** and **Death Strike**, Soulknife **Psychic Veil** and **Rend Mind**.
+- Sorcerer: Aberrant **Revelation in Flesh** and **Warping Implosion**, Clockwork **Trance of Order** and **Clockwork
+  Cavalcade**, Wild Magic **Bend Luck**, **Controlled Chaos** (two surge rolls) and **Tamed Surge**.
+- Warlock: Archfey **Beguiling Defenses**, Celestial **Celestial Resilience** and **Searing Vengeance**, Great Old One
+  **Clairvoyant Combatant** and **Thought Shield**; **Gift of the Protectors** as a reminder.
+- Wizard: Abjurer **Spell Resistance**, Diviner **The Third Eye**, Evoker **Overchannel**.
+- Already covered by earlier automation (items added for the tracker): Deflect Energy, Aura Expansion, Ultimate Combat
+  Superiority, Greater Portent, Devious Strikes.
+- Updated: Rage 1.2.0, Combat Superiority 1.2.0, Dread Ambusher, Sneak Attack, Brutal Strike, Wild Magic Surge
+  (1.1.0), Hunter's Mark and Hex (1.1.0).
+- Fix: items whose icon pointed at a file that doesn't exist in Foundry now use real icons (Assassinate, Circle Forms,
+  Dreadful Strikes, Eldritch Strike, Expert Divination, Illusory Self, Invoke Duplicity, Psychic Blades, Rage of the
+  Wilds, Shadow Step, Soul Blades, Telekinetic Adept, Cloud of Daggers, Conjure Volley, Cordon of Arrows, Hail of
+  Thorns, Lightning Arrow, Thorn Whip, Beast of the Sea).
+
 ## 0.20.0
 
 All 81 priority-2 class features from the 2024 Player's Handbook. DMs: update, then run **Mass Apply / Update** on
