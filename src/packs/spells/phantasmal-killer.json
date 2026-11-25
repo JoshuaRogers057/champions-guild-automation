@@ -275,7 +275,7 @@
             "conditions": "{}"
           },
           {
-            "key": "flags.midi-qol.disadvantage.ability.check.all",
+            "key": "flags.midi-qol.disadvantage.check.all",
             "value": "1",
             "priority": 20,
             "type": "custom",
@@ -314,7 +314,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.1",
+        "version": "1.0.2",
         "notes": "Champions Guild Automation: 4d10 psychic (half on a save, which ends it); on a failure Disadvantage on checks and attacks, and a WIS save at the end of each turn deals the damage again on a failure."
       }
     }

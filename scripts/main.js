@@ -580,6 +580,8 @@ Hooks.once("socketlib.ready", () => {
   cgaSocket = socketlib.registerModule(MODULE_ID);
   cgaSocket.register("swapInitiative", swapInitiativeAsGM);
   cgaSocket.register("askYesNo", askYesNoHere);
+  cgaSocket.register("askChoice", askChoiceHere);
+  cgaSocket.register("createTokens", (sceneId, data) => game.scenes.get(sceneId)?.createEmbeddedDocuments("Token", data).then((docs) => docs.map((d) => d.id)));
 });
 async function askYesNoHere(title, html, seconds = 30) {
   return new Promise((resolve) => {
@@ -596,6 +598,23 @@ export async function askOwner(actor, title, html) {
   if (!user) return false;
   if (user.isSelf) return askYesNoHere(title, html);
   try { return !!(await cgaSocket?.executeAsUser("askYesNo", user.id, title, html)); } catch (err) { return false; }
+}
+// A choice for the owner of `actor`: buttons = [{ action, label, default? }]. Resolves the picked action, or null.
+async function askChoiceHere(title, html, buttons, seconds = 30) {
+  return new Promise((resolve) => {
+    let done = false;
+    const finish = (v) => { if (!done) { done = true; resolve(v ?? null); } };
+    foundry.applications.api.DialogV2.wait({ window: { title }, content: `${html}<p><em>(${seconds} seconds to decide)</em></p>`,
+      buttons: buttons.map((b) => ({ ...b, callback: (event, button) => (b.form ? new foundry.applications.ux.FormDataExtended(button.form).object : b.action) })), rejectClose: false })
+      .then(finish, () => finish(null));
+    setTimeout(() => { finish(null); for (const app of foundry.applications.instances.values()) if (app.options?.window?.title === title) app.close(); }, seconds * 1000);
+  });
+}
+export async function askChoice(actor, title, html, buttons, seconds = 30) {
+  const user = responsibleUser(actor);
+  if (!user) return null;
+  if (user.isSelf) return askChoiceHere(title, html, buttons, seconds);
+  try { return (await cgaSocket?.executeAsUser("askChoice", user.id, title, html, buttons, seconds)) ?? null; } catch (err) { return null; }
 }
 
 // Fighting styles that react to attacks on someone else (the attacker's client runs these):
@@ -707,7 +726,7 @@ Hooks.on("updateCombatant", (combatant, changes, options) => {
 });
 Hooks.on("deleteCombat", (combat) => { for (const k of [...alertAsked]) if (k.startsWith(`${combat.id}.`)) alertAsked.delete(k); });
 Hooks.once("init", () => {
-  game.modules.get(MODULE_ID).api = { alertSwap, alertSwapFor: (actor) => alertSwap(game.combat?.combatants.find((c) => c.actor === actor || c.actorId === actor?.id)) };
+  game.modules.get(MODULE_ID).api = { alertSwap, alertSwapFor: (actor) => alertSwap(game.combat?.combatants.find((c) => c.actor === actor || c.actorId === actor?.id)), askChoice, createTokens };
 });
 
 // Medium Armor Master: in Medium armor with DEX 16+, AC gets +1 (DEX adds 3 instead of 2). The feat's AC effect is
@@ -812,3 +831,8 @@ Hooks.once("ready", async () => {
   });
   await game.settings.set(MODULE_ID, "lastSeenVersion", mod.version);
 });
+// Create tokens on a scene through the GM (players usually can't create tokens), for features like Invoke Duplicity.
+export async function createTokens(scene, data) {
+  if (game.user.isGM) return (await scene.createEmbeddedDocuments("Token", data)).map((d) => d.id);
+  return cgaSocket?.executeAsGM("createTokens", scene.id, data);
+}

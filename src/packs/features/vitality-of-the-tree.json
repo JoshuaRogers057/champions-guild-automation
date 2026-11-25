@@ -1,0 +1,51 @@
+{
+  "name": "Vitality of the Tree",
+  "type": "feat",
+  "img": "icons/magic/nature/tree-spirit-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "vitality-of-the-tree",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Path of the World Tree 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfvitality508",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Temp HP on Rage; turn-start prompt to give Rage-Damage d6s of temp HP to a creature within 10 ft (module rule)."
+      }
+    }
+  }
+}

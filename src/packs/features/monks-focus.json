@@ -399,7 +399,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "notes": "Champions Guild Automation: Flurry of Blows makes the Unarmed Strikes automatically; Focus = Monk level."
       }
     }

@@ -139,9 +139,9 @@
    "level": 9,
    "name": "Brutal Strike",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Forgo Reckless Advantage on one attack: +1d10 and Forceful Blow (push 15 ft) or Hamstring Blow (-15 ft Speed)",
+   "note": "Prompt before a reckless STR attack; extra 1d10/2d10 and the chosen Brutal Strike effect.",
    "identifier": "brutal-strike"
   },
   {
@@ -150,9 +150,9 @@
    "level": 11,
    "name": "Relentless Rage",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "At 0 HP while raging: CON save DC 10 (+5 each use, resets on rest) to stay at 2x Barbarian level HP",
+   "note": "Automatic CON save at 0 HP while raging (DC 10 +5 per use, reset on rests) - module rule.",
    "identifier": "relentless-rage"
   },
   {
@@ -238,9 +238,9 @@
    "level": 6,
    "name": "Mindless Rage",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Charmed/Frightened immunity only while raging (compendium grants it always)",
+   "note": "Charmed/Frightened immunity on the Rage effect while raging.",
    "identifier": "mindless-rage"
   },
   {
@@ -249,9 +249,9 @@
    "level": 10,
    "name": "Retaliation",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Reaction melee attack when damaged by a creature within 5 ft (prompt)",
+   "note": "Reaction prompt when damaged in melee; attacks with your melee weapon.",
    "identifier": "retaliation"
   },
   {
@@ -282,9 +282,9 @@
    "level": 3,
    "name": "Rage of the Wilds",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "On Rage pick Bear (resist all but Force/Necrotic/Psychic/Radiant), Eagle (Dash+Disengage), Wolf (allies Advantage vs enemies near you)",
+   "note": "Choice when Rage starts: Bear resistances on the Rage effect, Eagle reminder, Wolf aura (module rule).",
    "identifier": "rage-of-the-wilds"
   },
   {
@@ -326,9 +326,9 @@
    "level": 3,
    "name": "Vitality of the Tree",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Temp HP = Barbarian level on Rage; turn start give Rage-bonus d6 temp HP to a creature within 10 ft",
+   "note": "Temp HP on Rage; turn-start prompt to give Rage-Damage d6s of temp HP to a creature within 10 ft (module rule).",
    "identifier": "vitality-of-the-tree"
   },
   {
@@ -337,9 +337,9 @@
    "level": 6,
    "name": "Branches of the Tree",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Reaction: creature starting turn within 30 ft makes STR save or is teleported next to you (Speed 0)",
+   "note": "Turn-start Reaction prompt; STR save, teleport next to you, Speed 0 (module rule).",
    "identifier": "branches-of-the-tree"
   },
   {
@@ -381,9 +381,9 @@
    "level": 3,
    "name": "Warrior of the Gods",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Pool of d12s (4-7), Bonus Action spend to heal",
+   "note": "d12 pool as item uses; Bonus Action heal that scales with the dice spent.",
    "identifier": "warrior-of-the-gods"
   },
   {
@@ -392,9 +392,9 @@
    "level": 6,
    "name": "Fanatical Focus",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Once per Rage reroll a failed save with +Rage bonus (prompt)",
+   "note": "Once-per-Rage optional reroll of a failed save with the Rage Damage bonus.",
    "identifier": "fanatical-focus"
   },
   {
@@ -403,9 +403,9 @@
    "level": 10,
    "name": "Zealous Presence",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Up to ten creatures within 60 ft: Advantage on attacks and saves until your next turn; recharge via Rage",
+   "note": "Bonus Action Advantage effect for up to ten allies; Recharge spends a Rage use.",
    "identifier": "zealous-presence"
   },
   {
@@ -502,9 +502,9 @@
    "level": 7,
    "name": "Countercharm",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Reaction reroll with Advantage when you or a creature within 30 ft fails a save vs Charmed/Frightened",
+   "note": "Reaction prompt after a failed save vs Charmed/Frightened; reroll with Advantage (module rule).",
    "identifier": "countercharm"
   },
   {
@@ -557,9 +557,9 @@
    "level": 3,
    "name": "Dazzling Footwork",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Unarmored AC 10+DEX+CHA, Unarmed Strike uses DEX and Bardic die damage, free Unarmed Strike when spending Inspiration",
+   "note": "Bard Unarmored Defense AC option; Unarmed Strike gets Dexterity (module) and the Bardic die for damage.",
    "identifier": "dazzling-footwork"
   },
   {
@@ -601,9 +601,9 @@
    "level": 3,
    "name": "Beguiling Magic",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "After an Enchantment/Illusion slot spell, WIS save or Charmed/Frightened 1 min (repeat save)",
+   "note": "Prompt after Enchantment/Illusion slot spells; WIS save or Charmed/Frightened with repeat saves.",
    "identifier": "beguiling-magic"
   },
   {
@@ -612,9 +612,9 @@
    "level": 3,
    "name": "Mantle of Inspiration",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Spend Inspiration: up to CHA-mod creatures gain 2x die temp HP",
+   "note": "Bonus Action spending Bardic Inspiration: 2x die temp HP to targeted creatures.",
    "identifier": "mantle-of-inspiration"
   },
   {
@@ -689,9 +689,9 @@
    "level": 3,
    "name": "Combat Inspiration",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Inspired creature can add the die to AC when hit or to damage after hitting",
+   "note": "Adds damage and AC-on-hit optional bonuses to your Bardic Inspiration.",
    "identifier": "combat-inspiration"
   },
   {
@@ -788,9 +788,9 @@
    "level": 5,
    "name": "Sear Undead",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Turn Undead also deals WIS-mod d8 Radiant to Undead that fail",
+   "note": "Turn Undead failures take WIS-mod d8 Radiant.",
    "identifier": "sear-undead"
   },
   {
@@ -920,9 +920,9 @@
    "level": 3,
    "name": "Radiance of the Dawn",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "30-ft CON save 2d10 + Cleric level Radiant, dispels magical Darkness",
+   "note": "Channel Divinity 30-ft emanation CON save, 2d10 + Cleric level Radiant (half).",
    "identifier": "radiance-of-the-dawn"
   },
   {
@@ -942,9 +942,9 @@
    "level": 6,
    "name": "Improved Warding Flare",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "SR recharge; target gains 2d6 + WIS temp HP",
+   "note": "Warding Flare recharges on Short Rests (module rule); temp HP prompt after using it.",
    "identifier": "improved-warding-flare"
   },
   {
@@ -964,9 +964,9 @@
    "level": 3,
    "name": "Blessing of the Trickster",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Advantage on Stealth for a willing creature until LR",
+   "note": "Activity effect: Advantage on Stealth until a Long Rest.",
    "identifier": "blessing-of-the-trickster"
   },
   {
@@ -986,9 +986,9 @@
    "level": 3,
    "name": "Invoke Duplicity",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Illusory duplicate token; Advantage when you and it are within 5 ft of a target",
+   "note": "Creates a duplicate token (removed with the effect); Advantage when you and it flank a target.",
    "identifier": "invoke-duplicity"
   },
   {
@@ -1019,9 +1019,9 @@
    "level": 3,
    "name": "Guided Strike",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Channel Divinity: +10 to a missed attack (yours or a nearby creature's)",
+   "note": "Prompt on a near miss by you or an ally within 30 ft: Channel Divinity for +10 (module rule).",
    "identifier": "guided-strike"
   },
   {
@@ -1217,9 +1217,9 @@
    "level": 3,
    "name": "Circle of the Land Spells",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Choose land type on LR to prepare its spells",
+   "note": "Choose Land activity adds the land's spells (always prepared) and removes the old ones.",
    "identifier": "circle-of-the-land-spells"
   },
   {
@@ -1294,9 +1294,9 @@
    "level": 6,
    "name": "Improved Circle Forms",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Radiant option on beast attacks, add WIS to CON saves",
+   "note": "Beast form gets +WIS to CON saves and a once-per-form Radiant option (module rule + macro).",
    "identifier": "improved-circle-forms"
   },
   {
@@ -1305,9 +1305,9 @@
    "level": 10,
    "name": "Moonlight Step",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Bonus Action 30-ft teleport + Advantage on next attack",
+   "note": "Bonus Action Advantage-on-next-attack effect; WIS-mod uses.",
    "identifier": "moonlight-step"
   },
   {
@@ -1349,9 +1349,9 @@
    "level": 6,
    "name": "Aquatic Affinity",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Emanation 10 ft, swim speed",
+   "note": "Handled by Wrath of the Sea (10-ft emanation, swim speed).",
    "identifier": "aquatic-affinity"
   },
   {
@@ -1382,9 +1382,9 @@
    "level": 3,
    "name": "Star Map",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Guidance/Guiding Bolt prepared, free Guiding Bolts (WIS-mod per LR)",
+   "note": "Cast activities: Guidance, and Guiding Bolt with WIS-mod free uses.",
    "identifier": "star-map"
   },
   {
@@ -1404,9 +1404,9 @@
    "level": 6,
    "name": "Cosmic Omen",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Reaction +/-1d6 to a D20 Test (Weal/Woe by LR roll)",
+   "note": "Long Rest Weal/Woe roll (module rule); activity gives +1d6 optional bonus or -1d6 on the next D20 Test.",
    "identifier": "cosmic-omen"
   },
   {
@@ -1481,9 +1481,9 @@
    "level": 2,
    "name": "Tactical Mind",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Spend Second Wind to add 1d10 to a failed check (prompt); not spent if still failed",
+   "note": "Optional +1d10 on a failed check, spending a Second Wind use.",
    "identifier": "tactical-mind"
   },
   {
@@ -1536,9 +1536,9 @@
    "level": 9,
    "name": "Indomitable",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Reroll a failed save + Fighter level (prompt), 1-3 uses",
+   "note": "Optional reroll of a failed save + Fighter level, using Indomitable uses.",
    "identifier": "indomitable"
   },
   {
@@ -1635,9 +1635,9 @@
    "level": 10,
    "name": "Improved Combat Superiority",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "d10 dice (scale)",
+   "note": "Die size is worked out from your Fighter level by the maneuver automation.",
    "identifier": "improved-combat-superiority"
   },
   {
@@ -1668,9 +1668,9 @@
    "level": null,
    "name": "Ambush",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+die to Stealth or Initiative",
+   "note": "When you make a Dexterity (Stealth) check you can spend a Superiority Die to add it (offered as an optional bonus). Adding it to Initiative is up to you.",
    "identifier": "ambush"
   },
   {
@@ -1690,9 +1690,9 @@
    "level": null,
    "name": "Commander’s Strike",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Ally reaction attack + die damage",
+   "note": "In place of one of your attacks, target an ally within 30 ft and use this (one Superiority Die): it can use its Reaction to make one weapon attack, adding the die to the damage.",
    "identifier": "commanders-strike"
   },
   {
@@ -1734,9 +1734,9 @@
    "level": null,
    "name": "Evasive Footwork",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Bonus Action Disengage + die AC",
+   "note": "Bonus Action, one Superiority Die: you take the Disengage action and add the die's roll to your AC until the start of your next turn.",
    "identifier": "evasive-footwork"
   },
   {
@@ -1745,9 +1745,9 @@
    "level": null,
    "name": "Feinting Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Bonus Action: Advantage on next attack + die damage",
+   "note": "Bonus Action, one Superiority Die: target a creature within 5 ft. You have Advantage on your next attack against it this turn, and if it hits you add the die to the damage.",
    "identifier": "feinting-attack"
   },
   {
@@ -1767,9 +1767,9 @@
    "level": null,
    "name": "Lunging Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Bonus Action Dash + die damage after moving 5 ft",
+   "note": "Bonus Action, one Superiority Die: you take the Dash action, and your next melee hit this turn (after moving at least 5 ft straight toward the target) adds the die to the damage.",
    "identifier": "lunging-attack"
   },
   {
@@ -1778,9 +1778,9 @@
    "level": null,
    "name": "Maneuvering Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+die damage, ally moves half speed",
+   "note": "After a hit: add the die to damage, and an ally can use its Reaction to move half its Speed without Opportunity Attacks from the target (offered in the maneuver prompt).",
    "identifier": "maneuvering-attack"
   },
   {
@@ -1833,9 +1833,9 @@
    "level": null,
    "name": "Rally",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Ally temp HP = die + half Fighter level",
+   "note": "Bonus Action, one Superiority Die: an ally within 30 ft gains Temporary Hit Points equal to the die roll + half your Fighter level.",
    "identifier": "rally"
   },
   {
@@ -1855,9 +1855,9 @@
    "level": null,
    "name": "Sweeping Attack",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Die damage to a second creature",
+   "note": "After a melee hit: spend a die; if your attack roll would hit a second creature within 5 ft of the target and of you, it takes the die's roll in damage (offered in the maneuver prompt).",
    "identifier": "sweeping-attack"
   },
   {
@@ -1921,9 +1921,9 @@
    "level": 10,
    "name": "Heroic Warrior",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Heroic Inspiration at turn start in combat",
+   "note": "Heroic Inspiration at the start of your turn (module rule).",
    "identifier": "heroic-warrior"
   },
   {
@@ -1987,9 +1987,9 @@
    "level": 10,
    "name": "Eldritch Strike",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Weapon hit: Disadvantage on the target's next save vs your spell",
+   "note": "Weapon hit: target gets Disadvantage on its next save against your spell.",
    "identifier": "eldritch-strike"
   },
   {
@@ -2031,9 +2031,9 @@
    "level": 7,
    "name": "Telekinetic Adept",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Psi-Powered Leap fly; Telekinetic Thrust STR save Prone/move 10 ft",
+   "note": "Psi-Powered Leap fly effect; Telekinetic Thrust save after Psionic Strike.",
    "identifier": "telekinetic-adept"
   },
   {
@@ -2196,9 +2196,9 @@
    "level": 6,
    "name": "Empowered Strikes",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Unarmed damage can be Force (choice)",
+   "note": "Unarmed Strike damage becomes Force (toggle).",
    "identifier": "empowered-strikes"
   },
   {
@@ -2229,9 +2229,9 @@
    "level": 10,
    "name": "Heightened Focus",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Flurry 3 strikes, Patient Defense temp HP, Step of the Wind carry",
+   "note": "Handled by Monk's Focus (3 Flurry strikes, Patient Defense temp HP).",
    "identifier": "heightened-focus"
   },
   {
@@ -2350,9 +2350,9 @@
    "level": 6,
    "name": "Physician’s Touch",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Hand of Harm Poisons; Hand of Healing ends conditions",
+   "note": "Handled by Hand of Harm (Poisoned) and Hand of Healing (end a condition).",
    "identifier": "physicians-touch"
   },
   {
@@ -2383,9 +2383,9 @@
    "level": 3,
    "name": "Shadow Arts",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Darkness for 1 Focus (movable), Darkvision 60, Minor Illusion",
+   "note": "Darkvision effect; Darkness (1 Focus) and Minor Illusion cast activities.",
    "identifier": "shadow-arts"
   },
   {
@@ -2394,9 +2394,9 @@
    "level": 6,
    "name": "Shadow Step",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Bonus Action teleport 60 ft between dim/dark + Advantage on next melee attack",
+   "note": "Bonus Action Advantage on your next melee attack this turn.",
    "identifier": "shadow-step"
   },
   {
@@ -2449,9 +2449,9 @@
    "level": 6,
    "name": "Elemental Burst",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "2 Focus: 20-ft sphere DEX save 3 MA dice of chosen type",
+   "note": "20-ft sphere DEX save, 3 Martial Arts dice of the chosen element (half).",
    "identifier": "elemental-burst"
   },
   {
@@ -2658,9 +2658,9 @@
    "level": 10,
    "name": "Aura of Courage",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Allies in your aura are immune to Frightened",
+   "note": "Frightened immunity aura (module rule).",
    "identifier": "aura-of-courage"
   },
   {
@@ -2735,9 +2735,9 @@
    "level": 7,
    "name": "Aura of Devotion",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Allies in your aura immune to Charmed",
+   "note": "Charmed immunity aura (module rule).",
    "identifier": "aura-of-devotion"
   },
   {
@@ -2768,9 +2768,9 @@
    "level": 3,
    "name": "Inspiring Smite",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "After Divine Smite spend Channel Divinity: 2d8 + level temp HP split among creatures",
+   "note": "Prompt after Divine Smite; split 2d8 + level temp HP.",
    "identifier": "inspiring-smite"
   },
   {
@@ -2790,9 +2790,9 @@
    "level": 3,
    "name": "Peerless Athlete",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Channel Divinity: Advantage on Athletics/Acrobatics 1 hour",
+   "note": "Channel Divinity: Advantage on Athletics and Acrobatics for 1 hour.",
    "identifier": "peerless-athlete"
   },
   {
@@ -2801,9 +2801,9 @@
    "level": 7,
    "name": "Aura of Alacrity",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+10 ft speed; allies entering/starting in aura +10 ft",
+   "note": "+10 ft Speed for you; +10 ft aura for nearby allies (module rule).",
    "identifier": "aura-of-alacrity"
   },
   {
@@ -2834,9 +2834,9 @@
    "level": 3,
    "name": "Nature’s Wrath",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Creatures of choice within 15 ft STR save or Restrained (repeat save)",
+   "note": "Channel Divinity 15-ft emanation STR save; Restrained with repeat saves.",
    "identifier": "natures-wrath"
   },
   {
@@ -2856,9 +2856,9 @@
    "level": 7,
    "name": "Aura of Warding",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "You and allies in aura resist Necrotic/Psychic/Radiant",
+   "note": "Necrotic/Psychic/Radiant resistance aura (module rule).",
    "identifier": "aura-of-warding"
   },
   {
@@ -2911,9 +2911,9 @@
    "level": 7,
    "name": "Relentless Avenger",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Opportunity Attack hit: target Speed 0 (move is manual)",
+   "note": "Opportunity Attack hit: target's Speed 0 this turn.",
    "identifier": "relentless-avenger"
   },
   {
@@ -3142,9 +3142,9 @@
    "level": 7,
    "name": "Exceptional Training",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Beast Bonus Action Dash/Disengage/Dodge/Help; Force damage option",
+   "note": "Reminder; the beast's options are chosen on its own sheet.",
    "identifier": "exceptional-training"
   },
   {
@@ -3197,9 +3197,9 @@
    "level": 3,
    "name": "Otherworldly Glamour",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+WIS to CHA checks (min +1)",
+   "note": "+WIS (min 1) to Charisma checks.",
    "identifier": "otherworldly-glamour"
   },
   {
@@ -3263,9 +3263,9 @@
    "level": 3,
    "name": "Umbral Sight",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Darkvision 60 (+60); invisible to darkvision in darkness",
+   "note": "+60 ft Darkvision.",
    "identifier": "umbral-sight"
   },
   {
@@ -3329,9 +3329,9 @@
    "level": 7,
    "name": "Defensive Tactics",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Escape the Horde (OA Disadvantage) or Multiattack Defense (Disadvantage on further attacks this turn)",
+   "note": "Choose Option: Escape the Horde effect or Multiattack Defense (module rule).",
    "identifier": "defensive-tactics"
   },
   {
@@ -3428,9 +3428,9 @@
    "level": 3,
    "name": "Steady Aim",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Advantage on next attack this turn, Speed 0 (compendium utility only)",
+   "note": "Activity effects: Advantage on the next attack this turn, Speed 0.",
    "identifier": "steady-aim"
   },
   {
@@ -3670,9 +3670,9 @@
    "level": 3,
    "name": "Psionic Power",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Psionic Energy dice; Psi-Bolstered Knack on failed checks; Psychic Whispers",
+   "note": "Shared Psionic Power item (dice by Fighter or Rogue level); Psi-Bolstered Knack optional bonus sized to your die (module rule); Psychic Whispers manual",
    "identifier": "psionic-power"
   },
   {
@@ -3692,9 +3692,9 @@
    "level": 9,
    "name": "Soul Blades",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Homing Strikes (+die to missed blade attack), Psychic Teleportation",
+   "note": "Homing Strikes prompt (module rule); Psychic Teleportation distance roll.",
    "identifier": "soul-blades"
   },
   {
@@ -4033,9 +4033,9 @@
    "level": 6,
    "name": "Psychic Defenses",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Psychic Resistance; Advantage vs Charmed/Frightened",
+   "note": "Psychic resistance; Advantage on saves against effects that Charm or Frighten.",
    "identifier": "psychic-defenses"
   },
   {
@@ -4077,9 +4077,9 @@
    "level": 3,
    "name": "Restore Balance",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Reaction: cancel Advantage/Disadvantage on a roll within 60 ft",
+   "note": "Reaction prompt to cancel an enemy's Advantage or an ally's Disadvantage on attacks (module rule).",
    "identifier": "restore-balance"
   },
   {
@@ -4088,9 +4088,9 @@
    "level": 6,
    "name": "Bastion of Law",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Ward of d8s that reduces damage",
+   "note": "Ward of d8s (Sorcery Points); damage prompt spends dice (module rule).",
    "identifier": "bastion-of-law"
   },
   {
@@ -4143,9 +4143,9 @@
    "level": 6,
    "name": "Elemental Affinity",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Resistance to the chosen type; +CHA to one damage roll of spells of that type (compendium has manual damage activities)",
+   "note": "Choose Type sets resistance; +CHA to spell damage of that type.",
    "identifier": "elemental-affinity"
   },
   {
@@ -4176,9 +4176,9 @@
    "level": 3,
    "name": "Wild Magic Surge",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "After a Sorcerer slot spell roll d20; on 20 roll the Wild Magic Surge table",
+   "note": "d20 surge check after Sorcerer slot spells; d100 roll on a surge.",
    "identifier": "wild-magic-surge"
   },
   {
@@ -4187,9 +4187,9 @@
    "level": 3,
    "name": "Tides of Chaos",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Advantage on a D20 Test; recharges when you cast a slot spell (forces a surge)",
+   "note": "Advantage on your next D20 Test; recharges with a forced surge.",
    "identifier": "tides-of-chaos"
   },
   {
@@ -4396,9 +4396,9 @@
    "level": null,
    "name": "Eldritch Smite",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Once per turn on pact weapon hit spend a pact slot: (1+slot)d8 force + Prone (prompt)",
+   "note": "Weapon-hit prompt: spend a pact slot for (1 + level)d8 Force + Prone.",
    "identifier": "eldritch-smite"
   },
   {
@@ -4484,9 +4484,9 @@
    "level": null,
    "name": "Lifedrinker",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Once per turn pact weapon hit: +1d6 necrotic/psychic/radiant, spend a HD to heal (prompt)",
+   "note": "Once per turn +1d6 (type choice) and an optional Hit Die heal.",
    "identifier": "lifedrinker"
   },
   {
@@ -4660,9 +4660,9 @@
    "level": 6,
    "name": "Misty Escape",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Misty Step reaction on damage; Disappearing/Dreadful Step options",
+   "note": "Reaction when damaged: runs Steps of the Fey (or your Misty Step spell).",
    "identifier": "misty-escape"
   },
   {
@@ -4715,9 +4715,9 @@
    "level": 6,
    "name": "Radiant Soul",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Radiant Resistance; +CHA to one radiant/fire spell damage once per turn",
+   "note": "Radiant resistance; +CHA to one Radiant/Fire spell damage roll per turn.",
    "identifier": "radiant-soul"
   },
   {
@@ -4770,9 +4770,9 @@
    "level": 6,
    "name": "Dark One’s Own Luck",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Add 1d10 to a check/save after seeing it (prompt), CHA-mod uses",
+   "note": "Optional +1d10 on checks and saves, using this feature's uses.",
    "identifier": "dark-ones-own-luck"
   },
   {
@@ -4825,9 +4825,9 @@
    "level": 3,
    "name": "Psychic Spells",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Change Warlock spell damage to Psychic (choice)",
+   "note": "Prompt to change Warlock spell damage to Psychic.",
    "identifier": "psychic-spells"
   },
   {
@@ -4847,9 +4847,9 @@
    "level": 10,
    "name": "Eldritch Hex",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Hex also gives Disadvantage on saves of the chosen ability",
+   "note": "Hex effects also give Disadvantage on that ability's saves (module rule).",
    "identifier": "eldritch-hex"
   },
   {
@@ -5012,9 +5012,9 @@
    "level": 6,
    "name": "Projected Ward",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Reaction: the ward absorbs damage for a creature within 30 ft",
+   "note": "Reaction prompt to absorb an ally's damage with your Arcane Ward (module rule).",
    "identifier": "projected-ward"
   },
   {
@@ -5067,9 +5067,9 @@
    "level": 6,
    "name": "Expert Divination",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Regain a lower slot after a level 2+ Divination spell",
+   "note": "Divination slot spell restores the highest lower expended slot (max 5).",
    "identifier": "expert-divination"
   },
   {
@@ -5111,9 +5111,9 @@
    "level": 3,
    "name": "Potent Cantrip",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Cantrip miss/save: half damage",
+   "note": "midi potentCantrip on saves; half damage on missed cantrip attacks.",
    "identifier": "potent-cantrip"
   },
   {
@@ -5122,9 +5122,9 @@
    "level": 6,
    "name": "Sculpt Spells",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Choose 1 + spell level creatures to auto-succeed / take no damage on Evocation spells",
+   "note": "midi sculptSpells flag.",
    "identifier": "sculpt-spells"
   },
   {
@@ -5133,9 +5133,9 @@
    "level": 10,
    "name": "Empowered Evocation",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+INT to one damage roll of Wizard Evocation spells (compendium damage activity is manual)",
+   "note": "+INT to Wizard Evocation spell damage.",
    "identifier": "empowered-evocation"
   },
   {
@@ -5188,9 +5188,9 @@
    "level": 10,
    "name": "Illusory Self",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Reaction: an attack that hits you misses (SR or slot)",
+   "note": "Reaction prompt when hit: the attack misses (module rule).",
    "identifier": "illusory-self"
   },
   {

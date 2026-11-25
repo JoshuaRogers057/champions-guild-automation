@@ -1,0 +1,49 @@
+{
+  "_id": "cgaCfmindless504",
+  "name": "Mindless Rage",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-eye.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 6,
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Path of the Berserker",
+    "activities": {},
+    "enchant": {},
+    "identifier": "mindless-rage"
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Charmed/Frightened immunity on the Rage effect while raging."
+      }
+    }
+  }
+}

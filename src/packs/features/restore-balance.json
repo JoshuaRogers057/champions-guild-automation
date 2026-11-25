@@ -1,0 +1,56 @@
+{
+  "name": "Restore Balance",
+  "type": "feat",
+  "img": "icons/magic/time/clock-spinning-gold-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "restore-balance",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Clockwork Sorcery 3",
+    "properties": [],
+    "uses": {
+      "max": "max(1, @abilities.cha.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfrestoreb620",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Reaction prompt to cancel an enemy's Advantage or an ally's Disadvantage on attacks (module rule)."
+      }
+    }
+  }
+}

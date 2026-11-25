@@ -121,7 +121,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "notes": "Champions Guild Automation: Inspire gives the target an optional-bonus effect with your die (prompt after a failed attack/save or on a check); one die at a time."
       }
     }

@@ -1,0 +1,52 @@
+{
+  "name": "Improved Circle Forms",
+  "type": "feat",
+  "img": "icons/magic/nature/wolf-paw-glow-large-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "improved-circle-forms",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Circle of the Moon 6",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfimproved543",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Beast form gets +WIS to CON saves and a once-per-form Radiant option (module rule + macro)."
+      }
+    }
+  },
+  "_cgaMacro": "class-features-p2.js"
+}

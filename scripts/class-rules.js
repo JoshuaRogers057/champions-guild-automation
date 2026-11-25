@@ -34,8 +34,24 @@ const AURAS = [
   { feature: "aura-of-protection", key: "paladin-aura", range: (a) => (classLevel(a, "paladin") >= 18 ? 30 : 10),
     value: (a) => Math.max(1, Number(a.system.abilities.cha?.mod ?? 0)),
     effect: (a, v) => ({ name: `Aura of Protection (+${v})`, img: "icons/magic/holy/barrier-shield-winged-blue.webp",
-      changes: [{ key: "system.bonuses.abilities.save", value: `+${v}`, type: "add", priority: 20, phase: "initial" }] }) }
+      changes: [{ key: "system.bonuses.abilities.save", value: `+${v}`, type: "add", priority: 20, phase: "initial" }] }) },
+  { feature: "aura-of-courage", key: "paladin-courage", range: (a) => (classLevel(a, "paladin") >= 18 ? 30 : 10), value: () => 1,
+    effect: () => ({ name: "Aura of Courage", img: "icons/magic/holy/prayer-hands-glowing-yellow.webp", changes: [chg("system.traits.ci.value", "frightened", "add")] }) },
+  { feature: "aura-of-devotion", key: "paladin-devotion", range: (a) => (classLevel(a, "paladin") >= 18 ? 30 : 10), value: () => 1,
+    effect: () => ({ name: "Aura of Devotion", img: "icons/magic/holy/saint-glass-portrait-halo.webp", changes: [chg("system.traits.ci.value", "charmed", "add")] }) },
+  { feature: "aura-of-warding", key: "paladin-warding", range: (a) => (classLevel(a, "paladin") >= 18 ? 30 : 10), value: () => 1,
+    effect: () => ({ name: "Aura of Warding", img: "icons/magic/defensive/shield-barrier-glowing-triangle-green.webp",
+      changes: ["necrotic", "psychic", "radiant"].map((t) => chg("system.traits.dr.value", t, "add")) }) },
+  // Aura of Alacrity: allies in the aura move 10 ft faster (your own +10 ft is on the feature).
+  { feature: "aura-of-alacrity", key: "paladin-alacrity", self: false, range: (a) => (classLevel(a, "paladin") >= 18 ? 10 : 5), value: () => 1,
+    effect: () => ({ name: "Aura of Alacrity (+10 ft)", img: "icons/skills/movement/feet-winged-boots-glowing-yellow.webp", changes: [chg("system.attributes.movement.walk", "10", "add")] }) },
+  // Rage of the Wilds (Wolf): enemies within 5 ft of the raging barbarian grant Advantage to the barbarian's allies.
+  { feature: "rage-of-the-wilds", key: "wilds-wolf", targets: "enemies", range: () => 5, value: () => 1,
+    active: (a) => rageEffect(a)?.getFlag("world", "cgaWilds") === "wolf",
+    effect: (a, v, src) => ({ name: "Rage of the Wilds: Wolf's Prey", img: "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+      changes: [chg("flags.midi-qol.grants.advantage.attack.all", `workflow?.token?.document?.disposition === ${src.disposition} && workflow?.actor?.uuid !== "${a.uuid}"`)] }) }
 ];
+function chg(key, value, type = "override") { return { key, value, type, priority: 20, phase: "initial" }; }
 const auraTimers = new Map();
 function scheduleAuras(scene) {
   if (!scene || !isGM()) return;
@@ -49,9 +65,12 @@ async function sweepAuras(scene) {
   for (const src of tokens) {
     for (const aura of AURAS) {
       if (!hasFeat(src.actor, aura.feature) || isIncapacitated(src.actor) || (src.actor.system.attributes.hp.value ?? 0) <= 0) continue;
+      if (aura.active && !aura.active(src.actor)) continue;
       const v = aura.value(src.actor), range = aura.range(src.actor);
       for (const t of tokens) {
-        if (t !== src && (t.disposition !== src.disposition || edgeDistance(src, t, scene) > range)) continue;
+        if (t === src && (aura.self === false || aura.targets === "enemies")) continue;
+        const sideOk = aura.targets === "enemies" ? t.disposition !== src.disposition && t.disposition !== 0 : t.disposition === src.disposition;
+        if (t !== src && (!sideOk || edgeDistance(src, t, scene) > range)) continue;
         const k = `${t.id}|${aura.key}`;
         if ((want.get(k)?.v ?? -Infinity) >= v) continue;
         want.set(k, { t, aura, v, src });
@@ -67,7 +86,7 @@ async function sweepAuras(scene) {
       const drop = cur.filter((e) => e !== keep);
       if (drop.length) await t.actor.deleteEmbeddedDocuments("ActiveEffect", drop.map((e) => e.id)).catch(() => {});
       if (w && !keep) {
-        const data = w.aura.effect(w.src.actor, w.v);
+        const data = w.aura.effect(w.src.actor, w.v, w.src);
         await t.actor.createEmbeddedDocuments("ActiveEffect", [{ ...data, transfer: false, origin: featItem(w.src.actor, aura.feature)?.uuid,
           system: { changes: data.changes }, flags: { [MODULE_ID]: { aura: { key: aura.key, source: w.src.actor.uuid, value: w.v } } } }]).catch(() => {});
       }
@@ -76,8 +95,8 @@ async function sweepAuras(scene) {
 }
 for (const h of ["moveToken", "createToken", "deleteToken"]) Hooks.on(h, (doc) => scheduleAuras(doc.parent));
 Hooks.on("updateToken", (doc, changes) => { if (["disposition", "hidden", "x", "y", "elevation"].some((k) => k in changes)) scheduleAuras(doc.parent); });
-for (const h of ["createActiveEffect", "deleteActiveEffect"]) Hooks.on(h, (e) => {
-  if (e.flags?.[MODULE_ID]?.aura || !(e.parent instanceof Actor) || !e.statuses?.size) return;
+for (const h of ["createActiveEffect", "deleteActiveEffect", "updateActiveEffect"]) Hooks.on(h, (e) => {
+  if (e.flags?.[MODULE_ID]?.aura || !(e.parent instanceof Actor) || !(e.statuses?.size || e.flags?.world?.cgaRage)) return;
   for (const t of e.parent.getActiveTokens?.() ?? []) scheduleAuras(t.document.parent);
 });
 Hooks.on("updateActor", (actor, changes) => {
@@ -251,12 +270,14 @@ const maChanges = (actor) => {
 };
 async function ensureMartialArts(actor) {
   if (!isGM() || !actor?.items || martialBusy.has(actor.uuid)) return;
-  const feature = featItem(actor, "martial-arts");
+  // Dazzling Footwork (College of Dance) gives the Unarmed Strike the same Dexterity option.
+  const feature = featItem(actor, "martial-arts") ?? featItem(actor, "dazzling-footwork");
   if (!feature) return;
+  const unarmedOnly = feature.system.identifier === "dazzling-footwork";
   martialBusy.add(actor.uuid);
   const MA_CHANGES = maChanges(actor);
   try {
-    for (const w of actor.items.filter(monkWeapon)) {
+    for (const w of actor.items.filter((i) => monkWeapon(i) && (!unarmedOnly || i.system.identifier === "unarmed-strike" || /unarmed strike/i.test(i.name)))) {
       const mine = w.effects.filter((e) => e.flags?.[MODULE_ID]?.martialArts);
       if (mine.length > 1) await w.deleteEmbeddedDocuments("ActiveEffect", mine.slice(1).map((e) => e.id)).catch(() => {});
       if (mine.length && (mine[0].origin !== feature.uuid || !mine[0].transfer || JSON.stringify((mine[0].system?.changes ?? []).map((c) => c.value)) !== JSON.stringify(MA_CHANGES.map((c) => c.value))))

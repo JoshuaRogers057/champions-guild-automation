@@ -98,7 +98,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "notes": "Champions Guild Automation: Martial Arts die on Unarmed Strike/Monk weapons; Finesse added to them by the module."
       }
     }

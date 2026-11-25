@@ -1,0 +1,54 @@
+{
+  "name": "Maneuver: Sweeping Attack",
+  "type": "feat",
+  "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "maneuver-sweeping-attack",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Battle Master 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfmaneuver570",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: After a melee hit: spend a die; if your attack roll would hit a second creature within 5 ft of the target and of you, it takes the die's roll in damage (offered in the maneuver prompt).",
+        "aliases": [
+          "sweeping-attack"
+        ]
+      }
+    }
+  }
+}

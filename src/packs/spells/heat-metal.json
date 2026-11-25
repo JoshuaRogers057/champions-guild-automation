@@ -342,7 +342,7 @@
             "conditions": "{}"
           },
           {
-            "key": "flags.midi-qol.disadvantage.ability.check.all",
+            "key": "flags.midi-qol.disadvantage.check.all",
             "value": "1",
             "priority": 20,
             "type": "custom",
@@ -377,7 +377,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Cast and Heat deals 2d8 fire; Reheat (Bonus Action, no slot) deals it again; On Damage Save asks for the CON save to drop the object."
       }
     }

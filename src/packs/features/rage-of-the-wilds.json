@@ -1,0 +1,51 @@
+{
+  "name": "Rage of the Wilds",
+  "type": "feat",
+  "img": "icons/creatures/mammals/bear-standing-snarl-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "chat": ""
+    },
+    "identifier": "rage-of-the-wilds",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Path of the Wild Heart 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "_id": "cgaCfrageofth507",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Choice when Rage starts: Bear resistances on the Rage effect, Eagle reminder, Wolf aura (module rule)."
+      }
+    }
+  }
+}

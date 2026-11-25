@@ -55,11 +55,11 @@ const confirm = (title, html) => foundry.applications.api.DialogV2.confirm({ win
 const choose = (title, html, buttons) => foundry.applications.api.DialogV2.wait({ window: { title: `${feat.name}: ${title}` }, content: html, buttons, rejectClose: false }).catch(() => null);
 const later = (fn, ms = 400) => setTimeout(() => fn().catch((err) => console.warn(`${feat.name} |`, err)), ms);
 const DieTerm = foundry.dice?.terms?.Die ?? Die;
-async function effectOn(t, name, changes, { special = [], statuses = [], seconds = null } = {}) {
+async function effectOn(t, name, changes, { special = [], statuses = [], seconds = null, flags = {} } = {}) {
   const data = { name: `${feat.name}: ${name}`, img: feat.img, transfer: false, origin: feat.uuid, statuses,
     duration: seconds ? { seconds } : { value: null, units: "seconds" },
     system: { changes: changes.map(([key, value, type = "override"]) => ({ key, value, type, priority: 50, phase: "initial" })) },
-    flags: { dae: { specialDuration: special, stackable: "noneName" } } };
+    flags: { dae: { specialDuration: special, stackable: "noneName" }, ...flags } };
   if ((t.actor ?? t) === actor) return actor.createEmbeddedDocuments("ActiveEffect", [data]);
   return MidiQOL.socket().executeAsGM("createEffects", { actorUuid: (t.actor ?? t).uuid, effects: [data] });
 }
@@ -79,6 +79,39 @@ const supDie = () => { const l = lvl("fighter"); return l >= 18 ? 12 : l >= 10 ?
 const maDie = () => { const l = lvl("monk"); return l >= 17 ? 12 : l >= 11 ? 10 : l >= 5 ? 8 : 6; };
 const psiDie = () => { const l = Math.max(lvl("fighter"), lvl("rogue")); return l >= 17 ? 12 : l >= 11 ? 10 : l >= 5 ? 8 : 6; };
 const bardDie = (a = actor) => { const l = Number(a.classes?.bard?.system?.levels ?? 0); return l >= 15 ? 12 : l >= 10 ? 10 : l >= 5 ? 8 : 6; };
+// Rage riders: Mindless Rage, Rage of the Wilds, Vitality of the Tree, Fanatical Focus. Changes go on the Rage effect
+// (they end with it); separate rider effects are flagged cgaRageRider and removed with the Rage (module rule).
+async function rageRiders(rage) {
+  await rage.setFlag("world", "cgaRidersDone", true);
+  const add = [];
+  const rider = async (name, changes, extra = {}) => {
+    const [e] = await effectOn(actor, name, changes, extra);
+    if (e) await e.setFlag("world", "cgaRageRider", rage.id).catch(() => {});
+  };
+  if (has("mindless-rage")) {
+    add.push(["system.traits.ci.value", "charmed", "add"], ["system.traits.ci.value", "frightened", "add"]);
+    const gone = actor.effects.filter((e) => e !== rage && (e.statuses?.has("charmed") || e.statuses?.has("frightened")));
+    if (gone.length) await actor.deleteEmbeddedDocuments("ActiveEffect", gone.map((e) => e.id)).catch(() => {});
+  }
+  if (has("rage-of-the-wilds")) {
+    const pick = await choose("Rage of the Wilds", "<p>Which animal spirit answers your Rage?</p>", [
+      { action: "bear", label: "Bear (resist all damage but Force, Necrotic, Psychic, Radiant)", default: true },
+      { action: "eagle", label: "Eagle (Dash and Disengage now; Bonus Action later)" },
+      { action: "wolf", label: "Wolf (allies have Advantage against enemies within 5 ft of you)" }]);
+    if (pick === "bear") for (const t of ["acid", "bludgeoning", "cold", "fire", "lightning", "piercing", "poison", "slashing", "thunder"]) add.push(["system.traits.dr.value", t, "add"]);
+    if (pick) await rage.setFlag("world", "cgaWilds", pick);
+    if (pick === "eagle") say("Eagle: you take the Dash and Disengage actions as part of this Bonus Action, and can take both as a Bonus Action on later turns while raging.");
+    if (pick === "wolf") say("Wolf: while you rage, your allies have Advantage on attack rolls against enemies within 5 ft of you.");
+  }
+  if (add.length) await rage.update({ "system.changes": [...rage.toObject().system.changes, ...add.map(([key, value, type]) => ({ key, value, type, priority: 50, phase: "initial" }))] });
+  if (has("vitality-of-the-tree")) {
+    const temp = lvl("barbarian");
+    if (Number(actor.system.attributes.hp.temp ?? 0) < temp) await actor.update({ "system.attributes.hp.temp": temp });
+    say(`Vitality Surge: you gain ${temp} Temporary Hit Points.`);
+  }
+  if (has("fanatical-focus")) await rider("Fanatical Focus", [["flags.midi-qol.optional.cgaFanatic.label", `Fanatical Focus: reroll the failed save +${rageDamage()}`],
+    ["flags.midi-qol.optional.cgaFanatic.save.fail.all", `reroll-withBonus +${rageDamage()}`], ["flags.midi-qol.optional.cgaFanatic.count", "1"]]);
+}
 const pickType = async (types, title) => types.length === 1 ? types[0]
   : (await choose(title, "<p>Which damage type?</p>", types.map((t, i) => ({ action: t, label: CONFIG.DND5E.damageTypes[t]?.label ?? t, default: i === 0 })))) ?? types[0];
 
@@ -86,12 +119,15 @@ switch (id) {
   // ======================================================================= Barbarian
   case "rage": {
     if (pass === "postActiveEffects" && activity?.item?.id === feat.id) {
+      if (!firstCall("rage-start")) return;
       // Entering (or extending) Rage: mark the Rage effect, end Concentration.
       const rage = actor.effects.find((e) => e.flags?.world?.cgaRage);
       if (rage && !rage.getFlag("world", "cgaRageStart")) await rage.setFlag("world", "cgaRageStart", turnKey);
       await actor.setFlag("world", "cgaRageKept", turnKey);
       const conc = actor.effects.filter((e) => e.statuses?.has("concentrating"));
       if (conc.length) { await actor.deleteEmbeddedDocuments("ActiveEffect", conc.map((e) => e.id)).catch(() => {}); say("ends Concentration (no Concentration while raging)."); }
+      // Rage riders from subclass features (only when the Rage starts, not when it's extended).
+      if (rage && !/extend/i.test(activity.name ?? "") && !rage.getFlag("world", "cgaRidersDone")) await rageRiders(rage);
       return;
     }
     if (pass === "DamageBonus") {
@@ -143,6 +179,9 @@ switch (id) {
           ["flags.midi-qol.optional.cgaBardic.save.fail.all", die],
           ["flags.midi-qol.optional.cgaBardic.check.all", die],
           ["flags.midi-qol.optional.cgaBardic.skill.all", die],
+          // Combat Inspiration (College of Valor): also to a weapon's damage after hitting, or to AC when hit.
+          ...(has("combat-inspiration") ? [["flags.midi-qol.optional.cgaBardic.damage.mwak", die], ["flags.midi-qol.optional.cgaBardic.damage.rwak", die],
+            ["flags.midi-qol.optional.cgaBardic.acOnHit", die]] : []),
           ["flags.midi-qol.optional.cgaBardic.count", "1"]].map(([key, value]) => ({ key, value, type: "override", priority: 20, phase: "initial" })) },
         flags: { world: { cgaBardic: true, die }, dae: { stackable: "noneName" } } };
       await MidiQOL.socket().executeAsGM("createEffects", { actorUuid: t.actor.uuid, effects: [data] });
@@ -202,7 +241,9 @@ switch (id) {
       "menacing-attack": { label: "Menacing Attack", save: "wis", note: "WIS save or Frightened" },
       "pushing-attack": { label: "Pushing Attack", save: "str", note: "STR save or pushed 15 ft", large: true },
       "trip-attack": { label: "Trip Attack", save: "str", note: "STR save or Prone", large: true },
-      "disarming-attack": { label: "Disarming Attack", save: "str", note: "STR save or drops an object" }
+      "disarming-attack": { label: "Disarming Attack", save: "str", note: "STR save or drops an object" },
+      "maneuvering-attack": { label: "Maneuvering Attack", note: "an ally can use its Reaction to move half its Speed without Opportunity Attacks from the target" },
+      "sweeping-attack": { label: "Sweeping Attack", note: "the die's roll hits a second creature within 5 ft of the target (if your attack roll would hit it)", sweep: true }
     };
     const known = Object.entries(MANEUVERS).filter(([k]) => has(`maneuver-${k}`) || has(k));
     if (pass === "DamageBonus") {
@@ -218,6 +259,7 @@ switch (id) {
       if (!pick || pick === "none") return;
       await spend(feat);
       wf.cgaManeuver = { key: pick, target: t.document.uuid };
+      if (MANEUVERS[pick].sweep) return; // the die goes to the second creature
       return { damageRoll: `1d${die}`, damageType: wf.defaultDamageType, flavor: MANEUVERS[pick].label };
     }
     if (pass === "postActiveEffects" && wf?.cgaManeuver && firstCall("maneuver-effect")) {
@@ -233,6 +275,20 @@ switch (id) {
         else if (key === "pushing-attack") await pushAway(t, 15);
         else if (key === "trip-attack") await MidiQOL.socket().executeAsGM("toggleStatusEffect", { actorUuid: t.actor.uuid, statusId: "prone", options: { active: true } });
         else if (key === "disarming-attack") say(`${esc(t.name)} drops one object of your choice that it's holding (it lands in its space).`);
+        else if (key === "maneuvering-attack") say(`an ally of your choice can use its Reaction to move up to half its Speed without provoking Opportunity Attacks from ${esc(t.name)}.`);
+        else if (key === "sweeping-attack") {
+          const total = Number(wf.attackRoll?.total ?? 0);
+          const near = (t.document.parent?.tokens ?? []).filter((o) => o.actor && o !== t.document && o !== me?.document && o.disposition !== me?.document?.disposition
+            && (o.actor.system.attributes.hp.value ?? 0) > 0 && MidiQOL.computeDistance?.(o.object, t) <= 5 && (!me || MidiQOL.computeDistance?.(me, o.object) <= 5));
+          if (!near.length) return say("no second creature within 5 ft of the target and your reach.");
+          const pick2 = near.length === 1 ? near[0].id : await choose("Sweeping Attack", "<p>Second creature:</p>", near.map((o, i) => ({ action: o.id, label: o.name, default: i === 0 })));
+          const o = near.find((x) => x.id === pick2);
+          if (!o) return;
+          if (total < Number(o.actor.system.attributes.ac?.value ?? 10)) return say(`your attack roll (${total}) misses ${esc(o.name)}.`);
+          const r = await new Roll(`1d${supDie()}`).evaluate();
+          await r.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Sweeping Attack: ${esc(o.name)}` });
+          await MidiQOL.applyTokenDamage([{ value: r.total, type: wf.defaultDamageType ?? "bludgeoning" }], r.total, new Set([o.object]), feat, new Set(), {});
+        }
       }, 300);
     }
     return;
@@ -259,6 +315,7 @@ switch (id) {
     const die = psiDie();
     if (!(await confirm("Psionic Strike", `<p>Spend a Psionic Energy Die (${left(feat)} left) to deal 1d${die} + ${mod("int")} Force to <strong>${esc(t.name)}</strong>?</p>`))) return;
     await spend(feat); await markUsed("psionic-strike");
+    wf.cgaPsiStrike = t.document.uuid; // Telekinetic Thrust (Telekinetic Adept) follows up on this target
     return { damageRoll: `1d${die} + ${mod("int")}`, damageType: "force", flavor: "Psionic Strike" };
   }
 
@@ -277,12 +334,22 @@ switch (id) {
     const abil = Math.max(mod("str"), mod("dex"));
     const opts = foundry.utils.deepClone(rolls[0].options ?? {});
     opts.configured = false; opts.isCritical = !!wf.isCritical;
+    // Empowered Strikes (Monk 6): Unarmed Strikes deal Force damage unless switched off on that feature.
+    const empowered = item("empowered-strikes");
+    if (isUnarmed(usedItem) && empowered && empowered.getFlag("world", "cgaForce") !== false) { opts.type = "force"; opts.types = ["force"]; }
     const formula = isUnarmed(usedItem) ? `1d${faces} + ${abil}` : rolls[0].formula.replace(/^(\d*)d\d+/, `$1d${faces}`);
     rolls[0] = await new CONFIG.Dice.DamageRoll(formula, actor.getRollData(), opts).evaluate();
     await wf.setDamageRolls(rolls);
     return;
   }
   case "monks-focus": {
+    if (pass === "postActiveEffects" && activity?.item?.id === feat.id && /patient/i.test(activity.name ?? "") && lvl("monk") >= 10) {
+      // Heightened Focus: Patient Defense also gives two Martial Arts dice of Temporary Hit Points.
+      const r = await new Roll(`2d${maDie()}`).evaluate();
+      await r.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: "Heightened Focus: Patient Defense Temporary Hit Points" });
+      if (Number(actor.system.attributes.hp.temp ?? 0) < r.total) await actor.update({ "system.attributes.hp.temp": r.total });
+      return;
+    }
     if (pass !== "postActiveEffects" || activity?.item?.id !== feat.id || !/flurry/i.test(activity.name ?? "")) return;
     const unarmed = actor.items.find(isUnarmed);
     const t = asTokens(wf.targets)[0] ?? asTokens(game.user.targets)[0];
@@ -344,6 +411,12 @@ switch (id) {
     const roll = await new Roll(`1d${maDie()} + ${mod("wis")}`).evaluate();
     await roll.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `${feat.name}: ${esc(t.name)} regains Hit Points` });
     await MidiQOL.applyTokenDamage([{ value: roll.total, type: "healing" }], roll.total, new Set([t]), feat, new Set(), {});
+    // Physician's Touch (Mercy 6): also end one condition.
+    const ending = ["blinded", "deafened", "paralyzed", "poisoned", "stunned"].filter((s) => t.actor?.statuses?.has(s));
+    if (lvl("monk") >= 6 && ending.length) {
+      const s = ending.length === 1 ? ending[0] : await choose("Physician's Touch", `<p>End which condition on ${esc(t.name)}?</p>`, ending.map((x, i) => ({ action: x, label: CONFIG.statusEffects.find((c) => c.id === x)?.name ?? x, default: i === 0 })));
+      if (s) { await MidiQOL.socket().executeAsGM("toggleStatusEffect", { actorUuid: t.actor.uuid, statusId: s, options: { active: false } }).catch(() => {}); say(`${esc(t.name)} is no longer ${s}.`); }
+    }
     return;
   }
   case "open-hand-technique": {
@@ -500,6 +573,8 @@ switch (id) {
     if (pass !== "postActiveEffects" || activity?.item?.id !== feat.id) return;
     if (ident === "wrath-start") {
       const changes = [];
+      // Aquatic Affinity (Sea 6): Swim Speed equal to your Speed.
+      if (lvl("druid") >= 6) changes.push(["system.attributes.movement.swim", String(Number(actor.system.attributes.movement.walk) || 30), "upgrade"]);
       if (lvl("druid") >= 10) changes.push(["system.attributes.movement.fly", String(Number(actor.system.attributes.movement.walk) || 30), "upgrade"],
         ["system.traits.dr.value", "cold", "add"], ["system.traits.dr.value", "lightning", "add"], ["system.traits.dr.value", "thunder", "add"]);
       const old = actor.effects.filter((e) => e.flags?.world?.cgaWrath);

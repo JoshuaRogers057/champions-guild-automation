@@ -14,7 +14,8 @@
   "socket": true,
   "esmodules": [
     "scripts/main.js",
-    "scripts/class-rules.js"
+    "scripts/class-rules.js",
+    "scripts/class-rules-p2.js"
   ],
   "relationships": {
     "systems": [
