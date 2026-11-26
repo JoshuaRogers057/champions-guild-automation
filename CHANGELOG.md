@@ -3,6 +3,35 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.33.0
+
+Priority-1 spells from Arcana Unleashed and Forgotten Realms: Heroes of Faerûn, as new CGA spells (1.0.0, Mass Apply).
+The spell tracker now also lists these books' spells.
+
+- **Spellfire Flare**: one ranged spell attack per blast (one more per slot level above 1st), 2d10 Radiant each.
+  Half and Three-Quarters Cover are ignored.
+- **Wardaway**: CON save for 2d4 Force, Speed halved and only an action or a Bonus Action on its next turn.
+  Constructs and Undead succeed automatically.
+- **Uncertain Footing**: up to three creatures make an INT save or have half Speed and can't Dash. They repeat the
+  save at the end of each turn.
+- **Inflict Doubt**: WIS save or Disadvantage on D20 Tests, with a repeat save at the end of each turn.
+- **Laeral's Silver Lance**: 120-ft Line, STR save for 3d10 Force and Prone.
+- **Disruptive Tune**: 20-ft Sphere CON save. A failure ends the creature's Concentration and gives Disadvantage on
+  Concentration saves.
+- **Elminster's Elusion**: Advantage on saves against spells and magical effects. A successful save that would halve
+  the damage negates it instead.
+- **Death Armor**: Advantage on Death Saving Throws. Once per turn, a melee attacker within 5 ft that hits takes 2d4 Necrotic.
+- **Cacophonic Shield**: a 10-ft Emanation that follows you, like Spirit Guardians: CON save for 3d6 Thunder and
+  Deafened. You get Thunder Resistance, and ranged attacks against you have Disadvantage, until the spell ends.
+- **Syluné's Viper**: Temporary Hit Points, a Climb Speed and a Venomous Bite activity (Force damage, Poisoned and
+  Incapacitated). The spell ends when the Temporary Hit Points are gone.
+- **Battle Familiar**: summons a Brute, Flyer or Stalker familiar (new CGA: Summoned Creatures actors). Its AC, HP
+  and Rend scale with the slot, and Rend uses your spell attack.
+- **Conjure Constructs**: summons the intangible spirits. Clockwork Force and Orderly Ward are Magic-action activities
+  that scale with the slot you cast the spell with.
+- Checked: Wither and Bloom (already in the module), plus midi-qol's own Chill Touch, Toll the Dead, Command,
+  Guiding Bolt, Hellish Rebuke, Shield, Sleep, Thunderwave, Aid and Invisibility. They all work as shipped.
+
 ## 0.32.0
 
 The last five Origin feats from the non-Player's Handbook backgrounds (priority 3). With these, every background
