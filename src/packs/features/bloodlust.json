@@ -1,0 +1,56 @@
+{
+  "_id": "cgaFtBloodlust00",
+  "name": "Bloodlust",
+  "type": "feat",
+  "img": "icons/magic/unholy/strike-body-life-soul-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Powerful Recovery:</strong> Hit Point Dice you roll to regain Hit Points count 1s and 2s as 3s (the module sets it on the roll). <strong>Sanguine Feast:</strong> once per turn when you hit a Bloodied creature that isn't a Construct or Undead with an attack roll, the module offers to spend a Hit Point Die and regain the roll + your Constitution modifier. Proficiency Bonus times per Long Rest - the feat's uses.</p>",
+      "chat": ""
+    },
+    "identifier": "bloodlust",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+",
+    "properties": [],
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Powerful Recovery on Hit Point Die rolls and the Sanguine Feast offer on hits are module rules (PB/LR uses)."
+      }
+    }
+  }
+}

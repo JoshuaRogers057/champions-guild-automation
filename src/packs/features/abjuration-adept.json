@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtAbjurAdept0",
+  "name": "Abjuration Adept",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Additional Spells:</strong> Shield, Lesser Restoration, Protection from Energy, Banishment and Wall of Force are always prepared once you have slots of that level (add them from the compendium). <strong>Protective Ward:</strong> when you cast an Abjuration spell with a spell slot, the module asks who gains Temporary Hit Points equal to twice the slot level - you or a creature you can see within 30 ft.</p>",
+      "chat": ""
+    },
+    "identifier": "abjuration-adept",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Spellcasting or Pact Magic Feature",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Protective Ward temp HP offered by the module after a slot Abjuration spell."
+      }
+    }
+  }
+}

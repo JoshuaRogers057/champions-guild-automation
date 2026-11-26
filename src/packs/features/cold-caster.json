@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtColdCaster0",
+  "name": "Cold Caster",
+  "type": "feat",
+  "img": "icons/magic/water/snowflake-ice-blue-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Cantrip:</strong> you learn Ray of Frost (add it from the compendium). <strong>Frostbite:</strong> once per turn when you hit a creature with an attack roll and deal Cold damage, the module gives it Frostbite: it subtracts 1d4 from the next saving throw it makes before the end of your next turn.</p>",
+      "chat": ""
+    },
+    "identifier": "cold-caster",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Frostbite applied by the module on the first Cold hit each turn."
+      }
+    }
+  }
+}

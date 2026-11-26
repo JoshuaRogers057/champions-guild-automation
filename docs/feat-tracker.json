@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "feats": [
   {
    "group": "Origin",
@@ -12,6 +12,78 @@
   },
   {
    "group": "Origin",
+   "name": "Arcane Artist",
+   "source": "AU",
+   "category": "done",
+   "priority": 3,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "arcane-artist"
+  },
+  {
+   "group": "Origin",
+   "name": "Arcane Eloquence",
+   "source": "AU",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "arcane-eloquence"
+  },
+  {
+   "group": "Origin",
+   "name": "Arcane Infiltrator",
+   "source": "AU",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "arcane-infiltrator"
+  },
+  {
+   "group": "Origin",
+   "name": "Arcane Omens",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "arcane-omens"
+  },
+  {
+   "group": "Origin",
+   "name": "Arcane Overload",
+   "source": "AU",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "arcane-overload"
+  },
+  {
+   "group": "Origin",
+   "name": "Arcane Safeguard",
+   "source": "AU",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "arcane-safeguard"
+  },
+  {
+   "group": "Origin",
+   "name": "Arcane Undertaker",
+   "source": "AU",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "arcane-undertaker"
+  },
+  {
+   "group": "Origin",
+   "name": "Child of the Sun",
+   "source": "LW",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "child-of-the-sun"
+  },
+  {
+   "group": "Origin",
    "name": "Crafter",
    "source": "PHB",
    "category": "skip",
@@ -21,12 +93,57 @@
   },
   {
    "group": "Origin",
+   "name": "Cult of the Dragon Initiate",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "cult-of-the-dragon-initiate"
+  },
+  {
+   "group": "Origin",
+   "name": "Emerald Enclave Fledgling",
+   "source": "FR",
+   "category": "skip",
+   "priority": 3,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "emerald-enclave-fledgling"
+  },
+  {
+   "group": "Origin",
+   "name": "Familiar Friend",
+   "source": "AU",
+   "category": "done",
+   "priority": 3,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "familiar-friend"
+  },
+  {
+   "group": "Origin",
+   "name": "Harper Agent",
+   "source": "FR",
+   "category": "skip",
+   "priority": 3,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "harper-agent"
+  },
+  {
+   "group": "Origin",
    "name": "Healer",
    "source": "PHB",
    "category": "done",
    "priority": 1,
    "note": "Battle Medic: Utilize action, expend a Healer's Kit use, target within 5 ft spends a Hit Die and heals that roll + Proficiency Bonus. Healing Rerolls: reroll 1s on healing dice of your spells and Battle Medic",
    "identifier": "healer"
+  },
+  {
+   "group": "Origin",
+   "name": "Lords’ Alliance Agent",
+   "source": "FR",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "lords-alliance-agent"
   },
   {
    "group": "Origin",
@@ -57,12 +174,48 @@
   },
   {
    "group": "Origin",
+   "name": "Portal Jumper",
+   "source": "AU",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "portal-jumper"
+  },
+  {
+   "group": "Origin",
+   "name": "Purple Dragon Rook",
+   "source": "FR",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "purple-dragon-rook"
+  },
+  {
+   "group": "Origin",
    "name": "Savage Attacker",
    "source": "SRD",
    "category": "done",
    "priority": 1,
    "note": "Once per turn on a weapon hit, roll the weapon's damage dice twice and keep the higher (compendium has no automation)",
    "identifier": "savage-attacker"
+  },
+  {
+   "group": "Origin",
+   "name": "Shadowmoor Hexer",
+   "source": "LW",
+   "category": "done",
+   "priority": 1,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "shadowmoor-hexer"
+  },
+  {
+   "group": "Origin",
+   "name": "Sharp Eye",
+   "source": "RV",
+   "category": "done",
+   "priority": 3,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "sharp-eye"
   },
   {
    "group": "Origin",
@@ -75,12 +228,39 @@
   },
   {
    "group": "Origin",
+   "name": "Spellfire Spark",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "spellfire-spark"
+  },
+  {
+   "group": "Origin",
+   "name": "Survivor",
+   "source": "RV",
+   "category": "done",
+   "priority": 1,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "survivor"
+  },
+  {
+   "group": "Origin",
    "name": "Tavern Brawler",
    "source": "PHB",
    "category": "done",
    "priority": 2,
    "note": "Unarmed Strike deals 1d4 + STR Bludgeoning, reroll 1s on its damage dice, push 5 ft once per turn on a hit during the Attack action. Improvised weapon proficiency is the dnd5e tavernBrawlerFeat flag",
    "identifier": "tavern-brawler"
+  },
+  {
+   "group": "Origin",
+   "name": "Tireless Reveler",
+   "source": "AB",
+   "category": "done",
+   "priority": 3,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "tireless-reveler"
   },
   {
    "group": "Origin",
@@ -92,6 +272,51 @@
    "identifier": "tough"
   },
   {
+   "group": "Origin",
+   "name": "Transmuted Anatomy",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "transmuted-anatomy"
+  },
+  {
+   "group": "Origin",
+   "name": "Tyro of the Gauntlet",
+   "source": "FR",
+   "category": "done",
+   "priority": 3,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "tyro-of-the-gauntlet"
+  },
+  {
+   "group": "Origin",
+   "name": "Vampire Hunter",
+   "source": "AB",
+   "category": "done",
+   "priority": 1,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "vampire-hunter"
+  },
+  {
+   "group": "Origin",
+   "name": "Vampire’s Plaything",
+   "source": "AB",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "vampires-plaything"
+  },
+  {
+   "group": "Origin",
+   "name": "Zhentarim Ruffian",
+   "source": "FR",
+   "category": "done",
+   "priority": 2,
+   "note": "Background Origin feat - see the Backgrounds tab",
+   "identifier": "zhentarim-ruffian"
+  },
+  {
    "group": "General",
    "name": "Ability Score Improvement",
    "source": "SRD",
@@ -99,6 +324,15 @@
    "priority": 3,
    "note": "Advancement",
    "identifier": "ability-score-improvement"
+  },
+  {
+   "group": "General",
+   "name": "Abjuration Adept",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: Protective Ward temp HP (2 x slot level) to you or an ally within 30 ft; Additional Spells from the compendium",
+   "identifier": "abjuration-adept"
   },
   {
    "group": "General",
@@ -120,6 +354,24 @@
   },
   {
    "group": "General",
+   "name": "Bloodlust",
+   "source": "AB",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: Hit Point Dice of 1-2 count as 3; Sanguine Feast offered once per turn on a hit against a Bloodied living creature (PB/LR)",
+   "identifier": "bloodlust"
+  },
+  {
+   "group": "General",
+   "name": "Bomber",
+   "source": "AB",
+   "category": "build",
+   "priority": 3,
+   "note": "Long Shots: no Disadvantage for long range with Thrown weapons; Far Lobber 40 ft vials",
+   "identifier": "bomber"
+  },
+  {
+   "group": "General",
    "name": "Charger",
    "source": "PHB",
    "category": "done",
@@ -135,6 +387,33 @@
    "priority": 3,
    "note": "Bolstering Treats: PB treats, a Bonus Action to eat one for PB Temporary HP. Replenishing Meal (+1d8 when spending Hit Dice on a Short Rest) is manual",
    "identifier": "chef"
+  },
+  {
+   "group": "General",
+   "name": "Cloying Mists",
+   "source": "AB",
+   "category": "build",
+   "priority": 3,
+   "note": "Grasping Mist: enemies in your Fog Cloud have -5 ft Speed; Fog Cloud from the sheet",
+   "identifier": "cloying-mists"
+  },
+  {
+   "group": "General",
+   "name": "Cold Caster",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: Frostbite on the first Cold hit each turn (-1d4 on the next save before the end of your next turn); Ray of Frost from the compendium",
+   "identifier": "cold-caster"
+  },
+  {
+   "group": "General",
+   "name": "Conjuration Adept",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Persistent Conjuration: + ability modifier to Concentration saves for Conjuration spells",
+   "identifier": "conjuration-adept"
   },
   {
    "group": "General",
@@ -165,6 +444,33 @@
   },
   {
    "group": "General",
+   "name": "Delicious Pain",
+   "source": "AB",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: Toughened Flesh Reaction offered after B/P/S damage (1/SR)",
+   "identifier": "delicious-pain"
+  },
+  {
+   "group": "General",
+   "name": "Divination Adept",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Prescient Intervention: Reaction, Advantage or Disadvantage on a D20 Test within 60 ft (1/LR, refreshed by casting Divination with a slot)",
+   "identifier": "divination-adept"
+  },
+  {
+   "group": "General",
+   "name": "Dragonscarred",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "Chosen Resistance from the sheet; Fearsome Power - Dragon's Terror as a Bonus Action after you deal damage (offered)",
+   "identifier": "dragonscarred"
+  },
+  {
+   "group": "General",
    "name": "Dual Wielder",
    "source": "PHB",
    "category": "done",
@@ -192,12 +498,66 @@
   },
   {
    "group": "General",
+   "name": "Elemental Familiar",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Familiar gets the chosen Resistance and an Energy Pulse (5-ft DEX save 2d4 + Prone) activity",
+   "identifier": "elemental-familiar"
+  },
+  {
+   "group": "General",
+   "name": "Enchantment Adept",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Always-prepared spells and casting without components - sheet and table",
+   "identifier": "enchantment-adept"
+  },
+  {
+   "group": "General",
+   "name": "Enclave Magic",
+   "source": "FR",
+   "category": "skip",
+   "priority": 3,
+   "note": "Advantage on Influence with Beasts and Beast Sense - sheet and table",
+   "identifier": "enclave-magic"
+  },
+  {
+   "group": "General",
+   "name": "Evocation Adept",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: Fueled Evocation adds up to two Hit Point Dice to an Evocation spell's damage (once per turn); Additional Spells from the compendium",
+   "identifier": "evocation-adept"
+  },
+  {
+   "group": "General",
+   "name": "Fairy Trickster",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: Flustering Strike save activity offered after a hit (PB/LR); Faerie Trod Trotter by hand",
+   "identifier": "fairy-trickster"
+  },
+  {
+   "group": "General",
    "name": "Fey Touched",
    "source": "PHB",
    "category": "skip",
    "priority": 2,
    "note": "Misty Step + one spell from the advancement, each castable once per Long Rest without a slot (spell uses)",
    "identifier": "fey-touched"
+  },
+  {
+   "group": "General",
+   "name": "Genie Magic",
+   "source": "FR",
+   "category": "skip",
+   "priority": 3,
+   "note": "Extra spells cast without a slot - from the sheet",
+   "identifier": "genie-magic"
   },
   {
    "group": "General",
@@ -219,6 +579,15 @@
   },
   {
    "group": "General",
+   "name": "Harper Teamwork",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Withering Wordplay (Help: target's next save at Disadvantage) and Inspiring Willpower (end an ally's Frightened/Paralyzed too)",
+   "identifier": "harper-teamwork"
+  },
+  {
+   "group": "General",
    "name": "Heavily Armored",
    "source": "PHB",
    "category": "skip",
@@ -234,6 +603,15 @@
    "priority": 1,
    "note": "While wearing Heavy armor, Bludgeoning/Piercing/Slashing damage from an attack that hits you is reduced by PB",
    "identifier": "heavy-armor-master"
+  },
+  {
+   "group": "General",
+   "name": "Illusion Adept",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Always-prepared spells and casting without components - sheet and table",
+   "identifier": "illusion-adept"
   },
   {
    "group": "General",
@@ -255,6 +633,15 @@
   },
   {
    "group": "General",
+   "name": "Light Bringer",
+   "source": "AB",
+   "category": "build",
+   "priority": 3,
+   "note": "Sun's Healing: Bonus Action spend a Hit Die to heal in sunlight (1/SR activity); Light from the sheet",
+   "identifier": "light-bringer"
+  },
+  {
+   "group": "General",
    "name": "Lightly Armored",
    "source": "PHB",
    "category": "skip",
@@ -264,12 +651,39 @@
   },
   {
    "group": "General",
+   "name": "Lordly Resolve",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "Standard Bearer: Bonus Action, up to three creatures can't be Charmed/Frightened for 1 minute (1/LR activity)",
+   "identifier": "lordly-resolve"
+  },
+  {
+   "group": "General",
+   "name": "Love Bites",
+   "source": "AB",
+   "category": "build",
+   "priority": 2,
+   "note": "Endearing Pain: Bonus Action after melee damage - Charmed until your next turn or it's damaged (1/SR, asked)",
+   "identifier": "love-bites"
+  },
+  {
+   "group": "General",
    "name": "Mage Slayer",
    "source": "PHB",
    "category": "done",
    "priority": 1,
    "note": "Concentration Breaker: creatures you damage have Disadvantage on the Concentration save. Guarded Mind: once per Short/Long Rest, turn a failed INT/WIS/CHA save into a success (prompt after the failed save)",
    "identifier": "mage-slayer"
+  },
+  {
+   "group": "General",
+   "name": "Magic Connoisseur",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Extra spells cast without a slot - from the sheet",
+   "identifier": "magic-connoisseur"
   },
   {
    "group": "General",
@@ -309,12 +723,48 @@
   },
   {
    "group": "General",
+   "name": "Mythal Touched",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Mythal Ward: Reaction when a spell attack hits you or you fail a save against a spell - roll the d20 table (PB/LR)",
+   "identifier": "mythal-touched"
+  },
+  {
+   "group": "General",
+   "name": "Necromancy Adept",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Life Manipulation: casting Necromancy with a slot lets you roll up to two Hit Dice to heal total + slot level (asked)",
+   "identifier": "necromancy-adept"
+  },
+  {
+   "group": "General",
    "name": "Observant",
    "source": "PHB",
    "category": "skip",
    "priority": 3,
    "note": "Skill from the advancement; Search as a Bonus Action is manual",
    "identifier": "observant"
+  },
+  {
+   "group": "General",
+   "name": "Order’s Resilience",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "Stronger Together: you and an adjacent ally have Advantage on STR saves; Resurge by hand",
+   "identifier": "orders-resilience"
+  },
+  {
+   "group": "General",
+   "name": "Otherworldly Familiar",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Familiar gets the chosen Resistance; Phase Walk by hand",
+   "identifier": "otherworldly-familiar"
   },
   {
    "group": "General",
@@ -342,6 +792,33 @@
    "priority": 1,
    "note": "Pole Strike: Bonus Action attack after the Attack action with a Quarterstaff, Spear or Heavy+Reach weapon (d4 Bludgeoning). Reactive Strike (Reaction attack when a creature enters your reach) stays a manual Reaction",
    "identifier": "polearm-master"
+  },
+  {
+   "group": "General",
+   "name": "Purple Dragon Commandant",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: Encourage Ally temp HP activity (PB/LR); Last Stand Advantage while Bloodied",
+   "identifier": "purple-dragon-commandant"
+  },
+  {
+   "group": "General",
+   "name": "Putrefy",
+   "source": "AB",
+   "category": "build",
+   "priority": 2,
+   "note": "Necrosis: a creature taking your Necrotic damage is Poisoned until your next turn (1/SR, asked)",
+   "identifier": "putrefy"
+  },
+  {
+   "group": "General",
+   "name": "Rebuke",
+   "source": "AB",
+   "category": "build",
+   "priority": 2,
+   "note": "Radiant Strike: a Huge or smaller creature taking your Radiant damage is knocked Prone (1/SR, asked)",
+   "identifier": "rebuke"
   },
   {
    "group": "General",
@@ -426,6 +903,15 @@
   },
   {
    "group": "General",
+   "name": "Soothing Familiar",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Healing dice of 1-2 count as 3 for allies within 5 ft of your familiar",
+   "identifier": "soothing-familiar"
+  },
+  {
+   "group": "General",
    "name": "Speedy",
    "source": "PHB",
    "category": "done",
@@ -435,12 +921,48 @@
   },
   {
    "group": "General",
+   "name": "Spell Resistant",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: chosen Resistance (transfer effects), Magic Resistant +1d6 offered on a failed save against a spell or magic item (PB/LR)",
+   "identifier": "spell-resistant"
+  },
+  {
+   "group": "General",
    "name": "Spell Sniper",
    "source": "PHB",
    "category": "done",
    "priority": 2,
    "note": "Spell attacks ignore Half and Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; midi-qol doubles spell attack range (book: +60 ft)",
    "identifier": "spell-sniper"
+  },
+  {
+   "group": "General",
+   "name": "Spell Subterfuge",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Shrouding Spells: Bonus Action Dash + Hide after casting an action spell with a slot (uses = modifier/LR)",
+   "identifier": "spell-subterfuge"
+  },
+  {
+   "group": "General",
+   "name": "Spellfire Adept",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "Fueled Spellfire: once per turn add up to two Hit Dice to a spell's Radiant damage; Searing Spellfire - your Radiant damage ignores Resistance",
+   "identifier": "spellfire-adept"
+  },
+  {
+   "group": "General",
+   "name": "Street Justice",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Headlock: allies have Advantage on attacks against a creature you're grappling",
+   "identifier": "street-justice"
   },
   {
    "group": "General",
@@ -462,6 +984,33 @@
   },
   {
    "group": "General",
+   "name": "Transmutation Adept",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Magical Augmentation: casting Transmutation with a slot gives +5 ft Speed per slot level this turn",
+   "identifier": "transmutation-adept"
+  },
+  {
+   "group": "General",
+   "name": "Treacherous Allure",
+   "source": "AB",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + module rule: Charm Person cast activity (1/LR, no slot); Inevitable Betrayal Advantage against Charmed creatures",
+   "identifier": "treacherous-allure"
+  },
+  {
+   "group": "General",
+   "name": "Vampire Touched",
+   "source": "AB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Extra spells cast without a slot - from the sheet",
+   "identifier": "vampire-touched"
+  },
+  {
+   "group": "General",
    "name": "War Caster",
    "source": "PHB",
    "category": "done",
@@ -479,12 +1028,30 @@
    "identifier": "weapon-master"
   },
   {
+   "group": "General",
+   "name": "Zhentarim Tactics",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "Retaliate: Reaction Opportunity Attack against a creature within 5 ft that hits you with a melee attack (asked); Versatile Merc by hand",
+   "identifier": "zhentarim-tactics"
+  },
+  {
+   "group": "Fighting Style",
+   "name": "Arcane Warrior",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Two Wizard cantrips - from the sheet",
+   "identifier": "arcane-warrior"
+  },
+  {
    "group": "Fighting Style",
    "name": "Archery",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium: +2 to ranged weapon attack rolls",
+   "note": "Compendium item checked in the test world: +2 to ranged weapon attack rolls",
    "identifier": "archery"
   },
   {
@@ -500,9 +1067,9 @@
    "group": "Fighting Style",
    "name": "Defense",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium: +1 AC (should apply only while wearing armor)",
+   "note": "Compendium item + module rule: its +1 AC switches off while you wear no Light, Medium or Heavy armor",
    "identifier": "defense"
   },
   {
@@ -569,6 +1136,42 @@
    "identifier": "unarmed-fighting"
   },
   {
+   "group": "Fighting Style",
+   "name": "Warlike Familiar",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Battle Familiar 1/LR cast activity; Intercept Attack - familiar Reaction +PB AC to a creature within 5 ft that's hit (asked)",
+   "identifier": "warlike-familiar"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Blazing Dawn",
+   "source": "AB",
+   "category": "build",
+   "priority": 3,
+   "note": "Radiant Immunity; Blazing Strike (weapon damage can be Radiant); Burst of Sunlight light",
+   "identifier": "boon-of-blazing-dawn"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Bloodshed",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Killer's Fortune (Advantage on your next attack after an enemy drops to 0); Power from Pain (+PB damage once per turn while Bloodied)",
+   "identifier": "boon-of-bloodshed"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Bountiful Health",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "+5 to temp HP you gain; Hit Point Dice heal their maximum",
+   "identifier": "boon-of-bountiful-health"
+  },
+  {
    "group": "Epic Boon",
    "name": "Boon of Combat Prowess",
    "source": "SRD",
@@ -576,6 +1179,24 @@
    "priority": 3,
    "note": "Peerless Aim: once per round, a missed attack offers +99 to hit instead (a hit, not a critical)",
    "identifier": "boon-of-combat-prowess"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Communication",
+   "source": "FR",
+   "category": "skip",
+   "priority": 3,
+   "note": "Telepathy and languages - sheet and roleplay",
+   "identifier": "boon-of-communication"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Desperate Resilience",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Resistance to everything but Force while Bloodied",
+   "identifier": "boon-of-desperate-resilience"
   },
   {
    "group": "Epic Boon",
@@ -597,12 +1218,39 @@
   },
   {
    "group": "Epic Boon",
+   "name": "Boon of Erupting Spellpower",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Spell Overload: a slot spell's damage dice of 1-2 count as 3 and damaged creatures are Prone (once per Initiative or rest, asked)",
+   "identifier": "boon-of-erupting-spellpower"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Exquisite Radiance",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Powerful Radiance: maximize a Radiant damage roll (1/LR, asked)",
+   "identifier": "boon-of-exquisite-radiance"
+  },
+  {
+   "group": "Epic Boon",
    "name": "Boon of Fate",
    "source": "SRD",
    "category": "done",
    "priority": 3,
    "note": "Improve Fate: after you or a creature within 60 ft rolls a D20 Test, add or subtract 2d4 (once per Initiative or rest). Compendium has a roll-only activity",
    "identifier": "boon-of-fate"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Fluid Forms",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Shapechanger: Magic action transform into a CR 10 Beast/Humanoid/Monstrosity for 1 hour (dnd5e transform activity)",
+   "identifier": "boon-of-fluid-forms"
   },
   {
    "group": "Epic Boon",
@@ -615,6 +1263,15 @@
   },
   {
    "group": "Epic Boon",
+   "name": "Boon of Fortune’s Favor",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Saving Throw Reroll: reroll a failed save (once per round, asked)",
+   "identifier": "boon-of-fortunes-favor"
+  },
+  {
+   "group": "Epic Boon",
    "name": "Boon of Irresistible Offense",
    "source": "SRD",
    "category": "done",
@@ -624,12 +1281,57 @@
   },
   {
    "group": "Epic Boon",
+   "name": "Boon of Looming Shadows",
+   "source": "AB",
+   "category": "build",
+   "priority": 3,
+   "note": "Shadowy Stretch (+10 ft melee reach when you Attack, by hand); Dancing Silhouette - Bonus Action Dodge activity",
+   "identifier": "boon-of-looming-shadows"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Magic School Mastery",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Extra prepared spells cast without a slot - from the sheet",
+   "identifier": "boon-of-magic-school-mastery"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Misty Escape",
+   "source": "AB",
+   "category": "build",
+   "priority": 3,
+   "note": "Drop to 1 HP instead of 0 and turn to mist, regaining 10 HP each turn (1/LR, asked)",
+   "identifier": "boon-of-misty-escape"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Poison Mastery",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Poison Immunity and Poisoned immunity; Perfect Poisoner - maximize Poison damage once per turn",
+   "identifier": "boon-of-poison-mastery"
+  },
+  {
+   "group": "Epic Boon",
    "name": "Boon of Recovery",
    "source": "PHB",
    "category": "done",
    "priority": 3,
    "note": "Last Stand: once per Long Rest, drop to 1 HP instead of 0 and heal half your HP max. Recover Vitality: pool of ten d10s, Bonus Action to roll some and heal",
    "identifier": "boon-of-recovery"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of Revelry",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Otto's Irresistible Dance 1/LR without a slot (concentration not broken by damage); Sing Out",
+   "identifier": "boon-of-revelry"
   },
   {
    "group": "Epic Boon",
@@ -660,12 +1362,57 @@
   },
   {
    "group": "Epic Boon",
+   "name": "Boon of Terror",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Frightened immunity; Flee, Fools! Reaction - a Frightened creature starting its turn within 60 ft makes a WIS save or flees (1/SR, asked)",
+   "identifier": "boon-of-terror"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of the Bright Sun",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Daylight Presence: Bonus Action 30-ft sunlight aura; you and allies in it gain 10 temp HP at the start of your turns",
+   "identifier": "boon-of-the-bright-sun"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of the Furious Storm",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Lightning/Thunder Resistance (Immunity while Bloodied); Disadvantage on saves against your Lightning/Thunder spells",
+   "identifier": "boon-of-the-furious-storm"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of the Iron Mind",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Unshakable Focus: damage never breaks your Concentration",
+   "identifier": "boon-of-the-iron-mind"
+  },
+  {
+   "group": "Epic Boon",
    "name": "Boon of the Night Spirit",
    "source": "SRD",
    "category": "done",
    "priority": 3,
    "note": "Resistance (not Psychic/Radiant) only outside Bright Light, checked against the scene lighting (module rule); Merge with Shadows makes you Invisible until you act",
    "identifier": "boon-of-the-night-spirit"
+  },
+  {
+   "group": "Epic Boon",
+   "name": "Boon of the Soul Drinker",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Cold/Necrotic Resistance; Siphon Life - Reaction regain 50 HP when an enemy within 120 ft drops to 0 (1/SR, asked)",
+   "identifier": "boon-of-the-soul-drinker"
   },
   {
    "group": "Epic Boon",

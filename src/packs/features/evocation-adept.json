@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtEvocAdept00",
+  "name": "Evocation Adept",
+  "type": "feat",
+  "img": "icons/magic/fire/explosion-fireball-large-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Additional Spells:</strong> Chromatic Orb, Shatter, Fireball, Vitriolic Sphere and Cone of Cold are always prepared once you have slots of that level (add them from the compendium). <strong>Fueled Evocation:</strong> once per turn when an Evocation spell you cast deals damage, the module offers to roll up to two of your unspent Hit Point Dice and add them to the damage; those dice are spent.</p>",
+      "chat": ""
+    },
+    "identifier": "evocation-adept",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Spellcasting or Pact Magic Feature",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Fueled Evocation offered by the module on Evocation spell damage (once per turn)."
+      }
+    }
+  }
+}
