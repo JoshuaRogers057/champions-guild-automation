@@ -126,6 +126,12 @@ async function flashOfGenius(tDoc, total, dc, what) {
     if (!(await askOwner(a, `Flash of Genius: ${a.name}`, `<p>${tDoc.name} fails a DC ${dc} ${what} (${total}). Use your Reaction to add +${bonus}?</p>`))) continue;
     await spend(it); await useReaction(a);
     say(a, `<strong>Flash of Genius:</strong> ${tDoc.name}'s ${what} is now ${total + bonus} (DC ${dc}) - ${total + bonus >= dc ? "a success" : "still a failure"}.`);
+    // Ingenious Movement (Cartographer 9): a 30-ft teleport for you or the creature
+    if (feat(a, "ingenious-movement")) {
+      const who = await askChoice(a, `Ingenious Movement: ${a.name}`, "<p>Teleport someone up to 30 ft as part of the Reaction?</p>",
+        [{ action: "me", label: h.name, default: true }, ...(h !== tDoc ? [{ action: "them", label: tDoc.name }] : []), { action: "none", label: "No" }]);
+      if (who === "me") await blinkNextMove(a, "Ingenious Movement", 30); else if (who === "them") await blinkNextMove(tDoc.actor, "Ingenious Movement", 30);
+    }
     return bonus;
   }
   return 0;
@@ -288,13 +294,28 @@ Hooks.on("midi-qol.RollComplete", async (workflow) => {
       if (sp && await askOwner(actor, `Spirits from Beyond: ${actor.name}`, `<p>Call forth a random spirit (roll your d${bardicDie(actor)} Bardic Inspiration die)?</p>`)) {
         const r = await new Roll(`1d${bardicDie(actor)}`).evaluate();
         await r.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Spirits from Beyond: ${SPIRITS[r.total - 1]}` });
-        await channel(sp, r.total);
+        let n = r.total;
+        // Mystical Connection (College of Spirits 14): roll twice and choose; doubles let you pick any spirit
+        if (feat(actor, "mystical-connection")) {
+          const r2 = await new Roll(`1d${bardicDie(actor)}`).evaluate();
+          await r2.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Mystical Connection: ${SPIRITS[r2.total - 1]}` });
+          const opts = r2.total === r.total ? SPIRITS.map((_, i) => i + 1) : [r.total, r2.total];
+          const p = await askChoice(actor, `Mystical Connection: ${actor.name}`, `<p>${r2.total === r.total ? "Doubles - choose any spirit." : "Choose one of the two spirits."}</p>`, opts.map((k, i) => ({ action: String(k), label: `${k}. ${SPIRITS[k - 1]}`, default: i === 0 })));
+          if (opts.includes(Number(p))) n = Number(p);
+        }
+        await channel(sp, n);
       }
       const moon = feat(actor, "moons-inspiration");
       if (moon && await askOwner(actor, `Inspired Eclipse: ${actor.name}`, "<p>Turn Invisible (until the start of your next turn, or until you attack, deal damage or cast a spell) and teleport up to 30 ft?</p>")) {
         await addEffect(actor, await statusEffect("invisible", { name: "Inspired Eclipse (Invisible)", origin: moon.uuid, duration: { value: null, units: "rounds", expiry: "sourceStart" },
           flags: { dae: { stackable: "noneName", specialDuration: ["1Attack", "1Spell"] } } }));
         await blinkNextMove(actor, "Inspired Eclipse", 30);
+        const rec = targetsOf(workflow)[0];
+        if (feat(actor, "eventides-splendor") && rec && rec.actor !== actor && await askOwner(rec.actor, `Shadow of the New Moon: ${rec.name}`, "<p>Turn Invisible until the start of your next turn and use your Reaction to teleport up to 30 ft?</p>")) {
+          if (canReact(rec.actor)) await useReaction(rec.actor);
+          await addEffect(rec.actor, await statusEffect("invisible", { name: "Shadow of the New Moon (Invisible)", flags: { dae: { stackable: "noneName", specialDuration: ["turnStart"] } } }));
+          await blinkNextMove(rec.actor, "Shadow of the New Moon", 30);
+        }
       }
     }
 
@@ -423,11 +444,16 @@ Hooks.on("midi-qol.DamageRollComplete", async (workflow) => {
       await bonusRoll(workflow, classLevel(actor, "ranger") >= 11 ? "1d6" : "1d4", "cold", "Polar Strikes");
     // Lunar Vitality: once per turn, spend a Bardic Inspiration die to add it to a spell's healing
     const moon = feat(actor, "moons-inspiration"), bi = biItem(actor);
-    if (moon && healing && item?.type === "spell" && bi && usesOf(bi) > 0 && !usedThisTurn("lunar-vitality", actor)
-      && await askOwner(actor, `Lunar Vitality: ${actor.name}`, `<p>Spend a Bardic Inspiration die to add 1d${bardicDie(actor)} to ${item.name}'s healing (+10 ft Speed for the creature)?</p>`)) {
+    const fullMoon = !!feat(actor, "eventides-splendor");
+    let lunar = null;
+    if (moon && healing && item?.type === "spell" && ((bi && usesOf(bi) > 0) || fullMoon) && !usedThisTurn("lunar-vitality", actor)) {
+      const opts = [...(bi && usesOf(bi) > 0 ? [{ action: "bi", label: `Bardic Inspiration (1d${bardicDie(actor)})`, default: !fullMoon }] : []), ...(fullMoon ? [{ action: "d6", label: "Full Moon (1d6, free)", default: true }] : []), { action: "none", label: "No" }];
+      lunar = await askChoice(actor, `Lunar Vitality: ${actor.name}`, `<p>Add to ${item.name}'s healing (+10 ft Speed for the creature)?</p>`, opts);
+    }
+    if (lunar === "bi" || lunar === "d6") {
       markTurn("lunar-vitality", actor);
-      await spend(bi);
-      await bonusRoll(workflow, `1d${bardicDie(actor)}`, "healing", "Lunar Vitality");
+      if (lunar === "bi") await spend(bi);
+      await bonusRoll(workflow, lunar === "bi" ? `1d${bardicDie(actor)}` : "1d6", "healing", "Lunar Vitality");
       for (const t of targetsOf(workflow)) await addEffect(t.actor, { name: "Lunar Vitality (+10 ft Speed)", img: "icons/magic/nature/moon-crescent.webp", origin: moon.uuid, transfer: false,
         system: { changes: [chg("system.attributes.movement.walk", "10", "add")] }, flags: { dae: { stackable: "noneName", specialDuration: ["turnEnd"] } } });
     }
@@ -532,6 +558,12 @@ Hooks.on("midi-qol.preAttackRollConfig", async (workflow) => {
       if (!(await askOwner(d.actor, `Deflect Attack: ${d.name}`, `<p>${atk.name} attacks ${tDoc.name}. Use the defender's Reaction to give the attack Disadvantage?</p>`))) continue;
       await useReaction(d.actor);
       tr.disadvantage?.add?.("deflect-attack", "Deflect Attack");
+      const maker = summonerOf(d.actor);
+      if (maker && feat(maker, "improved-defender")) {
+        const r = await new Roll(`1d4 + ${Math.max(0, mod(maker, "int"))}`).evaluate();
+        await MidiQOL.applyTokenDamage([{ value: r.total, type: "force" }], r.total, new Set([atk.object ?? atk]), null, new Set(), {});
+        await r.toMessage({ speaker: ChatMessage.getSpeaker({ actor: d.actor }), flavor: `Improved Deflection: ${atk.name} takes ${r.total} Force damage` });
+      }
       say(d.actor, `<strong>Deflect Attack:</strong> ${d.name} hampers ${atk.name}'s attack.`);
       break;
     }
@@ -589,7 +621,10 @@ Hooks.on("createToken", async (tokenDoc) => {
     const origin = tokenDoc.actor?.flags?.dnd5e?.summon?.origin;
     if (!origin || !ONE_AT_A_TIME.includes(fromUuidSync(origin)?.system?.identifier)) return;
     for (const scene of game.scenes.contents) {
-      const old = scene.tokens.filter((t) => t.id !== tokenDoc.id && t.actor?.flags?.dnd5e?.summon?.origin === origin);
+      let old = scene.tokens.filter((t) => t.id !== tokenDoc.id && t.actor?.flags?.dnd5e?.summon?.origin === origin);
+      // Fortified Position (Artillerist 15): two cannons at once - only the oldest goes when a third appears
+      const maker = fromUuidSync(origin)?.actor;
+      if (fromUuidSync(origin)?.system?.identifier === "eldritch-cannon" && feat(maker, "fortified-position")) old = old.slice(0, Math.max(0, old.length - 1));
       if (old.length) await scene.deleteEmbeddedDocuments("Token", old.map((t) => t.id)).catch(() => {});
     }
   } catch (err) { console.warn(`${MODULE_ID} | companion replacement failed`, err); }
@@ -806,6 +841,7 @@ async function afterDamage(workflow, atk) {
         if (!(await askOwner(s.actor, `Bloodthirst: ${s.name}`, `<p>${tDoc.name} is Bloodied. Use your Reaction to teleport next to it and make a melee attack? (${usesOf(bt)} use(s) left)</p>`))) continue;
         await spend(bt); await useReaction(s.actor);
         await teleportNextTo(s, tDoc);
+        if (feat(s.actor, "aura-of-malevolence")) await malevolence(s, tDoc);
         const a = meleeWeaponAttack(s.actor);
         if (a) setTimeout(() => MidiQOL.completeActivityUse(a, { midiOptions: { targetUuids: [tDoc.uuid], workflowOptions: { targetConfirmation: "none" } } }, { configure: false }, {}).catch(() => {}), 800);
         break;
@@ -854,7 +890,7 @@ async function wails(actor, workflow) {
   const t = others.find((o) => o.id === pick);
   if (!t) return;
   await spend(knell ? tokens : wf);
-  await runAct(wf, "wails-damage", [t], { formula: `${n}d6` });
+  await runAct(wf, "wails-damage", feat(actor, "deaths-friend") ? [t, first] : [t], { formula: `${n}d6` });
 }
 
 // ------------------------------------------------------------------ Spellfire Burst: after spending Sorcery Points on your turn
@@ -977,3 +1013,16 @@ Hooks.on("updateToken", async (doc, changes) => {
 // Shared with class-rules-books-p2.js
 export { runAct, bonusRoll, heal, tempHP, removeEffects, removeStatus, statusEffect, cdItem, biItem, spItem, summonOrigin, summonerOf, hits, targetsOf, sceneTokens, tokensOf,
   hostile, myTurn, mod, usesOf, alive, isAttack, isWeaponAttack, rangedAttack, meleeAttack, hidden, shotDie, artificerSpell, onceKey, rollTypes, retotal, cap, asGM };
+
+// ------------------------------------------------------------------ Aura of Malevolence (Scion of the Three 13): damage ignoring Resistance
+async function malevolence(s, near) {
+  const type = s.actor.effects.find((e) => e.flags?.world?.cgaAllegiance)?.system?.changes?.find((c) => c.key === "system.traits.dr.value")?.value ?? "necrotic";
+  const dmg = Math.max(1, mod(s.actor, "int"));
+  await new Promise((r) => setTimeout(r, 400));
+  const me = tokensOf(s.actor)[0] ?? s;
+  for (const o of sceneTokens(me).filter((x) => x.actor && x !== me && alive(x.actor) && hostile(x, me) && edgeDistance(x, me, me.parent) <= 10)) {
+    const hp = hpOf(o.actor), temp = Number(hp.temp ?? 0), fromTemp = Math.min(temp, dmg);
+    await updateActor(o.actor, { "system.attributes.hp.temp": temp - fromTemp, "system.attributes.hp.value": Math.max(0, Number(hp.value) - (dmg - fromTemp)) });
+    say(s.actor, `<strong>Aura of Malevolence:</strong> ${o.name} takes ${dmg} ${type} damage (ignores Resistance).`);
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "_id": "cgaCbsplintereds",
+  "name": "Splintered Summons",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you summon a spirit with a slot (Summon Aberration, Summon Beast, ...), the module offers to split it: a second copy appears next to it and both have half the HP. Once per Long Rest; restore it with a level 5+ slot (activity).</p>",
+      "chat": ""
+    },
+    "identifier": "splintered-summons",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Conjurer 14",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaCbSplintRst00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "spellSlots",
+              "value": "1",
+              "target": "5",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": true,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbSplintRst00",
+        "type": "utility",
+        "name": "Restore Splintered Summons (Level 5+ Slot)",
+        "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "No action required",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "splintered-summons-restore"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Split summon prompt (module, 1/LR); restore with a level 5+ slot."
+      }
+    }
+  }
+}

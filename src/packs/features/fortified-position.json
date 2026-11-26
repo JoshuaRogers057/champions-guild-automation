@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbfortifiedpo",
+  "name": "Fortified Position",
+  "type": "feat",
+  "img": "icons/weapons/guns/gun-blunderbuss-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Double Firepower:</strong> you can have two cannons at once (the module keeps both; a third replaces the oldest). <strong>Shimmering Field:</strong> you and your allies within 10 ft of one of your cannons have Half Cover (+2 AC and DEX saves, module aura).</p>",
+      "chat": ""
+    },
+    "identifier": "fortified-position",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Artillerist 15",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Two cannons and the Half Cover aura (module)."
+      }
+    }
+  }
+}

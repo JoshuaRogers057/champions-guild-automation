@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbpotentstone",
+  "name": "Potent Stone",
+  "type": "feat",
+  "img": "icons/commodities/gems/gem-rough-cushion-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your Transmuter's Stone can have two benefits (two different Resistances allowed), and adds Mighty Build (Advantage on STR saves) and Tremorsense 30 ft to the options (module).</p>",
+      "chat": ""
+    },
+    "identifier": "potent-stone",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Transmuter 10",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Two stone benefits and the new options (module)."
+      }
+    }
+  }
+}

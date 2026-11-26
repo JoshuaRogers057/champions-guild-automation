@@ -1,0 +1,56 @@
+{
+  "_id": "cgaCbcrownofspel",
+  "name": "Crown of Spellfire",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you use Innate Sorcery, the module offers the crown for its duration: Fly 60 ft (hover); <strong>Burning Life Force</strong> - once per turn when hit, spend up to CHA modifier Hit Point Dice to reduce the damage (asked); <strong>Spell Avoidance</strong> - spell saves for half damage deal none on a success and half on a failure. Once per Long Rest, or spend 5 Sorcery Points (asked).</p>",
+      "chat": ""
+    },
+    "identifier": "crown-of-spellfire",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Spellfire Sorcery 18",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Crown effects after Innate Sorcery (module)."
+      }
+    }
+  }
+}

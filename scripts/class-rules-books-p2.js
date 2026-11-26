@@ -544,19 +544,29 @@ async function rallyingSurge(actor, me) {
 // ------------------------------------------------------------------ Transmuter's Stone
 async function transmuterStone(actor, feature, bearerTok) {
   const bearer = bearerTok?.actor ?? actor;
-  const p = await askChoice(actor, `Transmuter's Stone: ${actor.name}`, `<p>Choose the stone's benefit for ${bearer.name}.</p>`,
-    [{ action: "darkvision", label: "Darkvision 60 ft", default: true }, { action: "resistance", label: "Resistance" }, { action: "speed", label: "+10 ft Speed" }]);
-  let change, label;
-  if (p === "resistance") {
-    const types = ["acid", "cold", "fire", "lightning", "poison", "thunder"];
-    const t = await askChoice(actor, "Transmuter's Stone", "<p>Which damage type?</p>", types.map((x, i) => ({ action: x, label: cap(x), default: i === 0 })));
-    const type = types.includes(t) ? t : "fire";
-    change = chg("system.traits.dr.value", type, "add"); label = `${cap(type)} Resistance`;
-  } else if (p === "speed") { change = chg("system.attributes.movement.walk", "10", "add"); label = "+10 ft Speed"; }
-  else {
-    const dv = Number(bearer.system.attributes.senses?.ranges?.darkvision ?? 0);
-    change = chg("system.attributes.senses.ranges.darkvision", String(dv ? dv + 60 : 60), "upgrade"); label = "Darkvision";
+  // Potent Stone (Transmuter 10): two benefits, plus Mighty Build and Tremorsense
+  const potent = !!feat(actor, "potent-stone");
+  const changes = [], labels = [], picked = [], resisted = [];
+  for (let i = 0; i < (potent ? 2 : 1); i++) {
+    const opts = [["darkvision", "Darkvision 60 ft"], ["resistance", "Resistance"], ["speed", "+10 ft Speed"], ...(potent ? [["mighty", "Mighty Build"], ["tremor", "Tremorsense 30 ft"]] : [])]
+      .filter(([k]) => k === "resistance" || !picked.includes(k));
+    const p = await askChoice(actor, `Transmuter's Stone: ${actor.name}`, `<p>Choose ${potent ? `benefit ${i + 1} of 2` : "the stone's benefit"} for ${bearer.name}.</p>`, opts.map(([k, l], j) => ({ action: k, label: l, default: j === 0 })));
+    const k = opts.some(([x]) => x === p) ? p : opts[0][0];
+    picked.push(k);
+    if (k === "resistance") {
+      const types = ["acid", "cold", "fire", "lightning", "poison", "thunder"].filter((x) => !resisted.includes(x));
+      const t = await askChoice(actor, "Transmuter's Stone", "<p>Which damage type?</p>", types.map((x, j) => ({ action: x, label: cap(x), default: j === 0 })));
+      const type = types.includes(t) ? t : types[0];
+      resisted.push(type); changes.push(chg("system.traits.dr.value", type, "add")); labels.push(`${cap(type)} Resistance`);
+    } else if (k === "speed") { changes.push(chg("system.attributes.movement.walk", "10", "add")); labels.push("+10 ft Speed"); }
+    else if (k === "mighty") { changes.push(chg("flags.midi-qol.advantage.save.str", "1")); labels.push("Mighty Build"); }
+    else if (k === "tremor") { changes.push(chg("system.attributes.senses.ranges.tremorsense", "30", "upgrade")); labels.push("Tremorsense"); }
+    else {
+      const dv = Number(bearer.system.attributes.senses?.ranges?.darkvision ?? 0);
+      changes.push(chg("system.attributes.senses.ranges.darkvision", String(dv ? dv + 60 : 60), "upgrade")); labels.push("Darkvision");
+    }
   }
+  const label = labels.join(", "), change = changes;
   for (const a of [...game.actors.contents, ...game.scenes.contents.flatMap((s) => s.tokens.contents.map((t) => t.actor).filter((x) => x?.isToken))]) {
     const old = a?.items?.filter((i) => i.flags?.world?.cgaStone === actor.uuid).map((i) => i.id) ?? [];
     if (old.length && a.isOwner) await a.deleteEmbeddedDocuments("Item", old).catch(() => {});
@@ -564,7 +574,7 @@ async function transmuterStone(actor, feature, bearerTok) {
   const holder = bearer.isOwner ? bearer : actor;
   await holder.createEmbeddedDocuments("Item", [{ name: `Transmuter's Stone (${label})`, type: "loot", img: "icons/commodities/gems/gem-rough-cushion-green.webp",
     system: { description: { value: `<p>Made by ${actor.name}'s Transmuter's Stone: the bearer has proficiency in Constitution saving throws and ${label}.</p>` }, quantity: 1 },
-    effects: [{ name: `Transmuter's Stone (${label})`, img: "icons/commodities/gems/gem-rough-cushion-green.webp", transfer: true, system: { changes: [chg("system.abilities.con.proficient", "1", "upgrade"), change] } }],
+    effects: [{ name: `Transmuter's Stone (${label})`, img: "icons/commodities/gems/gem-rough-cushion-green.webp", transfer: true, system: { changes: [chg("system.abilities.con.proficient", "1", "upgrade"), ...change] } }],
     flags: { world: { cgaStone: actor.uuid } } }]);
   say(actor, `<strong>Transmuter's Stone:</strong> ${label} + CON save proficiency${holder === bearer ? ` for ${bearer.name}` : ` (in ${actor.name}'s inventory - hand it to ${bearer.name})`}.`);
 }

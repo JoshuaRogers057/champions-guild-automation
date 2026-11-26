@@ -1,0 +1,434 @@
+{
+  "_id": "cgaCbsemblanceof",
+  "name": "Semblance of Life",
+  "type": "feat",
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action, vestige within 90 ft: summon the spirit form that matches your vestige (Celestial, Fiendish or Undead Spirit at level = half your Warlock level) - the module puts it in the vestige's place with the vestige's HP plus the spirit's HP as temp HP. When the hour ends, summon your vestige again. Once per Long Rest.</p>",
+      "chat": ""
+    },
+    "identifier": "semblance-of-life",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Vestige Patron 14",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaCbSembCel0000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbSembCel0000",
+        "type": "summon",
+        "name": "Semblance of Life (Celestial vestige)",
+        "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "min(9, floor(@classes.warlock.levels / 2))",
+          "hd": "",
+          "hp": "10 * (min(9, floor(@classes.warlock.levels / 2)) - 5)",
+          "attackDamage": "min(9, floor(@classes.warlock.levels / 2))",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "profiles": [
+          {
+            "_id": "cgaCbpfSembCel00",
+            "count": "",
+            "name": "Celestial Spirit (Avenger)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumCelestAve0",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "cgaCbpfSembCel01",
+            "count": "",
+            "name": "Celestial Spirit (Defender)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumCelestDef0",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "midiProperties": {
+          "identifier": "semblance-of-life"
+        }
+      },
+      "cgaCbSembFie0000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbSembFie0000",
+        "type": "summon",
+        "name": "Semblance of Life (Fiend vestige)",
+        "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "min(9, floor(@classes.warlock.levels / 2))",
+          "hd": "",
+          "hp": "15 * (min(9, floor(@classes.warlock.levels / 2)) - 6)",
+          "attackDamage": "min(9, floor(@classes.warlock.levels / 2))",
+          "saveDamage": "min(9, floor(@classes.warlock.levels / 2))",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "profiles": [
+          {
+            "_id": "cgaCbpfSembFie00",
+            "count": "",
+            "name": "Fiendish Spirit (Demon)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumFiendDem00",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "cgaCbpfSembFie01",
+            "count": "",
+            "name": "Fiendish Spirit (Devil)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumFiendDev00",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "cgaCbpfSembFie02",
+            "count": "",
+            "name": "Fiendish Spirit (Yugoloth)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumFiendYug00",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "midiProperties": {
+          "identifier": "semblance-of-life"
+        }
+      },
+      "cgaCbSembUnd0000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbSembUnd0000",
+        "type": "summon",
+        "name": "Semblance of Life (Undead vestige)",
+        "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "min(9, floor(@classes.warlock.levels / 2))",
+          "hd": "",
+          "hp": "10 * (min(9, floor(@classes.warlock.levels / 2)) - 3)",
+          "attackDamage": "min(9, floor(@classes.warlock.levels / 2))",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "profiles": [
+          {
+            "_id": "cgaCbpfSembUnd00",
+            "count": "",
+            "name": "Undead Spirit (Ghostly)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumUndeadGho0",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "cgaCbpfSembUnd01",
+            "count": "",
+            "name": "Undead Spirit (Putrid)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumUndeadPut0",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "cgaCbpfSembUnd02",
+            "count": "",
+            "name": "Undead Spirit (Skeletal)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumUndeadSke0",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "midiProperties": {
+          "identifier": "semblance-of-life"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Spirit-form summons; HP/temp HP swap with the vestige (module)."
+      }
+    }
+  }
+}

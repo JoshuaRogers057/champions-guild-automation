@@ -1,19 +1,19 @@
 {
-  "_id": "cgaFtShapeShiftr",
+  "_id": "cgaCbshapeshifte",
   "name": "Shape-Shifter",
   "type": "feat",
-  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> Action: change your appearance and voice (and size between Medium and Small). While shape-shifted you have Advantage on Charisma checks. Take an action to revert (delete the effect).</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Polymorph is always prepared; cast it once per Long Rest without a slot (activity). Keeping your mind, mental scores, proficiencies and features when you polymorph yourself is set in the transformation dialog (keep mental, class features and feats).</p>",
       "chat": ""
     },
     "identifier": "shape-shifter",
     "type": {
-      "value": "race",
+      "value": "class",
       "subtype": ""
     },
-    "requirements": "",
+    "requirements": "Transmuter 10",
     "properties": [],
     "uses": {
       "max": "",
@@ -21,7 +21,7 @@
       "recovery": []
     },
     "activities": {
-      "cgaChangelingSSA": {
+      "cgaCbPolymorph00": {
         "sort": 0,
         "description": {
           "chatFlavor": ""
@@ -32,18 +32,26 @@
           "override": false,
           "special": ""
         },
-        "effects": [
-          {
-            "_id": "cgaChangelingSSE"
-          }
-        ],
+        "effects": [],
         "uses": {
           "spent": 0,
-          "recovery": [],
-          "max": ""
+          "max": "1",
+          "recovery": [
+            {
+              "period": "lr",
+              "type": "recoverAll"
+            }
+          ]
         },
         "consumption": {
-          "targets": [],
+          "targets": [
+            {
+              "type": "activityUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
           "scaling": {
             "allowed": false,
             "max": ""
@@ -77,15 +85,25 @@
           },
           "identifier": ""
         },
-        "_id": "cgaChangelingSSA",
-        "type": "utility",
-        "name": "Shape-Shift",
-        "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+        "_id": "cgaCbPolymorph00",
+        "type": "cast",
+        "name": "Polymorph (Shape-Shifter)",
+        "img": "icons/magic/control/silhouette-grow-shrink-blue.webp",
         "activation": {
           "type": "action",
           "value": 1,
           "condition": "",
           "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplPolymorph0",
+          "challenge": {
+            "override": false
+          },
+          "properties": [],
+          "spellbook": true,
+          "ability": "",
+          "level": null
         }
       }
     },
@@ -105,51 +123,14 @@
       "revision": 1
     }
   },
-  "effects": [
-    {
-      "_id": "cgaChangelingSSE",
-      "name": "Shape-Shifted",
-      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
-      "type": "base",
-      "transfer": false,
-      "disabled": false,
-      "description": "",
-      "statuses": [],
-      "tint": "#ffffff",
-      "origin": null,
-      "sort": 0,
-      "duration": {
-        "value": null,
-        "units": "seconds",
-        "expiry": null,
-        "expired": false
-      },
-      "system": {
-        "changes": [
-          {
-            "key": "flags.midi-qol.advantage.check.cha",
-            "value": "1",
-            "type": "override",
-            "priority": 20,
-            "phase": "initial"
-          }
-        ]
-      },
-      "flags": {
-        "dae": {
-          "stackable": "noneName",
-          "specialDuration": []
-        }
-      }
-    }
-  ],
+  "effects": [],
   "flags": {
     "midi-qol": {},
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.1",
-        "notes": "Champions Guild Automation: Shape-Shift applies the Advantage on Charisma checks until you revert."
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Polymorph 1/LR cast."
       }
     }
   }

@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbhonedspellf",
+  "name": "Honed Spellfire",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-skull-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Bolstering Flames adds your Sorcerer level and Radiant Fire deals 1d8 (built into Spellfire Burst from level 14).</p>",
+      "chat": ""
+    },
+    "identifier": "honed-spellfire",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Spellfire Sorcery 14",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Handled by Spellfire Burst."
+      }
+    }
+  }
+}

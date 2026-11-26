@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbingeniousmo",
+  "name": "Ingenious Movement",
+  "type": "feat",
+  "img": "icons/magic/movement/portal-vortex-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you use Flash of Genius, the module offers a 30-ft teleport to you or the creature you helped (its next move is a teleport).</p>",
+      "chat": ""
+    },
+    "identifier": "ingenious-movement",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Cartographer 9",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Teleport offered after Flash of Genius (module)."
+      }
+    }
+  }
+}

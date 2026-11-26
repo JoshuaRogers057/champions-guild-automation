@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbmysticalcon",
+  "name": "Mystical Connection",
+  "type": "feat",
+  "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When the module rolls on the Spirits from Beyond table, it rolls twice and lets you pick; doubles let you choose any spirit.</p>",
+      "chat": ""
+    },
+    "identifier": "mystical-connection",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "College of Spirits 14",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Two rolls / free choice on doubles (module)."
+      }
+    }
+  }
+}

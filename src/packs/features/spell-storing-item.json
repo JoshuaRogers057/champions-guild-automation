@@ -1,0 +1,124 @@
+{
+  "_id": "cgaCbspellstorin",
+  "name": "Spell-Storing Item",
+  "type": "feat",
+  "img": "icons/weapons/wands/wand-gem-violet.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> After a Long Rest, use the activity: pick one of your level 1-3 Artificer spells with a casting time of an action, and the module creates a Spell-Storing Item that casts it (2 x INT modifier uses, using your spellcasting ability; once per turn, by hand). Hand it to whoever holds the object. Using it again replaces the old one.</p>",
+      "chat": ""
+    },
+    "identifier": "spell-storing-item",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Artificer 11",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaCbStoreSpel00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbStoreSpel00",
+        "type": "utility",
+        "name": "Store a Spell (Long Rest)",
+        "img": "icons/weapons/wands/wand-gem-violet.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you finish a Long Rest",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "spell-storing"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Creates the stored-spell item (module)."
+      }
+    }
+  }
+}

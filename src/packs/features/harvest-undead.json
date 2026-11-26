@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbharvestunde",
+  "name": "Harvest Undead",
+  "type": "feat",
+  "img": "icons/magic/death/hand-dirt-undead-zombie.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Right after you become Bloodied (but not 0 HP), the module offers your Reaction: one of your Undead you can see drops to 0 HP and you regain HP equal to your Wizard level.</p>",
+      "chat": ""
+    },
+    "identifier": "harvest-undead",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Necromancer 10",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Undead-sacrifice Reaction (module)."
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "cgaCbumbralform0",
+  "name": "Umbral Form",
+  "type": "feat",
+  "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you use Innate Sorcery, the module offers the shadowy form for its duration: Resistance to all damage except Force and Radiant (incorporeal movement by hand). Once per Long Rest, or spend 6 Sorcery Points (asked).</p>",
+      "chat": ""
+    },
+    "identifier": "umbral-form",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shadow Sorcery 18",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Resistance form after Innate Sorcery (module)."
+      }
+    }
+  }
+}

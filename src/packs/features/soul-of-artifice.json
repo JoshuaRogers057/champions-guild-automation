@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbsoulofartif",
+  "name": "Soul of Artifice",
+  "type": "feat",
+  "img": "icons/magic/symbols/star-rising-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Cheat Death:</strong> when you drop to 0 HP and aren't killed outright, the module asks how many Uncommon or Rare replicated items to disintegrate - your HP become 20 x that number (remove the items by hand). <strong>Magical Guidance:</strong> a Short Rest restores all Flash of Genius uses while you're attuned to a magic item (module).</p>",
+      "chat": ""
+    },
+    "identifier": "soul-of-artifice",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Artificer 20",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Cheat Death prompt at 0 HP and Magical Guidance on a Short Rest (module)."
+      }
+    }
+  }
+}

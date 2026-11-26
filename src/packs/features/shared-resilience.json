@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbsharedresil",
+  "name": "Shared Resilience",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-glowing-triangle-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When an ally you can see within 60 ft fails a save, the module offers your Reaction and an Indomitable use: the ally rerolls with a bonus equal to your Fighter level.</p>",
+      "chat": ""
+    },
+    "identifier": "shared-resilience",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Banneret 15",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Ally save reroll (module, spends Indomitable)."
+      }
+    }
+  }
+}

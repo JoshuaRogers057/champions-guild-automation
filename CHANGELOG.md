@@ -3,6 +3,38 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.41.0
+
+Priority-3 class and subclass features for the Artificer and the book subclasses: 43 new CGA class features (1.0.0,
+Mass Apply), plus the new `scripts/class-rules-books-p3.js`. Every row on the class-feature tracker is now done or
+marked skip.
+
+- **Artificer**:
+  - **Magic Item Tinker**: charge an item with a slot, or drain one into a slot. **Spell-Storing Item** creates a
+    stored-spell item that casts without a slot. **Magic Item Master**: 6 attunements.
+  - **Soul of Artifice**: Cheat Death at 0 HP; Magical Guidance restores Flash of Genius on a Short Rest.
+  - **Alchemist**: Chemical Mastery (Alchemical Eruption +2d8 Force; Acid/Poison Resistance; Poisoned immunity).
+  - **Armorer**: Perfected Armor (bigger weapon dice, Huge Giant Stature, the Guardian pull Reaction, Infiltrator
+    glimmer and flight).
+  - **Artillerist**: Fortified Position (two cannons; Half Cover near them).
+  - **Battle Smith**: Improved Defender (Deflect Attack deals 1d4 + INT Force).
+  - **Cartographer**: Ingenious Movement (teleport after Flash of Genius), and Superior Atlas (Safe Haven; Find the
+    Path once per day).
+  - **Reanimator**: Refined Reanimation (Raise Dead once per day; Life Transfer).
+- **Bards**: Mystical Connection (roll twice; doubles pick any spirit) and Eventide's Splendor (the inspired ally also
+  turns Invisible and teleports; Lunar Vitality can use a free 1d6).
+- **Clerics**: Divine Reaper (Keeper of Souls) and Divine Foreknowledge. Each comes back with a level 6+ slot.
+- **Fighters**: Indomitable Teleport, Masterful Shots, Shared Resilience and Inspiring Commander.
+- **Oath of the Noble Genies**: Elemental Rebuke and Noble Scion (flight; Minor Wish turns a failed save or a missed
+  attack into a success).
+- **Rangers**: Ancient Might (Ominous Strikes, Persistent Wrath, Timeless) and Frozen Haunt.
+- **Rogues**: Voice of Death, Ghost Walk, Death's Friend, Aura of Malevolence and Dread Incarnate.
+- **Sorcerers**: Shadow Walk, Umbral Form, Honed Spellfire and Crown of Spellfire (Burning Life Force, Spell
+  Avoidance, flight).
+- **Warlocks**: Superior Dread, Vestige Recovery and Semblance of Life (the spirit takes the vestige's place).
+- **Wizards**: Song of Victory, Splintered Summons, Instinctive Charm, Harvest Undead, Death's Master (Bolster /
+  Extinguish Undead), Potent Stone, Shape-Shifter and Master Transmuter.
+
 ## 0.40.0
 
 Priority-2 class and subclass features for the Artificer and the book subclasses: 44 new CGA class features (1.0.0,

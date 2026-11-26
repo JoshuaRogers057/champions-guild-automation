@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbeventidessp",
+  "name": "Eventide's Splendor",
+  "type": "feat",
+  "img": "icons/magic/nature/moon-crescent.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Shadow of the New Moon:</strong> Inspired Eclipse also offers the inspired creature Invisibility (until its next turn) and a 30-ft teleport with its Reaction. <strong>Vibrance of the Full Moon:</strong> Lunar Vitality can use 1d6 instead of spending a Bardic Inspiration die (module).</p>",
+      "chat": ""
+    },
+    "identifier": "eventides-splendor",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "College of the Moon 14",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Recipient Invisibility + teleport and the free 1d6 Lunar Vitality (module)."
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbdeathsfrien",
+  "name": "Death's Friend",
+  "type": "feat",
+  "img": "icons/magic/death/projectile-skull-fire-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Death's Lament:</strong> Wails from the Grave also hits the first creature (module). <strong>Draw of Death:</strong> rolling Initiative gives you a soul trinket if you have none (module).</p>",
+      "chat": ""
+    },
+    "identifier": "deaths-friend",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Phantom 17",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Wails hits both creatures; trinket on Initiative (module)."
+      }
+    }
+  }
+}

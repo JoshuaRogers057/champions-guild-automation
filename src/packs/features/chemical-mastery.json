@@ -1,0 +1,102 @@
+{
+  "_id": "cgaCbchemicalmas",
+  "name": "Chemical Mastery",
+  "type": "feat",
+  "img": "icons/tools/laboratory/mortar-powder-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Alchemical Eruption:</strong> once per turn, when your Artificer spell deals Acid, Fire or Poison damage, the module adds 2d8 Force. <strong>Chemical Resistance:</strong> Acid and Poison Resistance, Poisoned immunity. <strong>Conjured Cauldron:</strong> Tasha's Bubbling Cauldron (1/LR, by hand - it isn't in the free compendium).</p>",
+      "chat": ""
+    },
+    "identifier": "chemical-mastery",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Alchemist 15",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxChemMas00",
+      "name": "Chemical Resistance",
+      "img": "icons/tools/laboratory/mortar-powder-green.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "poisoned",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Resistances (effect); Alchemical Eruption (module)."
+      }
+    }
+  }
+}

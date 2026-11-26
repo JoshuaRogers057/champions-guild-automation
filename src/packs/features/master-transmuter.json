@@ -1,0 +1,202 @@
+{
+  "_id": "cgaCbmastertrans",
+  "name": "Master Transmuter",
+  "type": "feat",
+  "img": "icons/commodities/gems/gem-rough-cushion-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Consume your Transmuter's Stone (the module removes it unless you spend a level 7+ slot, asked): <strong>Panacea</strong> (touch: heal half the target's HP maximum and end Poisoned and Petrified - curses by hand) or <strong>Restore Life</strong> (cast Raise Dead without a slot). Major Transformation and Restore Youth are by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "master-transmuter",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Transmuter 14",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaCbPanacea0000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbPanacea0000",
+        "type": "utility",
+        "name": "Panacea",
+        "img": "icons/commodities/gems/gem-rough-cushion-green.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "panacea"
+        }
+      },
+      "cgaCbMasterRai00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMasterRai00",
+        "type": "cast",
+        "name": "Restore Life (Raise Dead)",
+        "img": "icons/commodities/gems/gem-rough-cushion-green.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplRaiseDead0",
+          "challenge": {
+            "override": false
+          },
+          "properties": [],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "master-raise"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Panacea and Restore Life activities; stone consumed by the module."
+      }
+    }
+  }
+}

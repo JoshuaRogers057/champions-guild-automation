@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbindomitable",
+  "name": "Indomitable Teleport",
+  "type": "feat",
+  "img": "icons/magic/movement/portal-vortex-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> After you use Indomitable and succeed, the module offers a 60-ft teleport (your next move).</p>",
+      "chat": ""
+    },
+    "identifier": "indomitable-teleport",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Arcane Archer 15",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Teleport offered after Indomitable (module)."
+      }
+    }
+  }
+}

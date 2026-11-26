@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbsuperiordre",
+  "name": "Superior Dread",
+  "type": "feat",
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> While in Form of Dread: Resistance to Bludgeoning, Piercing and Slashing, and a Fly Speed equal to your Speed (hover) (module). Component-free casting and moving through objects are by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "superior-dread",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Undead Patron 14",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Form of Dread extras (module)."
+      }
+    }
+  }
+}

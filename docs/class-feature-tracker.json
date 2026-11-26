@@ -62,7 +62,7 @@
    "level": 6,
    "name": "Magic Item Tinker",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Charge Magic Item (BA, spend a slot: item regains charges = slot level) and Drain Magic Item (item vanishes, gain a level 1/2 slot, 1/LR) activities; Transmute by hand",
    "identifier": "magic-item-tinker"
@@ -95,7 +95,7 @@
    "level": 11,
    "name": "Spell-Storing Item",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Long Rest activity: pick a level 1-3 Artificer action spell and create a stored-spell item with a cast activity (2 x INT uses, once per turn)",
    "identifier": "spell-storing-item"
@@ -117,7 +117,7 @@
    "level": 18,
    "name": "Magic Item Master",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Attunement limit 6",
    "identifier": "magic-item-master"
@@ -139,7 +139,7 @@
    "level": 20,
    "name": "Soul of Artifice",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Cheat Death - at 0 HP, asked how many replicated Uncommon/Rare items to disintegrate (HP = 20 x items); Magical Guidance - Short Rest restores all Flash of Genius uses while attuned to an item",
    "identifier": "soul-of-artifice"
@@ -205,7 +205,7 @@
    "level": 15,
    "name": "Chemical Mastery",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Alchemical Eruption +2d8 Force once per turn on an Acid/Fire/Poison Artificer spell; Acid/Poison Resistance + Poisoned immunity; Tasha's Bubbling Cauldron 1/LR cast activity",
    "identifier": "chemical-mastery"
@@ -282,7 +282,7 @@
    "level": 15,
    "name": "Perfected Armor",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Bigger model weapon dice; Giant Stature Huge/+10 reach/STR Advantage; Guardian end-of-turn pull Reaction (STR save, pull 25 ft, attack); Infiltrator glimmer (Disadvantage on attacks vs you) + BA flight",
    "identifier": "perfected-armor"
@@ -348,7 +348,7 @@
    "level": 15,
    "name": "Fortified Position",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Two cannons per creation; Half Cover (+2 AC/DEX saves) for you and allies within 10 ft of a cannon",
    "identifier": "fortified-position"
@@ -425,7 +425,7 @@
    "level": 15,
    "name": "Improved Defender",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Arcane Jolt 4d6; Deflect Attack deals 1d4+INT Force to the attacker",
    "identifier": "improved-defender"
@@ -491,7 +491,7 @@
    "level": 9,
    "name": "Ingenious Movement",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "After Flash of Genius, offer a 30-ft teleport to you or a willing creature",
    "identifier": "ingenious-movement"
@@ -502,7 +502,7 @@
    "level": 15,
    "name": "Superior Atlas",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Safe Haven - a map holder dropping to 0 HP is asked to destroy its map (HP = 2 x Artificer level + teleport); Find the Path 1/LR cast activity",
    "identifier": "superior-atlas"
@@ -579,7 +579,7 @@
    "level": 15,
    "name": "Refined Reanimation",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Raise Dead 1/LR cast activity; Life Transfer Reaction (gain the companion's HP, companion dies with Death Burst); three modifications",
    "identifier": "refined-reanimation"
@@ -1305,7 +1305,7 @@
    "level": 14,
    "name": "Mystical Connection",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Roll twice on Spirits from Beyond and choose; doubles let you pick any spirit",
    "identifier": "mystical-connection"
@@ -1349,7 +1349,7 @@
    "level": 14,
    "name": "Eventide’s Splendor",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Inspired Eclipse also makes the recipient Invisible with a 30-ft teleport; Lunar Vitality can use 1d6 instead of a BI die",
    "identifier": "eventides-splendor"
@@ -1624,7 +1624,7 @@
    "level": 17,
    "name": "Divine Reaper",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Keeper of Souls - an enemy dying within 60 ft heals you or an ally 2 x Cleric level (1/SR); Enhanced Necromancy second target by hand",
    "identifier": "divine-reaper"
@@ -1679,7 +1679,7 @@
    "level": 17,
    "name": "Divine Foreknowledge",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "BA: Advantage on D20 Tests for 1 hour (1/LR, or a level 6+ slot)",
    "identifier": "divine-foreknowledge"
@@ -2493,7 +2493,7 @@
    "level": 15,
    "name": "Indomitable Teleport",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "After a successful Indomitable save, offer a 60-ft teleport",
    "identifier": "indomitable-teleport"
@@ -2504,7 +2504,7 @@
    "level": 18,
    "name": "Masterful Shots",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Reaction when missed: move half Speed without provoking, then a ranged attack against the attacker (asked)",
    "identifier": "masterful-shots"
@@ -2647,7 +2647,7 @@
    "level": 15,
    "name": "Shared Resilience",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Reaction when an ally within 60 ft fails a save: spend Indomitable, the ally rerolls with + Fighter level",
    "identifier": "shared-resilience"
@@ -2658,7 +2658,7 @@
    "level": 18,
    "name": "Inspiring Commander",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Group Recovery / Rallying Surge reach 60 ft; Charmed and Frightened immunity",
    "identifier": "inspiring-commander"
@@ -4055,7 +4055,7 @@
    "level": 15,
    "name": "Elemental Rebuke",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Reaction when hit: halve the damage and the attacker makes a DEX save, 2d10 + CHA of a chosen type (CHA uses/LR)",
    "identifier": "elemental-rebuke"
@@ -4066,7 +4066,7 @@
    "level": 20,
    "name": "Noble Scion",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "BA 10 minutes: Fly 60 ft hover; Minor Wish Reaction turns a failed D20 Test into a success for you or an ally in the aura (1/LR or a level 5 slot)",
    "identifier": "noble-scion"
@@ -4539,7 +4539,7 @@
    "level": 15,
    "name": "Ancient Might",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Ominous Strikes + WIS damage vs Frightened targets; Persistent Wrath (0 HP while transformed -> 2 x Ranger level, 1/LR or level 4+ slot); Exhaustion immunity",
    "identifier": "ancient-might"
@@ -4660,7 +4660,7 @@
    "level": 15,
    "name": "Frozen Haunt",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Hunter's Mark form: Cold immunity, 15-ft 2d4 Cold to chosen creatures on adopt and each turn start, Grappled/Prone/Restrained immunity (1/LR or level 4+ slot)",
    "identifier": "frozen-haunt"
@@ -5012,7 +5012,7 @@
    "level": 9,
    "name": "Voice of Death",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Speak with Dead cast activity without a slot (1/SR)",
    "identifier": "voice-of-death"
@@ -5023,7 +5023,7 @@
    "level": 13,
    "name": "Ghost Walk",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "BA 10 minutes: Fly 10 ft hover, attacks against you have Disadvantage (1/LR or destroy a trinket)",
    "identifier": "ghost-walk"
@@ -5034,7 +5034,7 @@
    "level": 17,
    "name": "Death’s Friend",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Wails also hits the first creature; Initiative gives a trinket when you have none",
    "identifier": "deaths-friend"
@@ -5078,7 +5078,7 @@
    "level": 13,
    "name": "Aura of Malevolence",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Bloodthirst teleport deals INT damage of your allegiance type to chosen creatures within 10 ft, ignoring Resistance",
    "identifier": "aura-of-malevolence"
@@ -5089,7 +5089,7 @@
    "level": 17,
    "name": "Dread Incarnate",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Short Rest restores one Bloodthirst use; Sneak Attack dice of 1-2 count as 3",
    "identifier": "dread-incarnate"
@@ -5639,7 +5639,7 @@
    "level": 14,
    "name": "Shadow Walk",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "BA teleport up to 120 ft (light check by hand)",
    "identifier": "shadow-walk"
@@ -5650,7 +5650,7 @@
    "level": 18,
    "name": "Umbral Form",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "With Innate Sorcery: Resistance to all but Force/Radiant (1/LR or 6 Sorcery Points); incorporeal movement by hand",
    "identifier": "umbral-form"
@@ -5694,7 +5694,7 @@
    "level": 14,
    "name": "Honed Spellfire",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Spellfire Burst upgrades (handled by level in Spellfire Burst)",
    "identifier": "honed-spellfire"
@@ -5705,7 +5705,7 @@
    "level": 18,
    "name": "Crown of Spellfire",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "With Innate Sorcery: Fly 60 hover, Burning Life Force (spend Hit Dice to cut a hit's damage, once per turn), Spell Avoidance (spell half-damage saves: none/half) (1/LR or 5 SP)",
    "identifier": "crown-of-spellfire"
@@ -6464,7 +6464,7 @@
    "level": 14,
    "name": "Superior Dread",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "In Form of Dread: B/P/S Resistance and Fly = Speed (hover); component-free casting by hand",
    "identifier": "superior-dread"
@@ -6508,7 +6508,7 @@
    "level": 10,
    "name": "Vestige Recovery",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Reaction when the vestige would drop to 0 HP: spend a Pact slot, it returns to max HP and teleports 30 ft (1/LR)",
    "identifier": "vestige-recovery"
@@ -6519,7 +6519,7 @@
    "level": 14,
    "name": "Semblance of Life",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Magic action: the vestige becomes the matching Summon Celestial/Fiend/Undead spirit (level = half Warlock level) for 1 hour with temp HP = spirit HP (1/LR)",
    "identifier": "semblance-of-life"
@@ -6739,7 +6739,7 @@
    "level": 14,
    "name": "Song of Victory",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "After casting an action spell, offer a BA weapon attack",
    "identifier": "song-of-victory"
@@ -6805,7 +6805,7 @@
    "level": 14,
    "name": "Splintered Summons",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Summon two spirits with halved HP (1/LR or a level 5+ slot)",
    "identifier": "splintered-summons"
@@ -6915,7 +6915,7 @@
    "level": 10,
    "name": "Instinctive Charm",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Reaction when hit within 30 ft: WIS save or the attack misses (redirect by hand); 1/LR, restored by an Enchantment slot spell",
    "identifier": "instinctive-charm"
@@ -7091,7 +7091,7 @@
    "level": 10,
    "name": "Harvest Undead",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Reaction on becoming Bloodied: drop one of your Undead to 0 HP and heal Wizard level (asked)",
    "identifier": "harvest-undead"
@@ -7102,7 +7102,7 @@
    "level": 14,
    "name": "Death’s Master",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Bolster Undead BA temp HP = Wizard level (1/LR); Extinguish Undead - your undead at 0 HP explode (10-ft DEX save, d6 per two Hit Dice, no Reactions)",
    "identifier": "deaths-master"
@@ -7157,7 +7157,7 @@
    "level": 10,
    "name": "Potent Stone",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Two stone benefits, adds Mighty Build (STR save Advantage) and Tremorsense 30",
    "identifier": "potent-stone"
@@ -7168,7 +7168,7 @@
    "level": 10,
    "name": "Shape-Shifter",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Polymorph 1/LR without a slot; self-Polymorph keeps INT/WIS/CHA, proficiencies and features",
    "identifier": "shape-shifter"
@@ -7179,7 +7179,7 @@
    "level": 14,
    "name": "Master Transmuter",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
    "note": "Consume the stone: Panacea (heal half max HP, end Poisoned/Petrified/curses) or Raise Dead cast; other options by hand",
    "identifier": "master-transmuter"
