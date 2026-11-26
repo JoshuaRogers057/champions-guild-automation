@@ -3,6 +3,25 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.30.0
+
+Priority-1 Origin feats granted by the non-Player's Handbook backgrounds (Arcana Unleashed, Eberron, Ravenloft,
+Forgotten Realms, Lorwyn, Astarion's Book of Hungers). They're module rules that find the feat on the character, so
+no Mass Apply is needed; only the new Cult of the Dragon Initiate item needs it.
+
+- **Adding to a failed save** (a Reaction, offered only when it could still turn the save into a success):
+  - **Arcane Omens**: +1d4 for you or an ally within 30 ft.
+  - **Aberrant Dragonmark** and **Transmuted Anatomy**: +1d4 to a CON save.
+  - **Survivor**'s Steel Yourself: +PB against Charmed or Frightened.
+- **Survivor**'s Hypervigilance: an Initiative d20 of 9 or lower is rerolled.
+- **Gathered Whispers**: the Unearthly Scream Reaction adds +PB AC against a hit.
+- **Spellfire Spark**: damage from a spell or magic item is reduced by 1d4, once per turn.
+- **Vampire Hunter**: the Vitality Ward Reaction reduces Necrotic damage by (PB)d6.
+- **Shadowmoor Hexer**: a creature you've Hexed takes Psychic damage equal to PB when it hits you.
+- **Cult of the Dragon Initiate** (1.0.0): Dragon's Terror (WIS save or Frightened). Inspired by Fear offers
+  Heroic Inspiration.
+- If a feat item has no uses of its own, the module counts them and resets them on rests.
+
 ## 0.29.0
 
 The last species traits (priority 3): every trait on the species tracker is now done or skipped. All are module rules

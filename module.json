@@ -20,7 +20,8 @@
     "scripts/item-rules.js",
     "scripts/item-rules-p2.js",
     "scripts/item-rules-p3.js",
-    "scripts/species-rules.js"
+    "scripts/species-rules.js",
+    "scripts/background-feats.js"
   ],
   "relationships": {
     "systems": [

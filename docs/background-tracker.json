@@ -716,9 +716,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Aberrant Dragonmark",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Aberrant Fortitude: Reaction +1d4 to a failed CON save (1/LR); Aberrant Surge on the feat's spell; spells from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Aberrant Fortitude - Reaction +1d4 to a failed CON save (1/LR); Aberrant Surge stays manual",
    "identifier": "aberrant-dragonmark"
   },
   {
@@ -756,9 +756,9 @@
    "sub": "Arcana Unleashed",
    "name": "Arcane Omens",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Reaction when you or a creature within 30 ft fails a save: +1d4 (PB/LR) - prompt; Guidance cantrip from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Reaction when you or an ally within 30 ft fails a save it could still pass - +1d4 (PB/LR)",
    "identifier": "arcane-omens"
   },
   {
@@ -806,9 +806,9 @@
    "sub": "Forgotten Realms: Heroes of Faerûn",
    "name": "Cult of the Dragon Initiate",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Dragon's Terror: Magic action, WIS save or Frightened until the end of your next turn (24 h immunity); Inspired by Fear: Heroic Inspiration",
+   "note": "CGA item + module rule (no mass apply; works on the character's own feat): Dragon's Terror (WIS save or Frightened); Inspired by Fear offers Heroic Inspiration (1/Short Rest)",
    "identifier": "cult-of-the-dragon-initiate"
   },
   {
@@ -846,9 +846,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Gathered Whispers",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Unearthly Scream: Reaction when hit, +PB AC against it (uses); Message/Augury from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Unearthly Scream - Reaction +PB AC against a hit that it would turn into a miss (PB/LR)",
    "identifier": "gathered-whispers"
   },
   {
@@ -1046,9 +1046,9 @@
    "sub": "Lorwyn",
    "name": "Shadowmoor Hexer",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Curse Magic: a creature you've Hexed that hits you takes Psychic = PB (once per turn); Hex from the sheet (module Hex)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): a creature you've Hexed that hits you takes Psychic = PB (once per turn)",
    "identifier": "shadowmoor-hexer"
   },
   {
@@ -1066,9 +1066,9 @@
    "sub": "Forgotten Realms: Heroes of Faerûn",
    "name": "Spellfire Spark",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Magic Absorption: once per turn, damage from a spell or magical effect -1d4; Bonus Action Sacred Flame PB/LR",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): once per turn, damage from a spell or magic item is reduced by 1d4 (Bonus Action Sacred Flame stays manual)",
    "identifier": "spellfire-spark"
   },
   {
@@ -1076,9 +1076,9 @@
    "sub": "Origin feat",
    "name": "Survivor",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Hypervigilance: reroll an Initiative d20 of 9 or lower; Steel Yourself: Reaction +PB to a failed save vs Charmed/Frightened (1/LR)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Hypervigilance rerolls an Initiative d20 of 9 or lower; Steel Yourself - Reaction +PB to a failed save vs Charmed/Frightened (1/LR)",
    "identifier": "survivor"
   },
   {
@@ -1116,9 +1116,9 @@
    "sub": "Arcana Unleashed",
    "name": "Transmuted Anatomy",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+5 ft Speed; Reaction +1d4 to a failed CON save (PB/LR); Advantage vs forced shape-shifting",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Reaction +1d4 to a failed CON save (PB/LR); the +5 ft Speed comes from the sheet",
    "identifier": "transmuted-anatomy"
   },
   {
@@ -1136,9 +1136,9 @@
    "sub": "Astarion’s Book of Hungers",
    "name": "Vampire Hunter",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Vitality Ward: Reaction, Necrotic damage reduced by (PB)d6 (1/SR); Advantage to escape grapples/restraints",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Vitality Ward - Reaction, Necrotic damage reduced by (PB)d6 (1/Short Rest)",
    "identifier": "vampire-hunter"
   },
   {
