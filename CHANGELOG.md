@@ -3,6 +3,36 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.38.0
+
+Priority-3 feats and the Epic Boons from Arcana Unleashed, Heroes of Faerûn and Astarion's Book of Hungers, as new CGA
+feats (1.0.0, Mass Apply). Every feat on the tracker is now done or marked skip.
+
+- **Epic Boons:**
+  - **Bloodshed**: Advantage on your next attack after an enemy drops; +PB damage once per turn while Bloodied.
+  - **Bountiful Health**: +5 to Temporary Hit Points you gain; Hit Point Dice heal their maximum.
+  - **Desperate Resilience** and **Furious Storm**: the Bloodied Resistance / Immunity switches on and off with your HP.
+    Furious Storm also gives Disadvantage on saves against your Lightning and Thunder spells.
+  - **Erupting Spellpower**: Spell Overload (dice of 1-2 become 3, damaged creatures fall Prone); the use comes back
+    when you roll Initiative.
+  - **Exquisite Radiance** and **Poison Mastery**: maximized Radiant (1/LR) and Poison (once per turn) damage.
+  - **Fluid Forms**: shape-shift into a CR 10 Beast, Humanoid or Monstrosity with the form's HP + 20 as temp HP.
+  - **Fortune's Favor**: reroll a failed save once per round.
+  - **Misty Escape**: drop to 1 HP instead of 0 and turn to mist, regaining 10 HP each turn.
+  - **Revelry** and **Iron Mind**: Concentration that damage can't break.
+  - **Terror**: Flee, Fools! when a Frightened enemy starts its turn near you.
+  - **Bright Sun**: 10 temp HP for you and allies in your Daylight Presence each turn.
+  - **Soul Drinker**: regain 50 HP when an enemy drops (1/Short Rest).
+  - **Blazing Dawn** (Radiant weapon damage toggle) and **Looming Shadows** (Bonus Action Dodge).
+  - **Dimensional Travel** (compendium): its Teleport activity makes your next move a teleport. **Truesight** checked.
+- **General feats:**
+  - **Mythal Touched**: Mythal Ward table on a spell hit or failed save. +2 AC and "the spell dissipates" are applied.
+  - **Elemental / Otherworldly / Soothing Familiar**: the familiar's Resistance is chosen when it appears; Energy Pulse
+    bursts around it; healing near it counts 1-2 as 3.
+  - **Harper Teamwork**, **Street Justice** (allies' Advantage against your grapple), **Spell Subterfuge** (Dash +
+    Hide), **Bomber** (no long-range Disadvantage with Thrown weapons), **Light Bringer** (Sun's Healing),
+    **Cloying Mists** (free Fog Cloud).
+
 ## 0.37.0
 
 Priority-2 general feats from Arcana Unleashed, Heroes of Faerûn and Astarion's Book of Hungers, as new CGA feats
