@@ -116,22 +116,7 @@
         "sort": 0,
         "name": "Plant the Ammunition",
         "img": "",
-        "behaviors": [
-          {
-            "name": "",
-            "_id": "sOfWSPGymqiAqbGw",
-            "type": "difficultTerrain",
-            "config": {
-              "types": [
-                "plants"
-              ]
-            },
-            "level": {
-              "min": null,
-              "max": null
-            }
-          }
-        ],
+        "behaviors": [],
         "flags": {},
         "visibility": {
           "level": {
@@ -273,7 +258,8 @@
         "regionBehavior": {
           "enabled": false,
           "rules": []
-        }
+        },
+        "behaviors": []
       }
     },
     "identifier": "cordon-of-arrows",
@@ -287,7 +273,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.1",
+        "version": "1.0.2",
         "notes": "Champions Guild Automation: plants 4 pieces of ammunition (+2 per slot level above 2nd) guarding 30 ft; each enemy that enters the area or ends its turn there makes a DEX save or takes 2d4 piercing, using up a piece. The spell ends when none are left."
       }
     },

@@ -1,0 +1,166 @@
+{
+  "name": "Homunculus Servant",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Summon a homunculus within 10 ft (it lasts until it drops to 0 Hit Points or you cast the spell again - remove the old one). It shares your Initiative, acting right after you, and obeys your telepathic commands. Its Hit Points (5 + 5 per spell level) and Force Strike damage (1d6 + the spell's level) grow with the slot, and Force Strike uses your spell attack bonus.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "hour",
+      "value": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "space",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "10",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material",
+      "ritual"
+    ],
+    "materials": {
+      "value": "a gem worth 100+ GP",
+      "consumed": false,
+      "cost": 100,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "gOf4QDymYpUVAvTk": {
+        "type": "summon",
+        "_id": "gOf4QDymYpUVAvTk",
+        "activation": {
+          "type": "hour",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "5 * @item.level",
+          "attackDamage": "@item.level",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "Homunculus",
+            "_id": "cgaProfileHomu00",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumHomunculus",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "name": "",
+        "img": ""
+      }
+    },
+    "identifier": "homunculus-servant",
+    "prepared": 0
+  },
+  "_id": "cgaSplHomunServ0",
+  "type": "spell",
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: summons the Homunculus Servant from the module's CGA: Summoned Creatures compendium; HP and Force Strike damage scale with the slot level and it uses your spell attack. Replacing an older homunculus is by hand."
+      }
+    }
+  }
+}

@@ -114,24 +114,7 @@
         "sort": 0,
         "name": "Create Aura",
         "img": "systems/dnd5e/icons/svg/trait-damage-immunities.svg",
-        "behaviors": [
-          {
-            "name": "",
-            "_id": "UEv5tgbar7amV4k5",
-            "type": "applyActiveEffect",
-            "config": {
-              "effects": [
-                "Compendium.dnd5e.effects.ActiveEffect.phbeffAuraLife00"
-              ],
-              "sizes": [],
-              "types": []
-            },
-            "level": {
-              "min": null,
-              "max": null
-            }
-          }
-        ],
+        "behaviors": [],
         "flags": {},
         "visibility": {
           "level": {
@@ -245,7 +228,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: 30-ft aura that moves with you: you and allies inside have Advantage on saves against spells and magical effects, and take no damage on a successful save against a spell that deals half."
       }
     }

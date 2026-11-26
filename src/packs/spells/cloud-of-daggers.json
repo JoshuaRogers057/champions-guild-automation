@@ -138,22 +138,7 @@
         "sort": 0,
         "name": "Cast",
         "img": "",
-        "behaviors": [
-          {
-            "name": "",
-            "_id": "sOfWSPGymqiAqbGw",
-            "type": "difficultTerrain",
-            "config": {
-              "types": [
-                "plants"
-              ]
-            },
-            "level": {
-              "min": null,
-              "max": null
-            }
-          }
-        ],
+        "behaviors": [],
         "flags": {},
         "visibility": {
           "level": {
@@ -274,22 +259,7 @@
         "sort": 900000,
         "name": "Cloud of Daggers: Daggers",
         "img": "",
-        "behaviors": [
-          {
-            "name": "",
-            "_id": "sOfWSPGymqiAqbGw",
-            "type": "difficultTerrain",
-            "config": {
-              "types": [
-                "plants"
-              ]
-            },
-            "level": {
-              "min": null,
-              "max": null
-            }
-          }
-        ],
+        "behaviors": [],
         "flags": {},
         "visibility": {
           "level": {
@@ -322,7 +292,7 @@
   "flags": {
     "cat": {
       "automation": {
-        "version": "1.0.2",
+        "version": "1.0.3",
         "notes": "Champions Guild Automation: 4d4 slashing to creatures in the cube, and to any creature that enters it or ends its turn there (once per turn). Drag the area to move it."
       }
     }
