@@ -3,6 +3,26 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.28.0
+
+Priority-2 species traits. The four new trait items (Howl, Shape-Shifter, Longtooth, Healing Hands) need **Mass Apply
+/ Update**; the rest are module rules.
+
+- **Shifter options:** while you're shifted, **Beasthide** gives +1d6 temp HP and +1 AC, **Swiftstride** +10 ft
+  Speed, and **Wildhunt** Advantage on WIS checks and no Advantage on attacks against you. **Longtooth** (1.0.0)
+  adds a Fang Strike bite.
+- **Lupin Howl** (1.0.0): enemies within 15 ft make a WIS save or have Disadvantage on attacks and saves until your
+  next turn.
+- **Changeling Shape-Shifter** (1.0.0): Advantage on Charisma checks while shape-shifted.
+- **Aasimar Healing Hands** (1.0.0): heal (PB)d4, once per Long Rest.
+- **Reborn:** **Knowledge from a Past Life** offers +1d6 after a failed check against a DC; **Escaped Death** gives
+  Advantage on Death Saving Throws.
+- **Human Resourceful:** Heroic Inspiration on a Long Rest (the compendium item was empty).
+- **Dragonborn Draconic Flight:** now actually gives a Fly Speed (the compendium effect was empty).
+- Checked and working as they ship: Dwarven Toughness, Cloud's Jaunt, Large Form, and the Elven Lineage, Fiendish
+  Legacy and Forest Gnome spells. The spells come from the species' advancement. Hex Magic's Hex gets the module's
+  Hex through Mass Apply.
+
 ## 0.27.0
 
 Priority-1 species traits (2024 Player's Handbook and other books). Most are **module rules** that find the trait on

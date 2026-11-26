@@ -1,0 +1,156 @@
+{
+  "_id": "cgaFtShapeShiftr",
+  "name": "Shape-Shifter",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Action: change your appearance and voice (and size between Medium and Small). While shape-shifted you have Advantage on Charisma checks. Take an action to revert (delete the effect).</p>",
+      "chat": ""
+    },
+    "identifier": "shape-shifter",
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaChangelingSSA": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaChangelingSSE"
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaChangelingSSA",
+        "type": "utility",
+        "name": "Shape-Shift",
+        "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaChangelingSSE",
+      "name": "Shape-Shifted",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.advantage.ability.check.cha",
+            "value": "1",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Shape-Shift applies the Advantage on Charisma checks until you revert."
+      }
+    }
+  }
+}

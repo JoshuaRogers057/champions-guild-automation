@@ -1,0 +1,193 @@
+{
+  "_id": "cgaFtLupinHowl00",
+  "name": "Howl",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action (Proficiency Bonus times per Long Rest): creatures of your choice within 15 ft make a WIS save (DC 8 + CON modifier + Proficiency Bonus) or have Disadvantage on attack rolls and saving throws until the start of your next turn.</p>",
+      "chat": ""
+    },
+    "identifier": "howl",
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaLupinHowlSave": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaHowlDisadvEff",
+            "onSave": false
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "enemy",
+            "choice": false,
+            "special": "Creatures of your choice"
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "emanationNoTemplate",
+            "size": "15"
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaLupinHowlSave",
+        "type": "save",
+        "name": "Howl",
+        "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "con",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaHowlDisadvEff",
+      "name": "Howled",
+      "img": "icons/creatures/mammals/wolf-howl-moon-gray.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "rounds": 1,
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "value": "1",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.save.all",
+            "value": "1",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [
+            "turnStartSource"
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: WIS save in a 15-ft emanation (enemies); Howled effect until the start of your next turn."
+      }
+    }
+  }
+}

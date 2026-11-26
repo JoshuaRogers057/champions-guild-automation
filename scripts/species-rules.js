@@ -12,6 +12,8 @@
 //    Heavenly Wings gives a Fly Speed equal to your Speed; Necrotic Shroud's save frightens enemies within 10 ft.
 //  - Vampiric Bite: after a bite hits a creature that isn't a Construct or Undead, choose Drain or Strengthen (PB/LR).
 //  - Breath Weapon: the damage type follows your Draconic Ancestry. Integrated Protection: +1 AC if the trait has no AC effect.
+//  - P2: Shifter options while shifted (Beasthide, Swiftstride, Wildhunt), Knowledge from a Past Life (+1d6 to a failed
+//    check), Resourceful (Heroic Inspiration on a Long Rest), Escaped Death, Draconic Flight's Fly Speed.
 import { MODULE_ID, askOwner, askChoice, edgeDistance, isIncapacitated, turnKey, reduceDamage } from "./main.js";
 import { isMagicItem, creatureType, spendUse, canReact, useReaction, say, chg, tokenOf, isGM, ON_HIT, PASSIVES } from "./item-rules.js";
 
@@ -263,3 +265,79 @@ Hooks.on("midi-qol.DamageRollComplete", async (workflow) => {
 PASSIVES.push({ key: "integrated-protection",
   active: (a) => { const t = trait(a, "integrated-protection"); return !!t && !t.effects.some((e) => !e.disabled && (e.system?.changes ?? e.changes ?? []).some((c) => /attributes\.ac/.test(c.key))); },
   effect: { name: "Integrated Protection", img: "icons/equipment/chest/breastplate-banded-steel-gold.webp", changes: [chg("system.attributes.ac.bonus", "+1", "add")] } });
+
+// ================================================================== Priority 2
+// ------------------------------------------------------------------ Shifter options while shifted
+// When a "Shifted" effect starts, the module adds the option's benefit for the same time (and removes it with it).
+const SHIFT_OPTIONS = [
+  { ident: "beasthide", effect: (a) => ({ name: "Beasthide", changes: [chg("system.attributes.ac.bonus", "+1", "add")] }), onShift: async (a) => {
+      const r = await new Roll("1d6").evaluate();
+      await gmUpdateActor(a, { "system.attributes.hp.temp": Number(a.system.attributes.hp.temp ?? 0) + r.total });
+      r.toMessage({ speaker: ChatMessage.getSpeaker({ actor: a }), flavor: "Beasthide: extra Temporary Hit Points" });
+    } },
+  { ident: "swiftstride", effect: () => ({ name: "Swiftstride", changes: [chg("system.attributes.movement.walk", "10", "add")] }) },
+  { ident: "wildhunt", effect: () => ({ name: "Wildhunt", changes: [chg("flags.midi-qol.advantage.ability.check.wis", "1"), chg("flags.midi-qol.grants.noAdvantage.attack.all", "1")] }) },
+  { ident: "longtooth", effect: () => ({ name: "Longtooth", changes: [] }) }
+];
+const isShifted = (e) => /^shifted/i.test(e.name ?? "") && !e.flags?.[MODULE_ID]?.shiftOption;
+Hooks.on("createActiveEffect", async (e) => {
+  try {
+    if (!isGM() || !(e.parent instanceof Actor) || !isShifted(e)) return;
+    const a = e.parent;
+    for (const o of SHIFT_OPTIONS) {
+      if (!trait(a, o.ident)) continue;
+      const d = o.effect(a);
+      await a.createEmbeddedDocuments("ActiveEffect", [{ name: `${d.name} (shifted)`, img: e.img, transfer: false, duration: foundry.utils.deepClone(e.duration ?? {}),
+        system: { changes: d.changes }, flags: { [MODULE_ID]: { shiftOption: e.id } } }]);
+      await o.onShift?.(a);
+    }
+  } catch (err) { console.warn(`${MODULE_ID} | Shifter options failed`, err); }
+});
+Hooks.on("deleteActiveEffect", async (e) => {
+  try {
+    if (!isGM() || !(e.parent instanceof Actor) || !isShifted(e)) return;
+    const ids = e.parent.effects.filter((x) => x.flags?.[MODULE_ID]?.shiftOption === e.id).map((x) => x.id);
+    if (ids.length) await e.parent.deleteEmbeddedDocuments("ActiveEffect", ids);
+  } catch (err) { console.warn(`${MODULE_ID} | Shifter option cleanup failed`, err); }
+});
+
+// ------------------------------------------------------------------ Knowledge from a Past Life: +1d6 to a failed ability check (PB/LR)
+// The check is already on the card, so the module posts the new total after it (only when the check had a DC).
+const pastLifeSeen = new WeakSet();
+async function pastLife(rolls, data) {
+  try {
+    const actor = data?.subject;
+    const roll = rolls?.[0];
+    if (!actor || !roll || pastLifeSeen.has(roll)) return;
+    pastLifeSeen.add(roll);
+    const it = trait(actor, "knowledge-from-a-past-life");
+    const dc = Number(roll.options?.target);
+    if (!it || !dc || roll.total >= dc || usesLeft(it) <= 0 || roll.total + 6 < dc) return;
+    if (!(await askOwner(actor, `Knowledge from a Past Life: ${actor.name}`, `<p>The check (${roll.total}) fails against DC ${dc}. Spend a use (${usesLeft(it) === Infinity ? "" : usesLeft(it) + " left"}) to add 1d6?</p>`))) return;
+    await spendUse(it);
+    const d6 = await new Roll("1d6").evaluate();
+    const total = roll.total + d6.total;
+    await d6.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Knowledge from a Past Life: ${roll.total} + ${d6.total} = ${total} vs DC ${dc} - ${total >= dc ? "success" : "still a failure"}` });
+  } catch (err) { console.warn(`${MODULE_ID} | Knowledge from a Past Life failed`, err); }
+}
+for (const h of ["dnd5e.rollAbilityCheck", "dnd5e.rollSkill", "dnd5e.rollToolCheck"]) Hooks.on(h, (rolls, data) => { if (/save/i.test(rolls?.[0]?.options?.rollType ?? "")) return; pastLife(rolls, data); });
+
+// ------------------------------------------------------------------ Resourceful: Heroic Inspiration when you finish a Long Rest
+Hooks.on("dnd5e.restCompleted", async (actor, result, config) => {
+  try {
+    if (!(config?.type === "long" || result?.longRest) || !actor.isOwner || !trait(actor, "resourceful") || actor.system.attributes.inspiration) return;
+    await actor.update({ "system.attributes.inspiration": true });
+    say(actor, `<strong>Resourceful:</strong> ${actor.name} gains Heroic Inspiration.`);
+  } catch (err) { console.warn(`${MODULE_ID} | Resourceful failed`, err); }
+});
+
+// ------------------------------------------------------------------ Passives
+PASSIVES.push(
+  // Reborn, Escaped Death: Advantage on Death Saving Throws.
+  { key: "escaped-death", active: (a) => !!trait(a, "escaped-death"),
+    effect: { name: "Escaped Death", img: "icons/magic/death/skull-energy-light-white.webp", changes: [chg("system.attributes.death.roll.mode", "1", "upgrade")] } },
+  // Dragonborn, Draconic Flight: the compendium effect has no Fly Speed - a Fly Speed equal to your Speed while it lasts.
+  { key: "draconic-flight", active: (a) => a.effects.some((e) => /draconic flight/i.test(e.name) && !e.disabled && !e.flags?.[MODULE_ID]?.passive),
+    effect: (a) => ({ name: "Draconic Flight: Fly Speed", img: "icons/creatures/abilities/wing-batlike-red-pink.webp",
+      changes: [chg("system.attributes.movement.fly", String(Number(a.system.attributes.movement?.walk ?? 30) || 30), "upgrade")] }) }
+);

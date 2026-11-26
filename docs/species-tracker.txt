@@ -4,14 +4,14 @@
 #   category: done | midi | verify | build | skip
 Aasimar|Player's Handbook|Celestial Resistance|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|celestial-resistance
 Aasimar|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
-Aasimar|Player's Handbook|Healing Hands|PHB|verify|2|Magic action: heal PBd4 (1/LR) - D&D Beyond activity, check the dice|healing-hands
+Aasimar|Player's Handbook|Healing Hands|PHB|done|2|CGA item: Magic action, touch, regain (PB)d4 HP (1/LR)|healing-hands
 Aasimar|Player's Handbook|Light Bearer|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|light-bearer
 Aasimar|Player's Handbook|Celestial Revelation|PHB|done|1|CGA item + module rule (no mass apply; works on the character's own trait): one activity per form (1/LR); once on each of your turns +PB damage (Necrotic for Shroud, Radiant otherwise) to a target you damage|celestial-revelation
 Aasimar|Player's Handbook · Celestial Revelation option|Heavenly Wings|PHB|done|1|Module rule (no Mass Apply; works on the character's own trait): Fly Speed equal to your Speed while the form lasts|heavenly-wings
 Aasimar|Player's Handbook · Celestial Revelation option|Inner Radiance|PHB|done|1|Module rule (no Mass Apply; works on the character's own trait): light 10/20; at the end of your turn each creature within 10 ft takes Radiant = PB|inner-radiance
 Aasimar|Player's Handbook · Celestial Revelation option|Necrotic Shroud|PHB|done|1|CGA item: enemies within 10 ft CHA save or Frightened until the end of your next turn; the module adds the form's self effect|necrotic-shroud
 Changeling|Other books|Changeling Instincts|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|changeling-instincts
-Changeling|Other books|Shape-Shifter|Other|build|2|While shape-shifted: Advantage on Charisma checks (an effect on the action)|shape-shifter
+Changeling|Other books|Shape-Shifter|Other|done|2|CGA item: Shape-Shift applies Advantage on Charisma checks until you revert|shape-shifter
 Dhampir|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Dhampir|Other books|Spider Climb|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|spider-climb
 Dhampir|Other books|Trace of Undeath|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|trace-of-undeath
@@ -22,10 +22,10 @@ Dragonborn|Player's Handbook|Draconic Ancestry|PHB|skip|3|Sheet trait, proficien
 Dragonborn|Player's Handbook|Breath Weapon|SRD|done|1|CGA item + module rule (no mass apply; works on the character's own trait): dice from character level (no scale value), damage type from your Draconic Ancestry (or your one draconic resistance)|breath-weapon
 Dragonborn|Player's Handbook|Damage Resistance|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|damage-resistance
 Dragonborn|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
-Dragonborn|Player's Handbook|Draconic Flight|SRD|verify|2|Bonus Action Fly Speed for 10 minutes (1/LR) - compendium effect is empty, check|draconic-flight
+Dragonborn|Player's Handbook|Draconic Flight|SRD|done|2|Module rule (no Mass Apply; works on the character's own trait): the compendium effect had no Fly Speed - Fly Speed equal to your Speed while it lasts|draconic-flight
 Dwarf|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Dwarf|Player's Handbook|Dwarven Resilience|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): Poison Resistance and Advantage on saves against Poisoned (compendium item was empty)|dwarven-resilience
-Dwarf|Player's Handbook|Dwarven Toughness|SRD|verify|2|+1 HP per level (compendium effect)|dwarven-toughness
+Dwarf|Player's Handbook|Dwarven Toughness|SRD|done|2|Checked in v0.28.0 - the compendium effect adds 1 HP per level|dwarven-toughness
 Dwarf|Player's Handbook|Stonecunning|SRD|verify|3|Bonus Action Tremorsense 60 ft for 10 minutes (PB/LR)|stonecunning
 Elf|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Elf|Player's Handbook|Elven Lineage|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|elven-lineage
@@ -35,16 +35,16 @@ Elf|Player's Handbook|Trance|SRD|skip|3|Sheet trait, proficiency, sense, cantrip
 Gnome|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Gnome|Player's Handbook|Gnomish Cunning|SRD|done|1|Checked in v0.27.0 - the compendium effect gives Advantage on INT/WIS/CHA saves under midi-qol|gnomish-cunning
 Gnome|Player's Handbook|Gnomish Lineage|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|gnomish-lineage
-Gnome|Player's Handbook · Gnomish Lineage option|Forest Gnome|PHB|verify|2|Minor Illusion; Speak with Animals PB/LR|forest-gnome
+Gnome|Player's Handbook · Gnomish Lineage option|Forest Gnome|PHB|done|2|Checked in v0.28.0 - the trait item is a description; the species advancement grants the cantrip, spells (levels 1/3/5) and resistance (D&D Beyond imports carry them too)|forest-gnome
 Gnome|Player's Handbook · Gnomish Lineage option|Rock Gnome|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|rock-gnome
 Goliath|Player's Handbook|Giant Ancestry|SRD|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|giant-ancestry
-Goliath|Player's Handbook · Giant Ancestry option|Cloud’s Jaunt (Cloud Giant)|SRD|verify|2|Bonus Action teleport 30 ft (PB/LR)|clouds-jaunt
+Goliath|Player's Handbook · Giant Ancestry option|Cloud’s Jaunt (Cloud Giant)|SRD|done|2|Checked in v0.28.0 - the activity spends a use; move your token for the teleport|clouds-jaunt
 Goliath|Player's Handbook · Giant Ancestry option|Fire’s Burn (Fire Giant)|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): after a hit, offers +1d10 Fire for a use|fires-burn
 Goliath|Player's Handbook · Giant Ancestry option|Frost’s Chill (Frost Giant)|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): after a hit, offers +1d6 Cold and -10 ft Speed until the start of your next turn|frosts-chill
 Goliath|Player's Handbook · Giant Ancestry option|Hill’s Tumble (Hill Giant)|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): after a hit on a Large or smaller creature, offers to knock it Prone|hills-tumble
 Goliath|Player's Handbook · Giant Ancestry option|Stone’s Endurance (Stone Giant)|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): Reaction when damaged - reduce by 1d12 + CON|stones-endurance
 Goliath|Player's Handbook · Giant Ancestry option|Storm’s Thunder (Storm Giant)|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): Reaction when damaged by a creature within 60 ft - 1d8 Thunder to it|storms-thunder
-Goliath|Player's Handbook|Large Form|SRD|verify|2|Bonus Action Large size, Advantage on STR checks, +10 ft Speed (1/LR)|large-form
+Goliath|Player's Handbook|Large Form|SRD|done|2|Checked in v0.28.0 - the effect gives +10 ft Speed and Advantage on STR checks; change the token size yourself|large-form
 Goliath|Player's Handbook|Powerful Build|SRD|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|powerful-build
 Halfling|Player's Handbook|Brave|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): Advantage on saves against a Frightened effect (compendium item was empty)|brave
 Halfling|Player's Handbook|Halfling Nimbleness|SRD|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|halfling-nimbleness
@@ -54,8 +54,8 @@ Hexblood|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, ca
 Hexblood|Other books|Eerie Token|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|eerie-token
 Hexblood|Other books · Eerie Token option|Distant Message|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|distant-message
 Hexblood|Other books · Eerie Token option|Remote Viewing|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|remote-viewing
-Hexblood|Other books|Hex Magic|Other|verify|2|Disguise Self and Hex (1 free cast each/LR) - should cast the module's Hex|hex-magic
-Human|Player's Handbook|Resourceful|SRD|verify|2|Heroic Inspiration on a Long Rest - compendium item is empty, check|resourceful
+Hexblood|Other books|Hex Magic|Other|done|2|Checked in v0.28.0 - the granted Hex spell gets the module's automated Hex through Mass Apply (it matches the spell)|hex-magic
+Human|Player's Handbook|Resourceful|SRD|done|2|Module rule (no Mass Apply; works on the character's own trait): Heroic Inspiration when you finish a Long Rest (compendium item was empty)|resourceful
 Human|Player's Handbook|Skillful|SRD|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|skillful
 Human|Player's Handbook|Versatile|SRD|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|versatile
 Kalashtar|Other books|Dual Mind|Other|done|1|Module rule (no Mass Apply; works on the character's own trait): Advantage on WIS and CHA saves|dual-mind
@@ -73,14 +73,14 @@ Lorwyn Changeling|Other books|Delightful Imitator|Other|skip|3|Sheet trait, prof
 Lorwyn Changeling|Other books|Unpredictable Movement|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|unpredictable-movement
 Lupin|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Lupin|Other books|Feral Pounce|Other|build|3|Unarmed Strikes deal Slashing; once per turn, Damage and Shove on one hit|feral-pounce
-Lupin|Other books|Howl|Other|build|2|Bonus Action: creatures of your choice within 15 ft, WIS save or Disadvantage on attacks and saves until your next turn (PB/LR)|howl
+Lupin|Other books|Howl|Other|done|2|CGA item: Bonus Action, enemies within 15 ft WIS save or Disadvantage on attacks and saves until the start of your next turn (PB/LR)|howl
 Lupin|Other books|Werewolf Instincts|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|werewolf-instincts
 Orc|Player's Handbook|Adrenaline Rush|SRD|done|1|Checked in v0.27.0 - the compendium activity gives temp HP = PB and spends a use (the Dash is your movement)|adrenaline-rush
 Orc|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Orc|Player's Handbook|Relentless Endurance|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): offered when you'd drop to 0 HP (not killed outright) - drop to 1 instead (1/LR)|relentless-endurance
-Reborn|Other books|Escaped Death|Other|verify|2|Advantage on Death Saving Throws|escaped-death
+Reborn|Other books|Escaped Death|Other|done|2|Module rule (no Mass Apply; works on the character's own trait): Advantage on Death Saving Throws|escaped-death
 Reborn|Other books|Everlasting|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|everlasting
-Reborn|Other books|Knowledge from a Past Life|Other|build|2|After a failed ability check, add 1d6 (PB/LR) - prompt|knowledge-from-a-past-life
+Reborn|Other books|Knowledge from a Past Life|Other|done|2|Module rule (no Mass Apply; works on the character's own trait): after a failed ability check with a DC, offers +1d6 (PB/LR) and posts the new total|knowledge-from-a-past-life
 Reborn|Other books|Strange Endurance|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|strange-endurance
 Rimekin|Other books|Cold Fire Magic|Other|verify|3|Ray of Frost; Ice Knife and Flame Blade (Cold) 1 free cast/LR|cold-fire-magic
 Rimekin|Other books|Cold Resistance|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|cold-resistance
@@ -88,10 +88,10 @@ Rimekin|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, can
 Shifter|Other books|Bestial Instincts|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|bestial-instincts
 Shifter|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Shifter|Other books|Shifting|Other|done|1|CGA item: Shift (Bonus Action, PB/LR) - temp HP 2 x PB and the Shifted effect for 1 minute; the four options are P2|shifting
-Shifter|Other books · Shifting option|Beasthide|Other|build|2|+1d6 temp HP and +1 AC while shifted|beasthide
-Shifter|Other books · Shifting option|Longtooth|Other|build|2|Bonus Action fang Unarmed Strike 1d6 + STR Piercing while shifted|longtooth
-Shifter|Other books · Shifting option|Swiftstride|Other|build|2|+10 ft Speed while shifted; Reaction move 10 ft when a creature ends its turn within 5 ft|swiftstride
-Shifter|Other books · Shifting option|Wildhunt|Other|build|2|Advantage on WIS checks while shifted; no creature within 30 ft has Advantage against you|wildhunt
+Shifter|Other books · Shifting option|Beasthide|Other|done|2|Module rule (no Mass Apply; works on the character's own trait): when you shift, +1d6 temp HP and +1 AC while shifted|beasthide
+Shifter|Other books · Shifting option|Longtooth|Other|done|2|CGA item: Fang Strike (Bonus Action, 1d6 + STR Piercing) while shifted|longtooth
+Shifter|Other books · Shifting option|Swiftstride|Other|done|2|Module rule (no Mass Apply; works on the character's own trait): +10 ft Speed while shifted (the Reaction move is yours to make)|swiftstride
+Shifter|Other books · Shifting option|Wildhunt|Other|done|2|Module rule (no Mass Apply; works on the character's own trait): Advantage on WIS checks and no Advantage on attacks against you while shifted (at any range, not only 30 ft)|wildhunt
 Tiefling|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Tiefling|Player's Handbook|Fiendish Legacy|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|fiendish-legacy
 Tiefling|Player's Handbook|Otherworldly Presence|SRD|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|otherworldly-presence
@@ -100,9 +100,9 @@ Warforged|Other books|Integrated Protection|Other|done|1|Module rule (no Mass Ap
 Warforged|Other books|Sentry’s Rest|Other|skip|3|Rest rule - nothing to automate|sentrys-rest
 Warforged|Other books|Specialized Design|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|specialized-design
 Warforged|Other books|Tireless|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|tireless
-Elf|Player's Handbook · Elven Lineage option|Elven Lineage (Drow)|SRD|verify|2|Lineage cantrip and spells (always prepared, 1 free cast/LR) - check casting|elven-lineage-drow
-Elf|Player's Handbook · Elven Lineage option|Elven Lineage (High Elf)|SRD|verify|2|Lineage cantrip and spells (always prepared, 1 free cast/LR) - check casting|elven-lineage-high-elf
-Elf|Player's Handbook · Elven Lineage option|Elven Lineage (Wood Elf)|SRD|verify|2|Lineage cantrip and spells (always prepared, 1 free cast/LR) - check casting|elven-lineage-wood-elf
-Tiefling|Player's Handbook · Fiendish Legacy option|Fiendish Legacy (Abyssal)|SRD|verify|2|Resistance plus cantrip and spells (1 free cast/LR) - check casting|fiendish-legacy-abyssal
-Tiefling|Player's Handbook · Fiendish Legacy option|Fiendish Legacy (Chthonic)|SRD|verify|2|Resistance plus cantrip and spells (1 free cast/LR) - check casting|fiendish-legacy-chthonic
-Tiefling|Player's Handbook · Fiendish Legacy option|Fiendish Legacy (Infernal)|SRD|verify|2|Resistance plus cantrip and spells (1 free cast/LR) - check casting|fiendish-legacy-infernal
+Elf|Player's Handbook · Elven Lineage option|Elven Lineage (Drow)|SRD|done|2|Checked in v0.28.0 - the trait item is a description; the species advancement grants the cantrip, spells (levels 1/3/5) and resistance (D&D Beyond imports carry them too)|elven-lineage-drow
+Elf|Player's Handbook · Elven Lineage option|Elven Lineage (High Elf)|SRD|done|2|Checked in v0.28.0 - the trait item is a description; the species advancement grants the cantrip, spells (levels 1/3/5) and resistance (D&D Beyond imports carry them too)|elven-lineage-high-elf
+Elf|Player's Handbook · Elven Lineage option|Elven Lineage (Wood Elf)|SRD|done|2|Checked in v0.28.0 - the trait item is a description; the species advancement grants the cantrip, spells (levels 1/3/5) and resistance (D&D Beyond imports carry them too)|elven-lineage-wood-elf
+Tiefling|Player's Handbook · Fiendish Legacy option|Fiendish Legacy (Abyssal)|SRD|done|2|Checked in v0.28.0 - the trait item is a description; the species advancement grants the cantrip, spells (levels 1/3/5) and resistance (D&D Beyond imports carry them too)|fiendish-legacy-abyssal
+Tiefling|Player's Handbook · Fiendish Legacy option|Fiendish Legacy (Chthonic)|SRD|done|2|Checked in v0.28.0 - the trait item is a description; the species advancement grants the cantrip, spells (levels 1/3/5) and resistance (D&D Beyond imports carry them too)|fiendish-legacy-chthonic
+Tiefling|Player's Handbook · Fiendish Legacy option|Fiendish Legacy (Infernal)|SRD|done|2|Checked in v0.28.0 - the trait item is a description; the species advancement grants the cantrip, spells (levels 1/3/5) and resistance (D&D Beyond imports carry them too)|fiendish-legacy-infernal
