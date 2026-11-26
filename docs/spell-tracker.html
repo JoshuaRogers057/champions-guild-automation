@@ -88,6 +88,7 @@ footer { color: var(--muted); font-size: 13px; }
     <button type="button" role="tab" id="tab-feats" data-kind="feats" aria-selected="false">Feats</button>
     <button type="button" role="tab" id="tab-features" data-kind="features" aria-selected="false">Class features</button>
     <button type="button" role="tab" id="tab-items" data-kind="items" aria-selected="false">Items</button>
+    <button type="button" role="tab" id="tab-species" data-kind="species" aria-selected="false">Species</button>
   </div>
 
   <div class="summary" id="summary" aria-label="Progress by category"></div>
@@ -138,9 +139,13 @@ const KINDS = {
   items: { one: "item", many: "items", file: "items.json", title: "Item automation tracker", book: "2024 Dungeon Master's Guide and Player's Handbook",
     lede: "Every magic item in the 2024 Dungeon Master's Guide and every weapon, armor, mastery and gear item in the 2024 Player's Handbook. Plain bonuses and spells cast from charges are Verify; on-hit riders, reactions and auras are Build. Weapon masteries come from Automated Masteries 5e. Priority 1 is what shows up in most fights.",
     groups: (rows) => ["Weapon masteries", "Weapons", "Armor", "Adventuring gear", "Tools", "Magic weapons", "Magic armor and shields", "Potions and oils", "Rings", "Rods", "Scrolls", "Staffs", "Wands", "Wondrous items", "Artifacts"].filter((g) => rows.some((s) => s.group === g)),
-    groupOf: (s) => s.group, groupLabel: (g) => g, sub: (s) => s.sub }
+    groupOf: (s) => s.group, groupLabel: (g) => g, sub: (s) => s.sub },
+  species: { one: "trait", many: "traits", file: "species.json", title: "Species trait automation tracker", book: "Species (2024 Player's Handbook and other books)",
+    lede: "Every species trait in the combined species list: the 2024 Player's Handbook species plus Changeling, Dhampir, Hexblood, Kalashtar, Khoravar, Lupin, Reborn, Rimekin, Shifter, Warforged and more. Senses, resistances, proficiencies and cantrips come from the sheet, so those are Skip. Priority 1 is what shows up in most fights.",
+    groups: (rows) => [...new Set(rows.map((s) => s.group))].sort(), groupOf: (s) => s.group, groupLabel: (g) => g, sub: (s) => s.sub,
+    sort: (a, b) => a.priority - b.priority || a.name.localeCompare(b.name) }
 };
-const data = { spells: null, feats: null, features: null, items: null };
+const data = { spells: null, feats: null, features: null, items: null, species: null };
 const state = { kind: "spells", cats: new Set(["build", "verify", "midi"]), prio: "all", src: "all", q: "" };
 try { const saved = JSON.parse(localStorage.getItem("cga-tracker") || "null"); if (saved) { state.cats = new Set(saved.cats); state.prio = saved.prio; state.src = saved.src === "PHB" ? "book" : saved.src; if (KINDS[saved.kind]) state.kind = saved.kind; } } catch (e) {}
 const save = () => { try { localStorage.setItem("cga-tracker", JSON.stringify({ kind: state.kind, cats: [...state.cats], prio: state.prio, src: state.src })); } catch (e) {} };
@@ -216,7 +221,7 @@ function show() {
 }
 
 Promise.all(Object.entries(KINDS).map(([kind, k]) => fetch(k.file).then((r) => r.json())
-  .then((d) => { data[kind] = { updated: d.updated, rows: d.spells ?? d.feats ?? d.features ?? d.items }; }).catch(() => {})))
+  .then((d) => { data[kind] = { updated: d.updated, rows: d.spells ?? d.feats ?? d.features ?? d.items ?? d.species }; }).catch(() => {})))
   .then(() => {
     document.getElementById("prio").value = state.prio;
     document.getElementById("src").value = state.src;

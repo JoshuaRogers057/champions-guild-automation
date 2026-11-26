@@ -1,0 +1,1045 @@
+{
+ "updated": "2026-11-26",
+ "species": [
+  {
+   "group": "Aasimar",
+   "sub": "Player's Handbook",
+   "name": "Celestial Resistance",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "celestial-resistance"
+  },
+  {
+   "group": "Aasimar",
+   "sub": "Player's Handbook",
+   "name": "Darkvision",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Aasimar",
+   "sub": "Player's Handbook",
+   "name": "Healing Hands",
+   "source": "PHB",
+   "category": "verify",
+   "priority": 2,
+   "note": "Magic action: heal PBd4 (1/LR) - D&D Beyond activity, check the dice",
+   "identifier": "healing-hands"
+  },
+  {
+   "group": "Aasimar",
+   "sub": "Player's Handbook",
+   "name": "Light Bearer",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "light-bearer"
+  },
+  {
+   "group": "Aasimar",
+   "sub": "Player's Handbook",
+   "name": "Celestial Revelation",
+   "source": "PHB",
+   "category": "build",
+   "priority": 1,
+   "note": "Bonus Action transformation (1/LR): extra damage = PB once per turn (Necrotic or Radiant), plus the chosen form",
+   "identifier": "celestial-revelation"
+  },
+  {
+   "group": "Aasimar",
+   "sub": "Player's Handbook · Celestial Revelation option",
+   "name": "Heavenly Wings",
+   "source": "PHB",
+   "category": "build",
+   "priority": 1,
+   "note": "Fly Speed equal to Speed while transformed",
+   "identifier": "heavenly-wings"
+  },
+  {
+   "group": "Aasimar",
+   "sub": "Player's Handbook · Celestial Revelation option",
+   "name": "Inner Radiance",
+   "source": "PHB",
+   "category": "build",
+   "priority": 1,
+   "note": "Light; Radiant damage = PB to each creature within 10 ft at the end of your turns",
+   "identifier": "inner-radiance"
+  },
+  {
+   "group": "Aasimar",
+   "sub": "Player's Handbook · Celestial Revelation option",
+   "name": "Necrotic Shroud",
+   "source": "PHB",
+   "category": "build",
+   "priority": 1,
+   "note": "Enemies within 10 ft: CHA save or Frightened until the end of your next turn",
+   "identifier": "necrotic-shroud"
+  },
+  {
+   "group": "Changeling",
+   "sub": "Other books",
+   "name": "Changeling Instincts",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "changeling-instincts"
+  },
+  {
+   "group": "Changeling",
+   "sub": "Other books",
+   "name": "Shape-Shifter",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "While shape-shifted: Advantage on Charisma checks (an effect on the action)",
+   "identifier": "shape-shifter"
+  },
+  {
+   "group": "Dhampir",
+   "sub": "Other books",
+   "name": "Darkvision",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Dhampir",
+   "sub": "Other books",
+   "name": "Spider Climb",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "spider-climb"
+  },
+  {
+   "group": "Dhampir",
+   "sub": "Other books",
+   "name": "Trace of Undeath",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "trace-of-undeath"
+  },
+  {
+   "group": "Dhampir",
+   "sub": "Other books",
+   "name": "Vampiric Bite",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Unarmed Strike bite 1d4 + CON Piercing; Drain (heal) or Strengthen (bonus to next check/attack), PB/LR",
+   "identifier": "vampiric-bite"
+  },
+  {
+   "group": "Dhampir",
+   "sub": "Other books · Vampiric Bite option",
+   "name": "Drain",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Vampiric Bite option",
+   "identifier": "drain"
+  },
+  {
+   "group": "Dhampir",
+   "sub": "Other books · Vampiric Bite option",
+   "name": "Strengthen",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Vampiric Bite option",
+   "identifier": "strengthen"
+  },
+  {
+   "group": "Dragonborn",
+   "sub": "Player's Handbook",
+   "name": "Draconic Ancestry",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "draconic-ancestry"
+  },
+  {
+   "group": "Dragonborn",
+   "sub": "Player's Handbook",
+   "name": "Breath Weapon",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium reads @scale.dragonborn.breath (D&D Beyond actors may lack it) and lists five damage types (fast-forward takes Acid): dice from character level, type from the ancestry",
+   "identifier": "breath-weapon"
+  },
+  {
+   "group": "Dragonborn",
+   "sub": "Player's Handbook",
+   "name": "Damage Resistance",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "damage-resistance"
+  },
+  {
+   "group": "Dragonborn",
+   "sub": "Player's Handbook",
+   "name": "Darkvision",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Dragonborn",
+   "sub": "Player's Handbook",
+   "name": "Draconic Flight",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Bonus Action Fly Speed for 10 minutes (1/LR) - compendium effect is empty, check",
+   "identifier": "draconic-flight"
+  },
+  {
+   "group": "Dwarf",
+   "sub": "Player's Handbook",
+   "name": "Darkvision",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Dwarf",
+   "sub": "Player's Handbook",
+   "name": "Dwarven Resilience",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium item is empty: Resistance to Poison and Advantage on saves vs Poisoned",
+   "identifier": "dwarven-resilience"
+  },
+  {
+   "group": "Dwarf",
+   "sub": "Player's Handbook",
+   "name": "Dwarven Toughness",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "+1 HP per level (compendium effect)",
+   "identifier": "dwarven-toughness"
+  },
+  {
+   "group": "Dwarf",
+   "sub": "Player's Handbook",
+   "name": "Stonecunning",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 3,
+   "note": "Bonus Action Tremorsense 60 ft for 10 minutes (PB/LR)",
+   "identifier": "stonecunning"
+  },
+  {
+   "group": "Elf",
+   "sub": "Player's Handbook",
+   "name": "Darkvision",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Elf",
+   "sub": "Player's Handbook",
+   "name": "Elven Lineage",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "elven-lineage"
+  },
+  {
+   "group": "Elf",
+   "sub": "Player's Handbook",
+   "name": "Fey Ancestry",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium item is empty: Advantage on saves vs Charmed (midi-qol's sample covers it - check)",
+   "identifier": "fey-ancestry"
+  },
+  {
+   "group": "Elf",
+   "sub": "Player's Handbook",
+   "name": "Keen Senses",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "keen-senses"
+  },
+  {
+   "group": "Elf",
+   "sub": "Player's Handbook",
+   "name": "Trance",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "trance"
+  },
+  {
+   "group": "Gnome",
+   "sub": "Player's Handbook",
+   "name": "Darkvision",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Gnome",
+   "sub": "Player's Handbook",
+   "name": "Gnomish Cunning",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Compendium effect sets save roll mode for INT/WIS/CHA - check under midi-qol",
+   "identifier": "gnomish-cunning"
+  },
+  {
+   "group": "Gnome",
+   "sub": "Player's Handbook",
+   "name": "Gnomish Lineage",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "gnomish-lineage"
+  },
+  {
+   "group": "Gnome",
+   "sub": "Player's Handbook · Gnomish Lineage option",
+   "name": "Forest Gnome",
+   "source": "PHB",
+   "category": "verify",
+   "priority": 2,
+   "note": "Minor Illusion; Speak with Animals PB/LR",
+   "identifier": "forest-gnome"
+  },
+  {
+   "group": "Gnome",
+   "sub": "Player's Handbook · Gnomish Lineage option",
+   "name": "Rock Gnome",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "rock-gnome"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook",
+   "name": "Giant Ancestry",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "giant-ancestry"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook · Giant Ancestry option",
+   "name": "Cloud’s Jaunt (Cloud Giant)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Bonus Action teleport 30 ft (PB/LR)",
+   "identifier": "clouds-jaunt"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook · Giant Ancestry option",
+   "name": "Fire’s Burn (Fire Giant)",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium is a manual activity: after a hit, prompt to spend a use for +1d10 Fire",
+   "identifier": "fires-burn"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook · Giant Ancestry option",
+   "name": "Frost’s Chill (Frost Giant)",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium is a manual activity: after a hit, prompt for +1d6 Cold and -10 ft Speed",
+   "identifier": "frosts-chill"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook · Giant Ancestry option",
+   "name": "Hill’s Tumble (Hill Giant)",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium is a manual activity: after a hit on a Large or smaller creature, prompt to knock it Prone",
+   "identifier": "hills-tumble"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook · Giant Ancestry option",
+   "name": "Stone’s Endurance (Stone Giant)",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium is a manual activity: Reaction when damaged, reduce by 1d12 + CON",
+   "identifier": "stones-endurance"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook · Giant Ancestry option",
+   "name": "Storm’s Thunder (Storm Giant)",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium is a manual activity: Reaction when damaged by a creature within 60 ft, 1d8 Thunder to it",
+   "identifier": "storms-thunder"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook",
+   "name": "Large Form",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Bonus Action Large size, Advantage on STR checks, +10 ft Speed (1/LR)",
+   "identifier": "large-form"
+  },
+  {
+   "group": "Goliath",
+   "sub": "Player's Handbook",
+   "name": "Powerful Build",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "powerful-build"
+  },
+  {
+   "group": "Halfling",
+   "sub": "Player's Handbook",
+   "name": "Brave",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium item is empty: Advantage on saves vs Frightened (midi-qol's sample covers it - check)",
+   "identifier": "brave"
+  },
+  {
+   "group": "Halfling",
+   "sub": "Player's Handbook",
+   "name": "Halfling Nimbleness",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "halfling-nimbleness"
+  },
+  {
+   "group": "Halfling",
+   "sub": "Player's Handbook",
+   "name": "Luck",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Compendium sets flags.dnd5e.halflingLucky (dnd5e rerolls natural 1s) - check under midi-qol",
+   "identifier": "luck"
+  },
+  {
+   "group": "Halfling",
+   "sub": "Player's Handbook",
+   "name": "Naturally Stealthy",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "naturally-stealthy"
+  },
+  {
+   "group": "Hexblood",
+   "sub": "Other books",
+   "name": "Darkvision",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Hexblood",
+   "sub": "Other books",
+   "name": "Eerie Token",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "eerie-token"
+  },
+  {
+   "group": "Hexblood",
+   "sub": "Other books · Eerie Token option",
+   "name": "Distant Message",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "distant-message"
+  },
+  {
+   "group": "Hexblood",
+   "sub": "Other books · Eerie Token option",
+   "name": "Remote Viewing",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "remote-viewing"
+  },
+  {
+   "group": "Hexblood",
+   "sub": "Other books",
+   "name": "Hex Magic",
+   "source": "Other",
+   "category": "verify",
+   "priority": 2,
+   "note": "Disguise Self and Hex (1 free cast each/LR) - should cast the module's Hex",
+   "identifier": "hex-magic"
+  },
+  {
+   "group": "Human",
+   "sub": "Player's Handbook",
+   "name": "Resourceful",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Heroic Inspiration on a Long Rest - compendium item is empty, check",
+   "identifier": "resourceful"
+  },
+  {
+   "group": "Human",
+   "sub": "Player's Handbook",
+   "name": "Skillful",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "skillful"
+  },
+  {
+   "group": "Human",
+   "sub": "Player's Handbook",
+   "name": "Versatile",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "versatile"
+  },
+  {
+   "group": "Kalashtar",
+   "sub": "Other books",
+   "name": "Dual Mind",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Advantage on WIS and CHA saves",
+   "identifier": "dual-mind"
+  },
+  {
+   "group": "Kalashtar",
+   "sub": "Other books",
+   "name": "Mental Discipline",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "mental-discipline"
+  },
+  {
+   "group": "Kalashtar",
+   "sub": "Other books",
+   "name": "Mind Link",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "mind-link"
+  },
+  {
+   "group": "Kalashtar",
+   "sub": "Other books",
+   "name": "Severed from Dreams",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "severed-from-dreams"
+  },
+  {
+   "group": "Khoravar",
+   "sub": "Other books",
+   "name": "Darkvision",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Khoravar",
+   "sub": "Other books",
+   "name": "Fey Ancestry",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium item is empty: Advantage on saves vs Charmed (midi-qol's sample covers it - check)",
+   "identifier": "fey-ancestry"
+  },
+  {
+   "group": "Khoravar",
+   "sub": "Other books",
+   "name": "Fey Gift",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "fey-gift"
+  },
+  {
+   "group": "Khoravar",
+   "sub": "Other books",
+   "name": "Lethargy Resilience",
+   "source": "Other",
+   "category": "build",
+   "priority": 3,
+   "note": "A failed save vs Unconscious becomes a success (1/1d4 Long Rests) - prompt",
+   "identifier": "lethargy-resilience"
+  },
+  {
+   "group": "Khoravar",
+   "sub": "Other books",
+   "name": "Skill Versatility",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "skill-versatility"
+  },
+  {
+   "group": "Lorwyn Changeling",
+   "sub": "Other books",
+   "name": "Shape Self",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "shape-self"
+  },
+  {
+   "group": "Lorwyn Changeling",
+   "sub": "Other books",
+   "name": "Darkvision",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Lorwyn Changeling",
+   "sub": "Other books",
+   "name": "Delightful Imitator",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "delightful-imitator"
+  },
+  {
+   "group": "Lorwyn Changeling",
+   "sub": "Other books",
+   "name": "Unpredictable Movement",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "unpredictable-movement"
+  },
+  {
+   "group": "Lupin",
+   "sub": "Other books",
+   "name": "Darkvision",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Lupin",
+   "sub": "Other books",
+   "name": "Feral Pounce",
+   "source": "Other",
+   "category": "build",
+   "priority": 3,
+   "note": "Unarmed Strikes deal Slashing; once per turn, Damage and Shove on one hit",
+   "identifier": "feral-pounce"
+  },
+  {
+   "group": "Lupin",
+   "sub": "Other books",
+   "name": "Howl",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Bonus Action: creatures of your choice within 15 ft, WIS save or Disadvantage on attacks and saves until your next turn (PB/LR)",
+   "identifier": "howl"
+  },
+  {
+   "group": "Lupin",
+   "sub": "Other books",
+   "name": "Werewolf Instincts",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "werewolf-instincts"
+  },
+  {
+   "group": "Orc",
+   "sub": "Player's Handbook",
+   "name": "Adrenaline Rush",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 1,
+   "note": "Bonus Action Dash + temp HP = PB (PB/SR)",
+   "identifier": "adrenaline-rush"
+  },
+  {
+   "group": "Orc",
+   "sub": "Player's Handbook",
+   "name": "Darkvision",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Orc",
+   "sub": "Player's Handbook",
+   "name": "Relentless Endurance",
+   "source": "SRD",
+   "category": "build",
+   "priority": 1,
+   "note": "Compendium is a manual heal: drop to 1 HP instead of 0 automatically (1/LR)",
+   "identifier": "relentless-endurance"
+  },
+  {
+   "group": "Reborn",
+   "sub": "Other books",
+   "name": "Escaped Death",
+   "source": "Other",
+   "category": "verify",
+   "priority": 2,
+   "note": "Advantage on Death Saving Throws",
+   "identifier": "escaped-death"
+  },
+  {
+   "group": "Reborn",
+   "sub": "Other books",
+   "name": "Everlasting",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "everlasting"
+  },
+  {
+   "group": "Reborn",
+   "sub": "Other books",
+   "name": "Knowledge from a Past Life",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "After a failed ability check, add 1d6 (PB/LR) - prompt",
+   "identifier": "knowledge-from-a-past-life"
+  },
+  {
+   "group": "Reborn",
+   "sub": "Other books",
+   "name": "Strange Endurance",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "strange-endurance"
+  },
+  {
+   "group": "Rimekin",
+   "sub": "Other books",
+   "name": "Cold Fire Magic",
+   "source": "Other",
+   "category": "verify",
+   "priority": 3,
+   "note": "Ray of Frost; Ice Knife and Flame Blade (Cold) 1 free cast/LR",
+   "identifier": "cold-fire-magic"
+  },
+  {
+   "group": "Rimekin",
+   "sub": "Other books",
+   "name": "Cold Resistance",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "cold-resistance"
+  },
+  {
+   "group": "Rimekin",
+   "sub": "Other books",
+   "name": "Darkvision",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Shifter",
+   "sub": "Other books",
+   "name": "Bestial Instincts",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "bestial-instincts"
+  },
+  {
+   "group": "Shifter",
+   "sub": "Other books",
+   "name": "Darkvision",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Shifter",
+   "sub": "Other books",
+   "name": "Shifting",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Bonus Action shift (PB/LR): temp HP 2x PB for 1 minute, plus the chosen option",
+   "identifier": "shifting"
+  },
+  {
+   "group": "Shifter",
+   "sub": "Other books · Shifting option",
+   "name": "Beasthide",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "+1d6 temp HP and +1 AC while shifted",
+   "identifier": "beasthide"
+  },
+  {
+   "group": "Shifter",
+   "sub": "Other books · Shifting option",
+   "name": "Longtooth",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Bonus Action fang Unarmed Strike 1d6 + STR Piercing while shifted",
+   "identifier": "longtooth"
+  },
+  {
+   "group": "Shifter",
+   "sub": "Other books · Shifting option",
+   "name": "Swiftstride",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "+10 ft Speed while shifted; Reaction move 10 ft when a creature ends its turn within 5 ft",
+   "identifier": "swiftstride"
+  },
+  {
+   "group": "Shifter",
+   "sub": "Other books · Shifting option",
+   "name": "Wildhunt",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Advantage on WIS checks while shifted; no creature within 30 ft has Advantage against you",
+   "identifier": "wildhunt"
+  },
+  {
+   "group": "Tiefling",
+   "sub": "Player's Handbook",
+   "name": "Darkvision",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "darkvision"
+  },
+  {
+   "group": "Tiefling",
+   "sub": "Player's Handbook",
+   "name": "Fiendish Legacy",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "fiendish-legacy"
+  },
+  {
+   "group": "Tiefling",
+   "sub": "Player's Handbook",
+   "name": "Otherworldly Presence",
+   "source": "SRD",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "otherworldly-presence"
+  },
+  {
+   "group": "Warforged",
+   "sub": "Other books",
+   "name": "Construct Resilience",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Resistance to Poison and Advantage on saves vs Poisoned",
+   "identifier": "construct-resilience"
+  },
+  {
+   "group": "Warforged",
+   "sub": "Other books",
+   "name": "Integrated Protection",
+   "source": "Other",
+   "category": "verify",
+   "priority": 1,
+   "note": "+1 AC (D&D Beyond effect) - check",
+   "identifier": "integrated-protection"
+  },
+  {
+   "group": "Warforged",
+   "sub": "Other books",
+   "name": "Sentry’s Rest",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Rest rule - nothing to automate",
+   "identifier": "sentrys-rest"
+  },
+  {
+   "group": "Warforged",
+   "sub": "Other books",
+   "name": "Specialized Design",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "specialized-design"
+  },
+  {
+   "group": "Warforged",
+   "sub": "Other books",
+   "name": "Tireless",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "identifier": "tireless"
+  },
+  {
+   "group": "Elf",
+   "sub": "Player's Handbook · Elven Lineage option",
+   "name": "Elven Lineage (Drow)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Lineage cantrip and spells (always prepared, 1 free cast/LR) - check casting",
+   "identifier": "elven-lineage-drow"
+  },
+  {
+   "group": "Elf",
+   "sub": "Player's Handbook · Elven Lineage option",
+   "name": "Elven Lineage (High Elf)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Lineage cantrip and spells (always prepared, 1 free cast/LR) - check casting",
+   "identifier": "elven-lineage-high-elf"
+  },
+  {
+   "group": "Elf",
+   "sub": "Player's Handbook · Elven Lineage option",
+   "name": "Elven Lineage (Wood Elf)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Lineage cantrip and spells (always prepared, 1 free cast/LR) - check casting",
+   "identifier": "elven-lineage-wood-elf"
+  },
+  {
+   "group": "Tiefling",
+   "sub": "Player's Handbook · Fiendish Legacy option",
+   "name": "Fiendish Legacy (Abyssal)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Resistance plus cantrip and spells (1 free cast/LR) - check casting",
+   "identifier": "fiendish-legacy-abyssal"
+  },
+  {
+   "group": "Tiefling",
+   "sub": "Player's Handbook · Fiendish Legacy option",
+   "name": "Fiendish Legacy (Chthonic)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Resistance plus cantrip and spells (1 free cast/LR) - check casting",
+   "identifier": "fiendish-legacy-chthonic"
+  },
+  {
+   "group": "Tiefling",
+   "sub": "Player's Handbook · Fiendish Legacy option",
+   "name": "Fiendish Legacy (Infernal)",
+   "source": "SRD",
+   "category": "verify",
+   "priority": 2,
+   "note": "Resistance plus cantrip and spells (1 free cast/LR) - check casting",
+   "identifier": "fiendish-legacy-infernal"
+  }
+ ]
+}
