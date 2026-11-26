@@ -3,6 +3,31 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.37.0
+
+Priority-2 general feats from Arcana Unleashed, Heroes of Faerûn and Astarion's Book of Hungers, as new CGA feats
+(1.0.0, Mass Apply).
+
+- **Offered automatically:**
+  - **Divination Adept**: Prescient Intervention gives a creature within 60 ft a second d20 when that can change the
+    result. It turns an ally's failed save or miss into a success, or an enemy's hit or successful save into a failure.
+    Once per Long Rest; a slot Divination spell gives the use back.
+  - **Necromancy Adept**: after a slot Necromancy spell, roll up to two Hit Dice and heal the total + the slot level.
+  - **Spellfire Adept**: add up to two Hit Dice to a spell's Radiant damage (once per turn). Your Radiant damage
+    ignores Resistance.
+  - **Love Bites** (Charmed), **Putrefy** (Poisoned), **Rebuke** (Prone): after your melee, Necrotic or Radiant
+    damage, once per Short Rest each.
+  - **Zhentarim Tactics**: Opportunity Attack against a creature next to you that hits you in melee.
+  - **Dragonscarred**: Dragon's Terror as a Bonus Action after you deal damage with an action on your turn. Pick the
+    Resistance on the Effects tab (Fire is on by default).
+  - **Warlike Familiar**: your familiar's Reaction adds your Proficiency Bonus to a nearby creature's AC against a hit.
+    Battle Familiar once per Long Rest without a slot.
+- **Conjuration Adept**: + your spellcasting modifier on Concentration saves for a Conjuration spell.
+- **Transmutation Adept**: a slot Transmutation spell on your turn raises your Speed by 5 ft per slot level.
+- **Order's Resilience**: you and an adjacent ally have Advantage on Strength saves.
+- **Lordly Resolve**: Standard Bearer makes up to three creatures immune to Charmed and Frightened for 1 minute and
+  stands them up.
+
 ## 0.36.0
 
 Priority-1 general feats from Arcana Unleashed, Heroes of Faerûn and Astarion's Book of Hungers, as new CGA feats
