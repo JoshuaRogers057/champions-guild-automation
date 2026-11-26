@@ -26,7 +26,7 @@ Dragonborn|Player's Handbook|Draconic Flight|SRD|done|2|Module rule (no Mass App
 Dwarf|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Dwarf|Player's Handbook|Dwarven Resilience|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): Poison Resistance and Advantage on saves against Poisoned (compendium item was empty)|dwarven-resilience
 Dwarf|Player's Handbook|Dwarven Toughness|SRD|done|2|Checked in v0.28.0 - the compendium effect adds 1 HP per level|dwarven-toughness
-Dwarf|Player's Handbook|Stonecunning|SRD|verify|3|Bonus Action Tremorsense 60 ft for 10 minutes (PB/LR)|stonecunning
+Dwarf|Player's Handbook|Stonecunning|SRD|done|3|Checked in v0.29.0 - the compendium activity gives Tremorsense 60 ft for 10 minutes and spends a use|stonecunning
 Elf|Player's Handbook|Darkvision|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Elf|Player's Handbook|Elven Lineage|PHB|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|elven-lineage
 Elf|Player's Handbook|Fey Ancestry|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): Advantage on saves against a Charmed effect (compendium item was empty)|fey-ancestry
@@ -65,14 +65,14 @@ Kalashtar|Other books|Severed from Dreams|Other|skip|3|Sheet trait, proficiency,
 Khoravar|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Khoravar|Other books|Fey Ancestry|SRD|done|1|Module rule (no Mass Apply; works on the character's own trait): Advantage on saves against a Charmed effect (compendium item was empty)|fey-ancestry
 Khoravar|Other books|Fey Gift|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|fey-gift
-Khoravar|Other books|Lethargy Resilience|Other|build|3|A failed save vs Unconscious becomes a success (1/1d4 Long Rests) - prompt|lethargy-resilience
+Khoravar|Other books|Lethargy Resilience|Other|done|3|Module rule (no Mass Apply; works on the character's own trait): offered when you fail a save against Unconscious - succeed instead; usable again after 1d4 Long Rests (counted down on each Long Rest)|lethargy-resilience
 Khoravar|Other books|Skill Versatility|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|skill-versatility
 Lorwyn Changeling|Other books|Shape Self|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|shape-self
 Lorwyn Changeling|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Lorwyn Changeling|Other books|Delightful Imitator|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|delightful-imitator
 Lorwyn Changeling|Other books|Unpredictable Movement|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|unpredictable-movement
 Lupin|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
-Lupin|Other books|Feral Pounce|Other|build|3|Unarmed Strikes deal Slashing; once per turn, Damage and Shove on one hit|feral-pounce
+Lupin|Other books|Feral Pounce|Other|done|3|Module rule (no Mass Apply; works on the character's own trait): Unarmed Strikes deal Slashing; once per turn after an Unarmed Strike hit, offers a Shove (Prone, or push 5 ft - move the token)|feral-pounce
 Lupin|Other books|Howl|Other|done|2|CGA item: Bonus Action, enemies within 15 ft WIS save or Disadvantage on attacks and saves until the start of your next turn (PB/LR)|howl
 Lupin|Other books|Werewolf Instincts|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|werewolf-instincts
 Orc|Player's Handbook|Adrenaline Rush|SRD|done|1|Checked in v0.27.0 - the compendium activity gives temp HP = PB and spends a use (the Dash is your movement)|adrenaline-rush
@@ -82,7 +82,7 @@ Reborn|Other books|Escaped Death|Other|done|2|Module rule (no Mass Apply; works 
 Reborn|Other books|Everlasting|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|everlasting
 Reborn|Other books|Knowledge from a Past Life|Other|done|2|Module rule (no Mass Apply; works on the character's own trait): after a failed ability check with a DC, offers +1d6 (PB/LR) and posts the new total|knowledge-from-a-past-life
 Reborn|Other books|Strange Endurance|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|strange-endurance
-Rimekin|Other books|Cold Fire Magic|Other|verify|3|Ray of Frost; Ice Knife and Flame Blade (Cold) 1 free cast/LR|cold-fire-magic
+Rimekin|Other books|Cold Fire Magic|Other|done|3|Module rule (no Mass Apply; works on the character's own trait): Flame Blade deals Cold instead of Fire (any casting, not only the free one); the spells come from the species / D&D Beyond|cold-fire-magic
 Rimekin|Other books|Cold Resistance|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|cold-resistance
 Rimekin|Other books|Darkvision|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|darkvision
 Shifter|Other books|Bestial Instincts|Other|skip|3|Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate|bestial-instincts

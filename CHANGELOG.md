@@ -3,6 +3,18 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.29.0
+
+The last species traits (priority 3): every trait on the species tracker is now done or skipped. All are module rules
+(no Mass Apply).
+
+- **Khoravar Lethargy Resilience:** when you fail a save against falling Unconscious, you're offered a success
+  instead. It's usable again after 1d4 Long Rests.
+- **Lupin Feral Pounce:** Unarmed Strikes deal Slashing damage. Once per turn after an Unarmed Strike hits, you're
+  offered a Shove: knock Prone, or push 5 ft (move the token yourself).
+- **Rimekin Cold Fire Magic:** Flame Blade deals Cold damage instead of Fire.
+- **Dwarf Stonecunning:** checked; the compendium activity gives Tremorsense 60 ft for 10 minutes.
+
 ## 0.28.0
 
 Priority-2 species traits. The four new trait items (Howl, Shape-Shifter, Longtooth, Healing Hands) need **Mass Apply

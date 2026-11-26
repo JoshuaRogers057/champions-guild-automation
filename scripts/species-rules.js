@@ -14,6 +14,7 @@
 //  - Breath Weapon: the damage type follows your Draconic Ancestry. Integrated Protection: +1 AC if the trait has no AC effect.
 //  - P2: Shifter options while shifted (Beasthide, Swiftstride, Wildhunt), Knowledge from a Past Life (+1d6 to a failed
 //    check), Resourceful (Heroic Inspiration on a Long Rest), Escaped Death, Draconic Flight's Fly Speed.
+//  - P3: Lethargy Resilience, Feral Pounce (Slashing Unarmed Strikes + once-per-turn Shove), Cold Fire Magic (Cold Flame Blade).
 import { MODULE_ID, askOwner, askChoice, edgeDistance, isIncapacitated, turnKey, reduceDamage } from "./main.js";
 import { isMagicItem, creatureType, spendUse, canReact, useReaction, say, chg, tokenOf, isGM, ON_HIT, PASSIVES } from "./item-rules.js";
 
@@ -341,3 +342,76 @@ PASSIVES.push(
     effect: (a) => ({ name: "Draconic Flight: Fly Speed", img: "icons/creatures/abilities/wing-batlike-red-pink.webp",
       changes: [chg("system.attributes.movement.fly", String(Number(a.system.attributes.movement?.walk ?? 30) || 30), "upgrade")] }) }
 );
+
+// ================================================================== Priority 3
+// ------------------------------------------------------------------ Khoravar Lethargy Resilience: a failed save vs Unconscious succeeds
+// Once used, it's back after 1d4 Long Rests (counted down on each Long Rest).
+const LETHARGY_FLAG = "cgaLethargyRests";
+Hooks.on("midi-qol.preSavesComplete", async (workflow) => {
+  try {
+    if (!workflow?.failedSaves?.size || !workflowStatuses(workflow).has("unconscious")) return;
+    for (const t of Array.from(workflow.failedSaves)) {
+      const actor = tokenOf(t)?.actor;
+      const it = actor && trait(actor, "lethargy-resilience");
+      if (!it || Number(it.getFlag("world", LETHARGY_FLAG) ?? 0) > 0) continue;
+      if (!(await askOwner(actor, `Lethargy Resilience: ${actor.name}`, `<p>${actor.name} fails a save against falling Unconscious. Use Lethargy Resilience to succeed instead (back after 1d4 Long Rests)?</p>`))) continue;
+      const r = await new Roll("1d4").evaluate();
+      await it.setFlag("world", LETHARGY_FLAG, r.total).catch(() => MidiQOL.socket().executeAsGM("updateItems", { actorUuid: actor.uuid, updates: [{ _id: it.id, [`flags.world.${LETHARGY_FLAG}`]: r.total }] }));
+      workflow.failedSaves.delete(t);
+      workflow.saves?.add?.(t);
+      say(actor, `<strong>Lethargy Resilience:</strong> ${actor.name} succeeds instead (usable again after ${r.total} Long Rest${r.total > 1 ? "s" : ""}).`);
+    }
+  } catch (err) { console.warn(`${MODULE_ID} | Lethargy Resilience failed`, err); }
+});
+Hooks.on("dnd5e.restCompleted", async (actor, result, config) => {
+  try {
+    if (!(config?.type === "long" || result?.longRest) || !actor.isOwner) return;
+    const it = trait(actor, "lethargy-resilience");
+    const n = Number(it?.getFlag("world", LETHARGY_FLAG) ?? 0);
+    if (n > 0) await it.setFlag("world", LETHARGY_FLAG, n - 1);
+  } catch (err) {}
+});
+
+// ------------------------------------------------------------------ Lupin Feral Pounce: Slashing Unarmed Strikes; once per turn, Damage and Shove
+const isUnarmed = (item) => item?.system?.identifier === "unarmed-strike" || /unarmed strike/i.test(item?.name ?? "");
+Hooks.on("midi-qol.DamageRollComplete", async (workflow) => {
+  try {
+    if (!isUnarmed(workflow?.item) || !trait(workflow.actor, "feral-pounce") || !workflow.damageRolls?.length) return;
+    let changed = false;
+    for (const r of workflow.damageRolls) if (r.options?.type === "bludgeoning") { r.options.type = "slashing"; r.options.types = ["slashing"]; changed = true; }
+    if (changed) await workflow.setDamageRolls(workflow.damageRolls);
+  } catch (err) { console.warn(`${MODULE_ID} | Feral Pounce damage type failed`, err); }
+});
+const pounceUsed = new Map(); // actor uuid -> turn key
+Hooks.on("midi-qol.RollComplete", async (workflow) => {
+  try {
+    const actor = workflow?.actor;
+    if (!isUnarmed(workflow?.item) || !trait(actor, "feral-pounce")) return;
+    const t = hits(workflow)[0];
+    if (!t || (game.combat?.started && game.combat.combatant?.actor !== actor) || pounceUsed.get(actor.uuid) === turnKey()) return;
+    if (SIZES.indexOf(t.actor.system.traits?.size ?? "med") > SIZES.indexOf(actor.system.traits?.size ?? "med") + 1) return; // Shove: no more than one size larger
+    const pick = await askChoice(actor, `Feral Pounce: ${actor.name}`, `<p>Your Unarmed Strike hits ${t.name}. Also Shove it (STR or DEX save, DC ${8 + Number(actor.system.abilities.str?.mod ?? 0) + prof(actor)})?</p>`,
+      [{ action: "prone", label: "Knock Prone" }, { action: "push", label: "Push 5 ft" }, { action: "none", label: "No", default: true }]);
+    if (pick !== "prone" && pick !== "push") return;
+    pounceUsed.set(actor.uuid, turnKey());
+    const dc = 8 + Number(actor.system.abilities.str?.mod ?? 0) + prof(actor);
+    const ability = Number(t.actor.system.abilities.dex?.mod ?? 0) > Number(t.actor.system.abilities.str?.mod ?? 0) ? "dex" : "str";
+    const res = await t.actor.rollSavingThrow({ ability, target: dc }, { configure: false }, { data: { flavor: `Shove (Feral Pounce, DC ${dc})` } }).catch(() => null);
+    const r = Array.isArray(res) ? res[0] : res;
+    if (!r || r.total >= dc) { say(actor, `<strong>Feral Pounce:</strong> ${t.name} resists the Shove.`); return; }
+    if (pick === "prone") await addEffect(t.actor, { name: "Prone (Feral Pounce)", img: "systems/dnd5e/icons/svg/statuses/prone.svg", statuses: ["prone"], transfer: false });
+    say(actor, `<strong>Feral Pounce:</strong> ${t.name} ${pick === "prone" ? "is knocked Prone" : "is pushed 5 ft away (move its token)"}.`);
+  } catch (err) { console.warn(`${MODULE_ID} | Feral Pounce shove failed`, err); }
+});
+
+// ------------------------------------------------------------------ Rimekin Cold Fire Magic: Flame Blade deals Cold damage
+Hooks.on("midi-qol.DamageRollComplete", async (workflow) => {
+  try {
+    const item = workflow?.item;
+    if (!workflow.damageRolls?.length || !trait(workflow.actor, "cold-fire-magic")) return;
+    if (!/flame blade/i.test(`${item?.name ?? ""} ${item?.system?.identifier ?? ""} ${workflow.activity?.name ?? ""}`)) return;
+    let changed = false;
+    for (const r of workflow.damageRolls) if (r.options?.type === "fire") { r.options.type = "cold"; r.options.types = ["cold"]; changed = true; }
+    if (changed) await workflow.setDamageRolls(workflow.damageRolls);
+  } catch (err) { console.warn(`${MODULE_ID} | Cold Fire Magic failed`, err); }
+});

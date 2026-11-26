@@ -246,9 +246,9 @@
    "sub": "Player's Handbook",
    "name": "Stonecunning",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Bonus Action Tremorsense 60 ft for 10 minutes (PB/LR)",
+   "note": "Checked in v0.29.0 - the compendium activity gives Tremorsense 60 ft for 10 minutes and spends a use",
    "identifier": "stonecunning"
   },
   {
@@ -636,9 +636,9 @@
    "sub": "Other books",
    "name": "Lethargy Resilience",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "A failed save vs Unconscious becomes a success (1/1d4 Long Rests) - prompt",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): offered when you fail a save against Unconscious - succeed instead; usable again after 1d4 Long Rests (counted down on each Long Rest)",
    "identifier": "lethargy-resilience"
   },
   {
@@ -706,9 +706,9 @@
    "sub": "Other books",
    "name": "Feral Pounce",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Unarmed Strikes deal Slashing; once per turn, Damage and Shove on one hit",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Unarmed Strikes deal Slashing; once per turn after an Unarmed Strike hit, offers a Shove (Prone, or push 5 ft - move the token)",
    "identifier": "feral-pounce"
   },
   {
@@ -806,9 +806,9 @@
    "sub": "Other books",
    "name": "Cold Fire Magic",
    "source": "Other",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Ray of Frost; Ice Knife and Flame Blade (Cold) 1 free cast/LR",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Flame Blade deals Cold instead of Fire (any casting, not only the free one); the spells come from the species / D&D Beyond",
    "identifier": "cold-fire-magic"
   },
   {
