@@ -3,6 +3,50 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.31.0
+
+Priority-2 Origin feats from the non-Player's Handbook backgrounds. They're module rules that find the feat on the
+character, so no Mass Apply is needed. Only the four new CGA items need Mass Apply.
+
+- **+1d4 to checks**, added automatically:
+  - The 12 Dragonmark feats' Intuition: the mark's skills and tools. Mark of Making covers every artisan's tool.
+  - **Arcane Eloquence**: Deception, Intimidation and Persuasion.
+  - **Arcane Undertaker**: History and Medicine.
+- **Dark Gifts**: right after a natural 1 on a D20 Test, the save (DC 13 + PB) is rolled and its condition applied:
+  - **Aberrant Anatomy**: Stunned.
+  - **Echoing Soul**: Incapacitated with half Speed.
+  - **Gathered Whispers**: Deafened, with Disadvantage on checks and attacks.
+  - **Living Shadow**: Incapacitated, then the Shadow's Will table is rolled at the start of your turn.
+  - **Symbiotic Being**: Charmed for 1d12 hours.
+  - **Watchers**: Disadvantage on D20 Tests for 1 minute, with a WIS save at the end of each turn.
+  - "Until the end of your next turn" conditions are removed by the module at the right turn.
+- **Passives**:
+  - Mark of Passage: +5 ft Speed. Transmuted Anatomy now gets its +5 ft Speed too.
+  - Mark of Storm: Lightning Resistance.
+  - Touch of Death: Disadvantage on Death Saving Throws.
+  - Each is skipped when the feat already has that effect.
+- **Mark of Sentinel**: the Vigilant Guardian Reaction swaps places with an ally within 5 ft that is hit, and you take the hit (PB/LR).
+- **Symbiotic Being**: the Sustained Symbiosis Reaction spends your largest Hit Die and adds it to a failed save.
+- **Mist Walker**: the Mist Walk Reaction is offered after you take damage or fail a save against Grappled or Restrained.
+  Your token's next move is a teleport (PB/LR).
+- **Arcane Overload**: Power Surge adds +PB to an Evocation spell's damage (asked, 1/LR).
+- **Touch of Death**: Chill Touch's Necrotic damage ignores Resistance.
+- **Child of the Sun**: you and allies within 10 ft have Advantage on saves against Blinded.
+- **Lords' Alliance Agent**:
+  - Inspiring Strike: a Critical Hit gives a chosen ally Heroic Inspiration.
+  - Reassert Honor: Advantage on your next attack against an enemy that hurt an ally within 5 ft of you.
+- **Purple Dragon Rook**: Rallying Cry is offered when your Initiative is rolled.
+- **Zhentarim Ruffian**:
+  - Family First is asked when you join a combat with Heroic Inspiration. You and your allies then roll Initiative with Advantage.
+  - Exploit Opening: an attack's damage outside your turn is rolled twice, and you choose which roll to use.
+- **New CGA items (1.0.0)**:
+  - **Arcane Infiltrator**: Bonus Action Dodge.
+  - **Arcane Safeguard**: Bonus Action Resistance, using the CGA Resistance spell.
+  - **Portal Jumper**: Portal Step makes your next move a teleport.
+  - **Vampire's Plaything**: Bonus Action Dash and Disengage. Decanting offers a Potion of Healing or Antitoxin on
+    each Long Rest; the previous one evaporates.
+- **Fix: Survivor**'s Hypervigilance now also works on Initiative rolled from the combat tracker.
+
 ## 0.30.0
 
 Priority-1 Origin feats granted by the non-Player's Handbook backgrounds (Arcana Unleashed, Eberron, Ravenloft,
