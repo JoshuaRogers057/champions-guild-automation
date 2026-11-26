@@ -3,6 +3,11 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.38.1
+
+- **Reweave Fate**, **Moment of Prescience** and **Vigilant Guardian** (Mark of Sentinel) are offered only once per
+  attack. midi can check an attack's hits twice, which could have asked twice and spent a second slot or use.
+
 ## 0.38.0
 
 Priority-3 feats and the Epic Boons from Arcana Unleashed, Heroes of Faerûn and Astarion's Book of Hungers, as new CGA
