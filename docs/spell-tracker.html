@@ -89,6 +89,7 @@ footer { color: var(--muted); font-size: 13px; }
     <button type="button" role="tab" id="tab-features" data-kind="features" aria-selected="false">Class features</button>
     <button type="button" role="tab" id="tab-items" data-kind="items" aria-selected="false">Items</button>
     <button type="button" role="tab" id="tab-species" data-kind="species" aria-selected="false">Species</button>
+    <button type="button" role="tab" id="tab-backgrounds" data-kind="backgrounds" aria-selected="false">Backgrounds</button>
   </div>
 
   <div class="summary" id="summary" aria-label="Progress by category"></div>
@@ -143,9 +144,13 @@ const KINDS = {
   species: { one: "trait", many: "traits", file: "species.json", title: "Species trait automation tracker", book: "Species (2024 Player's Handbook and other books)",
     lede: "Every species trait in the combined species list: the 2024 Player's Handbook species plus Changeling, Dhampir, Hexblood, Kalashtar, Khoravar, Lupin, Reborn, Rimekin, Shifter, Warforged and more. Senses, resistances, proficiencies and cantrips come from the sheet, so those are Skip. Priority 1 is what shows up in most fights.",
     groups: (rows) => [...new Set(rows.map((s) => s.group))].sort(), groupOf: (s) => s.group, groupLabel: (g) => g, sub: (s) => s.sub,
-    sort: (a, b) => a.priority - b.priority || a.name.localeCompare(b.name) }
+    sort: (a, b) => a.priority - b.priority || a.name.localeCompare(b.name) },
+  backgrounds: { one: "entry", many: "entries", file: "backgrounds.json", title: "Background automation tracker", book: "Backgrounds (2024 Player's Handbook and other books)",
+    lede: "Every background in the combined list. A 2024 background's ability scores, skills, tool and equipment come from the sheet, so the backgrounds themselves are Skip; what needs automation is the Origin feat each one grants. Player's Handbook Origin feats are on the Feats tab; the feats from the other books are listed at the bottom.",
+    groups: (rows) => { const g = [...new Set(rows.map((s) => s.group))]; return [...g.filter((x) => !/^Origin feats/.test(x)).sort(), ...g.filter((x) => /^Origin feats/.test(x))]; },
+    groupOf: (s) => s.group, groupLabel: (g) => g, sub: (s) => s.sub, sort: (a, b) => a.priority - b.priority || a.name.localeCompare(b.name) }
 };
-const data = { spells: null, feats: null, features: null, items: null, species: null };
+const data = { spells: null, feats: null, features: null, items: null, species: null, backgrounds: null };
 const state = { kind: "spells", cats: new Set(["build", "verify", "midi"]), prio: "all", src: "all", q: "" };
 try { const saved = JSON.parse(localStorage.getItem("cga-tracker") || "null"); if (saved) { state.cats = new Set(saved.cats); state.prio = saved.prio; state.src = saved.src === "PHB" ? "book" : saved.src; if (KINDS[saved.kind]) state.kind = saved.kind; } } catch (e) {}
 const save = () => { try { localStorage.setItem("cga-tracker", JSON.stringify({ kind: state.kind, cats: [...state.cats], prio: state.prio, src: state.src })); } catch (e) {} };
@@ -221,7 +226,7 @@ function show() {
 }
 
 Promise.all(Object.entries(KINDS).map(([kind, k]) => fetch(k.file).then((r) => r.json())
-  .then((d) => { data[kind] = { updated: d.updated, rows: d.spells ?? d.feats ?? d.features ?? d.items ?? d.species }; }).catch(() => {})))
+  .then((d) => { data[kind] = { updated: d.updated, rows: d.spells ?? d.feats ?? d.features ?? d.items ?? d.species ?? d.backgrounds }; }).catch(() => {})))
   .then(() => {
     document.getElementById("prio").value = state.prio;
     document.getElementById("src").value = state.src;

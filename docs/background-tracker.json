@@ -1,0 +1,1175 @@
+{
+ "updated": "2026-11-26",
+ "backgrounds": [
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Strength, Constitution, Charisma",
+   "name": "Aberrant Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Aberrant Dragonmark (below)",
+   "identifier": "aberrant-heir"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Intelligence, Wisdom, Charisma",
+   "name": "Acolyte",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Cleric) (Feats tab: skip)",
+   "identifier": "acolyte"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Dexterity, Intelligence, Charisma",
+   "name": "Agent of the Ninth Quill",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Infiltrator (below)",
+   "identifier": "agent-of-the-ninth-quill"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Dexterity, Intelligence, Wisdom",
+   "name": "Archaeologist",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "identifier": "archaeologist"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Strength, Dexterity, Intelligence",
+   "name": "Artisan",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Crafter (Feats tab: skip)",
+   "identifier": "artisan"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Dexterity, Wisdom, Charisma",
+   "name": "Bejeweled Conclave Spy",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Eloquence (below)",
+   "identifier": "bejeweled-conclave-spy"
+  },
+  {
+   "group": "Backgrounds · Astarion’s Book of Hungers",
+   "sub": "Ability scores: Dexterity, Intelligence, Charisma",
+   "name": "Carouser",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tireless Reveler (below)",
+   "identifier": "carouser"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Dexterity, Constitution, Charisma",
+   "name": "Charlatan",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "identifier": "charlatan"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Dexterity, Wisdom",
+   "name": "Chondathan Freebooter",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "identifier": "chondathan-freebooter"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Strength, Dexterity, Constitution",
+   "name": "Cosmic Dawn Experiment",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Transmuted Anatomy (below)",
+   "identifier": "cosmic-dawn-experiment"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Strength, Intelligence, Wisdom",
+   "name": "Covenant of the Grave Recruit",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Undertaker (below)",
+   "identifier": "covenant-of-the-grave-recruit"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Dexterity, Constitution, Intelligence",
+   "name": "Criminal",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
+   "identifier": "criminal"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Strength, Constitution, Intelligence",
+   "name": "Crucible Storm Chaser",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Overload (below)",
+   "identifier": "crucible-storm-chaser"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Constitution, Wisdom",
+   "name": "Dead Magic Dweller",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Healer (Feats tab: done)",
+   "identifier": "dead-magic-dweller"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Dexterity, Constitution, Intelligence",
+   "name": "Dragon Cultist",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Cult of the Dragon Initiate (below)",
+   "identifier": "dragon-cultist"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Constitution, Intelligence, Wisdom",
+   "name": "Emerald Enclave Caretaker",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Emerald Enclave Fledgling (below)",
+   "identifier": "emerald-enclave-caretaker"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Strength, Dexterity, Charisma",
+   "name": "Entertainer",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Musician (Feats tab: done)",
+   "identifier": "entertainer"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Constitution, Intelligence, Wisdom",
+   "name": "Familiar Trainer",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Familiar Friend (below)",
+   "identifier": "familiar-trainer"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Strength, Constitution, Wisdom",
+   "name": "Farmer",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
+   "identifier": "farmer"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Constitution, Charisma",
+   "name": "Flaming Fist Mercenary",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
+   "identifier": "flaming-fist-mercenary"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Dexterity, Wisdom, Charisma",
+   "name": "Genie Touched",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Wizard) (Feats tab: skip)",
+   "identifier": "genie-touched"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Strength, Intelligence, Wisdom",
+   "name": "Guard",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
+   "identifier": "guard"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Dexterity, Constitution, Wisdom",
+   "name": "Guide",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Druid) (Feats tab: skip)",
+   "identifier": "guide"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Dexterity, Intelligence, Charisma",
+   "name": "Harper",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Harper Agent (below)",
+   "identifier": "harper"
+  },
+  {
+   "group": "Backgrounds · Ravenloft: The Horrors Within",
+   "sub": "Ability scores: Constitution, Wisdom, Charisma",
+   "name": "Haunted One",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Survivor (below) or a Dark Gift feat of your choice (see Dark Gift feats below)",
+   "identifier": "haunted-one"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Constitution, Wisdom, Charisma",
+   "name": "Hermit",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Healer (Feats tab: done)",
+   "identifier": "hermit"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Dexterity, Constitution, Wisdom",
+   "name": "Horizon Weaver Initiate",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Portal Jumper (below)",
+   "identifier": "horizon-weaver-initiate"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Strength, Intelligence, Charisma",
+   "name": "House Agent",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
+   "identifier": "house-agent"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Strength, Dexterity, Intelligence",
+   "name": "House Cannith Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Making (below)",
+   "identifier": "house-cannith-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Strength, Constitution, Wisdom",
+   "name": "House Deneith Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Sentinel (below)",
+   "identifier": "house-deneith-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Dexterity, Wisdom, Charisma",
+   "name": "House Ghallanda Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Hospitality (below)",
+   "identifier": "house-ghallanda-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Dexterity, Constitution, Wisdom",
+   "name": "House Jorasco Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Healing (below)",
+   "identifier": "house-jorasco-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Strength, Constitution, Intelligence",
+   "name": "House Kundarak Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Warding (below)",
+   "identifier": "house-kundarak-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Strength, Dexterity, Charisma",
+   "name": "House Lyrandar Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Storm (below)",
+   "identifier": "house-lyrandar-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Dexterity, Intelligence, Wisdom",
+   "name": "House Medani Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Detection (below)",
+   "identifier": "house-medani-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Dexterity, Constitution, Intelligence",
+   "name": "House Orien Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Passage (below)",
+   "identifier": "house-orien-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Dexterity, Wisdom, Charisma",
+   "name": "House Phiarlan Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Shadow (below)",
+   "identifier": "house-phiarlan-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Intelligence, Wisdom, Charisma",
+   "name": "House Sivis Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Scribing (below)",
+   "identifier": "house-sivis-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Constitution, Intelligence, Wisdom",
+   "name": "House Tharashk Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Finding (below)",
+   "identifier": "house-tharashk-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Dexterity, Intelligence, Charisma",
+   "name": "House Thuranni Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Shadow (below)",
+   "identifier": "house-thuranni-heir"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Constitution, Wisdom, Charisma",
+   "name": "House Vadalis Heir",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Handling (below)",
+   "identifier": "house-vadalis-heir"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Dexterity, Constitution",
+   "name": "Ice Fisher",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
+   "identifier": "ice-fisher"
+  },
+  {
+   "group": "Backgrounds · Eberron: Forge of the Artificer",
+   "sub": "Ability scores: Constitution, Intelligence, Charisma",
+   "name": "Inquisitive",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
+   "identifier": "inquisitive"
+  },
+  {
+   "group": "Backgrounds · Ravenloft: The Horrors Within",
+   "sub": "Ability scores: Intelligence, Wisdom, Charisma",
+   "name": "Investigator",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Sharp Eye (below) or a Dark Gift feat of your choice (see Dark Gift feats below)",
+   "identifier": "investigator"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Intelligence, Wisdom",
+   "name": "Knight of the Gauntlet",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tyro of the Gauntlet (below)",
+   "identifier": "knight-of-the-gauntlet"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Intelligence, Charisma",
+   "name": "Lords’ Alliance Vassal",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lords’ Alliance Agent (below)",
+   "identifier": "lords-alliance-vassal"
+  },
+  {
+   "group": "Backgrounds · Lorwyn",
+   "sub": "Ability scores: Strength, Constitution, Wisdom",
+   "name": "Lorwyn Expert",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Child of the Sun (below)",
+   "identifier": "lorwyn-expert"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Constitution, Intelligence, Charisma",
+   "name": "Merchant",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
+   "identifier": "merchant"
+  },
+  {
+   "group": "Backgrounds · Ravenloft: The Horrors Within",
+   "sub": "Ability scores: Dexterity, Constitution, Wisdom",
+   "name": "Mist Wanderer",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: A Dark Gift feat of your choice (see Dark Gift feats below)",
+   "identifier": "mist-wanderer"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Constitution, Wisdom, Charisma",
+   "name": "Moonwell Pilgrim",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Druid) (Feats tab: skip)",
+   "identifier": "moonwell-pilgrim"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Dexterity, Constitution, Intelligence",
+   "name": "Mulhorandi Tomb Raider",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
+   "identifier": "mulhorandi-tomb-raider"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Intelligence, Wisdom, Charisma",
+   "name": "Mythalkeeper",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Crafter (Feats tab: skip)",
+   "identifier": "mythalkeeper"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Strength, Intelligence, Charisma",
+   "name": "Noble",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "identifier": "noble"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Dexterity, Constitution, Charisma",
+   "name": "Phantasmic Circus Trouper",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Artist (below)",
+   "identifier": "phantasmic-circus-trouper"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Wisdom, Charisma",
+   "name": "Purple Dragon Squire",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Purple Dragon Rook (below)",
+   "identifier": "purple-dragon-squire"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Constitution, Charisma",
+   "name": "Rashemi Wanderer",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
+   "identifier": "rashemi-wanderer"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Constitution, Intelligence, Wisdom",
+   "name": "Sage",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Wizard) (Feats tab: skip)",
+   "identifier": "sage"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Strength, Dexterity, Wisdom",
+   "name": "Sailor",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tavern Brawler (Feats tab: done)",
+   "identifier": "sailor"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Dexterity, Intelligence, Wisdom",
+   "name": "Scribe",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "identifier": "scribe"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Intelligence, Wisdom, Charisma",
+   "name": "Seer Apprentice",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Omens (below)",
+   "identifier": "seer-apprentice"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "",
+   "name": "Shadowmasters Exile",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Savage Attacker (Feats tab: done)",
+   "identifier": "shadowmasters-exile"
+  },
+  {
+   "group": "Backgrounds · Lorwyn",
+   "sub": "Ability scores: Dexterity, Intelligence, Charisma",
+   "name": "Shadowmoor Expert",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Shadowmoor Hexer (below)",
+   "identifier": "shadowmoor-expert"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Strength, Dexterity, Constitution",
+   "name": "Soldier",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Savage Attacker (Feats tab: done)",
+   "identifier": "soldier"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Constitution, Intelligence, Charisma",
+   "name": "Spellfire Initiate",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Spellfire Spark (below)",
+   "identifier": "spellfire-initiate"
+  },
+  {
+   "group": "Backgrounds · Ravenloft: The Horrors Within",
+   "sub": "Ability scores: Constitution, Intelligence, Wisdom",
+   "name": "Spirit Medium",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: A Dark Gift feat of your choice (see Dark Gift feats below)",
+   "identifier": "spirit-medium"
+  },
+  {
+   "group": "Backgrounds · Astarion’s Book of Hungers",
+   "sub": "Ability scores: Strength, Constitution, Charisma",
+   "name": "Vampire Devotee",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Vampire’s Plaything (below)",
+   "identifier": "vampire-devotee"
+  },
+  {
+   "group": "Backgrounds · Astarion’s Book of Hungers",
+   "sub": "Ability scores: Dexterity, Constitution, Wisdom",
+   "name": "Vampire Survivor",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Vampire Hunter (below)",
+   "identifier": "vampire-survivor"
+  },
+  {
+   "group": "Backgrounds · Arcana Unleashed",
+   "sub": "Ability scores: Constitution, Wisdom, Charisma",
+   "name": "Ward of the Sheltering Hands",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Safeguard (below)",
+   "identifier": "ward-of-the-sheltering-hands"
+  },
+  {
+   "group": "Backgrounds · Player’s Handbook",
+   "sub": "Ability scores: Dexterity, Wisdom, Charisma",
+   "name": "Wayfarer",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
+   "identifier": "wayfarer"
+  },
+  {
+   "group": "Backgrounds · Forgotten Realms: Heroes of Faerûn",
+   "sub": "Ability scores: Strength, Dexterity, Charisma",
+   "name": "Zhentarim Mercenary",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Zhentarim Ruffian (below)",
+   "identifier": "zhentarim-mercenary"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Aberrant Anatomy",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Dark Gift: rolling a 1 on a D20 Test forces a DC 13 + PB save or a condition; the rest is proficiencies/spells/senses on the sheet",
+   "identifier": "aberrant-anatomy"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Aberrant Dragonmark",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Aberrant Fortitude: Reaction +1d4 to a failed CON save (1/LR); Aberrant Surge on the feat's spell; spells from the sheet",
+   "identifier": "aberrant-dragonmark"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Arcane Artist",
+   "source": "Other",
+   "category": "build",
+   "priority": 3,
+   "note": "Inspiring Magic: casting an Illusion spell gives an ally Heroic Inspiration (1/LR)",
+   "identifier": "arcane-artist"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Arcane Eloquence",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "+1d4 to the named skill checks (passive bonus); cantrip from the sheet",
+   "identifier": "arcane-eloquence"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Arcane Infiltrator",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Cunning Diversion: Dodge as a Bonus Action (PB/LR); Friends cantrip from the sheet",
+   "identifier": "arcane-infiltrator"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Arcane Omens",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Reaction when you or a creature within 30 ft fails a save: +1d4 (PB/LR) - prompt; Guidance cantrip from the sheet",
+   "identifier": "arcane-omens"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Arcane Overload",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Power Surge: add PB to one damage roll of an Evocation spell (1/LR) - prompt",
+   "identifier": "arcane-overload"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Arcane Safeguard",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Resistance cantrip as a Bonus Action (PB/LR); Sheltering Aid: temp HP = PB on Help (manual)",
+   "identifier": "arcane-safeguard"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Arcane Undertaker",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "+1d4 to the named skill checks (passive bonus); cantrip from the sheet",
+   "identifier": "arcane-undertaker"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Lorwyn",
+   "name": "Child of the Sun",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Eyes of Eirdu aura: you and allies within 10 ft have Advantage vs Blinded; Faerie Fire 1/LR from the sheet",
+   "identifier": "child-of-the-sun"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Forgotten Realms: Heroes of Faerûn",
+   "name": "Cult of the Dragon Initiate",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Dragon's Terror: Magic action, WIS save or Frightened until the end of your next turn (24 h immunity); Inspired by Fear: Heroic Inspiration",
+   "identifier": "cult-of-the-dragon-initiate"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Echoing Soul",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Dark Gift: rolling a 1 on a D20 Test forces a DC 13 + PB save or a condition; the rest is proficiencies/spells/senses on the sheet",
+   "identifier": "echoing-soul"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Forgotten Realms: Heroes of Faerûn",
+   "name": "Emerald Enclave Fledgling",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Spell, proficiency, language or Help-action positioning - nothing to automate",
+   "identifier": "emerald-enclave-fledgling"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Familiar Friend",
+   "source": "Other",
+   "category": "build",
+   "priority": 3,
+   "note": "Fortified Familiar (+2x level HP) and Helpful Friend (Advantage on proficient checks with the familiar adjacent, PB/LR); Find Familiar from the sheet",
+   "identifier": "familiar-friend"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Gathered Whispers",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Unearthly Scream: Reaction when hit, +PB AC against it (uses); Message/Augury from the sheet",
+   "identifier": "gathered-whispers"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Forgotten Realms: Heroes of Faerûn",
+   "name": "Harper Agent",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Spell, proficiency, language or Help-action positioning - nothing to automate",
+   "identifier": "harper-agent"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Living Shadow",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Dark Gift: rolling a 1 on a D20 Test forces a DC 13 + PB save or a condition; the rest is proficiencies/spells/senses on the sheet",
+   "identifier": "living-shadow"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Forgotten Realms: Heroes of Faerûn",
+   "name": "Lords’ Alliance Agent",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Inspiring Strike (crit: an ally gains Heroic Inspiration) and Reassert Honor (Advantage on your next attack vs an enemy that hurt an adjacent ally)",
+   "identifier": "lords-alliance-agent"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Detection",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-detection"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Finding",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-finding"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Handling",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-handling"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Healing",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-healing"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Hospitality",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-hospitality"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Making",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-making"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Passage",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "+5 ft Speed and +1d4 to Athletics/Acrobatics checks; Misty Step from the sheet",
+   "identifier": "mark-of-passage"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Scribing",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-scribing"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Sentinel",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "+1d4 Insight/Perception; Vigilant Guardian Reaction (swap places, take the hit, PB/LR); Shield spell from the sheet",
+   "identifier": "mark-of-sentinel"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Shadow",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-shadow"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Storm",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "+1d4 to Acrobatics/Navigator's Tools checks; Lightning Resistance; Thunderclap/Gust of Wind from the sheet",
+   "identifier": "mark-of-storm"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dragonmark feat (Eberron)",
+   "name": "Mark of Warding",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "identifier": "mark-of-warding"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Mist Walker",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Mist Walk: Reaction teleport 15 ft when damaged or failing a grapple/restrain save (uses)",
+   "identifier": "mist-walker"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Portal Jumper",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Portal Step: spend 15 ft of movement to teleport 15 ft (PB/LR, once per turn) - activity; resistance from the sheet",
+   "identifier": "portal-jumper"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Forgotten Realms: Heroes of Faerûn",
+   "name": "Purple Dragon Rook",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Rallying Cry: on Initiative, PB creatures within 30 ft gain Heroic Inspiration (1/LR) - prompt",
+   "identifier": "purple-dragon-rook"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Second Skin",
+   "source": "Other",
+   "category": "skip",
+   "priority": 3,
+   "note": "Spell, proficiency, language or Help-action positioning - nothing to automate",
+   "identifier": "second-skin"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Lorwyn",
+   "name": "Shadowmoor Hexer",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Curse Magic: a creature you've Hexed that hits you takes Psychic = PB (once per turn); Hex from the sheet (module Hex)",
+   "identifier": "shadowmoor-hexer"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Origin feat",
+   "name": "Sharp Eye",
+   "source": "Other",
+   "category": "build",
+   "priority": 3,
+   "note": "Advantage on a Search/Study check (PB/LR; not spent on a failure)",
+   "identifier": "sharp-eye"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Forgotten Realms: Heroes of Faerûn",
+   "name": "Spellfire Spark",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Magic Absorption: once per turn, damage from a spell or magical effect -1d4; Bonus Action Sacred Flame PB/LR",
+   "identifier": "spellfire-spark"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Origin feat",
+   "name": "Survivor",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Hypervigilance: reroll an Initiative d20 of 9 or lower; Steel Yourself: Reaction +PB to a failed save vs Charmed/Frightened (1/LR)",
+   "identifier": "survivor"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Symbiotic Being",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Sustained Symbiosis: Reaction, spend a Hit Die and add it to a failed save (uses)",
+   "identifier": "symbiotic-being"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Astarion’s Book of Hungers",
+   "name": "Tireless Reveler",
+   "source": "Other",
+   "category": "build",
+   "priority": 3,
+   "note": "Gain Heroic Inspiration when an ally within 60 ft spends theirs (PB/SR)",
+   "identifier": "tireless-reveler"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Touch of Death",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Chill Touch ignores Necrotic Resistance; Disadvantage on Death Saving Throws",
+   "identifier": "touch-of-death"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Arcana Unleashed",
+   "name": "Transmuted Anatomy",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "+5 ft Speed; Reaction +1d4 to a failed CON save (PB/LR); Advantage vs forced shape-shifting",
+   "identifier": "transmuted-anatomy"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Forgotten Realms: Heroes of Faerûn",
+   "name": "Tyro of the Gauntlet",
+   "source": "Other",
+   "category": "build",
+   "priority": 3,
+   "note": "Stand as One (Reaction: an ally isn't pushed/pulled); Vigilant (after Ready, next attack vs you has Disadvantage)",
+   "identifier": "tyro-of-the-gauntlet"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Astarion’s Book of Hungers",
+   "name": "Vampire Hunter",
+   "source": "Other",
+   "category": "build",
+   "priority": 1,
+   "note": "Vitality Ward: Reaction, Necrotic damage reduced by (PB)d6 (1/SR); Advantage to escape grapples/restraints",
+   "identifier": "vampire-hunter"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Astarion’s Book of Hungers",
+   "name": "Vampire’s Plaything",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Timely Retreat: Bonus Action Dash/Disengage (PB/LR); Decanting (potion on a Long Rest) - activities",
+   "identifier": "vampires-plaything"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Dark Gift feat (Ravenloft)",
+   "name": "Watchers",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Dark Gift: rolling a 1 on a D20 Test forces a DC 13 + PB save or a condition; the rest is proficiencies/spells/senses on the sheet",
+   "identifier": "watchers"
+  },
+  {
+   "group": "Origin feats granted by these backgrounds",
+   "sub": "Forgotten Realms: Heroes of Faerûn",
+   "name": "Zhentarim Ruffian",
+   "source": "Other",
+   "category": "build",
+   "priority": 2,
+   "note": "Exploit Opening (roll Opportunity Attack damage twice, keep either); Family First (spend Heroic Inspiration for party Initiative Advantage)",
+   "identifier": "zhentarim-ruffian"
+  }
+ ]
+}
