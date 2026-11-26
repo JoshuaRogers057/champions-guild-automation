@@ -1,0 +1,88 @@
+{
+  "_id": "cgaCbgravepower0",
+  "name": "Grave Power",
+  "type": "feat",
+  "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Overwhelming Necrosis:</strong> your Necrotic damage ignores Resistance. <strong>Grave Resilience:</strong> using Arcane Recovery removes one Exhaustion level (module).</p>",
+      "chat": ""
+    },
+    "identifier": "grave-power",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Necromancer 6",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxGravePw00",
+      "name": "Overwhelming Necrosis",
+      "img": "icons/sundries/books/book-symbol-skull-grey.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.idr.value",
+            "value": "necrotic",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Ignore Necrotic Resistance (effect); Exhaustion -1 on Arcane Recovery (module)."
+      }
+    }
+  }
+}

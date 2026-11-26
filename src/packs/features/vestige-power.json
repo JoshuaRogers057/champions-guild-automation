@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbvestigepowe",
+  "name": "Vestige Power",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your vestige's Divine Power comes back when you finish a Short or Long Rest or use Magical Cunning (module). While you're within 30 ft of your vestige, you have Resistance to its damage type (module aura).</p>",
+      "chat": ""
+    },
+    "identifier": "vestige-power",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Vestige Patron 6",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Divine Power refresh and shared Resistance within 30 ft (module)."
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbstrangemodi",
+  "name": "Strange Modifications",
+  "type": "feat",
+  "img": "icons/magic/death/hand-dirt-undead-zombie.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When your Reanimated Companion appears, the module asks for its modification: <strong>Arcane Conduit</strong> (once per turn, +INT to one damage roll of an Evocation or Necromancy Artificer spell while the companion is within 120 ft) or <strong>Ferocity</strong> (Dreadful Swipe deals 1d6).</p>",
+      "chat": ""
+    },
+    "identifier": "strange-modifications",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Reanimator 5",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Modification chosen on summon (module)."
+      }
+    }
+  }
+}

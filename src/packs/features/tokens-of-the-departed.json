@@ -1,0 +1,95 @@
+{
+  "_id": "cgaCbtokensofthe",
+  "name": "Tokens of the Departed",
+  "type": "feat",
+  "img": "icons/commodities/treasure/plaque-skull-blue-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your soul trinkets are this feature's uses (2, 3 at level 13, 4 at 17; a Long Rest brings you back up to two). <strong>Life Essence:</strong> while you have one, Advantage on death saves and CON saves (the module switches it on and off). <strong>Death's Knell:</strong> when Wails from the Grave has no uses left, the module offers to destroy a trinket instead. When a creature you can see within 30 ft dies, the module offers your Reaction to gain a trinket. Spirit Query is by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "tokens-of-the-departed",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Phantom 9",
+    "properties": [],
+    "uses": {
+      "max": "2 + min(1, max(0, @classes.rogue.levels - 12)) + min(1, max(0, @classes.rogue.levels - 16))",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxLifeEss00",
+      "name": "Life Essence (soul trinket)",
+      "img": "icons/commodities/treasure/plaque-skull-blue-green.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": true,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.death.roll.mode",
+            "value": "1",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "flags.midi-qol.advantage.save.con",
+            "value": "1",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Trinket uses, Life Essence toggle, Death's Knell and trinket gain by the module."
+      }
+    }
+  }
+}

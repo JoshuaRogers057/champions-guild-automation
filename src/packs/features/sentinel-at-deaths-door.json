@@ -1,0 +1,56 @@
+{
+  "_id": "cgaCbsentinelatd",
+  "name": "Sentinel at Death's Door",
+  "type": "feat",
+  "img": "icons/magic/death/skull-horned-goat-pentagram-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you or a Bloodied creature you can see within 60 ft is hit by an attack, the module offers your Reaction to halve the damage (critical-hit effects are canceled by hand). Uses = WIS modifier per Long Rest.</p>",
+      "chat": ""
+    },
+    "identifier": "sentinel-at-deaths-door",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Grave Domain 6",
+    "properties": [],
+    "uses": {
+      "max": "max(1, @abilities.wis.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Damage-halving Reaction offered by the module (WIS uses/LR)."
+      }
+    }
+  }
+}

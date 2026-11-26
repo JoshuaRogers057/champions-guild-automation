@@ -1171,6 +1171,214 @@
         "crewed": false,
         "activities": {}
       }
+    },
+    {
+      "name": "Gaunt: Dread Aura",
+      "system": {
+        "description": {
+          "value": "<p>Macabre Modifications (Gaunt): a creature of your choice that starts its turn within 10 ft of the companion makes a WIS save against your spell save DC or is Frightened until the start of its next turn (the module runs it).</p>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "Champions Guild Automation",
+          "rules": "2024",
+          "book": "",
+          "license": "",
+          "revision": 1
+        },
+        "uses": {
+          "max": "",
+          "recovery": [],
+          "spent": 0
+        },
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "level": null,
+          "repeatable": false,
+          "items": []
+        },
+        "properties": [
+          "trait"
+        ],
+        "requirements": "",
+        "activities": {
+          "dnd5eactivity000": {
+            "_id": "dnd5eactivity000",
+            "type": "save",
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": true
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "override": false,
+              "concentration": false
+            },
+            "effects": [
+              {
+                "_id": "cgaRnmCGaF000000",
+                "onSave": false
+              }
+            ],
+            "range": {
+              "units": "any",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": false,
+              "override": false
+            },
+            "damage": {
+              "onSave": "none",
+              "parts": []
+            },
+            "save": {
+              "ability": [
+                "wis"
+              ],
+              "dc": {
+                "calculation": "spellcasting",
+                "formula": ""
+              }
+            },
+            "uses": {
+              "spent": 0,
+              "recovery": [],
+              "max": ""
+            },
+            "sort": 0,
+            "name": "",
+            "img": "",
+            "flags": {},
+            "visibility": {
+              "level": {},
+              "requireAttunement": false,
+              "requireIdentification": false,
+              "requireMagic": false
+            },
+            "midiProperties": {
+              "identifier": "gaunt-aura"
+            }
+          }
+        },
+        "enchant": {},
+        "identifier": "gaunt-dread-aura",
+        "advancement": {},
+        "cover": null,
+        "crewed": false
+      },
+      "_id": "cgaRnmCGau000000",
+      "type": "feat",
+      "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+      "effects": [
+        {
+          "_id": "cgaRnmCGaF000000",
+          "name": "Gaunt: Frightened",
+          "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+          "type": "base",
+          "transfer": false,
+          "disabled": false,
+          "statuses": [
+            "frightened"
+          ],
+          "description": "",
+          "sort": 0,
+          "start": null,
+          "origin": null,
+          "tint": "#ffffff",
+          "showIcon": 1,
+          "folder": null,
+          "duration": {
+            "value": null,
+            "units": "seconds",
+            "expiry": null,
+            "expired": false
+          },
+          "flags": {
+            "dae": {
+              "stackable": "noneName",
+              "specialDuration": [
+                "turnStart"
+              ],
+              "showIcon": true,
+              "transfer": false
+            }
+          },
+          "system": {
+            "changes": [],
+            "conditions": "{}",
+            "magical": true,
+            "rider": {
+              "statuses": []
+            },
+            "origin": {
+              "actor": null,
+              "behavior": null,
+              "effect": null,
+              "item": null,
+              "message": null
+            }
+          }
+        }
+      ],
+      "folder": null,
+      "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        }
+      },
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "exportSource": null,
+        "coreVersion": "14.364",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.0",
+        "lastModifiedBy": null,
+        "createdTime": null,
+        "modifiedTime": null
+      }
     }
   ],
   "effects": [],

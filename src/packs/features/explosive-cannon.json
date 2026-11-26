@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbexplosiveca",
+  "name": "Explosive Cannon",
+  "type": "feat",
+  "img": "icons/magic/fire/explosion-fireball-large-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Firepower:</strong> your cannon's damage rolls and Protector's temp HP get +1d8 (module). <strong>Detonate:</strong> when your cannon takes damage and you're within 60 ft, the module offers your Reaction to detonate it - creatures within 20 ft make a DEX save (your spell DC), 3d10 Force, half on a success, and the cannon is destroyed.</p>",
+      "chat": ""
+    },
+    "identifier": "explosive-cannon",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Artillerist 9",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Firepower +1d8 and the Detonate Reaction by the module (the cannon actor has the Detonate save)."
+      }
+    }
+  }
+}

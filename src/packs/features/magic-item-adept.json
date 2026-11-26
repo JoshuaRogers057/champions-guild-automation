@@ -1,0 +1,88 @@
+{
+  "_id": "cgaCbmagicitemad",
+  "name": "Magic Item Adept",
+  "type": "feat",
+  "img": "icons/equipment/neck/amulet-round-engraved-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> You can attune to up to four magic items at once (the effect raises your attunement limit).</p>",
+      "chat": ""
+    },
+    "identifier": "magic-item-adept",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Artificer 10",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxAttune400",
+      "name": "Magic Item Adept (4 attunements)",
+      "img": "icons/equipment/neck/amulet-round-engraved-gold.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.attunement.max",
+            "value": "4",
+            "type": "upgrade",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Attunement limit 4 (effect)."
+      }
+    }
+  }
+}

@@ -496,6 +496,8 @@ switch (id) {
       if (cunning && lvl("rogue") >= 5) {
         const opts = [["trip", "Trip (1d6): DEX save or Prone", 1, largeOrSmaller(t)], ["withdraw", "Withdraw (1d6): move half Speed, no Opportunity Attacks", 1, true],
           ["poison", "Poison (1d6): CON save or Poisoned 1 minute", 1, actor.items.some((i) => /poisoner'?s kit/i.test(i.name))]];
+        // Strike Fear (Scion of the Three 9): Terrify
+        if (item("strike-fear")) opts.push(["terrify", "Terrify (1d6): WIS save or Frightened 1 minute (you have Advantage against it)", 1, true]);
         if (lvl("rogue") >= 14) opts.push(["daze", "Daze (2d6): CON save or only one of move/action/Bonus Action", 2, true], ["obscure", "Obscure (3d6): DEX save or Blinded", 3, true], ["knockout", "Knock Out (6d6): CON save or Unconscious", 6, true]);
         const usable = opts.filter(([, , cost, ok]) => ok && cost <= n);
         if (usable.length) {
@@ -526,6 +528,7 @@ switch (id) {
         if (!t?.actor || !cunning) continue;
         later(async () => {
           if (key === "withdraw") return say("Withdraw: move up to half your Speed without provoking Opportunity Attacks.");
+          if (key === "terrify") { if (await runSave("terrify-save", t, item("strike-fear"))) say(`${esc(t.name)} is terrified.`); return; }
           if (await runSave(`cunning-${key}`, t, cunning)) say(`${esc(t.name)} fails the Cunning Strike save.`);
         }, key === wf.cgaCunning.key ? 400 : 1800);
       }

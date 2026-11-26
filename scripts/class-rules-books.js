@@ -92,14 +92,22 @@ const RESOURCE_ACTS = {
   "wrath-of-the-wild": { find: feItem, label: "Favored Enemy" },
   "cgashot-piercing-shot": { find: (a) => feat(a, "arcane-shot"), label: "Arcane Shot" },
   "cgashot-seeking-shot": { find: (a) => feat(a, "arcane-shot"), label: "Arcane Shot" },
-  "spirits-controlled": { find: biItem, label: "Bardic Inspiration" }
+  "spirits-controlled": { find: biItem, label: "Bardic Inspiration" },
+  "sp3-beast": { find: (a) => spItem(a), label: "Sorcery Points", cost: 3 },
+  "sp3-beast-nc": { find: (a) => spItem(a), label: "Sorcery Points", cost: 3 }
 };
+const spItem = (a) => a?.items?.find((i) => (["font-of-magic", "sorcery-points"].includes(i.system?.identifier) || /^(font of magic|sorcery points)$/i.test(i.name)) && i.system?.uses?.max);
 Hooks.on("dnd5e.preUseActivity", (activity) => {
-  const r = RESOURCE_ACTS[activity?.midiProperties?.identifier];
+  let id = activity?.midiProperties?.identifier ?? "";
+  // a spell cast from a feature's cast activity: the hook fires on the spell's own activity
+  const via = activity?.item?.getFlag?.("dnd5e", "cachedFor");
+  if (via && !RESOURCE_ACTS[id] && !/^cgacd-/.test(id)) id = fromUuidSync(via, { relative: activity.actor })?.midiProperties?.identifier ?? id;
+  const r = RESOURCE_ACTS[id] ?? (/^cgacd-/.test(id) ? { find: cdItem, label: "Channel Divinity" } : null);
   if (!r) return;
-  const item = r.find(activity.actor);
-  if (!item || usesOf(item) < 1) { ui.notifications.warn(`${activity.item?.name}: no ${r.label} uses left.`); return false; }
-  spend(item);
+  const item = r.find(activity.actor), cost = r.cost ?? 1;
+  if (!item || usesOf(item) < cost) { ui.notifications.warn(`${activity.item?.name}: not enough ${r.label} (needs ${cost}).`); return false; }
+  if (cost === 1) spend(item);
+  else item.update({ "system.uses.spent": Number(item.system.uses.spent ?? 0) + cost });
 });
 
 // ------------------------------------------------------------------ Genie's Splendor: an unarmored AC option (10 + DEX + CHA, Shield allowed)
@@ -597,7 +605,11 @@ Hooks.on("updateActor", async (actor, changes) => {
       burstDone.add(tDoc.uuid);
       const burst = actor.items.find((i) => i.system?.identifier === "death-burst");
       const around = sceneTokens(tDoc).filter((o) => o.actor && o !== tDoc && alive(o.actor) && edgeDistance(o, tDoc, o.parent) <= 10);
-      if (burst && around.length) await runAct(burst, "death-burst", around);
+      // Improved Reanimation (Reanimator 9): 4d4; Bloated: + the creator's INT modifier
+      const maker = summonerOf(actor), lvl = classLevel(maker, "artificer");
+      const bloated = actor.getFlag("world", "cgaMods")?.includes?.("bloated");
+      const formula = lvl >= 9 || bloated ? `${lvl >= 9 ? 4 : 2}d4${bloated ? ` + ${Math.max(0, mod(maker, "int"))}` : ""}` : undefined;
+      if (burst && around.length) await runAct(burst, "death-burst", around, { formula });
     }
     // Wayfarer spirit: the Speed bonus ends with the temp HP
   } catch (err) { console.warn(`${MODULE_ID} | Death Burst failed`, err); }
@@ -715,7 +727,7 @@ Hooks.on("dnd5e.restCompleted", async (actor) => {
 async function groupRecovery(actor, me) {
   const gr = feat(actor, "group-recovery");
   if (!gr || usesOf(gr) < 1) return;
-  const allies = sceneTokens(me).filter((o) => o !== me && o.actor && alive(o.actor) && o.disposition === me.disposition && Number(hpOf(o.actor).value) < Number(hpOf(o.actor).max) && edgeDistance(me, o, me.parent) <= 30)
+  const allies = sceneTokens(me).filter((o) => o !== me && o.actor && alive(o.actor) && o.disposition === me.disposition && Number(hpOf(o.actor).value) < Number(hpOf(o.actor).max) && edgeDistance(me, o, me.parent) <= (feat(actor, "inspiring-commander") ? 60 : 30))
     .sort((a, b) => (Number(hpOf(b.actor).max) - Number(hpOf(b.actor).value)) - (Number(hpOf(a.actor).max) - Number(hpOf(a.actor).value))).slice(0, Math.max(1, mod(actor, "cha")));
   if (!allies.length) return;
   if (!(await askOwner(actor, `Group Recovery: ${actor.name}`, `<p>Heal ${allies.map((a) => a.name).join(", ")} for 1d4 + ${classLevel(actor, "fighter")} each (once per Short Rest)?</p>`))) return;
@@ -724,6 +736,9 @@ async function groupRecovery(actor, me) {
     const r = await new Roll(`1d4 + ${classLevel(actor, "fighter")}`).evaluate();
     await heal(a.actor, r.total);
     await r.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Group Recovery: ${a.name} regains ${r.total} HP` });
+    // Team Tactics (Banneret 7): Advantage on D20 Tests until the start of your next turn
+    if (feat(actor, "team-tactics")) await addEffect(a.actor, { name: "Team Tactics (Advantage on D20 Tests)", img: "icons/skills/social/diplomacy-handshake-yellow.webp", origin: gr.uuid, transfer: false,
+      duration: { value: null, units: "rounds", expiry: "sourceStart" }, system: { changes: [chg("flags.midi-qol.advantage.all", "1")] } });
   }
 }
 
@@ -824,18 +839,21 @@ async function teleportNextTo(mover, target) {
 // ------------------------------------------------------------------ Wails from the Grave (Phantom)
 async function wails(actor, workflow) {
   const wf = feat(actor, "wails-from-the-grave");
-  if (!wf || usesOf(wf) < 1) return;
+  // Death's Knell (Tokens of the Departed): destroy a soul trinket instead of spending a use
+  const tokens = feat(actor, "tokens-of-the-departed");
+  const knell = wf && usesOf(wf) < 1 && tokens && usesOf(tokens) > 0;
+  if (!wf || (usesOf(wf) < 1 && !knell)) return;
   const first = fromUuidSync(workflow.cgaSneak);
   const me = tokenOf(workflow.token);
   if (!first) return;
   const others = sceneTokens(first).filter((o) => o !== first && o !== me && o.actor && alive(o.actor) && hostile(o, me) && edgeDistance(o, first, o.parent) <= 30);
   if (!others.length) return;
   const n = Math.ceil(Math.ceil(classLevel(actor, "rogue") / 2) / 2);
-  const pick = await askChoice(actor, `Wails from the Grave: ${actor.name}`, `<p>Deal ${n}d6 Necrotic to a second creature within 30 ft of ${first.name}? (${usesOf(wf)} use(s) left)</p>`,
+  const pick = await askChoice(actor, `Wails from the Grave: ${actor.name}`, `<p>Deal ${n}d6 Necrotic to a second creature within 30 ft of ${first.name}? (${knell ? "destroys a soul trinket" : usesOf(wf) + " use(s) left"})</p>`,
     [...others.map((o, i) => ({ action: o.id, label: o.name, default: i === 0 })), { action: "none", label: "No" }]);
   const t = others.find((o) => o.id === pick);
   if (!t) return;
-  await spend(wf);
+  await spend(knell ? tokens : wf);
   await runAct(wf, "wails-damage", [t], { formula: `${n}d6` });
 }
 
@@ -955,3 +973,7 @@ Hooks.on("updateToken", async (doc, changes) => {
     }
   } catch (err) { console.warn(`${MODULE_ID} | Hypnotic Presence range check failed`, err); }
 });
+
+// Shared with class-rules-books-p2.js
+export { runAct, bonusRoll, heal, tempHP, removeEffects, removeStatus, statusEffect, cdItem, biItem, spItem, summonOrigin, summonerOf, hits, targetsOf, sceneTokens, tokensOf,
+  hostile, myTurn, mod, usesOf, alive, isAttack, isWeaponAttack, rangedAttack, meleeAttack, hidden, shotDie, artificerSpell, onceKey, rollTypes, retotal, cap, asGM };

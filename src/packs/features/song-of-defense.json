@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbsongofdefen",
+  "name": "Song of Defense",
+  "type": "feat",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you take damage while Bladesong is active, the module offers your Reaction to expend a spell slot and reduce the damage by five times the slot's level.</p>",
+      "chat": ""
+    },
+    "identifier": "song-of-defense",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Bladesinger 10",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Slot-for-damage Reaction during Bladesong (module)."
+      }
+    }
+  }
+}

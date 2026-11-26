@@ -5,7 +5,7 @@
   "img": "icons/equipment/chest/breastplate-banded-steel-gold.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> Pick your model with its activity (changeable after a rest); the model weapons use Intelligence for attack and damage. <strong>Dreadnaught:</strong> Force Demolisher (reach 10 ft, 1d10 Force; the module offers to push or pull a smaller creature 10 ft) and Giant Stature (Bonus Action, Large for 1 minute, INT uses per Long Rest; +5 ft reach by hand). <strong>Guardian:</strong> Thunder Pulse (1d8 Thunder; the target has Disadvantage on attacks against anyone but you until your next turn) and Defensive Field (Bonus Action while Bloodied, temp HP = Artificer level). <strong>Infiltrator:</strong> Lightning Launcher (90/300 ft, 1d6 Lightning, +1d6 once per turn), Powered Steps (+5 ft Speed) and Dampening Field (Advantage on Stealth).</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Pick your model with its activity (changeable after a rest); the model weapons use Intelligence for attack and damage. <strong>Dreadnaught:</strong> Force Demolisher (reach 10 ft, 1d10 Force; the module offers to push or pull a smaller creature 10 ft) and Giant Stature (Bonus Action, Large for 1 minute, INT uses per Long Rest; +5 ft reach by hand). <strong>Guardian:</strong> Thunder Pulse (1d8 Thunder; the target has Disadvantage on attacks against anyone but you until your next turn) and Defensive Field (Bonus Action while Bloodied, temp HP = Artificer level). <strong>Infiltrator:</strong> Lightning Launcher (90/300 ft, 1d6 Lightning, +1d6 once per turn), Powered Steps (+5 ft Speed) and Dampening Field (Advantage on Stealth). From Artificer level 9 (Improved Armorer) the model weapons get +1 to attack and damage.</p>",
       "chat": ""
     },
     "identifier": "armor-model",
@@ -309,7 +309,7 @@
         },
         "attack": {
           "ability": "int",
-          "bonus": "",
+          "bonus": "min(1, floor(@classes.artificer.levels / 9))",
           "critical": {
             "threshold": null
           },
@@ -328,7 +328,7 @@
             {
               "number": 1,
               "denomination": 10,
-              "bonus": "@mod",
+              "bonus": "@mod + min(1, floor(@classes.artificer.levels / 9))",
               "types": [
                 "force"
               ],
@@ -498,7 +498,7 @@
         },
         "attack": {
           "ability": "int",
-          "bonus": "",
+          "bonus": "min(1, floor(@classes.artificer.levels / 9))",
           "critical": {
             "threshold": null
           },
@@ -517,7 +517,7 @@
             {
               "number": 1,
               "denomination": 8,
-              "bonus": "@mod",
+              "bonus": "@mod + min(1, floor(@classes.artificer.levels / 9))",
               "types": [
                 "thunder"
               ],
@@ -687,7 +687,7 @@
         },
         "attack": {
           "ability": "int",
-          "bonus": "",
+          "bonus": "min(1, floor(@classes.artificer.levels / 9))",
           "critical": {
             "threshold": null
           },
@@ -706,7 +706,7 @@
             {
               "number": 1,
               "denomination": 6,
-              "bonus": "@mod",
+              "bonus": "@mod + min(1, floor(@classes.artificer.levels / 9))",
               "types": [
                 "lightning"
               ],
@@ -829,7 +829,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "notes": "Champions Guild Automation: Model weapons with INT; Thunder Pulse, Lightning Launcher and Force Demolisher riders by the module; Infiltrator passives toggled by the model choice."
       }
     }

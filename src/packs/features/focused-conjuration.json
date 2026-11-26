@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbfocusedconj",
+  "name": "Focused Conjuration",
+  "type": "feat",
+  "img": "icons/magic/control/orb-web-hold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Taking damage can't break your Concentration on Conjuration spells (module).</p>",
+      "chat": ""
+    },
+    "identifier": "focused-conjuration",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Conjurer 10",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Concentration saves for Conjuration spells always succeed (module)."
+      }
+    }
+  }
+}

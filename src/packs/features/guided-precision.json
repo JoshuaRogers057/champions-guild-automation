@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbguidedpreci",
+  "name": "Guided Precision",
+  "type": "feat",
+  "img": "icons/magic/light/beams-rays-orange-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Once per turn, when you cast a Cartographer spell or hit a creature affected by your Faerie Fire, the module adds your Intelligence modifier to one damage roll. Taking damage can't break your Concentration on Faerie Fire (module).</p>",
+      "chat": ""
+    },
+    "identifier": "guided-precision",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Cartographer 5",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: +INT damage once per turn and unbreakable Faerie Fire Concentration (module)."
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbcurvingshot",
+  "name": "Curving Shot",
+  "type": "feat",
+  "img": "icons/weapons/ammunition/arrow-head-war-flight.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you miss with an Ammunition weapon, the module offers your Bonus Action to ricochet the shot at another creature within 60 ft of the target (a new attack roll).</p>",
+      "chat": ""
+    },
+    "identifier": "curving-shot",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Arcane Archer 7",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Ricochet attack offered after a miss (module)."
+      }
+    }
+  }
+}

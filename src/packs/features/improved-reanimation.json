@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbimprovedrea",
+  "name": "Improved Reanimation",
+  "type": "feat",
+  "img": "icons/magic/death/skull-energy-light-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Your companion's Death Burst deals 4d4, and its Necrotic damage ignores Resistance (module).</p>",
+      "chat": ""
+    },
+    "identifier": "improved-reanimation",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Reanimator 9",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Death Burst 4d4 and Necrotic ignoring Resistance (module)."
+      }
+    }
+  }
+}

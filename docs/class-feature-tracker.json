@@ -84,7 +84,7 @@
    "level": 10,
    "name": "Magic Item Adept",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Attunement limit 4 (effect on system.attributes.attunement.max)",
    "identifier": "magic-item-adept"
@@ -106,7 +106,7 @@
    "level": 14,
    "name": "Advanced Artifice",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Attunement limit 5; Refreshed Genius - a Short Rest restores one Flash of Genius use",
    "identifier": "advanced-artifice"
@@ -194,7 +194,7 @@
    "level": 9,
    "name": "Restorative Reagents",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Lesser Restoration cast activity without a slot (INT uses/LR)",
    "identifier": "restorative-reagents"
@@ -271,7 +271,7 @@
    "level": 9,
    "name": "Improved Armorer",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "+1 attack/damage with the model weapon (Armor Replication by hand)",
    "identifier": "improved-armorer"
@@ -337,7 +337,7 @@
    "level": 9,
    "name": "Explosive Cannon",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Detonate Reaction when the cannon is damaged (20-ft DEX save 3d10 Force, cannon destroyed); Firepower +1d8 to cannon damage/temp HP",
    "identifier": "explosive-cannon"
@@ -414,7 +414,7 @@
    "level": 9,
    "name": "Arcane Jolt",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Once per turn when you hit with a magic weapon or the defender hits: +2d6 Force or heal 2d6 within 30 ft (asked; INT uses/LR)",
    "identifier": "arcane-jolt"
@@ -480,7 +480,7 @@
    "level": 5,
    "name": "Guided Precision",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Once per turn +INT to damage of a Cartographer spell or an attack vs a Faerie Fire target; damage can't break Concentration on Faerie Fire",
    "identifier": "guided-precision"
@@ -546,7 +546,7 @@
    "level": 5,
    "name": "Strange Modifications",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Companion option at summon: Arcane Conduit (+INT once per turn to Evocation/Necromancy Artificer spell damage) or Ferocity (Swipe 1d6)",
    "identifier": "strange-modifications"
@@ -557,7 +557,7 @@
    "level": 9,
    "name": "Improved Reanimation",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Death Burst 4d4; companion Necrotic damage ignores Resistance",
    "identifier": "improved-reanimation"
@@ -568,7 +568,7 @@
    "level": 9,
    "name": "Macabre Modifications",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Two options; adds Bloated (Large, push 10 ft, +INT to Death Burst), Gaunt (45 ft + climb, Frightened aura WIS save) and Moist (swim, Acid retaliation = INT)",
    "identifier": "macabre-modifications"
@@ -1294,7 +1294,7 @@
    "level": 6,
    "name": "Empowered Channeling",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Power from Beyond +1d6 once per turn to a Bard slot spell's damage or healing; Spirit Guardians 1/LR free cast with a Half Cover option (1/SR)",
    "identifier": "empowered-channeling"
@@ -1338,7 +1338,7 @@
    "level": 6,
    "name": "Blessing of Moonlight",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Moonbeam option 1/LR: you glow (5-ft Dim Light) and each failed save heals another creature within 60 ft 2d4",
    "identifier": "blessing-of-moonlight"
@@ -1558,7 +1558,7 @@
    "level": 6,
    "name": "Dispelling Recovery",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "After a slot spell that heals or ends a condition, offer a free Dispel Magic (1/SR, or spend Channel Divinity)",
    "identifier": "dispelling-recovery"
@@ -1613,7 +1613,7 @@
    "level": 6,
    "name": "Sentinel at Death’s Door",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Reaction when you or a Bloodied creature within 60 ft is hit: halve the damage, cancel critical effects (WIS uses/LR)",
    "identifier": "sentinel-at-deaths-door"
@@ -1657,7 +1657,7 @@
    "level": 3,
    "name": "Mind Magic",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Channel Divinity cast activities for the Divination domain spells (no slot, no Material)",
    "identifier": "mind-magic"
@@ -2460,7 +2460,7 @@
    "level": 7,
    "name": "Curving Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "After a missed Ammunition attack, offer a BA re-attack against a creature within 60 ft of the target",
    "identifier": "curving-shot"
@@ -2482,7 +2482,7 @@
    "level": 10,
    "name": "Ever-Ready Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Rolling Initiative restores one Arcane Shot use",
    "identifier": "ever-ready-shot"
@@ -2625,7 +2625,7 @@
    "level": 7,
    "name": "Team Tactics",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Group Recovery allies get Advantage on D20 Tests until the start of your next turn",
    "identifier": "team-tactics"
@@ -2636,7 +2636,7 @@
    "level": 10,
    "name": "Rallying Surge",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Action Surge lets up to CHA allies within 30 ft use a Reaction to attack or move half Speed without provoking (prompt/chat for each ally)",
    "identifier": "rallying-surge"
@@ -3571,7 +3571,7 @@
    "level": 6,
    "name": "Mystic Focus",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Activity: spend a slot to regain Focus Points = slot level; Short Rest / Uncanny Metabolism offers Focus Points -> slot by the cost table",
    "identifier": "mystic-focus"
@@ -3582,7 +3582,7 @@
    "level": 11,
    "name": "Focused Strike",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "After Stunning Strike (pass or fail), the target has Disadvantage on saves vs your spells until your next turn",
    "identifier": "focused-strike"
@@ -4044,7 +4044,7 @@
    "level": 7,
    "name": "Aura of Elemental Shielding",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Chosen Acid/Cold/Fire/Lightning/Thunder Resistance for you and allies in your Aura of Protection; change at the start of your turn",
    "identifier": "aura-of-elemental-shielding"
@@ -4517,7 +4517,7 @@
    "level": 7,
    "name": "Hungering Might",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "+WIS to CON saves; once per turn while transformed and Bloodied, a hit heals 1d10 + WIS",
    "identifier": "hungering-might"
@@ -4528,7 +4528,7 @@
    "level": 11,
    "name": "Rot and Violence",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Menacing Aura - failed Unnerving Aura saves also block healing and Reactions; Strangling Roots extra Sap/Slow mastery by hand",
    "identifier": "rot-and-violence"
@@ -4638,7 +4638,7 @@
    "level": 7,
    "name": "Fortifying Soul",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Magic action: up to WIS creatures heal 1d10 + Ranger level and get Advantage on saves vs Frightened for 1 hour (1/LR)",
    "identifier": "fortifying-soul"
@@ -4649,7 +4649,7 @@
    "level": 11,
    "name": "Chilling Retribution",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Reaction when hit: WIS save or Stunned (Speed 0) until the end of your next turn (WIS uses/LR)",
    "identifier": "chilling-retribution"
@@ -5001,7 +5001,7 @@
    "level": 9,
    "name": "Tokens of the Departed",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Soul trinket uses (2-4): Death's Knell free Wails, Life Essence Advantage on death saves and CON saves while you have one, Reaction to gain one when a creature dies within 30 ft, refill to 2 on a Long Rest",
    "identifier": "tokens-of-the-departed"
@@ -5067,7 +5067,7 @@
    "level": 9,
    "name": "Strike Fear",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Cunning Strike option Terrify (1d6): WIS save or Frightened 1 minute (repeat saves), you have Advantage against it",
    "identifier": "strike-fear"
@@ -5628,7 +5628,7 @@
    "level": 6,
    "name": "Beasts of Ill Omen",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "3 Sorcery Points: Summon Beast as a BA without a slot (optional no-Concentration 1-minute version); enemies within 5 ft of the beast have Disadvantage on saves vs your spells",
    "identifier": "beasts-of-ill-omen"
@@ -5683,7 +5683,7 @@
    "level": 6,
    "name": "Absorb Spells",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Counterspell from the sheet; a failed save against your Counterspell restores 1d4 Sorcery Points",
    "identifier": "absorb-spells"
@@ -6442,7 +6442,7 @@
    "level": 6,
    "name": "Grave Touched",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Your Necrotic damage ignores Resistance; once per turn change a spell's damage to Necrotic (asked); Dreaded Necrosis extra die in Form of Dread; Undead Endurance by hand",
    "identifier": "grave-touched"
@@ -6453,7 +6453,7 @@
    "level": 10,
    "name": "Necrotic Husk",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Necrotic Resistance (immunity in form); Unholy Resuscitation at 0 HP - 30-ft CON save 2d10 + CHA Necrotic, HP = 2 x level, +1 Exhaustion (1/SR)",
    "identifier": "necrotic-husk"
@@ -6497,7 +6497,7 @@
    "level": 6,
    "name": "Vestige Power",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Divine Power returns on a Short Rest / Magical Cunning; you share the vestige's Resistance within 30 ft",
    "identifier": "vestige-power"
@@ -6728,7 +6728,7 @@
    "level": 10,
    "name": "Song of Defense",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Reaction when damaged during Bladesong: spend a slot to reduce the damage by 5 x slot level (asked)",
    "identifier": "song-of-defense"
@@ -6772,7 +6772,7 @@
    "level": 6,
    "name": "Distant Transposition",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Benign Transposition range 60 ft; restore a use with a level 3+ slot",
    "identifier": "distant-transposition"
@@ -6783,7 +6783,7 @@
    "level": 6,
    "name": "Durable Summons",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Slot-cast Conjuration summons get 2 x Wizard level temp HP and Resistance (except Force/Necrotic/Psychic/Radiant) while it lasts",
    "identifier": "durable-summons"
@@ -6794,7 +6794,7 @@
    "level": 10,
    "name": "Focused Conjuration",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Damage can't break Concentration on Conjuration spells",
    "identifier": "focused-conjuration"
@@ -6871,7 +6871,7 @@
    "level": 3,
    "name": "Enchanting Conversationalist",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "+INT to checks with the chosen Deception/Intimidation/Persuasion skill (proficiency from the sheet)",
    "identifier": "enchanting-conversationalist"
@@ -6904,7 +6904,7 @@
    "level": 6,
    "name": "Split Enchantment",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Slot Enchantment spells that target more creatures when upcast can be cast one level higher (asked; INT uses/LR)",
    "identifier": "split-enchantment"
@@ -7069,7 +7069,7 @@
    "level": 6,
    "name": "Grave Power",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Wizard spell damage ignores Necrotic Resistance; Arcane Recovery removes one Exhaustion level",
    "identifier": "grave-power"
@@ -7080,7 +7080,7 @@
    "level": 6,
    "name": "Undead Thralls",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Animate Dead 1/LR without a slot at +1 level; your Necromancy undead get + INT + half level HP and + INT Necrotic on hits",
    "identifier": "undead-thralls"
@@ -7124,7 +7124,7 @@
    "level": 3,
    "name": "Transmuter’s Stone",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Long Rest activity creates a stone item: bearer gets CON save proficiency + Darkvision 60 / chosen Resistance / +10 ft Speed",
    "identifier": "transmuters-stone"
@@ -7135,7 +7135,7 @@
    "level": 3,
    "name": "Wondrous Alteration",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Alter Self 1/LR without a slot; extras (BA Dash underwater, Deception Advantage, 2d6 natural weapons + Concentration Advantage)",
    "identifier": "wondrous-alteration"
@@ -7146,7 +7146,7 @@
    "level": 6,
    "name": "Empowered Transmutation",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
    "note": "Slot Transmutation spells without attack/save can be cast one level higher (asked; INT uses/LR)",
    "identifier": "empowered-transmutation"

@@ -1,0 +1,56 @@
+{
+  "_id": "cgaCbblessingofm",
+  "name": "Blessing of Moonlight",
+  "type": "feat",
+  "img": "icons/magic/nature/moon-crescent.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you cast Moonbeam, the module offers the blessing (once per Long Rest): while the spell lasts you glow (5-ft Dim Light, by hand) and whenever a creature fails its save against that Moonbeam, another creature of your choice within 60 ft regains 2d4 HP (asked).</p>",
+      "chat": ""
+    },
+    "identifier": "blessing-of-moonlight",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "College of the Moon 6",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Moonbeam blessing (1/LR) and the 2d4 healing on failed saves (module)."
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "_id": "cgaCbgravetouche",
+  "name": "Grave Touched",
+  "type": "feat",
+  "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Arcane Necrosis:</strong> your Necrotic damage ignores Resistance, and once per turn the module offers to turn a damaging spell's damage into Necrotic. <strong>Dreaded Necrosis:</strong> once per turn in Form of Dread, a hit dealing Necrotic damage rolls one extra damage die (module). <strong>Undead Endurance:</strong> by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "grave-touched",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Undead Patron 6",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxGraveTo00",
+      "name": "Arcane Necrosis",
+      "img": "icons/magic/death/skull-horned-worn-fire-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.idr.value",
+            "value": "necrotic",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Ignore Necrotic Resistance (effect); Necrotic conversion and Dreaded Necrosis (module)."
+      }
+    }
+  }
+}

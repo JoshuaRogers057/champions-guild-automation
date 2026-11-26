@@ -1,0 +1,88 @@
+{
+  "_id": "cgaCbhungeringmi",
+  "name": "Hungering Might",
+  "type": "feat",
+  "img": "icons/magic/nature/tree-spirit-black.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> +WIS modifier (minimum +1) to Constitution saves. Once per turn, when you hit while transformed by Wrath of the Wild and Bloodied, the module heals you 1d10 + WIS.</p>",
+      "chat": ""
+    },
+    "identifier": "hungering-might",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Hollow Warden 7",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxHunger000",
+      "name": "Hungering Might (CON saves)",
+      "img": "icons/magic/nature/tree-spirit-black.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.abilities.con.bonuses.save",
+            "value": "+ max(1, @abilities.wis.mod)",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: CON save bonus (effect); healing on a hit while transformed and Bloodied (module)."
+      }
+    }
+  }
+}

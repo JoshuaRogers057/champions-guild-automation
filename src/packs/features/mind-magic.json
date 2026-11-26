@@ -1,0 +1,754 @@
+{
+  "_id": "cgaCbmindmagic00",
+  "name": "Mind Magic",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action, spend Channel Divinity (the module takes it): cast one of your Divination domain spells without a slot or Material components.</p>",
+      "chat": ""
+    },
+    "identifier": "mind-magic",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Knowledge Domain 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaCbMMComprLang": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 3,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMComprLang",
+        "type": "cast",
+        "name": "Comprehend Languages (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplComprehend",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-comprlang"
+        }
+      },
+      "cgaCbMMDetectMag": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 3,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMDetectMag",
+        "type": "cast",
+        "name": "Detect Magic (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectMagi",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-detectmag"
+        }
+      },
+      "cgaCbMMDetectTho": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 3,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMDetectTho",
+        "type": "cast",
+        "name": "Detect Thoughts (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplDetectThou",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-detecttho"
+        }
+      },
+      "cgaCbMMIdentify0": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 3,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMIdentify0",
+        "type": "cast",
+        "name": "Identify (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplIdentify00",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-identify0"
+        }
+      },
+      "cgaCbMMMindSpike": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 3,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMMindSpike",
+        "type": "cast",
+        "name": "Mind Spike (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplMindSpike0",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-mindspike"
+        }
+      },
+      "cgaCbMMTongues00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 5,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMTongues00",
+        "type": "cast",
+        "name": "Tongues (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplTongues000",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-tongues00"
+        }
+      },
+      "cgaCbMMArcaneEye": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 7,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMArcaneEye",
+        "type": "cast",
+        "name": "Arcane Eye (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplArcaneEye0",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-arcaneeye"
+        }
+      },
+      "cgaCbMMLegendLor": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 9,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMLegendLor",
+        "type": "cast",
+        "name": "Legend Lore (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplLegendLore",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-legendlor"
+        }
+      },
+      "cgaCbMMScrying00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": 9,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbMMScrying00",
+        "type": "cast",
+        "name": "Scrying (Mind Magic)",
+        "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplScrying000",
+          "challenge": {
+            "override": false
+          },
+          "properties": [
+            "material"
+          ],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        },
+        "midiProperties": {
+          "identifier": "cgacd-mind-scrying00"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Cast activities for the Divination domain spells (spend Channel Divinity via the module)."
+      }
+    }
+  }
+}

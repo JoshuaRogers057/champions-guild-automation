@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbfocusedstri",
+  "name": "Focused Strike",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you use Stunning Strike, the target has Disadvantage on saves against your spells until the start of your next turn, whether it succeeds or fails (module).</p>",
+      "chat": ""
+    },
+    "identifier": "focused-strike",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Warrior of the Mystic Arts 11",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Disadvantage on saves vs your spells after Stunning Strike (module)."
+      }
+    }
+  }
+}

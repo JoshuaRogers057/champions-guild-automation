@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbimprovedarm",
+  "name": "Improved Armorer",
+  "type": "feat",
+  "img": "icons/equipment/chest/breastplate-banded-steel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Improved Arsenal:</strong> +1 to attack and damage rolls with your Arcane Armor model's weapon (built into the Armor Model weapons from Artificer level 9). <strong>Armor Replication:</strong> by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "improved-armorer",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Armorer 9",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: +1 model weapon attack/damage is part of Armor Model 1.1.0."
+      }
+    }
+  }
+}

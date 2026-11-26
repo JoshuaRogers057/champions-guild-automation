@@ -3,6 +3,51 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.40.0
+
+Priority-2 class and subclass features for the Artificer and the book subclasses: 44 new CGA class features (1.0.0,
+Mass Apply), with their rules in the new `scripts/class-rules-books-p2.js`. Three existing items changed and need
+Mass Apply too: **Armor Model** 1.1.0, **Benign Transposition** 1.1.0 and **Sneak Attack** 1.2.0.
+
+- **Artificer**:
+  - **Magic Item Adept** and **Advanced Artifice** raise the attunement limit. Refreshed Genius returns a Flash of
+    Genius use on a Short Rest.
+  - **Alchemist**: Restorative Reagents casts Lesser Restoration without a slot.
+  - **Armorer**: Improved Armorer's +1 is now built into the Armor Model weapons from level 9.
+  - **Artillerist**: Explosive Cannon adds Firepower (+1d8) and a Detonate Reaction when the cannon is damaged.
+  - **Battle Smith**: Arcane Jolt (Force damage or healing) after a magic weapon hit or a Steel Defender hit.
+  - **Cartographer**: Guided Precision (+INT damage), and damage can't break your Concentration on Faerie Fire.
+  - **Reanimator**: you pick the companion's modifications when it appears (Arcane Conduit, Ferocity, Bloated, Gaunt,
+    Moist). Improved Reanimation makes Death Burst 4d4 and lets its Necrotic damage ignore Resistance.
+- **College of Spirits**: Empowered Channeling (Power from Beyond, free Spirit Guardians, the Half Cover option).
+- **College of the Moon**: Blessing of Moonlight heals an ally when a creature fails its Moonbeam save.
+- **Arcana Domain**: Dispelling Recovery (a free Dispel Magic; restore it with Channel Divinity).
+- **Grave Domain**: Sentinel at Death's Door halves an attack's damage.
+- **Knowledge Domain**: Mind Magic casts the Divination domain spells for Channel Divinity.
+- **Arcane Archer**: Curving Shot re-targets a miss; Ever-Ready Shot returns an Arcane Shot use on Initiative.
+- **Banneret**: Team Tactics (Advantage after Group Recovery) and Rallying Surge (ally Reactions after Action Surge).
+- **Warrior of the Mystic Arts**: Mystic Focus (slots and Focus Points both ways) and Focused Strike.
+- **Oath of the Noble Genies**: Aura of Elemental Shielding, with a choice of damage type.
+- **Hollow Warden**: Hungering Might and Rot and Violence (Menacing Aura blocks healing and Reactions).
+- **Winter Walker**: Fortifying Soul (healing + Advantage against fear) and Chilling Retribution.
+- **Phantom**: Tokens of the Departed. Soul trinkets are uses; Life Essence, Death's Knell and gaining a trinket when
+  a creature dies nearby are handled.
+- **Scion of the Three**: Strike Fear adds Terrify to Cunning Strike, with a repeat save and Advantage against the
+  target. This needs the updated Sneak Attack.
+- **Shadow Sorcery**: Beasts of Ill Omen (Summon Beast for 3 Sorcery Points, optionally without Concentration).
+- **Spellfire Sorcery**: Absorb Spells.
+- **Undead Patron**: Grave Touched (Necrotic conversion, Dreaded Necrosis) and Necrotic Husk (form immunity,
+  Unholy Resuscitation).
+- **Vestige Patron**: Vestige Power (Divine Power returns; shared Resistance near the vestige).
+- **Bladesinger**: Song of Defense.
+- **Conjurer**: Distant Transposition (60 ft; restore with a slot), Durable Summons and Focused Conjuration.
+- **Enchanter**: Enchanting Conversationalist and Split Enchantment. Use the activity before casting; the next eligible
+  spell is cast one level higher.
+- **Necromancer**: Grave Power and Undead Thralls (free Animate Dead at level 4, Undead Fortitude, Withering Strike).
+- **Transmuter**: Transmuter's Stone, Wondrous Alteration and Empowered Transmutation.
+- Fix: Channel Divinity, Sorcery Point and other costs are now also taken when the spell is cast from a feature's cast
+  activity.
+
 ## 0.39.0
 
 Priority-1 class and subclass features for the Artificer (Eberron: Forge of the Artificer) and the subclasses from

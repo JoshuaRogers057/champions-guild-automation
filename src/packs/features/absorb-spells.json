@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbabsorbspell",
+  "name": "Absorb Spells",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Counterspell is always prepared (sheet). Whenever a creature fails its save against your Counterspell, the module restores 1d4 Sorcery Points.</p>",
+      "chat": ""
+    },
+    "identifier": "absorb-spells",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Spellfire Sorcery 6",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: 1d4 Sorcery Points back after a failed Counterspell save (module)."
+      }
+    }
+  }
+}

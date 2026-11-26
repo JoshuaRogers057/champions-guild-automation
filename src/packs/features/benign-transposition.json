@@ -47,7 +47,7 @@
         "effects": [],
         "flags": {},
         "range": {
-          "value": "max(30, @scale.conjurer.benign-transposition)",
+          "value": "30 + 30 * min(1, floor(@classes.wizard.levels / 6))",
           "units": "ft",
           "special": "",
           "override": true
@@ -225,7 +225,7 @@
         "effects": [],
         "flags": {},
         "range": {
-          "value": "max(30, @scale.conjurer.benign-transposition)",
+          "value": "30 + 30 * min(1, floor(@classes.wizard.levels / 6))",
           "units": "ft",
           "special": "",
           "override": true
@@ -368,7 +368,7 @@
     },
     "advancement": {},
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> <strong>Swap Places</strong> checks the target is a willing Medium or smaller creature in range before spending a use, and swaps the tokens without spinning them.</p>",
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Swap Places</strong> checks the target is a willing Medium or smaller creature in range before spending a use, and swaps the tokens without spinning them.</p><p><em>Champions Guild Automation:</em> the range becomes 60 ft from Wizard level 6 (Distant Transposition).</p>",
       "chat": ""
     },
     "identifier": "benign-transposition",
@@ -403,7 +403,7 @@
     },
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.1.0",
         "notes": "Champions Guild Automation: Swap Places validates size/range/willingness first; tokens swap without rotating."
       }
     }
