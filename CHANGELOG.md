@@ -3,6 +3,39 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.35.0
+
+Priority-3 spells from Arcana Unleashed and Heroes of Faerûn, as new CGA spells (1.0.0, Mass Apply). Every spell on
+the tracker is now done or marked skip.
+
+- **Reactions** (offered automatically):
+  - **Reweave Fate**: an ally within 60 ft rerolls a failed save or missed attack with Advantage, and a success gives
+    6d10 Temporary Hit Points.
+  - **Moment of Prescience**: your failed save becomes a 20, or an attack that hits you becomes a 1.
+- **Elminster's Effulgent Spheres**: the spheres are the spell's uses. Energy Blast spends one, Absorb Energy halves
+  elemental damage, and the spell ends when they run out.
+- **Power Word Pain**: 6d8 Force. A target with 100 HP or fewer is also Charmed: Speed 10, Disadvantage on everything
+  except CON saves, and a CON save or its spells fail.
+- **Transfix**: Charmed and Incapacitated, and 4d8 Psychic when the target ends its turn next to you.
+- **Simbul's Synostodweomer**: casting with a slot offers Hit Point Dice healing.
+- **Holy Star of Mystra**: Shining Bolts, and Three-Quarters Cover while it lasts.
+- **Lightning Ring**, **Dirge** and **Aura of Evasion**: auras that follow you.
+- **Iron Body**, **Invulnerability**, **Zone of Amicability**: protective and helpful buffs.
+- **Fractured Awareness**, **Entrancing Mirrors** and **Vision of Elapsing Eons**: repeat saves at the end of each turn.
+  Vision of Elapsing Eons adds Exhaustion on each failed repeat save.
+- **Wail of the Banshee**: targets with 50 HP or fewer die.
+- **Detonate**: the Explosion has Disadvantage if the seed dropped its target.
+- **Blade of Disaster**: Critical Hits on 18-20.
+- **Illusory Dragon**: frightening presence and a Bonus Action breath.
+- **Summon Dinosaur**: new CGA: Summoned Creatures actors.
+- Checked: midi-qol's own 21 high-level spells (Phantasmal Force through Weird). **True Resurrection** now also ends
+  Poisoned, Diseased and Cursed.
+- **Fixes**: some effects used flag names midi-qol doesn't read (`advantage.ability.check` / `ability.save`), so they did nothing:
+  - Shifter's **Wildhunt** (Advantage on WIS checks).
+  - Gathered Whispers' **Voices from Beyond** (Disadvantage on checks).
+  - **Sharp Eye** (1.0.1): Advantage on the next ability check.
+  - **Shape-Shifter** (1.0.1): Advantage on CHA checks.
+
 ## 0.34.0
 
 Priority-2 spells from Arcana Unleashed, Heroes of Faerûn and Forge of the Artificer, as new CGA spells (1.0.0,
