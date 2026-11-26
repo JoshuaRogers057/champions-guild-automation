@@ -3,6 +3,21 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.26.0
+
+The last unchecked priority-1 items. All are module rules (no Mass Apply).
+
+- **Ring of Resistance**, **Armor of Resistance**: dnd5e's compendium versions are enchantments that only renamed
+  the ring or armor, with no resistance at all. The module now reads the damage type (or the ring's gemstone) from
+  the item's name and gives the Resistance while it's worn (and attuned, for the armor).
+- **Wand of the War Mage**: the enchantment's +1/+2/+3 never reached spell attacks; the module now adds it while the
+  wand is held and attuned.
+- **Rod of the Pact Keeper** (DMG-only): +1/+2/+3 to spell attack rolls and spell save DC while held and attuned. It
+  applies to all your spells, not only Warlock ones. Regaining the slot stays manual.
+- Any item that already carries its own resistance or spell bonus (such as a D&D Beyond import) is left alone.
+- **Spell Scroll**: checked. A scroll made from a spell with dnd5e's Create Scroll casts it (including the module's
+  automated spells) and crumbles.
+
 ## 0.25.0
 
 Priority-3 magic items: every item on the tracker that needed building is now done. As before, most fixes are

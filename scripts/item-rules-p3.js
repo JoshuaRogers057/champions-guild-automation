@@ -233,3 +233,45 @@ PASSIVES.push(
       return { name: `Ring of Elemental Command${plane ? ` (${plane})` : ""}`, img: "icons/equipment/finger/ring-band-engraved-scrolls-gold.webp", changes };
     } }
 );
+
+// ------------------------------------------------------------------ Enchantment templates that only rename the item
+// The compendium's Ring of Resistance, Armor of Resistance and Wand of the War Mage are enchantments: applied to a
+// ring, armor or wand they change its name but give no resistance / spell attack bonus. This reads the type or bonus
+// from the item's name (or its applied enchantment's name) and adds it - unless the item already has its own effect
+// (as a D&D Beyond item does).
+const DAMAGE = ["acid", "cold", "fire", "force", "lightning", "necrotic", "poison", "psychic", "radiant", "thunder"];
+const RING_GEMS = { pearl: "acid", tourmaline: "cold", garnet: "fire", sapphire: "force", citrine: "lightning", jet: "necrotic", amethyst: "poison", jade: "psychic", topaz: "radiant", spinel: "thunder" };
+const ownChanges = (item, keys) => item.effects.some((e) => e.type !== "enchantment" && !e.disabled && (e.system?.changes ?? e.changes ?? []).some((c) => keys.some((k) => c.key === k)));
+const labels = (item) => [item.name, ...item.effects.filter((e) => e.type === "enchantment").map((e) => e.name)].join(" | ");
+function resistanceOf(item) {
+  const text = labels(item);
+  if (!/resistance/i.test(text) || !/\b(ring|armor|armour|mail|plate|leather|hide|breastplate|shirt|scale|splint)\b/i.test(`${text} ${item.system.type?.value ?? ""}`)) return null;
+  if (item.type !== "equipment" || !item.system.equipped || !attuned(item) || ownChanges(item, ["system.traits.dr.value"])) return null;
+  const named = DAMAGE.find((d) => new RegExp(`\\b${d}\\b`, "i").test(text));
+  if (named) return named;
+  const gem = Object.keys(RING_GEMS).find((g) => new RegExp(`\\b${g}\\b`, "i").test(text));
+  return gem ? RING_GEMS[gem] : null;
+}
+function warMageBonus(item) {
+  const m = /war mage,?\s*\+([123])/i.exec(labels(item));
+  if (!m || !item.system.equipped || !attuned(item) || ownChanges(item, ["system.bonuses.rsak.attack", "system.bonuses.msak.attack"])) return 0;
+  return Number(m[1]);
+}
+// Rod of the Pact Keeper (DMG-only): +1/+2/+3 (by name, else rarity) to spell attacks and spell save DCs while held.
+function pactKeeperBonus(item) {
+  if (!/pact keeper/i.test(labels(item)) && item.system.identifier !== "rod-of-the-pact-keeper") return 0;
+  if (!item.system.equipped || !attuned(item) || ownChanges(item, ["system.bonuses.rsak.attack", "system.bonuses.msak.attack", "system.bonuses.spell.dc"])) return 0;
+  const m = /\+([123])/.exec(labels(item));
+  return m ? Number(m[1]) : ({ uncommon: 1, rare: 2, veryRare: 3, "very rare": 3 }[item.system.rarity] ?? 1);
+}
+PASSIVES.push(
+  { key: "pact-keeper", active: (a) => a.items.some((i) => pactKeeperBonus(i) > 0),
+    effect: (a) => { const n = Math.max(...a.items.map(pactKeeperBonus)); return { name: `Rod of the Pact Keeper (+${n})`, img: "icons/weapons/staves/staff-ornate-purple.webp",
+      changes: [chg("system.bonuses.msak.attack", `+${n}`, "add"), chg("system.bonuses.rsak.attack", `+${n}`, "add"), chg("system.bonuses.spell.dc", `+${n}`, "add")] }; } },
+  { key: "resistance-items", active: (a) => a.items.some((i) => resistanceOf(i)),
+    effect: (a) => ({ name: "Ring / Armor of Resistance", img: "icons/equipment/finger/ring-faceted-gold-purple.webp",
+      changes: [...new Set(a.items.map(resistanceOf).filter(Boolean))].map((t) => chg("system.traits.dr.value", t, "add")) }) },
+  { key: "war-mage", active: (a) => a.items.some((i) => warMageBonus(i) > 0),
+    effect: (a) => { const n = Math.max(...a.items.map(warMageBonus)); return { name: `Wand of the War Mage (+${n})`, img: "icons/weapons/wands/wand-gem-violet.webp",
+      changes: [chg("system.bonuses.msak.attack", `+${n}`, "add"), chg("system.bonuses.rsak.attack", `+${n}`, "add")] }; } }
+);

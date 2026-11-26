@@ -136,9 +136,9 @@
    "sub": "Armor · rare · attunement",
    "name": "Armor of Resistance",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Not checked yet in v0.23.0 - Resistance to the chosen type",
+   "note": "Module rule (no Mass Apply): the compendium enchantment only renamed the armor - the module reads the type from the name and gives the Resistance while worn and attuned",
    "identifier": "armor-of-resistance"
   },
   {
@@ -2646,9 +2646,9 @@
    "sub": "Ring · rare",
    "name": "Ring of Resistance",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Not checked yet in v0.23.0 - Resistance to the chosen type",
+   "note": "Module rule (no Mass Apply): the compendium enchantment only renamed the ring - the module reads the type (or gemstone) from the name and gives the Resistance while worn",
    "identifier": "ring-of-resistance"
   },
   {
@@ -2876,9 +2876,9 @@
    "sub": "Rod · very rare · attunement",
    "name": "Rod of the Pact Keeper",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling",
+   "note": "Module rule (no Mass Apply): +1/+2/+3 (from the name, else rarity) to spell attacks and spell save DC while held and attuned (all spells, not only Warlock ones); regaining a slot stays manual",
    "identifier": "rod-of-the-pact-keeper"
   },
   {
@@ -3086,9 +3086,9 @@
    "sub": "Scroll · varies",
    "name": "Spell Scroll",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling",
+   "note": "Checked in v0.26.0 - a scroll made from a spell (dnd5e's Create Scroll) casts it, including the module's automated spells, and crumbles",
    "identifier": "spell-scroll"
   },
   {
@@ -3676,9 +3676,9 @@
    "sub": "Wand · very rare · attunement",
    "name": "Wand of the War Mage, +1, +2, or +3",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling",
+   "note": "Module rule (no Mass Apply): the compendium enchantment's +N didn't reach spell attacks - the module adds +N to spell attack rolls while held and attuned",
    "identifier": "1-wand-of-the-war-mage"
   },
   {

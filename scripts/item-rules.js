@@ -376,6 +376,8 @@ export const ITEM_TOGGLES = [
 export const refreshPassives = (actor) => schedulePassives(actor);
 for (const h of ["createItem", "deleteItem"]) Hooks.on(h, (item) => schedulePassives(item.parent));
 Hooks.on("updateItem", (item, changes) => { if (["system.equipped", "system.attuned", "system.properties", "name", "system.identifier"].some((k) => foundry.utils.hasProperty(changes, k))) schedulePassives(item.parent); });
+// An enchantment applied to (or removed from) an item can change what it grants.
+for (const h of ["createActiveEffect", "deleteActiveEffect", "updateActiveEffect"]) Hooks.on(h, (e) => { if (e.parent instanceof Item && e.parent.parent instanceof Actor) schedulePassives(e.parent.parent); });
 Hooks.once("ready", () => { if (isGM()) for (const a of game.actors.filter((x) => x.type === "character")) schedulePassives(a); });
 
 // ------------------------------------------------------------------ Boots of Speed: Opportunity Attacks against you have Disadvantage

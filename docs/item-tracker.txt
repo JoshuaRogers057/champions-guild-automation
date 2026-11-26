@@ -15,7 +15,7 @@ Wondrous items|Wondrous Item · legendary|Apparatus of Kwalish|DMG|skip|3|Utilit
 Magic armor and shields|Armor · very rare|Armor, +1, +2, or +3|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)|armor-1-2-or-3
 Magic armor and shields|Armor · common|Armor of Gleaming|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|armor-of-gleaming
 Magic armor and shields|Armor · legendary · attunement|Armor of Invulnerability|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|armor-of-invulnerability
-Magic armor and shields|Armor · rare · attunement|Armor of Resistance|SRD|verify|1|Not checked yet in v0.23.0 - Resistance to the chosen type|armor-of-resistance
+Magic armor and shields|Armor · rare · attunement|Armor of Resistance|SRD|done|1|Module rule (no Mass Apply): the compendium enchantment only renamed the armor - the module reads the type from the name and gives the Resistance while worn and attuned|armor-of-resistance
 Magic armor and shields|Armor · rare · attunement|Armor of Vulnerability|SRD|done|2|Checked in v0.24.0 (data only) - compendium enchantment template; D&D Beyond armor carries its own effects. Not exercised in a test|armor-of-vulnerability
 Magic armor and shields|Armor · rare · attunement|Arrow-Catching Shield|SRD|done|2|Module rule (no Mass Apply): +2 AC only against ranged attack rolls (the compendium gave it always). The Reaction to become the target stays manual|arrow-catching-shield
 Artifacts|Weapon · artifact · attunement|Axe of the Dwarvish Lords|DMG|skip|3|Artifact - automate on request when one enters a campaign|axe-of-the-dwarvish-lords
@@ -266,7 +266,7 @@ Rings|Ring · uncommon · attunement|Ring of Jumping|SRD|skip|3|Utility, narrati
 Rings|Ring · uncommon · attunement|Ring of Mind Shielding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-mind-shielding
 Rings|Ring · rare · attunement|Ring of Protection|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (+1 AC/saves/checks)|ring-of-protection
 Rings|Ring · very rare · attunement|Ring of Regeneration|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|ring-of-regeneration
-Rings|Ring · rare|Ring of Resistance|SRD|verify|1|Not checked yet in v0.23.0 - Resistance to the chosen type|ring-of-resistance
+Rings|Ring · rare|Ring of Resistance|SRD|done|1|Module rule (no Mass Apply): the compendium enchantment only renamed the ring - the module reads the type (or gemstone) from the name and gives the Resistance while worn|ring-of-resistance
 Rings|Ring · very rare · attunement|Ring of Shooting Stars|SRD|done|2|CGA item: casts the module's automated spells|ring-of-shooting-stars
 Rings|Ring · rare · attunement|Ring of Spell Storing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-spell-storing
 Rings|Ring · legendary · attunement|Ring of Spell Turning|SRD|done|2|Module rule (no Mass Apply): Advantage on saves vs spells; a saved spell of level 7 or lower has no effect. Turning a spell back stays manual|ring-of-spell-turning
@@ -289,7 +289,7 @@ Rods|Rod · legendary · attunement|Rod of Lordly Might|SRD|done|3|Checked in v0
 Rods|Rod · legendary · attunement|Rod of Resurrection|SRD|done|2|CGA item: casts the module's automated spells|rod-of-resurrection
 Rods|Rod · rare · attunement|Rod of Rulership|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|rod-of-rulership
 Rods|Rod · very rare|Rod of Security|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|rod-of-security
-Rods|Rod · very rare · attunement|Rod of the Pact Keeper|DMG|verify|1|Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling|rod-of-the-pact-keeper
+Rods|Rod · very rare · attunement|Rod of the Pact Keeper|DMG|done|1|Module rule (no Mass Apply): +1/+2/+3 (from the name, else rarity) to spell attacks and spell save DC while held and attuned (all spells, not only Warlock ones); regaining a slot stays manual|rod-of-the-pact-keeper
 Wondrous items|Wondrous Item · uncommon|Rope of Climbing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|rope-of-climbing
 Wondrous items|Wondrous Item · rare|Rope of Entanglement|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|rope-of-entanglement
 Wondrous items|Wondrous Item · common|Rope of Mending|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|rope-of-mending
@@ -310,7 +310,7 @@ Wondrous items|Wondrous Item · uncommon · attunement|Slippers of Spider Climbi
 Magic armor and shields|Armor · common|Smoldering Armor|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|smoldering-armor
 Wondrous items|Wondrous Item · legendary|Sovereign Glue|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sovereign-glue
 Magic armor and shields|Armor · very rare · attunement|Spellguard Shield|SRD|done|2|Module rule (no Mass Apply): Advantage on saves vs spells and magical effects; spell attacks against you have Disadvantage|spellguard-shield
-Scrolls|Scroll · varies|Spell Scroll|SRD|verify|1|Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling|spell-scroll
+Scrolls|Scroll · varies|Spell Scroll|SRD|done|1|Checked in v0.26.0 - a scroll made from a spell (dnd5e's Create Scroll) casts it, including the module's automated spells, and crumbles|spell-scroll
 Wondrous items|Wondrous Item · legendary|Sphere of Annihilation|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sphere-of-annihilation
 Wondrous items|Wondrous Item · very rare|Spirit Board|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|spirit-board
 Staffs|Staff · common|Staff of Adornment|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|staff-of-adornment
@@ -369,7 +369,7 @@ Wands|Wand · rare · attunement|Wand of Paralysis|SRD|done|2|Checked in v0.24.0
 Wands|Wand · very rare · attunement|Wand of Polymorph|SRD|done|2|CGA item: casts the module's automated spells|wand-of-polymorph
 Wands|Wand · common|Wand of Pyrotechnics|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-pyrotechnics
 Wands|Wand · uncommon|Wand of Secrets|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-secrets
-Wands|Wand · very rare · attunement|Wand of the War Mage, +1, +2, or +3|SRD|verify|1|Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling|1-wand-of-the-war-mage
+Wands|Wand · very rare · attunement|Wand of the War Mage, +1, +2, or +3|SRD|done|1|Module rule (no Mass Apply): the compendium enchantment's +N didn't reach spell attacks - the module adds +N to spell attack rolls while held and attuned|1-wand-of-the-war-mage
 Wands|Wand · uncommon · attunement|Wand of Web|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|wand-of-web
 Wands|Wand · rare · attunement|Wand of Wonder|SRD|done|3|CGA item: Roll for Effect (d100), then the named activity; spells use the module's versions|wand-of-wonder
 Artifacts|Weapon · artifact · attunement|Wave|DMG|skip|3|Artifact - automate on request when one enters a campaign|wave
