@@ -3,6 +3,41 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.34.0
+
+Priority-2 spells from Arcana Unleashed, Heroes of Faerûn and Forge of the Artificer, as new CGA spells (1.0.0,
+Mass Apply), plus fixes to older spells.
+
+- **Backlash**: offered as a Reaction when you take damage and have a 4th-level or higher slot. It reduces the damage
+  by (slot)d6 + your modifier, and the attacker makes a CON save for (slot)d6 Force.
+- **Alustriel's Mooncloak**: an aura for you and your allies: Half Cover and Resistance to Cold, Lightning and Radiant.
+  - **Respite** (4d10 + mod healing) and **Liberation** (a Reaction that turns a failed save against Frightened,
+    Grappled or Restrained into a success) each end the spell.
+- **Enervation**: DEX save for 6d8 Necrotic, and a Bonus Action Drain for 2d8 on later turns. You heal half the
+  Necrotic dealt, and a successful save ends the spell.
+- **Festering Blast**: Line, CON save for Necrotic and Poisoned. 2d10 Poison at the start of each turn, with a repeat save.
+- **Doomtide**, **Spellfire Storm** and **Grave Ground**: zones with saves on entering or ending a turn there.
+  - Spellfire Storm: a creature casting a spell inside makes a CON save or the spell fails, and its slot isn't spent.
+  - Doomtide: -1d6 to saves. Grave Ground: -1d6 to damage rolls.
+- **Distorted Distance**: Dizzying Elongation (INT save, Psychic damage) or Shortened Space (+20 ft Speed) for each creature.
+- **Negative Energy Flood**: CON save for 3d10 + 25 Necrotic. Undead gain 3d10 Temporary Hit Points instead.
+- **Songal's Elemental Suffusion**: Resistance to an element you choose, Fly 30 ft (hover), and a 15-ft pulse (DEX
+  save, 2d6 damage and Prone) when you cast it and at the start of each of your turns.
+- **Spirit Lantern**: enemies dying near you fill the lantern with soul fragments. Spend them on Drain Life, Repair
+  Undead or Ward Ally.
+- **Waves of Exhaustion**: a 60-ft Cone CON save or +1 Exhaustion (never above 4). The levels are removed when the
+  spell ends.
+- **Mordenkainen's Lucubration**: asks which expended spell slots to recover.
+- **Catnap**: up to three willing creatures sleep (Unconscious) until damaged.
+- **Homunculus Servant** and **Summon Plant**: new CGA: Summoned Creatures actors that scale with the slot level.
+- Checked: midi-qol's own Spare the Dying, Ensnaring Strike, Sanctuary, Dragon's Breath, Lesser Restoration, Pass
+  without Trace, Web, Greater Invisibility, Mass Cure Wounds, Harm and Sunbeam. They all work as shipped.
+- **Fixes** (Mass Apply again):
+  - **Aura of Purity** (1.0.1) and **Circle of Power** (1.0.1) also applied Aura of Life's effect.
+  - **Aura of Life** (1.0.1) applied its Necrotic Resistance twice.
+  - **Cloud of Daggers** (1.0.3), **Cordon of Arrows** (1.0.2) and **Jallarzi's Storm of Radiance** (1.0.1) made
+    their area Difficult Terrain, which those spells don't do.
+
 ## 0.33.0
 
 Priority-1 spells from Arcana Unleashed and Forgotten Realms: Heroes of Faerûn, as new CGA spells (1.0.0, Mass Apply).
