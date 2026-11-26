@@ -3,6 +3,28 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.36.0
+
+Priority-1 general feats from Arcana Unleashed, Heroes of Faerûn and Astarion's Book of Hungers, as new CGA feats
+(1.0.0, Mass Apply). The module rules key on the feat's name, so D&D Beyond copies work too.
+
+- **Offered automatically:**
+  - **Spell Resistant**: when you fail a save against a spell or magic item, roll 1d6 and add it (PB/LR). Pick your
+    Resistance on the Effects tab (Necrotic is on by default).
+  - **Bloodlust**: Hit Point Dice of 1-2 count as 3. Sanguine Feast spends a Hit Die to heal on a hit against a
+    Bloodied creature (once per turn, PB/LR).
+  - **Fairy Trickster**: Flustering Strike after a hit - WIS save or Disadvantage on saves until the end of your next
+    turn (PB/LR).
+  - **Delicious Pain**: Toughened Flesh Reaction after Bludgeoning, Piercing or Slashing damage (1/Short Rest).
+  - **Abjuration Adept**: a slot Abjuration spell gives you or an ally within 30 ft 2 x slot level Temporary Hit Points.
+  - **Evocation Adept**: add up to two Hit Point Dice to an Evocation spell's damage (once per turn).
+- **Cold Caster**: the first Cold hit each turn gives Frostbite (-1d4 on the target's next save before the end of
+  your next turn).
+- **Purple Dragon Commandant**: Encourage Ally temp HP activity; Advantage on attacks while Bloodied.
+- **Treacherous Allure**: Charm Person once per Long Rest without a slot; Advantage on attacks against Charmed creatures.
+- **Defense** (Fighting Style): the compendium feat's +1 AC now switches off when you aren't wearing armor.
+- **Archery** checked: the compendium feat's +2 to ranged attacks works as is.
+
 ## 0.35.0
 
 Priority-3 spells from Arcana Unleashed and Heroes of Faerûn, as new CGA spells (1.0.0, Mass Apply). Every spell on
