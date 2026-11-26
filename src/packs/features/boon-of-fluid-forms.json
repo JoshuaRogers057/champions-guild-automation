@@ -1,0 +1,180 @@
+{
+  "_id": "cgaBnFluidForms0",
+  "name": "Boon of Fluid Forms",
+  "type": "feat",
+  "img": "icons/creatures/mammals/wolf-howl-moon-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Shapechanger:</strong> Magic action, shape-shift into a Beast, Humanoid or Monstrosity of CR 10 or lower for 1 hour - choose it in the dialog. You keep your mental scores, Hit Points, type, class features and spellcasting, and gain Temporary Hit Points equal to the form's Hit Points + 20 (Hardy Transformation). Once per Long Rest. It ends early when the Temporary Hit Points are gone or you revert (by hand).</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-fluid-forms",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaFluidFormsTrf": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaFluidFormsTrf",
+        "type": "transform",
+        "name": "Shapechanger",
+        "img": "icons/creatures/mammals/wolf-howl-moon-white.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "transform": {
+          "customize": true,
+          "mode": "cr",
+          "preset": "",
+          "formless": false
+        },
+        "profiles": [
+          {
+            "_id": "cgaFluidFormProf",
+            "cr": "10",
+            "name": "",
+            "uuid": null,
+            "sizes": [],
+            "types": [
+              "beast",
+              "humanoid",
+              "monstrosity"
+            ],
+            "movement": [],
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "settings": {
+          "preset": "",
+          "effects": [
+            "all"
+          ],
+          "keep": [
+            "mental",
+            "gearProf",
+            "languages",
+            "class",
+            "feats",
+            "spells",
+            "bio",
+            "hp",
+            "type",
+            "vision"
+          ],
+          "merge": [
+            "saves",
+            "skills"
+          ],
+          "other": [],
+          "spellLists": [],
+          "transformTokens": true,
+          "minimumAC": "",
+          "tempFormula": "@source.attributes.hp.max + 20"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Transform activity (CR 10 Beast/Humanoid/Monstrosity, temp HP = form HP + 20, 1/LR)."
+      }
+    }
+  }
+}

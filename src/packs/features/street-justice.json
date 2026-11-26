@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtStreetJusti",
+  "name": "Street Justice",
+  "type": "feat",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Headlock:</strong> your allies have Advantage on attack rolls against a creature you're grappling (the module adds it). <strong>Sturdy Knot</strong> and <strong>Tough Talk:</strong> by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "street-justice",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Headlock Advantage by the module."
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtBomber00000",
+  "name": "Bomber",
+  "type": "feat",
+  "img": "icons/weapons/thrown/bomb-fuse-black.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Long Shots:</strong> attacking at long range doesn't give Disadvantage with Thrown weapons (the module removes it). <strong>Far Lobber:</strong> thrown vials and flasks reach 40 ft (by hand).</p>",
+      "chat": ""
+    },
+    "identifier": "bomber",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Long Shots: the module drops the long-range Disadvantage on Thrown weapon attacks."
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "cgaFtSpellSubter",
+  "name": "Spell Subterfuge",
+  "type": "feat",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Shrouding Spells:</strong> after you cast an action spell with a slot, the module offers Dash and Hide as a Bonus Action: your Speed doubles this turn and it rolls Stealth (DC 15 makes you Invisible). Uses = your spellcasting modifier per Long Rest. <strong>Sneaky Casting:</strong> by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "spell-subterfuge",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Spellcasting or Pact Magic Feature",
+    "properties": [],
+    "uses": {
+      "max": "max(1, @attributes.spell.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Shrouding Spells Bonus Action Dash + Hide offered by the module (uses = spellcasting modifier / LR)."
+      }
+    }
+  }
+}

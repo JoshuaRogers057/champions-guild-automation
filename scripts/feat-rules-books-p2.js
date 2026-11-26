@@ -24,7 +24,7 @@ const myTurn = (actor) => !game.combat?.started || game.combat.combatant?.actor 
 const d20Of = (roll) => roll?.dice?.find((d) => d.faces === 20);
 const single = (die) => die && die.results.filter((r) => r.active !== false && !r.discarded).length === 1 && die.results.length === 1;
 // The tokens that took damage from this workflow (midi's damage list).
-function damagedTokens(workflow) {
+export function damagedTokens(workflow) {
   const out = [];
   for (const d of workflow?.damageList ?? []) {
     if (!((d.hpDamage ?? 0) + (d.tempDamage ?? 0) > 0)) continue;
@@ -35,7 +35,7 @@ function damagedTokens(workflow) {
   return out;
 }
 // Status effect data (the core one, so the token HUD can remove it) with a duration and origin.
-async function statusData(id, extra = {}) {
+export async function statusData(id, extra = {}) {
   const fx = (await ActiveEffect.implementation.fromStatusEffect(id)).toObject();
   delete fx._id;
   return foundry.utils.mergeObject(fx, extra);

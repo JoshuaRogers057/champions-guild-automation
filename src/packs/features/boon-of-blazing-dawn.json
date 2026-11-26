@@ -1,0 +1,116 @@
+{
+  "_id": "cgaBnBlazingDawn",
+  "name": "Boon of Blazing Dawn",
+  "type": "feat",
+  "img": "icons/magic/light/explosion-glow-spiral-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Beloved of the Sun:</strong> Radiant Immunity. <strong>Blazing Strike:</strong> turn on the Blazing Strike effect (Effects tab) and the module makes your weapon damage Radiant; turn it off for the normal type. <strong>Burst of Sunlight:</strong> the light is by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-blazing-dawn",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaBlazDawnImmFx",
+      "name": "Beloved of the Sun",
+      "img": "icons/magic/light/explosion-glow-spiral-yellow.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "radiant",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    },
+    {
+      "_id": "cgaBlazDawnStrkF",
+      "name": "Blazing Strike (Radiant weapon damage)",
+      "img": "icons/magic/fire/dagger-rune-enchant-flame-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": true,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": []
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Radiant Immunity; Blazing Strike toggle effect converts weapon damage by the module."
+      }
+    }
+  }
+}

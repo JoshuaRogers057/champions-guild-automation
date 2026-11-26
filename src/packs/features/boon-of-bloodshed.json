@@ -1,0 +1,51 @@
+{
+  "_id": "cgaBnBloodshed00",
+  "name": "Boon of Bloodshed",
+  "type": "feat",
+  "img": "icons/skills/wounds/blood-spurt-spray-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Killer's Fortune:</strong> when an enemy you can see drops to 0 Hit Points, the module gives you Advantage on your next attack roll before the end of your next turn. <strong>Power from Pain:</strong> once per turn while Bloodied, an attack that hits deals extra damage equal to your Proficiency Bonus (added by the module).</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-bloodshed",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Killer's Fortune and Power from Pain by the module."
+      }
+    }
+  }
+}

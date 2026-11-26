@@ -1,0 +1,218 @@
+{
+  "_id": "cgaFtElemFamili0",
+  "name": "Elemental Familiar",
+  "type": "feat",
+  "img": "icons/magic/fire/elemental-creature-horse.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Elemental Energy:</strong> when your familiar appears (Find Familiar), the module asks for Acid, Cold, Fire, Lightning or Thunder and gives the familiar Resistance to it. <strong>Energy Pulse:</strong> Bonus Action (the familiar within 120 ft spends its Reaction) - each creature within 5 ft of the familiar makes a DEX save (your spell save DC) or takes 2d4 damage of that type and, if Medium or smaller, falls Prone. Use the activity; the module targets the creatures around the familiar.</p>",
+      "chat": ""
+    },
+    "identifier": "elemental-familiar",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Familiar Friend",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaElemFamPulseA": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaElemFamPulseA",
+        "type": "utility",
+        "name": "Energy Pulse",
+        "img": "icons/magic/fire/elemental-creature-horse.webp",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "midiProperties": {
+          "identifier": "energy-pulse"
+        }
+      },
+      "cgaElemFamPulseS": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "120",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaElemFamPulseS",
+        "type": "save",
+        "name": "Energy Pulse (burst)",
+        "img": "icons/magic/fire/elemental-creature-horse.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": [
+            {
+              "number": 2,
+              "denomination": 4,
+              "bonus": "",
+              "types": [
+                "fire"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "midiProperties": {
+          "identifier": "energy-pulse-save",
+          "automationOnly": true
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Familiar Resistance on summon; Energy Pulse activity run by the module around the familiar."
+      }
+    }
+  }
+}

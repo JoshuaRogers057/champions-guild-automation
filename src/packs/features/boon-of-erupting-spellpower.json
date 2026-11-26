@@ -1,0 +1,56 @@
+{
+  "_id": "cgaBnEruptSpellp",
+  "name": "Boon of Erupting Spellpower",
+  "type": "feat",
+  "img": "icons/magic/fire/explosion-embers-evade-silhouette.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Spell Overload:</strong> when a spell you cast with a slot deals damage, the module offers to surge it: its damage dice of 1-2 become 3s and creatures it damages fall Prone. Then not again until you roll Initiative or finish a Short or Long Rest (the module gives the use back on Initiative).</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-erupting-spellpower",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Spell Overload offered by the module (1 use, back on Initiative or a rest)."
+      }
+    }
+  }
+}

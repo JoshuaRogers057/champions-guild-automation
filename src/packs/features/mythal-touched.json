@@ -1,0 +1,56 @@
+{
+  "_id": "cgaFtMythalTouch",
+  "name": "Mythal Touched",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-triangle-magenta.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Mythal Ward:</strong> when a spell attack hits you or you fail a save against a spell, the module offers your Reaction to roll on the Mythal-Touched Magic table (Proficiency Bonus times per Long Rest). +2 AC (14-17) and the spell dissipating (20) are applied for you; the other results are posted in chat to resolve by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "mythal-touched",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+",
+    "properties": [],
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Mythal Ward Reaction and table roll by the module (PB/LR)."
+      }
+    }
+  }
+}

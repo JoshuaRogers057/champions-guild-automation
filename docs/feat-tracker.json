@@ -365,9 +365,9 @@
    "group": "General",
    "name": "Bomber",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Long Shots: no Disadvantage for long range with Thrown weapons; Far Lobber 40 ft vials",
+   "note": "CGA item + module rule: Long Shots - no long-range Disadvantage with Thrown weapons (midi and AC5e); Far Lobber by hand",
    "identifier": "bomber"
   },
   {
@@ -392,9 +392,9 @@
    "group": "General",
    "name": "Cloying Mists",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Grasping Mist: enemies in your Fog Cloud have -5 ft Speed; Fog Cloud from the sheet",
+   "note": "CGA item: Fog Cloud cast activity (1/LR, no slot); Grasping Mist by hand",
    "identifier": "cloying-mists"
   },
   {
@@ -500,9 +500,9 @@
    "group": "General",
    "name": "Elemental Familiar",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Familiar gets the chosen Resistance and an Energy Pulse (5-ft DEX save 2d4 + Prone) activity",
+   "note": "CGA item + module rule: element chosen on summon gives the familiar Resistance; Energy Pulse activity bursts around the familiar (DEX save 2d4 + Prone)",
    "identifier": "elemental-familiar"
   },
   {
@@ -581,9 +581,9 @@
    "group": "General",
    "name": "Harper Teamwork",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Withering Wordplay (Help: target's next save at Disadvantage) and Inspiring Willpower (end an ally's Frightened/Paralyzed too)",
+   "note": "CGA item + module rule: Withering Wordplay Help activity (Disadvantage on the enemy's next save); Inspiring Willpower offered when your Frightened/Paralyzed save effect ends",
    "identifier": "harper-teamwork"
   },
   {
@@ -635,9 +635,9 @@
    "group": "General",
    "name": "Light Bringer",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Sun's Healing: Bonus Action spend a Hit Die to heal in sunlight (1/SR activity); Light from the sheet",
+   "note": "CGA item + module rule: Sun's Healing activity spends and rolls a Hit Die (1/SR); Light from the compendium, Solar Luminance by hand",
    "identifier": "light-bringer"
   },
   {
@@ -725,9 +725,9 @@
    "group": "General",
    "name": "Mythal Touched",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Mythal Ward: Reaction when a spell attack hits you or you fail a save against a spell - roll the d20 table (PB/LR)",
+   "note": "CGA item + module rule: Mythal Ward Reaction on a spell hit or failed save vs a spell (PB/LR) - table roll, +2 AC and dissipate applied, others in chat",
    "identifier": "mythal-touched"
   },
   {
@@ -761,9 +761,9 @@
    "group": "General",
    "name": "Otherworldly Familiar",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Familiar gets the chosen Resistance; Phase Walk by hand",
+   "note": "CGA item + module rule: Resistance type chosen on summon for the familiar; Phase Walk by hand",
    "identifier": "otherworldly-familiar"
   },
   {
@@ -905,9 +905,9 @@
    "group": "General",
    "name": "Soothing Familiar",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Healing dice of 1-2 count as 3 for allies within 5 ft of your familiar",
+   "note": "CGA item + module rule: healing dice 1-2 count as 3 for you and allies within 5 ft of the familiar",
    "identifier": "soothing-familiar"
   },
   {
@@ -941,9 +941,9 @@
    "group": "General",
    "name": "Spell Subterfuge",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Shrouding Spells: Bonus Action Dash + Hide after casting an action spell with a slot (uses = modifier/LR)",
+   "note": "CGA item + module rule: Shrouding Spells - Bonus Action Dash + Hide (Stealth DC 15 = Invisible) after an action slot spell (uses = spellcasting modifier / LR)",
    "identifier": "spell-subterfuge"
   },
   {
@@ -959,9 +959,9 @@
    "group": "General",
    "name": "Street Justice",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Headlock: allies have Advantage on attacks against a creature you're grappling",
+   "note": "CGA item + module rule: Headlock - allies have Advantage against a creature you grapple; Sturdy Knot and Tough Talk by hand",
    "identifier": "street-justice"
   },
   {
@@ -1148,27 +1148,27 @@
    "group": "Epic Boon",
    "name": "Boon of Blazing Dawn",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Radiant Immunity; Blazing Strike (weapon damage can be Radiant); Burst of Sunlight light",
+   "note": "CGA item + module rule: Radiant Immunity; Blazing Strike toggle effect makes weapon damage Radiant; Burst of Sunlight light by hand",
    "identifier": "boon-of-blazing-dawn"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of Bloodshed",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Killer's Fortune (Advantage on your next attack after an enemy drops to 0); Power from Pain (+PB damage once per turn while Bloodied)",
+   "note": "CGA item + module rule: Killer's Fortune Advantage after an enemy drops to 0; Power from Pain +PB once per turn while Bloodied",
    "identifier": "boon-of-bloodshed"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of Bountiful Health",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+5 to temp HP you gain; Hit Point Dice heal their maximum",
+   "note": "CGA item + module rule: +5 to Temporary Hit Points gained; Hit Point Dice heal their maximum",
    "identifier": "boon-of-bountiful-health"
   },
   {
@@ -1193,18 +1193,18 @@
    "group": "Epic Boon",
    "name": "Boon of Desperate Resilience",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Resistance to everything but Force while Bloodied",
+   "note": "CGA item + module rule: Resistance to all but Force while Bloodied (effect switched with Hit Points)",
    "identifier": "boon-of-desperate-resilience"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of Dimensional Travel",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium Teleport activity (30 ft after the Attack or Magic action)",
+   "note": "Compendium item + module rule: its Teleport activity makes your next move a 30-ft teleport",
    "identifier": "boon-of-dimensional-travel"
   },
   {
@@ -1220,18 +1220,18 @@
    "group": "Epic Boon",
    "name": "Boon of Erupting Spellpower",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Spell Overload: a slot spell's damage dice of 1-2 count as 3 and damaged creatures are Prone (once per Initiative or rest, asked)",
+   "note": "CGA item + module rule: Spell Overload offered on slot spell damage - dice 1-2 become 3, damaged creatures Prone (use back on Initiative or rest)",
    "identifier": "boon-of-erupting-spellpower"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of Exquisite Radiance",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Powerful Radiance: maximize a Radiant damage roll (1/LR, asked)",
+   "note": "CGA item + module rule: Powerful Radiance maximizes a Radiant damage roll (1/LR); Eternal Rest by hand",
    "identifier": "boon-of-exquisite-radiance"
   },
   {
@@ -1247,9 +1247,9 @@
    "group": "Epic Boon",
    "name": "Boon of Fluid Forms",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Shapechanger: Magic action transform into a CR 10 Beast/Humanoid/Monstrosity for 1 hour (dnd5e transform activity)",
+   "note": "CGA item: transform activity - CR 10 Beast/Humanoid/Monstrosity, keeps mental scores/HP/features, temp HP = form HP + 20 (1/LR)",
    "identifier": "boon-of-fluid-forms"
   },
   {
@@ -1265,9 +1265,9 @@
    "group": "Epic Boon",
    "name": "Boon of Fortune’s Favor",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Saving Throw Reroll: reroll a failed save (once per round, asked)",
+   "note": "CGA item + module rule: failed save reroll offered (once per round)",
    "identifier": "boon-of-fortunes-favor"
   },
   {
@@ -1283,9 +1283,9 @@
    "group": "Epic Boon",
    "name": "Boon of Looming Shadows",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Shadowy Stretch (+10 ft melee reach when you Attack, by hand); Dancing Silhouette - Bonus Action Dodge activity",
+   "note": "CGA item: Dancing Silhouette Bonus Action Dodge activity; Shadowy Stretch by hand",
    "identifier": "boon-of-looming-shadows"
   },
   {
@@ -1301,18 +1301,18 @@
    "group": "Epic Boon",
    "name": "Boon of Misty Escape",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Drop to 1 HP instead of 0 and turn to mist, regaining 10 HP each turn (1/LR, asked)",
+   "note": "CGA item + module rule: drop to 1 HP instead of 0 and turn to mist (Fly 20, B/P/S Resistance, 10 HP at each turn start, 1 hour; 1/LR)",
    "identifier": "boon-of-misty-escape"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of Poison Mastery",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Poison Immunity and Poisoned immunity; Perfect Poisoner - maximize Poison damage once per turn",
+   "note": "CGA item + module rule: Poison/Poisoned immunity; Perfect Poisoner maximizes Poison damage once per turn",
    "identifier": "boon-of-poison-mastery"
   },
   {
@@ -1328,9 +1328,9 @@
    "group": "Epic Boon",
    "name": "Boon of Revelry",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Otto's Irresistible Dance 1/LR without a slot (concentration not broken by damage); Sing Out",
+   "note": "CGA item + module rule: Otto's Irresistible Dance cast activity (1/LR); its Concentration isn't broken by damage; Sing Out by hand",
    "identifier": "boon-of-revelry"
   },
   {
@@ -1364,36 +1364,36 @@
    "group": "Epic Boon",
    "name": "Boon of Terror",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Frightened immunity; Flee, Fools! Reaction - a Frightened creature starting its turn within 60 ft makes a WIS save or flees (1/SR, asked)",
+   "note": "CGA item + module rule: Frightened immunity; Flee, Fools! Reaction save offered when a Frightened enemy starts its turn within 60 ft (1/SR)",
    "identifier": "boon-of-terror"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of the Bright Sun",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Daylight Presence: Bonus Action 30-ft sunlight aura; you and allies in it gain 10 temp HP at the start of your turns",
+   "note": "CGA item + module rule: Daylight Presence activity; Fortifying Light gives you and allies within 30 ft 10 temp HP each turn start (light by hand)",
    "identifier": "boon-of-the-bright-sun"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of the Furious Storm",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Lightning/Thunder Resistance (Immunity while Bloodied); Disadvantage on saves against your Lightning/Thunder spells",
+   "note": "CGA item + module rule: Lightning/Thunder Resistance (Immunity while Bloodied); Disadvantage on saves against your Lightning/Thunder spells",
    "identifier": "boon-of-the-furious-storm"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of the Iron Mind",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Unshakable Focus: damage never breaks your Concentration",
+   "note": "CGA item + module rule: Concentration saves from damage always succeed",
    "identifier": "boon-of-the-iron-mind"
   },
   {
@@ -1409,18 +1409,18 @@
    "group": "Epic Boon",
    "name": "Boon of the Soul Drinker",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Cold/Necrotic Resistance; Siphon Life - Reaction regain 50 HP when an enemy within 120 ft drops to 0 (1/SR, asked)",
+   "note": "CGA item + module rule: Cold/Necrotic Resistance; Siphon Life Reaction regains 50 HP when an enemy within 120 ft drops to 0 (1/SR)",
    "identifier": "boon-of-the-soul-drinker"
   },
   {
    "group": "Epic Boon",
    "name": "Boon of Truesight",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "Compendium: Truesight 60 ft",
+   "note": "Compendium item checked in the test world: Truesight 60 ft",
    "identifier": "boon-of-truesight"
   }
  ]

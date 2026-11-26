@@ -1,0 +1,95 @@
+{
+  "_id": "cgaBnPoisonMast0",
+  "name": "Boon of Poison Mastery",
+  "type": "feat",
+  "img": "icons/magic/acid/projectile-faceted-glob.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Antitoxic:</strong> Poison Immunity and Poisoned immunity. <strong>Perfect Poisoner:</strong> once per turn, the module maximizes the Poison damage dice of your attack, spell or feature.</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-poison-mastery",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaPoisonMastImF",
+      "name": "Antitoxic",
+      "img": "icons/magic/acid/projectile-faceted-glob.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.di.value",
+            "value": "poison",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.traits.ci.value",
+            "value": "poisoned",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Poison immunities; Perfect Poisoner by the module (once per turn)."
+      }
+    }
+  }
+}

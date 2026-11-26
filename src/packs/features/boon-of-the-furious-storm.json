@@ -1,0 +1,95 @@
+{
+  "_id": "cgaBnFuriousStrm",
+  "name": "Boon of the Furious Storm",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-forked-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Eye of the Storm:</strong> Lightning and Thunder Resistance; while you're Bloodied, Immunity instead (the module switches it). <strong>Storm's Strength:</strong> creatures have Disadvantage on saves against your spells that deal Lightning or Thunder damage (the module adds it).</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-the-furious-storm",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaFurStormResFx",
+      "name": "Eye of the Storm",
+      "img": "icons/magic/lightning/bolt-strike-forked-blue.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Lightning/Thunder Resistance; Bloodied Immunity and Storm's Strength by the module."
+      }
+    }
+  }
+}

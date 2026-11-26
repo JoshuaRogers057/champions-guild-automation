@@ -1,0 +1,51 @@
+{
+  "_id": "cgaBnDesperResil",
+  "name": "Boon of Desperate Resilience",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-flaming-pentagon-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Defense of Body and Mind:</strong> while you're Bloodied, you have Resistance to every damage type except Force (the module switches the effect on and off with your Hit Points).</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-desperate-resilience",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Bloodied Resistance effect managed by the module."
+      }
+    }
+  }
+}

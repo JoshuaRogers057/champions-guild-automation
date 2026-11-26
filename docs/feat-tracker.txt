@@ -47,10 +47,10 @@ General|Abjuration Adept|AU|done|1|CGA item + module rule: Protective Ward temp 
 General|Actor|PHB|skip|3|Advantage on disguise Deception/Performance checks and mimicry are DM calls
 General|Athlete|PHB|done|3|Climb Speed equal to your Speed. Hop Up and Jumping are movement rules
 General|Bloodlust|AB|done|1|CGA item + module rule: Hit Point Dice of 1-2 count as 3; Sanguine Feast offered once per turn on a hit against a Bloodied living creature (PB/LR)
-General|Bomber|AB|build|3|Long Shots: no Disadvantage for long range with Thrown weapons; Far Lobber 40 ft vials
+General|Bomber|AB|done|3|CGA item + module rule: Long Shots - no long-range Disadvantage with Thrown weapons (midi and AC5e); Far Lobber by hand
 General|Charger|PHB|done|2|Charge Attack: once per turn after a melee hit in the Attack action, choose +1d8 damage or push the target up to 10 ft (no more than one size larger). Improved Dash +10 ft is manual
 General|Chef|PHB|done|3|Bolstering Treats: PB treats, a Bonus Action to eat one for PB Temporary HP. Replenishing Meal (+1d8 when spending Hit Dice on a Short Rest) is manual
-General|Cloying Mists|AB|build|3|Grasping Mist: enemies in your Fog Cloud have -5 ft Speed; Fog Cloud from the sheet
+General|Cloying Mists|AB|done|3|CGA item: Fog Cloud cast activity (1/LR, no slot); Grasping Mist by hand
 General|Cold Caster|FR|done|1|CGA item + module rule: Frostbite on the first Cold hit each turn (-1d4 on the next save before the end of your next turn); Ray of Frost from the compendium
 General|Conjuration Adept|AU|done|2|CGA item + module rule: spellcasting modifier added to Concentration saves for a Conjuration spell; Additional Spells from the compendium
 General|Crossbow Expert|PHB|done|2|No Disadvantage on crossbow attacks with an enemy within 5 ft. Ignoring Loading and the Light-crossbow damage modifier are manual
@@ -62,7 +62,7 @@ General|Dragonscarred|FR|done|2|CGA item + module rule: chosen Resistance (trans
 General|Dual Wielder|PHB|done|3|dnd5e enhancedDualWielding flag lets non-Light one-handed melee weapons make the off-hand attack. Quick Draw is manual
 General|Durable|PHB|done|2|Advantage on Death Saving Throws; Speedy Recovery: Bonus Action, spend a Hit Die and heal the roll
 General|Elemental Adept|PHB|done|2|Choose Acid/Cold/Fire/Lightning/Thunder: your spells ignore Resistance to it and treat 1s on its damage dice as 2s (one activity or toggle per type)
-General|Elemental Familiar|AU|build|3|Familiar gets the chosen Resistance and an Energy Pulse (5-ft DEX save 2d4 + Prone) activity
+General|Elemental Familiar|AU|done|3|CGA item + module rule: element chosen on summon gives the familiar Resistance; Energy Pulse activity bursts around the familiar (DEX save 2d4 + Prone)
 General|Enchantment Adept|AU|skip|3|Always-prepared spells and casting without components - sheet and table
 General|Enclave Magic|FR|skip|3|Advantage on Influence with Beasts and Beast Sense - sheet and table
 General|Evocation Adept|AU|done|1|CGA item + module rule: Fueled Evocation adds up to two Hit Point Dice to an Evocation spell's damage (once per turn); Additional Spells from the compendium
@@ -71,13 +71,13 @@ General|Fey Touched|PHB|skip|2|Misty Step + one spell from the advancement, each
 General|Genie Magic|FR|skip|3|Extra spells cast without a slot - from the sheet
 General|Grappler|SRD|done|2|Advantage on attacks against a creature you are grappling (compendium has none; an older v13 fix exists in Macros). Punch and Grab / Fast Wrestler are manual
 General|Great Weapon Master|PHB|done|1|Heavy Weapon Mastery: +PB damage when you hit with a Heavy weapon on your turn. Hew: after a melee crit or dropping a creature to 0 HP, offer a Bonus Action attack with the same weapon
-General|Harper Teamwork|FR|build|3|Withering Wordplay (Help: target's next save at Disadvantage) and Inspiring Willpower (end an ally's Frightened/Paralyzed too)
+General|Harper Teamwork|FR|done|3|CGA item + module rule: Withering Wordplay Help activity (Disadvantage on the enemy's next save); Inspiring Willpower offered when your Frightened/Paralyzed save effect ends
 General|Heavily Armored|PHB|skip|3|Armor training from the advancement
 General|Heavy Armor Master|PHB|done|1|While wearing Heavy armor, Bludgeoning/Piercing/Slashing damage from an attack that hits you is reduced by PB
 General|Illusion Adept|AU|skip|3|Always-prepared spells and casting without components - sheet and table
 General|Inspiring Leader|PHB|done|2|Bolstering Performance: after a Short or Long Rest, up to six allies within 30 ft gain Temporary HP = character level + the feat's ability modifier
 General|Keen Mind|PHB|skip|3|Skill from the advancement; Study as a Bonus Action is manual
-General|Light Bringer|AB|build|3|Sun's Healing: Bonus Action spend a Hit Die to heal in sunlight (1/SR activity); Light from the sheet
+General|Light Bringer|AB|done|3|CGA item + module rule: Sun's Healing activity spends and rolls a Hit Die (1/SR); Light from the compendium, Solar Luminance by hand
 General|Lightly Armored|PHB|skip|3|Armor training from the advancement
 General|Lordly Resolve|FR|done|2|CGA item + module rule: Standard Bearer activity (1/LR) - Charmed/Frightened immunity for 1 minute and the targets stand up
 General|Love Bites|AB|done|2|CGA item + module rule: Endearing Pain Bonus Action Charm after melee damage, ends at the start of your next turn or when it takes damage (1/SR)
@@ -87,11 +87,11 @@ General|Martial Weapon Training|PHB|skip|3|Proficiency from the advancement
 General|Medium Armor Master|PHB|done|3|Medium armor adds up to +3 DEX to AC when DEX is 16+ (needs an AC formula change)
 General|Moderately Armored|PHB|skip|3|Armor training from the advancement
 General|Mounted Combatant|PHB|skip|3|Mounted rules are DM-handled
-General|Mythal Touched|FR|build|3|Mythal Ward: Reaction when a spell attack hits you or you fail a save against a spell - roll the d20 table (PB/LR)
+General|Mythal Touched|FR|done|3|CGA item + module rule: Mythal Ward Reaction on a spell hit or failed save vs a spell (PB/LR) - table roll, +2 AC and dissipate applied, others in chat
 General|Necromancy Adept|AU|done|2|CGA item + module rule: Life Manipulation - up to two Hit Dice + slot level healing offered after a slot Necromancy spell
 General|Observant|PHB|skip|3|Skill from the advancement; Search as a Bonus Action is manual
 General|Order’s Resilience|FR|done|2|CGA item + module rule: Stronger Together - Advantage on STR saves for you and an adjacent ally; Resurge by hand
-General|Otherworldly Familiar|AU|build|3|Familiar gets the chosen Resistance; Phase Walk by hand
+General|Otherworldly Familiar|AU|done|3|CGA item + module rule: Resistance type chosen on summon for the familiar; Phase Walk by hand
 General|Piercer|PHB|done|2|Once per turn on a Piercing hit, reroll one damage die (the lowest). Crit with Piercing: one extra damage die
 General|Poisoner|PHB|done|3|Poison damage you deal ignores Resistance. Brew Poison: Bonus Action to coat a weapon or ammunition for 1 minute; the next creature it damages makes a CON save (DC 8 + mod + PB) or takes 2d8 Poison and is Poisoned until the end of your next turn
 General|Polearm Master|PHB|done|1|Pole Strike: Bonus Action attack after the Attack action with a Quarterstaff, Spear or Heavy+Reach weapon (d4 Bludgeoning). Reactive Strike (Reaction attack when a creature enters your reach) stays a manual Reaction
@@ -107,13 +107,13 @@ General|Shield Master|PHB|done|2|Shield Bash: once per turn after a melee hit in
 General|Skill Expert|PHB|skip|3|Skill and Expertise from the advancement
 General|Skulker|PHB|done|3|Blindsight 10 ft. Advantage on Stealth for the Hide action in combat and staying hidden on a miss are manual
 General|Slasher|PHB|done|2|Once per turn on a Slashing hit, the target's Speed drops by 10 ft until the start of your next turn. Crit with Slashing: the target has Disadvantage on attacks until the start of your next turn
-General|Soothing Familiar|AU|build|3|Healing dice of 1-2 count as 3 for allies within 5 ft of your familiar
+General|Soothing Familiar|AU|done|3|CGA item + module rule: healing dice 1-2 count as 3 for you and allies within 5 ft of the familiar
 General|Speedy|PHB|done|2|Speed +10 ft; Opportunity Attacks have Disadvantage against you. Dashing through Difficult Terrain is manual
 General|Spell Resistant|AU|done|1|CGA item + module rule: chosen Resistance (transfer effects), Magic Resistant +1d6 offered on a failed save against a spell or magic item (PB/LR)
 General|Spell Sniper|PHB|done|2|Spell attacks ignore Half and Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; midi-qol doubles spell attack range (book: +60 ft)
-General|Spell Subterfuge|AU|build|3|Shrouding Spells: Bonus Action Dash + Hide after casting an action spell with a slot (uses = modifier/LR)
+General|Spell Subterfuge|AU|done|3|CGA item + module rule: Shrouding Spells - Bonus Action Dash + Hide (Stealth DC 15 = Invisible) after an action slot spell (uses = spellcasting modifier / LR)
 General|Spellfire Adept|FR|done|2|CGA item + module rule: Fueled Spellfire Hit Dice added to Radiant spell damage (once per turn); Searing Spellfire ignores Radiant Resistance
-General|Street Justice|FR|build|3|Headlock: allies have Advantage on attacks against a creature you're grappling
+General|Street Justice|FR|done|3|CGA item + module rule: Headlock - allies have Advantage against a creature you grapple; Sturdy Knot and Tough Talk by hand
 General|Telekinetic|PHB|done|2|Telekinetic Shove: Bonus Action, one creature within 30 ft makes a STR save (DC 8 + mod + PB) or is moved 5 ft toward or away from you. Mage Hand comes from the advancement
 General|Telepathic|PHB|skip|3|Telepathy is roleplay; Detect Thoughts from the advancement (once per Long Rest without a slot)
 General|Transmutation Adept|AU|done|2|CGA item + module rule: +5 ft x slot level Speed until the end of the turn after a slot Transmutation spell on your turn
@@ -134,34 +134,34 @@ Fighting Style|Thrown Weapon Fighting|PHB|done|2|+2 damage on ranged attacks wit
 Fighting Style|Two-Weapon Fighting|SRD|done|1|Add your ability modifier to the damage of the Light-property extra attack (dnd5e's off-hand attack mode leaves it out)
 Fighting Style|Unarmed Fighting|PHB|done|2|Unarmed Strike deals 1d6 + STR Bludgeoning (1d8 with no weapons or Shield); at the start of your turn, 1d4 Bludgeoning to one creature you are grappling
 Fighting Style|Warlike Familiar|AU|done|2|CGA item + module rule: Battle Familiar cast activity (1/LR, no slot); Intercept Attack - the familiar's Reaction adds your PB to a nearby creature's AC
-Epic Boon|Boon of Blazing Dawn|AB|build|3|Radiant Immunity; Blazing Strike (weapon damage can be Radiant); Burst of Sunlight light
-Epic Boon|Boon of Bloodshed|FR|build|3|Killer's Fortune (Advantage on your next attack after an enemy drops to 0); Power from Pain (+PB damage once per turn while Bloodied)
-Epic Boon|Boon of Bountiful Health|FR|build|3|+5 to temp HP you gain; Hit Point Dice heal their maximum
+Epic Boon|Boon of Blazing Dawn|AB|done|3|CGA item + module rule: Radiant Immunity; Blazing Strike toggle effect makes weapon damage Radiant; Burst of Sunlight light by hand
+Epic Boon|Boon of Bloodshed|FR|done|3|CGA item + module rule: Killer's Fortune Advantage after an enemy drops to 0; Power from Pain +PB once per turn while Bloodied
+Epic Boon|Boon of Bountiful Health|FR|done|3|CGA item + module rule: +5 to Temporary Hit Points gained; Hit Point Dice heal their maximum
 Epic Boon|Boon of Combat Prowess|SRD|done|3|Peerless Aim: once per round, a missed attack offers +99 to hit instead (a hit, not a critical)
 Epic Boon|Boon of Communication|FR|skip|3|Telepathy and languages - sheet and roleplay
-Epic Boon|Boon of Desperate Resilience|FR|build|3|Resistance to everything but Force while Bloodied
-Epic Boon|Boon of Dimensional Travel|SRD|verify|3|Compendium Teleport activity (30 ft after the Attack or Magic action)
+Epic Boon|Boon of Desperate Resilience|FR|done|3|CGA item + module rule: Resistance to all but Force while Bloodied (effect switched with Hit Points)
+Epic Boon|Boon of Dimensional Travel|SRD|done|3|Compendium item + module rule: its Teleport activity makes your next move a 30-ft teleport
 Epic Boon|Boon of Energy Resistance|PHB|done|3|Resistance to two chosen types; Energy Redirection Reaction: DEX save (DC 8 + CON + PB) or 2d12 + CON of that type to a creature within 60 ft
-Epic Boon|Boon of Erupting Spellpower|AU|build|3|Spell Overload: a slot spell's damage dice of 1-2 count as 3 and damaged creatures are Prone (once per Initiative or rest, asked)
-Epic Boon|Boon of Exquisite Radiance|FR|build|3|Powerful Radiance: maximize a Radiant damage roll (1/LR, asked)
+Epic Boon|Boon of Erupting Spellpower|AU|done|3|CGA item + module rule: Spell Overload offered on slot spell damage - dice 1-2 become 3, damaged creatures Prone (use back on Initiative or rest)
+Epic Boon|Boon of Exquisite Radiance|FR|done|3|CGA item + module rule: Powerful Radiance maximizes a Radiant damage roll (1/LR); Eternal Rest by hand
 Epic Boon|Boon of Fate|SRD|done|3|Improve Fate: after you or a creature within 60 ft rolls a D20 Test, add or subtract 2d4 (once per Initiative or rest). Compendium has a roll-only activity
-Epic Boon|Boon of Fluid Forms|FR|build|3|Shapechanger: Magic action transform into a CR 10 Beast/Humanoid/Monstrosity for 1 hour (dnd5e transform activity)
+Epic Boon|Boon of Fluid Forms|FR|done|3|CGA item: transform activity - CR 10 Beast/Humanoid/Monstrosity, keeps mental scores/HP/features, temp HP = form HP + 20 (1/LR)
 Epic Boon|Boon of Fortitude|PHB|done|3|HP max +40; once per turn when you regain HP, regain CON modifier extra
-Epic Boon|Boon of Fortune’s Favor|FR|build|3|Saving Throw Reroll: reroll a failed save (once per round, asked)
+Epic Boon|Boon of Fortune’s Favor|FR|done|3|CGA item + module rule: failed save reroll offered (once per round)
 Epic Boon|Boon of Irresistible Offense|SRD|done|3|Your Bludgeoning/Piercing/Slashing damage ignores Resistance; on a natural 20, extra damage equal to the increased ability score
-Epic Boon|Boon of Looming Shadows|AB|build|3|Shadowy Stretch (+10 ft melee reach when you Attack, by hand); Dancing Silhouette - Bonus Action Dodge activity
+Epic Boon|Boon of Looming Shadows|AB|done|3|CGA item: Dancing Silhouette Bonus Action Dodge activity; Shadowy Stretch by hand
 Epic Boon|Boon of Magic School Mastery|AU|skip|3|Extra prepared spells cast without a slot - from the sheet
-Epic Boon|Boon of Misty Escape|AB|build|3|Drop to 1 HP instead of 0 and turn to mist, regaining 10 HP each turn (1/LR, asked)
-Epic Boon|Boon of Poison Mastery|FR|build|3|Poison Immunity and Poisoned immunity; Perfect Poisoner - maximize Poison damage once per turn
+Epic Boon|Boon of Misty Escape|AB|done|3|CGA item + module rule: drop to 1 HP instead of 0 and turn to mist (Fly 20, B/P/S Resistance, 10 HP at each turn start, 1 hour; 1/LR)
+Epic Boon|Boon of Poison Mastery|FR|done|3|CGA item + module rule: Poison/Poisoned immunity; Perfect Poisoner maximizes Poison damage once per turn
 Epic Boon|Boon of Recovery|PHB|done|3|Last Stand: once per Long Rest, drop to 1 HP instead of 0 and heal half your HP max. Recover Vitality: pool of ten d10s, Bonus Action to roll some and heal
-Epic Boon|Boon of Revelry|FR|build|3|Otto's Irresistible Dance 1/LR without a slot (concentration not broken by damage); Sing Out
+Epic Boon|Boon of Revelry|FR|done|3|CGA item + module rule: Otto's Irresistible Dance cast activity (1/LR); its Concentration isn't broken by damage; Sing Out by hand
 Epic Boon|Boon of Skill|PHB|skip|3|Proficiency in all skills + Expertise from the advancement
 Epic Boon|Boon of Speed|PHB|done|3|Speed +30 ft; Escape Artist: Bonus Action Disengage that also ends Grappled
 Epic Boon|Boon of Spell Recall|SRD|done|3|Free Casting (module rule): casting with a level 1-4 slot rolls 1d4; on a match the slot is not expended
-Epic Boon|Boon of Terror|FR|build|3|Frightened immunity; Flee, Fools! Reaction - a Frightened creature starting its turn within 60 ft makes a WIS save or flees (1/SR, asked)
-Epic Boon|Boon of the Bright Sun|FR|build|3|Daylight Presence: Bonus Action 30-ft sunlight aura; you and allies in it gain 10 temp HP at the start of your turns
-Epic Boon|Boon of the Furious Storm|FR|build|3|Lightning/Thunder Resistance (Immunity while Bloodied); Disadvantage on saves against your Lightning/Thunder spells
-Epic Boon|Boon of the Iron Mind|AU|build|3|Unshakable Focus: damage never breaks your Concentration
+Epic Boon|Boon of Terror|FR|done|3|CGA item + module rule: Frightened immunity; Flee, Fools! Reaction save offered when a Frightened enemy starts its turn within 60 ft (1/SR)
+Epic Boon|Boon of the Bright Sun|FR|done|3|CGA item + module rule: Daylight Presence activity; Fortifying Light gives you and allies within 30 ft 10 temp HP each turn start (light by hand)
+Epic Boon|Boon of the Furious Storm|FR|done|3|CGA item + module rule: Lightning/Thunder Resistance (Immunity while Bloodied); Disadvantage on saves against your Lightning/Thunder spells
+Epic Boon|Boon of the Iron Mind|AU|done|3|CGA item + module rule: Concentration saves from damage always succeed
 Epic Boon|Boon of the Night Spirit|SRD|done|3|Resistance (not Psychic/Radiant) only outside Bright Light, checked against the scene lighting (module rule); Merge with Shadows makes you Invisible until you act
-Epic Boon|Boon of the Soul Drinker|FR|build|3|Cold/Necrotic Resistance; Siphon Life - Reaction regain 50 HP when an enemy within 120 ft drops to 0 (1/SR, asked)
-Epic Boon|Boon of Truesight|SRD|verify|3|Compendium: Truesight 60 ft
+Epic Boon|Boon of the Soul Drinker|FR|done|3|CGA item + module rule: Cold/Necrotic Resistance; Siphon Life Reaction regains 50 HP when an enemy within 120 ft drops to 0 (1/SR)
+Epic Boon|Boon of Truesight|SRD|done|3|Compendium item checked in the test world: Truesight 60 ft

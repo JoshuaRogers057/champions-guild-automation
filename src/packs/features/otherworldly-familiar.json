@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtOtherwFami0",
+  "name": "Otherworldly Familiar",
+  "type": "feat",
+  "img": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Otherworldly Power:</strong> when your familiar appears (Find Familiar), the module asks for Necrotic, Poison, Psychic, Radiant or Thunder and gives the familiar Resistance to it. <strong>Phase Walk:</strong> the familiar moves through creatures and objects as Difficult Terrain (by hand).</p>",
+      "chat": ""
+    },
+    "identifier": "otherworldly-familiar",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Familiar Friend",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Familiar Resistance chosen on summon by the module."
+      }
+    }
+  }
+}

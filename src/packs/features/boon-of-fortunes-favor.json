@@ -1,0 +1,51 @@
+{
+  "_id": "cgaBnFortuneFavr",
+  "name": "Boon of Fortune’s Favor",
+  "type": "feat",
+  "img": "icons/magic/control/buff-luck-fortune-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Saving Throw Reroll:</strong> when you fail a saving throw, the module offers a reroll (you must use the new roll). Then not again until the start of your next turn.</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-fortunes-favor",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Saving Throw Reroll offered by the module (once per round)."
+      }
+    }
+  }
+}

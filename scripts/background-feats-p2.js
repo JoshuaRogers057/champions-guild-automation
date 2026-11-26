@@ -224,7 +224,7 @@ Hooks.on("midi-qol.hitsChecked", async (workflow) => {
 });
 
 // ------------------------------------------------------------------ Teleport for the next move (Portal Step, Mist Walk)
-async function blinkNextMove(actor, label, feet) {
+export async function blinkNextMove(actor, label, feet) {
   const tok = sceneTokenOf(actor);
   if (!tok) return;
   const prev = tok.movementAction ?? "walk";

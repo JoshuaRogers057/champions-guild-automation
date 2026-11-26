@@ -1,0 +1,152 @@
+{
+  "_id": "cgaBnLoomShadows",
+  "name": "Boon of Looming Shadows",
+  "type": "feat",
+  "img": "icons/magic/unholy/silhouette-robe-evil-power.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Dancing Silhouette:</strong> take the Dodge action as a Bonus Action (activity). <strong>Shadowy Stretch:</strong> when you take the Attack action, your melee reach is 10 ft longer until the end of the turn (by hand).</p>",
+      "chat": ""
+    },
+    "identifier": "boon-of-looming-shadows",
+    "type": {
+      "value": "feat",
+      "subtype": "epicBoon"
+    },
+    "requirements": "Level 19+",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaLoomDodgeAct0": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaLoomDodgeFx00"
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaLoomDodgeAct0",
+        "type": "utility",
+        "name": "Dancing Silhouette (Dodge)",
+        "img": "systems/dnd5e/icons/svg/statuses/dodging.svg",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaLoomDodgeFx00",
+      "name": "Dodging (Dancing Silhouette)",
+      "img": "systems/dnd5e/icons/svg/statuses/dodging.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [
+        "dodging"
+      ],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": []
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [
+            "turnStart"
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Dancing Silhouette Bonus Action Dodge activity; Shadowy Stretch by hand."
+      }
+    }
+  }
+}
