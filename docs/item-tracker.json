@@ -786,9 +786,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Cube of Summoning",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): Wind the Crank rolls 1d6 and casts that summon spell at level 5 (DC 17, +9, no Concentration); you pick the form",
    "identifier": "cube-of-summoning"
   },
   {
@@ -1166,9 +1166,9 @@
    "sub": "Armor · varies · attunement",
    "name": "Enspelled Armor",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Template item - check how a chosen spell is attached",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): Bind Spell (type the spell; Abjuration/Illusion, level 8 or lower) adds a 1-charge cast with the table's DC/attack and sets the rarity; 6 charges, 1d6 at dawn",
    "identifier": "enspelled-armor"
   },
   {
@@ -1176,9 +1176,9 @@
    "sub": "Staff · varies · attunement",
    "name": "Enspelled Staff",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Template item - check how a chosen spell is attached",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): Bind Spell (any school) adds a 1-charge cast with the table's DC/attack; the last charge rolls the d20",
    "identifier": "enspelled-staff"
   },
   {
@@ -1186,9 +1186,9 @@
    "sub": "Weapon · varies · attunement",
    "name": "Enspelled Weapon",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Template item - check how a chosen spell is attached",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): Bind Spell (Conjuration/Divination/Evocation/Necromancy/Transmutation) adds a 1-charge cast with the table's DC/attack",
    "identifier": "enspelled-weapon"
   },
   {
@@ -1286,9 +1286,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Figurine of Wondrous Power (Bronze Griffon)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand",
    "identifier": "figurine-of-wondrous-power-bronze-griffon"
   },
   {
@@ -1296,9 +1296,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Figurine of Wondrous Power (Ebony Fly)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand",
    "identifier": "figurine-of-wondrous-power-ebony-fly"
   },
   {
@@ -1306,9 +1306,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Figurine of Wondrous Power (Golden Lions)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - one lion or both",
    "identifier": "figurine-of-wondrous-power-golden-lions"
   },
   {
@@ -1316,9 +1316,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Figurine of Wondrous Power (Ivory Goats)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - three goats with their own uses; Goat of Terror's riding aura (WIS 15 or Frightened, 24-hour immunity), horns (+1 Lance / +2 Longsword) and reverting are automated",
    "identifier": "figurine-of-wondrous-power-ivory-goats"
   },
   {
@@ -1326,9 +1326,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Figurine of Wondrous Power (Marble Elephant)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand",
    "identifier": "figurine-of-wondrous-power-marble-elephant"
   },
   {
@@ -1336,9 +1336,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Figurine of Wondrous Power (Obsidian Steed)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - rolls the 10 percent chance that it ignores your orders",
    "identifier": "figurine-of-wondrous-power-obsidian-steed"
   },
   {
@@ -1346,9 +1346,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Figurine of Wondrous Power (Onyx Dog)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - a Mastiff with INT 8, Common and Blindsight 60 ft (cga-summons)",
    "identifier": "figurine-of-wondrous-power-onyx-dog"
   },
   {
@@ -1356,9 +1356,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Figurine of Wondrous Power (Serpentine Owl)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand",
    "identifier": "figurine-of-wondrous-power-serpentine-owl"
   },
   {
@@ -1366,9 +1366,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Figurine of Wondrous Power (Silver Raven)",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - plus Animal Messenger on the raven",
    "identifier": "figurine-of-wondrous-power-silver-raven"
   },
   {
@@ -1766,9 +1766,9 @@
    "sub": "Wondrous Item · varies · attunement",
    "name": "Instrument of the Bards",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): seven items, one per instrument - each spell once per dawn (Cure Wounds at the listed level); playing it unattuned costs a DC 15 WIS save or 2d4 Psychic and casts nothing",
    "identifier": "instrument-of-the-bards"
   },
   {
@@ -1926,9 +1926,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Iron Bands of Bilarro",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): ranged attack (PB + DEX) that Restrains on a hit, once per dawn; Release (Bonus Action) frees the target; breaking them is by hand",
    "identifier": "iron-bands-of-bilarro"
   },
   {
@@ -1956,9 +1956,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Keoghtom’s Ointment",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): Apply a Dose heals 2d8 + 2 and ends Poisoned; set the doses rolled",
    "identifier": "keoghtoms-ointment"
   },
   {
@@ -2016,9 +2016,9 @@
    "sub": "Weapon · very rare",
    "name": "Lute of Thunderous Thumping",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs",
+   "note": "Done in v0.43.0: CGA item (Mass Apply) + module rule: Club with +2d8 Thunder (also added to an imported lute without it) and a Sing and Swing CHA attack",
    "identifier": "lute-of-thunderous-thumping"
   },
   {
@@ -2146,9 +2146,9 @@
    "sub": "Armor · uncommon",
    "name": "Mariner’s Armor",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Armor property - check the effect",
+   "note": "Done in v0.43.0: Module rule (no Mass Apply): Swim Speed equal to your Speed while worn; at the start of your turn at 0 HP it asks if you're underwater and heals 1d4 (once per day)",
    "identifier": "mariners-armor"
   },
   {
@@ -2606,9 +2606,9 @@
    "sub": "Potion · uncommon",
    "name": "Potion of Fire Breath",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): drinking grants an Exhale Fire feature (Bonus Action, DC 13 DEX, 4d6 Fire) for 3 uses or 1 hour",
    "identifier": "potion-of-fire-breath"
   },
   {
@@ -2646,9 +2646,9 @@
    "sub": "Potion · very rare",
    "name": "Potion of Greater Invisibility",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): Invisible for 1 hour",
    "identifier": "potion-of-greater-invisibility"
   },
   {
@@ -3176,9 +3176,9 @@
    "sub": "Wondrous Item · common",
    "name": "Rival Coin",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): Toss rolls heads or tails - WIS 13 save, 2d4 Psychic and Disadvantage on the next attack, or 1d4 Psychic to you",
    "identifier": "rival-coin"
   },
   {
@@ -3706,9 +3706,9 @@
    "sub": "Staff · uncommon · attunement",
    "name": "Staff of the Adder",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs",
+   "note": "Done in v0.43.0: CGA item (Mass Apply): Animate head (Bonus Action, 1 minute) and a Snake Head bite (PB + WIS, 1d6 Piercing + 3d6 Poison) usable only while animate; the head's HP is by hand",
    "identifier": "staff-of-the-adder"
   },
   {
@@ -4096,9 +4096,9 @@
    "sub": "Weapon · common",
    "name": "Walloping Ammunition",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it",
+   "note": "Done in v0.43.0: Module rule (no Mass Apply): a hit with it forces a DC 10 STR save or Prone",
    "identifier": "walloping-ammunition"
   },
   {
@@ -4396,9 +4396,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Wraps of Unarmed Power",
    "source": "DMG",
-   "category": "verify",
+   "category": "done",
    "priority": 2,
-   "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Passive or simple activated effect - check it",
+   "note": "Done in v0.43.0: Module rule (no Mass Apply): +1/+2/+3 (from the name, else rarity) to Unarmed Strike attack and damage rolls, with Force offered as the damage type",
    "identifier": "wraps-of-unarmed-power"
   },
   {

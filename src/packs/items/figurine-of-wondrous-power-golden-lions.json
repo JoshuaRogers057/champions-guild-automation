@@ -1,0 +1,278 @@
+{
+  "type": "equipment",
+  "system": {
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "cgaIxFigLion1000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "60",
+          "special": "",
+          "override": true
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "space",
+            "choice": false,
+            "special": "unoccupied space"
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxFigLion1000",
+        "type": "summon",
+        "name": "One Lion",
+        "img": "icons/creatures/mammals/cat-hunched-glowing-red.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "_id": "cgaIxPFigLion100",
+            "count": "1",
+            "name": "",
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmLion0000000000",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "midiProperties": {
+          "identifier": "figurine-golden-lions"
+        }
+      },
+      "cgaIxFigLion2000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "2",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "60",
+          "special": "",
+          "override": true
+        },
+        "target": {
+          "affects": {
+            "count": "2",
+            "type": "space",
+            "choice": false,
+            "special": "unoccupied space"
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxFigLion2000",
+        "type": "summon",
+        "name": "Both Lions",
+        "img": "icons/creatures/mammals/cat-hunched-glowing-red.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "_id": "cgaIxPFigLion200",
+            "count": "2",
+            "name": "",
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmLion0000000000",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "midiProperties": {
+          "identifier": "figurine-golden-lions"
+        }
+      }
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identifier": "figurine-of-wondrous-power-golden-lions",
+    "rarity": "rare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action: throw the figurine to a point within 60 ft and it becomes the creature (it obeys you and takes its turn right after yours). Magic action while touching it, or 0 HP: it reverts (delete the token). A pair: use one or both. Each can become a Lion for up to 1 hour. Once a lion has been used, it can't be used again until 7 days have passed (by hand).</p>",
+      "chat": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "uses": {
+      "spent": 0,
+      "max": "2",
+      "recovery": [],
+      "autoDestroy": false
+    }
+  },
+  "effects": [],
+  "_id": "cgaIxFigLions000",
+  "name": "Figurine of Wondrous Power (Golden Lions)",
+  "img": "icons/creatures/mammals/cat-hunched-glowing-red.webp",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Summon activity for the figurine's creature; the days before it works again are by hand."
+      }
+    }
+  }
+}

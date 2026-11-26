@@ -1,0 +1,162 @@
+{
+  "name": "Enspelled Armor",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Bound into it is one spell of level 8 or lower (Abjuration or Illusion). 6 charges, 1d6 regained at dawn. While wearing the armor, expend 1 charge to cast the spell. <strong>Bind Spell</strong> (once, by the DM or owner): type the spell's name and the module adds a cast activity with the table's save DC and attack bonus (cantrip-1: DC 13 / +5; 2: 13 / +5; 3-4: 15 / +7; 5-6: 17 / +9; 7-8: 18 / +10) and sets the rarity. If your armor isn't a Breastplate, change the base item and its stats on the sheet.</p>",
+      "chat": ""
+    },
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 20,
+      "units": "lb"
+    },
+    "rarity": "uncommon",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "6",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6"
+        }
+      ],
+      "autoDestroy": false
+    },
+    "armor": {
+      "value": 14,
+      "magicalBonus": null,
+      "dex": 2
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "medium",
+      "baseItem": "breastplate"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "activities": {
+      "cgaIxEnsArmorBin": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxEnsArmorBin",
+        "type": "utility",
+        "name": "Bind Spell",
+        "img": "icons/equipment/chest/breastplate-layered-steel-blue-gold.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Once, when the item is made",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "enspelled-bind"
+        }
+      }
+    },
+    "identifier": "enspelled-armor"
+  },
+  "_id": "cgaIxEnsArmor000",
+  "type": "equipment",
+  "img": "icons/equipment/chest/breastplate-layered-steel-blue-gold.webp",
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Bind Spell adds the spell as a 1-charge cast activity with the table's DC and attack bonus."
+      }
+    }
+  }
+}

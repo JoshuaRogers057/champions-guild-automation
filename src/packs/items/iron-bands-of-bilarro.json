@@ -1,0 +1,270 @@
+{
+  "type": "equipment",
+  "system": {
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "cgaIxIronThrow00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaIxFxIronBand0"
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "60",
+          "special": "",
+          "override": true
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxIronThrow00",
+        "type": "attack",
+        "name": "Throw the Bands",
+        "img": "icons/commodities/metal/chain-steel.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "attack": {
+          "ability": "dex",
+          "bonus": "@attributes.prof + @abilities.dex.mod",
+          "critical": {
+            "threshold": null
+          },
+          "flat": true,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": []
+        },
+        "midiProperties": {
+          "identifier": "iron-bands-throw"
+        },
+        "otherActivityId": "none"
+      },
+      "cgaIxIronRelea00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxIronRelea00",
+        "type": "utility",
+        "name": "Release",
+        "img": "icons/commodities/metal/chain-steel.webp",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "iron-bands-release"
+        }
+      }
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identifier": "iron-bands-of-bilarro",
+    "rarity": "rare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action, once per dawn: throw the sphere at a Huge or smaller creature within 60 ft (ranged attack: DEX modifier + Proficiency Bonus). On a hit it's Restrained until you take a Bonus Action to <strong>Release</strong> it. A DC 20 Strength (Athletics) check (an action) breaks and destroys the bands (by hand).</p>",
+      "chat": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "recoverAll"
+        }
+      ],
+      "autoDestroy": false
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaIxFxIronBand0",
+      "name": "Iron Bands of Bilarro: Restrained",
+      "img": "icons/commodities/metal/chain-steel.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "<p>Restrained until the thrower releases you (Bonus Action). Any creature that can touch the bands can take an action for a DC 20 Strength (Athletics) check to break them (by hand; a failure means that creature's later tries fail for 24 hours).</p>",
+      "statuses": [
+        "restrained"
+      ],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": []
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        },
+        "world": {
+          "cgaIronBands": true
+        }
+      }
+    }
+  ],
+  "_id": "cgaIxIronBand000",
+  "name": "Iron Bands of Bilarro",
+  "img": "icons/commodities/metal/chain-steel.webp",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Ranged attack (DEX + PB) that Restrains on a hit; Release removes it."
+      }
+    }
+  }
+}

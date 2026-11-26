@@ -80,7 +80,7 @@ Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Mind Rea
 Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Telepathy|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|telepathy-crystal-ball-of
 Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of True Seeing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|true-seeing-crystal-ball-of
 Wondrous items|Wondrous Item · rare · attunement|Cube of Force|SRD|done|2|CGA item: casts the module's automated spells|cube-of-force
-Wondrous items|Wondrous Item · rare|Cube of Summoning|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|cube-of-summoning
+Wondrous items|Wondrous Item · rare|Cube of Summoning|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Wind the Crank rolls 1d6 and casts that summon spell at level 5 (DC 17, +9, no Concentration); you pick the form|cube-of-summoning
 Wondrous items|Wondrous Item · legendary|Cubic Gate|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|cubic-gate
 Wondrous items|Wondrous Item · rare · attunement|Daern’s Instant Fortress|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|daerns-instant-fortress
 Magic weapons|Weapon · rare|Dagger of Venom|SRD|done|1|CGA item + module rule: the Poison Save rolls on the first hit while coated (compendium ran it on every hit)|dagger-of-venom
@@ -118,9 +118,9 @@ Magic armor and shields|Armor · rare|Elven Chain|SRD|skip|3|Utility, narrative 
 Wondrous items|Wondrous Item · common|Enduring Spellbook|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|enduring-spellbook
 Magic weapons|Weapon · very rare · attunement|Energy Bow|SRD|done|2|Module rule (no Mass Apply): its Arrow of Restraint no longer runs after every attack (use it by hand after a hit). Force damage comes from the item. Not fully seen in play|energy-bow
 Wondrous items|Wondrous Item · common|Ensorcelled Missive|AU|skip|3|Utility, narrative or DM-run - nothing to automate|ensorcelled-missive
-Magic armor and shields|Armor · varies · attunement|Enspelled Armor|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Template item - check how a chosen spell is attached|enspelled-armor
-Staffs|Staff · varies · attunement|Enspelled Staff|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Template item - check how a chosen spell is attached|enspelled-staff
-Magic weapons|Weapon · varies · attunement|Enspelled Weapon|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Template item - check how a chosen spell is attached|enspelled-weapon
+Magic armor and shields|Armor · varies · attunement|Enspelled Armor|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Bind Spell (type the spell; Abjuration/Illusion, level 8 or lower) adds a 1-charge cast with the table's DC/attack and sets the rarity; 6 charges, 1d6 at dawn|enspelled-armor
+Staffs|Staff · varies · attunement|Enspelled Staff|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Bind Spell (any school) adds a 1-charge cast with the table's DC/attack; the last charge rolls the d20|enspelled-staff
+Magic weapons|Weapon · varies · attunement|Enspelled Weapon|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Bind Spell (Conjuration/Divination/Evocation/Necromancy/Transmutation) adds a 1-charge cast with the table's DC/attack|enspelled-weapon
 Wondrous items|Wondrous Item · common|Ersatz Eye|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ersatz-eye
 Wondrous items|Wondrous Item · common|Evergreen Fertilizer|AU|skip|3|Utility, narrative or DM-run - nothing to automate|evergreen-fertilizer
 Wondrous items|Wondrous Item · uncommon|Eversmoking Bottle|SRD|done|3|Checked in v0.25.0 - midi-qol's sample opens/closes the smoke|eversmoking-bottle
@@ -130,15 +130,15 @@ Wondrous items|Wondrous Item · uncommon · attunement|Eyes of Charming|SRD|done
 Wondrous items|Wondrous Item · uncommon|Eyes of Minute Seeing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|eyes-of-minute-seeing
 Wondrous items|Wondrous Item · uncommon|Eyes of the Eagle|SRD|done|2|Module rule (no Mass Apply): Advantage on Perception (compendium item was empty)|eyes-of-the-eagle
 Wondrous items|Wondrous Item · varies|Figurine of Wondrous Power|SRD|skip|3|Listed by variant below|figurine-of-wondrous-power
-Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Bronze Griffon)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-bronze-griffon
-Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Ebony Fly)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-ebony-fly
-Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Golden Lions)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-golden-lions
-Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Ivory Goats)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-ivory-goats
-Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Marble Elephant)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-marble-elephant
-Wondrous items|Wondrous Item · very rare|Figurine of Wondrous Power (Obsidian Steed)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-obsidian-steed
-Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Onyx Dog)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-onyx-dog
-Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Serpentine Owl)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-serpentine-owl
-Wondrous items|Wondrous Item · uncommon|Figurine of Wondrous Power (Silver Raven)|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Summons a creature - check the summon activity|figurine-of-wondrous-power-silver-raven
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Bronze Griffon)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand|figurine-of-wondrous-power-bronze-griffon
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Ebony Fly)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand|figurine-of-wondrous-power-ebony-fly
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Golden Lions)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - one lion or both|figurine-of-wondrous-power-golden-lions
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Ivory Goats)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - three goats with their own uses; Goat of Terror's riding aura (WIS 15 or Frightened, 24-hour immunity), horns (+1 Lance / +2 Longsword) and reverting are automated|figurine-of-wondrous-power-ivory-goats
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Marble Elephant)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand|figurine-of-wondrous-power-marble-elephant
+Wondrous items|Wondrous Item · very rare|Figurine of Wondrous Power (Obsidian Steed)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - rolls the 10 percent chance that it ignores your orders|figurine-of-wondrous-power-obsidian-steed
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Onyx Dog)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - a Mastiff with INT 8, Common and Blindsight 60 ft (cga-summons)|figurine-of-wondrous-power-onyx-dog
+Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Serpentine Owl)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand|figurine-of-wondrous-power-serpentine-owl
+Wondrous items|Wondrous Item · uncommon|Figurine of Wondrous Power (Silver Raven)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - plus Animal Messenger on the raven|figurine-of-wondrous-power-silver-raven
 Magic weapons|Weapon · rare · attunement|Flame Tongue|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)|flame-tongue
 Wondrous items|Wondrous Item · rare|Folding Boat|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|folding-boat
 Magic weapons|Weapon · very rare · attunement|Frost Brand|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)|frost-brand
@@ -178,7 +178,7 @@ Wondrous items|Wondrous Item · varies · attunement|Idol of Good Fortunes|AU|do
 Rods|Rod · uncommon|Immovable Rod|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|immovable-rod
 Wondrous items|Wondrous Item · common|Instrument of Illusions|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-illusions
 Wondrous items|Wondrous Item · common|Instrument of Scribing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-scribing
-Wondrous items|Wondrous Item · varies · attunement|Instrument of the Bards|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|instrument-of-the-bards
+Wondrous items|Wondrous Item · varies · attunement|Instrument of the Bards|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): seven items, one per instrument - each spell once per dawn (Cure Wounds at the listed level); playing it unattuned costs a DC 15 WIS save or 2d4 Psychic and casts nothing|instrument-of-the-bards
 Wondrous items|Wondrous Item · varies · attunement|Ioun Stone|SRD|skip|3|Listed by variant below|ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Absorption)|SRD|done|3|Module rule (no Mass Apply): Reaction when an enemy casts a spell of level 4 (8) or lower - cancel it, spending that many of the stone's 20 levels|absorption-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Agility)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|agility-ioun-stone
@@ -194,16 +194,16 @@ Wondrous items|Wondrous Item · legendary|Ioun Stone (Regeneration)|SRD|skip|3|U
 Wondrous items|Wondrous Item · rare|Ioun Stone (Reserve)|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|reserve-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Strength)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|strength-ioun-stone
 Wondrous items|Wondrous Item · rare|Ioun Stone (Sustenance)|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sustenance-ioun-stone
-Wondrous items|Wondrous Item · rare|Iron Bands of Bilarro|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|iron-bands-of-bilarro
+Wondrous items|Wondrous Item · rare|Iron Bands of Bilarro|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): ranged attack (PB + DEX) that Restrains on a hit, once per dawn; Release (Bonus Action) frees the target; breaking them is by hand|iron-bands-of-bilarro
 Wondrous items|Wondrous Item · legendary|Iron Flask|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|iron-flask
 Magic weapons|Weapon · uncommon|Javelin of Lightning|SRD|done|1|CGA item: attacks no longer pop up Lightning Bolt; Attack (Piercing) and Attack (Lightning) options|javelin-of-lightning
-Wondrous items|Wondrous Item · uncommon|Keoghtom’s Ointment|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it|keoghtoms-ointment
+Wondrous items|Wondrous Item · uncommon|Keoghtom’s Ointment|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Apply a Dose heals 2d8 + 2 and ends Poisoned; set the doses rolled|keoghtoms-ointment
 Magic weapons|Weapon · varies · attunement|Keyholes Dagger|AU|done|3|Done in v0.42.0: +1/+2/+3 (on the item); weapon form changes by hand; very rare - reroll a missed attack 1/dawn (asked)|keyholes-dagger
 Wondrous items|Wondrous Item · uncommon|Lantern of Revealing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|lantern-of-revealing
 Wondrous items|Wondrous Item · common|Lock of Trickery|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|lock-of-trickery
 Magic weapons|Weapon · legendary · attunement|Luck Blade|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): once per Long Rest, reroll a failed attack roll or save (asked when it fails). +1 saves and Wish come from the item|luck-blade
 Wondrous items|Wondrous Item · common|Lucky Foot|AU|done|2|Done in v0.42.0: When you roll a 1 on a save or check, the module offers to reroll it; the foot then disintegrates|lucky-foot
-Magic weapons|Weapon · very rare|Lute of Thunderous Thumping|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|lute-of-thunderous-thumping
+Magic weapons|Weapon · very rare|Lute of Thunderous Thumping|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply) + module rule: Club with +2d8 Thunder (also added to an imported lute without it) and a Sing and Swing CHA attack|lute-of-thunderous-thumping
 Magic weapons|Weapon · rare · attunement|Mace of Disruption|SRD|done|1|midi-qol sample works: +2d6 Radiant vs Fiends/Undead, destroy save at 25 HP or fewer|mace-of-disruption
 Magic weapons|Weapon · rare|Mace of Smiting|SRD|done|2|Module rule (no Mass Apply): a 20 adds whatever the compendium crit bonus is missing (+7, +14 vs Constructs) and destroys a Construct at 25 HP or fewer|mace-of-smiting
 Magic weapons|Weapon · rare · attunement|Mace of Terror|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol; module rule (no mass apply) stops its extra activity running after every attack|mace-of-terror
@@ -216,7 +216,7 @@ Wondrous items|Wondrous Item · very rare|Manual of Bodily Health|SRD|skip|3|Uti
 Wondrous items|Wondrous Item · very rare|Manual of Gainful Exercise|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-gainful-exercise
 Wondrous items|Wondrous Item · very rare|Manual of Golems|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-golems
 Wondrous items|Wondrous Item · very rare|Manual of Quickness of Action|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-quickness-of-action
-Magic armor and shields|Armor · uncommon|Mariner’s Armor|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Armor property - check the effect|mariners-armor
+Magic armor and shields|Armor · uncommon|Mariner’s Armor|DMG|done|2|Done in v0.43.0: Module rule (no Mass Apply): Swim Speed equal to your Speed while worn; at the start of your turn at 0 HP it asks if you're underwater and heals 1d4 (once per day)|mariners-armor
 Magic weapons|Weapon · uncommon · attunement|Martialist's Quarterstaff|AU|done|2|Done in v0.42.0: 4 charges: Searing Smite cast (2, DC 13), Throw (1, by hand), Trip (1: Advantage on the attack, STR 13 or Prone on a hit)|martialists-quarterstaff
 Wondrous items|Wondrous Item · uncommon · attunement|Medallion of Thoughts|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|medallion-of-thoughts
 Rings|Ring · uncommon · attunement|Mind Sharpener|EB|done|1|Done in v0.42.0: 4 charges: when you fail a Concentration save, the module offers your Reaction and a charge to succeed instead (1d4 at dawn)|mind-sharpener
@@ -262,11 +262,11 @@ Potions and oils|Potion · common|Potion of Climbing|SRD|done|2|Checked in v0.24
 Potions and oils|Potion · common|Potion of Comprehension|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-comprehension
 Potions and oils|Potion · rare|Potion of Diminution|SRD|done|2|CGA item: casts the module's automated spells|potion-of-diminution
 Potions and oils|Potion · uncommon|Potion of Dragon's Breath|AU|done|2|Done in v0.42.0: Dragon's Breath effect for 1 minute (DC 13, no Concentration), damage type by the potion's color|potion-of-dragons-breath
-Potions and oils|Potion · uncommon|Potion of Fire Breath|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it|potion-of-fire-breath
+Potions and oils|Potion · uncommon|Potion of Fire Breath|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): drinking grants an Exhale Fire feature (Bonus Action, DC 13 DEX, 4d6 Fire) for 3 uses or 1 hour|potion-of-fire-breath
 Potions and oils|Potion · very rare|Potion of Flying|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|potion-of-flying
 Potions and oils|Potion · rare|Potion of Gaseous Form|SRD|done|2|CGA item: casts the module's automated spells|potion-of-gaseous-form
 Potions and oils|Potion · varies|Potion of Giant Strength|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)|potion-of-giant-strength
-Potions and oils|Potion · very rare|Potion of Greater Invisibility|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it|potion-of-greater-invisibility
+Potions and oils|Potion · very rare|Potion of Greater Invisibility|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Invisible for 1 hour|potion-of-greater-invisibility
 Potions and oils|Potion · uncommon|Potion of Growth|SRD|done|2|CGA item: casts the module's automated spells|potion-of-growth
 Potions and oils|Potion · rare|Potion of Heroism|SRD|done|1|CGA item: Drink now applies Bless for 1 hour (compendium only gave the temp HP)|potion-of-heroism
 Potions and oils|Potion · rare|Potion of Invisibility|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)|potion-of-invisibility
@@ -319,7 +319,7 @@ Rings|Ring · legendary|Ring of Three Wishes|SRD|skip|3|Utility, narrative or DM
 Rings|Ring · uncommon · attunement|Ring of Warmth|SRD|done|3|Module rule (no Mass Apply): Cold damage reduced by 2d8|ring-of-warmth
 Rings|Ring · uncommon|Ring of Water Walking|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-water-walking
 Rings|Ring · rare · attunement|Ring of X-ray Vision|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-x-ray-vision
-Wondrous items|Wondrous Item · common|Rival Coin|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|rival-coin
+Wondrous items|Wondrous Item · common|Rival Coin|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Toss rolls heads or tails - WIS 13 save, 2d4 Psychic and Disadvantage on the next attack, or 1d4 Psychic to you|rival-coin
 Wondrous items|Wondrous Item · rare · attunement|Robe of Eyes|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|robe-of-eyes
 Wondrous items|Wondrous Item · very rare · attunement|Robe of Scintillating Colors|SRD|done|3|CGA item: Display gives attackers Disadvantage until the end of your next turn; Dazzle - enemies within 30 ft WIS 15 or Stunned|robe-of-scintillating-colors
 Wondrous items|Wondrous Item · very rare · attunement|Robe of Stars|SRD|done|2|CGA item: casts the module's automated spells|robe-of-stars
@@ -372,7 +372,7 @@ Staffs|Staff · very rare · attunement|Staff of Power|SRD|done|2|CGA item: cast
 Staffs|Staff · varies · attunement (spellcaster)|Staff of Skulls|AU|done|3|Done in v0.42.0: Chill Touch cast and Intimidation Advantage (ominous); Reaction Disadvantage on an attack within 30 ft (chattering); 10d8 Necrotic CON 17 + Prone 1/dawn (pulverizing)|staff-of-skulls
 Staffs|Staff · very rare · attunement|Staff of Striking|SRD|done|2|Module rule (no Mass Apply): after a melee hit, spend up to 3 charges for +1d6 Force each (compendium charge damage no longer chains onto every attack)|staff-of-striking
 Staffs|Staff · rare · attunement|Staff of Swarming Insects|SRD|done|2|CGA item: casts the module's automated spells; its extra activity no longer runs after every staff attack|staff-of-swarming-insects
-Staffs|Staff · uncommon · attunement|Staff of the Adder|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|staff-of-the-adder
+Staffs|Staff · uncommon · attunement|Staff of the Adder|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Animate head (Bonus Action, 1 minute) and a Snake Head bite (PB + WIS, 1d6 Piercing + 3d6 Poison) usable only while animate; the head's HP is by hand|staff-of-the-adder
 Staffs|Staff · very rare · attunement|Staff of the Lost|AU|done|3|Done in v0.42.0: +1 Quarterstaff; 3 charges: Maze (DC 18) or Teleport casts; curse by hand|staff-of-the-lost
 Staffs|Staff · legendary · attunement|Staff of the Magi|SRD|done|2|CGA item + module rule (no mass apply): casts the module's spells; Advantage on saves vs spells. Spell Absorption stays manual|staff-of-the-magi
 Staffs|Staff · uncommon · attunement|Staff of the Python|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|staff-of-the-python
@@ -411,7 +411,7 @@ Wondrous items|Wondrous Item · legendary|Universal Solvent|SRD|skip|3|Utility, 
 Wondrous items|Wondrous Item · common|Veteran’s Cane|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|veterans-cane
 Magic weapons|Weapon · rare|Vicious Weapon|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)|vicious-weapon
 Magic weapons|Weapon · legendary · attunement|Vorpal Sword|SRD|done|2|Module rule (no Mass Apply): ignores Slashing Resistance; a 20 asks: cut off the head or +30 Slashing|vorpal-sword
-Magic weapons|Weapon · common|Walloping Ammunition|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it|walloping-ammunition
+Magic weapons|Weapon · common|Walloping Ammunition|DMG|done|2|Done in v0.43.0: Module rule (no Mass Apply): a hit with it forces a DC 10 STR save or Prone|walloping-ammunition
 Wands|Wand · rare · attunement|Wand of Binding|SRD|done|2|CGA item: casts the module's automated spells|wand-of-binding
 Wands|Wand · common|Wand of Conducting|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-conducting
 Wands|Wand · rare · attunement|Wand of Enemy Detection|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-enemy-detection
@@ -441,7 +441,7 @@ Wondrous items|Wondrous Item · uncommon|Wind Fan|SRD|done|2|CGA item: casts the
 Wondrous items|Wondrous Item · uncommon · attunement|Winged Boots|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|winged-boots
 Wondrous items|Wondrous Item · rare · attunement|Wings of Flying|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|wings-of-flying
 Wondrous items|Wondrous Item · very rare|Workshop Wrecker|AU|done|3|Done in v0.42.0: 1 minute, 1/dawn: each creature in the area makes a DEX save on activation and each of your turns - DC and Bludgeoning damage by area size (asked)|workshop-wrecker
-Wondrous items|Wondrous Item · very rare|Wraps of Unarmed Power|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Passive or simple activated effect - check it|wraps-of-unarmed-power
+Wondrous items|Wondrous Item · very rare|Wraps of Unarmed Power|DMG|done|2|Done in v0.43.0: Module rule (no Mass Apply): +1/+2/+3 (from the name, else rarity) to Unarmed Strike attack and damage rolls, with Force offered as the damage type|wraps-of-unarmed-power
 Weapons|1d4 Bludgeoning|Club|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|club
 Weapons|1d4 Piercing|Dagger|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|dagger
 Weapons|1d8 Bludgeoning|Greatclub|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|greatclub

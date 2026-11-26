@@ -1,0 +1,279 @@
+{
+  "name": "Enspelled Weapon",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Bound into it is one spell of level 8 or lower (Conjuration, Divination, Evocation, Necromancy or Transmutation). 6 charges, 1d6 regained at dawn. While holding the weapon, expend 1 charge to cast the spell. <strong>Bind Spell</strong> (once, by the DM or owner): type the spell's name and the module adds a cast activity with the table's save DC and attack bonus (cantrip-1: DC 13 / +5; 2: 13 / +5; 3-4: 15 / +7; 5-6: 17 / +9; 7-8: 18 / +10) and sets the rarity. If your weapon isn't a Longsword, change the base item and its stats on the sheet.</p>",
+      "chat": ""
+    },
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 3,
+      "units": "lb"
+    },
+    "rarity": "uncommon",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "ft",
+      "reach": null
+    },
+    "uses": {
+      "max": "6",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6"
+        }
+      ],
+      "autoDestroy": false
+    },
+    "damage": {
+      "versatile": {
+        "number": 1,
+        "denomination": 10,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": null,
+          "formula": ""
+        }
+      },
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        },
+        "bonus": ""
+      }
+    },
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "longsword"
+    },
+    "magicalBonus": null,
+    "properties": [
+      "ver",
+      "mgc"
+    ],
+    "proficient": null,
+    "activities": {
+      "BFZXotvvF4YaAKeT": {
+        "type": "attack",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": ""
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": []
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "_id": "BFZXotvvF4YaAKeT",
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "otherActivityId": "none"
+      },
+      "cgaIxEnsWeapnBin": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxEnsWeapnBin",
+        "type": "utility",
+        "name": "Bind Spell",
+        "img": "icons/weapons/swords/sword-guard-purple.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Once, when the item is made",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "enspelled-bind"
+        }
+      }
+    },
+    "ammunition": {},
+    "mastery": "sap",
+    "identifier": "enspelled-weapon"
+  },
+  "_id": "cgaIxEnsWeapn000",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-guard-purple.webp",
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Bind Spell adds the spell as a 1-charge cast activity with the table's DC and attack bonus."
+      }
+    }
+  }
+}

@@ -3,6 +3,47 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.43.0
+
+The last 24 Dungeon Master's Guide magic items, the ones dnd5e has no compendium copy of. This release adds 25 new
+CGA items (1.0.0, Mass Apply), the helper feature Potion of Fire Breath: Exhale Fire, the Onyx Dog summon, and the new
+`scripts/item-rules-dmg.js`. Every row on the item tracker is now done or marked skip.
+
+- **Figurines of Wondrous Power** (9 items): each one summons its creature from the dnd5e compendium for its duration.
+  The days before a figurine works again are by hand.
+  - **Golden Lions**: summon one lion or both.
+  - **Ivory Goats**: three goats, each with its own uses. While you ride the **Goat of Terror**, a hostile creature
+    that starts its turn within 30 ft makes a WIS 15 save or is Frightened (immune for 24 hours after a success).
+    Its horns give a +1 Lance or a +2 Longsword. When the goat reverts, the horns and the riding effect go away.
+  - **Obsidian Steed**: rolls the 10 percent chance that it ignores your orders.
+  - **Onyx Dog**: a Mastiff with INT 8, Common and Blindsight 60 ft.
+  - **Silver Raven**: casts Animal Messenger on the raven.
+- **Cube of Summoning**: Wind the Crank rolls 1d6 and casts that summon spell at level 5 (DC 17, +9, no
+  Concentration). The spell's dialog opens so you pick the form.
+- **Enspelled Armor, Staff and Weapon**:
+  - **Bind Spell** takes a spell name, checks the school and level, and adds a 1-charge cast activity. The cast uses
+    the table's DC and attack bonus, and the item's rarity is set to match.
+  - The staff rolls the d20 when its last charge is spent.
+- **Instrument of the Bards** (7 items, one per instrument):
+  - Each spell can be cast once per dawn. Cure Wounds is cast at the level the table lists.
+  - Playing it unattuned costs a DC 15 WIS save or 2d4 Psychic, and no spell is cast.
+- **Other new CGA items**:
+  - **Iron Bands of Bilarro**: a ranged attack (PB + DEX) that Restrains, plus a Release activity.
+  - **Keoghtom's Ointment**: heals 2d8 + 2 and ends Poisoned.
+  - **Lute of Thunderous Thumping**: +2d8 Thunder, plus a Sing and Swing CHA attack.
+  - **Potion of Fire Breath**: a 3-use Exhale Fire feature that lasts 1 hour.
+  - **Potion of Greater Invisibility**: Invisible for 1 hour.
+  - **Rival Coin**: heads or tails.
+  - **Staff of the Adder**: the bite only works while the head is animate.
+- **Module rules (no Mass Apply)**:
+  - **Mariner's Armor**: a Swim Speed, plus the once-a-day 1d4 heal at 0 HP underwater.
+  - **Walloping Ammunition**: a hit forces a DC 10 STR save or the target falls Prone.
+  - **Wraps of Unarmed Power**: +N to Unarmed Strike attack and damage rolls, with Force as a damage choice.
+  - **Lute of Thunderous Thumping**: an imported lute without the extra die also gets the 2d8 Thunder.
+- **Note for builders**: midi links an attack activity to the item's only other utility or save when the attack's
+  `otherActivityId` is blank, and then applies that activity's effects to the targets. The Staff of the Adder applied
+  its own "Animate" effect to whatever it hit until its attacks were set to `"none"`.
+
 ## 0.42.0
 
 Magic items from the Artificer and Eberron books (AU/EB), priorities 1-3: 21 new CGA items (1.0.0, Mass Apply), the

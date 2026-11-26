@@ -1,0 +1,672 @@
+{
+  "type": "equipment",
+  "system": {
+    "type": {
+      "value": "trinket",
+      "subtype": ""
+    },
+    "activities": {
+      "cgaIxCubeCrank00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxCubeCrank00",
+        "type": "utility",
+        "name": "Wind the Crank",
+        "img": "icons/containers/boxes/box-gift-green.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "cube-crank"
+        }
+      },
+      "cgaIxCubeCast100": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "0",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxCubeCast100",
+        "type": "cast",
+        "name": "Cube: Summon Aberration",
+        "img": "icons/containers/boxes/box-gift-green.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgaSplSumAberr00",
+          "challenge": {
+            "override": true,
+            "save": 17,
+            "attack": 9
+          },
+          "properties": [
+            "concentration"
+          ],
+          "spellbook": false,
+          "ability": "",
+          "level": 5
+        },
+        "midiProperties": {
+          "identifier": "cube-1",
+          "automationOnly": true
+        }
+      },
+      "cgaIxCubeCast200": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "0",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxCubeCast200",
+        "type": "cast",
+        "name": "Cube: Summon Beast",
+        "img": "icons/containers/boxes/box-gift-green.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgaSplSumBeast00",
+          "challenge": {
+            "override": true,
+            "save": 17,
+            "attack": 9
+          },
+          "properties": [
+            "concentration"
+          ],
+          "spellbook": false,
+          "ability": "",
+          "level": 5
+        },
+        "midiProperties": {
+          "identifier": "cube-2",
+          "automationOnly": true
+        }
+      },
+      "cgaIxCubeCast300": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "0",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxCubeCast300",
+        "type": "cast",
+        "name": "Cube: Summon Construct",
+        "img": "icons/containers/boxes/box-gift-green.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgaSplSumConst00",
+          "challenge": {
+            "override": true,
+            "save": 17,
+            "attack": 9
+          },
+          "properties": [
+            "concentration"
+          ],
+          "spellbook": false,
+          "ability": "",
+          "level": 5
+        },
+        "midiProperties": {
+          "identifier": "cube-3",
+          "automationOnly": true
+        }
+      },
+      "cgaIxCubeCast400": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "0",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxCubeCast400",
+        "type": "cast",
+        "name": "Cube: Summon Dragon",
+        "img": "icons/containers/boxes/box-gift-green.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgasplSummonDrag",
+          "challenge": {
+            "override": true,
+            "save": 17,
+            "attack": 9
+          },
+          "properties": [
+            "concentration"
+          ],
+          "spellbook": false,
+          "ability": "",
+          "level": 5
+        },
+        "midiProperties": {
+          "identifier": "cube-4",
+          "automationOnly": true
+        }
+      },
+      "cgaIxCubeCast500": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "0",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxCubeCast500",
+        "type": "cast",
+        "name": "Cube: Summon Elemental",
+        "img": "icons/containers/boxes/box-gift-green.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgaSplSumElem000",
+          "challenge": {
+            "override": true,
+            "save": 17,
+            "attack": 9
+          },
+          "properties": [
+            "concentration"
+          ],
+          "spellbook": false,
+          "ability": "",
+          "level": 5
+        },
+        "midiProperties": {
+          "identifier": "cube-5",
+          "automationOnly": true
+        }
+      },
+      "cgaIxCubeCast600": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "0",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIxCubeCast600",
+        "type": "cast",
+        "name": "Cube: Summon Fey",
+        "img": "icons/containers/boxes/box-gift-green.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgaSplSumFey0000",
+          "challenge": {
+            "override": true,
+            "save": 17,
+            "attack": 9
+          },
+          "properties": [
+            "concentration"
+          ],
+          "spellbook": false,
+          "ability": "",
+          "level": 5
+        },
+        "midiProperties": {
+          "identifier": "cube-6",
+          "automationOnly": true
+        }
+      }
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identifier": "cube-of-summoning",
+    "rarity": "rare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action, once per dawn: <strong>Wind the Crank</strong>. The module rolls 1d6 and casts that summon spell at level 5 (save DC 17, +9 attack, no Concentration): 1 Summon Aberration, 2 Summon Beast, 3 Summon Construct, 4 Summon Dragon, 5 Summon Elemental, 6 Summon Fey. You still choose the spell's options (the creature's form).</p>",
+      "chat": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "recoverAll"
+        }
+      ],
+      "autoDestroy": false
+    }
+  },
+  "effects": [],
+  "_id": "cgaIxCubeSumm000",
+  "name": "Cube of Summoning",
+  "img": "icons/containers/boxes/box-gift-green.webp",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Wind the Crank rolls 1d6 and casts the matching summon spell at level 5 (DC 17, +9, no Concentration)."
+      }
+    }
+  }
+}
