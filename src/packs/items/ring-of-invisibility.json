@@ -1,0 +1,186 @@
+{
+  "_id": "cgaIringofinv124",
+  "name": "Ring of Invisibility",
+  "type": "equipment",
+  "img": "icons/equipment/finger/ring-eye-gold-red.webp",
+  "system": {
+    "activities": {
+      "cgaRingInvisTurn": {
+        "_id": "cgaRingInvisTurn",
+        "type": "utility",
+        "name": "Turn Invisible",
+        "sort": 0,
+        "img": "icons/equipment/finger/ring-eye-gold-red.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaRingInvisEff0"
+          }
+        ],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action: turn Invisible until you attack, cast a spell, or end it (Bonus Action: delete the effect).</p><p><em>Ring, Legendary (Requires Attunement)</em></p><p>While wearing this ring, you can take a Magic action to give yourself the &amp;Reference[Invisible] condition. You remain Invisible until the ring is removed or until you take a Bonus Action to become visible again.</p>",
+      "chat": ""
+    },
+    "identifier": "ring-of-invisibility",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 200000,
+      "denomination": "gp"
+    },
+    "rarity": "legendary",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "ring",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "_id": "cgaRingInvisEff0",
+      "name": "Invisible (Ring of Invisibility)",
+      "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "<p>Invisible until you make an attack roll, cast a spell, or end it as a Bonus Action.</p>",
+      "statuses": [
+        "invisible"
+      ],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": []
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [
+            "1Attack",
+            "1Spell"
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Adds the Turn Invisible activity (the compendium ring had none)."
+      }
+    }
+  }
+}

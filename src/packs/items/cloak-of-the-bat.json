@@ -1,0 +1,271 @@
+{
+  "_id": "cgaIcloakofth103",
+  "name": "Cloak of the Bat",
+  "type": "equipment",
+  "img": "icons/equipment/back/cloak-layered-tattered-purple.webp",
+  "system": {
+    "activities": {
+      "bHixxjmSIBwsov9t": {
+        "type": "utility",
+        "name": "Grip Edges",
+        "_id": "bHixxjmSIBwsov9t",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": "in an area of Dim Light or Darkness"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "spec",
+          "concentration": false,
+          "override": false,
+          "special": "fail to grip the cloak’s edges while flying in this way, or if you are no longer in Dim Light or Darkness"
+        },
+        "effects": [
+          {
+            "_id": "LOByj7F1KjZdSUMi",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": "edges of the cloak"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "",
+        "appliedEffects": [
+          "LOByj7F1KjZdSUMi"
+        ],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true
+        }
+      },
+      "baY1WKtwieimGXWd": {
+        "type": "cast",
+        "_id": "baY1WKtwieimGXWd",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": true,
+          "condition": "in an area of Dim Light or Darkness"
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": ""
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": true,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "spell": {
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": "4",
+          "properties": [],
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgasplPolymorph0",
+          "ability": ""
+        },
+        "name": "",
+        "img": "",
+        "visibility": {
+          "requireIdentification": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "recoverAll"
+        }
+      ],
+      "max": "1"
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> casts the module's automated Polymorph.</p><div><p><em>Wondrous Item, Rare (Requires Attunement)</em></p></div><p>While wearing this cloak, you have Advantage on Dexterity (Stealth) checks. In an area of Dim Light or Darkness, you can grip the edges of the cloak and use it to gain a Fly Speed of 40 feet. If you ever fail to grip the cloak's edges while flying in this way, or if you are no longer in &amp;Reference[DimLight] or &amp;Reference[Darkness], you lose this Fly Speed.</p><p>While wearing the cloak in an area of Dim Light or Darkness, you can cast <em>@UUID[Compendium.dnd5e.spells24.Item.phbsplPolymorph0]{Polymorph}</em> on yourself, shape-shifting into a <strong>@UUID[Compendium.dnd5e.actors24.Actor.mmBat00000000000]{Bat}</strong>. While in that form, you retain your Intelligence, Wisdom, and Charisma scores. The cloak can't be used this way again until the next dawn.</p>",
+      "chat": ""
+    },
+    "identifier": "cloak-of-the-bat",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 2,
+      "units": "lb"
+    },
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "name": "Fly Speed",
+      "img": "icons/creatures/mammals/bat-movement-flying-blue-purple.webp",
+      "origin": "Compendium.dnd5e.equipment24.Item.dmgCloakOfTheBat",
+      "transfer": false,
+      "_id": "LOByj7F1KjZdSUMi",
+      "type": "base",
+      "system": {
+        "changes": [],
+        "magical": true
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [
+        "flying"
+      ],
+      "sort": 0,
+      "flags": {},
+      "showIcon": 2,
+      "start": null,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: spells cast from the item use the module's automated versions (Polymorph)."
+      }
+    }
+  }
+}

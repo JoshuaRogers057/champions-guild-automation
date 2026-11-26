@@ -3,6 +3,74 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.24.0
+
+Priority-2 magic items and equipment. As in 0.23.0, most fixes are **module rules** that work on the character's own
+item, whatever its base weapon, with no Mass Apply. Items in **CGA: Items & Equipment** need **Mass Apply / Update**,
+which resets their uses and charges, so set those again afterwards.
+
+- New module rules:
+  - **Weapons:**
+    - **Executioner's Axe**: Humanoids take +2d6, and you gain that much temp HP.
+    - **Giant Slayer**: +2d6 against Giants, then a STR save or Prone.
+    - **Mace of Smiting**: on a 20, +7 (+14 and destroy at 25 HP or fewer against a Construct).
+    - **Oathbow**: offers to swear the target; Advantage and +3d6 against it, Disadvantage with other weapons while
+      it lives.
+    - **Vorpal Sword**: a 20 asks: head or +30. It also ignores Slashing Resistance.
+    - **Nine Lives Stealer**: a 20 against fewer than 100 HP means a CON save or slain.
+    - **Hammer of Thunderbolts**: a hurled hit makes the target and every creature within 30 ft save or be Stunned;
+      Giant's Bane applies with an attuned belt or gauntlets.
+    - **Sword of Answering**: Reaction strike with Advantage that ignores Resistance and Immunity.
+    - **Sword of Life Stealing** and **Sword of Sharpness**: 2024 versions.
+  - **Staffs:**
+    - **Staff of Striking**: spend up to 3 charges after a hit.
+    - **Staff of Withering**: spend a charge after a hit.
+    - **Staff of Thunder and Lightning**: offers its properties after a hit.
+  - **Ammunition:**
+    - **Ammunition of Slaying**: DC 17 CON against the named creature type, 6d10 Force.
+    - **Basic Poison**: +1d4 Poison on the next Piercing or Slashing hit.
+  - **Defence:**
+    - **Arrow-Catching Shield**: +2 AC only against ranged attacks.
+    - **Quarterstaff of the Acrobat**: Reaction +5 AC.
+    - **Spellguard Shield** and **Robe of the Archmagi**: Magic Resistance. The Robe's AC switches off in armor.
+    - **Ring of Spell Turning**: a saved spell of level 7 or lower has no effect.
+    - **Staff of the Magi**: Advantage on saves against spells.
+    - **Periapt of Wound Closure**: death saves of 9 or lower count as 10, and Hit Point Dice heal double.
+    - **Cloak of Displacement**: attacks against you have Disadvantage, off for a turn after you take damage.
+  - **Passive fixes:**
+    - **Boots of Elvenkind** and **Cloak of Elvenkind**: Advantage on Stealth.
+    - **Eyes of the Eagle**: Advantage on Perception.
+    - **Slippers of Spider Climbing**: Climb Speed equal to your Speed.
+    - **Gloves of Swimming and Climbing**: Climb and Swim Speed equal to your Speed.
+    - **Ring of Free Action**: immune to Paralyzed and Restrained.
+    - **Belt of Dwarvenkind**: its effect is switched on.
+    - **Necklace of Adaptation**: Advantage against gases.
+  - **Consumables:**
+    - **Elixir of Health**: ends its conditions.
+    - **Oil**: a creature covered in oil takes +5 Fire.
+  - **Chaining:** several compendium items (Hammer of Thunderbolts, Nine Lives Stealer, Staff of Withering, Staff of
+    Striking, Mace of Terror, Ring of the Ram, and others) no longer have midi-qol run their extra activity after
+    every attack.
+- New and fixed items (1.0.0):
+  - **Built for 2024:**
+    - **Tentacle Rod**: three tentacle hits on one creature in a turn mean a DEX save or Restrained, with 3d6 Psychic
+      each turn.
+    - **Potion of Pugilism**, **Basic Poison**, **Oil**.
+    - **Dwarven Thrower**: the Force damage is only added when thrown.
+  - **Repaired compendium items:**
+    - **Elemental Gem**, **Horn of Valhalla**: their summon links were broken.
+    - **Ring of Invisibility**: it had no activity.
+  - **Cast the module's automated spells:** Staff of Power, Staff of the Magi, Staff of Fire, Staff of Frost, Staff
+    of Healing, Staff of Charming, Staff of Swarming Insects, Staff of the Woodlands, Wands of Binding, Fear and
+    Polymorph, Necklace of Prayer Beads, Rod of Resurrection, Robe of Stars, Ring of Shooting Stars, Cube of Force,
+    Cape of the Mountebank, Cloak of the Bat, Boots of Levitation, Eyes of Charming, Oil of Slipperiness, Potions of
+    Growth, Diminution and Gaseous Form, Wind Fan.
+- Checked and working as they ship: the remaining priority-2 items, including the Ioun Stones, the elemental summoning
+  items, the flying and climbing potions, Wand of Paralysis and the plain weapons. Dancing Sword is skipped: just
+  attack with it as the Bonus Action.
+- Not checked yet: 24 DMG-only items, such as the Figurines and Enspelled items, have no compendium copy to test
+  against.
+
 ## 0.23.0
 
 Priority-1 magic items and equipment (2024 Dungeon Master's Guide and Player's Handbook), plus a Hex label change.

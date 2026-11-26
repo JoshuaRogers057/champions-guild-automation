@@ -1,0 +1,150 @@
+{
+  "_id": "cgaIpotionofg109",
+  "name": "Potion of Gaseous Form",
+  "type": "consumable",
+  "img": "icons/consumables/potions/bottle-conical-fumes-green.webp",
+  "system": {
+    "activities": {
+      "eISSWIPSZm5fK4Zi": {
+        "type": "cast",
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgasplGaseousFor",
+          "challenge": {
+            "attack": null,
+            "save": null,
+            "override": false
+          },
+          "level": "3",
+          "properties": [
+            "vocal",
+            "somatic",
+            "material",
+            "concentration"
+          ],
+          "spellbook": true
+        },
+        "_id": "eISSWIPSZm5fK4Zi",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": true,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "name": "",
+        "img": ""
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "autoDestroy": true,
+      "max": "1"
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> casts the module's automated Gaseous Form.</p><p><em>Potion, Rare</em></p><p>When you drink this potion, you gain the effect of the @UUID[Compendium.dnd5e.spells24.Item.phbsplGaseousFor]{Gaseous Form} spell for 1 hour (no Concentration required) or until you end the effect as a Bonus Action.</p><p>This potion's container seems to hold fog that moves and pours like water.</p>",
+      "chat": ""
+    },
+    "identifier": "potion-of-gaseous-form",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0.5,
+      "units": "lb"
+    },
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "type": {
+      "value": "potion",
+      "subtype": ""
+    },
+    "damage": {
+      "base": {
+        "number": null,
+        "denomination": null,
+        "types": [],
+        "custom": {
+          "enabled": false
+        },
+        "scaling": {
+          "number": 1
+        }
+      },
+      "replace": false
+    },
+    "magicalBonus": null,
+    "properties": [
+      "mgc"
+    ]
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: spells cast from the item use the module's automated versions (Gaseous Form)."
+      }
+    }
+  }
+}

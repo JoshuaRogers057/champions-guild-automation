@@ -1,0 +1,316 @@
+{
+  "_id": "cgaItmTentacleRd",
+  "name": "Tentacle Rod",
+  "type": "equipment",
+  "img": "icons/creatures/tentacles/tentacles-suctioncups-pink.webp",
+  "system": {
+    "activities": {
+      "cgaTentacleAttck": {
+        "sort": 0,
+        "img": "icons/creatures/tentacles/tentacles-suctioncups-pink.webp",
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaTentacleAttck",
+        "type": "attack",
+        "name": "Tentacle",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "15",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "attack": {
+          "ability": "none",
+          "bonus": "9",
+          "critical": {
+            "threshold": null
+          },
+          "flat": true,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": false,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "psychic"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "effects": [],
+        "otherActivityId": "none"
+      },
+      "cgaTentacleConst": {
+        "sort": 1,
+        "img": "icons/creatures/tentacles/tentacles-suctioncups-pink.webp",
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaTentacleConst",
+        "type": "save",
+        "name": "Constrict",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Three tentacles hit the same creature",
+          "override": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "15",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "save": {
+          "ability": [
+            "dex"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "effects": [
+          {
+            "_id": "cgaTentacleRestr",
+            "onSave": false
+          }
+        ],
+        "midiProperties": {
+          "automationOnly": true,
+          "otherActivityCompatible": false
+        }
+      }
+    },
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action: the three tentacles each attack a creature within 15 ft (+9 to hit, 1d6 Psychic) - use <strong>Tentacle</strong> three times. If all three hit the same creature, it makes a DC 15 DEX save (rolled for you) or has the Restrained condition: it takes 3d6 Psychic damage at the start of each of its turns and repeats the save at the end of each of its turns. Release it by deleting the effect.</p>",
+      "chat": ""
+    },
+    "identifier": "tentacle-rod",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "rod",
+      "baseItem": ""
+    },
+    "properties": [
+      "foc",
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [
+    {
+      "_id": "cgaTentacleRestr",
+      "name": "Restrained (Tentacle Rod)",
+      "img": "icons/creatures/tentacles/tentacles-suctioncups-pink.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [
+        "restrained"
+      ],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=start, damageRoll=3d6, damageType=psychic, label=Tentacle Rod",
+            "type": "custom",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "flags.midi-qol.OverTime",
+            "value": "turn=end, saveAbility=dex, saveDC=15, label=Tentacle Rod (escape)",
+            "type": "custom",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Tentacle attack (+9, 1d6 Psychic); the module rolls Constrict after the third hit on the same creature in a turn."
+      }
+    }
+  }
+}

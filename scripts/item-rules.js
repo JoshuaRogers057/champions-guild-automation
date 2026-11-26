@@ -17,30 +17,30 @@
 //    armor or with a Shield). Boots of Speed: Opportunity Attacks against you have Disadvantage while they are active.
 import { MODULE_ID, reduceDamage, askOwner, askChoice, edgeDistance, isIncapacitated, turnKey } from "./main.js";
 
-const isGM = () => game.users.activeGM?.isSelf;
-const tokenOf = (t) => t?.document ?? t;
-const say = (actor, html) => ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p>${html}</p>` });
+export const isGM = () => game.users.activeGM?.isSelf;
+export const tokenOf = (t) => t?.document ?? t;
+export const say = (actor, html) => ChatMessage.create({ speaker: ChatMessage.getSpeaker({ actor }), content: `<p>${html}</p>` });
 const slug = (s) => String(s ?? "").toLowerCase().replace(/[’']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-const reactionFree = (actor) => !MidiQOL.hasUsedReaction?.(actor);
-const useReaction = (actor) => MidiQOL.setReactionUsed?.(actor);
-const canReact = (actor) => actor && reactionFree(actor) && !isIncapacitated(actor) && Number(actor.system.attributes?.hp?.value ?? 1) > 0;
+export const reactionFree = (actor) => !MidiQOL.hasUsedReaction?.(actor);
+export const useReaction = (actor) => MidiQOL.setReactionUsed?.(actor);
+export const canReact = (actor) => actor && reactionFree(actor) && !isIncapacitated(actor) && Number(actor.system.attributes?.hp?.value ?? 1) > 0;
 
 // Does this item count as the magic item `ident`? Matches the identifier (also "holy-avenger-longsword" style) or name.
 export function isMagicItem(item, ident) {
   const id = item?.system?.identifier ?? "";
   return id === ident || id.startsWith(`${ident}-`) || slug(item?.name).startsWith(ident);
 }
-const attuned = (i) => i.system?.attunement !== "required" || !!i.system?.attuned;
-const equipped = (i) => i.system?.equipped !== false;
+export const attuned = (i) => i.system?.attunement !== "required" || !!i.system?.attuned;
+export const equipped = (i) => i.system?.equipped !== false;
 export function magicItem(actor, ident, { worn = true } = {}) {
   return actor?.items?.find((i) => isMagicItem(i, ident) && attuned(i) && (!worn || equipped(i)));
 }
-async function spendUse(item, n = 1) {
+export async function spendUse(item, n = 1) {
   try { await item.update({ "system.uses.spent": Number(item.system.uses.spent ?? 0) + n }); }
   catch (err) { await MidiQOL.socket().executeAsGM("updateItems", { actorUuid: item.actor.uuid, updates: [{ _id: item.id, "system.uses.spent": Number(item.system.uses.spent ?? 0) + n }] }).catch(() => {}); }
 }
 // Creature type of an NPC, or the species of a character.
-function creatureType(actor) {
+export function creatureType(actor) {
   const t = actor?.system?.details?.type;
   const v = typeof t === "object" ? `${t?.value ?? ""} ${t?.custom ?? ""} ${t?.subtype ?? ""}` : String(t ?? "");
   const race = actor?.system?.details?.race;
@@ -49,7 +49,7 @@ function creatureType(actor) {
 
 // ------------------------------------------------------------------ Bonus damage on hit (Holy Avenger)
 // Added as a midi bonus damage roll once the weapon's own damage is rolled, so it shows on the card and doubles on a crit.
-const ON_HIT = [
+export const ON_HIT = [
   { ident: "holy-avenger", label: "Holy Avenger", formula: "2d10", type: "radiant",
     when: (target) => /\b(fiend|undead)\b/.test(creatureType(target)),
     // A D&D Beyond import may already carry the 2d10 Radiant on the weapon: don't add it twice.
@@ -62,7 +62,7 @@ const ON_HIT = [
     builtIn: (item) => !!(item.flags?.["midi-qol"]?.onUseMacroName || item.flags?.dae?.macro?.command) }
 ];
 // Does one of the item's activities already roll this extra damage die (not counting the weapon's own first part)?
-function hasPart(item, number, denomination, type, extraOnly = false) {
+export function hasPart(item, number, denomination, type, extraOnly = false) {
   return Object.values(item.system.activities?.contents ?? item.system.activities ?? {}).some((a) => (a.damage?.parts ?? [])
     .some((p, i) => (!extraOnly || i > 0 || a.type !== "attack") && p.number === number && p.denomination === denomination && (p.types?.has?.(type) || p.types?.includes?.(type))));
 }
@@ -70,17 +70,24 @@ Hooks.on("midi-qol.DamageRollComplete", async (workflow) => {
   try {
     const item = workflow?.item;
     if (!item || !workflow.activity?.attack || !workflow.hitTargets?.size) return;
+    // A rule matches the attacking item by identifier, or by its own match(workflow) (e.g. an effect on the attacker).
+    // It adds { formula, type } when when(target) holds for a creature hit, or whatever its async bonus(workflow) returns.
     for (const rule of ON_HIT) {
-      if (!isMagicItem(item, rule.ident) || !attuned(item) || rule.builtIn?.(item)) continue;
-      if (!Array.from(workflow.hitTargets).some((t) => rule.when(tokenOf(t).actor))) continue;
-      const roll = await new CONFIG.Dice.DamageRoll(rule.formula, item.getRollData(), { type: rule.type, types: [rule.type], flavor: `${rule.label} (${rule.type})`, isCritical: !!workflow.isCritical }).evaluate();
-      await workflow.setBonusDamageRolls([...(workflow.bonusDamageRolls ?? []), roll]);
+      if (rule.match ? !rule.match(workflow) : (!isMagicItem(item, rule.ident) || !attuned(item))) continue;
+      if (rule.builtIn?.(item, workflow)) continue;
+      const parts = rule.bonus ? ((await rule.bonus(workflow, item)) ?? [])
+        : Array.from(workflow.hitTargets).some((t) => rule.when(tokenOf(t).actor, workflow)) ? [{ formula: rule.formula, type: rule.type }] : [];
+      for (const p of parts) {
+        const type = typeof p.type === "function" ? p.type(workflow) : p.type;
+        const roll = await new CONFIG.Dice.DamageRoll(p.formula, item.getRollData(), { type, types: [type], flavor: `${p.label ?? rule.label} (${type})`, isCritical: p.crit ?? !!workflow.isCritical }).evaluate();
+        await workflow.setBonusDamageRolls([...(workflow.bonusDamageRolls ?? []), roll]);
+      }
     }
   } catch (err) { console.warn(`${MODULE_ID} | item bonus damage failed`, err); }
 });
 
 // ------------------------------------------------------------------ Item auras (Holy Avenger)
-const chg = (key, value, type = "override") => ({ key, value, type, priority: 20, phase: "initial" });
+export const chg = (key, value, type = "override") => ({ key, value, type, priority: 20, phase: "initial" });
 const ITEM_AURAS = [
   { ident: "holy-avenger", key: "holy-avenger", range: (a) => (Number(a.classes?.paladin?.system?.levels ?? 0) >= 17 ? 30 : 10),
     effect: () => ({ name: "Holy Avenger Aura", img: "icons/magic/holy/barrier-shield-winged-blue.webp",
@@ -320,7 +327,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
 //  - Mantle of Spell Resistance: Advantage on saves against spells.
 //  - Adamantine Armor (worn armor with the Adamantine property): Critical Hits against you become normal hits.
 //  - Bracers of Defense: their +2 AC switches off while you wear armor or hold a Shield.
-const PASSIVES = [
+export const PASSIVES = [
   { key: "mantle", active: (a) => !!magicItem(a, "mantle-of-spell-resistance"),
     effect: { name: "Mantle of Spell Resistance", img: "icons/equipment/back/cloak-collared-blue.webp",
       changes: [chg("flags.midi-qol.advantage.save.all", 'workflow?.item?.type === "spell"')] } },
@@ -328,7 +335,7 @@ const PASSIVES = [
       && (i.system.properties?.has?.("ada") || isMagicItem(i, "adamantine"))),
     effect: { name: "Adamantine Armor", img: "icons/equipment/chest/breastplate-layered-steel.webp", changes: [chg("flags.midi-qol.grants.noCritical.all", "1")] } }
 ];
-const inArmorOrShield = (a) => a.items.some((i) => i.type === "equipment" && i.system.equipped && ["light", "medium", "heavy", "shield"].includes(i.system.type?.value));
+export const inArmorOrShield = (a) => a.items.some((i) => i.type === "equipment" && i.system.equipped && ["light", "medium", "heavy", "shield"].includes(i.system.type?.value));
 const passiveTimers = new Map();
 function schedulePassives(actor) {
   if (!(actor instanceof Actor) || !isGM()) return;
@@ -339,17 +346,29 @@ async function syncPassives(actor) {
   for (const p of PASSIVES) {
     const cur = actor.effects.filter((e) => e.flags?.[MODULE_ID]?.passive === p.key);
     const want = p.active(actor);
-    if (!want && cur.length) await actor.deleteEmbeddedDocuments("ActiveEffect", cur.map((e) => e.id));
-    if (want && !cur.length) await actor.createEmbeddedDocuments("ActiveEffect", [{ name: p.effect.name, img: p.effect.img, transfer: false, system: { changes: p.effect.changes }, flags: { [MODULE_ID]: { passive: p.key } } }]);
+    // effect may be a function of the actor (e.g. a climb speed equal to the walking speed): replace it when it changes.
+    const eff = want ? (typeof p.effect === "function" ? p.effect(actor) : p.effect) : null;
+    const sig = eff ? JSON.stringify(eff.changes) : "";
+    const stale = cur.filter((e) => !want || (e.flags[MODULE_ID].sig ?? sig) !== sig);
+    if (stale.length) await actor.deleteEmbeddedDocuments("ActiveEffect", stale.map((e) => e.id));
+    if (want && cur.length === stale.length) await actor.createEmbeddedDocuments("ActiveEffect", [{ name: eff.name, img: eff.img, transfer: false, system: { changes: eff.changes }, flags: { [MODULE_ID]: { passive: p.key, sig } } }]);
   }
-  // Bracers of Defense: toggle the bracers' own AC effects (D&D Beyond or compendium item) with armor and Shield.
-  const off = inArmorOrShield(actor);
-  for (const br of actor.items.filter((i) => isMagicItem(i, "bracers-of-defense"))) {
-    const upd = br.effects.filter((e) => (e.system?.changes ?? e.changes ?? []).some((c) => c.key === "system.attributes.ac.bonus") && e.disabled !== off)
-      .map((e) => ({ _id: e.id, disabled: off }));
-    if (upd.length) await br.updateEmbeddedDocuments("ActiveEffect", upd);
+  // Switch an item's own effects (D&D Beyond or compendium item) on and off: off(actor) says when they should be off.
+  for (const t of ITEM_TOGGLES) {
+    const off = t.off(actor);
+    for (const it of actor.items.filter((i) => isMagicItem(i, t.ident))) {
+      const upd = it.effects.filter((e) => e.type !== "enchantment" && (e.system?.changes ?? e.changes ?? []).some((c) => t.keys.includes(c.key)) && e.disabled !== off)
+        .map((e) => ({ _id: e.id, disabled: off }));
+      if (upd.length) await it.updateEmbeddedDocuments("ActiveEffect", upd);
+    }
   }
 }
+export const wearsArmor = (a) => a.items.some((i) => i.type === "equipment" && i.system.equipped && ["light", "medium", "heavy"].includes(i.system.type?.value));
+export const ITEM_TOGGLES = [
+  // Bracers of Defense: +2 AC only with no armor and no Shield.
+  { ident: "bracers-of-defense", keys: ["system.attributes.ac.bonus"], off: inArmorOrShield }
+];
+export const refreshPassives = (actor) => schedulePassives(actor);
 for (const h of ["createItem", "deleteItem"]) Hooks.on(h, (item) => schedulePassives(item.parent));
 Hooks.on("updateItem", (item, changes) => { if (foundry.utils.hasProperty(changes, "system.equipped") || foundry.utils.hasProperty(changes, "system.attuned") || foundry.utils.hasProperty(changes, "system.properties")) schedulePassives(item.parent); });
 Hooks.once("ready", () => { if (isGM()) for (const a of game.actors.filter((x) => x.type === "character")) schedulePassives(a); });
