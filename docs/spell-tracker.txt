@@ -1,13 +1,13 @@
-# Champions Guild Automation - spell tracker (2024 Player's Handbook)
+# Champions Guild Automation - spell tracker (2024 Player's Handbook + Arcana Unleashed, Heroes of Faerûn, Forge of the Artificer)
 # One spell per line: level | name | source | category | priority | note
-#   source:   SRD = in the free dnd5e 2024 compendium, PHB = Player's Handbook only
+#   source:   SRD = in the free dnd5e 2024 compendium, PHB = Player's Handbook only, AU = Arcana Unleashed, FR = Forgotten Realms: Heroes of Faerûn, EB = Eberron: Forge of the Artificer
 #   category: done | midi (midi-qol ships a CAT automation - verify it) | verify (standard spell, test it) |
 #             build (needs automation work) | skip (roleplay / DM-handled)
 #   priority: 1 = common in combat, do first; 2 = regular; 3 = rare / high level
 # Names use the PHB names; "aka" in the note is the SRD name, which the CGA item must list as an alias.
 0|Acid Splash|SRD|done|1|DEX save, up to two creatures within 5 ft of each other; cantrip scaling
 0|Blade Ward|PHB|done|2|Attackers subtract 1d4 from attack rolls against you (concentration)
-0|Chill Touch|SRD|midi|1|
+0|Chill Touch|SRD|done|1|midi-qol's sample item, checked in the test world: Necrotic + can't regain HP
 0|Dancing Lights|SRD|skip|3|
 0|Druidcraft|SRD|skip|3|
 0|Eldritch Blast|SRD|done|1|One attack per beam, Agonizing Blast, Repelling Blast push
@@ -35,7 +35,7 @@
 0|Thaumaturgy|SRD|skip|3|
 0|Thorn Whip|PHB|done|1|Melee spell attack; pull Large or smaller 10 ft toward you (no token spin)
 0|Thunderclap|PHB|done|1|CON save, every creature within 5 ft
-0|Toll the Dead|PHB|midi|1|d12 vs wounded targets
+0|Toll the Dead|PHB|done|1|midi-qol's sample item, checked in the test world: d8, d12 against wounded targets
 0|True Strike|SRD|done|1|Weapon attack with spellcasting ability; extra radiant at 5th+
 0|Vicious Mockery|SRD|done|1|Failed save: disadvantage on its next attack roll
 0|Word of Radiance|PHB|done|1|CON save, creatures of your choice within 5 ft
@@ -49,7 +49,7 @@
 1|Charm Person|SRD|done|3|WIS save or Charmed
 1|Chromatic Orb|SRD|done|2|Choose damage type; matching dice leap to another target
 1|Color Spray|SRD|done|1|Blinded until end of your next turn
-1|Command|SRD|midi|1|
+1|Command|SRD|done|1|midi-qol's sample item, checked in the test world: WIS save, chosen command effect
 1|Compelled Duel|PHB|done|2|Mirjam's compelled-duel macro exists (disadvantage vs others, end conditions)
 1|Comprehend Languages|SRD|skip|3|
 1|Create or Destroy Water|SRD|skip|3|
@@ -71,10 +71,10 @@
 1|Fog Cloud|SRD|skip|3|
 1|Goodberry|SRD|skip|3|
 1|Grease|SRD|done|2|Prone on failed DEX save; save again entering or ending turn in it
-1|Guiding Bolt|SRD|midi|1|
+1|Guiding Bolt|SRD|done|1|midi-qol's sample item, checked in the test world: 4d6 Radiant + Advantage on the next attack against it
 1|Hail of Thorns|PHB|done|2|Next ranged weapon hit: DEX save in a 5-ft area around the target
 1|Healing Word|SRD|done|1|
-1|Hellish Rebuke|SRD|midi|1|
+1|Hellish Rebuke|SRD|done|1|midi-qol's sample item, checked in the test world: DEX save 2d10 Fire (Reaction)
 1|Heroism|SRD|done|2|Temp HP = spellcasting mod at the start of each turn; immune to Frightened
 1|Hex|SRD|done|1|+1d6 on hits, Curse New Creature
 1|Hunter's Mark|SRD|done|1|+1d6 on hits, Move Mark
@@ -91,27 +91,30 @@
 1|Ray of Sickness|SRD|done|2|Poisoned until end of your next turn on a hit
 1|Sanctuary|SRD|midi|2|
 1|Searing Smite|SRD|done|1|Via Paladin's Smite prompt
-1|Shield|SRD|midi|1|
+1|Shield|SRD|done|1|midi-qol's sample item, checked in the test world: +5 AC until your next turn, Magic Missile immunity
 1|Shield of Faith|SRD|done|1|+2 AC (concentration)
 1|Silent Image|SRD|skip|3|
-1|Sleep|SRD|midi|1|
+1|Sleep|SRD|done|1|midi-qol's sample item, checked in the test world: WIS save, Incapacitated then Unconscious
 1|Speak with Animals|SRD|skip|3|
+1|Spellfire Flare|FR|done|1|CGA item: one ranged spell attack per blast (+1 per slot level above 1), 2d10 Radiant; ignores Half/Three-Quarters Cover during its attacks (module rule)
 1|Tasha's Hideous Laughter|SRD|done|2|aka Hideous Laughter. Prone + Incapacitated; repeat save end of turn and on damage (with advantage)
 1|Tenser's Floating Disk|SRD|skip|3|aka Floating Disk
 1|Thunderous Smite|PHB|done|1|Push 10 ft + Prone
-1|Thunderwave|SRD|midi|1|
+1|Thunderwave|SRD|done|1|midi-qol's sample item, checked in the test world: CON save 2d8 Thunder + 10-ft push
 1|Unseen Servant|SRD|skip|3|
+1|Wardaway|FR|done|1|CGA item: CON save 2d4 Force (+2d4/level), Speed halved until your next turn; Constructs and Undead succeed automatically (module rule)
 1|Witch Bolt|PHB|done|2|Bonus action each turn for 1d12 lightning while the target stays in range
 1|Wrathful Smite|PHB|done|1|Frightened with repeat save
-2|Aid|SRD|midi|1|
+2|Aid|SRD|done|1|midi-qol's sample item, checked in the test world: +5 maximum and current HP
 2|Alter Self|SRD|skip|3|
 2|Animal Messenger|SRD|skip|3|
 2|Arcane Lock|SRD|skip|3|
 2|Arcane Vigor|SRD|done|3|Spend Hit Point Dice to heal
 2|Augury|SRD|skip|3|
 2|Barkskin|SRD|done|1|AC can't be lower than 17
-2|Blindness/Deafness|SRD|done|2|Repeat CON save at the end of each of its turns
+2|Battle Familiar|AU|done|1|CGA item + 3 summon actors (Brute / Flyer / Stalker); AC, HP and Rend scale with the slot, Rend uses your spell attack. Empowering a Find Familiar familiar is by hand
 2|Beast Sense|PHB|skip|3|
+2|Blindness/Deafness|SRD|done|2|Repeat CON save at the end of each of its turns
 2|Blur|SRD|done|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
 2|Calm Emotions|SRD|done|3|
 2|Cloud of Daggers|PHB|done|2|Zone: 4d4 slashing on entering or starting turn there
@@ -120,8 +123,13 @@
 2|Crown of Madness|PHB|done|3|Charmed; forced melee attack each turn; repeat save
 2|Darkness|SRD|skip|3|
 2|Darkvision|SRD|done|2|
+2|Death Armor|FR|done|1|CGA item: Advantage on Death Saves; once per turn a melee hitter within 5 ft takes 2d4 Necrotic (module rule)
+2|Deryan’s Helpful Homunculi|FR|skip|3|Crafting assistant - nothing to automate
 2|Detect Thoughts|SRD|skip|3|
+2|Disruptive Tune|AU|done|1|CGA item: 20-ft Sphere CON save - a failure ends Concentration and gives Disadvantage on Concentration saves
 2|Dragon's Breath|SRD|midi|2|
+2|Dueling Ground|AU|skip|3|Downtime duel arena - DM-handled
+2|Elminster’s Elusion|FR|done|1|CGA item: Advantage on saves vs spells/magic (midi magic resistance); a successful save for half takes none
 2|Enhance Ability|SRD|done|2|Advantage on checks with the chosen ability
 2|Enlarge/Reduce|SRD|done|2|Size, STR checks/saves, +/-1d4 weapon damage
 2|Enthrall|SRD|skip|3|
@@ -133,7 +141,8 @@
 2|Gust of Wind|SRD|done|3|Push 15 ft on failed STR save; line
 2|Heat Metal|SRD|done|2|Bonus action to repeat damage; drop the object or disadvantage
 2|Hold Person|SRD|done|1|Paralyzed; repeat WIS save end of each turn; extra target per slot
-2|Invisibility|SRD|midi|1|
+2|Homunculus Servant|EB|build|2|Summon: Homunculus Servant actor scaling with slot level (shares your Initiative)
+2|Invisibility|SRD|done|1|midi-qol's sample item, checked in the test world: Invisible while you concentrate
 2|Knock|SRD|skip|3|
 2|Lesser Restoration|SRD|midi|2|
 2|Levitate|SRD|done|3|
@@ -163,8 +172,10 @@
 2|Spiritual Weapon|SRD|done|1|Summoned weapon; bonus-action melee spell attack; move it
 2|Suggestion|SRD|done|3|
 2|Summon Beast|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
+2|Uncertain Footing|AU|done|1|CGA item: up to 3 creatures INT save or Speed halved / no Dash; repeat save at the end of each turn
 2|Warding Bond|SRD|done|2|+1 AC/saves, resistance; caster takes the same damage
 2|Web|SRD|midi|2|
+2|Wither and Bloom|AU|done|1|CGA item (from an earlier release): choose wither targets and the bloom creature; Hit Point Dice healing applied
 2|Zone of Truth|SRD|skip|3|
 3|Animate Dead|SRD|done|2|Summon skeletons/zombies; command as bonus action
 3|Aura of Vitality|PHB|done|2|Bonus action: heal 2d6 to a creature in the aura
@@ -172,10 +183,13 @@
 3|Bestow Curse|SRD|done|2|Pick a curse; the extra 1d8 necrotic option needs a damage rider
 3|Blinding Smite|PHB|done|2|Smite prompt; Blinded with repeat CON save
 3|Blink|SRD|done|3|d6 at end of each turn to blink to the Ethereal Plane
+3|Cacophonic Shield|FR|done|1|CGA item: 10-ft Emanation following you, CON save 3d6 Thunder + Deafened on entering/ending a turn (once per turn); your Thunder Resistance and ranged-attack Disadvantage end with the concentration (module rule)
 3|Call Lightning|SRD|done|2|Repeat the bolt as an action each turn
+3|Catnap|AU|build|2|Up to 3 willing creatures Unconscious for 10 minutes (ends on damage); full duration = Short Rest benefits
 3|Clairvoyance|SRD|skip|3|
 3|Conjure Animals|SRD|done|2|2024: pack of spirits deals damage to creatures near it
 3|Conjure Barrage|PHB|done|2|Cone DEX save
+3|Conjure Constructs|FR|done|1|CGA item + Construct Spirits token: Clockwork Force (DEX save 3d6 Force) and Orderly Ward (1d6 + mod temp HP) activities scaling with the cast slot
 3|Counterspell|SRD|done|2|Reaction; the target caster makes a CON save
 3|Create Food and Water|SRD|skip|3|
 3|Crusader's Mantle|PHB|done|2|Aura: allies' weapon hits deal +1d4 radiant
@@ -191,6 +205,8 @@
 3|Haste|SRD|done|1|+2 AC, double speed, extra action; check the lethargy when it ends
 3|Hunger of Hadar|PHB|done|2|Zone: cold at turn start, acid at turn end, blinded inside
 3|Hypnotic Pattern|SRD|done|1|Charmed + Incapacitated; must end when the creature takes damage
+3|Inflict Doubt|AU|done|1|CGA item: WIS save or Disadvantage on D20 Tests; repeat save at the end of each turn
+3|Laeral’s Silver Lance|FR|done|1|CGA item: 120-ft Line STR save 3d10 Force (+1d10/level) + Prone, half only on a success
 3|Leomund's Tiny Hut|SRD|skip|3|aka Tiny Hut
 3|Lightning Arrow|PHB|done|2|Next ranged weapon attack becomes lightning + burst
 3|Lightning Bolt|SRD|done|1|
@@ -213,6 +229,7 @@
 3|Stinking Cloud|SRD|done|2|Zone: CON save at turn start or lose the action (Poisoned)
 3|Summon Fey|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 3|Summon Undead|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
+3|Syluné’s Viper|FR|done|1|CGA item: 15 temp HP (+5/level), Climb Speed, Venomous Bite activity (1d6 Force per level above 2 + Poisoned/Incapacitated); ends when the temp HP are gone (module rule)
 3|Tongues|SRD|skip|3|
 3|Vampiric Touch|SRD|done|2|Heal half the damage dealt; repeat the touch as an action
 3|Water Breathing|SRD|skip|3|
@@ -221,6 +238,7 @@
 4|Arcane Eye|SRD|skip|3|
 4|Aura of Life|SRD|done|3|Necrotic resistance; creatures at 0 HP regain 1 HP
 4|Aura of Purity|PHB|done|3|Aura: poison resistance, advantage on saves vs conditions
+4|Backlash|FR|build|2|Reaction on damage: reduce by 4d6 + mod; the attacker within 60 ft makes a CON save, 4d6 Force (module rule)
 4|Banishment|SRD|done|2|Remove the target (hide token) until the spell ends
 4|Blight|SRD|done|2|
 4|Charm Monster|SRD|done|3|
@@ -231,10 +249,13 @@
 4|Control Water|SRD|skip|3|
 4|Death Ward|SRD|done|2|First drop to 0 HP becomes 1 HP instead
 4|Dimension Door|SRD|done|2|Teleport (+ a willing creature)
+4|Distorted Distance|AU|build|2|60-ft Sphere: per creature, INT save 2d10 Psychic + Difficult Terrain, or +20 ft Speed (enter / end turn)
 4|Divination|SRD|skip|3|
 4|Dominate Beast|SRD|done|3|
+4|Doomtide|FR|build|2|20-ft Sphere of Darkness: WIS save 5d6 Psychic and -1d6 to saves; moves 10 ft each turn
 4|Evard's Black Tentacles|SRD|done|2|aka Black Tentacles. Zone: restrained + bludgeoning
 4|Fabricate|SRD|skip|3|
+4|Festering Blast|AU|build|2|60-ft Line CON save: 4d10 Necrotic + Poisoned (2d10 Poison each turn start, save at end of turn)
 4|Fire Shield|SRD|done|2|Melee attackers take 2d8 fire/cold; resistance
 4|Fount of Moonlight|PHB|done|3|Radiant resistance, +2d6 radiant on melee hits, reaction CON save or Blinded
 4|Freedom of Movement|SRD|done|3|
@@ -251,6 +272,7 @@
 4|Otiluke's Resilient Sphere|SRD|done|3|aka Resilient Sphere
 4|Phantasmal Killer|SRD|done|2|Frightened; repeat WIS save end of turn with psychic damage
 4|Polymorph|SRD|done|2|Transform into a beast; revert at 0 HP
+4|Spellfire Storm|FR|build|2|20-ft Cylinder CON save 4d10 Radiant (enter / end turn); casting inside it needs a CON save or the spell fails
 4|Staggering Smite|PHB|done|2|Smite prompt; Stunned until end of your next turn on a failed save
 4|Stone Shape|SRD|skip|3|
 4|Stoneskin|SRD|done|2|Resistance to B/P/S
@@ -259,6 +281,8 @@
 4|Summon Elemental|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 4|Vitriolic Sphere|SRD|done|2|Plus acid at the end of the target's next turn
 4|Wall of Fire|SRD|done|2|Wall: damage on entering/ending turn near the hot side
+4|Zone of Amicability|AU|build|3|60-ft Emanation: a d20 of 9 or lower on checks to influence a creature counts as 10
+5|Alustriel’s Mooncloak|FR|build|2|20-ft Emanation: allies Half Cover + Cold/Lightning/Radiant Resistance; end it for Liberation (Reaction) or Respite (4d10 + mod heal)
 5|Animate Objects|SRD|done|2|Summon animated objects
 5|Antilife Shell|SRD|done|3|
 5|Awaken|SRD|skip|3|
@@ -278,8 +302,10 @@
 5|Dispel Evil and Good|SRD|skip|3|
 5|Dominate Person|SRD|done|3|
 5|Dream|SRD|skip|3|
+5|Enervation|AU|build|2|DEX save 6d8 Necrotic, Bonus Action 2d8 each later turn; you heal half the Necrotic dealt
 5|Flame Strike|SRD|done|1|
 5|Geas|SRD|skip|3|
+5|Grave Ground|AU|build|2|Up to four 10-ft squares: Difficult Terrain for enemies, STR save 6d6 Necrotic and -1d6 to their damage rolls
 5|Greater Restoration|SRD|skip|3|
 5|Hallow|SRD|skip|3|
 5|Hold Monster|SRD|done|1|Paralyzed; repeat WIS save end of each turn
@@ -289,6 +315,8 @@
 5|Mass Cure Wounds|SRD|midi|2|
 5|Mislead|SRD|skip|3|
 5|Modify Memory|SRD|skip|3|
+5|Mordenkainen’s Lucubration|AU|build|2|Recover up to two expended slots of level 2 or lower (3 with a 6-7 slot, 4 with 8+)
+5|Negative Energy Flood|AU|build|2|CON save 3d10 + 25 Necrotic (Undead gain 3d10 temp HP instead); slain Humanoids rise as Zombies
 5|Passwall|SRD|skip|3|
 5|Planar Binding|SRD|skip|3|
 5|Raise Dead|SRD|skip|3|
@@ -296,9 +324,12 @@
 5|Reincarnate|SRD|skip|3|
 5|Scrying|SRD|skip|3|
 5|Seeming|SRD|skip|3|
+5|Songal’s Elemental Suffusion|FR|build|2|Resistance to a chosen element, Fly 30 ft, 15-ft Emanation DEX save 2d6 + Prone at cast and each turn start
+5|Spirit Lantern|AU|build|2|Soul fragments from enemies dying nearby; Bonus Action Drain Life / Repair Undead / Ward Ally
 5|Steel Wind Strike|PHB|done|2|Melee spell attack against up to 5 targets, then teleport
 5|Summon Celestial|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 5|Summon Dragon|SRD|done|2|Summon
+5|Summon Plant|AU|build|2|Summon: Fungus / Tree / Vine Plant Spirit actor scaling with slot level
 5|Swift Quiver|PHB|done|3|Two bonus-action weapon attacks each turn
 5|Synaptic Static|PHB|done|2|INT save psychic; failed save: -1d6 on attacks and checks, repeat save
 5|Telekinesis|SRD|skip|3|
@@ -306,6 +337,7 @@
 5|Tree Stride|SRD|skip|3|
 5|Wall of Force|SRD|skip|3|
 5|Wall of Stone|SRD|skip|3|
+5|Waves of Exhaustion|AU|build|2|Magic action 60-ft Cone CON save or +1 Exhaustion (max 4), removed when the spell ends
 5|Yolande's Regal Presence|PHB|done|3|Zone: WIS save psychic, prone or pushed
 6|Arcane Gate|PHB|skip|3|
 6|Blade Barrier|SRD|done|2|Wall: DEX save slashing on entering/starting turn
@@ -314,8 +346,10 @@
 6|Conjure Fey|SRD|done|3|2024: fey spirit attacks
 6|Contingency|SRD|skip|3|
 6|Create Undead|SRD|done|3|Summon
+6|Dirge|FR|build|3|60-ft Emanation: no healing for others; CON save 3d10 Necrotic + Prone (half + half Speed); enter / end turn
 6|Disintegrate|SRD|done|2|Dust at 0 HP
 6|Drawmij's Instant Summons|SRD|skip|3|aka Instant Summons
+6|Elminster’s Effulgent Spheres|FR|build|3|Six spheres: Reaction Resistance to an element, or Bonus Action ranged attack 3d6 of a chosen element
 6|Eyebite|SRD|midi|3|
 6|Find the Path|SRD|skip|3|
 6|Flesh to Stone|SRD|midi|3|
@@ -332,6 +366,7 @@
 6|Otto's Irresistible Dance|SRD|midi|3|aka Irresistible Dance
 6|Planar Ally|SRD|skip|3|
 6|Programmed Illusion|SRD|skip|3|
+6|Summon Dinosaur|AU|build|3|Summon: Ankylosaur / Triceratops / Tyrannosaur Dinosaur Spirit actor scaling with slot level
 6|Summon Fiend|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 6|Sunbeam|SRD|midi|2|
 6|Tasha's Bubbling Cauldron|PHB|skip|3|
@@ -341,6 +376,7 @@
 6|Wall of Thorns|SRD|done|3|Wall: damage on entering
 6|Wind Walk|SRD|skip|3|
 6|Word of Recall|SRD|skip|3|
+7|Aura of Evasion|AU|build|3|30-ft Emanation: allies Advantage on DEX saves and Evasion
 7|Conjure Celestial|SRD|done|3|2024: light aura heals or damages
 7|Delayed Blast Fireball|SRD|midi|3|
 7|Divine Word|SRD|midi|3|
@@ -348,42 +384,57 @@
 7|Finger of Death|SRD|midi|3|
 7|Fire Storm|SRD|done|3|
 7|Forcecage|SRD|skip|3|
+7|Fractured Awareness|AU|build|3|INT save 12d10 Psychic + Disadvantage on D20 Tests; save at end of each turn
 7|Mirage Arcane|SRD|skip|3|
 7|Mordenkainen's Magnificent Mansion|SRD|skip|3|aka Magnificent Mansion
 7|Mordenkainen's Sword|SRD|done|2|aka Arcane Sword. Summoned sword, bonus-action attacks
 7|Plane Shift|SRD|skip|3|
 7|Power Word Fortify|PHB|done|3|Split 120 temp HP between creatures
+7|Power Word Pain|AU|build|3|100 HP or fewer: 6d8 Force + Charmed (Speed 10, Disadvantage on D20 Tests except CON saves, CON save to cast)
 7|Prismatic Spray|SRD|midi|3|
 7|Project Image|SRD|skip|3|
 7|Regenerate|SRD|midi|3|
 7|Resurrection|SRD|skip|3|
 7|Reverse Gravity|SRD|midi|3|
+7|Reweave Fate|AU|build|3|Reaction: an ally within 60 ft rerolls a failed D20 Test with Advantage; success gives 6d10 temp HP (module rule)
 7|Sequester|SRD|skip|3|
+7|Simbul’s Synostodweomer|FR|build|3|Touch: whenever the target casts with a slot it can spend Hit Dice equal to the slot level to heal + your mod
 7|Simulacrum|SRD|skip|3|
 7|Symbol|SRD|done|3|Triggered glyph with several effects
 7|Teleport|SRD|skip|3|
+7|Transfix|AU|build|3|CHA save or Charmed + Incapacitated, pulled toward you, 4d8 Psychic ending its turn within 5 ft; Magic action to retarget
 8|Animal Shapes|SRD|skip|3|
 8|Antimagic Field|SRD|skip|3|
 8|Antipathy/Sympathy|SRD|skip|3|
-8|Telepathy|PHB|skip|3|
 8|Befuddlement|SRD|midi|3|
 8|Clone|SRD|skip|3|
 8|Control Weather|SRD|skip|3|
 8|Demiplane|SRD|skip|3|
 8|Dominate Monster|SRD|done|3|
 8|Earthquake|SRD|done|3|Zone: prone, concentration saves, fissures
+8|Entrancing Mirrors|AU|build|3|Up to 3 creatures INT save: 7d6 Psychic + Stunned (half Speed); save at end of each turn
 8|Glibness|SRD|skip|3|
 8|Holy Aura|SRD|done|3|Advantage on saves, attackers have disadvantage; fiend/undead blinded
+8|Holy Star of Mystra|FR|build|3|Mote: Bonus Action ranged attack 4d10 + mod Force/Radiant; you have Three-Quarters Cover; reflect single-target spells
+8|Illusory Dragon|AU|build|3|Huge shadow dragon: WIS save or Frightened; Bonus Action breath 60-ft Cone INT save 7d6 of a chosen type
 8|Incendiary Cloud|SRD|done|3|Moving zone: DEX save fire
+8|Iron Body|AU|build|3|Touch: Resistance to B/P/S/Fire, Immunity to Poison, Paralyzed, Petrified, Poisoned; no new Exhaustion
+8|Lightning Ring|AU|build|3|10-ft Emanation CON save 3d6 Lightning + 3d6 Thunder + Deafened; Magic action 60-ft Line DEX save 6d6 Lightning
 8|Maze|SRD|done|3|
 8|Mind Blank|SRD|done|3|
+8|Moment of Prescience|AU|build|3|Reaction: a failed D20 Test becomes a 20, or an attack that hits you becomes a 1 (module rule)
 8|Power Word Stun|SRD|midi|3|
 8|Sunburst|SRD|done|3|Blinded with repeat saves
+8|Telepathy|PHB|skip|3|
 8|Tsunami|SRD|done|3|Moving wall
 9|Astral Projection|SRD|skip|3|
+9|Blade of Disaster|FR|build|3|Rift: two melee spell attacks 10d6 Force, crit on 18-20; Bonus Action to move it and repeat
+9|Detonate|AU|build|3|CON save 10d10 Fire, then 60-ft Emanation DEX save 10d10 Fire (Disadvantage if the target dropped to 0)
 9|Foresight|SRD|midi|3|
 9|Gate|SRD|skip|3|
+9|Hindsight|AU|skip|3|Divination visions - roleplay
 9|Imprisonment|SRD|midi|3|
+9|Invulnerability|AU|build|3|Immunity to all damage (concentration)
 9|Mass Heal|SRD|midi|3|
 9|Meteor Swarm|SRD|midi|3|
 9|Power Word Heal|SRD|done|3|
@@ -394,5 +445,7 @@
 9|Time Stop|SRD|skip|3|
 9|True Polymorph|SRD|midi|3|
 9|True Resurrection|SRD|midi|3|
+9|Vision of Elapsing Eons|AU|build|3|INT save 10d12 Psychic + Paralyzed; each failed repeat save adds Exhaustion
+9|Wail of the Banshee|AU|build|3|Up to 10 creatures: 50 HP or fewer die; others CON save 12d10 Psychic + Deafened
 9|Weird|SRD|midi|3|
 9|Wish|SRD|skip|3|

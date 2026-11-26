@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-26",
  "spells": [
   {
    "level": 0,
@@ -25,9 +25,9 @@
    "level": 0,
    "name": "Chill Touch",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: Necrotic + can't regain HP",
    "aka": null,
    "identifier": "chill-touch"
   },
@@ -305,9 +305,9 @@
    "level": 0,
    "name": "Toll the Dead",
    "source": "PHB",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "d12 vs wounded targets",
+   "note": "midi-qol's sample item, checked in the test world: d8, d12 against wounded targets",
    "aka": null,
    "identifier": "toll-the-dead"
   },
@@ -445,9 +445,9 @@
    "level": 1,
    "name": "Command",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: WIS save, chosen command effect",
    "aka": null,
    "identifier": "command"
   },
@@ -665,9 +665,9 @@
    "level": 1,
    "name": "Guiding Bolt",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: 4d6 Radiant + Advantage on the next attack against it",
    "aka": null,
    "identifier": "guiding-bolt"
   },
@@ -695,9 +695,9 @@
    "level": 1,
    "name": "Hellish Rebuke",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: DEX save 2d10 Fire (Reaction)",
    "aka": null,
    "identifier": "hellish-rebuke"
   },
@@ -865,9 +865,9 @@
    "level": 1,
    "name": "Shield",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: +5 AC until your next turn, Magic Missile immunity",
    "aka": null,
    "identifier": "shield"
   },
@@ -895,9 +895,9 @@
    "level": 1,
    "name": "Sleep",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: WIS save, Incapacitated then Unconscious",
    "aka": null,
    "identifier": "sleep"
   },
@@ -910,6 +910,16 @@
    "note": "",
    "aka": null,
    "identifier": "speak-with-animals"
+  },
+  {
+   "level": 1,
+   "name": "Spellfire Flare",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: one ranged spell attack per blast (+1 per slot level above 1), 2d10 Radiant; ignores Half/Three-Quarters Cover during its attacks (module rule)",
+   "aka": null,
+   "identifier": "spellfire-flare"
   },
   {
    "level": 1,
@@ -945,9 +955,9 @@
    "level": 1,
    "name": "Thunderwave",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: CON save 2d8 Thunder + 10-ft push",
    "aka": null,
    "identifier": "thunderwave"
   },
@@ -960,6 +970,16 @@
    "note": "",
    "aka": null,
    "identifier": "unseen-servant"
+  },
+  {
+   "level": 1,
+   "name": "Wardaway",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: CON save 2d4 Force (+2d4/level), Speed halved until your next turn; Constructs and Undead succeed automatically (module rule)",
+   "aka": null,
+   "identifier": "wardaway"
   },
   {
    "level": 1,
@@ -985,9 +1005,9 @@
    "level": 2,
    "name": "Aid",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: +5 maximum and current HP",
    "aka": null,
    "identifier": "aid"
   },
@@ -1053,13 +1073,13 @@
   },
   {
    "level": 2,
-   "name": "Blindness/Deafness",
-   "source": "SRD",
+   "name": "Battle Familiar",
+   "source": "AU",
    "category": "done",
-   "priority": 2,
-   "note": "Repeat CON save at the end of each of its turns",
+   "priority": 1,
+   "note": "CGA item + 3 summon actors (Brute / Flyer / Stalker); AC, HP and Rend scale with the slot, Rend uses your spell attack. Empowering a Find Familiar familiar is by hand",
    "aka": null,
-   "identifier": "blindness-deafness"
+   "identifier": "battle-familiar"
   },
   {
    "level": 2,
@@ -1070,6 +1090,16 @@
    "note": "",
    "aka": null,
    "identifier": "beast-sense"
+  },
+  {
+   "level": 2,
+   "name": "Blindness/Deafness",
+   "source": "SRD",
+   "category": "done",
+   "priority": 2,
+   "note": "Repeat CON save at the end of each of its turns",
+   "aka": null,
+   "identifier": "blindness-deafness"
   },
   {
    "level": 2,
@@ -1153,6 +1183,26 @@
   },
   {
    "level": 2,
+   "name": "Death Armor",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: Advantage on Death Saves; once per turn a melee hitter within 5 ft takes 2d4 Necrotic (module rule)",
+   "aka": null,
+   "identifier": "death-armor"
+  },
+  {
+   "level": 2,
+   "name": "Deryan’s Helpful Homunculi",
+   "source": "FR",
+   "category": "skip",
+   "priority": 3,
+   "note": "Crafting assistant - nothing to automate",
+   "aka": null,
+   "identifier": "deryans-helpful-homunculi"
+  },
+  {
+   "level": 2,
    "name": "Detect Thoughts",
    "source": "SRD",
    "category": "skip",
@@ -1163,6 +1213,16 @@
   },
   {
    "level": 2,
+   "name": "Disruptive Tune",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: 20-ft Sphere CON save - a failure ends Concentration and gives Disadvantage on Concentration saves",
+   "aka": null,
+   "identifier": "disruptive-tune"
+  },
+  {
+   "level": 2,
    "name": "Dragon's Breath",
    "source": "SRD",
    "category": "midi",
@@ -1170,6 +1230,26 @@
    "note": "",
    "aka": null,
    "identifier": "dragons-breath"
+  },
+  {
+   "level": 2,
+   "name": "Dueling Ground",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Downtime duel arena - DM-handled",
+   "aka": null,
+   "identifier": "dueling-ground"
+  },
+  {
+   "level": 2,
+   "name": "Elminster’s Elusion",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: Advantage on saves vs spells/magic (midi magic resistance); a successful save for half takes none",
+   "aka": null,
+   "identifier": "elminsters-elusion"
   },
   {
    "level": 2,
@@ -1283,11 +1363,21 @@
   },
   {
    "level": 2,
+   "name": "Homunculus Servant",
+   "source": "EB",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon: Homunculus Servant actor scaling with slot level (shares your Initiative)",
+   "aka": null,
+   "identifier": "homunculus-servant"
+  },
+  {
+   "level": 2,
    "name": "Invisibility",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 1,
-   "note": "",
+   "note": "midi-qol's sample item, checked in the test world: Invisible while you concentrate",
    "aka": null,
    "identifier": "invisibility"
   },
@@ -1583,6 +1673,16 @@
   },
   {
    "level": 2,
+   "name": "Uncertain Footing",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: up to 3 creatures INT save or Speed halved / no Dash; repeat save at the end of each turn",
+   "aka": null,
+   "identifier": "uncertain-footing"
+  },
+  {
+   "level": 2,
    "name": "Warding Bond",
    "source": "SRD",
    "category": "done",
@@ -1600,6 +1700,16 @@
    "note": "",
    "aka": null,
    "identifier": "web"
+  },
+  {
+   "level": 2,
+   "name": "Wither and Bloom",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item (from an earlier release): choose wither targets and the bloom creature; Hit Point Dice healing applied",
+   "aka": null,
+   "identifier": "wither-and-bloom"
   },
   {
    "level": 2,
@@ -1673,6 +1783,16 @@
   },
   {
    "level": 3,
+   "name": "Cacophonic Shield",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: 10-ft Emanation following you, CON save 3d6 Thunder + Deafened on entering/ending a turn (once per turn); your Thunder Resistance and ranged-attack Disadvantage end with the concentration (module rule)",
+   "aka": null,
+   "identifier": "cacophonic-shield"
+  },
+  {
+   "level": 3,
    "name": "Call Lightning",
    "source": "SRD",
    "category": "done",
@@ -1680,6 +1800,16 @@
    "note": "Repeat the bolt as an action each turn",
    "aka": null,
    "identifier": "call-lightning"
+  },
+  {
+   "level": 3,
+   "name": "Catnap",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Up to 3 willing creatures Unconscious for 10 minutes (ends on damage); full duration = Short Rest benefits",
+   "aka": null,
+   "identifier": "catnap"
   },
   {
    "level": 3,
@@ -1710,6 +1840,16 @@
    "note": "Cone DEX save",
    "aka": null,
    "identifier": "conjure-barrage"
+  },
+  {
+   "level": 3,
+   "name": "Conjure Constructs",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item + Construct Spirits token: Clockwork Force (DEX save 3d6 Force) and Orderly Ward (1d6 + mod temp HP) activities scaling with the cast slot",
+   "aka": null,
+   "identifier": "conjure-constructs"
   },
   {
    "level": 3,
@@ -1860,6 +2000,26 @@
    "note": "Charmed + Incapacitated; must end when the creature takes damage",
    "aka": null,
    "identifier": "hypnotic-pattern"
+  },
+  {
+   "level": 3,
+   "name": "Inflict Doubt",
+   "source": "AU",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: WIS save or Disadvantage on D20 Tests; repeat save at the end of each turn",
+   "aka": null,
+   "identifier": "inflict-doubt"
+  },
+  {
+   "level": 3,
+   "name": "Laeral’s Silver Lance",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: 120-ft Line STR save 3d10 Force (+1d10/level) + Prone, half only on a success",
+   "aka": null,
+   "identifier": "laerals-silver-lance"
   },
   {
    "level": 3,
@@ -2083,6 +2243,16 @@
   },
   {
    "level": 3,
+   "name": "Syluné’s Viper",
+   "source": "FR",
+   "category": "done",
+   "priority": 1,
+   "note": "CGA item: 15 temp HP (+5/level), Climb Speed, Venomous Bite activity (1d6 Force per level above 2 + Poisoned/Incapacitated); ends when the temp HP are gone (module rule)",
+   "aka": null,
+   "identifier": "sylun-s-viper"
+  },
+  {
+   "level": 3,
    "name": "Tongues",
    "source": "SRD",
    "category": "skip",
@@ -2160,6 +2330,16 @@
    "note": "Aura: poison resistance, advantage on saves vs conditions",
    "aka": null,
    "identifier": "aura-of-purity"
+  },
+  {
+   "level": 4,
+   "name": "Backlash",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "Reaction on damage: reduce by 4d6 + mod; the attacker within 60 ft makes a CON save, 4d6 Force (module rule)",
+   "aka": null,
+   "identifier": "backlash"
   },
   {
    "level": 4,
@@ -2263,6 +2443,16 @@
   },
   {
    "level": 4,
+   "name": "Distorted Distance",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "60-ft Sphere: per creature, INT save 2d10 Psychic + Difficult Terrain, or +20 ft Speed (enter / end turn)",
+   "aka": null,
+   "identifier": "distorted-distance"
+  },
+  {
+   "level": 4,
    "name": "Divination",
    "source": "SRD",
    "category": "skip",
@@ -2283,6 +2473,16 @@
   },
   {
    "level": 4,
+   "name": "Doomtide",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "20-ft Sphere of Darkness: WIS save 5d6 Psychic and -1d6 to saves; moves 10 ft each turn",
+   "aka": null,
+   "identifier": "doomtide"
+  },
+  {
+   "level": 4,
    "name": "Evard's Black Tentacles",
    "source": "SRD",
    "category": "done",
@@ -2300,6 +2500,16 @@
    "note": "",
    "aka": null,
    "identifier": "fabricate"
+  },
+  {
+   "level": 4,
+   "name": "Festering Blast",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "60-ft Line CON save: 4d10 Necrotic + Poisoned (2d10 Poison each turn start, save at end of turn)",
+   "aka": null,
+   "identifier": "festering-blast"
   },
   {
    "level": 4,
@@ -2463,6 +2673,16 @@
   },
   {
    "level": 4,
+   "name": "Spellfire Storm",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "20-ft Cylinder CON save 4d10 Radiant (enter / end turn); casting inside it needs a CON save or the spell fails",
+   "aka": null,
+   "identifier": "spellfire-storm"
+  },
+  {
+   "level": 4,
    "name": "Staggering Smite",
    "source": "PHB",
    "category": "done",
@@ -2540,6 +2760,26 @@
    "note": "Wall: damage on entering/ending turn near the hot side",
    "aka": null,
    "identifier": "wall-of-fire"
+  },
+  {
+   "level": 4,
+   "name": "Zone of Amicability",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "60-ft Emanation: a d20 of 9 or lower on checks to influence a creature counts as 10",
+   "aka": null,
+   "identifier": "zone-of-amicability"
+  },
+  {
+   "level": 5,
+   "name": "Alustriel’s Mooncloak",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "20-ft Emanation: allies Half Cover + Cold/Lightning/Radiant Resistance; end it for Liberation (Reaction) or Respite (4d10 + mod heal)",
+   "aka": null,
+   "identifier": "alustriels-mooncloak"
   },
   {
    "level": 5,
@@ -2733,6 +2973,16 @@
   },
   {
    "level": 5,
+   "name": "Enervation",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "DEX save 6d8 Necrotic, Bonus Action 2d8 each later turn; you heal half the Necrotic dealt",
+   "aka": null,
+   "identifier": "enervation"
+  },
+  {
+   "level": 5,
    "name": "Flame Strike",
    "source": "SRD",
    "category": "done",
@@ -2750,6 +3000,16 @@
    "note": "",
    "aka": null,
    "identifier": "geas"
+  },
+  {
+   "level": 5,
+   "name": "Grave Ground",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Up to four 10-ft squares: Difficult Terrain for enemies, STR save 6d6 Necrotic and -1d6 to their damage rolls",
+   "aka": null,
+   "identifier": "grave-ground"
   },
   {
    "level": 5,
@@ -2843,6 +3103,26 @@
   },
   {
    "level": 5,
+   "name": "Mordenkainen’s Lucubration",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Recover up to two expended slots of level 2 or lower (3 with a 6-7 slot, 4 with 8+)",
+   "aka": null,
+   "identifier": "mordenkainens-lucubration"
+  },
+  {
+   "level": 5,
+   "name": "Negative Energy Flood",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "CON save 3d10 + 25 Necrotic (Undead gain 3d10 temp HP instead); slain Humanoids rise as Zombies",
+   "aka": null,
+   "identifier": "negative-energy-flood"
+  },
+  {
+   "level": 5,
    "name": "Passwall",
    "source": "SRD",
    "category": "skip",
@@ -2913,6 +3193,26 @@
   },
   {
    "level": 5,
+   "name": "Songal’s Elemental Suffusion",
+   "source": "FR",
+   "category": "build",
+   "priority": 2,
+   "note": "Resistance to a chosen element, Fly 30 ft, 15-ft Emanation DEX save 2d6 + Prone at cast and each turn start",
+   "aka": null,
+   "identifier": "songals-elemental-suffusion"
+  },
+  {
+   "level": 5,
+   "name": "Spirit Lantern",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Soul fragments from enemies dying nearby; Bonus Action Drain Life / Repair Undead / Ward Ally",
+   "aka": null,
+   "identifier": "spirit-lantern"
+  },
+  {
+   "level": 5,
    "name": "Steel Wind Strike",
    "source": "PHB",
    "category": "done",
@@ -2940,6 +3240,16 @@
    "note": "Summon",
    "aka": null,
    "identifier": "summon-dragon"
+  },
+  {
+   "level": 5,
+   "name": "Summon Plant",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Summon: Fungus / Tree / Vine Plant Spirit actor scaling with slot level",
+   "aka": null,
+   "identifier": "summon-plant"
   },
   {
    "level": 5,
@@ -3010,6 +3320,16 @@
    "note": "",
    "aka": null,
    "identifier": "wall-of-stone"
+  },
+  {
+   "level": 5,
+   "name": "Waves of Exhaustion",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Magic action 60-ft Cone CON save or +1 Exhaustion (max 4), removed when the spell ends",
+   "aka": null,
+   "identifier": "waves-of-exhaustion"
   },
   {
    "level": 5,
@@ -3093,6 +3413,16 @@
   },
   {
    "level": 6,
+   "name": "Dirge",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "60-ft Emanation: no healing for others; CON save 3d10 Necrotic + Prone (half + half Speed); enter / end turn",
+   "aka": null,
+   "identifier": "dirge"
+  },
+  {
+   "level": 6,
    "name": "Disintegrate",
    "source": "SRD",
    "category": "done",
@@ -3110,6 +3440,16 @@
    "note": "aka Instant Summons",
    "aka": "Instant Summons",
    "identifier": "instant-summons"
+  },
+  {
+   "level": 6,
+   "name": "Elminster’s Effulgent Spheres",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Six spheres: Reaction Resistance to an element, or Bonus Action ranged attack 3d6 of a chosen element",
+   "aka": null,
+   "identifier": "elminsters-effulgent-spheres"
   },
   {
    "level": 6,
@@ -3273,6 +3613,16 @@
   },
   {
    "level": 6,
+   "name": "Summon Dinosaur",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Summon: Ankylosaur / Triceratops / Tyrannosaur Dinosaur Spirit actor scaling with slot level",
+   "aka": null,
+   "identifier": "summon-dinosaur"
+  },
+  {
+   "level": 6,
    "name": "Summon Fiend",
    "source": "PHB",
    "category": "done",
@@ -3363,6 +3713,16 @@
   },
   {
    "level": 7,
+   "name": "Aura of Evasion",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "30-ft Emanation: allies Advantage on DEX saves and Evasion",
+   "aka": null,
+   "identifier": "aura-of-evasion"
+  },
+  {
+   "level": 7,
    "name": "Conjure Celestial",
    "source": "SRD",
    "category": "done",
@@ -3433,6 +3793,16 @@
   },
   {
    "level": 7,
+   "name": "Fractured Awareness",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "INT save 12d10 Psychic + Disadvantage on D20 Tests; save at end of each turn",
+   "aka": null,
+   "identifier": "fractured-awareness"
+  },
+  {
+   "level": 7,
    "name": "Mirage Arcane",
    "source": "SRD",
    "category": "skip",
@@ -3480,6 +3850,16 @@
    "note": "Split 120 temp HP between creatures",
    "aka": null,
    "identifier": "power-word-fortify"
+  },
+  {
+   "level": 7,
+   "name": "Power Word Pain",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "100 HP or fewer: 6d8 Force + Charmed (Speed 10, Disadvantage on D20 Tests except CON saves, CON save to cast)",
+   "aka": null,
+   "identifier": "power-word-pain"
   },
   {
    "level": 7,
@@ -3533,6 +3913,16 @@
   },
   {
    "level": 7,
+   "name": "Reweave Fate",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Reaction: an ally within 60 ft rerolls a failed D20 Test with Advantage; success gives 6d10 temp HP (module rule)",
+   "aka": null,
+   "identifier": "reweave-fate"
+  },
+  {
+   "level": 7,
    "name": "Sequester",
    "source": "SRD",
    "category": "skip",
@@ -3540,6 +3930,16 @@
    "note": "",
    "aka": null,
    "identifier": "sequester"
+  },
+  {
+   "level": 7,
+   "name": "Simbul’s Synostodweomer",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Touch: whenever the target casts with a slot it can spend Hit Dice equal to the slot level to heal + your mod",
+   "aka": null,
+   "identifier": "simbuls-synostodweomer"
   },
   {
    "level": 7,
@@ -3572,6 +3972,16 @@
    "identifier": "teleport"
   },
   {
+   "level": 7,
+   "name": "Transfix",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "CHA save or Charmed + Incapacitated, pulled toward you, 4d8 Psychic ending its turn within 5 ft; Magic action to retarget",
+   "aka": null,
+   "identifier": "transfix"
+  },
+  {
    "level": 8,
    "name": "Animal Shapes",
    "source": "SRD",
@@ -3600,16 +4010,6 @@
    "note": "",
    "aka": null,
    "identifier": "antipathy-sympathy"
-  },
-  {
-   "level": 8,
-   "name": "Telepathy",
-   "source": "PHB",
-   "category": "skip",
-   "priority": 3,
-   "note": "",
-   "aka": null,
-   "identifier": "telepathy"
   },
   {
    "level": 8,
@@ -3673,6 +4073,16 @@
   },
   {
    "level": 8,
+   "name": "Entrancing Mirrors",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Up to 3 creatures INT save: 7d6 Psychic + Stunned (half Speed); save at end of each turn",
+   "aka": null,
+   "identifier": "entrancing-mirrors"
+  },
+  {
+   "level": 8,
    "name": "Glibness",
    "source": "SRD",
    "category": "skip",
@@ -3693,6 +4103,26 @@
   },
   {
    "level": 8,
+   "name": "Holy Star of Mystra",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Mote: Bonus Action ranged attack 4d10 + mod Force/Radiant; you have Three-Quarters Cover; reflect single-target spells",
+   "aka": null,
+   "identifier": "holy-star-of-mystra"
+  },
+  {
+   "level": 8,
+   "name": "Illusory Dragon",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Huge shadow dragon: WIS save or Frightened; Bonus Action breath 60-ft Cone INT save 7d6 of a chosen type",
+   "aka": null,
+   "identifier": "illusory-dragon"
+  },
+  {
+   "level": 8,
    "name": "Incendiary Cloud",
    "source": "SRD",
    "category": "done",
@@ -3700,6 +4130,26 @@
    "note": "Moving zone: DEX save fire",
    "aka": null,
    "identifier": "incendiary-cloud"
+  },
+  {
+   "level": 8,
+   "name": "Iron Body",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Touch: Resistance to B/P/S/Fire, Immunity to Poison, Paralyzed, Petrified, Poisoned; no new Exhaustion",
+   "aka": null,
+   "identifier": "iron-body"
+  },
+  {
+   "level": 8,
+   "name": "Lightning Ring",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "10-ft Emanation CON save 3d6 Lightning + 3d6 Thunder + Deafened; Magic action 60-ft Line DEX save 6d6 Lightning",
+   "aka": null,
+   "identifier": "lightning-ring"
   },
   {
    "level": 8,
@@ -3723,6 +4173,16 @@
   },
   {
    "level": 8,
+   "name": "Moment of Prescience",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Reaction: a failed D20 Test becomes a 20, or an attack that hits you becomes a 1 (module rule)",
+   "aka": null,
+   "identifier": "moment-of-prescience"
+  },
+  {
+   "level": 8,
    "name": "Power Word Stun",
    "source": "SRD",
    "category": "midi",
@@ -3740,6 +4200,16 @@
    "note": "Blinded with repeat saves",
    "aka": null,
    "identifier": "sunburst"
+  },
+  {
+   "level": 8,
+   "name": "Telepathy",
+   "source": "PHB",
+   "category": "skip",
+   "priority": 3,
+   "note": "",
+   "aka": null,
+   "identifier": "telepathy"
   },
   {
    "level": 8,
@@ -3763,6 +4233,26 @@
   },
   {
    "level": 9,
+   "name": "Blade of Disaster",
+   "source": "FR",
+   "category": "build",
+   "priority": 3,
+   "note": "Rift: two melee spell attacks 10d6 Force, crit on 18-20; Bonus Action to move it and repeat",
+   "aka": null,
+   "identifier": "blade-of-disaster"
+  },
+  {
+   "level": 9,
+   "name": "Detonate",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "CON save 10d10 Fire, then 60-ft Emanation DEX save 10d10 Fire (Disadvantage if the target dropped to 0)",
+   "aka": null,
+   "identifier": "detonate"
+  },
+  {
+   "level": 9,
    "name": "Foresight",
    "source": "SRD",
    "category": "midi",
@@ -3783,6 +4273,16 @@
   },
   {
    "level": 9,
+   "name": "Hindsight",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Divination visions - roleplay",
+   "aka": null,
+   "identifier": "hindsight"
+  },
+  {
+   "level": 9,
    "name": "Imprisonment",
    "source": "SRD",
    "category": "midi",
@@ -3790,6 +4290,16 @@
    "note": "",
    "aka": null,
    "identifier": "imprisonment"
+  },
+  {
+   "level": 9,
+   "name": "Invulnerability",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Immunity to all damage (concentration)",
+   "aka": null,
+   "identifier": "invulnerability"
   },
   {
    "level": 9,
@@ -3890,6 +4400,26 @@
    "note": "",
    "aka": null,
    "identifier": "true-resurrection"
+  },
+  {
+   "level": 9,
+   "name": "Vision of Elapsing Eons",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "INT save 10d12 Psychic + Paralyzed; each failed repeat save adds Exhaustion",
+   "aka": null,
+   "identifier": "vision-of-elapsing-eons"
+  },
+  {
+   "level": 9,
+   "name": "Wail of the Banshee",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Up to 10 creatures: 50 HP or fewer die; others CON save 12d10 Psychic + Deafened",
+   "aka": null,
+   "identifier": "wail-of-the-banshee"
   },
   {
    "level": 9,

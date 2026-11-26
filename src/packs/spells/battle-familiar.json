@@ -1,0 +1,184 @@
+{
+  "name": "Battle Familiar",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Pick Brute, Flyer or Stalker when you cast. The familiar (Celestial, Fey or Fiend - your choice) appears within 10 ft for 1 hour, is an ally, and rolls its own Initiative. Its AC, Hit Points and Rend damage grow with the slot level, Rend uses your spell attack bonus, and it makes Rend attacks equal to half the spell's level. It disappears at 0 Hit Points or when the spell ends. If you already have a Find Familiar familiar, empowering it instead (Temporary Hit Points equal to the battle familiar's Hit Points) is done by hand.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": 1
+    },
+    "duration": {
+      "value": "1",
+      "units": "hour"
+    },
+    "target": {
+      "affects": {
+        "type": "space",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "10",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 2,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "material"
+    ],
+    "materials": {
+      "value": "a diamond worth 25+ GP",
+      "consumed": false,
+      "cost": 25,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "gOf4QDymYpUVAvTk": {
+        "type": "summon",
+        "_id": "gOf4QDymYpUVAvTk",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "range": {
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "bonuses": {
+          "ac": "@item.level",
+          "hd": "",
+          "hp": "5 * (@item.level - 2)",
+          "attackDamage": "@item.level",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "Brute",
+            "_id": "cgaProfileBatF00",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumBatFamBrut",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "Flyer",
+            "_id": "cgaProfileBatF10",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumBatFamFlye",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "count": "",
+            "name": "Stalker",
+            "_id": "cgaProfileBatF20",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumBatFamStal",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "name": "",
+        "img": ""
+      }
+    },
+    "identifier": "battle-familiar",
+    "prepared": 0
+  },
+  "_id": "cgaSplBattleFam0",
+  "type": "spell",
+  "img": "icons/creatures/mammals/cat-hunched-glowing-red.webp",
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: summons a Brute, Flyer or Stalker battle familiar from the module's CGA: Summoned Creatures compendium; AC, HP and Rend damage scale with the slot level and it uses your spell attack. Empowering an existing Find Familiar familiar is by hand."
+      }
+    }
+  }
+}
