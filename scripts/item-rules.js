@@ -88,7 +88,9 @@ Hooks.on("midi-qol.DamageRollComplete", async (workflow) => {
 
 // ------------------------------------------------------------------ Item auras (Holy Avenger)
 export const chg = (key, value, type = "override") => ({ key, value, type, priority: 20, phase: "initial" });
-const ITEM_AURAS = [
+// Auras: ident (the item), key, range(actor), effect(actor). Optional: active(actor, item) - only while true;
+// targets "all" (any creature, not just allies); self false (not the wearer); worn false (item needn't be equipped).
+export const ITEM_AURAS = [
   { ident: "holy-avenger", key: "holy-avenger", range: (a) => (Number(a.classes?.paladin?.system?.levels ?? 0) >= 17 ? 30 : 10),
     effect: () => ({ name: "Holy Avenger Aura", img: "icons/magic/holy/barrier-shield-winged-blue.webp",
       description: "<p>Advantage on saving throws against spells and other magical effects (Holy Avenger).</p>",
@@ -105,11 +107,13 @@ async function sweepItemAuras(scene) {
   const want = new Map();
   for (const src of tokens) {
     for (const aura of ITEM_AURAS) {
-      const item = magicItem(src.actor, aura.ident);
+      const item = magicItem(src.actor, aura.ident, { worn: aura.worn !== false });
+      if (item && aura.active && !aura.active(src.actor, item)) continue;
       if (!item || isIncapacitated(src.actor) || Number(src.actor.system.attributes.hp.value ?? 0) <= 0) continue;
       const range = aura.range(src.actor);
       for (const t of tokens) {
-        if (t !== src && (t.disposition !== src.disposition || edgeDistance(src, t, scene) > range)) continue;
+        if (t === src && aura.self === false) continue;
+        if (t !== src && ((aura.targets !== "all" && t.disposition !== src.disposition) || edgeDistance(src, t, scene) > range)) continue;
         if (!want.has(`${t.id}|${aura.key}`)) want.set(`${t.id}|${aura.key}`, { t, aura, src, item });
       }
     }
@@ -136,7 +140,8 @@ const rescanActor = (actor) => { if (actor instanceof Actor) for (const t of act
 for (const h of ["createItem", "deleteItem"]) Hooks.on(h, (item) => rescanActor(item.parent));
 Hooks.on("updateItem", (item, changes) => { if (foundry.utils.hasProperty(changes, "system.equipped") || foundry.utils.hasProperty(changes, "system.attuned")) rescanActor(item.parent); });
 Hooks.on("updateActor", (actor, changes) => { if (foundry.utils.hasProperty(changes, "system.attributes.hp.value")) rescanActor(actor); });
-for (const h of ["createActiveEffect", "deleteActiveEffect"]) Hooks.on(h, (e) => { if (e.statuses?.size && !e.flags?.[MODULE_ID]?.itemAura) rescanActor(e.parent); });
+// Any effect change can switch an aura on or off (a status, or an item "active" effect such as a lit candle).
+for (const h of ["createActiveEffect", "deleteActiveEffect", "updateActiveEffect"]) Hooks.on(h, (e) => { if (!e.flags?.[MODULE_ID]?.itemAura && !e.flags?.[MODULE_ID]?.passive) rescanActor(e.parent); });
 Hooks.on("canvasReady", () => scheduleItemAuras(canvas.scene));
 
 // ------------------------------------------------------------------ Defender (first attack each turn)
@@ -370,7 +375,7 @@ export const ITEM_TOGGLES = [
 ];
 export const refreshPassives = (actor) => schedulePassives(actor);
 for (const h of ["createItem", "deleteItem"]) Hooks.on(h, (item) => schedulePassives(item.parent));
-Hooks.on("updateItem", (item, changes) => { if (foundry.utils.hasProperty(changes, "system.equipped") || foundry.utils.hasProperty(changes, "system.attuned") || foundry.utils.hasProperty(changes, "system.properties")) schedulePassives(item.parent); });
+Hooks.on("updateItem", (item, changes) => { if (["system.equipped", "system.attuned", "system.properties", "name", "system.identifier"].some((k) => foundry.utils.hasProperty(changes, k))) schedulePassives(item.parent); });
 Hooks.once("ready", () => { if (isGM()) for (const a of game.actors.filter((x) => x.type === "character")) schedulePassives(a); });
 
 // ------------------------------------------------------------------ Boots of Speed: Opportunity Attacks against you have Disadvantage

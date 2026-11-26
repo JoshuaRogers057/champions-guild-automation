@@ -325,7 +325,7 @@ ITEM_TOGGLES.push(
 // meant a save-or-die (Giant's Bane), a lost charge (Life Stealing, Withering, Striking) or a Restraint arrow on every
 // hit. The module offers them at the right moment instead, so their attacks get otherActivityId "none".
 const NO_CHAIN = ["hammer-of-thunderbolts", "nine-lives-stealer", "staff-of-withering", "staff-of-striking", "energy-bow", "oathbow", "staff-of-thunder-and-lightning",
-  "mace-of-terror", "ring-of-the-ram", "staff-of-swarming-insects", "staff-of-the-woodlands"];
+  "mace-of-terror", "ring-of-the-ram", "staff-of-swarming-insects", "staff-of-the-woodlands", "shield-of-the-cavalier"];
 async function unchain(item) {
   if (!isGM() || !(item?.parent instanceof Actor) || !NO_CHAIN.some((id) => isMagicItem(item, id))) return;
   const upd = {};

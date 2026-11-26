@@ -216,9 +216,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Bag of Tricks",
    "source": "DMG",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Random creature summons by bag colour",
+   "note": "CGA item: Pull Fuzzy Object rolls the d8; Gray / Rust / Tan Bag summon the table's creature (3 per dawn)",
    "identifier": "bag-of-tricks"
   },
   {
@@ -276,9 +276,9 @@
    "sub": "Weapon · rare · attunement",
    "name": "Berserker Axe",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1, +1 HP per level; curse: Disadvantage with other weapons, WIS save to go berserk when damaged",
+   "note": "Module rule (no Mass Apply): Disadvantage with other weapons; when another creature damages you, DC 15 WIS save or a Berserk effect. +1 HP per level from the item",
    "identifier": "berserker-axe"
   },
   {
@@ -436,9 +436,9 @@
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Candle of Invocation",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Lit: Advantage on D20 Tests in its light; free level 1 spells for Clerics/Druids",
+   "note": "Module rule (no Mass Apply): while lit, every creature within 30 ft has Advantage on D20 Tests. Free level 1 spells for Clerics/Druids stay manual",
    "identifier": "candle-of-invocation"
   },
   {
@@ -636,9 +636,9 @@
    "sub": "Wondrous Item · common",
    "name": "Clockwork Amulet",
    "source": "DMG",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Once per dawn take a 10 on an attack roll instead of rolling (prompt)",
+   "note": "Module rule (no Mass Apply): once per dawn, a missed attack whose d20 was under 10 can count it as a 10 (asked when it would hit)",
    "identifier": "clockwork-amulet"
   },
   {
@@ -906,9 +906,9 @@
    "sub": "Armor · very rare",
    "name": "Dwarven Plate",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+2 AC; Reaction to reduce forced movement by 10 ft",
+   "note": "Checked in v0.25.0 - the compendium item works under midi-qol (+2 AC); the forced-movement Reaction is a reminder activity",
    "identifier": "dwarven-plate"
   },
   {
@@ -1046,9 +1046,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Eversmoking Bottle",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 3,
-   "note": "midi-qol sample item - check it works",
+   "note": "Checked in v0.25.0 - midi-qol's sample opens/closes the smoke",
    "identifier": "eversmoking-bottle"
   },
   {
@@ -1316,9 +1316,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Goggles of Night",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 3,
-   "note": "midi-qol sample item - check it works",
+   "note": "Checked in v0.25.0 - the compendium goggles give Darkvision 60 ft; midi-qol's samples didn't change vision in testing",
    "identifier": "goggles-of-night"
   },
   {
@@ -1396,9 +1396,9 @@
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Helm of Brilliance",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Gem spells, fire-opal weapon flames, ruby fire resistance, diamond undead aura, explosion risk",
+   "note": "CGA item: Fireball and Wall of Fire cast the module's versions; gem counts, Fire Opal flames and the explosion use the compendium activities",
    "identifier": "helm-of-brilliance"
   },
   {
@@ -1566,9 +1566,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Ioun Stone (Absorption)",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Reaction to cancel a spell (level 4-/8-), tracking 20 levels",
+   "note": "Module rule (no Mass Apply): Reaction when an enemy casts a spell of level 4 (8) or lower - cancel it, spending that many of the stone's 20 levels",
    "identifier": "absorption-ioun-stone"
   },
   {
@@ -1606,9 +1606,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Ioun Stone (Greater Absorption)",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Reaction to cancel a spell (level 4-/8-), tracking 20 levels",
+   "note": "Module rule (no Mass Apply): Reaction when an enemy casts a spell of level 4 (8) or lower - cancel it, spending that many of the stone's 20 levels",
    "identifier": "greater-absorption-ioun-stone"
   },
   {
@@ -1906,9 +1906,9 @@
    "sub": "Weapon · legendary · attunement",
    "name": "Moonblade",
    "source": "DMG",
-   "category": "build",
+   "category": "skip",
    "priority": 3,
-   "note": "Rune properties (random), sentience - build per blade",
+   "note": "Random runes and a sentient personality chosen by the DM - build a specific blade on request",
    "identifier": "moonblade"
   },
   {
@@ -2506,9 +2506,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Quaal’s Feather Token (Whip)",
    "source": "DMG",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Floating whip: Bonus Action melee spell attack +9, 1d6+5 Force",
+   "note": "CGA item: Whip Attack (+9 melee spell attack, 1d6 + 5 Force, Bonus Action)",
    "identifier": "quaals-feather-token-whip"
   },
   {
@@ -2556,9 +2556,9 @@
    "sub": "Ring · legendary · attunement",
    "name": "Ring of Elemental Command",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Elemental bane/compulsion, plane benefits and charge spells",
+   "note": "Module rule (no Mass Apply): Elemental Bane (Advantage vs Elementals, they have Disadvantage vs you) and the plane's benefits from the ring's name (air/earth/fire/water). Compulsion and spells stay manual",
    "identifier": "ring-of-elemental-command"
   },
   {
@@ -2726,9 +2726,9 @@
    "sub": "Ring · uncommon · attunement",
    "name": "Ring of Warmth",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Reduce Cold damage by 2d8",
+   "note": "Module rule (no Mass Apply): Cold damage reduced by 2d8",
    "identifier": "ring-of-warmth"
   },
   {
@@ -2776,9 +2776,9 @@
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Robe of Scintillating Colors",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Charge: attackers have Disadvantage, WIS save or Stunned in the light",
+   "note": "CGA item: Display gives attackers Disadvantage until the end of your next turn; Dazzle - enemies within 30 ft WIS 15 or Stunned",
    "identifier": "robe-of-scintillating-colors"
   },
   {
@@ -2816,9 +2816,9 @@
    "sub": "Rod · very rare · attunement",
    "name": "Rod of Absorption",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)",
+   "note": "Module rule (no Mass Apply): Reaction to absorb a spell targeting only you, storing its levels in the rod's 50; converting energy to slots uses the item's activity",
    "identifier": "rod-of-absorption"
   },
   {
@@ -2826,9 +2826,9 @@
    "sub": "Rod · very rare · attunement",
    "name": "Rod of Alertness",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)",
+   "note": "Module rule (no Mass Apply): Advantage on Perception and Initiative while held; planted, you and allies within 60 ft get +1 AC and saves",
    "identifier": "rod-of-alertness"
   },
   {
@@ -2836,9 +2836,9 @@
    "sub": "Rod · legendary · attunement",
    "name": "Rod of Lordly Might",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)",
+   "note": "Checked in v0.25.0 - the compendium item works under midi-qol (button weapon forms, Drain Life, Paralyze, Terrify)",
    "identifier": "rod-of-lordly-might"
   },
   {
@@ -2936,9 +2936,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Scarab of Protection",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1 AC, Advantage on saves vs spells, charges to turn failed saves vs Necromancy/Undead into successes",
+   "note": "Module rule (no Mass Apply): Advantage on saves vs spells; Reaction + charge to succeed on a failed save vs a Necromancy spell or an Undead. +1 AC from the item",
    "identifier": "scarab-of-protection"
   },
   {
@@ -3016,9 +3016,9 @@
    "sub": "Armor · rare · attunement",
    "name": "Shield of Missile Attraction",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Ranged resistance + curse redirect; +2 AC, Forceful Bash and Protective Field",
+   "note": "Module rule (no Mass Apply): Resistance to Ranged weapon attack damage. The curse (attacks redirected to you) stays manual",
    "identifier": "shield-of-missile-attraction"
   },
   {
@@ -3026,9 +3026,9 @@
    "sub": "Armor · very rare · attunement",
    "name": "Shield of the Cavalier",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Ranged resistance + curse redirect; +2 AC, Forceful Bash and Protective Field",
+   "note": "Checked in v0.25.0 - the compendium item works under midi-qol (+2 AC, Forceful Bash, Protective Field); module rule (no mass apply) stops Protective Field running after every bash",
    "identifier": "shield-of-the-cavalier"
   },
   {
@@ -3346,9 +3346,9 @@
    "sub": "Weapon · uncommon · attunement",
    "name": "Sword of Vengeance",
    "source": "DMG",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1; curse: WIS save when damaged or attack that creature",
+   "note": "Module rule (no Mass Apply): Disadvantage with other weapons; in combat, when damaged, DC 15 WIS save or a Vengeful effect (attack that creature)",
    "identifier": "sword-of-vengeance"
   },
   {
@@ -3376,9 +3376,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Talisman of Pure Good",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Holy symbol +2 spell attacks; charge fissure (DEX save or destroyed)",
+   "note": "Module rule (no Mass Apply): the fissure - Fiends/Undead (Celestials) save with Disadvantage; a failed save destroys the target, a success takes 4d6 Psychic",
    "identifier": "talisman-of-pure-good"
   },
   {
@@ -3396,9 +3396,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Talisman of Ultimate Evil",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Holy symbol +2 spell attacks; charge fissure (DEX save or destroyed)",
+   "note": "Module rule (no Mass Apply): the fissure - Fiends/Undead (Celestials) save with Disadvantage; a failed save destroys the target, a success takes 4d6 Psychic",
    "identifier": "talisman-of-ultimate-evil"
   },
   {
@@ -3436,9 +3436,9 @@
    "sub": "Weapon · very rare · attunement",
    "name": "Thunderous Greatclub",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "STR 20, +1d8 Thunder; Clap of Thunder cone (STR save or Prone); Earthquake",
+   "note": "Checked in v0.25.0 - the compendium item works under midi-qol (STR 20, +1d8 Thunder, Clap of Thunder, Earthquake)",
    "identifier": "thunderous-greatclub"
   },
   {
@@ -3696,9 +3696,9 @@
    "sub": "Wand · rare · attunement",
    "name": "Wand of Wonder",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "d100 random effect table",
+   "note": "CGA item: Roll for Effect (d100), then the named activity; spells use the module's versions",
    "identifier": "wand-of-wonder"
   },
   {
@@ -3726,9 +3726,9 @@
    "sub": "Weapon · uncommon · attunement",
    "name": "Weapon of Warning",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "You and allies within 30 ft have Advantage on Initiative (module rule)",
+   "note": "Module rule (no Mass Apply): you and allies within 30 ft have Advantage on Initiative",
    "identifier": "weapon-of-warning"
   },
   {
@@ -4516,9 +4516,9 @@
    "sub": "5 GP",
    "name": "Hunting Trap",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 3,
-   "note": "DEX save or 1d4 Piercing and Speed 0; STR check to escape",
+   "note": "Checked in v0.25.0 - the compendium item works under midi-qol (DC 13 DEX, 1d4 Piercing, Trapped)",
    "identifier": "hunting-trap"
   },
   {
@@ -4596,9 +4596,9 @@
    "sub": "1 CP",
    "name": "Torch",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 3,
-   "note": "midi-qol sample item (light, improvised attack 1 Fire)",
+   "note": "Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)",
    "identifier": "torch"
   },
   {
@@ -4606,9 +4606,9 @@
    "sub": "5 SP",
    "name": "Lamp",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 3,
-   "note": "midi-qol sample item (light)",
+   "note": "Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)",
    "identifier": "lamp"
   },
   {
@@ -4616,9 +4616,9 @@
    "sub": "10 GP",
    "name": "Lantern, Bullseye",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 3,
-   "note": "midi-qol sample item (light)",
+   "note": "Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)",
    "identifier": "lantern-bullseye"
   },
   {
@@ -4626,9 +4626,9 @@
    "sub": "5 GP",
    "name": "Lantern, Hooded",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 3,
-   "note": "midi-qol sample item (light)",
+   "note": "Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)",
    "identifier": "lantern-hooded"
   },
   {
@@ -4636,9 +4636,9 @@
    "sub": "1 CP",
    "name": "Candle",
    "source": "SRD",
-   "category": "midi",
+   "category": "done",
    "priority": 3,
-   "note": "midi-qol sample item (light)",
+   "note": "Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)",
    "identifier": "candle"
   },
   {

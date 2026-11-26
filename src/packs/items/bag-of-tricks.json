@@ -1,0 +1,732 @@
+{
+  "_id": "cgaItmBagTricks0",
+  "name": "Bag of Tricks",
+  "type": "equipment",
+  "img": "icons/containers/bags/coinpouch-cloth-purple.webp",
+  "system": {
+    "activities": {
+      "cgaBagTricksRoll": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaBagTricksRoll",
+        "type": "utility",
+        "name": "Pull Fuzzy Object",
+        "img": "icons/containers/bags/coinpouch-cloth-purple.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": true,
+          "name": "Creature (1d8)",
+          "formula": "1d8"
+        }
+      },
+      "cgaBagTricksGray": {
+        "type": "summon",
+        "_id": "cgaBagTricksGray",
+        "sort": 1,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "After Pull Fuzzy Object",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "spec",
+          "special": "Until the next dawn or 0 HP",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "value": "20",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "space",
+            "special": "unoccupied space as close to the bowl as possible"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "_id": "cgaBagGrProf0100",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "1: Weasel",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmWeasel00000000"
+          },
+          {
+            "_id": "cgaBagGrProf0200",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "2: Giant Rat",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmGiantRat000000"
+          },
+          {
+            "_id": "cgaBagGrProf0300",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "3: Badger",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmBadger00000000"
+          },
+          {
+            "_id": "cgaBagGrProf0400",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "4: Boar",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmBoar0000000000"
+          },
+          {
+            "_id": "cgaBagGrProf0500",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "5: Panther",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmPanther0000000"
+          },
+          {
+            "_id": "cgaBagGrProf0600",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "6: Giant Badger",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmGiantBadger000"
+          },
+          {
+            "_id": "cgaBagGrProf0700",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "7: Dire Wolf",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmDireWolf000000"
+          },
+          {
+            "_id": "cgaBagGrProf0800",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "8: Giant Elk",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmGiantElk000000"
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "name": "Gray Bag",
+        "img": "",
+        "appliedEffects": [],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true
+        }
+      },
+      "cgaBagTricksRust": {
+        "type": "summon",
+        "_id": "cgaBagTricksRust",
+        "sort": 2,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "After Pull Fuzzy Object",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "spec",
+          "special": "Until the next dawn or 0 HP",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "value": "20",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "space",
+            "special": "unoccupied space as close to the bowl as possible"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "_id": "cgaBagRuProf0100",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "1: Rat",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmRat00000000000"
+          },
+          {
+            "_id": "cgaBagRuProf0200",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "2: Owl",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmOwl00000000000"
+          },
+          {
+            "_id": "cgaBagRuProf0300",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "3: Mastiff",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmMastiff0000000"
+          },
+          {
+            "_id": "cgaBagRuProf0400",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "4: Goat",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmGoat0000000000"
+          },
+          {
+            "_id": "cgaBagRuProf0500",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "5: Giant Goat",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmGiantGoat00000"
+          },
+          {
+            "_id": "cgaBagRuProf0600",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "6: Giant Boar",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmGiantBoar00000"
+          },
+          {
+            "_id": "cgaBagRuProf0700",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "7: Lion",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmLion0000000000"
+          },
+          {
+            "_id": "cgaBagRuProf0800",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "8: Brown Bear",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmBrownBear00000"
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "name": "Rust Bag",
+        "img": "",
+        "appliedEffects": [],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true
+        }
+      },
+      "cgaBagTricksTan0": {
+        "type": "summon",
+        "_id": "cgaBagTricksTan0",
+        "sort": 3,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "After Pull Fuzzy Object",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "spec",
+          "special": "Until the next dawn or 0 HP",
+          "concentration": false,
+          "override": true
+        },
+        "effects": [],
+        "range": {
+          "units": "ft",
+          "value": "20",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "space",
+            "special": "unoccupied space as close to the bowl as possible"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": false,
+          "ability": ""
+        },
+        "profiles": [
+          {
+            "_id": "cgaBagTaProf0100",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "1: Jackal",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmJackal00000000"
+          },
+          {
+            "_id": "cgaBagTaProf0200",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "2: Ape",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmApe00000000000"
+          },
+          {
+            "_id": "cgaBagTaProf0300",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "3: Baboon",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmBaboon00000000"
+          },
+          {
+            "_id": "cgaBagTaProf0400",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "4: Axe Beak",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmAxeBeak0000000"
+          },
+          {
+            "_id": "cgaBagTaProf0500",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "5: Black Bear",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmBlackBear00000"
+          },
+          {
+            "_id": "cgaBagTaProf0600",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "6: Giant Weasel",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmGiantWeasel000"
+          },
+          {
+            "_id": "cgaBagTaProf0700",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "7: Giant Hyena",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmGiantHyena0000"
+          },
+          {
+            "_id": "cgaBagTaProf0800",
+            "count": "1",
+            "cr": "",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "name": "8: Tiger",
+            "types": [],
+            "uuid": "Compendium.dnd5e.actors24.Actor.mmTiger000000000"
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "name": "Tan Bag",
+        "img": "",
+        "appliedEffects": [],
+        "visibility": {
+          "requireMagic": true,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireIdentification": true
+        }
+      }
+    },
+    "uses": {
+      "max": "3",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action (3 times per dawn): pull a fuzzy object and throw it up to 20 ft; it becomes a creature from the bag's table (roll <strong>Pull Fuzzy Object</strong> for the d8, then use your bag colour's summon and pick that creature). The creature is Friendly, acts right after you, follows your Bonus Action commands, and vanishes at the next dawn or at 0 HP.</p>",
+      "chat": ""
+    },
+    "identifier": "bag-of-tricks",
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "uncommon",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "armor": {
+      "value": null,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "strength": null,
+    "proficient": null
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Pull Fuzzy Object rolls the d8; Gray / Rust / Tan Bag summon the table's creatures from the dnd5e compendium."
+      }
+    }
+  }
+}

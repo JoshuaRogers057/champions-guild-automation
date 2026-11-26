@@ -3,6 +3,43 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.25.0
+
+Priority-3 magic items: every item on the tracker that needed building is now done. As before, most fixes are
+**module rules** that work on the character's own item. New items in **CGA: Items & Equipment** need **Mass Apply /
+Update**.
+
+- New module rules:
+  - **Curses:** Berserker Axe and Sword of Vengeance give Disadvantage with other weapons. When the wielder is
+    damaged they make a DC 15 WIS save: a failure means Berserk, or Vengeful (must attack that creature).
+  - **Spell cancelling:** Ioun Stone of Absorption and Greater Absorption cancel an enemy's spell as it's cast, using
+    the stone's levels. Rod of Absorption absorbs a spell that targets only you.
+  - **Saves and defence:**
+    - Scarab of Protection: Advantage on saves against spells; Reaction and a charge to succeed against Necromancy
+      or an Undead.
+    - Ring of Warmth: Cold damage −2d8.
+    - Shield of Missile Attraction: Resistance to ranged weapon attacks.
+  - **Rolls:** Clockwork Amulet turns a missed attack's low d20 into a 10, once per dawn.
+  - **Auras:**
+    - Weapon of Warning: Initiative Advantage for allies within 30 ft.
+    - Candle of Invocation: while lit, Advantage on D20 Tests within 30 ft.
+    - Rod of Alertness: planted, +1 AC and saves for you and allies; held, Advantage on Perception and Initiative.
+  - **Elemental and holy items:**
+    - Ring of Elemental Command: Elemental Bane, plus the plane's benefits from the ring's name.
+    - Talismans of Pure Good and Ultimate Evil: the fissure destroys a creature that fails; Fiends/Undead (or
+      Celestials) save with Disadvantage.
+  - **Shield of the Cavalier:** midi-qol no longer runs Protective Field after every bash.
+- New items (1.0.0):
+  - **Bag of Tricks**: roll the d8, then summon from your bag colour's table.
+  - **Quaal's Feather Token (Whip)**: +9, 1d6 + 5 Force.
+  - **Robe of Scintillating Colors**: Disadvantage for attackers, and the Stunned save against enemies.
+  - **Wand of Wonder**: d100 roll, and the module's spells.
+  - **Helm of Brilliance**: the module's Fireball and Wall of Fire.
+- Checked and working as they ship: Dwarven Plate, Rod of Lordly Might, Shield of the Cavalier, Thunderous Greatclub,
+  Hunting Trap, midi-qol's light sources and Eversmoking Bottle. The compendium Goggles of Night work; midi-qol's
+  samples didn't change vision in testing.
+- Skipped: Moonblade (its random runes and personality are the DM's to build).
+
 ## 0.24.0
 
 Priority-2 magic items and equipment. As in 0.23.0, most fixes are **module rules** that work on the character's own

@@ -23,13 +23,13 @@ Wondrous items|Wondrous Item · uncommon · attunement|Baba Yaga’s Dancing Bro
 Wondrous items|Wondrous Item · rare|Bag of Beans|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-beans
 Wondrous items|Wondrous Item · very rare|Bag of Devouring|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-devouring
 Wondrous items|Wondrous Item · uncommon|Bag of Holding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-holding
-Wondrous items|Wondrous Item · uncommon|Bag of Tricks|DMG|build|3|Random creature summons by bag colour|bag-of-tricks
+Wondrous items|Wondrous Item · uncommon|Bag of Tricks|DMG|done|3|CGA item: Pull Fuzzy Object rolls the d8; Gray / Rust / Tan Bag summon the table's creature (3 per dawn)|bag-of-tricks
 Wondrous items|Wondrous Item · rare|Bead of Force|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|bead-of-force
 Wondrous items|Wondrous Item · common|Bead of Nourishment|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bead-of-nourishment
 Wondrous items|Wondrous Item · common|Bead of Refreshment|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|bead-of-refreshment
 Wondrous items|Wondrous Item · rare · attunement|Belt of Dwarvenkind|SRD|done|2|Module rule (no Mass Apply): switches on the belt's benefits effect (shipped disabled)|belt-of-dwarvenkind
 Wondrous items|Wondrous Item · varies · attunement|Belt of Giant Strength|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)|belt-of-giant-strength
-Magic weapons|Weapon · rare · attunement|Berserker Axe|SRD|build|3|+1, +1 HP per level; curse: Disadvantage with other weapons, WIS save to go berserk when damaged|berserker-axe
+Magic weapons|Weapon · rare · attunement|Berserker Axe|SRD|done|3|Module rule (no Mass Apply): Disadvantage with other weapons; when another creature damages you, DC 15 WIS save or a Berserk effect. +1 HP per level from the item|berserker-axe
 Artifacts|Weapon · artifact · attunement|Blackrazor|DMG|skip|3|Artifact - automate on request when one enters a campaign|blackrazor
 Artifacts|Wondrous Item · artifact · attunement|Book of Exalted Deeds|DMG|skip|3|Artifact - automate on request when one enters a campaign|book-of-exalted-deeds
 Artifacts|Wondrous Item · artifact · attunement|Book of Vile Darkness|DMG|skip|3|Artifact - automate on request when one enters a campaign|book-of-vile-darkness
@@ -45,7 +45,7 @@ Wondrous items|Wondrous Item · rare · attunement|Bracers of Defense|SRD|done|1
 Wondrous items|Wondrous Item · rare|Brazier of Commanding Fire Elementals|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|brazier-of-commanding-fire-elementals
 Wondrous items|Wondrous Item · uncommon · attunement|Brooch of Shielding|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol (Force Resistance)|brooch-of-shielding
 Wondrous items|Wondrous Item · uncommon · attunement|Broom of Flying|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|broom-of-flying
-Wondrous items|Wondrous Item · very rare · attunement|Candle of Invocation|SRD|build|3|Lit: Advantage on D20 Tests in its light; free level 1 spells for Clerics/Druids|candle-of-invocation
+Wondrous items|Wondrous Item · very rare · attunement|Candle of Invocation|SRD|done|3|Module rule (no Mass Apply): while lit, every creature within 30 ft has Advantage on D20 Tests. Free level 1 spells for Clerics/Druids stay manual|candle-of-invocation
 Wondrous items|Wondrous Item · common|Candle of the Deep|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|candle-of-the-deep
 Wondrous items|Wondrous Item · rare|Cape of the Mountebank|SRD|done|2|CGA item: casts the module's automated spells|cape-of-the-mountebank
 Wondrous items|Wondrous Item · uncommon|Cap of Water Breathing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cap-of-water-breathing
@@ -65,7 +65,7 @@ Wondrous items|Wondrous Item · common|Cloak of Many Fashions|DMG|skip|3|Utility
 Wondrous items|Wondrous Item · uncommon · attunement|Cloak of Protection|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (+1 AC/saves/checks)|cloak-of-protection
 Wondrous items|Wondrous Item · rare · attunement|Cloak of the Bat|SRD|done|2|CGA item: casts the module's automated spells|cloak-of-the-bat
 Wondrous items|Wondrous Item · uncommon · attunement|Cloak of the Manta Ray|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|cloak-of-the-manta-ray
-Wondrous items|Wondrous Item · common|Clockwork Amulet|DMG|build|3|Once per dawn take a 10 on an attack roll instead of rolling (prompt)|clockwork-amulet
+Wondrous items|Wondrous Item · common|Clockwork Amulet|DMG|done|3|Module rule (no Mass Apply): once per dawn, a missed attack whose d20 was under 10 can count it as a 10 (asked when it would hit)|clockwork-amulet
 Wondrous items|Wondrous Item · common|Clothes of Mending|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|clothes-of-mending
 Wondrous items|Wondrous Item · very rare · attunement|Crystal Ball|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|crystal-ball
 Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Mind Reading|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mind-reading-crystal-ball-of
@@ -92,7 +92,7 @@ Wondrous items|Wondrous Item · uncommon|Driftglobe|DMG|skip|3|Utility, narrativ
 Wondrous items|Wondrous Item · uncommon|Dust of Disappearance|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|dust-of-disappearance
 Wondrous items|Wondrous Item · uncommon|Dust of Dryness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|dust-of-dryness
 Wondrous items|Wondrous Item · uncommon|Dust of Sneezing and Choking|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|dust-of-sneezing-and-choking
-Magic armor and shields|Armor · very rare|Dwarven Plate|SRD|build|3|+2 AC; Reaction to reduce forced movement by 10 ft|dwarven-plate
+Magic armor and shields|Armor · very rare|Dwarven Plate|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (+2 AC); the forced-movement Reaction is a reminder activity|dwarven-plate
 Magic weapons|Weapon · very rare · attunement|Dwarven Thrower|SRD|done|2|CGA item + module rule (no mass apply): +1d8 Force only when thrown, +1d8 more vs Giants|dwarven-thrower
 Wondrous items|Wondrous Item · common|Ear Horn of Hearing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ear-horn-of-hearing
 Wondrous items|Wondrous Item · very rare|Efreeti Bottle|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|efreeti-bottle
@@ -106,7 +106,7 @@ Magic armor and shields|Armor · varies · attunement|Enspelled Armor|DMG|verify
 Staffs|Staff · varies · attunement|Enspelled Staff|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Template item - check how a chosen spell is attached|enspelled-staff
 Magic weapons|Weapon · varies · attunement|Enspelled Weapon|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Template item - check how a chosen spell is attached|enspelled-weapon
 Wondrous items|Wondrous Item · common|Ersatz Eye|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ersatz-eye
-Wondrous items|Wondrous Item · uncommon|Eversmoking Bottle|SRD|midi|3|midi-qol sample item - check it works|eversmoking-bottle
+Wondrous items|Wondrous Item · uncommon|Eversmoking Bottle|SRD|done|3|Checked in v0.25.0 - midi-qol's sample opens/closes the smoke|eversmoking-bottle
 Magic weapons|Weapon · very rare|Executioner’s Axe|DMG|done|2|Module rule (no Mass Apply): Humanoid hit +2d6 Slashing and temp HP equal to it|executioners-axe
 Artifacts|Wondrous Item · artifact · attunement|Eye and Hand of Vecna|DMG|skip|3|Artifact - automate on request when one enters a campaign|eye-and-hand-of-vecna
 Wondrous items|Wondrous Item · uncommon · attunement|Eyes of Charming|SRD|done|2|CGA item: casts the module's automated spells|eyes-of-charming
@@ -133,7 +133,7 @@ Magic armor and shields|Armor · rare|Glamoured Studded Leather|SRD|done|2|Check
 Wondrous items|Wondrous Item · uncommon · attunement|Gloves of Missile Snaring|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): Reaction when hit by a ranged/thrown weapon attack - reduce by 1d10 + DEX|gloves-of-missile-snaring
 Wondrous items|Wondrous Item · uncommon · attunement|Gloves of Swimming and Climbing|SRD|done|2|Module rule (no Mass Apply): Climb and Swim Speed equal to your Speed (compendium formula didn't evaluate); +5 Athletics from the item|gloves-of-swimming-and-climbing
 Wondrous items|Wondrous Item · uncommon|Gloves of Thievery|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|gloves-of-thievery
-Wondrous items|Wondrous Item · uncommon|Goggles of Night|SRD|midi|3|midi-qol sample item - check it works|goggles-of-night
+Wondrous items|Wondrous Item · uncommon|Goggles of Night|SRD|done|3|Checked in v0.25.0 - the compendium goggles give Darkvision 60 ft; midi-qol's samples didn't change vision in testing|goggles-of-night
 Wondrous items|Wondrous Item · uncommon|Hag Eye|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hag-eye
 Magic weapons|Weapon · legendary · attunement|Hammer of Thunderbolts|SRD|done|2|Module rule (no Mass Apply): hurled hit - the target and every creature within 30 ft of it: DC 17 CON or Stunned; Giant's Bane with an attuned Belt/Gauntlets; Giant's Bane save no longer runs on every hit|hammer-of-thunderbolts
 Wondrous items|Wondrous Item · uncommon · attunement|Hat of Disguise|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-disguise
@@ -141,7 +141,7 @@ Wondrous items|Wondrous Item · very rare · attunement|Hat of Many Spells|SRD|s
 Wondrous items|Wondrous Item · common|Hat of Vermin|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-vermin
 Wondrous items|Wondrous Item · common · attunement|Hat of Wizardry|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-wizardry
 Wondrous items|Wondrous Item · uncommon · attunement|Headband of Intellect|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)|headband-of-intellect
-Wondrous items|Wondrous Item · very rare · attunement|Helm of Brilliance|SRD|build|3|Gem spells, fire-opal weapon flames, ruby fire resistance, diamond undead aura, explosion risk|helm-of-brilliance
+Wondrous items|Wondrous Item · very rare · attunement|Helm of Brilliance|SRD|done|3|CGA item: Fireball and Wall of Fire cast the module's versions; gem counts, Fire Opal flames and the explosion use the compendium activities|helm-of-brilliance
 Wondrous items|Wondrous Item · uncommon|Helm of Comprehending Languages|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-comprehending-languages
 Wondrous items|Wondrous Item · uncommon · attunement|Helm of Telepathy|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-telepathy
 Wondrous items|Wondrous Item · rare · attunement|Helm of Teleportation|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-teleportation
@@ -158,11 +158,11 @@ Wondrous items|Wondrous Item · common|Instrument of Illusions|DMG|skip|3|Utilit
 Wondrous items|Wondrous Item · common|Instrument of Scribing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-scribing
 Wondrous items|Wondrous Item · varies · attunement|Instrument of the Bards|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|instrument-of-the-bards
 Wondrous items|Wondrous Item · varies · attunement|Ioun Stone|SRD|skip|3|Listed by variant below|ioun-stone
-Wondrous items|Wondrous Item · very rare|Ioun Stone (Absorption)|SRD|build|3|Reaction to cancel a spell (level 4-/8-), tracking 20 levels|absorption-ioun-stone
+Wondrous items|Wondrous Item · very rare|Ioun Stone (Absorption)|SRD|done|3|Module rule (no Mass Apply): Reaction when an enemy casts a spell of level 4 (8) or lower - cancel it, spending that many of the stone's 20 levels|absorption-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Agility)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|agility-ioun-stone
 Wondrous items|Wondrous Item · rare|Ioun Stone (Awareness)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|awareness-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Fortitude)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|fortitude-ioun-stone
-Wondrous items|Wondrous Item · legendary|Ioun Stone (Greater Absorption)|SRD|build|3|Reaction to cancel a spell (level 4-/8-), tracking 20 levels|greater-absorption-ioun-stone
+Wondrous items|Wondrous Item · legendary|Ioun Stone (Greater Absorption)|SRD|done|3|Module rule (no Mass Apply): Reaction when an enemy casts a spell of level 4 (8) or lower - cancel it, spending that many of the stone's 20 levels|greater-absorption-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Insight)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|insight-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Intellect)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|intellect-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Leadership)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|leadership-ioun-stone
@@ -192,7 +192,7 @@ Magic armor and shields|Armor · uncommon|Mariner’s Armor|DMG|verify|2|Not che
 Wondrous items|Wondrous Item · uncommon · attunement|Medallion of Thoughts|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|medallion-of-thoughts
 Wondrous items|Wondrous Item · very rare|Mirror of Life Trapping|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mirror-of-life-trapping
 Magic armor and shields|Armor · uncommon|Mithral Armor|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mithral-armor
-Magic weapons|Weapon · legendary · attunement|Moonblade|DMG|build|3|Rune properties (random), sentience - build per blade|moonblade
+Magic weapons|Weapon · legendary · attunement|Moonblade|DMG|skip|3|Random runes and a sentient personality chosen by the DM - build a specific blade on request|moonblade
 Magic weapons|Weapon · common|Moon-Touched Sword|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|moon-touched-sword
 Wondrous items|Wondrous Item · common|Mystery Key|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|mystery-key
 Wondrous items|Wondrous Item · uncommon · attunement|Nature’s Mantle|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|natures-mantle
@@ -252,12 +252,12 @@ Wondrous items|Wondrous Item · rare|Quaal’s Feather Token (Bird)|DMG|skip|3|U
 Wondrous items|Wondrous Item · uncommon|Quaal’s Feather Token (Fan)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-fan
 Wondrous items|Wondrous Item · rare|Quaal’s Feather Token (Swan Boat)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-swan-boat
 Wondrous items|Wondrous Item · uncommon|Quaal’s Feather Token (Tree)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-tree
-Wondrous items|Wondrous Item · rare|Quaal’s Feather Token (Whip)|DMG|build|3|Floating whip: Bonus Action melee spell attack +9, 1d6+5 Force|quaals-feather-token-whip
+Wondrous items|Wondrous Item · rare|Quaal’s Feather Token (Whip)|DMG|done|3|CGA item: Whip Attack (+9 melee spell attack, 1d6 + 5 Force, Bonus Action)|quaals-feather-token-whip
 Magic weapons|Weapon · very rare · attunement|Quarterstaff of the Acrobat|SRD|done|2|Module rule (no Mass Apply): Reaction +5 AC against a hit (once per rest)|quarterstaff-of-the-acrobat
 Wondrous items|Wondrous Item · uncommon|Quiver of Ehlonna|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quiver-of-ehlonna
 Rings|Ring · rare|Ring of Animal Influence|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-animal-influence
 Rings|Ring · legendary · attunement|Ring of Djinni Summoning|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-djinni-summoning
-Rings|Ring · legendary · attunement|Ring of Elemental Command|SRD|build|3|Elemental bane/compulsion, plane benefits and charge spells|ring-of-elemental-command
+Rings|Ring · legendary · attunement|Ring of Elemental Command|SRD|done|3|Module rule (no Mass Apply): Elemental Bane (Advantage vs Elementals, they have Disadvantage vs you) and the plane's benefits from the ring's name (air/earth/fire/water). Compulsion and spells stay manual|ring-of-elemental-command
 Rings|Ring · rare · attunement|Ring of Evasion|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): Reaction after a failed DEX save - spend a charge to succeed|ring-of-evasion
 Rings|Ring · rare · attunement|Ring of Feather Falling|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-feather-falling
 Rings|Ring · rare · attunement|Ring of Free Action|SRD|done|2|Module rule (no Mass Apply): immune to Paralyzed and Restrained (compendium only ignored Difficult Terrain)|ring-of-free-action
@@ -274,18 +274,18 @@ Rings|Ring · uncommon|Ring of Swimming|SRD|done|2|Checked in v0.24.0 - the comp
 Rings|Ring · very rare · attunement|Ring of Telekinesis|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|ring-of-telekinesis
 Rings|Ring · rare · attunement|Ring of the Ram|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol; module rule (no mass apply) stops its extra activity running after every attack|ring-of-the-ram
 Rings|Ring · legendary|Ring of Three Wishes|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-three-wishes
-Rings|Ring · uncommon · attunement|Ring of Warmth|SRD|build|3|Reduce Cold damage by 2d8|ring-of-warmth
+Rings|Ring · uncommon · attunement|Ring of Warmth|SRD|done|3|Module rule (no Mass Apply): Cold damage reduced by 2d8|ring-of-warmth
 Rings|Ring · uncommon|Ring of Water Walking|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-water-walking
 Rings|Ring · rare · attunement|Ring of X-ray Vision|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-x-ray-vision
 Wondrous items|Wondrous Item · common|Rival Coin|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|rival-coin
 Wondrous items|Wondrous Item · rare · attunement|Robe of Eyes|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|robe-of-eyes
-Wondrous items|Wondrous Item · very rare · attunement|Robe of Scintillating Colors|SRD|build|3|Charge: attackers have Disadvantage, WIS save or Stunned in the light|robe-of-scintillating-colors
+Wondrous items|Wondrous Item · very rare · attunement|Robe of Scintillating Colors|SRD|done|3|CGA item: Display gives attackers Disadvantage until the end of your next turn; Dazzle - enemies within 30 ft WIS 15 or Stunned|robe-of-scintillating-colors
 Wondrous items|Wondrous Item · very rare · attunement|Robe of Stars|SRD|done|2|CGA item: casts the module's automated spells|robe-of-stars
 Wondrous items|Wondrous Item · legendary · attunement|Robe of the Archmagi|SRD|done|2|Module rule (no Mass Apply): Magic Resistance added; its AC 15 + DEX switches off in armor|robe-of-the-archmagi
 Wondrous items|Wondrous Item · uncommon|Robe of Useful Items|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|robe-of-useful-items
-Rods|Rod · very rare · attunement|Rod of Absorption|SRD|build|3|Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)|rod-of-absorption
-Rods|Rod · very rare · attunement|Rod of Alertness|SRD|build|3|Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)|rod-of-alertness
-Rods|Rod · legendary · attunement|Rod of Lordly Might|SRD|build|3|Several properties (absorb/convert spells; alertness aura; buttons, drain life, paralyze, terrify)|rod-of-lordly-might
+Rods|Rod · very rare · attunement|Rod of Absorption|SRD|done|3|Module rule (no Mass Apply): Reaction to absorb a spell targeting only you, storing its levels in the rod's 50; converting energy to slots uses the item's activity|rod-of-absorption
+Rods|Rod · very rare · attunement|Rod of Alertness|SRD|done|3|Module rule (no Mass Apply): Advantage on Perception and Initiative while held; planted, you and allies within 60 ft get +1 AC and saves|rod-of-alertness
+Rods|Rod · legendary · attunement|Rod of Lordly Might|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (button weapon forms, Drain Life, Paralyze, Terrify)|rod-of-lordly-might
 Rods|Rod · legendary · attunement|Rod of Resurrection|SRD|done|2|CGA item: casts the module's automated spells|rod-of-resurrection
 Rods|Rod · rare · attunement|Rod of Rulership|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|rod-of-rulership
 Rods|Rod · very rare|Rod of Security|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|rod-of-security
@@ -295,7 +295,7 @@ Wondrous items|Wondrous Item · rare|Rope of Entanglement|SRD|done|2|Checked in 
 Wondrous items|Wondrous Item · common|Rope of Mending|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|rope-of-mending
 Wondrous items|Wondrous Item · common · attunement|Ruby of the War Mage|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ruby-of-the-war-mage
 Wondrous items|Wondrous Item · uncommon|Saddle of the Cavalier|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|saddle-of-the-cavalier
-Wondrous items|Wondrous Item · legendary · attunement|Scarab of Protection|SRD|build|3|+1 AC, Advantage on saves vs spells, charges to turn failed saves vs Necromancy/Undead into successes|scarab-of-protection
+Wondrous items|Wondrous Item · legendary · attunement|Scarab of Protection|SRD|done|3|Module rule (no Mass Apply): Advantage on saves vs spells; Reaction + charge to succeed on a failed save vs a Necromancy spell or an Undead. +1 AC from the item|scarab-of-protection
 Magic weapons|Weapon · very rare · attunement|Scimitar of Speed|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|scimitar-of-speed
 Scrolls|Scroll · rare|Scroll of Protection|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|scroll-of-protection
 Scrolls|Scroll · legendary|Scroll of Titan Summoning|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|scroll-of-titan-summoning
@@ -303,8 +303,8 @@ Wondrous items|Wondrous Item · uncommon|Sending Stones|SRD|skip|3|Utility, narr
 Magic armor and shields|Armor · uncommon|Sentinel Shield|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|sentinel-shield
 Magic armor and shields|Armor · very rare|Shield, +1, +2, or +3|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)|shield
 Magic armor and shields|Armor · common|Shield of Expression|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|shield-of-expression
-Magic armor and shields|Armor · rare · attunement|Shield of Missile Attraction|SRD|build|3|Ranged resistance + curse redirect; +2 AC, Forceful Bash and Protective Field|shield-of-missile-attraction
-Magic armor and shields|Armor · very rare · attunement|Shield of the Cavalier|SRD|build|3|Ranged resistance + curse redirect; +2 AC, Forceful Bash and Protective Field|shield-of-the-cavalier
+Magic armor and shields|Armor · rare · attunement|Shield of Missile Attraction|SRD|done|3|Module rule (no Mass Apply): Resistance to Ranged weapon attack damage. The curse (attacks redirected to you) stays manual|shield-of-missile-attraction
+Magic armor and shields|Armor · very rare · attunement|Shield of the Cavalier|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (+2 AC, Forceful Bash, Protective Field); module rule (no mass apply) stops Protective Field running after every bash|shield-of-the-cavalier
 Magic weapons|Weapon · common|Silvered Weapon|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|silvered-weapon
 Wondrous items|Wondrous Item · uncommon · attunement|Slippers of Spider Climbing|SRD|done|2|Module rule (no Mass Apply): Climb Speed equal to your Speed (compendium item was empty)|slippers-of-spider-climbing
 Magic armor and shields|Armor · common|Smoldering Armor|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|smoldering-armor
@@ -336,16 +336,16 @@ Magic weapons|Weapon · legendary · attunement|Sword of Answering|DMG|done|2|Mo
 Artifacts|Weapon · artifact · attunement|Sword of Kas|DMG|skip|3|Artifact - automate on request when one enters a campaign|sword-of-kas
 Magic weapons|Weapon · rare · attunement|Sword of Life Stealing|SRD|done|2|Module rule (no Mass Apply): 2024 version - a 20 vs a non-Construct/Undead: +15 Necrotic and 15 temp HP. midi-qol's sample is the 2014 item|sword-of-life-stealing
 Magic weapons|Weapon · very rare · attunement|Sword of Sharpness|SRD|done|2|Module rule (no Mass Apply): 2024 version - a 20: +14 Slashing and 1 Exhaustion level. midi-qol's sample is the 2014 item|sword-of-sharpness
-Magic weapons|Weapon · uncommon · attunement|Sword of Vengeance|DMG|build|3|+1; curse: WIS save when damaged or attack that creature|sword-of-vengeance
+Magic weapons|Weapon · uncommon · attunement|Sword of Vengeance|DMG|done|3|Module rule (no Mass Apply): Disadvantage with other weapons; in combat, when damaged, DC 15 WIS save or a Vengeful effect (attack that creature)|sword-of-vengeance
 Magic weapons|Weapon · rare · attunement|Sword of Wounding|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): 2024 version - +2d6 Necrotic, DC 15 CON save or can't regain HP (repeat save end of turn). midi's sample is the 2014 item|sword-of-wounding
 Magic weapons|Weapon · common · attunement|Sylvan Talon|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|sylvan-talon
-Wondrous items|Wondrous Item · legendary · attunement|Talisman of Pure Good|SRD|build|3|Holy symbol +2 spell attacks; charge fissure (DEX save or destroyed)|talisman-of-pure-good
+Wondrous items|Wondrous Item · legendary · attunement|Talisman of Pure Good|SRD|done|3|Module rule (no Mass Apply): the fissure - Fiends/Undead (Celestials) save with Disadvantage; a failed save destroys the target, a success takes 4d6 Psychic|talisman-of-pure-good
 Wondrous items|Wondrous Item · legendary · attunement|Talisman of the Sphere|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|talisman-of-the-sphere
-Wondrous items|Wondrous Item · legendary · attunement|Talisman of Ultimate Evil|SRD|build|3|Holy symbol +2 spell attacks; charge fissure (DEX save or destroyed)|talisman-of-ultimate-evil
+Wondrous items|Wondrous Item · legendary · attunement|Talisman of Ultimate Evil|SRD|done|3|Module rule (no Mass Apply): the fissure - Fiends/Undead (Celestials) save with Disadvantage; a failed save destroys the target, a success takes 4d6 Psychic|talisman-of-ultimate-evil
 Wondrous items|Wondrous Item · common · attunement|Talking Doll|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|talking-doll
 Wondrous items|Wondrous Item · common|Tankard of Sobriety|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|tankard-of-sobriety
 Rods|Rod · rare · attunement|Tentacle Rod|DMG|done|2|CGA item + module rule (no mass apply): Tentacle attacks (+9, 1d6 Psychic); three hits on one creature in a turn -> DEX 15 or Restrained, 3d6 Psychic each turn|tentacle-rod
-Magic weapons|Weapon · very rare · attunement|Thunderous Greatclub|SRD|build|3|STR 20, +1d8 Thunder; Clap of Thunder cone (STR save or Prone); Earthquake|thunderous-greatclub
+Magic weapons|Weapon · very rare · attunement|Thunderous Greatclub|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (STR 20, +1d8 Thunder, Clap of Thunder, Earthquake)|thunderous-greatclub
 Wondrous items|Wondrous Item · very rare|Tome of Clear Thought|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-clear-thought
 Wondrous items|Wondrous Item · very rare|Tome of Leadership and Influence|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-leadership-and-influence
 Wondrous items|Wondrous Item · legendary · attunement|Tome of the Stilled Tongue|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-the-stilled-tongue
@@ -371,10 +371,10 @@ Wands|Wand · common|Wand of Pyrotechnics|DMG|skip|3|Utility, narrative or DM-ru
 Wands|Wand · uncommon|Wand of Secrets|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-secrets
 Wands|Wand · very rare · attunement|Wand of the War Mage, +1, +2, or +3|SRD|verify|1|Not checked yet in v0.23.0 - Charges/bonuses for spells - check casting and scaling|1-wand-of-the-war-mage
 Wands|Wand · uncommon · attunement|Wand of Web|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|wand-of-web
-Wands|Wand · rare · attunement|Wand of Wonder|SRD|build|3|d100 random effect table|wand-of-wonder
+Wands|Wand · rare · attunement|Wand of Wonder|SRD|done|3|CGA item: Roll for Effect (d100), then the named activity; spells use the module's versions|wand-of-wonder
 Artifacts|Weapon · artifact · attunement|Wave|DMG|skip|3|Artifact - automate on request when one enters a campaign|wave
 Magic weapons|Weapon · very rare|Weapon, +1, +2, or +3|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)|weapon-1-2-or-3
-Magic weapons|Weapon · uncommon · attunement|Weapon of Warning|SRD|build|3|You and allies within 30 ft have Advantage on Initiative (module rule)|weapon-of-warning
+Magic weapons|Weapon · uncommon · attunement|Weapon of Warning|SRD|done|3|Module rule (no Mass Apply): you and allies within 30 ft have Advantage on Initiative|weapon-of-warning
 Wondrous items|Wondrous Item · legendary|Well of Many Worlds|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|well-of-many-worlds
 Artifacts|Weapon · artifact · attunement|Whelm|DMG|skip|3|Artifact - automate on request when one enters a campaign|whelm
 Wondrous items|Wondrous Item · uncommon|Wind Fan|SRD|done|2|CGA item: casts the module's automated spells|wind-fan
@@ -453,7 +453,7 @@ Adventuring gear|1 GP|Caltrops|SRD|done|2|Checked in v0.24.0 - the compendium it
 Adventuring gear|5 GP|Chain|SRD|skip|3|Gear - nothing to automate|chain
 Adventuring gear|5 GP|Healer’s Kit|SRD|done|2|Checked in v0.24.0 - Stabilize is a utility use (mark the creature stable by hand)|healers-kit
 Adventuring gear|25 GP|Holy Water|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): only Fiends and Undead take the 2d8 Radiant (compendium hurt anyone)|holy-water
-Adventuring gear|5 GP|Hunting Trap|SRD|verify|3|DEX save or 1d4 Piercing and Speed 0; STR check to escape|hunting-trap
+Adventuring gear|5 GP|Hunting Trap|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (DC 13 DEX, 1d4 Piercing, Trapped)|hunting-trap
 Adventuring gear|2 GP|Manacles|SRD|skip|3|Gear - nothing to automate|manacles
 Adventuring gear|1 GP|Net|SRD|done|1|CGA item: the save now applies Restrained (compendium pointed at a missing effect)|net
 Adventuring gear|1 SP|Oil|SRD|done|2|CGA item + module rule (no mass apply): a failed save covers the target in oil; its next Fire damage +5|oil
@@ -461,11 +461,11 @@ Adventuring gear|100 GP|Poison, Basic|SRD|done|2|CGA item + module rule (no mass
 Adventuring gear|50 GP|Potion of Healing|SRD|skip|3|Same item as Potions of Healing (magic items)|potion-of-healing
 Adventuring gear|1 GP|Rope|SRD|skip|3|Gear - nothing to automate|rope
 Adventuring gear|Cantrip, 30 GP Level 1, 50 GP|Spell Scroll|SRD|skip|3|Same item as Spell Scroll (magic items)|spell-scroll
-Adventuring gear|1 CP|Torch|SRD|midi|3|midi-qol sample item (light, improvised attack 1 Fire)|torch
-Adventuring gear|5 SP|Lamp|SRD|midi|3|midi-qol sample item (light)|lamp
-Adventuring gear|10 GP|Lantern, Bullseye|SRD|midi|3|midi-qol sample item (light)|lantern-bullseye
-Adventuring gear|5 GP|Lantern, Hooded|SRD|midi|3|midi-qol sample item (light)|lantern-hooded
-Adventuring gear|1 CP|Candle|SRD|midi|3|midi-qol sample item (light)|candle
+Adventuring gear|1 CP|Torch|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|torch
+Adventuring gear|5 SP|Lamp|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|lamp
+Adventuring gear|10 GP|Lantern, Bullseye|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|lantern-bullseye
+Adventuring gear|5 GP|Lantern, Hooded|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|lantern-hooded
+Adventuring gear|1 CP|Candle|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|candle
 Adventuring gear|25 GP|Climber’s Kit|SRD|skip|3|Gear - nothing to automate|climbers-kit
 Adventuring gear|2 GP|Grappling Hook|SRD|skip|3|Gear - nothing to automate|grappling-hook
 Adventuring gear|2 GP|Crowbar|SRD|skip|3|Gear - nothing to automate|crowbar
