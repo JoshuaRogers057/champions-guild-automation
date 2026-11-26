@@ -3,6 +3,25 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.32.0
+
+The last five Origin feats from the non-Player's Handbook backgrounds (priority 3). With these, every background
+Origin feat that has something to automate is covered.
+
+- **Arcane Artist**: after you cast an Illusion spell, Inspiring Magic gives an ally within 30 ft Heroic Inspiration
+  (asked, 1/LR).
+- **Familiar Friend** (new CGA item, 1.0.0):
+  - Find Familiar once per Long Rest without a slot.
+  - Fortified Familiar: the familiar gets extra Hit Points equal to twice your level when it appears.
+  - Helpful Friend: Advantage on proficient skill checks while the familiar is within 5 ft. A use is spent only when
+    the roll actually had Advantage.
+- **Tireless Reveler**: when an ally within 60 ft spends Heroic Inspiration, you're offered Heroic Inspiration (PB/Short Rest).
+- **Sharp Eye** (new CGA item, 1.0.0): an activity for the Search or Study action gives Advantage on your next ability check.
+- **Tyro of the Gauntlet** (new CGA item, 1.0.0):
+  - Stand as One: when an ally within 5 ft is pushed or pulled by forced movement (CAT forced movement, the Push
+    mastery, or displacement), your Reaction puts it back.
+  - Vigilant: a Ready activity gives the next attack against you Disadvantage.
+
 ## 0.31.0
 
 Priority-2 Origin feats from the non-Player's Handbook backgrounds. They're module rules that find the feat on the
