@@ -583,7 +583,20 @@ Hooks.once("socketlib.ready", () => {
   cgaSocket.register("askChoice", askChoiceHere);
   cgaSocket.register("createTokens", (sceneId, data) => game.scenes.get(sceneId)?.createEmbeddedDocuments("Token", data).then((docs) => docs.map((d) => d.id)));
   cgaSocket.register("updateTokens", (sceneId, updates, options = {}) => game.scenes.get(sceneId)?.updateEmbeddedDocuments("Token", updates, options).then(() => true));
+  cgaSocket.register("rollSave", rollSaveHere);
 });
+// A saving throw for a creature the current user may not own (item riders): rolls on the GM's client, returns the total.
+async function rollSaveHere(actorUuid, ability, dc) {
+  const a = fromUuidSync(actorUuid);
+  if (!a) return null;
+  const r = await a.rollSavingThrow({ ability, target: dc }, { configure: false }, {}).catch(() => null);
+  const roll = Array.isArray(r) ? r[0] : r;
+  return roll ? Number(roll.total) : null;
+}
+export async function gmRollSave(actor, ability, dc) {
+  const total = actor.isOwner || !cgaSocket ? await rollSaveHere(actor.uuid, ability, dc) : await cgaSocket.executeAsGM("rollSave", actor.uuid, ability, dc);
+  return total === null ? null : total >= dc;
+}
 async function askYesNoHere(title, html, seconds = 30) {
   return new Promise((resolve) => {
     let done = false;

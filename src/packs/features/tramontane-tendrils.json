@@ -1,0 +1,280 @@
+{
+  "_id": "cgaIbTramFeat000",
+  "name": "Tramontane Armor: Grasping Tendrils",
+  "type": "feat",
+  "img": "icons/equipment/chest/robe-layered-red.webp",
+  "system": {
+    "identifier": "tramontane-tendrils",
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "Tramontane Armor",
+    "properties": [],
+    "uses": {
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "recoverAll"
+        }
+      ],
+      "autoDestroy": false
+    },
+    "activities": {
+      "cgaIbTramActiv00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaIbFxTramont00"
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIbTramActiv00",
+        "type": "utility",
+        "name": "Activate Tendrils",
+        "img": "icons/equipment/chest/robe-layered-red.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "tramontane-activate"
+        }
+      },
+      "cgaIbTramGrasp00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaIbFxTramGrp00",
+            "onSave": false
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "enemy",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "emanationNoTemplate",
+            "size": "20"
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIbTramGrasp00",
+        "type": "save",
+        "name": "Grasping Tendrils",
+        "img": "icons/equipment/chest/robe-layered-red.webp",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "While the tendrils are active",
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "str"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "15"
+          }
+        },
+        "midiProperties": {
+          "identifier": "tramontane-grasp"
+        }
+      }
+    },
+    "advancement": {},
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Added by the module while you wear Tramontane Armor. Activate the tendrils (Magic action, once per dawn, 1 minute); then, as a Bonus Action, creatures of your choice within 20 ft make a DC 15 STR save or are Grappled (escape DC 15) and pulled up to 20 ft toward you (module).</p>",
+      "chat": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaIbFxTramont00",
+      "name": "Grasping Tendrils (active)",
+      "img": "icons/equipment/chest/robe-layered-red.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": []
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        },
+        "world": {
+          "cgaTendrils": true
+        }
+      }
+    },
+    {
+      "_id": "cgaIbFxTramGrp00",
+      "name": "Grasping Tendrils: Grappled",
+      "img": "icons/equipment/chest/robe-layered-red.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [
+        "grappled"
+      ],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": []
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: helper feature for Tramontane Armor."
+      }
+    }
+  }
+}

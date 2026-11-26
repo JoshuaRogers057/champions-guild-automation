@@ -13,7 +13,7 @@ Wondrous items|Wondrous Item · very rare · attunement|Amulet of the Planes|SRD
 Magic armor and shields|Armor · very rare · attunement|Animated Shield|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|animated-shield
 Wondrous items|Wondrous Item · legendary|Apparatus of Kwalish|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|apparatus-of-kwalish
 Wondrous items|Wondrous Item · rare|Arcane Chatelaine|AU|skip|3|Utility (Arcane Lock keys) - by hand|arcane-chatelaine
-Wondrous items|Wondrous Item · rare · attunement|Arcanist's Bestiary|AU|build|3|Charm Monster cast 1/dawn (DC 15, Disadvantage for non-Humanoids); skill choice and Monster Primer by hand|arcanists-bestiary
+Wondrous items|Wondrous Item · rare · attunement|Arcanist's Bestiary|AU|done|3|Done in v0.42.0: Charm Monster cast 1/dawn (DC 15, Disadvantage for non-Humanoids); skill choice and Monster Primer by hand|arcanists-bestiary
 Magic armor and shields|Armor · common|Armor of Gleaming|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|armor-of-gleaming
 Magic armor and shields|Armor · legendary · attunement|Armor of Invulnerability|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|armor-of-invulnerability
 Magic armor and shields|Armor · rare · attunement|Armor of Resistance|SRD|done|1|Module rule (no Mass Apply): the compendium enchantment only renamed the armor - the module reads the type from the name and gives the Resistance while worn and attuned|armor-of-resistance
@@ -29,22 +29,22 @@ Wondrous items|Wondrous Item · uncommon|Bag of Tricks|DMG|done|3|CGA item: Pull
 Wondrous items|Wondrous Item · rare|Bead of Force|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|bead-of-force
 Wondrous items|Wondrous Item · common|Bead of Nourishment|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bead-of-nourishment
 Wondrous items|Wondrous Item · common|Bead of Refreshment|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|bead-of-refreshment
-Wondrous items|Wondrous Item · rare|Bellows of Strangulation|AU|build|2|6 charges: CON 15 save or Incapacitated with repeat saves (one creature for 1, 30-ft cone for 3), Cloudkill cast (DC 17) for 5; regains 1d6+1 at dawn|bellows-of-strangulation
+Wondrous items|Wondrous Item · rare|Bellows of Strangulation|AU|done|2|Done in v0.42.0: 6 charges: CON 15 save or Incapacitated with repeat saves (one creature for 1, 30-ft cone for 3), Cloudkill cast (DC 17) for 5; regains 1d6+1 at dawn|bellows-of-strangulation
 Wondrous items|Wondrous Item · rare · attunement|Belt of Dwarvenkind|SRD|done|2|Module rule (no Mass Apply): switches on the belt's benefits effect (shipped disabled)|belt-of-dwarvenkind
 Wondrous items|Wondrous Item · varies · attunement|Belt of Giant Strength|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)|belt-of-giant-strength
 Magic weapons|Weapon · rare · attunement|Berserker Axe|SRD|done|3|Module rule (no Mass Apply): Disadvantage with other weapons; when another creature damages you, DC 15 WIS save or a Berserk effect. +1 HP per level from the item|berserker-axe
 Artifacts|Weapon · artifact · attunement|Blackrazor|DMG|skip|3|Artifact - automate on request when one enters a campaign|blackrazor
-Wondrous items|Wondrous Item · rare · attunement|Blood Amulet|AU|build|2|3 charges: after you deal damage, spend one for +2d10 Necrotic and a DC 15 CON save or 1 Exhaustion (asked)|blood-amulet
-Rods|Rod · varies · attunement (spellcaster)|Blossom Rod|AU|build|3|Druidcraft / Plant Growth (budding), Insect Plague 1/dawn (flowering), 30-ft sleep pollen CON 17 or Unconscious 1/dawn (somniferous)|blossom-rod
+Wondrous items|Wondrous Item · rare · attunement|Blood Amulet|AU|done|2|Done in v0.42.0: 3 charges: after you deal damage, spend one for +2d10 Necrotic and a DC 15 CON save or 1 Exhaustion (asked)|blood-amulet
+Rods|Rod · varies · attunement (spellcaster)|Blossom Rod|AU|done|3|Done in v0.42.0: Druidcraft / Plant Growth (budding), Insect Plague 1/dawn (flowering), 30-ft sleep pollen CON 17 or Unconscious 1/dawn (somniferous)|blossom-rod
 Artifacts|Wondrous Item · artifact · attunement|Book of Exalted Deeds|DMG|skip|3|Artifact - automate on request when one enters a campaign|book-of-exalted-deeds
 Artifacts|Wondrous Item · artifact · attunement|Book of Vile Darkness|DMG|skip|3|Artifact - automate on request when one enters a campaign|book-of-vile-darkness
-Rings|Ring · uncommon|Boon Companions' Bands|AU|build|3|Your save effect: the creature wearing the matching band automatically succeeds and takes no damage on a half-damage save (1/dawn, asked)|boon-companions-bands
+Rings|Ring · uncommon|Boon Companions' Bands|AU|done|3|Done in v0.42.0: Your save effect: the creature wearing the matching band automatically succeeds and takes no damage on a half-damage save (1/dawn, asked)|boon-companions-bands
 Wondrous items|Wondrous Item · uncommon|Boots of Elvenkind|SRD|done|2|Module rule (no Mass Apply): Advantage on Stealth (compendium effect was empty)|boots-of-elvenkind
 Wondrous items|Wondrous Item · common · attunement|Boots of False Tracks|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|boots-of-false-tracks
 Wondrous items|Wondrous Item · rare · attunement|Boots of Levitation|SRD|done|2|CGA item: casts the module's automated spells|boots-of-levitation
 Wondrous items|Wondrous Item · rare · attunement|Boots of Speed|SRD|done|1|Compendium Click Heels doubles Speed; module rule (no mass apply; works on the character's own item) adds Disadvantage on Opportunity Attacks against you (not yet seen in play)|boots-of-speed
 Wondrous items|Wondrous Item · uncommon · attunement|Boots of Striding and Springing|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|boots-of-striding-and-springing
-Wondrous items|Wondrous Item · uncommon · attunement|Boots of the Winding Path|EB|build|2|Bonus Action: next move is a 15-ft teleport to a space you occupied this turn|boots-of-the-winding-path
+Wondrous items|Wondrous Item · uncommon · attunement|Boots of the Winding Path|EB|done|2|Done in v0.42.0: Bonus Action: next move is a 15-ft teleport to a space you occupied this turn|boots-of-the-winding-path
 Wondrous items|Wondrous Item · uncommon · attunement|Boots of the Winterlands|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|boots-of-the-winterlands
 Wondrous items|Wondrous Item · rare|Bowl of Commanding Water Elementals|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|bowl-of-commanding-water-elementals
 Wondrous items|Wondrous Item · uncommon · attunement|Bracers of Archery|SRD|done|2|Checked in v0.24.0 - the compendium bracers work (+2 to ranged weapon damage); midi-qol's sample didn't add the +2 in testing|bracers-of-archery
@@ -86,22 +86,22 @@ Wondrous items|Wondrous Item · rare · attunement|Daern’s Instant Fortress|DM
 Magic weapons|Weapon · rare|Dagger of Venom|SRD|done|1|CGA item + module rule: the Poison Save rolls on the first hit while coated (compendium ran it on every hit)|dagger-of-venom
 Magic weapons|Weapon · very rare · attunement|Dancing Sword|SRD|skip|2|Attack with the sword as the Bonus Action (it uses your attack roll); the compendium summon is a template that only works once enchanted onto a sword|dancing-sword
 Wondrous items|Wondrous Item · common · attunement|Dark Shard Amulet|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|dark-shard-amulet
-Magic weapons|Weapon · rare · attunement|Dazzling Weapon|EB|build|1|+1 (on the item); Bonus Action light; Reaction after you're hit - spend a charge, attacker makes a DC 15 CON save or is Blinded until the end of its next turn (4 charges, 1d4 at dawn)|dazzling-weapon
+Magic weapons|Weapon · rare · attunement|Dazzling Weapon|EB|done|1|Done in v0.42.0: +1 (on the item); Bonus Action light; Reaction after you're hit - spend a charge, attacker makes a DC 15 CON save or is Blinded until the end of its next turn (4 charges, 1d4 at dawn)|dazzling-weapon
 Wondrous items|Wondrous Item · uncommon|Decanter of Endless Water|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|decanter-of-endless-water
 Wondrous items|Wondrous Item · uncommon|Deck of Illusions|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|deck-of-illusions
 Wondrous items|Wondrous Item · legendary|Deck of Many Things|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|deck-of-many-things
 Magic weapons|Weapon · legendary · attunement|Defender|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): first attack each turn asks how much of the +3 moves to AC until your next turn|defender
 Magic armor and shields|Armor · very rare · attunement|Demon Armor|SRD|done|2|Checked in v0.24.0 (data only) - compendium enchantment template; D&D Beyond armor carries its own effects. Not exercised in a test|demon-armor
 Artifacts|Wondrous Item · artifact · attunement|Demonomicon of Iggwilv|DMG|skip|3|Artifact - automate on request when one enters a campaign|demonomicon-of-iggwilv
-Staffs|Staff · legendary · attunement (sorcerer, warlock, wizard)|Diamond Staff|AU|build|3|+3 Quarterstaff (on the item); Arcana Advantage; light; spells by charges; Stunning Hit (2 charges, CON 17 or Stunned until the end of your next turn)|diamond-staff
+Staffs|Staff · legendary · attunement (sorcerer, warlock, wizard)|Diamond Staff|AU|done|3|Done in v0.42.0: +3 Quarterstaff (on the item); Arcana Advantage; light; spells by charges; Stunning Hit (2 charges, CON 17 or Stunned until the end of your next turn)|diamond-staff
 Wondrous items|Wondrous Item · common|Dictation Quill|AU|skip|3|Utility, narrative or DM-run - nothing to automate|dictation-quill
 Wondrous items|Wondrous Item · rare|Dimensional Shackles|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|dimensional-shackles
-Magic weapons|Weapon · uncommon|Dispelling Ammunition|AU|build|2|When it damages a target, spells of level 3 or lower on the target end (module); the ammunition then loses its magic|dispelling-ammunition
-Staffs|Staff · rare · attunement|Dissuader|AU|build|3|+1 Quarterstaff; Calm Emotions 1/dawn; Dissuading Aura (WIS 15 or Frightened); Repel Reaction (STR 15 or pushed 30 ft) - each 1/dawn|dissuader
+Magic weapons|Weapon · uncommon|Dispelling Ammunition|AU|done|2|Done in v0.42.0: When it damages a target, spells of level 3 or lower on the target end (module); the ammunition then loses its magic|dispelling-ammunition
+Staffs|Staff · rare · attunement|Dissuader|AU|done|3|Done in v0.42.0: +1 Quarterstaff; Calm Emotions 1/dawn; Dissuading Aura (WIS 15 or Frightened); Repel Reaction (STR 15 or pushed 30 ft) - each 1/dawn|dissuader
 Magic armor and shields|Armor · very rare · attunement|Dragon Scale Mail|SRD|done|2|Checked in v0.24.0 (data only) - compendium enchantment template; D&D Beyond armor carries its own effects. Not exercised in a test|dragon-scale-mail
 Magic weapons|Weapon · rare|Dragon Slayer|SRD|done|2|Checked in v0.24.0 - midi-qol's sample adds +3d6 vs Dragons (it adds its +1 to hit twice)|dragon-slayer
 Wondrous items|Wondrous Item · common|Dread Helm|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|dread-helm
-Wondrous items|Wondrous Item · rare · attunement|Dream Weaver|AU|build|3|Dream Wisdom: a d20 rolled after a Long Rest that can replace one D20 Test; Mind Wall: Advantage on INT/WIS/CHA saves while Unconscious|dream-weaver
+Wondrous items|Wondrous Item · rare · attunement|Dream Weaver|AU|done|3|Done in v0.42.0: Dream Wisdom: a d20 rolled after a Long Rest that can replace one D20 Test; Mind Wall: Advantage on INT/WIS/CHA saves while Unconscious|dream-weaver
 Wondrous items|Wondrous Item · uncommon|Driftglobe|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|driftglobe
 Wondrous items|Wondrous Item · uncommon|Dust of Disappearance|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|dust-of-disappearance
 Wondrous items|Wondrous Item · uncommon|Dust of Dryness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|dust-of-dryness
@@ -150,9 +150,9 @@ Magic armor and shields|Armor · rare|Glamoured Studded Leather|SRD|done|2|Check
 Wondrous items|Wondrous Item · uncommon · attunement|Gloves of Missile Snaring|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): Reaction when hit by a ranged/thrown weapon attack - reduce by 1d10 + DEX|gloves-of-missile-snaring
 Wondrous items|Wondrous Item · uncommon · attunement|Gloves of Swimming and Climbing|SRD|done|2|Module rule (no Mass Apply): Climb and Swim Speed equal to your Speed (compendium formula didn't evaluate); +5 Athletics from the item|gloves-of-swimming-and-climbing
 Wondrous items|Wondrous Item · uncommon|Gloves of Thievery|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|gloves-of-thievery
-Magic weapons|Weapon · uncommon|Goading Ammunition|AU|build|2|When it damages a target: DC 13 CHA save or no Reactions until the start of its next turn (module)|goading-ammunition
+Magic weapons|Weapon · uncommon|Goading Ammunition|AU|done|2|Done in v0.42.0: When it damages a target: DC 13 CHA save or no Reactions until the start of its next turn (module)|goading-ammunition
 Wondrous items|Wondrous Item · uncommon|Goggles of Night|SRD|done|3|Checked in v0.25.0 - the compendium goggles give Darkvision 60 ft; midi-qol's samples didn't change vision in testing|goggles-of-night
-Magic weapons|Weapon · legendary · attunement|Grave Reaper|AU|build|2|+2 Sickle (on the item); +2d8 Necrotic on a hit (module); Spirit Lantern cast 1/dawn (DC 17, five fragments)|grave-reaper
+Magic weapons|Weapon · legendary · attunement|Grave Reaper|AU|done|2|Done in v0.42.0: +2 Sickle (on the item); +2d8 Necrotic on a hit (module); Spirit Lantern cast 1/dawn (DC 17, five fragments)|grave-reaper
 Wondrous items|Wondrous Item · uncommon|Hag Eye|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hag-eye
 Magic weapons|Weapon · legendary · attunement|Hammer of Thunderbolts|SRD|done|2|Module rule (no Mass Apply): hurled hit - the target and every creature within 30 ft of it: DC 17 CON or Stunned; Giant's Bane with an attuned Belt/Gauntlets; Giant's Bane save no longer runs on every hit|hammer-of-thunderbolts
 Wondrous items|Wondrous Item · uncommon · attunement|Hat of Disguise|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-disguise
@@ -160,7 +160,7 @@ Wondrous items|Wondrous Item · very rare · attunement|Hat of Many Spells|SRD|s
 Wondrous items|Wondrous Item · common|Hat of Vermin|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-vermin
 Wondrous items|Wondrous Item · common · attunement|Hat of Wizardry|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-wizardry
 Wondrous items|Wondrous Item · uncommon · attunement|Headband of Intellect|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)|headband-of-intellect
-Wondrous items|Wondrous Item · uncommon|Helm of Awareness|EB|build|1|Advantage on Initiative rolls while worn (module passive)|helm-of-awareness
+Wondrous items|Wondrous Item · uncommon|Helm of Awareness|EB|done|1|Done in v0.42.0: Advantage on Initiative rolls while worn (module passive)|helm-of-awareness
 Wondrous items|Wondrous Item · very rare · attunement|Helm of Brilliance|SRD|done|3|CGA item: Fireball and Wall of Fire cast the module's versions; gem counts, Fire Opal flames and the explosion use the compendium activities|helm-of-brilliance
 Wondrous items|Wondrous Item · uncommon|Helm of Comprehending Languages|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-comprehending-languages
 Wondrous items|Wondrous Item · uncommon · attunement|Helm of Telepathy|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-telepathy
@@ -174,7 +174,7 @@ Wondrous items|Wondrous Item · common|Horn of Silent Alarm|DMG|skip|3|Utility, 
 Wondrous items|Wondrous Item · very rare|Horn of Valhalla|SRD|done|2|CGA item: summons Berserkers (compendium link was broken)|horn-of-valhalla
 Wondrous items|Wondrous Item · very rare|Horseshoes of a Zephyr|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|horseshoes-of-a-zephyr
 Wondrous items|Wondrous Item · rare|Horseshoes of Speed|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|horseshoes-of-speed
-Wondrous items|Wondrous Item · varies · attunement|Idol of Good Fortunes|AU|build|3|Augury 1/dawn (blemished), +1 AC (tarnished, module passive), Globe of Invulnerability 1/dawn (golden); coin conversion by hand|idol-of-good-fortunes
+Wondrous items|Wondrous Item · varies · attunement|Idol of Good Fortunes|AU|done|3|Done in v0.42.0: Augury 1/dawn (blemished), +1 AC (tarnished, module passive), Globe of Invulnerability 1/dawn (golden); coin conversion by hand|idol-of-good-fortunes
 Rods|Rod · uncommon|Immovable Rod|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|immovable-rod
 Wondrous items|Wondrous Item · common|Instrument of Illusions|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-illusions
 Wondrous items|Wondrous Item · common|Instrument of Scribing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-scribing
@@ -198,17 +198,17 @@ Wondrous items|Wondrous Item · rare|Iron Bands of Bilarro|DMG|verify|2|Not chec
 Wondrous items|Wondrous Item · legendary|Iron Flask|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|iron-flask
 Magic weapons|Weapon · uncommon|Javelin of Lightning|SRD|done|1|CGA item: attacks no longer pop up Lightning Bolt; Attack (Piercing) and Attack (Lightning) options|javelin-of-lightning
 Wondrous items|Wondrous Item · uncommon|Keoghtom’s Ointment|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it|keoghtoms-ointment
-Magic weapons|Weapon · varies · attunement|Keyholes Dagger|AU|build|3|+1/+2/+3 (on the item); weapon form changes by hand; very rare - reroll a missed attack 1/dawn (asked)|keyholes-dagger
+Magic weapons|Weapon · varies · attunement|Keyholes Dagger|AU|done|3|Done in v0.42.0: +1/+2/+3 (on the item); weapon form changes by hand; very rare - reroll a missed attack 1/dawn (asked)|keyholes-dagger
 Wondrous items|Wondrous Item · uncommon|Lantern of Revealing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|lantern-of-revealing
 Wondrous items|Wondrous Item · common|Lock of Trickery|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|lock-of-trickery
 Magic weapons|Weapon · legendary · attunement|Luck Blade|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): once per Long Rest, reroll a failed attack roll or save (asked when it fails). +1 saves and Wish come from the item|luck-blade
-Wondrous items|Wondrous Item · common|Lucky Foot|AU|build|2|When you roll a 1 on a save or check, the module offers to reroll it; the foot then disintegrates|lucky-foot
+Wondrous items|Wondrous Item · common|Lucky Foot|AU|done|2|Done in v0.42.0: When you roll a 1 on a save or check, the module offers to reroll it; the foot then disintegrates|lucky-foot
 Magic weapons|Weapon · very rare|Lute of Thunderous Thumping|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|lute-of-thunderous-thumping
 Magic weapons|Weapon · rare · attunement|Mace of Disruption|SRD|done|1|midi-qol sample works: +2d6 Radiant vs Fiends/Undead, destroy save at 25 HP or fewer|mace-of-disruption
 Magic weapons|Weapon · rare|Mace of Smiting|SRD|done|2|Module rule (no Mass Apply): a 20 adds whatever the compendium crit bonus is missing (+7, +14 vs Constructs) and destroys a Construct at 25 HP or fewer|mace-of-smiting
 Magic weapons|Weapon · rare · attunement|Mace of Terror|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol; module rule (no mass apply) stops its extra activity running after every attack|mace-of-terror
-Magic weapons|Weapon · rare|Mage Breaker|AU|build|2|+1 Dagger (on the item); a hit that damages a concentrating creature gives it Disadvantage on the Concentration save (module)|mage-breaker
-Wondrous items|Wondrous Item · rare|Mage's Manacle|AU|build|3|Magic action, 1/dawn: a Grappled or Incapacitated Large or smaller creature within 5 ft makes a DEX 15 save or is Restrained and bound for 8 hours|mages-manacle
+Magic weapons|Weapon · rare|Mage Breaker|AU|done|2|Done in v0.42.0: +1 Dagger (on the item); a hit that damages a concentrating creature gives it Disadvantage on the Concentration save (module)|mage-breaker
+Wondrous items|Wondrous Item · rare|Mage's Manacle|AU|done|3|Done in v0.42.0: Magic action, 1/dawn: a Grappled or Incapacitated Large or smaller creature within 5 ft makes a DEX 15 save or is Restrained and bound for 8 hours|mages-manacle
 Wondrous items|Wondrous Item · uncommon · attunement|Magewright's Gloves|AU|skip|3|Crafting time - by hand|magewrights-gloves
 Wondrous items|Wondrous Item · common · attunement|Manifold Tool|EB|skip|3|Tool form and proficiency - by hand|manifold-tool
 Wondrous items|Wondrous Item · rare · attunement|Mantle of Spell Resistance|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): Advantage on saves against spells (compendium item had no effect)|mantle-of-spell-resistance
@@ -217,20 +217,20 @@ Wondrous items|Wondrous Item · very rare|Manual of Gainful Exercise|SRD|skip|3|
 Wondrous items|Wondrous Item · very rare|Manual of Golems|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-golems
 Wondrous items|Wondrous Item · very rare|Manual of Quickness of Action|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-quickness-of-action
 Magic armor and shields|Armor · uncommon|Mariner’s Armor|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Armor property - check the effect|mariners-armor
-Magic weapons|Weapon · uncommon · attunement|Martialist's Quarterstaff|AU|build|2|4 charges: Searing Smite cast (2, DC 13), Throw (1, by hand), Trip (1: Advantage on the attack, STR 13 or Prone on a hit)|martialists-quarterstaff
+Magic weapons|Weapon · uncommon · attunement|Martialist's Quarterstaff|AU|done|2|Done in v0.42.0: 4 charges: Searing Smite cast (2, DC 13), Throw (1, by hand), Trip (1: Advantage on the attack, STR 13 or Prone on a hit)|martialists-quarterstaff
 Wondrous items|Wondrous Item · uncommon · attunement|Medallion of Thoughts|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|medallion-of-thoughts
-Rings|Ring · uncommon · attunement|Mind Sharpener|EB|build|1|4 charges: when you fail a Concentration save, the module offers your Reaction and a charge to succeed instead (1d4 at dawn)|mind-sharpener
+Rings|Ring · uncommon · attunement|Mind Sharpener|EB|done|1|Done in v0.42.0: 4 charges: when you fail a Concentration save, the module offers your Reaction and a charge to succeed instead (1d4 at dawn)|mind-sharpener
 Wondrous items|Wondrous Item · very rare|Mirror of Life Trapping|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mirror-of-life-trapping
 Magic armor and shields|Armor · uncommon|Mithral Armor|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mithral-armor
 Magic weapons|Weapon · common|Moon-Touched Sword|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|moon-touched-sword
 Magic weapons|Weapon · legendary · attunement|Moonblade|DMG|skip|3|Random runes and a sentient personality chosen by the DM - build a specific blade on request|moonblade
 Wondrous items|Wondrous Item · common|Mystery Key|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|mystery-key
-Magic weapons|Weapon · rare|Namer's Needle|AU|build|3|+1 Dagger (on the item); Identify Target WIS 15 by hand; Named Target - turn a hit into a Critical Hit 1/dawn (asked)|namers-needle
+Magic weapons|Weapon · rare|Namer's Needle|AU|done|3|Done in v0.42.0: +1 Dagger (on the item); Identify Target WIS 15 by hand; Named Target - turn a hit into a Critical Hit 1/dawn (asked)|namers-needle
 Wondrous items|Wondrous Item · uncommon · attunement|Nature’s Mantle|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|natures-mantle
 Wondrous items|Wondrous Item · uncommon · attunement|Necklace of Adaptation|SRD|done|2|Module rule (no Mass Apply): Advantage on saves vs gas/cloud effects (compendium item was empty)|necklace-of-adaptation
 Wondrous items|Wondrous Item · rare|Necklace of Fireballs|SRD|done|1|CGA item: Throw Beads = DC 15 Fireball save, +1d6 per extra bead (max 5 beads); Count Beads rolls 1d6 + 3|necklace-of-fireballs
 Wondrous items|Wondrous Item · rare · attunement|Necklace of Prayer Beads|SRD|done|2|CGA item: casts the module's automated spells|necklace-of-prayer-beads
-Wondrous items|Wondrous Item · varies · attunement (spellcaster)|Necklace of the Beastly Familiar|AU|build|3|Find Familiar 1/dawn; Beast Transformation of the familiar for 10 minutes (form by gemstone, temp HP = beast HP)|necklace-of-the-beastly-familiar
+Wondrous items|Wondrous Item · varies · attunement (spellcaster)|Necklace of the Beastly Familiar|AU|done|3|Done in v0.42.0: Find Familiar 1/dawn; Beast Transformation of the familiar for 10 minutes (form by gemstone, temp HP = beast HP)|necklace-of-the-beastly-familiar
 Magic weapons|Weapon · very rare · attunement|Nine Lives Stealer|SRD|done|2|Module rule (no Mass Apply): a 20 vs fewer than 100 HP - DC 15 CON or slain (Constructs/Undead immune), spends a charge; Life Stealing no longer runs on every hit|nine-lives-stealer
 Wondrous items|Wondrous Item · very rare|Nolzur’s Marvelous Pigments|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|nolzurs-marvelous-pigments
 Magic weapons|Weapon · very rare · attunement|Oathbow|SRD|done|2|Module rule (no Mass Apply): offers to swear the target as your sworn enemy; Advantage and +3d6 vs it, Disadvantage with other weapons while it lives|oathbow
@@ -240,7 +240,7 @@ Potions and oils|Potion · uncommon|Oil of Slipperiness|SRD|done|2|CGA item: cas
 Wondrous items|Wondrous Item · common|Orb of Direction|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|orb-of-direction
 Wondrous items|Wondrous Item · uncommon · attunement|Orb of Divination Detection|AU|skip|3|Detection glow and focus - by hand|orb-of-divination-detection
 Artifacts|Wondrous Item · artifact · attunement|Orb of Dragonkind|DMG|skip|3|Artifact - automate on request when one enters a campaign|orb-of-dragonkind
-Wondrous items|Wondrous Item · uncommon · attunement (sorcerer)|Orb of Sorcery|AU|build|2|Magic action, 1/dawn: regain up to 2 Sorcery Points (activity)|orb-of-sorcery
+Wondrous items|Wondrous Item · uncommon · attunement (sorcerer)|Orb of Sorcery|AU|done|2|Done in v0.42.0: Magic action, 1/dawn: regain up to 2 Sorcery Points (activity)|orb-of-sorcery
 Wondrous items|Wondrous Item · common|Orb of Time|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|orb-of-time
 Wondrous items|Wondrous Item · uncommon · attunement|Pearl of Power|SRD|done|2|Checked in v0.24.0 - the activity is a reminder; restore the spell slot by hand|pearl-of-power
 Wondrous items|Wondrous Item · common|Perfume of Bewitching|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|perfume-of-bewitching
@@ -261,7 +261,7 @@ Potions and oils|Potion · rare|Potion of Clairvoyance|SRD|skip|3|Utility, narra
 Potions and oils|Potion · common|Potion of Climbing|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|potion-of-climbing
 Potions and oils|Potion · common|Potion of Comprehension|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-comprehension
 Potions and oils|Potion · rare|Potion of Diminution|SRD|done|2|CGA item: casts the module's automated spells|potion-of-diminution
-Potions and oils|Potion · uncommon|Potion of Dragon's Breath|AU|build|2|Dragon's Breath effect for 1 minute (DC 13, no Concentration), damage type by the potion's color|potion-of-dragons-breath
+Potions and oils|Potion · uncommon|Potion of Dragon's Breath|AU|done|2|Done in v0.42.0: Dragon's Breath effect for 1 minute (DC 13, no Concentration), damage type by the potion's color|potion-of-dragons-breath
 Potions and oils|Potion · uncommon|Potion of Fire Breath|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Consumable or simple charge item - check it|potion-of-fire-breath
 Potions and oils|Potion · very rare|Potion of Flying|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|potion-of-flying
 Potions and oils|Potion · rare|Potion of Gaseous Form|SRD|done|2|CGA item: casts the module's automated spells|potion-of-gaseous-form
@@ -281,7 +281,7 @@ Potions and oils|Potion · uncommon|Potion of Tirelessness|AU|skip|3|No sleep, 4
 Potions and oils|Potion · very rare|Potion of Vitality|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|potion-of-vitality
 Potions and oils|Potion · uncommon|Potion of Water Breathing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-water-breathing
 Potions and oils|Potion · varies|Potions of Healing|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)|potion-of-healing
-Wondrous items|Wondrous Item · rare · attunement (spellcaster)|Prismatic Rune|AU|build|3|6 charges: change a damaging spell's damage to the rune's type chosen after a Long Rest (asked)|prismatic-rune
+Wondrous items|Wondrous Item · rare · attunement (spellcaster)|Prismatic Rune|AU|done|3|Done in v0.42.0: 6 charges: change a damaging spell's damage to the rune's type chosen after a Long Rest (asked)|prismatic-rune
 Wondrous items|Wondrous Item · common|Prosthetic Limb|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|prosthetic-limb
 Wondrous items|Wondrous Item · varies|Quaal’s Feather Token|DMG|skip|3|Listed by variant below|quaals-feather-token
 Wondrous items|Wondrous Item · uncommon|Quaal’s Feather Token (Anchor)|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quaals-feather-token-anchor
@@ -294,10 +294,10 @@ Magic weapons|Weapon · very rare · attunement|Quarterstaff of the Acrobat|SRD|
 Artifacts|Wondrous Item · artifact · attunement|Queen Ehlissa's Marvelous Nightingale|AU|skip|3|Artifact - DM-run|queen-ehlissas-marvelous-nightingale
 Wondrous items|Wondrous Item · uncommon|Quiver of Ehlonna|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|quiver-of-ehlonna
 Magic weapons|Weapon · uncommon · attunement|Repeating Shot|EB|skip|3|+1 ranged (on the item); no Loading, self-made ammunition by hand|repeating-shot
-Magic armor and shields|Armor · uncommon|Repulsion Shield|EB|build|1|+1 Shield (on the item); 4 charges: Reaction when a Large or smaller creature within 5 ft hits you in melee - push it 15 ft (1d4 at dawn)|repulsion-shield
+Magic armor and shields|Armor · uncommon|Repulsion Shield|EB|done|1|Done in v0.42.0: +1 Shield (on the item); 4 charges: Reaction when a Large or smaller creature within 5 ft hits you in melee - push it 15 ft (1d4 at dawn)|repulsion-shield
 Magic weapons|Weapon · uncommon|Returning Weapon|EB|skip|3|+1 (on the item); returns to your hand by hand|returning-weapon
 Rings|Ring · rare|Ring of Animal Influence|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-animal-influence
-Rings|Ring · uncommon · attunement|Ring of Dedicated Focus|AU|build|2|When you fail a Concentration save, the module offers to roll up to two Hit Dice and add them|ring-of-dedicated-focus
+Rings|Ring · uncommon · attunement|Ring of Dedicated Focus|AU|done|2|Done in v0.42.0: When you fail a Concentration save, the module offers to roll up to two Hit Dice and add them|ring-of-dedicated-focus
 Rings|Ring · legendary · attunement|Ring of Djinni Summoning|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-djinni-summoning
 Rings|Ring · legendary · attunement|Ring of Elemental Command|SRD|done|3|Module rule (no Mass Apply): Elemental Bane (Advantage vs Elementals, they have Disadvantage vs you) and the plane's benefits from the ring's name (air/earth/fire/water). Compulsion and spells stay manual|ring-of-elemental-command
 Rings|Ring · rare · attunement|Ring of Evasion|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): Reaction after a failed DEX save - spend a charge to succeed|ring-of-evasion
@@ -338,7 +338,7 @@ Wondrous items|Wondrous Item · common|Rope of Mending|DMG|skip|3|Utility, narra
 Wondrous items|Wondrous Item · common · attunement|Ruby of the War Mage|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ruby-of-the-war-mage
 Wondrous items|Wondrous Item · uncommon|Saddle of the Cavalier|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|saddle-of-the-cavalier
 Wondrous items|Wondrous Item · legendary · attunement|Scarab of Protection|SRD|done|3|Module rule (no Mass Apply): Advantage on saves vs spells; Reaction + charge to succeed on a failed save vs a Necromancy spell or an Undead. +1 AC from the item|scarab-of-protection
-Wondrous items|Wondrous Item · rare · attunement|Scholar's Anchoring Bangle|AU|build|2|Single-Minded Focus: Reaction to succeed on a failed Concentration save (1/dawn); Deep Knowledge Study minimum 10 by hand|scholars-anchoring-bangle
+Wondrous items|Wondrous Item · rare · attunement|Scholar's Anchoring Bangle|AU|done|2|Done in v0.42.0: Single-Minded Focus: Reaction to succeed on a failed Concentration save (1/dawn); Deep Knowledge Study minimum 10 by hand|scholars-anchoring-bangle
 Magic weapons|Weapon · very rare · attunement|Scimitar of Speed|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|scimitar-of-speed
 Scrolls|Scroll · rare|Scroll of Protection|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|scroll-of-protection
 Scrolls|Scroll · legendary|Scroll of Titan Summoning|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|scroll-of-titan-summoning
@@ -354,9 +354,9 @@ Wondrous items|Wondrous Item · uncommon · attunement|Slippers of Spider Climbi
 Magic armor and shields|Armor · common|Smoldering Armor|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|smoldering-armor
 Wondrous items|Wondrous Item · legendary|Sovereign Glue|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sovereign-glue
 Rings|Ring · common|Spell Component Ring|AU|skip|3|Material component storage - by hand|spell-component-ring
-Wondrous items|Wondrous Item · rare · attunement (spellcaster)|Spell Duelist's Trophy|AU|build|3|Dispelling Touch: after a melee spell attack hit, cast Dispel Magic on the target (1/dawn); Mage Hand cast; no Somatic components by hand|spell-duelists-trophy
+Wondrous items|Wondrous Item · rare · attunement (spellcaster)|Spell Duelist's Trophy|AU|done|3|Done in v0.42.0: Dispelling Touch: after a melee spell attack hit, cast Dispel Magic on the target (1/dawn); Mage Hand cast; no Somatic components by hand|spell-duelists-trophy
 Scrolls|Scroll · varies|Spell Scroll|SRD|done|1|Checked in v0.26.0 - a scroll made from a spell (dnd5e's Create Scroll) casts it, including the module's automated spells, and crumbles|spell-scroll
-Rings|Ring · uncommon · attunement (spellcaster)|Spell-Refueling Ring|EB|build|2|Bonus Action, 1/dawn: recover one expended spell slot of level 3 or lower (activity)|spell-refueling-ring
+Rings|Ring · uncommon · attunement (spellcaster)|Spell-Refueling Ring|EB|done|2|Done in v0.42.0: Bonus Action, 1/dawn: recover one expended spell slot of level 3 or lower (activity)|spell-refueling-ring
 Wondrous items|Wondrous Item · uncommon · attunement|Spell-Slinger's Puppet|AU|skip|3|Utility, narrative or DM-run - nothing to automate|spell-slingers-puppet
 Magic armor and shields|Armor · very rare · attunement|Spellguard Shield|SRD|done|2|Module rule (no Mass Apply): Advantage on saves vs spells and magical effects; spell attacks against you have Disadvantage|spellguard-shield
 Wondrous items|Wondrous Item · legendary|Sphere of Annihilation|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sphere-of-annihilation
@@ -369,11 +369,11 @@ Staffs|Staff · common|Staff of Flowers|DMG|skip|3|Utility, narrative or DM-run 
 Staffs|Staff · very rare · attunement|Staff of Frost|SRD|done|2|CGA item: casts the module's automated spells|staff-of-frost
 Staffs|Staff · rare · attunement|Staff of Healing|SRD|done|2|CGA item: casts the module's automated spells|staff-of-healing
 Staffs|Staff · very rare · attunement|Staff of Power|SRD|done|2|CGA item: casts the module's automated spells (Fireball/Lightning Bolt level 5); +2 AC/saves/spell attacks from the item|staff-of-power
-Staffs|Staff · varies · attunement (spellcaster)|Staff of Skulls|AU|build|3|Chill Touch cast and Intimidation Advantage (ominous); Reaction Disadvantage on an attack within 30 ft (chattering); 10d8 Necrotic CON 17 + Prone 1/dawn (pulverizing)|staff-of-skulls
+Staffs|Staff · varies · attunement (spellcaster)|Staff of Skulls|AU|done|3|Done in v0.42.0: Chill Touch cast and Intimidation Advantage (ominous); Reaction Disadvantage on an attack within 30 ft (chattering); 10d8 Necrotic CON 17 + Prone 1/dawn (pulverizing)|staff-of-skulls
 Staffs|Staff · very rare · attunement|Staff of Striking|SRD|done|2|Module rule (no Mass Apply): after a melee hit, spend up to 3 charges for +1d6 Force each (compendium charge damage no longer chains onto every attack)|staff-of-striking
 Staffs|Staff · rare · attunement|Staff of Swarming Insects|SRD|done|2|CGA item: casts the module's automated spells; its extra activity no longer runs after every staff attack|staff-of-swarming-insects
 Staffs|Staff · uncommon · attunement|Staff of the Adder|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs|staff-of-the-adder
-Staffs|Staff · very rare · attunement|Staff of the Lost|AU|build|3|+1 Quarterstaff; 3 charges: Maze (DC 18) or Teleport casts; curse by hand|staff-of-the-lost
+Staffs|Staff · very rare · attunement|Staff of the Lost|AU|done|3|Done in v0.42.0: +1 Quarterstaff; 3 charges: Maze (DC 18) or Teleport casts; curse by hand|staff-of-the-lost
 Staffs|Staff · legendary · attunement|Staff of the Magi|SRD|done|2|CGA item + module rule (no mass apply): casts the module's spells; Advantage on saves vs spells. Spell Absorption stays manual|staff-of-the-magi
 Staffs|Staff · uncommon · attunement|Staff of the Python|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|staff-of-the-python
 Staffs|Staff · rare · attunement|Staff of the Woodlands|SRD|done|2|CGA item: casts the module's automated spells; its extra activity no longer runs after every staff attack|staff-of-the-woodlands
@@ -403,8 +403,8 @@ Wondrous items|Wondrous Item · very rare|Tome of Clear Thought|SRD|skip|3|Utili
 Wondrous items|Wondrous Item · very rare|Tome of Leadership and Influence|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-leadership-and-influence
 Wondrous items|Wondrous Item · legendary · attunement|Tome of the Stilled Tongue|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-the-stilled-tongue
 Wondrous items|Wondrous Item · very rare|Tome of Understanding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-understanding
-Magic armor and shields|Armor · very rare · attunement|Tramontane Armor|AU|build|3|+1 armor (on the item); Grasping Tendrils (1/dawn, 1 minute): Bonus Action STR 15 save in 20 ft or Grappled and pulled 20 ft|tramontane-armor
-Wondrous items|Wondrous Item · legendary · attunement|Traveler's Pearl|AU|build|3|Teleport cast 1/dawn|travelers-pearl
+Magic armor and shields|Armor · very rare · attunement|Tramontane Armor|AU|done|3|Done in v0.42.0: +1 armor (on the item); Grasping Tendrils (1/dawn, 1 minute): Bonus Action STR 15 save in 20 ft or Grappled and pulled 20 ft|tramontane-armor
+Wondrous items|Wondrous Item · legendary · attunement|Traveler's Pearl|AU|done|3|Done in v0.42.0: Teleport cast 1/dawn|travelers-pearl
 Magic weapons|Weapon · uncommon · attunement|Trident of Fish Command|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|trident-of-fish-command
 Artifacts|Wondrous Item · artifact|Universal Pantograph|AU|skip|3|Artifact - DM-run|universal-pantograph
 Wondrous items|Wondrous Item · legendary|Universal Solvent|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|universal-solvent
@@ -426,13 +426,13 @@ Wands|Wand · rare · attunement|Wand of Paralysis|SRD|done|2|Checked in v0.24.0
 Wands|Wand · very rare · attunement|Wand of Polymorph|SRD|done|2|CGA item: casts the module's automated spells|wand-of-polymorph
 Wands|Wand · common|Wand of Pyrotechnics|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-pyrotechnics
 Wands|Wand · uncommon|Wand of Secrets|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-secrets
-Wands|Wand · rare · attunement|Wand of Slumber|AU|build|2|7 charges: Sleep (1, DC 15) or Catnap (3); regains 1d6+1 at dawn|wand-of-slumber
-Wands|Wand · rare|Wand of Teeth|AU|build|2|10 charges: 1-3 charges for a 30-ft cone, DEX 15 save, Xd8 Piercing + Poisoned until your next turn (half only on a success)|wand-of-teeth
+Wands|Wand · rare · attunement|Wand of Slumber|AU|done|2|Done in v0.42.0: 7 charges: Sleep (1, DC 15) or Catnap (3); regains 1d6+1 at dawn|wand-of-slumber
+Wands|Wand · rare|Wand of Teeth|AU|done|2|Done in v0.42.0: 10 charges: 1-3 charges for a 30-ft cone, DEX 15 save, Xd8 Piercing + Poisoned until your next turn (half only on a success)|wand-of-teeth
 Wands|Wand · very rare · attunement|Wand of the War Mage, +1, +2, or +3|SRD|done|1|Module rule (no Mass Apply): the compendium enchantment's +N didn't reach spell attacks - the module adds +N to spell attack rolls while held and attuned|1-wand-of-the-war-mage
 Wands|Wand · uncommon · attunement|Wand of Web|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|wand-of-web
 Wands|Wand · rare · attunement|Wand of Wonder|SRD|done|3|CGA item: Roll for Effect (d100), then the named activity; spells use the module's versions|wand-of-wonder
 Artifacts|Weapon · artifact · attunement|Wave|DMG|skip|3|Artifact - automate on request when one enters a campaign|wave
-Magic weapons|Weapon · varies · attunement|Wave-Swept Weapon|AU|build|3|+1/+2/+3 (on the item); water breathing + Swim 30 (aquatic), Fly 30 (ascendant) while held (module passive); brine and light by hand|wave-swept-weapon
+Magic weapons|Weapon · varies · attunement|Wave-Swept Weapon|AU|done|3|Done in v0.42.0: +1/+2/+3 (on the item); water breathing + Swim 30 (aquatic), Fly 30 (ascendant) while held (module passive); brine and light by hand|wave-swept-weapon
 Magic weapons|Weapon · uncommon · attunement|Weapon of Warning|SRD|done|3|Module rule (no Mass Apply): you and allies within 30 ft have Advantage on Initiative|weapon-of-warning
 Magic weapons|Weapon · very rare|Weapon, +1, +2, or +3|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)|weapon-1-2-or-3
 Wondrous items|Wondrous Item · legendary|Well of Many Worlds|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|well-of-many-worlds
@@ -440,7 +440,7 @@ Artifacts|Weapon · artifact · attunement|Whelm|DMG|skip|3|Artifact - automate 
 Wondrous items|Wondrous Item · uncommon|Wind Fan|SRD|done|2|CGA item: casts the module's automated spells|wind-fan
 Wondrous items|Wondrous Item · uncommon · attunement|Winged Boots|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|winged-boots
 Wondrous items|Wondrous Item · rare · attunement|Wings of Flying|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|wings-of-flying
-Wondrous items|Wondrous Item · very rare|Workshop Wrecker|AU|build|3|1 minute, 1/dawn: each creature in the area makes a DEX save on activation and each of your turns - DC and Bludgeoning damage by area size (asked)|workshop-wrecker
+Wondrous items|Wondrous Item · very rare|Workshop Wrecker|AU|done|3|Done in v0.42.0: 1 minute, 1/dawn: each creature in the area makes a DEX save on activation and each of your turns - DC and Bludgeoning damage by area size (asked)|workshop-wrecker
 Wondrous items|Wondrous Item · very rare|Wraps of Unarmed Power|DMG|verify|2|Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Passive or simple activated effect - check it|wraps-of-unarmed-power
 Weapons|1d4 Bludgeoning|Club|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|club
 Weapons|1d4 Piercing|Dagger|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|dagger

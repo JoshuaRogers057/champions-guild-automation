@@ -3,6 +3,33 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.42.0
+
+Magic items from the Artificer and Eberron books (AU/EB), priorities 1-3: 21 new CGA items (1.0.0, Mass Apply), the
+helper feat Tramontane Armor: Grasping Tendrils, and the new `scripts/item-rules-books.js`. All 39 rows to build on
+the item tracker are done. The other 22 are utility or DM-run items, marked skip.
+
+- **New CGA items**: Bellows of Strangulation, Boots of the Winding Path, Orb of Sorcery, Spell-Refueling Ring, Potion
+  of Dragon's Breath, Wand of Slumber, Wand of Teeth, Arcanist's Bestiary, Traveler's Pearl, Mage's Manacle, Blossom
+  Rod, Diamond Staff, Dissuader, Staff of the Lost, Martialist's Quarterstaff, Grave Reaper, Staff of Skulls, Idol of
+  Good Fortunes, Spell Duelist's Trophy, Necklace of the Beastly Familiar and Workshop Wrecker.
+- **Module rules (no Mass Apply)**:
+  - **Passives**: Helm of Awareness (Initiative Advantage), Idol of Good Fortunes (+1 AC), Wave-Swept Weapon (Swim or
+    Fly speed), Diamond Staff (Arcana) and Staff of Skulls (Intimidation). Dream Weaver: Mind Wall while Unconscious,
+    and a Dream Wisdom d20 rolled after a Long Rest.
+  - **Concentration**: Scholar's Anchoring Bangle, Mind Sharpener and Ring of Dedicated Focus each offer to save a
+    failed Concentration roll before midi ends the spell.
+  - **Reactions**: Dazzling Weapon (CON 15 or Blinded) and Repulsion Shield (push 15 ft).
+  - **On hit**: Grave Reaper (+2d8 Necrotic), Goading and Dispelling Ammunition, Mage Breaker (Disadvantage on the
+    Concentration save), Blood Amulet (+2d10 Necrotic), Martialist's Trip, Diamond Staff Stunning Hit, Spell Duelist's
+    Trophy Dispelling Touch, Namer's Needle crits and the Keyholes Dagger reroll.
+  - **Saves and checks**: Boon Companions' Bands (the matching wearer succeeds and takes no damage), and Lucky Foot
+    (reroll a 1).
+  - **Areas**: Dissuader's aura and Repel, Workshop Wrecker's pulse each turn, and Tramontane Armor's Grasping
+    Tendrils (pull 20 ft; the helper feat comes and goes with the attuned armor).
+  - **Prismatic Rune**: asks for a damage type after each Long Rest and changes a damaging spell to that type.
+- **Sockets**: a GM socket rolls a save for a creature the player doesn't own.
+
 ## 0.41.0
 
 Priority-3 class and subclass features for the Artificer and the book subclasses: 43 new CGA class features (1.0.0,

@@ -116,9 +116,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Arcanist's Bestiary",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Charm Monster cast 1/dawn (DC 15, Disadvantage for non-Humanoids); skill choice and Monster Primer by hand",
+   "note": "Done in v0.42.0: Charm Monster cast 1/dawn (DC 15, Disadvantage for non-Humanoids); skill choice and Monster Primer by hand",
    "identifier": "arcanists-bestiary"
   },
   {
@@ -276,9 +276,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Bellows of Strangulation",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "6 charges: CON 15 save or Incapacitated with repeat saves (one creature for 1, 30-ft cone for 3), Cloudkill cast (DC 17) for 5; regains 1d6+1 at dawn",
+   "note": "Done in v0.42.0: 6 charges: CON 15 save or Incapacitated with repeat saves (one creature for 1, 30-ft cone for 3), Cloudkill cast (DC 17) for 5; regains 1d6+1 at dawn",
    "identifier": "bellows-of-strangulation"
   },
   {
@@ -326,9 +326,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Blood Amulet",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "3 charges: after you deal damage, spend one for +2d10 Necrotic and a DC 15 CON save or 1 Exhaustion (asked)",
+   "note": "Done in v0.42.0: 3 charges: after you deal damage, spend one for +2d10 Necrotic and a DC 15 CON save or 1 Exhaustion (asked)",
    "identifier": "blood-amulet"
   },
   {
@@ -336,9 +336,9 @@
    "sub": "Rod · varies · attunement (spellcaster)",
    "name": "Blossom Rod",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Druidcraft / Plant Growth (budding), Insect Plague 1/dawn (flowering), 30-ft sleep pollen CON 17 or Unconscious 1/dawn (somniferous)",
+   "note": "Done in v0.42.0: Druidcraft / Plant Growth (budding), Insect Plague 1/dawn (flowering), 30-ft sleep pollen CON 17 or Unconscious 1/dawn (somniferous)",
    "identifier": "blossom-rod"
   },
   {
@@ -366,9 +366,9 @@
    "sub": "Ring · uncommon",
    "name": "Boon Companions' Bands",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Your save effect: the creature wearing the matching band automatically succeeds and takes no damage on a half-damage save (1/dawn, asked)",
+   "note": "Done in v0.42.0: Your save effect: the creature wearing the matching band automatically succeeds and takes no damage on a half-damage save (1/dawn, asked)",
    "identifier": "boon-companions-bands"
   },
   {
@@ -426,9 +426,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Boots of the Winding Path",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Bonus Action: next move is a 15-ft teleport to a space you occupied this turn",
+   "note": "Done in v0.42.0: Bonus Action: next move is a 15-ft teleport to a space you occupied this turn",
    "identifier": "boots-of-the-winding-path"
   },
   {
@@ -846,9 +846,9 @@
    "sub": "Weapon · rare · attunement",
    "name": "Dazzling Weapon",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+1 (on the item); Bonus Action light; Reaction after you're hit - spend a charge, attacker makes a DC 15 CON save or is Blinded until the end of its next turn (4 charges, 1d4 at dawn)",
+   "note": "Done in v0.42.0: +1 (on the item); Bonus Action light; Reaction after you're hit - spend a charge, attacker makes a DC 15 CON save or is Blinded until the end of its next turn (4 charges, 1d4 at dawn)",
    "identifier": "dazzling-weapon"
   },
   {
@@ -916,9 +916,9 @@
    "sub": "Staff · legendary · attunement (sorcerer, warlock, wizard)",
    "name": "Diamond Staff",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+3 Quarterstaff (on the item); Arcana Advantage; light; spells by charges; Stunning Hit (2 charges, CON 17 or Stunned until the end of your next turn)",
+   "note": "Done in v0.42.0: +3 Quarterstaff (on the item); Arcana Advantage; light; spells by charges; Stunning Hit (2 charges, CON 17 or Stunned until the end of your next turn)",
    "identifier": "diamond-staff"
   },
   {
@@ -946,9 +946,9 @@
    "sub": "Weapon · uncommon",
    "name": "Dispelling Ammunition",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "When it damages a target, spells of level 3 or lower on the target end (module); the ammunition then loses its magic",
+   "note": "Done in v0.42.0: When it damages a target, spells of level 3 or lower on the target end (module); the ammunition then loses its magic",
    "identifier": "dispelling-ammunition"
   },
   {
@@ -956,9 +956,9 @@
    "sub": "Staff · rare · attunement",
    "name": "Dissuader",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1 Quarterstaff; Calm Emotions 1/dawn; Dissuading Aura (WIS 15 or Frightened); Repel Reaction (STR 15 or pushed 30 ft) - each 1/dawn",
+   "note": "Done in v0.42.0: +1 Quarterstaff; Calm Emotions 1/dawn; Dissuading Aura (WIS 15 or Frightened); Repel Reaction (STR 15 or pushed 30 ft) - each 1/dawn",
    "identifier": "dissuader"
   },
   {
@@ -996,9 +996,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Dream Weaver",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Dream Wisdom: a d20 rolled after a Long Rest that can replace one D20 Test; Mind Wall: Advantage on INT/WIS/CHA saves while Unconscious",
+   "note": "Done in v0.42.0: Dream Wisdom: a d20 rolled after a Long Rest that can replace one D20 Test; Mind Wall: Advantage on INT/WIS/CHA saves while Unconscious",
    "identifier": "dream-weaver"
   },
   {
@@ -1486,9 +1486,9 @@
    "sub": "Weapon · uncommon",
    "name": "Goading Ammunition",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "When it damages a target: DC 13 CHA save or no Reactions until the start of its next turn (module)",
+   "note": "Done in v0.42.0: When it damages a target: DC 13 CHA save or no Reactions until the start of its next turn (module)",
    "identifier": "goading-ammunition"
   },
   {
@@ -1506,9 +1506,9 @@
    "sub": "Weapon · legendary · attunement",
    "name": "Grave Reaper",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+2 Sickle (on the item); +2d8 Necrotic on a hit (module); Spirit Lantern cast 1/dawn (DC 17, five fragments)",
+   "note": "Done in v0.42.0: +2 Sickle (on the item); +2d8 Necrotic on a hit (module); Spirit Lantern cast 1/dawn (DC 17, five fragments)",
    "identifier": "grave-reaper"
   },
   {
@@ -1586,9 +1586,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Helm of Awareness",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Advantage on Initiative rolls while worn (module passive)",
+   "note": "Done in v0.42.0: Advantage on Initiative rolls while worn (module passive)",
    "identifier": "helm-of-awareness"
   },
   {
@@ -1726,9 +1726,9 @@
    "sub": "Wondrous Item · varies · attunement",
    "name": "Idol of Good Fortunes",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Augury 1/dawn (blemished), +1 AC (tarnished, module passive), Globe of Invulnerability 1/dawn (golden); coin conversion by hand",
+   "note": "Done in v0.42.0: Augury 1/dawn (blemished), +1 AC (tarnished, module passive), Globe of Invulnerability 1/dawn (golden); coin conversion by hand",
    "identifier": "idol-of-good-fortunes"
   },
   {
@@ -1966,9 +1966,9 @@
    "sub": "Weapon · varies · attunement",
    "name": "Keyholes Dagger",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1/+2/+3 (on the item); weapon form changes by hand; very rare - reroll a missed attack 1/dawn (asked)",
+   "note": "Done in v0.42.0: +1/+2/+3 (on the item); weapon form changes by hand; very rare - reroll a missed attack 1/dawn (asked)",
    "identifier": "keyholes-dagger"
   },
   {
@@ -2006,9 +2006,9 @@
    "sub": "Wondrous Item · common",
    "name": "Lucky Foot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "When you roll a 1 on a save or check, the module offers to reroll it; the foot then disintegrates",
+   "note": "Done in v0.42.0: When you roll a 1 on a save or check, the module offers to reroll it; the foot then disintegrates",
    "identifier": "lucky-foot"
   },
   {
@@ -2056,9 +2056,9 @@
    "sub": "Weapon · rare",
    "name": "Mage Breaker",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+1 Dagger (on the item); a hit that damages a concentrating creature gives it Disadvantage on the Concentration save (module)",
+   "note": "Done in v0.42.0: +1 Dagger (on the item); a hit that damages a concentrating creature gives it Disadvantage on the Concentration save (module)",
    "identifier": "mage-breaker"
   },
   {
@@ -2066,9 +2066,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Mage's Manacle",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Magic action, 1/dawn: a Grappled or Incapacitated Large or smaller creature within 5 ft makes a DEX 15 save or is Restrained and bound for 8 hours",
+   "note": "Done in v0.42.0: Magic action, 1/dawn: a Grappled or Incapacitated Large or smaller creature within 5 ft makes a DEX 15 save or is Restrained and bound for 8 hours",
    "identifier": "mages-manacle"
   },
   {
@@ -2156,9 +2156,9 @@
    "sub": "Weapon · uncommon · attunement",
    "name": "Martialist's Quarterstaff",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "4 charges: Searing Smite cast (2, DC 13), Throw (1, by hand), Trip (1: Advantage on the attack, STR 13 or Prone on a hit)",
+   "note": "Done in v0.42.0: 4 charges: Searing Smite cast (2, DC 13), Throw (1, by hand), Trip (1: Advantage on the attack, STR 13 or Prone on a hit)",
    "identifier": "martialists-quarterstaff"
   },
   {
@@ -2176,9 +2176,9 @@
    "sub": "Ring · uncommon · attunement",
    "name": "Mind Sharpener",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "4 charges: when you fail a Concentration save, the module offers your Reaction and a charge to succeed instead (1d4 at dawn)",
+   "note": "Done in v0.42.0: 4 charges: when you fail a Concentration save, the module offers your Reaction and a charge to succeed instead (1d4 at dawn)",
    "identifier": "mind-sharpener"
   },
   {
@@ -2236,9 +2236,9 @@
    "sub": "Weapon · rare",
    "name": "Namer's Needle",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1 Dagger (on the item); Identify Target WIS 15 by hand; Named Target - turn a hit into a Critical Hit 1/dawn (asked)",
+   "note": "Done in v0.42.0: +1 Dagger (on the item); Identify Target WIS 15 by hand; Named Target - turn a hit into a Critical Hit 1/dawn (asked)",
    "identifier": "namers-needle"
   },
   {
@@ -2286,9 +2286,9 @@
    "sub": "Wondrous Item · varies · attunement (spellcaster)",
    "name": "Necklace of the Beastly Familiar",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Find Familiar 1/dawn; Beast Transformation of the familiar for 10 minutes (form by gemstone, temp HP = beast HP)",
+   "note": "Done in v0.42.0: Find Familiar 1/dawn; Beast Transformation of the familiar for 10 minutes (form by gemstone, temp HP = beast HP)",
    "identifier": "necklace-of-the-beastly-familiar"
   },
   {
@@ -2386,9 +2386,9 @@
    "sub": "Wondrous Item · uncommon · attunement (sorcerer)",
    "name": "Orb of Sorcery",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Magic action, 1/dawn: regain up to 2 Sorcery Points (activity)",
+   "note": "Done in v0.42.0: Magic action, 1/dawn: regain up to 2 Sorcery Points (activity)",
    "identifier": "orb-of-sorcery"
   },
   {
@@ -2596,9 +2596,9 @@
    "sub": "Potion · uncommon",
    "name": "Potion of Dragon's Breath",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Dragon's Breath effect for 1 minute (DC 13, no Concentration), damage type by the potion's color",
+   "note": "Done in v0.42.0: Dragon's Breath effect for 1 minute (DC 13, no Concentration), damage type by the potion's color",
    "identifier": "potion-of-dragons-breath"
   },
   {
@@ -2796,9 +2796,9 @@
    "sub": "Wondrous Item · rare · attunement (spellcaster)",
    "name": "Prismatic Rune",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "6 charges: change a damaging spell's damage to the rune's type chosen after a Long Rest (asked)",
+   "note": "Done in v0.42.0: 6 charges: change a damaging spell's damage to the rune's type chosen after a Long Rest (asked)",
    "identifier": "prismatic-rune"
   },
   {
@@ -2926,9 +2926,9 @@
    "sub": "Armor · uncommon",
    "name": "Repulsion Shield",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "+1 Shield (on the item); 4 charges: Reaction when a Large or smaller creature within 5 ft hits you in melee - push it 15 ft (1d4 at dawn)",
+   "note": "Done in v0.42.0: +1 Shield (on the item); 4 charges: Reaction when a Large or smaller creature within 5 ft hits you in melee - push it 15 ft (1d4 at dawn)",
    "identifier": "repulsion-shield"
   },
   {
@@ -2956,9 +2956,9 @@
    "sub": "Ring · uncommon · attunement",
    "name": "Ring of Dedicated Focus",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "When you fail a Concentration save, the module offers to roll up to two Hit Dice and add them",
+   "note": "Done in v0.42.0: When you fail a Concentration save, the module offers to roll up to two Hit Dice and add them",
    "identifier": "ring-of-dedicated-focus"
   },
   {
@@ -3366,9 +3366,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Scholar's Anchoring Bangle",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Single-Minded Focus: Reaction to succeed on a failed Concentration save (1/dawn); Deep Knowledge Study minimum 10 by hand",
+   "note": "Done in v0.42.0: Single-Minded Focus: Reaction to succeed on a failed Concentration save (1/dawn); Deep Knowledge Study minimum 10 by hand",
    "identifier": "scholars-anchoring-bangle"
   },
   {
@@ -3526,9 +3526,9 @@
    "sub": "Wondrous Item · rare · attunement (spellcaster)",
    "name": "Spell Duelist's Trophy",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Dispelling Touch: after a melee spell attack hit, cast Dispel Magic on the target (1/dawn); Mage Hand cast; no Somatic components by hand",
+   "note": "Done in v0.42.0: Dispelling Touch: after a melee spell attack hit, cast Dispel Magic on the target (1/dawn); Mage Hand cast; no Somatic components by hand",
    "identifier": "spell-duelists-trophy"
   },
   {
@@ -3546,9 +3546,9 @@
    "sub": "Ring · uncommon · attunement (spellcaster)",
    "name": "Spell-Refueling Ring",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Bonus Action, 1/dawn: recover one expended spell slot of level 3 or lower (activity)",
+   "note": "Done in v0.42.0: Bonus Action, 1/dawn: recover one expended spell slot of level 3 or lower (activity)",
    "identifier": "spell-refueling-ring"
   },
   {
@@ -3676,9 +3676,9 @@
    "sub": "Staff · varies · attunement (spellcaster)",
    "name": "Staff of Skulls",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Chill Touch cast and Intimidation Advantage (ominous); Reaction Disadvantage on an attack within 30 ft (chattering); 10d8 Necrotic CON 17 + Prone 1/dawn (pulverizing)",
+   "note": "Done in v0.42.0: Chill Touch cast and Intimidation Advantage (ominous); Reaction Disadvantage on an attack within 30 ft (chattering); 10d8 Necrotic CON 17 + Prone 1/dawn (pulverizing)",
    "identifier": "staff-of-skulls"
   },
   {
@@ -3716,9 +3716,9 @@
    "sub": "Staff · very rare · attunement",
    "name": "Staff of the Lost",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1 Quarterstaff; 3 charges: Maze (DC 18) or Teleport casts; curse by hand",
+   "note": "Done in v0.42.0: +1 Quarterstaff; 3 charges: Maze (DC 18) or Teleport casts; curse by hand",
    "identifier": "staff-of-the-lost"
   },
   {
@@ -4016,9 +4016,9 @@
    "sub": "Armor · very rare · attunement",
    "name": "Tramontane Armor",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1 armor (on the item); Grasping Tendrils (1/dawn, 1 minute): Bonus Action STR 15 save in 20 ft or Grappled and pulled 20 ft",
+   "note": "Done in v0.42.0: +1 armor (on the item); Grasping Tendrils (1/dawn, 1 minute): Bonus Action STR 15 save in 20 ft or Grappled and pulled 20 ft",
    "identifier": "tramontane-armor"
   },
   {
@@ -4026,9 +4026,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Traveler's Pearl",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Teleport cast 1/dawn",
+   "note": "Done in v0.42.0: Teleport cast 1/dawn",
    "identifier": "travelers-pearl"
   },
   {
@@ -4246,9 +4246,9 @@
    "sub": "Wand · rare · attunement",
    "name": "Wand of Slumber",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "7 charges: Sleep (1, DC 15) or Catnap (3); regains 1d6+1 at dawn",
+   "note": "Done in v0.42.0: 7 charges: Sleep (1, DC 15) or Catnap (3); regains 1d6+1 at dawn",
    "identifier": "wand-of-slumber"
   },
   {
@@ -4256,9 +4256,9 @@
    "sub": "Wand · rare",
    "name": "Wand of Teeth",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "10 charges: 1-3 charges for a 30-ft cone, DEX 15 save, Xd8 Piercing + Poisoned until your next turn (half only on a success)",
+   "note": "Done in v0.42.0: 10 charges: 1-3 charges for a 30-ft cone, DEX 15 save, Xd8 Piercing + Poisoned until your next turn (half only on a success)",
    "identifier": "wand-of-teeth"
   },
   {
@@ -4306,9 +4306,9 @@
    "sub": "Weapon · varies · attunement",
    "name": "Wave-Swept Weapon",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "+1/+2/+3 (on the item); water breathing + Swim 30 (aquatic), Fly 30 (ascendant) while held (module passive); brine and light by hand",
+   "note": "Done in v0.42.0: +1/+2/+3 (on the item); water breathing + Swim 30 (aquatic), Fly 30 (ascendant) while held (module passive); brine and light by hand",
    "identifier": "wave-swept-weapon"
   },
   {
@@ -4386,9 +4386,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Workshop Wrecker",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "1 minute, 1/dawn: each creature in the area makes a DEX save on activation and each of your turns - DC and Bludgeoning damage by area size (asked)",
+   "note": "Done in v0.42.0: 1 minute, 1/dawn: each creature in the area makes a DEX save on activation and each of your turns - DC and Bludgeoning damage by area size (asked)",
    "identifier": "workshop-wrecker"
   },
   {

@@ -1,0 +1,230 @@
+{
+  "type": "equipment",
+  "system": {
+    "type": {
+      "value": "wand",
+      "subtype": ""
+    },
+    "activities": {
+      "cgaIbWandSleep00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIbWandSleep00",
+        "type": "cast",
+        "name": "Sleep",
+        "img": "icons/weapons/wands/wand-carved-pink.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.dnd5e.spells24.Item.phbsplSleep00000",
+          "challenge": {
+            "override": true,
+            "save": 15,
+            "attack": null
+          },
+          "properties": [],
+          "spellbook": false,
+          "ability": "",
+          "level": null
+        }
+      },
+      "cgaIbWandCatna00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "3",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaIbWandCatna00",
+        "type": "cast",
+        "name": "Catnap",
+        "img": "icons/weapons/wands/wand-carved-pink.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgaSplCatnap0000",
+          "challenge": {
+            "override": false,
+            "save": null,
+            "attack": null
+          },
+          "properties": [],
+          "spellbook": false,
+          "ability": "",
+          "level": null
+        }
+      }
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "identifier": "wand-of-slumber",
+    "rarity": "rare",
+    "attunement": "required",
+    "attuned": false,
+    "equipped": false,
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> 7 charges (1d6+1 at dawn): cast Sleep (1 charge, DC 15) or Catnap (3 charges). On the last charge, roll 1d20: on a 1 it crumbles (by hand).</p>",
+      "chat": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "uses": {
+      "max": "7",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6+1"
+        }
+      ],
+      "autoDestroy": false
+    }
+  },
+  "effects": [],
+  "_id": "cgaIbWandSlumb00",
+  "name": "Wand of Slumber",
+  "img": "icons/weapons/wands/wand-carved-pink.webp",
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Sleep / Catnap casts."
+      }
+    }
+  }
+}
