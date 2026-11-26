@@ -410,9 +410,9 @@
    "group": "General",
    "name": "Conjuration Adept",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Persistent Conjuration: + ability modifier to Concentration saves for Conjuration spells",
+   "note": "CGA item + module rule: spellcasting modifier added to Concentration saves for a Conjuration spell; Additional Spells from the compendium",
    "identifier": "conjuration-adept"
   },
   {
@@ -455,18 +455,18 @@
    "group": "General",
    "name": "Divination Adept",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Prescient Intervention: Reaction, Advantage or Disadvantage on a D20 Test within 60 ft (1/LR, refreshed by casting Divination with a slot)",
+   "note": "CGA item + module rule: Prescient Intervention Reaction offered on saves and attacks within 60 ft when a second d20 can change the result (1/LR, refreshed by a slot Divination spell)",
    "identifier": "divination-adept"
   },
   {
    "group": "General",
    "name": "Dragonscarred",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Chosen Resistance from the sheet; Fearsome Power - Dragon's Terror as a Bonus Action after you deal damage (offered)",
+   "note": "CGA item + module rule: chosen Resistance (transfer effects); Fearsome Power offers Dragon's Terror as a Bonus Action after damage on your turn",
    "identifier": "dragonscarred"
   },
   {
@@ -653,18 +653,18 @@
    "group": "General",
    "name": "Lordly Resolve",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Standard Bearer: Bonus Action, up to three creatures can't be Charmed/Frightened for 1 minute (1/LR activity)",
+   "note": "CGA item + module rule: Standard Bearer activity (1/LR) - Charmed/Frightened immunity for 1 minute and the targets stand up",
    "identifier": "lordly-resolve"
   },
   {
    "group": "General",
    "name": "Love Bites",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Endearing Pain: Bonus Action after melee damage - Charmed until your next turn or it's damaged (1/SR, asked)",
+   "note": "CGA item + module rule: Endearing Pain Bonus Action Charm after melee damage, ends at the start of your next turn or when it takes damage (1/SR)",
    "identifier": "love-bites"
   },
   {
@@ -734,9 +734,9 @@
    "group": "General",
    "name": "Necromancy Adept",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Life Manipulation: casting Necromancy with a slot lets you roll up to two Hit Dice to heal total + slot level (asked)",
+   "note": "CGA item + module rule: Life Manipulation - up to two Hit Dice + slot level healing offered after a slot Necromancy spell",
    "identifier": "necromancy-adept"
   },
   {
@@ -752,9 +752,9 @@
    "group": "General",
    "name": "Order’s Resilience",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Stronger Together: you and an adjacent ally have Advantage on STR saves; Resurge by hand",
+   "note": "CGA item + module rule: Stronger Together - Advantage on STR saves for you and an adjacent ally; Resurge by hand",
    "identifier": "orders-resilience"
   },
   {
@@ -806,18 +806,18 @@
    "group": "General",
    "name": "Putrefy",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Necrosis: a creature taking your Necrotic damage is Poisoned until your next turn (1/SR, asked)",
+   "note": "CGA item + module rule: Necrosis - Poisoned until the start of your next turn after your Necrotic damage (1/SR)",
    "identifier": "putrefy"
   },
   {
    "group": "General",
    "name": "Rebuke",
    "source": "AB",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Radiant Strike: a Huge or smaller creature taking your Radiant damage is knocked Prone (1/SR, asked)",
+   "note": "CGA item + module rule: Radiant Strike - a Huge or smaller creature knocked Prone after your Radiant damage (1/SR)",
    "identifier": "rebuke"
   },
   {
@@ -950,9 +950,9 @@
    "group": "General",
    "name": "Spellfire Adept",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Fueled Spellfire: once per turn add up to two Hit Dice to a spell's Radiant damage; Searing Spellfire - your Radiant damage ignores Resistance",
+   "note": "CGA item + module rule: Fueled Spellfire Hit Dice added to Radiant spell damage (once per turn); Searing Spellfire ignores Radiant Resistance",
    "identifier": "spellfire-adept"
   },
   {
@@ -986,9 +986,9 @@
    "group": "General",
    "name": "Transmutation Adept",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Magical Augmentation: casting Transmutation with a slot gives +5 ft Speed per slot level this turn",
+   "note": "CGA item + module rule: +5 ft x slot level Speed until the end of the turn after a slot Transmutation spell on your turn",
    "identifier": "transmutation-adept"
   },
   {
@@ -1031,9 +1031,9 @@
    "group": "General",
    "name": "Zhentarim Tactics",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Retaliate: Reaction Opportunity Attack against a creature within 5 ft that hits you with a melee attack (asked); Versatile Merc by hand",
+   "note": "CGA item + module rule: Retaliate Reaction Opportunity Attack after a melee hit from within 5 ft; Versatile Merc by hand",
    "identifier": "zhentarim-tactics"
   },
   {
@@ -1139,9 +1139,9 @@
    "group": "Fighting Style",
    "name": "Warlike Familiar",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Battle Familiar 1/LR cast activity; Intercept Attack - familiar Reaction +PB AC to a creature within 5 ft that's hit (asked)",
+   "note": "CGA item + module rule: Battle Familiar cast activity (1/LR, no slot); Intercept Attack - the familiar's Reaction adds your PB to a nearby creature's AC",
    "identifier": "warlike-familiar"
   },
   {

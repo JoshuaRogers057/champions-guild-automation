@@ -52,13 +52,13 @@ General|Charger|PHB|done|2|Charge Attack: once per turn after a melee hit in the
 General|Chef|PHB|done|3|Bolstering Treats: PB treats, a Bonus Action to eat one for PB Temporary HP. Replenishing Meal (+1d8 when spending Hit Dice on a Short Rest) is manual
 General|Cloying Mists|AB|build|3|Grasping Mist: enemies in your Fog Cloud have -5 ft Speed; Fog Cloud from the sheet
 General|Cold Caster|FR|done|1|CGA item + module rule: Frostbite on the first Cold hit each turn (-1d4 on the next save before the end of your next turn); Ray of Frost from the compendium
-General|Conjuration Adept|AU|build|2|Persistent Conjuration: + ability modifier to Concentration saves for Conjuration spells
+General|Conjuration Adept|AU|done|2|CGA item + module rule: spellcasting modifier added to Concentration saves for a Conjuration spell; Additional Spells from the compendium
 General|Crossbow Expert|PHB|done|2|No Disadvantage on crossbow attacks with an enemy within 5 ft. Ignoring Loading and the Light-crossbow damage modifier are manual
 General|Crusher|PHB|done|2|Once per turn after a Bludgeoning hit, push the target 5 ft (no more than one size larger). Crit with Bludgeoning: attacks against the target have Advantage until the start of your next turn
 General|Defensive Duelist|PHB|done|1|Parry: Reaction when hit by a melee attack while holding a Finesse weapon, +PB AC against melee attacks until the start of your next turn
 General|Delicious Pain|AB|done|1|CGA item + module rule: Toughened Flesh Reaction offered after B/P/S damage (1/SR)
-General|Divination Adept|AU|build|2|Prescient Intervention: Reaction, Advantage or Disadvantage on a D20 Test within 60 ft (1/LR, refreshed by casting Divination with a slot)
-General|Dragonscarred|FR|build|2|Chosen Resistance from the sheet; Fearsome Power - Dragon's Terror as a Bonus Action after you deal damage (offered)
+General|Divination Adept|AU|done|2|CGA item + module rule: Prescient Intervention Reaction offered on saves and attacks within 60 ft when a second d20 can change the result (1/LR, refreshed by a slot Divination spell)
+General|Dragonscarred|FR|done|2|CGA item + module rule: chosen Resistance (transfer effects); Fearsome Power offers Dragon's Terror as a Bonus Action after damage on your turn
 General|Dual Wielder|PHB|done|3|dnd5e enhancedDualWielding flag lets non-Light one-handed melee weapons make the off-hand attack. Quick Draw is manual
 General|Durable|PHB|done|2|Advantage on Death Saving Throws; Speedy Recovery: Bonus Action, spend a Hit Die and heal the roll
 General|Elemental Adept|PHB|done|2|Choose Acid/Cold/Fire/Lightning/Thunder: your spells ignore Resistance to it and treat 1s on its damage dice as 2s (one activity or toggle per type)
@@ -79,8 +79,8 @@ General|Inspiring Leader|PHB|done|2|Bolstering Performance: after a Short or Lon
 General|Keen Mind|PHB|skip|3|Skill from the advancement; Study as a Bonus Action is manual
 General|Light Bringer|AB|build|3|Sun's Healing: Bonus Action spend a Hit Die to heal in sunlight (1/SR activity); Light from the sheet
 General|Lightly Armored|PHB|skip|3|Armor training from the advancement
-General|Lordly Resolve|FR|build|2|Standard Bearer: Bonus Action, up to three creatures can't be Charmed/Frightened for 1 minute (1/LR activity)
-General|Love Bites|AB|build|2|Endearing Pain: Bonus Action after melee damage - Charmed until your next turn or it's damaged (1/SR, asked)
+General|Lordly Resolve|FR|done|2|CGA item + module rule: Standard Bearer activity (1/LR) - Charmed/Frightened immunity for 1 minute and the targets stand up
+General|Love Bites|AB|done|2|CGA item + module rule: Endearing Pain Bonus Action Charm after melee damage, ends at the start of your next turn or when it takes damage (1/SR)
 General|Mage Slayer|PHB|done|1|Concentration Breaker: creatures you damage have Disadvantage on the Concentration save. Guarded Mind: once per Short/Long Rest, turn a failed INT/WIS/CHA save into a success (prompt after the failed save)
 General|Magic Connoisseur|AU|skip|3|Extra spells cast without a slot - from the sheet
 General|Martial Weapon Training|PHB|skip|3|Proficiency from the advancement
@@ -88,16 +88,16 @@ General|Medium Armor Master|PHB|done|3|Medium armor adds up to +3 DEX to AC when
 General|Moderately Armored|PHB|skip|3|Armor training from the advancement
 General|Mounted Combatant|PHB|skip|3|Mounted rules are DM-handled
 General|Mythal Touched|FR|build|3|Mythal Ward: Reaction when a spell attack hits you or you fail a save against a spell - roll the d20 table (PB/LR)
-General|Necromancy Adept|AU|build|2|Life Manipulation: casting Necromancy with a slot lets you roll up to two Hit Dice to heal total + slot level (asked)
+General|Necromancy Adept|AU|done|2|CGA item + module rule: Life Manipulation - up to two Hit Dice + slot level healing offered after a slot Necromancy spell
 General|Observant|PHB|skip|3|Skill from the advancement; Search as a Bonus Action is manual
-General|Order’s Resilience|FR|build|2|Stronger Together: you and an adjacent ally have Advantage on STR saves; Resurge by hand
+General|Order’s Resilience|FR|done|2|CGA item + module rule: Stronger Together - Advantage on STR saves for you and an adjacent ally; Resurge by hand
 General|Otherworldly Familiar|AU|build|3|Familiar gets the chosen Resistance; Phase Walk by hand
 General|Piercer|PHB|done|2|Once per turn on a Piercing hit, reroll one damage die (the lowest). Crit with Piercing: one extra damage die
 General|Poisoner|PHB|done|3|Poison damage you deal ignores Resistance. Brew Poison: Bonus Action to coat a weapon or ammunition for 1 minute; the next creature it damages makes a CON save (DC 8 + mod + PB) or takes 2d8 Poison and is Poisoned until the end of your next turn
 General|Polearm Master|PHB|done|1|Pole Strike: Bonus Action attack after the Attack action with a Quarterstaff, Spear or Heavy+Reach weapon (d4 Bludgeoning). Reactive Strike (Reaction attack when a creature enters your reach) stays a manual Reaction
 General|Purple Dragon Commandant|FR|done|1|CGA item + module rule: Encourage Ally temp HP activity (PB/LR); Last Stand Advantage while Bloodied
-General|Putrefy|AB|build|2|Necrosis: a creature taking your Necrotic damage is Poisoned until your next turn (1/SR, asked)
-General|Rebuke|AB|build|2|Radiant Strike: a Huge or smaller creature taking your Radiant damage is knocked Prone (1/SR, asked)
+General|Putrefy|AB|done|2|CGA item + module rule: Necrosis - Poisoned until the start of your next turn after your Necrotic damage (1/SR)
+General|Rebuke|AB|done|2|CGA item + module rule: Radiant Strike - a Huge or smaller creature knocked Prone after your Radiant damage (1/SR)
 General|Resilient|PHB|skip|2|Saving throw proficiency from the advancement
 General|Ritual Caster|PHB|skip|3|Ritual spells from the advancement; Quick Ritual is manual
 General|Sentinel|PHB|done|1|Halt: when you hit with an Opportunity Attack, the target's Speed becomes 0 for the turn. Guardian (Opportunity Attack when a creature within 5 ft Disengages or hits someone else) is a manual Reaction
@@ -112,16 +112,16 @@ General|Speedy|PHB|done|2|Speed +10 ft; Opportunity Attacks have Disadvantage ag
 General|Spell Resistant|AU|done|1|CGA item + module rule: chosen Resistance (transfer effects), Magic Resistant +1d6 offered on a failed save against a spell or magic item (PB/LR)
 General|Spell Sniper|PHB|done|2|Spell attacks ignore Half and Three-Quarters Cover and get no Disadvantage with an enemy within 5 ft; midi-qol doubles spell attack range (book: +60 ft)
 General|Spell Subterfuge|AU|build|3|Shrouding Spells: Bonus Action Dash + Hide after casting an action spell with a slot (uses = modifier/LR)
-General|Spellfire Adept|FR|build|2|Fueled Spellfire: once per turn add up to two Hit Dice to a spell's Radiant damage; Searing Spellfire - your Radiant damage ignores Resistance
+General|Spellfire Adept|FR|done|2|CGA item + module rule: Fueled Spellfire Hit Dice added to Radiant spell damage (once per turn); Searing Spellfire ignores Radiant Resistance
 General|Street Justice|FR|build|3|Headlock: allies have Advantage on attacks against a creature you're grappling
 General|Telekinetic|PHB|done|2|Telekinetic Shove: Bonus Action, one creature within 30 ft makes a STR save (DC 8 + mod + PB) or is moved 5 ft toward or away from you. Mage Hand comes from the advancement
 General|Telepathic|PHB|skip|3|Telepathy is roleplay; Detect Thoughts from the advancement (once per Long Rest without a slot)
-General|Transmutation Adept|AU|build|2|Magical Augmentation: casting Transmutation with a slot gives +5 ft Speed per slot level this turn
+General|Transmutation Adept|AU|done|2|CGA item + module rule: +5 ft x slot level Speed until the end of the turn after a slot Transmutation spell on your turn
 General|Treacherous Allure|AB|done|1|CGA item + module rule: Charm Person cast activity (1/LR, no slot); Inevitable Betrayal Advantage against Charmed creatures
 General|Vampire Touched|AB|skip|3|Extra spells cast without a slot - from the sheet
 General|War Caster|PHB|done|1|Advantage on Concentration saves. Reactive Spell and Somatic Components are manual
 General|Weapon Master|PHB|skip|3|Weapon Mastery choice from the advancement
-General|Zhentarim Tactics|FR|build|2|Retaliate: Reaction Opportunity Attack against a creature within 5 ft that hits you with a melee attack (asked); Versatile Merc by hand
+General|Zhentarim Tactics|FR|done|2|CGA item + module rule: Retaliate Reaction Opportunity Attack after a melee hit from within 5 ft; Versatile Merc by hand
 Fighting Style|Arcane Warrior|AU|skip|3|Two Wizard cantrips - from the sheet
 Fighting Style|Archery|SRD|done|1|Compendium item checked in the test world: +2 to ranged weapon attack rolls
 Fighting Style|Blind Fighting|PHB|done|2|Blindsight 10 ft
@@ -133,7 +133,7 @@ Fighting Style|Protection|PHB|done|2|Reaction when a creature attacks a target w
 Fighting Style|Thrown Weapon Fighting|PHB|done|2|+2 damage on ranged attacks with a Thrown weapon
 Fighting Style|Two-Weapon Fighting|SRD|done|1|Add your ability modifier to the damage of the Light-property extra attack (dnd5e's off-hand attack mode leaves it out)
 Fighting Style|Unarmed Fighting|PHB|done|2|Unarmed Strike deals 1d6 + STR Bludgeoning (1d8 with no weapons or Shield); at the start of your turn, 1d4 Bludgeoning to one creature you are grappling
-Fighting Style|Warlike Familiar|AU|build|2|Battle Familiar 1/LR cast activity; Intercept Attack - familiar Reaction +PB AC to a creature within 5 ft that's hit (asked)
+Fighting Style|Warlike Familiar|AU|done|2|CGA item + module rule: Battle Familiar cast activity (1/LR, no slot); Intercept Attack - the familiar's Reaction adds your PB to a nearby creature's AC
 Epic Boon|Boon of Blazing Dawn|AB|build|3|Radiant Immunity; Blazing Strike (weapon damage can be Radiant); Burst of Sunlight light
 Epic Boon|Boon of Bloodshed|FR|build|3|Killer's Fortune (Advantage on your next attack after an enemy drops to 0); Power from Pain (+PB damage once per turn while Bloodied)
 Epic Boon|Boon of Bountiful Health|FR|build|3|+5 to temp HP you gain; Hit Point Dice heal their maximum

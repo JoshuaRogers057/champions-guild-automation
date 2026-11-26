@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtZhentTactic",
+  "name": "Zhentarim Tactics",
+  "type": "feat",
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Retaliate:</strong> immediately after a creature within 5 ft hits you with a melee attack, the module offers your Reaction for an Opportunity Attack against it with your equipped melee weapon. <strong>Versatile Merc:</strong> after a Long Rest, set Expertise in one proficient skill on the sheet (by hand).</p>",
+      "chat": ""
+    },
+    "identifier": "zhentarim-tactics",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Zhentarim Ruffian",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Retaliate Opportunity Attack offered by the module after a melee hit."
+      }
+    }
+  }
+}

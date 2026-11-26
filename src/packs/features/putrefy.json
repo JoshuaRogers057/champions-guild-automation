@@ -1,0 +1,56 @@
+{
+  "_id": "cgaFtPutrefy0000",
+  "name": "Putrefy",
+  "type": "feat",
+  "img": "icons/magic/unholy/orb-glowing-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Necrosis:</strong> when you deal Necrotic damage, the module offers to give one creature that took it the Poisoned condition until the start of your next turn. Once per Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "identifier": "putrefy",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Necrosis offered by the module after Necrotic damage (1/SR)."
+      }
+    }
+  }
+}

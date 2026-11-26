@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtNecroAdept0",
+  "name": "Necromancy Adept",
+  "type": "feat",
+  "img": "icons/magic/unholy/hand-claw-glow-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Additional Spells:</strong> Inflict Wounds, Ray of Enfeeblement, Vampiric Touch, Blight and Raise Dead are always prepared once you have slots of that level (add them from the compendium). <strong>Life Manipulation:</strong> when you cast a Necromancy spell with a slot, the module offers to roll up to two of your unspent Hit Point Dice; you regain the total + the slot level and those dice are spent.</p>",
+      "chat": ""
+    },
+    "identifier": "necromancy-adept",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Spellcasting or Pact Magic Feature",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Life Manipulation healing offered by the module after a slot Necromancy spell."
+      }
+    }
+  }
+}

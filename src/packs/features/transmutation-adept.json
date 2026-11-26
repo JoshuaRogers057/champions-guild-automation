@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtTransAdept0",
+  "name": "Transmutation Adept",
+  "type": "feat",
+  "img": "icons/magic/movement/trail-streak-impact-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Additional Spells:</strong> Jump, Spider Climb, Slow, Polymorph and Animate Objects are always prepared once you have slots of that level (add them from the compendium). <strong>Magical Augmentation:</strong> when you cast a Transmutation spell with a slot on your turn, the module raises your Speeds by 5 ft x the slot level until the end of the turn.</p>",
+      "chat": ""
+    },
+    "identifier": "transmutation-adept",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Spellcasting or Pact Magic Feature",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Magical Augmentation Speed effect added by the module after a slot Transmutation spell."
+      }
+    }
+  }
+}

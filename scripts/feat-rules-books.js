@@ -19,31 +19,31 @@ import { canReact, useReaction, say, tokenOf, creatureType, ITEM_TOGGLES, wearsA
 import { feat, prof, usesLeft, spend } from "./background-feats.js";
 
 const asGM = (fn, data) => MidiQOL.socket().executeAsGM(fn, data).catch((err) => console.warn(`${MODULE_ID} | ${fn} failed`, err));
-async function addEffect(actor, effect) {
+export async function addEffect(actor, effect) {
   try { if (actor.isOwner) return await actor.createEmbeddedDocuments("ActiveEffect", [effect]); } catch (err) {}
   return asGM("createEffects", { actorUuid: actor.uuid, effects: [effect] });
 }
-async function updateActor(actor, updates) {
+export async function updateActor(actor, updates) {
   try { if (actor.isOwner) return await actor.update(updates); } catch (err) {}
   return asGM("updateActor", { actorUuid: actor.uuid, updates });
 }
-const hpOf = (a) => a?.system?.attributes?.hp ?? {};
+export const hpOf = (a) => a?.system?.attributes?.hp ?? {};
 export const isBloodied = (a) => { const hp = hpOf(a); const max = Number(hp.effectiveMax ?? hp.max ?? 0); return max > 0 && Number(hp.value ?? 0) > 0 && Number(hp.value) <= max / 2; };
-const living = (a) => !/construct|undead/.test(creatureType(a));
+export const living = (a) => !/construct|undead/.test(creatureType(a));
 const isMagical = (item) => item?.type === "spell" || !!item?.system?.properties?.has?.("mgc");
-const castLevel = (wf) => Number(wf?.castData?.castLevel ?? wf?.spellLevel ?? wf?.item?.system?.level) || 0;
-const slotCast = (wf) => wf?.item?.type === "spell" && Number(wf.item.system.level ?? 0) >= 1 && castLevel(wf) >= 1 && wf.activity?.consumption?.spellSlot !== false;
-const damageTypes = (wf) => new Set((wf?.damageRolls ?? []).flatMap((r) => [r.options?.type, ...(r.options?.types ?? [])]).filter(Boolean));
+export const castLevel = (wf) => Number(wf?.castData?.castLevel ?? wf?.spellLevel ?? wf?.item?.system?.level) || 0;
+export const slotCast = (wf) => wf?.item?.type === "spell" && Number(wf.item.system.level ?? 0) >= 1 && castLevel(wf) >= 1 && wf.activity?.consumption?.spellSlot !== false;
+export const damageTypes = (wf) => new Set((wf?.damageRolls ?? []).flatMap((r) => [r.options?.type, ...(r.options?.types ?? [])]).filter(Boolean));
 // Hit Point Dice: classes with unspent dice, largest first.
-const hitDieClasses = (a) => (a?.itemTypes?.class ?? []).filter((c) => Number(c.system.hd?.value ?? 0) > 0)
+export const hitDieClasses = (a) => (a?.itemTypes?.class ?? []).filter((c) => Number(c.system.hd?.value ?? 0) > 0)
   .sort((x, y) => Number(String(y.system.hd.denomination).slice(1)) - Number(String(x.system.hd.denomination).slice(1)));
-async function spendHitDie(cls) {
+export async function spendHitDie(cls) {
   const upd = { "system.hd.spent": Number(cls.system.hd.spent ?? 0) + 1 };
   try { await cls.update(upd); } catch (err) { await asGM("updateItems", { actorUuid: cls.actor.uuid, updates: [{ _id: cls.id, ...upd }] }); }
 }
 const once = new Map(); // `${rule}:${actor uuid}` -> turn key
-const usedThisTurn = (rule, actor) => once.get(`${rule}:${actor.uuid}`) === turnKey();
-const markTurn = (rule, actor) => once.set(`${rule}:${actor.uuid}`, turnKey());
+export const usedThisTurn = (rule, actor) => once.get(`${rule}:${actor.uuid}`) === turnKey();
+export const markTurn = (rule, actor) => once.set(`${rule}:${actor.uuid}`, turnKey());
 // "Until the end of your next turn": dnd5e 6 ends a sourceEnd effect at the end of its source's next turn.
 const untilSourceTurnEnd = { value: null, units: "rounds", expiry: "sourceEnd", expired: false };
 

@@ -1,0 +1,232 @@
+{
+  "_id": "cgaFtDragonscar0",
+  "name": "Dragonscarred",
+  "type": "feat",
+  "img": "icons/creatures/reptiles/dragon-head-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Damage Resistance:</strong> Acid, Cold, Fire, Lightning or Poison - the Fire effect is on; switch to the type you chose on the Effects tab. <strong>Fearsome Power:</strong> when you deal damage with the Attack or Magic action on your turn, the module offers Dragon's Terror (your Cult of the Dragon Initiate feat) as a Bonus Action that turn.</p>",
+      "chat": ""
+    },
+    "identifier": "dragonscarred",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Cult of the Dragon Initiate",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaDragScarRes00",
+      "name": "Damage Resistance (Acid)",
+      "img": "icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": true,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    },
+    {
+      "_id": "cgaDragScarRes01",
+      "name": "Damage Resistance (Cold)",
+      "img": "icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": true,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    },
+    {
+      "_id": "cgaDragScarRes02",
+      "name": "Damage Resistance (Fire)",
+      "img": "icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    },
+    {
+      "_id": "cgaDragScarRes03",
+      "name": "Damage Resistance (Lightning)",
+      "img": "icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": true,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    },
+    {
+      "_id": "cgaDragScarRes04",
+      "name": "Damage Resistance (Poison)",
+      "img": "icons/magic/defensive/shield-barrier-glowing-triangle-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": true,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Chosen Resistance as transfer effects; Fearsome Power offers the Cult of the Dragon Initiate's Dragon's Terror after damage on your turn."
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "cgaFtLoveBites00",
+  "name": "Love Bites",
+  "type": "feat",
+  "img": "icons/magic/life/heart-glowing-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Endearing Pain:</strong> immediately after you damage a creature with a Melee weapon or an Unarmed Strike, the module offers your Bonus Action: the target is Charmed until the start of your next turn or until it takes damage. Once per Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "identifier": "love-bites",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Endearing Pain offered by the module after melee damage (1/SR)."
+      }
+    }
+  }
+}

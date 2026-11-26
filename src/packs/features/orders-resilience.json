@@ -1,0 +1,51 @@
+{
+  "_id": "cgaFtOrdersResil",
+  "name": "Order’s Resilience",
+  "type": "feat",
+  "img": "icons/skills/melee/shield-block-bash-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Stronger Together:</strong> while you're within 5 ft of an ally that isn't Incapacitated (and you aren't Incapacitated), you and that ally have Advantage on Strength saves - the module adds it. <strong>Resurge:</strong> standing up from Prone costs only 5 ft (by hand).</p>",
+      "chat": ""
+    },
+    "identifier": "orders-resilience",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Tyro of the Gauntlet",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Stronger Together Advantage on STR saves by the module."
+      }
+    }
+  }
+}

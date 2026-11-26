@@ -1,0 +1,88 @@
+{
+  "_id": "cgaFtSpellfireAd",
+  "name": "Spellfire Adept",
+  "type": "feat",
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Fueled Spellfire:</strong> once per turn when a spell you cast deals Radiant damage, the module offers to roll up to two Hit Point Dice and add them to the Radiant damage (those dice are spent). <strong>Searing Spellfire:</strong> your Radiant damage ignores Resistance (passive effect).</p>",
+      "chat": ""
+    },
+    "identifier": "spellfire-adept",
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "Level 4+, Spellfire Spark or Spellcasting or Pact Magic Feature",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaSpfAdeptSearF",
+      "name": "Searing Spellfire",
+      "img": "icons/magic/fire/flame-burning-skull-orange.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.idr.value",
+            "value": "radiant",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Fueled Spellfire offered by the module; Searing Spellfire as an ignore-Resistance effect."
+      }
+    }
+  }
+}
