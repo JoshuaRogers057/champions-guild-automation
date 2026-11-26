@@ -1,0 +1,159 @@
+{
+  "_id": "cgaFtTyroGauntl0",
+  "name": "Tyro of the Gauntlet",
+  "type": "feat",
+  "img": "icons/skills/melee/shield-block-gray-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Stand as One:</strong> when an ally within 5 ft (not Incapacitated) is pushed or pulled, the module offers your Reaction to keep it in place. <strong>Vigilant:</strong> when you take the Ready action, use the activity - the next attack roll against you has Disadvantage before the start of your next turn.</p>",
+      "chat": ""
+    },
+    "identifier": "tyro-of-the-gauntlet",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaTyroReadyAct0": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaTyroVigilFx00"
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaTyroReadyAct0",
+        "type": "utility",
+        "name": "Ready (Vigilant)",
+        "img": "icons/skills/melee/shield-block-gray-orange.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Ready action",
+          "override": false
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaTyroVigilFx00",
+      "name": "Vigilant (Ready)",
+      "img": "icons/skills/melee/shield-block-gray-orange.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.grants.disadvantage.attack.all",
+            "value": "1",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [
+            "isAttacked",
+            "turnStart"
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Vigilant activity on Ready; Stand as One Reaction offered by the module on forced movement."
+      }
+    }
+  }
+}

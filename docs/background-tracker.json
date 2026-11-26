@@ -726,9 +726,9 @@
    "sub": "Arcana Unleashed",
    "name": "Arcane Artist",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Inspiring Magic: casting an Illusion spell gives an ally Heroic Inspiration (1/LR)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Inspiring Magic - after you cast an Illusion spell, choose an ally within 30 ft for Heroic Inspiration (1/LR); Minor Illusion from the sheet",
    "identifier": "arcane-artist"
   },
   {
@@ -836,9 +836,9 @@
    "sub": "Arcana Unleashed",
    "name": "Familiar Friend",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Fortified Familiar (+2x level HP) and Helpful Friend (Advantage on proficient checks with the familiar adjacent, PB/LR); Find Familiar from the sheet",
+   "note": "CGA item + module rule (no mass apply; works on the character's own feat): Find Familiar cast activity (1/LR, no slot); Fortified Familiar adds 2 x level HP when the familiar appears; Helpful Friend gives Advantage on proficient skill checks with the familiar within 5 ft (PB/LR, spent only when used)",
    "identifier": "familiar-friend"
   },
   {
@@ -1056,9 +1056,9 @@
    "sub": "Origin feat",
    "name": "Sharp Eye",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Advantage on a Search/Study check (PB/LR; not spent on a failure)",
+   "note": "CGA item: activity gives Advantage on your next ability check (PB/LR); give the use back on the sheet if the check fails",
    "identifier": "sharp-eye"
   },
   {
@@ -1096,9 +1096,9 @@
    "sub": "Astarion’s Book of Hungers",
    "name": "Tireless Reveler",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Gain Heroic Inspiration when an ally within 60 ft spends theirs (PB/SR)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): when an ally within 60 ft spends Heroic Inspiration, you're offered it if you lack it (PB/Short Rest)",
    "identifier": "tireless-reveler"
   },
   {
@@ -1126,9 +1126,9 @@
    "sub": "Forgotten Realms: Heroes of Faerûn",
    "name": "Tyro of the Gauntlet",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 3,
-   "note": "Stand as One (Reaction: an ally isn't pushed/pulled); Vigilant (after Ready, next attack vs you has Disadvantage)",
+   "note": "CGA item + module rule (no mass apply; works on the character's own feat): Stand as One - Reaction undoes a push or pull (forced movement) of an ally within 5 ft; Vigilant - Ready activity, the next attack against you has Disadvantage",
    "identifier": "tyro-of-the-gauntlet"
   },
   {
