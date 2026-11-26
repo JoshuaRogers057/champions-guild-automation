@@ -3,7 +3,7 @@
 // identifier or name, so a D&D Beyond or hand-made feat works with no Mass Apply.
 //  - Add to a failed save (Reaction, asked): Arcane Omens (+1d4, you or a creature within 30 ft, PB/LR), Aberrant
 //    Dragonmark (+1d4 to a CON save, 1/LR), Transmuted Anatomy (+1d4 to a CON save, PB/LR), Survivor's Steel Yourself
-//    (+PB vs Charmed/Frightened, 1/LR).
+//    (+PB vs Charmed/Frightened, 1/LR), Symbiotic Being (spend your largest Hit Die and add it, PB/LR).
 //  - Survivor's Hypervigilance: an Initiative d20 of 9 or lower is rerolled.
 //  - Gathered Whispers' Unearthly Scream: Reaction +PB AC against a hit (PB/LR).
 //  - Spellfire Spark: once per turn, damage from a spell or magic item is reduced by 1d4.
@@ -15,14 +15,14 @@
 import { MODULE_ID, askOwner, edgeDistance, isIncapacitated, turnKey, reduceDamage } from "./main.js";
 import { isMagicItem, canReact, useReaction, say, tokenOf, isGM } from "./item-rules.js";
 
-const feat = (actor, ident) => actor?.items?.find((i) => i.type === "feat" && isMagicItem(i, ident));
-const prof = (actor) => Number(actor?.system?.attributes?.prof ?? 2);
+export const feat = (actor, ident) => actor?.items?.find((i) => i.type === "feat" && isMagicItem(i, ident));
+export const prof = (actor) => Number(actor?.system?.attributes?.prof ?? 2);
 // Uses: the item's own, or a module counter (max, reset period "lr" / "sr").
-function usesLeft(item, max, period = "lr") {
+export function usesLeft(item, max, period = "lr") {
   if (item?.system?.uses?.max) return Number(item.system.uses.value ?? 0);
   return Math.max(0, max - Number(item?.getFlag("world", "cgaUsed") ?? 0));
 }
-async function spend(item, period = "lr") {
+export async function spend(item, period = "lr") {
   try {
     if (item.system.uses?.max) return await item.update({ "system.uses.spent": Number(item.system.uses.spent ?? 0) + 1 });
     await item.update({ "flags.world.cgaUsed": Number(item.getFlag("world", "cgaUsed") ?? 0) + 1, "flags.world.cgaUsedPeriod": period });
@@ -46,14 +46,21 @@ const SAVE_BONUSES = [
   { ident: "aberrant-dragonmark", label: "Aberrant Fortitude", ability: "con", die: () => "1d4", max: () => 1 },
   { ident: "transmuted-anatomy", label: "Resilient Anatomy", ability: "con", die: () => "1d4", max: (a) => prof(a) },
   { ident: "survivor", label: "Steel Yourself", statuses: ["charmed", "frightened"], die: (a) => String(prof(a)), max: () => 1 },
-  { ident: "arcane-omens", label: "Helpful Premonition", range: 30, die: () => "1d4", max: (a) => prof(a) }
+  { ident: "arcane-omens", label: "Helpful Premonition", range: 30, die: () => "1d4", max: (a) => prof(a) },
+  { ident: "symbiotic-being", label: "Sustained Symbiosis", die: (a) => { const c = bestHitDie(a); return c ? `1${c.system.hd.denomination}` : null; }, max: (a) => prof(a),
+    pay: async (a) => { const c = bestHitDie(a); if (c) await c.update({ "system.hd.spent": Number(c.system.hd.spent ?? 0) + 1 }).catch(() => {}); } }
 ];
-function saveStatuses(workflow) {
+// The class with the largest unspent Hit Die (Sustained Symbiosis).
+function bestHitDie(actor) {
+  return actor.itemTypes?.class?.filter((c) => Number(c.system.hd?.value ?? 0) > 0).sort((x, y) => Number(String(y.system.hd.denomination).slice(1)) - Number(String(x.system.hd.denomination).slice(1)))[0] ?? null;
+}
+const maxOf = (f) => { const m = /^(\d*)d(\d+)$/.exec(f); return m ? Number(m[1] || 1) * Number(m[2]) : Number(f); };
+export function saveStatuses(workflow) {
   const out = new Set();
   for (const ref of workflow?.activity?.effects ?? []) {
     const e = ref.effect ?? workflow.item?.effects?.get?.(ref._id);
     for (const s of e?.statuses ?? []) out.add(s);
-    for (const s of ["charmed", "frightened"]) if (new RegExp(s, "i").test(e?.name ?? "")) out.add(s);
+    for (const s of ["charmed", "frightened", "grappled", "restrained", "blinded"]) if (new RegExp(s, "i").test(e?.name ?? "")) out.add(s);
   }
   return out;
 }
@@ -79,11 +86,13 @@ Hooks.on("midi-qol.preSavesComplete", async (workflow) => {
           const it = feat(h.actor, b.ident);
           if (!it || usesLeft(it, b.max(h.actor)) <= 0 || !canReact(h.actor)) continue;
           const bonusText = b.die(h.actor);
-          const maxGain = /d4/.test(bonusText) ? 4 : Number(bonusText);
+          if (!bonusText) continue;
+          const maxGain = maxOf(bonusText);
           if (total + maxGain < dc) continue; // it can't turn this failure into a success
           if (!(await askOwner(h.actor, `${b.label}: ${h.name}`, `<p>${tDoc.name} fails a DC ${dc} save (${total}). Use your Reaction${h === tDoc ? "" : ` (${it.name})`} to add ${bonusText}?</p>`))) continue;
           await spend(it);
           await useReaction(h.actor);
+          if (b.pay) await b.pay(h.actor);
           const r = await new Roll(bonusText).evaluate();
           total += r.total;
           await r.toMessage({ speaker: ChatMessage.getSpeaker({ actor: h.actor }), flavor: `${b.label}: ${tDoc.name}'s save is now ${total} (DC ${dc})` });
@@ -96,14 +105,22 @@ Hooks.on("midi-qol.preSavesComplete", async (workflow) => {
 });
 
 // ------------------------------------------------------------------ Survivor, Hypervigilance: reroll an Initiative d20 of 9 or lower
-Hooks.on("dnd5e.preRollInitiative", (actor, roll) => {
+// Applied to the Initiative roll itself, so it covers the combat tracker too (it skips dnd5e.preRollInitiative).
+function hypervigilance(actor, roll) {
   try {
     if (!feat(actor, "survivor") || !roll?.terms?.length) return;
     const d = roll.terms[0];
     if (d?.faces !== 20 || (d.modifiers ?? []).some((m) => /^r/.test(m))) return;
-    d.modifiers.push("r<10");
+    d.modifiers.unshift("r<10");
     roll._formula = roll.constructor.getFormula(roll.terms);
   } catch (err) { console.warn(`${MODULE_ID} | Hypervigilance failed`, err); }
+}
+Hooks.on("dnd5e.preRollInitiative", hypervigilance);
+Hooks.once("setup", () => {
+  const proto = CONFIG.Actor.documentClass.prototype;
+  const orig = proto.getInitiativeRoll;
+  if (typeof orig !== "function") return;
+  proto.getInitiativeRoll = function (...args) { const roll = orig.apply(this, args); hypervigilance(this, roll); return roll; };
 });
 
 // ------------------------------------------------------------------ Gathered Whispers, Unearthly Scream: Reaction +PB AC against a hit

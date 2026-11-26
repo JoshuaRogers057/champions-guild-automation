@@ -1,0 +1,137 @@
+{
+  "_id": "cgaFtArcSafegrd0",
+  "name": "Arcane Safeguard",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Cantrip:</strong> you learn Resistance. Cast it as a Bonus Action Proficiency Bonus times per Long Rest with this feat's activity (cast it normally from your spells otherwise). <strong>Sheltering Aid:</strong> when you Help an ally's ability check, they gain Temporary Hit Points equal to your Proficiency Bonus (apply by hand).</p>",
+      "chat": ""
+    },
+    "identifier": "arcane-safeguard",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaSafeguardCast": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaSafeguardCast",
+        "type": "cast",
+        "name": "Resistance (Bonus Action)",
+        "img": "icons/magic/defensive/shield-barrier-flaming-diamond-teal.webp",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": true
+        },
+        "spell": {
+          "uuid": "Compendium.champions-guild-automation.cga-spells.Item.cgasplResistance",
+          "challenge": {
+            "override": false
+          },
+          "properties": [],
+          "spellbook": true,
+          "ability": "",
+          "level": null
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Bonus Action Resistance cast activity (PB/LR)."
+      }
+    }
+  }
+}

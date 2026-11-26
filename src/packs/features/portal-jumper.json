@@ -1,0 +1,129 @@
+{
+  "_id": "cgaFtPortalJump0",
+  "name": "Portal Jumper",
+  "type": "feat",
+  "img": "icons/magic/movement/portal-vortex-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Otherworldly Resilience:</strong> Resistance to Necrotic, Psychic or Radiant damage (set it on the sheet). <strong>Portal Step:</strong> spend 15 ft of movement to teleport to an unoccupied space you can see within 15 ft (Proficiency Bonus times per Long Rest, once per turn). The activity makes your token's next move a teleport.</p>",
+      "chat": ""
+    },
+    "identifier": "portal-jumper",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaPortalStepAct": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "15",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaPortalStepAct",
+        "type": "utility",
+        "name": "Portal Step",
+        "img": "icons/magic/movement/portal-vortex-purple.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "Spend 15 ft of movement",
+          "override": false
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Portal Step activity (PB/LR); the module switches the token to teleport for its next move."
+      }
+    }
+  }
+}

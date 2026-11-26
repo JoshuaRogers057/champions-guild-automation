@@ -582,6 +582,7 @@ Hooks.once("socketlib.ready", () => {
   cgaSocket.register("askYesNo", askYesNoHere);
   cgaSocket.register("askChoice", askChoiceHere);
   cgaSocket.register("createTokens", (sceneId, data) => game.scenes.get(sceneId)?.createEmbeddedDocuments("Token", data).then((docs) => docs.map((d) => d.id)));
+  cgaSocket.register("updateTokens", (sceneId, updates, options = {}) => game.scenes.get(sceneId)?.updateEmbeddedDocuments("Token", updates, options).then(() => true));
 });
 async function askYesNoHere(title, html, seconds = 30) {
   return new Promise((resolve) => {
@@ -835,4 +836,9 @@ Hooks.once("ready", async () => {
 export async function createTokens(scene, data) {
   if (game.user.isGM) return (await scene.createEmbeddedDocuments("Token", data)).map((d) => d.id);
   return cgaSocket?.executeAsGM("createTokens", scene.id, data);
+}
+// Update tokens the current user may not own (swap places, teleports): runs on the GM's client.
+export async function gmUpdateTokens(scene, updates, options = {}) {
+  if (game.user.isGM) return scene.updateEmbeddedDocuments("Token", updates, options);
+  return cgaSocket?.executeAsGM("updateTokens", scene.id, updates, options);
 }

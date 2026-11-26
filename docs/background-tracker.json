@@ -706,9 +706,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Aberrant Anatomy",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Dark Gift: rolling a 1 on a D20 Test forces a DC 13 + PB save or a condition; the rest is proficiencies/spells/senses on the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Warping Flesh - a natural 1 on a D20 Test rolls the CON save (DC 13 + PB): Stunned until the end of your next turn",
    "identifier": "aberrant-anatomy"
   },
   {
@@ -736,9 +736,9 @@
    "sub": "Arcana Unleashed",
    "name": "Arcane Eloquence",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+1d4 to the named skill checks (passive bonus); cantrip from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Smooth Talker adds 1d4 to Deception, Intimidation and Persuasion checks; Vicious Mockery from the sheet",
    "identifier": "arcane-eloquence"
   },
   {
@@ -746,9 +746,9 @@
    "sub": "Arcana Unleashed",
    "name": "Arcane Infiltrator",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Cunning Diversion: Dodge as a Bonus Action (PB/LR); Friends cantrip from the sheet",
+   "note": "CGA item: Cunning Diversion Bonus Action Dodge activity (PB/LR); Friends from the sheet",
    "identifier": "arcane-infiltrator"
   },
   {
@@ -766,9 +766,9 @@
    "sub": "Arcana Unleashed",
    "name": "Arcane Overload",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Power Surge: add PB to one damage roll of an Evocation spell (1/LR) - prompt",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Power Surge - asked on an Evocation spell's damage, +PB (1/LR); Fire Bolt from the sheet",
    "identifier": "arcane-overload"
   },
   {
@@ -776,9 +776,9 @@
    "sub": "Arcana Unleashed",
    "name": "Arcane Safeguard",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Resistance cantrip as a Bonus Action (PB/LR); Sheltering Aid: temp HP = PB on Help (manual)",
+   "note": "CGA item: Bonus Action Resistance cast activity (PB/LR, uses the CGA Resistance spell); Sheltering Aid temp HP is manual",
    "identifier": "arcane-safeguard"
   },
   {
@@ -786,9 +786,9 @@
    "sub": "Arcana Unleashed",
    "name": "Arcane Undertaker",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+1d4 to the named skill checks (passive bonus); cantrip from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): 1d4 on History and Medicine checks; Understanding of Death (Heroic Inspiration on stabilizing) is manual",
    "identifier": "arcane-undertaker"
   },
   {
@@ -796,9 +796,9 @@
    "sub": "Lorwyn",
    "name": "Child of the Sun",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Eyes of Eirdu aura: you and allies within 10 ft have Advantage vs Blinded; Faerie Fire 1/LR from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Eyes of Eirdu - you and allies within 10 ft have Advantage on saves to avoid Blinded (saves to end it, and Faerie Fire's concentration, are manual)",
    "identifier": "child-of-the-sun"
   },
   {
@@ -816,9 +816,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Echoing Soul",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Dark Gift: rolling a 1 on a D20 Test forces a DC 13 + PB save or a condition; the rest is proficiencies/spells/senses on the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intrusive Echoes - natural 1: CON save or Incapacitated with half Speed until the end of your next turn",
    "identifier": "echoing-soul"
   },
   {
@@ -848,7 +848,7 @@
    "source": "Other",
    "category": "done",
    "priority": 1,
-   "note": "Module rule (no Mass Apply; works on the character's own feat): Unearthly Scream - Reaction +PB AC against a hit that it would turn into a miss (PB/LR)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Unearthly Scream - Reaction +PB AC against a hit that it would turn into a miss (PB/LR); Voices from Beyond - natural 1: WIS save or Deafened with Disadvantage on checks and attacks until the end of your next turn",
    "identifier": "gathered-whispers"
   },
   {
@@ -866,9 +866,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Living Shadow",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Dark Gift: rolling a 1 on a D20 Test forces a DC 13 + PB save or a condition; the rest is proficiencies/spells/senses on the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Ominous Will - natural 1: WIS save or Incapacitated until your next turn, then the Shadow's Will table is rolled; Lengthened Strike is manual",
    "identifier": "living-shadow"
   },
   {
@@ -876,9 +876,9 @@
    "sub": "Forgotten Realms: Heroes of Faerûn",
    "name": "Lords’ Alliance Agent",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Inspiring Strike (crit: an ally gains Heroic Inspiration) and Reassert Honor (Advantage on your next attack vs an enemy that hurt an adjacent ally)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Inspiring Strike - a Critical Hit gives a chosen ally within 30 ft Heroic Inspiration (once per turn); Reassert Honor - Advantage on your next attack against an enemy that damaged an ally within 5 ft of you",
    "identifier": "lords-alliance-agent"
   },
   {
@@ -886,9 +886,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Detection",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-detection"
   },
   {
@@ -896,9 +896,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Finding",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-finding"
   },
   {
@@ -906,9 +906,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Handling",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-handling"
   },
   {
@@ -916,9 +916,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Healing",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-healing"
   },
   {
@@ -926,9 +926,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Hospitality",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-hospitality"
   },
   {
@@ -936,9 +936,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Making",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-making"
   },
   {
@@ -946,9 +946,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Passage",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+5 ft Speed and +1d4 to Athletics/Acrobatics checks; Misty Step from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): +5 ft Speed (unless the feat already has it) and 1d4 on Athletics/Acrobatics checks; Misty Step from the sheet",
    "identifier": "mark-of-passage"
   },
   {
@@ -956,9 +956,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Scribing",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-scribing"
   },
   {
@@ -966,9 +966,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Sentinel",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+1d4 Insight/Perception; Vigilant Guardian Reaction (swap places, take the hit, PB/LR); Shield spell from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): 1d4 on Insight/Perception; Vigilant Guardian - Reaction when an ally within 5 ft is hit: swap places and take the hit (PB/LR); Shield from the sheet",
    "identifier": "mark-of-sentinel"
   },
   {
@@ -976,9 +976,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Shadow",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-shadow"
   },
   {
@@ -986,9 +986,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Storm",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "+1d4 to Acrobatics/Navigator's Tools checks; Lightning Resistance; Thunderclap/Gust of Wind from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): 1d4 on Acrobatics/Navigator's Tools checks, Lightning Resistance (unless the feat already has it); spells from the sheet",
    "identifier": "mark-of-storm"
   },
   {
@@ -996,9 +996,9 @@
    "sub": "Dragonmark feat (Eberron)",
    "name": "Mark of Warding",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Intuition: +1d4 to the mark's skill/tool checks (passive bonus); the mark's spells come from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Intuition adds 1d4 to the mark's skill and tool checks automatically; the mark's spells come from the sheet",
    "identifier": "mark-of-warding"
   },
   {
@@ -1006,9 +1006,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Mist Walker",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Mist Walk: Reaction teleport 15 ft when damaged or failing a grapple/restrain save (uses)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Mist Walk - Reaction after taking damage or failing a save against Grappled/Restrained (that hold ends); the token's next move is a teleport (PB/LR)",
    "identifier": "mist-walker"
   },
   {
@@ -1016,9 +1016,9 @@
    "sub": "Arcana Unleashed",
    "name": "Portal Jumper",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Portal Step: spend 15 ft of movement to teleport 15 ft (PB/LR, once per turn) - activity; resistance from the sheet",
+   "note": "CGA item: Portal Step activity (PB/LR) makes the token's next move a teleport; choose the resistance on the sheet",
    "identifier": "portal-jumper"
   },
   {
@@ -1026,9 +1026,9 @@
    "sub": "Forgotten Realms: Heroes of Faerûn",
    "name": "Purple Dragon Rook",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Rallying Cry: on Initiative, PB creatures within 30 ft gain Heroic Inspiration (1/LR) - prompt",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Rallying Cry - when your Initiative is rolled, choose up to PB creatures within 30 ft for Heroic Inspiration (1/LR)",
    "identifier": "purple-dragon-rook"
   },
   {
@@ -1078,7 +1078,7 @@
    "source": "Other",
    "category": "done",
    "priority": 1,
-   "note": "Module rule (no Mass Apply; works on the character's own feat): Hypervigilance rerolls an Initiative d20 of 9 or lower; Steel Yourself - Reaction +PB to a failed save vs Charmed/Frightened (1/LR)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Hypervigilance rerolls an Initiative d20 of 9 or lower (combat tracker rolls too); Steel Yourself - Reaction +PB to a failed save vs Charmed/Frightened (1/LR)",
    "identifier": "survivor"
   },
   {
@@ -1086,9 +1086,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Symbiotic Being",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Sustained Symbiosis: Reaction, spend a Hit Die and add it to a failed save (uses)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Sustained Symbiosis - Reaction on a failed save it could still pass: spend your largest Hit Die and add it (PB/LR); Symbiotic Agenda on a natural 1 (CHA save or Charmed 1d12 hours; the repeat save on damage is manual)",
    "identifier": "symbiotic-being"
   },
   {
@@ -1106,9 +1106,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Touch of Death",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Chill Touch ignores Necrotic Resistance; Disadvantage on Death Saving Throws",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Chill Touch's Necrotic damage ignores Resistance; Disadvantage on Death Saving Throws",
    "identifier": "touch-of-death"
   },
   {
@@ -1118,7 +1118,7 @@
    "source": "Other",
    "category": "done",
    "priority": 1,
-   "note": "Module rule (no Mass Apply; works on the character's own feat): Reaction +1d4 to a failed CON save (PB/LR); the +5 ft Speed comes from the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Reaction +1d4 to a failed CON save (PB/LR); +5 ft Speed (unless the feat already has it)",
    "identifier": "transmuted-anatomy"
   },
   {
@@ -1146,9 +1146,9 @@
    "sub": "Astarion’s Book of Hungers",
    "name": "Vampire’s Plaything",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Timely Retreat: Bonus Action Dash/Disengage (PB/LR); Decanting (potion on a Long Rest) - activities",
+   "note": "CGA item: Timely Retreat Dash/Disengage Bonus Action activities (PB/LR); Decanting offers a Potion of Healing or Antitoxin on each Long Rest (the old one evaporates)",
    "identifier": "vampires-plaything"
   },
   {
@@ -1156,9 +1156,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Watchers",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Dark Gift: rolling a 1 on a D20 Test forces a DC 13 + PB save or a condition; the rest is proficiencies/spells/senses on the sheet",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Incessant Watchers - natural 1: WIS save or Disadvantage on D20 Tests for 1 minute (save at the end of each turn); Heightened Suspicion is manual",
    "identifier": "watchers"
   },
   {
@@ -1166,9 +1166,9 @@
    "sub": "Forgotten Realms: Heroes of Faerûn",
    "name": "Zhentarim Ruffian",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 2,
-   "note": "Exploit Opening (roll Opportunity Attack damage twice, keep either); Family First (spend Heroic Inspiration for party Initiative Advantage)",
+   "note": "Module rule (no Mass Apply; works on the character's own feat): Exploit Opening - damage of an attack outside your turn is rolled twice, you pick; Family First - asked when you join a combat with Heroic Inspiration: you and allies roll Initiative with Advantage",
    "identifier": "zhentarim-ruffian"
   }
  ]

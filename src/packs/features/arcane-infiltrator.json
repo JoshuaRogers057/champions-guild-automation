@@ -1,0 +1,164 @@
+{
+  "_id": "cgaFtArcInfiltr0",
+  "name": "Arcane Infiltrator",
+  "type": "feat",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Cantrip:</strong> you learn Friends (add it from the compendium). <strong>Cunning Diversion:</strong> take the Dodge action as a Bonus Action, Proficiency Bonus times per Long Rest - use the activity (you're Dodging until the start of your next turn).</p>",
+      "chat": ""
+    },
+    "identifier": "arcane-infiltrator",
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "requirements": "",
+    "properties": [],
+    "uses": {
+      "max": "@prof",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaInfiltDodgeAc": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaInfiltDodgeFx"
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaInfiltDodgeAc",
+        "type": "utility",
+        "name": "Cunning Diversion (Dodge)",
+        "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaInfiltDodgeFx",
+      "name": "Dodging (Cunning Diversion)",
+      "img": "systems/dnd5e/icons/svg/statuses/dodging.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [
+        "dodging"
+      ],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": 6,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": []
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [
+            "turnStart"
+          ]
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Cunning Diversion Bonus Action Dodge activity (PB/LR)."
+      }
+    }
+  }
+}
