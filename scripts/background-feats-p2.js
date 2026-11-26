@@ -200,9 +200,11 @@ Hooks.on("midi-qol.preCheckSaves", async (workflow) => {
 });
 
 // ------------------------------------------------------------------ Mark of Sentinel, Vigilant Guardian: swap places and take the hit
+const guardAsked = new WeakSet(); // midi can call hitsChecked more than once per attack
 Hooks.on("midi-qol.hitsChecked", async (workflow) => {
   try {
-    if (!workflow?.activity?.attack || workflow.hitTargets?.size !== 1) return;
+    if (!workflow?.activity?.attack || workflow.hitTargets?.size !== 1 || guardAsked.has(workflow)) return;
+    guardAsked.add(workflow);
     const tObj = Array.from(workflow.hitTargets)[0];
     const t = tokenOf(tObj);
     const atk = tokenOf(workflow.token);

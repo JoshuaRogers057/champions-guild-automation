@@ -123,9 +123,12 @@ Hooks.on("midi-qol.preSavesComplete", async (workflow) => {
 });
 
 // ------------------------------------------------------------------ Attacks: Moment of Prescience (a hit becomes a 1), Reweave Fate (a miss rerolls)
+// midi can call hitsChecked more than once per attack: offer these once per workflow.
+const attackReacted = new WeakSet();
 Hooks.on("midi-qol.hitsChecked", async (workflow) => {
   try {
-    if (!workflow?.activity?.attack || workflow.targets?.size !== 1 || !workflow.attackRoll) return;
+    if (!workflow?.activity?.attack || workflow.targets?.size !== 1 || !workflow.attackRoll || attackReacted.has(workflow)) return;
+    attackReacted.add(workflow);
     const tObj = Array.from(workflow.targets)[0]; const t = tokenOf(tObj); const def = t?.actor;
     const atk = tokenOf(workflow.token);
     if (!def || !atk) return;
