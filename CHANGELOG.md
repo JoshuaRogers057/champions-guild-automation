@@ -3,6 +3,34 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.27.0
+
+Priority-1 species traits (2024 Player's Handbook and other books). Most are **module rules** that find the trait on
+the character by name or identifier, so D&D Beyond characters work with no Mass Apply. The four new trait items
+(Breath Weapon, Celestial Revelation, Vampiric Bite, Shifting) need **Mass Apply / Update**.
+
+- **Save Advantage:**
+  - **Brave** (Frightened) and **Fey Ancestry** (Charmed). The compendium items were empty.
+  - **Dwarven Resilience** and **Construct Resilience**: Poisoned, plus Poison Resistance.
+  - **Dual Mind**: WIS and CHA saves.
+- **Goliath:**
+  - **Fire's Burn**, **Frost's Chill** and **Hill's Tumble** are offered after a hit.
+  - **Stone's Endurance** and **Storm's Thunder** are Reactions when you take damage.
+  - Each spends a use. The compendium versions were manual buttons.
+- **Orc:** **Relentless Endurance** is offered when you'd drop to 0 HP and leaves you at 1.
+- **Dragonborn:** **Breath Weapon** (1.0.0) gets its dice from your character level, with no scale value needed. Its
+  damage type follows your Draconic Ancestry (the compendium version always took Acid under fast-forward).
+- **Aasimar:** **Celestial Revelation** (1.0.0) has one activity per form.
+  - Once on each of your turns: +PB damage to a target you damage.
+  - Heavenly Wings: Fly Speed equal to your Speed.
+  - Inner Radiance: light, and PB Radiant damage to each creature within 10 ft at the end of your turn.
+  - Necrotic Shroud: enemies within 10 ft save or are Frightened.
+- **Dhampir:** **Vampiric Bite** (1.0.0): Bite attack, then Drain or Strengthen after a hit.
+- **Shifter:** **Shifting** (1.0.0): temp HP equal to 2 × PB, plus the Shifted effect. The four options come next.
+- **Warforged:** **Integrated Protection** gives +1 AC if your trait has no AC effect of its own.
+- Checked and working as they ship: **Gnomish Cunning**, Halfling **Luck** (dnd5e rerolls 1s), **Adrenaline
+  Rush**.
+
 ## 0.26.0
 
 The last unchecked priority-1 items. All are module rules (no Mass Apply).

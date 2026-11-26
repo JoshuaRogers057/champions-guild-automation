@@ -141,7 +141,7 @@ for (const h of ["createItem", "deleteItem"]) Hooks.on(h, (item) => rescanActor(
 Hooks.on("updateItem", (item, changes) => { if (foundry.utils.hasProperty(changes, "system.equipped") || foundry.utils.hasProperty(changes, "system.attuned")) rescanActor(item.parent); });
 Hooks.on("updateActor", (actor, changes) => { if (foundry.utils.hasProperty(changes, "system.attributes.hp.value")) rescanActor(actor); });
 // Any effect change can switch an aura on or off (a status, or an item "active" effect such as a lit candle).
-for (const h of ["createActiveEffect", "deleteActiveEffect", "updateActiveEffect"]) Hooks.on(h, (e) => { if (!e.flags?.[MODULE_ID]?.itemAura && !e.flags?.[MODULE_ID]?.passive) rescanActor(e.parent); });
+for (const h of ["createActiveEffect", "deleteActiveEffect", "updateActiveEffect"]) Hooks.on(h, (e) => { if (!e.flags?.[MODULE_ID]?.itemAura && !e.flags?.[MODULE_ID]?.passive) { rescanActor(e.parent); if (e.parent instanceof Actor) schedulePassives(e.parent); } });
 Hooks.on("canvasReady", () => scheduleItemAuras(canvas.scene));
 
 // ------------------------------------------------------------------ Defender (first attack each turn)

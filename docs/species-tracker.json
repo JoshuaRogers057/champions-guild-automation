@@ -46,9 +46,9 @@
    "sub": "Player's Handbook",
    "name": "Celestial Revelation",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Bonus Action transformation (1/LR): extra damage = PB once per turn (Necrotic or Radiant), plus the chosen form",
+   "note": "CGA item + module rule (no mass apply; works on the character's own trait): one activity per form (1/LR); once on each of your turns +PB damage (Necrotic for Shroud, Radiant otherwise) to a target you damage",
    "identifier": "celestial-revelation"
   },
   {
@@ -56,9 +56,9 @@
    "sub": "Player's Handbook · Celestial Revelation option",
    "name": "Heavenly Wings",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Fly Speed equal to Speed while transformed",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Fly Speed equal to your Speed while the form lasts",
    "identifier": "heavenly-wings"
   },
   {
@@ -66,9 +66,9 @@
    "sub": "Player's Handbook · Celestial Revelation option",
    "name": "Inner Radiance",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Light; Radiant damage = PB to each creature within 10 ft at the end of your turns",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): light 10/20; at the end of your turn each creature within 10 ft takes Radiant = PB",
    "identifier": "inner-radiance"
   },
   {
@@ -76,9 +76,9 @@
    "sub": "Player's Handbook · Celestial Revelation option",
    "name": "Necrotic Shroud",
    "source": "PHB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Enemies within 10 ft: CHA save or Frightened until the end of your next turn",
+   "note": "CGA item: enemies within 10 ft CHA save or Frightened until the end of your next turn; the module adds the form's self effect",
    "identifier": "necrotic-shroud"
   },
   {
@@ -136,9 +136,9 @@
    "sub": "Other books",
    "name": "Vampiric Bite",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Unarmed Strike bite 1d4 + CON Piercing; Drain (heal) or Strengthen (bonus to next check/attack), PB/LR",
+   "note": "CGA item + module rule (no mass apply; works on the character's own trait): Bite (1d4 + CON Piercing); after a hit on a non-Construct/Undead, choose Drain or Strengthen (PB/LR)",
    "identifier": "vampiric-bite"
   },
   {
@@ -146,9 +146,9 @@
    "sub": "Other books · Vampiric Bite option",
    "name": "Drain",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Vampiric Bite option",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): offered after the bite hits (Drain heals the damage; Strengthen adds it to your next attack or check)",
    "identifier": "drain"
   },
   {
@@ -156,9 +156,9 @@
    "sub": "Other books · Vampiric Bite option",
    "name": "Strengthen",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Vampiric Bite option",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): offered after the bite hits (Drain heals the damage; Strengthen adds it to your next attack or check)",
    "identifier": "strengthen"
   },
   {
@@ -176,9 +176,9 @@
    "sub": "Player's Handbook",
    "name": "Breath Weapon",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium reads @scale.dragonborn.breath (D&D Beyond actors may lack it) and lists five damage types (fast-forward takes Acid): dice from character level, type from the ancestry",
+   "note": "CGA item + module rule (no mass apply; works on the character's own trait): dice from character level (no scale value), damage type from your Draconic Ancestry (or your one draconic resistance)",
    "identifier": "breath-weapon"
   },
   {
@@ -226,9 +226,9 @@
    "sub": "Player's Handbook",
    "name": "Dwarven Resilience",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium item is empty: Resistance to Poison and Advantage on saves vs Poisoned",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Poison Resistance and Advantage on saves against Poisoned (compendium item was empty)",
    "identifier": "dwarven-resilience"
   },
   {
@@ -276,9 +276,9 @@
    "sub": "Player's Handbook",
    "name": "Fey Ancestry",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium item is empty: Advantage on saves vs Charmed (midi-qol's sample covers it - check)",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Advantage on saves against a Charmed effect (compendium item was empty)",
    "identifier": "fey-ancestry"
   },
   {
@@ -316,9 +316,9 @@
    "sub": "Player's Handbook",
    "name": "Gnomish Cunning",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium effect sets save roll mode for INT/WIS/CHA - check under midi-qol",
+   "note": "Checked in v0.27.0 - the compendium effect gives Advantage on INT/WIS/CHA saves under midi-qol",
    "identifier": "gnomish-cunning"
   },
   {
@@ -376,9 +376,9 @@
    "sub": "Player's Handbook · Giant Ancestry option",
    "name": "Fire’s Burn (Fire Giant)",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium is a manual activity: after a hit, prompt to spend a use for +1d10 Fire",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): after a hit, offers +1d10 Fire for a use",
    "identifier": "fires-burn"
   },
   {
@@ -386,9 +386,9 @@
    "sub": "Player's Handbook · Giant Ancestry option",
    "name": "Frost’s Chill (Frost Giant)",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium is a manual activity: after a hit, prompt for +1d6 Cold and -10 ft Speed",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): after a hit, offers +1d6 Cold and -10 ft Speed until the start of your next turn",
    "identifier": "frosts-chill"
   },
   {
@@ -396,9 +396,9 @@
    "sub": "Player's Handbook · Giant Ancestry option",
    "name": "Hill’s Tumble (Hill Giant)",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium is a manual activity: after a hit on a Large or smaller creature, prompt to knock it Prone",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): after a hit on a Large or smaller creature, offers to knock it Prone",
    "identifier": "hills-tumble"
   },
   {
@@ -406,9 +406,9 @@
    "sub": "Player's Handbook · Giant Ancestry option",
    "name": "Stone’s Endurance (Stone Giant)",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium is a manual activity: Reaction when damaged, reduce by 1d12 + CON",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Reaction when damaged - reduce by 1d12 + CON",
    "identifier": "stones-endurance"
   },
   {
@@ -416,9 +416,9 @@
    "sub": "Player's Handbook · Giant Ancestry option",
    "name": "Storm’s Thunder (Storm Giant)",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium is a manual activity: Reaction when damaged by a creature within 60 ft, 1d8 Thunder to it",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Reaction when damaged by a creature within 60 ft - 1d8 Thunder to it",
    "identifier": "storms-thunder"
   },
   {
@@ -446,9 +446,9 @@
    "sub": "Player's Handbook",
    "name": "Brave",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium item is empty: Advantage on saves vs Frightened (midi-qol's sample covers it - check)",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Advantage on saves against a Frightened effect (compendium item was empty)",
    "identifier": "brave"
   },
   {
@@ -466,9 +466,9 @@
    "sub": "Player's Handbook",
    "name": "Luck",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium sets flags.dnd5e.halflingLucky (dnd5e rerolls natural 1s) - check under midi-qol",
+   "note": "Checked in v0.27.0 - dnd5e rerolls natural 1s (the compendium sets halflingLucky)",
    "identifier": "luck"
   },
   {
@@ -566,9 +566,9 @@
    "sub": "Other books",
    "name": "Dual Mind",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Advantage on WIS and CHA saves",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Advantage on WIS and CHA saves",
    "identifier": "dual-mind"
   },
   {
@@ -616,9 +616,9 @@
    "sub": "Other books",
    "name": "Fey Ancestry",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium item is empty: Advantage on saves vs Charmed (midi-qol's sample covers it - check)",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Advantage on saves against a Charmed effect (compendium item was empty)",
    "identifier": "fey-ancestry"
   },
   {
@@ -736,9 +736,9 @@
    "sub": "Player's Handbook",
    "name": "Adrenaline Rush",
    "source": "SRD",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "Bonus Action Dash + temp HP = PB (PB/SR)",
+   "note": "Checked in v0.27.0 - the compendium activity gives temp HP = PB and spends a use (the Dash is your movement)",
    "identifier": "adrenaline-rush"
   },
   {
@@ -756,9 +756,9 @@
    "sub": "Player's Handbook",
    "name": "Relentless Endurance",
    "source": "SRD",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Compendium is a manual heal: drop to 1 HP instead of 0 automatically (1/LR)",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): offered when you'd drop to 0 HP (not killed outright) - drop to 1 instead (1/LR)",
    "identifier": "relentless-endurance"
   },
   {
@@ -856,9 +856,9 @@
    "sub": "Other books",
    "name": "Shifting",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Bonus Action shift (PB/LR): temp HP 2x PB for 1 minute, plus the chosen option",
+   "note": "CGA item: Shift (Bonus Action, PB/LR) - temp HP 2 x PB and the Shifted effect for 1 minute; the four options are P2",
    "identifier": "shifting"
   },
   {
@@ -936,9 +936,9 @@
    "sub": "Other books",
    "name": "Construct Resilience",
    "source": "Other",
-   "category": "build",
+   "category": "done",
    "priority": 1,
-   "note": "Resistance to Poison and Advantage on saves vs Poisoned",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): Poison Resistance and Advantage on saves against Poisoned",
    "identifier": "construct-resilience"
   },
   {
@@ -946,9 +946,9 @@
    "sub": "Other books",
    "name": "Integrated Protection",
    "source": "Other",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "+1 AC (D&D Beyond effect) - check",
+   "note": "Module rule (no Mass Apply; works on the character's own trait): +1 AC unless your trait already has its own AC effect",
    "identifier": "integrated-protection"
   },
   {
