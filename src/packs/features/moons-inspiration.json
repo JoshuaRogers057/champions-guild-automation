@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbmoonsinspir",
+  "name": "Moon's Inspiration",
+  "type": "feat",
+  "img": "icons/magic/nature/moon-crescent.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Inspired Eclipse:</strong> when you give Bardic Inspiration, the module offers to make you Invisible (until the start of your next turn, or until you attack, deal damage or cast a spell) and make your next move a teleport of up to 30 ft. <strong>Lunar Vitality:</strong> once per turn when you restore HP with a spell, the module offers to spend a Bardic Inspiration die and add its roll; the creature's Speed also increases by 10 ft until the end of its next turn.</p>",
+      "chat": ""
+    },
+    "identifier": "moons-inspiration",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "College of the Moon 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Inspired Eclipse after Bardic Inspiration and Lunar Vitality on spell healing (module)."
+      }
+    }
+  }
+}

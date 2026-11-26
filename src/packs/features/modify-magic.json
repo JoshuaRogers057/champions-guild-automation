@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbmodifymagic",
+  "name": "Modify Magic",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you cast a spell, the module offers to spend Channel Divinity on one of these (once per spell): <strong>Fortifying Spell</strong> - one target gains 2d8 + Cleric level temp HP; <strong>Tenacious Spell</strong> - when a creature succeeds on a save against the spell, roll 1d6 and subtract it from that save (offered only when it could fail).</p>",
+      "chat": ""
+    },
+    "identifier": "modify-magic",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Arcana Domain 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Fortifying / Tenacious Spell offered by the module (spends Channel Divinity)."
+      }
+    }
+  }
+}

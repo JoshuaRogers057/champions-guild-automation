@@ -1,0 +1,223 @@
+{
+  "_id": "cgaCbhypnoticpre",
+  "name": "Hypnotic Presence",
+  "type": "feat",
+  "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action: one creature within 10 ft that can see or hear you makes a WIS save (your spell DC) or is Charmed for 1 minute - Incapacitated with Speed 0. It ends if the target takes damage or ends up more than 10 ft from you (module). Uses = INT modifier per Long Rest.</p>",
+      "chat": ""
+    },
+    "identifier": "hypnotic-presence",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Enchanter 3",
+    "properties": [],
+    "uses": {
+      "max": "max(1, @abilities.int.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaCbHypnoSave00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaCbFxHypnoti00",
+            "onSave": false
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "10",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbHypnoSave00",
+        "type": "save",
+        "name": "Hypnotic Presence",
+        "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "wis"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "midiProperties": {
+          "identifier": "hypnotic-presence"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxHypnoti00",
+      "name": "Hypnotic Presence (Charmed, Incapacitated, Speed 0)",
+      "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [
+        "charmed",
+        "incapacitated"
+      ],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk",
+            "value": "0",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.fly",
+            "value": "0",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "value": "0",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.climb",
+            "value": "0",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.burrow",
+            "value": "0",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [
+            "isDamaged"
+          ]
+        },
+        "world": {
+          "cgaHypnotic": true
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Save activity with the charm effect; ends on damage or beyond 10 ft (module)."
+      }
+    }
+  }
+}

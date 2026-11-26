@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbalchemicals",
+  "name": "Alchemical Savant",
+  "type": "feat",
+  "img": "icons/tools/laboratory/mortar-powder-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you cast an Artificer spell (using Alchemist's Supplies as the focus), the module adds your Intelligence modifier (minimum +1) to one of its healing rolls or Acid, Fire or Poison damage rolls.</p>",
+      "chat": ""
+    },
+    "identifier": "alchemical-savant",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Alchemist 5",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: +INT to one healing or Acid/Fire/Poison damage roll of your Artificer spells (module)."
+      }
+    }
+  }
+}

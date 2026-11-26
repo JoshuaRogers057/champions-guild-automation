@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbbattleready",
+  "name": "Battle Ready",
+  "type": "feat",
+  "img": "icons/weapons/swords/sword-guard-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Arcane Empowerment:</strong> your magic weapons use Intelligence for attack and damage rolls when it's better than their usual ability (the module enchants each magic weapon). <strong>Weapon Knowledge:</strong> Martial weapon proficiency and weapon focus from the sheet.</p>",
+      "chat": ""
+    },
+    "identifier": "battle-ready",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Battle Smith 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: INT for magic weapon attacks (module enchantment on each magic weapon)."
+      }
+    }
+  }
+}

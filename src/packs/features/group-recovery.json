@@ -1,0 +1,56 @@
+{
+  "_id": "cgaCbgrouprecove",
+  "name": "Group Recovery",
+  "type": "feat",
+  "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you use Second Wind, the module offers to heal allies within 30 ft (up to your CHA modifier, minimum one - the most hurt first): each regains 1d4 + your Fighter level. Once per Short or Long Rest.</p>",
+      "chat": ""
+    },
+    "identifier": "group-recovery",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Banneret 3",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Ally healing offered after Second Wind (1/SR, module)."
+      }
+    }
+  }
+}

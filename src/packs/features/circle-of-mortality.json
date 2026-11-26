@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbcircleofmor",
+  "name": "Circle of Mortality",
+  "type": "feat",
+  "img": "icons/magic/death/skull-energy-light-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Pull of Death:</strong> once per turn, when your spell or attack damages a single creature that's missing Hit Points, the module adds 1d4 Necrotic (1d6 at Cleric level 11). <strong>Return to Life:</strong> cast Spare the Dying as a Bonus Action (by hand). Healing dice of your spells and Channel Divinity are maximized on a creature at 0 Hit Points (module).</p>",
+      "chat": ""
+    },
+    "identifier": "circle-of-mortality",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Grave Domain 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Pull of Death extra Necrotic and maximized healing on creatures at 0 HP (module)."
+      }
+    }
+  }
+}

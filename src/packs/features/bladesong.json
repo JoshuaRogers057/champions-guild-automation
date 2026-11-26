@@ -1,0 +1,201 @@
+{
+  "_id": "cgaCbbladesong00",
+  "name": "Bladesong",
+  "type": "feat",
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action while wearing no armor and no Shield: Bladesong for 1 minute - +INT to AC (minimum +1), +10 ft Speed, Advantage on Acrobatics, +INT to Concentration saves, and your proficient weapons use Intelligence for attack and damage (the module enchants them while it lasts). It ends if you're Incapacitated, don armor or a Shield, or attack with a weapon using two hands (module). Uses = INT modifier per Long Rest; Arcane Recovery restores one (module).</p>",
+      "chat": ""
+    },
+    "identifier": "bladesong",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Bladesinger 3",
+    "properties": [],
+    "uses": {
+      "max": "max(1, @abilities.int.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaCbBladeAct000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaCbFxBladeso00"
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbBladeAct000",
+        "type": "utility",
+        "name": "Bladesong",
+        "img": "icons/skills/melee/sword-twirl-orange.webp",
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "bladesong"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxBladeso00",
+      "name": "Bladesong",
+      "img": "icons/skills/melee/sword-twirl-orange.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.bonus",
+            "value": "+ max(1, @abilities.int.mod)",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.movement.walk",
+            "value": "10",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "flags.midi-qol.advantage.skill.acr",
+            "value": "1",
+            "type": "override",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.concentration.bonuses.save",
+            "value": "+ @abilities.int.mod",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        },
+        "world": {
+          "cgaBladesong": true
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Bladesong effect; INT weapon attacks, ending conditions and the Arcane Recovery refund by the module."
+      }
+    }
+  }
+}

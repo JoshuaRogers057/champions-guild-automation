@@ -1,0 +1,56 @@
+{
+  "_id": "cgaCbarcaneshot0",
+  "name": "Arcane Shot",
+  "type": "feat",
+  "img": "icons/weapons/ammunition/arrow-head-war-flight.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Once per turn, after you hit a creature with a ranged attack using Ammunition, the module offers your known Arcane Shot options (the option features on your sheet). Arcane Shot Die d6 (d8 at 10, d10 at 15, d12 at 18); save DC 8 + INT + PB. Uses = INT modifier per Short or Long Rest. Piercing Shot and Seeking Shot don't use an attack roll: use their own activities in place of an attack.</p>",
+      "chat": ""
+    },
+    "identifier": "arcane-shot",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Arcane Archer 3",
+    "properties": [],
+    "uses": {
+      "max": "max(1, @abilities.int.mod)",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "sr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Option prompt after an Ammunition hit (INT uses/SR); dice, extra damage and saves by the module."
+      }
+    }
+  }
+}

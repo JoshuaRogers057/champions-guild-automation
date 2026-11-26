@@ -1,0 +1,349 @@
+{
+  "_id": "cgaCbvestigecomp",
+  "name": "Vestige Companion",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Summon your vestige (from the module's Summoned Creatures compendium) as a Celestial, Fiend or Undead; summoning again replaces it (module). AC 13 + CHA, HP 4 + 4 x Warlock level, Fly 30 ft, Vestige's Strike with your spell attack (melee or 60 ft, 1d6 + 3 + CHA Radiant/Fire/Necrotic), Pact Bond (+PB to its checks and saves). Divine Power (1/day, Bonus Action): Healing Touch (Celestial), Fiendish Swap (Fiend, the module swaps you) or Cursed Invocation (Undead, the module curses the target).</p>",
+      "chat": ""
+    },
+    "identifier": "vestige-companion",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Vestige Patron 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaCbVestCel0000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbVestCel0000",
+        "type": "summon",
+        "name": "Summon Vestige (Celestial)",
+        "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you finish a Long Rest (or with the 1-minute ceremony)",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "@abilities.cha.mod",
+          "hd": "",
+          "hp": "4 * @classes.warlock.levels",
+          "attackDamage": "@abilities.cha.mod",
+          "saveDamage": "",
+          "healing": "@abilities.cha.mod"
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "profiles": [
+          {
+            "_id": "cgaCbpfVestCel00",
+            "count": "",
+            "name": "Vestige Companion (Celestial)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumVestCel000",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ]
+      },
+      "cgaCbVestFie0000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbVestFie0000",
+        "type": "summon",
+        "name": "Summon Vestige (Fiend)",
+        "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you finish a Long Rest (or with the 1-minute ceremony)",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "@abilities.cha.mod",
+          "hd": "",
+          "hp": "4 * @classes.warlock.levels",
+          "attackDamage": "@abilities.cha.mod",
+          "saveDamage": "",
+          "healing": "@abilities.cha.mod"
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "profiles": [
+          {
+            "_id": "cgaCbpfVestFie00",
+            "count": "",
+            "name": "Vestige Companion (Fiend)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumVestFie000",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ]
+      },
+      "cgaCbVestUnd0000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbVestUnd0000",
+        "type": "summon",
+        "name": "Summon Vestige (Undead)",
+        "img": "icons/magic/symbols/runes-carved-stone-purple.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you finish a Long Rest (or with the 1-minute ceremony)",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "@abilities.cha.mod",
+          "hd": "",
+          "hp": "4 * @classes.warlock.levels",
+          "attackDamage": "@abilities.cha.mod",
+          "saveDamage": "",
+          "healing": "@abilities.cha.mod"
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "profiles": [
+          {
+            "_id": "cgaCbpfVestUnd00",
+            "count": "",
+            "name": "Vestige Companion (Undead)",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumVestUnd000",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ]
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Summons the vestige form scaled to your Warlock level; Divine Power riders by the module."
+      }
+    }
+  }
+}

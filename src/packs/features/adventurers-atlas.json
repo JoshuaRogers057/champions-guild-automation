@@ -1,0 +1,167 @@
+{
+  "_id": "cgaCbadventurers",
+  "name": "Adventurer's Atlas",
+  "type": "feat",
+  "img": "icons/tools/navigation/map-marked-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> After a Long Rest, use the activity on yourself and the other map holders (up to 1 + INT modifier creatures, at least two). Each map holder adds 1d4 to its Initiative rolls. Using it again replaces the old maps (the module removes them). Positioning (target another map holder without sight) is by hand.</p>",
+      "chat": ""
+    },
+    "identifier": "adventurers-atlas",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Cartographer 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaCbAtlasAct000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [
+          {
+            "_id": "cgaCbFxAtlas0000"
+          }
+        ],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "max(2, 1 + @abilities.int.mod)",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbAtlasAct000",
+        "type": "utility",
+        "name": "Create Maps (Long Rest)",
+        "img": "icons/tools/navigation/map-marked-brown.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you finish a Long Rest",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "adventurers-atlas"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxAtlas0000",
+      "name": "Adventurer's Atlas (map)",
+      "img": "icons/tools/navigation/map-marked-brown.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.init.bonus",
+            "value": "+1d4",
+            "type": "add",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Map effect (+1d4 Initiative) on up to 1 + INT creatures; old maps removed on reuse (module)."
+      }
+    }
+  }
+}

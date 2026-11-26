@@ -1,0 +1,203 @@
+{
+  "_id": "cgaCbexperimenta",
+  "name": "Experimental Elixir",
+  "type": "feat",
+  "img": "icons/consumables/potions/bottle-round-corked-orante-red.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Brew Elixirs</strong> (after a Long Rest): the module rolls 1d6 for each elixir (two; three at level 5, four at 9, five at 15; a 6 lets you choose) and puts them in your inventory - old elixirs vanish. <strong>Create Elixir:</strong> Magic action, spend a spell slot and choose the effect. Each elixir is a Bonus Action consumable for the drinker or a creature within 5 ft: Healing (2d8 + INT, 3d8 at 9, 4d8 at 15), Swiftness (+10/15/20 ft Speed, 1 hour), Resilience (+1 AC, 10 min/1 hour/8 hours), Boldness (+1d4 to attack rolls and saves, 1 min/10 min/1 hour), Flight (Fly 10/20/30 ft, 10 minutes).</p>",
+      "chat": ""
+    },
+    "identifier": "experimental-elixir",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Alchemist 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {
+      "cgaCbElixBrew000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbElixBrew000",
+        "type": "utility",
+        "name": "Brew Elixirs (Long Rest)",
+        "img": "icons/consumables/potions/bottle-round-corked-orante-red.webp",
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "When you finish a Long Rest",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "elixir-brew"
+        }
+      },
+      "cgaCbElixMake000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "spellSlots",
+              "value": "1",
+              "target": "1",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": true,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbElixMake000",
+        "type": "utility",
+        "name": "Create Elixir (Spell Slot)",
+        "img": "icons/consumables/potions/bottle-round-corked-orante-red.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "midiProperties": {
+          "identifier": "elixir-create"
+        }
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Brew (Long Rest) and Create (spell slot) activities; the module creates the elixir items."
+      }
+    }
+  }
+}

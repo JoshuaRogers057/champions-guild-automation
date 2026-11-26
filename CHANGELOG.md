@@ -3,6 +3,51 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.39.0
+
+Priority-1 class and subclass features for the Artificer (Eberron: Forge of the Artificer) and the subclasses from
+Ravenloft: The Horrors Within, Heroes of Faerûn and Arcana Unleashed. They ship as new CGA class features (1.0.0, Mass
+Apply), and their triggered parts run from module rules in `scripts/class-rules-books.js`. Four new companions are in
+the Summoned Creatures compendium.
+
+- **Artificer**:
+  - **Flash of Genius**: your Reaction adds your INT modifier when you or a creature within 30 ft fails a check or save.
+  - **Alchemist**: Experimental Elixir brews random elixirs after a Long Rest, or makes a chosen one for a spell slot.
+    Alchemical Savant adds INT to one healing or Acid/Fire/Poison roll of your Artificer spells.
+  - **Armorer**: Armor Model gives the Dreadnaught, Guardian and Infiltrator weapons (INT to hit and damage) with their
+    riders: push/pull, Disadvantage against others, +1d6 once per turn. It also gives Giant Stature, Defensive Field
+    and the Infiltrator's Speed and Stealth.
+  - **Artillerist**: Eldritch Cannon (Flamethrower, Force Ballista with its push, Protector), one at a time. Arcane
+    Firearm adds 1d8 to one damage roll of your Artificer spells.
+  - **Battle Smith**: Battle Ready uses INT for magic weapons. Steel Defender comes with the Deflect Attack Reaction.
+  - **Cartographer**: Adventurer's Atlas maps (+1d4 Initiative; reusing it replaces the old maps), Faerie Fire without
+    a slot, and Portal Jump.
+  - **Reanimator**: Jolt to Life on Spare the Dying, and a Reanimated Companion with Death Burst and Lightning
+    Absorption.
+- **College of Spirits**: Spirits from Beyond, with channeling after Bardic Inspiration, Controlled Channeling and all
+  12 Unleash effects.
+- **College of the Moon**: Inspired Eclipse (Invisible + teleport) and Lunar Vitality.
+- **Arcana Domain**: Modify Magic (Fortifying / Tenacious Spell, spends Channel Divinity).
+- **Grave Domain**: Circle of Mortality (Pull of Death; maximized healing at 0 HP) and Path to the Grave (the curse,
+  plus extra damage on a hit).
+- **Arcane Archer**: Arcane Shot and all eight options. Piercing and Seeking Shot use your bow's damage.
+- **Banneret**: Group Recovery heals allies when you use Second Wind.
+- **Oath of the Noble Genies**: Elemental Smite (all four options after Divine Smite). Genie's Splendor adds an
+  unarmored AC option (10 + DEX + CHA).
+- **Hollow Warden**: Wrath of the Wild (AC, Unnerving Aura each turn, Prowling Retribution).
+- **Winter Walker**: Frigid Explorer (Cold Resistance, ignore Cold Resistance, Polar Strikes) and Hunter's Rime.
+- **Phantom**: Wails from the Grave after Sneak Attack.
+- **Scion of the Three**: Bloodthirst (teleport + attack when an enemy becomes Bloodied) and Dread Allegiance.
+- **Shadow Sorcery**: Power of Shadow (senses; Strength of the Grave at 0 HP).
+- **Spellfire Sorcery**: Spellfire Burst after you spend Sorcery Points.
+- **Undead Patron**: Form of Dread with Frightful Avatar.
+- **Vestige Patron**: Vestige Companion in three forms, each with its Divine Power.
+- **Bladesinger**: Bladesong. INT weapon attacks, the effect ending on armor, a Shield or a two-handed attack, and the
+  Arcane Recovery refund are all handled.
+- **Enchanter**: Hypnotic Presence, which ends on damage or beyond 10 ft.
+- **Necromancer**: Necromancy Spellbook (Necrotic Resistance, Undead Vitality).
+- **Conjurer**: the existing Benign Transposition item was checked against the book.
+
 ## 0.38.1
 
 - **Reweave Fate**, **Moment of Prescience** and **Vigilant Guardian** (Mark of Sentinel) are offered only once per

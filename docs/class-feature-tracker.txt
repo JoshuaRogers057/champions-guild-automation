@@ -10,7 +10,7 @@ Artificer||2|Replicate Magic Item|EB|skip|3|Plans and created items by hand; the
 Artificer||3|Artificer Subclass|EB|skip|3|Sheet/advancement or manual
 Artificer||4|Ability Score Improvement|EB|skip|3|Sheet/advancement or manual
 Artificer||6|Magic Item Tinker|EB|build|3|Charge Magic Item (BA, spend a slot: item regains charges = slot level) and Drain Magic Item (item vanishes, gain a level 1/2 slot, 1/LR) activities; Transmute by hand
-Artificer||7|Flash of Genius|EB|build|1|Reaction when you or a creature within 30 ft fails an ability check or save: add INT mod (min +1), asked; INT uses/LR
+Artificer||7|Flash of Genius|EB|done|1|Reaction when you or a creature within 30 ft fails an ability check or save: add INT mod (min +1), asked; INT uses/LR
 Artificer||10|Magic Item Adept|EB|build|2|Attunement limit 4 (effect on system.attributes.attunement.max)
 Artificer||11|Spell-Storing Item|EB|build|3|Long Rest activity: pick a level 1-3 Artificer action spell and create a stored-spell item with a cast activity (2 x INT uses, once per turn)
 Artificer||14|Advanced Artifice|EB|build|2|Attunement limit 5; Refreshed Genius - a Short Rest restores one Flash of Genius use
@@ -19,40 +19,40 @@ Artificer||19|Epic Boon|EB|skip|3|Sheet/advancement or manual
 Artificer||20|Soul of Artifice|EB|build|3|Cheat Death - at 0 HP, asked how many replicated Uncommon/Rare items to disintegrate (HP = 20 x items); Magical Guidance - Short Rest restores all Flash of Genius uses while attuned to an item
 Artificer|Alchemist|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manual
 Artificer|Alchemist|3|Alchemist Spells|EB|skip|3|Always-prepared spells from the sheet
-Artificer|Alchemist|3|Experimental Elixir|EB|build|1|Long Rest makes 2-5 random elixir consumables (Healing 2d8+INT, Swiftness, Resilience +1 AC, Boldness +1d4 attacks/saves, Flight) scaling at 9/15; Magic action + slot creates a chosen elixir
-Artificer|Alchemist|5|Alchemical Savant|EB|build|1|+INT mod to one healing roll or Acid/Fire/Poison damage roll of your Artificer spells
+Artificer|Alchemist|3|Experimental Elixir|EB|done|1|Long Rest makes 2-5 random elixir consumables (Healing 2d8+INT, Swiftness, Resilience +1 AC, Boldness +1d4 attacks/saves, Flight) scaling at 9/15; Magic action + slot creates a chosen elixir
+Artificer|Alchemist|5|Alchemical Savant|EB|done|1|+INT mod to one healing roll or Acid/Fire/Poison damage roll of your Artificer spells
 Artificer|Alchemist|9|Restorative Reagents|EB|build|2|Lesser Restoration cast activity without a slot (INT uses/LR)
 Artificer|Alchemist|15|Chemical Mastery|EB|build|3|Alchemical Eruption +2d8 Force once per turn on an Acid/Fire/Poison Artificer spell; Acid/Poison Resistance + Poisoned immunity; Tasha's Bubbling Cauldron 1/LR cast activity
 Artificer|Armorer|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manual
 Artificer|Armorer|3|Armorer Spells|EB|skip|3|Always-prepared spells from the sheet
 Artificer|Armorer|3|Arcane Armor|EB|skip|3|No Strength requirement, quick don/doff and focus by hand
-Artificer|Armorer|3|Armor Model|EB|build|1|Dreadnaught (Force Demolisher 1d10 reach + push/pull, Giant Stature BA Large +5 reach), Guardian (Thunder Pulse 1d8 + Disadvantage vs others, Defensive Field temp HP while Bloodied), Infiltrator (Lightning Launcher 1d6 + 1d6 once per turn, +5 ft Speed, Stealth Advantage); INT for model weapons
+Artificer|Armorer|3|Armor Model|EB|done|1|Dreadnaught (Force Demolisher 1d10 reach + push/pull, Giant Stature BA Large +5 reach), Guardian (Thunder Pulse 1d8 + Disadvantage vs others, Defensive Field temp HP while Bloodied), Infiltrator (Lightning Launcher 1d6 + 1d6 once per turn, +5 ft Speed, Stealth Advantage); INT for model weapons
 Artificer|Armorer|5|Extra Attack|EB|skip|3|Sheet/advancement or manual
 Artificer|Armorer|9|Improved Armorer|EB|build|2|+1 attack/damage with the model weapon (Armor Replication by hand)
 Artificer|Armorer|15|Perfected Armor|EB|build|3|Bigger model weapon dice; Giant Stature Huge/+10 reach/STR Advantage; Guardian end-of-turn pull Reaction (STR save, pull 25 ft, attack); Infiltrator glimmer (Disadvantage on attacks vs you) + BA flight
 Artificer|Artillerist|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manual
 Artificer|Artillerist|3|Artillerist Spells|EB|skip|3|Always-prepared spells from the sheet
-Artificer|Artillerist|3|Eldritch Cannon|EB|build|1|Summon cannon actor (AC 18, HP 5 x level) with Flamethrower (15-ft cone 2d8 DEX), Force Ballista (120-ft spell attack 2d8 + push) and Protector (1d8+INT temp HP in 10 ft); 1/LR or a slot
-Artificer|Artillerist|5|Arcane Firearm|EB|build|1|+1d8 to one damage roll of your Artificer spells
+Artificer|Artillerist|3|Eldritch Cannon|EB|done|1|Summon cannon actor (AC 18, HP 5 x level) with Flamethrower (15-ft cone 2d8 DEX), Force Ballista (120-ft spell attack 2d8 + push) and Protector (1d8+INT temp HP in 10 ft); 1/LR or a slot
+Artificer|Artillerist|5|Arcane Firearm|EB|done|1|+1d8 to one damage roll of your Artificer spells
 Artificer|Artillerist|9|Explosive Cannon|EB|build|2|Detonate Reaction when the cannon is damaged (20-ft DEX save 3d10 Force, cannon destroyed); Firepower +1d8 to cannon damage/temp HP
 Artificer|Artillerist|15|Fortified Position|EB|build|3|Two cannons per creation; Half Cover (+2 AC/DEX saves) for you and allies within 10 ft of a cannon
 Artificer|Battle Smith|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manual
 Artificer|Battle Smith|3|Battle Smith Spells|EB|skip|3|Always-prepared spells from the sheet
-Artificer|Battle Smith|3|Battle Ready|EB|build|1|INT for attack and damage with magic weapons; Martial proficiency from the sheet
-Artificer|Battle Smith|3|Steel Defender|EB|build|1|Summon actor scaled by Artificer level: Force-Empowered Rend, Repair (3/day), Deflect Attack Reaction (Disadvantage), Steel Bond
+Artificer|Battle Smith|3|Battle Ready|EB|done|1|INT for attack and damage with magic weapons; Martial proficiency from the sheet
+Artificer|Battle Smith|3|Steel Defender|EB|done|1|Summon actor scaled by Artificer level: Force-Empowered Rend, Repair (3/day), Deflect Attack Reaction (Disadvantage), Steel Bond
 Artificer|Battle Smith|5|Extra Attack|EB|skip|3|Sheet; trading an attack for the defender's Rend by hand
 Artificer|Battle Smith|9|Arcane Jolt|EB|build|2|Once per turn when you hit with a magic weapon or the defender hits: +2d6 Force or heal 2d6 within 30 ft (asked; INT uses/LR)
 Artificer|Battle Smith|15|Improved Defender|EB|build|3|Arcane Jolt 4d6; Deflect Attack deals 1d4+INT Force to the attacker
 Artificer|Cartographer|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manual
 Artificer|Cartographer|3|Cartographer Spells|EB|skip|3|Always-prepared spells from the sheet
-Artificer|Cartographer|3|Adventurer’s Atlas|EB|build|1|Long Rest activity gives up to 1+INT map holders an Atlas effect: +1d4 to Initiative (Positioning by hand)
-Artificer|Cartographer|3|Mapping Magic|EB|build|1|Faerie Fire cast activity without a slot (INT uses/LR); Portal Jump teleport activity (10 ft or next to a map holder within 30 ft)
+Artificer|Cartographer|3|Adventurer’s Atlas|EB|done|1|Long Rest activity gives up to 1+INT map holders an Atlas effect: +1d4 to Initiative (Positioning by hand)
+Artificer|Cartographer|3|Mapping Magic|EB|done|1|Faerie Fire cast activity without a slot (INT uses/LR); Portal Jump teleport activity (10 ft or next to a map holder within 30 ft)
 Artificer|Cartographer|5|Guided Precision|EB|build|2|Once per turn +INT to damage of a Cartographer spell or an attack vs a Faerie Fire target; damage can't break Concentration on Faerie Fire
 Artificer|Cartographer|9|Ingenious Movement|EB|build|3|After Flash of Genius, offer a 30-ft teleport to you or a willing creature
 Artificer|Cartographer|15|Superior Atlas|EB|build|3|Safe Haven - a map holder dropping to 0 HP is asked to destroy its map (HP = 2 x Artificer level + teleport); Find the Path 1/LR cast activity
 Artificer|Reanimator|3|Reanimator Spells|RV|skip|3|Always-prepared spells from the sheet
-Artificer|Reanimator|3|Reanimator’s Skill Set|RV|build|1|Jolt to Life: Spare the Dying option - target regains HP = Artificer level and a 10-ft DEX save for 2d4 Lightning (3d4/4d4 at 11/17), INT uses/LR; tool proficiency from the sheet
-Artificer|Reanimator|3|Reanimated Companion|RV|build|1|Summon undead actor scaled by Artificer level: Dreadful Swipe (no Opportunity Attacks), Death Burst, Lightning Absorption; 1/LR or a slot
+Artificer|Reanimator|3|Reanimator’s Skill Set|RV|done|1|Jolt to Life: Spare the Dying option - target regains HP = Artificer level and a 10-ft DEX save for 2d4 Lightning (3d4/4d4 at 11/17), INT uses/LR; tool proficiency from the sheet
+Artificer|Reanimator|3|Reanimated Companion|RV|done|1|Summon undead actor scaled by Artificer level: Dreadful Swipe (no Opportunity Attacks), Death Burst, Lightning Absorption; 1/LR or a slot
 Artificer|Reanimator|5|Strange Modifications|RV|build|2|Companion option at summon: Arcane Conduit (+INT once per turn to Evocation/Necromancy Artificer spell damage) or Ferocity (Swipe 1d6)
 Artificer|Reanimator|9|Improved Reanimation|RV|build|2|Death Burst 4d4; companion Necrotic damage ignores Resistance
 Artificer|Reanimator|9|Macabre Modifications|RV|build|2|Two options; adds Bloated (Large, push 10 ft, +INT to Death Burst), Gaunt (45 ft + climb, Frightened aura WIS save) and Moist (swim, Acid retaliation = INT)
@@ -120,10 +120,10 @@ Bard|College of Lore|3|Cutting Words|SRD|done|1|Reaction prompt when an enemy's 
 Bard|College of Lore|6|Magical Discoveries|SRD|skip|3|Sheet/advancement or manual
 Bard|College of Lore|14|Peerless Skill|SRD|done|3|Optional Bardic die on a failed check (module rule keeps the die size).
 Bard|College of Spirits|3|Channeler|RV|skip|3|Guidance and focus from the sheet; 60-ft Guidance range by hand
-Bard|College of Spirits|3|Spirits from Beyond|RV|build|1|Giving Bardic Inspiration channels a random spirit (roll the BI die); Controlled Channeling BA picks one; Unleash Magic action runs the 12 spirit effects (heals, damage, Avenger, Advantage, temp HP, saves)
+Bard|College of Spirits|3|Spirits from Beyond|RV|done|1|Giving Bardic Inspiration channels a random spirit (roll the BI die); Controlled Channeling BA picks one; Unleash Magic action runs the 12 spirit effects (heals, damage, Avenger, Advantage, temp HP, saves)
 Bard|College of Spirits|6|Empowered Channeling|RV|build|2|Power from Beyond +1d6 once per turn to a Bard slot spell's damage or healing; Spirit Guardians 1/LR free cast with a Half Cover option (1/SR)
 Bard|College of Spirits|14|Mystical Connection|RV|build|3|Roll twice on Spirits from Beyond and choose; doubles let you pick any spirit
-Bard|College of the Moon|3|Moon’s Inspiration|FR|build|1|Inspired Eclipse - giving Bardic Inspiration offers Invisible + 30-ft teleport; Lunar Vitality - once per turn spend a BI die to add it to spell healing, +10 ft Speed
+Bard|College of the Moon|3|Moon’s Inspiration|FR|done|1|Inspired Eclipse - giving Bardic Inspiration offers Invisible + 30-ft teleport; Lunar Vitality - once per turn spend a BI die to add it to spell healing, +10 ft Speed
 Bard|College of the Moon|3|Primal Lore|FR|skip|3|Druidic, cantrip and skill from the sheet
 Bard|College of the Moon|6|Blessing of Moonlight|FR|build|2|Moonbeam option 1/LR: you glow (5-ft Dim Light) and each failed save heals another creature within 60 ft 2d4
 Bard|College of the Moon|14|Eventide’s Splendor|FR|build|3|Inspired Eclipse also makes the recipient Invisible with a 30-ft teleport; Lunar Vitality can use 1d6 instead of a BI die
@@ -143,13 +143,13 @@ Cleric||14|Improved Blessed Strikes|SRD|done|3|Divine Strike 2d8 (Blessed Strike
 Cleric||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Cleric||20|Greater Divine Intervention|SRD|skip|3|Wish - manual
 Cleric|Arcana Domain|3|Arcana Domain Spells|AU|skip|3|Always-prepared spells from the sheet
-Cleric|Arcana Domain|3|Modify Magic|AU|build|1|Channel Divinity on a spell cast: Fortifying Spell (one target 2d8 + Cleric level temp HP) or Tenacious Spell (a creature that saves subtracts 1d6 from its first save against the spell)
+Cleric|Arcana Domain|3|Modify Magic|AU|done|1|Channel Divinity on a spell cast: Fortifying Spell (one target 2d8 + Cleric level temp HP) or Tenacious Spell (a creature that saves subtracts 1d6 from its first save against the spell)
 Cleric|Arcana Domain|3|Student of Arcana|AU|skip|3|Skill and Wizard cantrips from the sheet
 Cleric|Arcana Domain|6|Dispelling Recovery|AU|build|2|After a slot spell that heals or ends a condition, offer a free Dispel Magic (1/SR, or spend Channel Divinity)
 Cleric|Arcana Domain|17|Magical Mastery|AU|skip|3|Always-prepared Wizard spells from the sheet
 Cleric|Grave Domain|3|Grave Domain Spells|RV|skip|3|Always-prepared spells from the sheet
-Cleric|Grave Domain|3|Circle of Mortality|RV|build|1|Pull of Death +1d4 Necrotic (1d6 at 11) once per turn vs a creature missing HP; Spare the Dying as a BA; healing dice are maximized on creatures at 0 HP
-Cleric|Grave Domain|3|Path to the Grave|RV|build|1|Channel Divinity BA curse: Disadvantage on attacks and saves until your next turn; a hit by you or an ally can end it for + Cleric level Necrotic/Radiant (asked)
+Cleric|Grave Domain|3|Circle of Mortality|RV|done|1|Pull of Death +1d4 Necrotic (1d6 at 11) once per turn vs a creature missing HP; Spare the Dying as a BA; healing dice are maximized on creatures at 0 HP
+Cleric|Grave Domain|3|Path to the Grave|RV|done|1|Channel Divinity BA curse: Disadvantage on attacks and saves until your next turn; a hit by you or an ally can end it for + Cleric level Necrotic/Radiant (asked)
 Cleric|Grave Domain|6|Sentinel at Death’s Door|RV|build|2|Reaction when you or a Bloodied creature within 60 ft is hit: halve the damage, cancel critical effects (WIS uses/LR)
 Cleric|Grave Domain|17|Divine Reaper|RV|build|3|Keeper of Souls - an enemy dying within 60 ft heals you or an ally 2 x Cleric level (1/SR); Enhanced Necromancy second target by hand
 Cleric|Knowledge Domain|3|Blessings of Knowledge|FR|skip|3|Skills, Expertise and tools from the sheet
@@ -226,22 +226,22 @@ Fighter||13|Studied Attacks|SRD|done|3|Miss: Advantage on your next attack again
 Fighter||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Fighter||20|Three Extra Attacks|SRD|skip|3|Sheet/advancement or manual
 Fighter|Arcane Archer|3|Arcane Archer Lore|AU|skip|3|Cantrip and skills from the sheet
-Fighter|Arcane Archer|3|Arcane Shot|AU|build|1|Once per turn after an Ammunition weapon hit, offer your known Arcane Shot options; die d6/d8/d10/d12 by level, DC 8 + INT + PB, INT uses/SR
+Fighter|Arcane Archer|3|Arcane Shot|AU|done|1|Once per turn after an Ammunition weapon hit, offer your known Arcane Shot options; die d6/d8/d10/d12 by level, DC 8 + INT + PB, INT uses/SR
 Fighter|Arcane Archer|7|Curving Shot|AU|build|2|After a missed Ammunition attack, offer a BA re-attack against a creature within 60 ft of the target
 Fighter|Arcane Archer|7|Magical Ammunition|AU|skip|3|Utility ammunition (darkness, unlock, vine) by hand
 Fighter|Arcane Archer|10|Ever-Ready Shot|AU|build|2|Rolling Initiative restores one Arcane Shot use
 Fighter|Arcane Archer|15|Indomitable Teleport|AU|build|3|After a successful Indomitable save, offer a 60-ft teleport
 Fighter|Arcane Archer|18|Masterful Shots|AU|build|3|Reaction when missed: move half Speed without provoking, then a ranged attack against the attacker (asked)
-Fighter|Arcane Shot Option||Banishing Shot|AU|build|1|+1 Arcane Shot die Psychic; CHA save or banished (Incapacitated, Speed 0) until the end of its next turn
-Fighter|Arcane Shot Option||Beguiling Shot|AU|build|1|+2 dice Psychic; WIS save or Charmed by you or an ally until your next turn
-Fighter|Arcane Shot Option||Bursting Shot|AU|build|1|Target and creatures within 10 ft take 2 dice Force
-Fighter|Arcane Shot Option||Enfeebling Shot|AU|build|1|+2 dice Necrotic; CON save or Poisoned until the end of its next turn, its hits deal 1 die less damage
-Fighter|Arcane Shot Option||Grasping Shot|AU|build|1|+1 die Slashing; STR save or Restrained for 1 minute (Athletics check to escape)
-Fighter|Arcane Shot Option||Piercing Shot|AU|build|1|No attack roll: 30-ft line DEX save, weapon damage + 2 dice Piercing (half on success)
-Fighter|Arcane Shot Option||Seeking Shot|AU|build|1|No attack roll: DEX save, weapon damage + 2 dice Force (half on success), ignores Half/Three-Quarters Cover
-Fighter|Arcane Shot Option||Shadow Shot|AU|build|1|+1 die Psychic; WIS save or Blinded until the end of its next turn
+Fighter|Arcane Shot Option||Banishing Shot|AU|done|1|+1 Arcane Shot die Psychic; CHA save or banished (Incapacitated, Speed 0) until the end of its next turn
+Fighter|Arcane Shot Option||Beguiling Shot|AU|done|1|+2 dice Psychic; WIS save or Charmed by you or an ally until your next turn
+Fighter|Arcane Shot Option||Bursting Shot|AU|done|1|Target and creatures within 10 ft take 2 dice Force
+Fighter|Arcane Shot Option||Enfeebling Shot|AU|done|1|+2 dice Necrotic; CON save or Poisoned until the end of its next turn, its hits deal 1 die less damage
+Fighter|Arcane Shot Option||Grasping Shot|AU|done|1|+1 die Slashing; STR save or Restrained for 1 minute (Athletics check to escape)
+Fighter|Arcane Shot Option||Piercing Shot|AU|done|1|No attack roll: 30-ft line DEX save, weapon damage + 2 dice Piercing (half on success)
+Fighter|Arcane Shot Option||Seeking Shot|AU|done|1|No attack roll: DEX save, weapon damage + 2 dice Force (half on success), ignores Half/Three-Quarters Cover
+Fighter|Arcane Shot Option||Shadow Shot|AU|done|1|+1 die Psychic; WIS save or Blinded until the end of its next turn
 Fighter|Banneret|3|Knightly Envoy|FR|skip|3|Ritual, language and skill from the sheet
-Fighter|Banneret|3|Group Recovery|FR|build|1|Second Wind offers healing for up to CHA allies within 30 ft: 1d4 + Fighter level each (1/SR)
+Fighter|Banneret|3|Group Recovery|FR|done|1|Second Wind offers healing for up to CHA allies within 30 ft: 1d4 + Fighter level each (1/SR)
 Fighter|Banneret|7|Team Tactics|FR|build|2|Group Recovery allies get Advantage on D20 Tests until the start of your next turn
 Fighter|Banneret|10|Rallying Surge|FR|build|2|Action Surge lets up to CHA allies within 30 ft use a Reaction to attack or move half Speed without provoking (prompt/chat for each ally)
 Fighter|Banneret|15|Shared Resilience|FR|build|3|Reaction when an ally within 60 ft fails a save: spend Indomitable, the ally rerolls with + Fighter level
@@ -368,9 +368,9 @@ Paladin|Oath of the Ancients|3|Oath of the Ancients Spells|PHB|skip|3|Sheet/adva
 Paladin|Oath of the Ancients|7|Aura of Warding|PHB|done|2|Necrotic/Psychic/Radiant resistance aura (module rule).
 Paladin|Oath of the Ancients|15|Undying Sentinel|PHB|done|3|Automatic once per Long Rest at 0 HP (module rule).
 Paladin|Oath of the Ancients|20|Elder Champion|PHB|done|3|Regeneration and an enemy save-Disadvantage aura for 1 minute (module rule).
-Paladin|Oath of the Noble Genies|3|Elemental Smite|FR|build|1|After Divine Smite, offer Channel Divinity: Dao's Crush (Grappled + Restrained), Djinni's Escape (teleport 30 ft, B/P/S Resistance, immunities), Efreeti's Fury (2d4 Fire + jump 2d4), Marid's Surge (STR save push 15 ft + Prone)
+Paladin|Oath of the Noble Genies|3|Elemental Smite|FR|done|1|After Divine Smite, offer Channel Divinity: Dao's Crush (Grappled + Restrained), Djinni's Escape (teleport 30 ft, B/P/S Resistance, immunities), Efreeti's Fury (2d4 Fire + jump 2d4), Marid's Surge (STR save push 15 ft + Prone)
 Paladin|Oath of the Noble Genies|3|Genie Spells|FR|skip|3|Always-prepared spells from the sheet
-Paladin|Oath of the Noble Genies|3|Genie’s Splendor|FR|build|1|Unarmored AC 10 + DEX + CHA (Shield allowed); skill from the sheet
+Paladin|Oath of the Noble Genies|3|Genie’s Splendor|FR|done|1|Unarmored AC 10 + DEX + CHA (Shield allowed); skill from the sheet
 Paladin|Oath of the Noble Genies|7|Aura of Elemental Shielding|FR|build|2|Chosen Acid/Cold/Fire/Lightning/Thunder Resistance for you and allies in your Aura of Protection; change at the start of your turn
 Paladin|Oath of the Noble Genies|15|Elemental Rebuke|FR|build|3|Reaction when hit: halve the damage and the attacker makes a DEX save, 2d10 + CHA of a chosen type (CHA uses/LR)
 Paladin|Oath of the Noble Genies|20|Noble Scion|FR|build|3|BA 10 minutes: Fly 60 ft hover; Minor Wish Reaction turns a failed D20 Test into a success for you or an ally in the aura (1/LR or a level 5 slot)
@@ -413,7 +413,7 @@ Ranger|Gloom Stalker|7|Iron Mind|PHB|skip|3|Sheet/advancement or manual
 Ranger|Gloom Stalker|11|Stalker’s Flurry|PHB|done|3|Prompt after Dreadful Strike: Sudden Strike reminder or Mass Fear saves.
 Ranger|Gloom Stalker|15|Shadowy Dodge|PHB|done|3|Reaction prompt: Disadvantage on the attack (module rule).
 Ranger|Hollow Warden|3|Hollow Warden Spells|RV|skip|3|Always-prepared spells from the sheet
-Ranger|Hollow Warden|3|Wrath of the Wild|RV|build|1|BA (spends a Favored Enemy use) 1-minute form: +1 AC (+2 at 11), Prowling Retribution Opportunity Attack prompt, Unnerving Aura 10-ft WIS save or Frightened on transform and each turn
+Ranger|Hollow Warden|3|Wrath of the Wild|RV|done|1|BA (spends a Favored Enemy use) 1-minute form: +1 AC (+2 at 11), Prowling Retribution Opportunity Attack prompt, Unnerving Aura 10-ft WIS save or Frightened on transform and each turn
 Ranger|Hollow Warden|7|Hungering Might|RV|build|2|+WIS to CON saves; once per turn while transformed and Bloodied, a hit heals 1d10 + WIS
 Ranger|Hollow Warden|11|Rot and Violence|RV|build|2|Menacing Aura - failed Unnerving Aura saves also block healing and Reactions; Strangling Roots extra Sap/Slow mastery by hand
 Ranger|Hollow Warden|15|Ancient Might|RV|build|3|Ominous Strikes + WIS damage vs Frightened targets; Persistent Wrath (0 HP while transformed -> 2 x Ranger level, 1/LR or level 4+ slot); Exhaustion immunity
@@ -422,8 +422,8 @@ Ranger|Hunter|3|Hunter’s Prey|SRD|done|1|Choose Option activity; Colossus Slay
 Ranger|Hunter|7|Defensive Tactics|SRD|done|2|Choose Option: Escape the Horde effect or Multiattack Defense (module rule).
 Ranger|Hunter|11|Superior Hunter’s Prey|SRD|done|3|Once per turn, the Hunter's Mark die to a second creature within 30 ft.
 Ranger|Hunter|15|Superior Hunter’s Defense|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium reaction resistance by type
-Ranger|Winter Walker|3|Frigid Explorer|FR|build|1|Cold Resistance; your weapon/Ranger damage ignores Cold Resistance; Polar Strikes +1d4 Cold once per turn on a weapon hit (1d6 at 11)
-Ranger|Winter Walker|3|Hunter’s Rime|FR|build|1|Casting Hunter's Mark gives 1d10 + Ranger level temp HP; marked creatures can't Disengage (by hand)
+Ranger|Winter Walker|3|Frigid Explorer|FR|done|1|Cold Resistance; your weapon/Ranger damage ignores Cold Resistance; Polar Strikes +1d4 Cold once per turn on a weapon hit (1d6 at 11)
+Ranger|Winter Walker|3|Hunter’s Rime|FR|done|1|Casting Hunter's Mark gives 1d10 + Ranger level temp HP; marked creatures can't Disengage (by hand)
 Ranger|Winter Walker|3|Winter Walker Spells|FR|skip|3|Always-prepared spells from the sheet
 Ranger|Winter Walker|7|Fortifying Soul|FR|build|2|Magic action: up to WIS creatures heal 1d10 + Ranger level and get Advantage on saves vs Frightened for 1 hour (1/LR)
 Ranger|Winter Walker|11|Chilling Retribution|FR|build|2|Reaction when hit: WIS save or Stunned (Speed 0) until the end of your next turn (WIS uses/LR)
@@ -456,14 +456,14 @@ Rogue|Assassin|3|Assassin’s Tools|PHB|skip|3|Sheet/advancement or manual
 Rogue|Assassin|9|Infiltration Expertise|PHB|skip|3|Sheet/advancement or manual
 Rogue|Assassin|13|Envenom Weapons|PHB|done|3|Poison Cunning Strike adds 2d6 Poison.
 Rogue|Assassin|17|Death Strike|PHB|done|3|First-round Sneak Attack: CON save or the damage again.
-Rogue|Phantom|3|Wails from the Grave|RV|build|1|After Sneak Attack damage on your turn, offer half the Sneak Attack dice as Necrotic to a second creature within 30 ft (DEX uses/LR)
+Rogue|Phantom|3|Wails from the Grave|RV|done|1|After Sneak Attack damage on your turn, offer half the Sneak Attack dice as Necrotic to a second creature within 30 ft (DEX uses/LR)
 Rogue|Phantom|3|Whispers of the Dead|RV|skip|3|Rest proficiency swap by hand
 Rogue|Phantom|9|Tokens of the Departed|RV|build|2|Soul trinket uses (2-4): Death's Knell free Wails, Life Essence Advantage on death saves and CON saves while you have one, Reaction to gain one when a creature dies within 30 ft, refill to 2 on a Long Rest
 Rogue|Phantom|9|Voice of Death|RV|build|3|Speak with Dead cast activity without a slot (1/SR)
 Rogue|Phantom|13|Ghost Walk|RV|build|3|BA 10 minutes: Fly 10 ft hover, attacks against you have Disadvantage (1/LR or destroy a trinket)
 Rogue|Phantom|17|Death’s Friend|RV|build|3|Wails also hits the first creature; Initiative gives a trinket when you have none
-Rogue|Scion of the Three|3|Bloodthirst|FR|build|1|Reaction when an enemy within 30 ft becomes Bloodied: teleport next to it and make a melee attack (asked; INT uses/LR)
-Rogue|Scion of the Three|3|Dread Allegiance|FR|build|1|Choose Bane/Bhaal/Myrkul: Psychic/Poison/Necrotic Resistance (cantrip from the sheet)
+Rogue|Scion of the Three|3|Bloodthirst|FR|done|1|Reaction when an enemy within 30 ft becomes Bloodied: teleport next to it and make a melee attack (asked; INT uses/LR)
+Rogue|Scion of the Three|3|Dread Allegiance|FR|done|1|Choose Bane/Bhaal/Myrkul: Psychic/Poison/Necrotic Resistance (cantrip from the sheet)
 Rogue|Scion of the Three|9|Strike Fear|FR|build|2|Cunning Strike option Terrify (1d6): WIS save or Frightened 1 minute (repeat saves), you have Advantage against it
 Rogue|Scion of the Three|13|Aura of Malevolence|FR|build|3|Bloodthirst teleport deals INT damage of your allegiance type to chosen creatures within 10 ft, ignoring Resistance
 Rogue|Scion of the Three|17|Dread Incarnate|FR|build|3|Short Rest restores one Bloodthirst use; Sneak Attack dice of 1-2 count as 3
@@ -514,11 +514,11 @@ Sorcerer|Metamagic||Subtle Spell|SRD|done|1|midi-qol sample item checked (activi
 Sorcerer|Metamagic||Transmuted Spell|SRD|done|2|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
 Sorcerer|Metamagic||Twinned Spell|SRD|done|1|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
 Sorcerer|Shadow Sorcery|3|Shadow Spells|RV|skip|3|Always-prepared spells from the sheet
-Sorcerer|Shadow Sorcery|3|Power of Shadow|RV|build|1|Darkvision 120 / Blindsight 10; Strength of the Grave - dropping to 0 HP asks for a CHA save (DC 5 + damage) to stay at CHA + level HP (1/LR)
+Sorcerer|Shadow Sorcery|3|Power of Shadow|RV|done|1|Darkvision 120 / Blindsight 10; Strength of the Grave - dropping to 0 HP asks for a CHA save (DC 5 + damage) to stay at CHA + level HP (1/LR)
 Sorcerer|Shadow Sorcery|6|Beasts of Ill Omen|RV|build|2|3 Sorcery Points: Summon Beast as a BA without a slot (optional no-Concentration 1-minute version); enemies within 5 ft of the beast have Disadvantage on saves vs your spells
 Sorcerer|Shadow Sorcery|14|Shadow Walk|RV|build|3|BA teleport up to 120 ft (light check by hand)
 Sorcerer|Shadow Sorcery|18|Umbral Form|RV|build|3|With Innate Sorcery: Resistance to all but Force/Radiant (1/LR or 6 Sorcery Points); incorporeal movement by hand
-Sorcerer|Spellfire Sorcery|3|Spellfire Burst|FR|build|1|Once per turn after spending a Sorcery Point: Bolstering Flames (1d4 + CHA temp HP, + level at 14) or Radiant Fire (1d4 Fire/Radiant, 1d8 at 14) within 30 ft
+Sorcerer|Spellfire Sorcery|3|Spellfire Burst|FR|done|1|Once per turn after spending a Sorcery Point: Bolstering Flames (1d4 + CHA temp HP, + level at 14) or Radiant Fire (1d4 Fire/Radiant, 1d8 at 14) within 30 ft
 Sorcerer|Spellfire Sorcery|3|Spellfire Spells|FR|skip|3|Always-prepared spells from the sheet
 Sorcerer|Spellfire Sorcery|6|Absorb Spells|FR|build|2|Counterspell from the sheet; a failed save against your Counterspell restores 1d4 Sorcery Points
 Sorcerer|Spellfire Sorcery|14|Honed Spellfire|FR|build|3|Spellfire Burst upgrades (handled by level in Spellfire Burst)
@@ -587,12 +587,12 @@ Warlock|Great Old One Patron|6|Clairvoyant Combatant|PHB|done|3|WIS save; on a f
 Warlock|Great Old One Patron|10|Eldritch Hex|PHB|done|2|Hex effects also give Disadvantage on that ability's saves (module rule).
 Warlock|Great Old One Patron|10|Thought Shield|PHB|done|3|Psychic resistance; psychic damage reflected (module rule).
 Warlock|Great Old One Patron|14|Create Thrall|PHB|skip|3|Summon Aberration without concentration - manual
-Warlock|Undead Patron|3|Form of Dread|RV|build|1|BA 1-minute form: 1d10 + level temp HP, Frightened immunity, once per turn a hit forces a WIS save or Frightened until the end of your next turn (CHA uses/LR)
+Warlock|Undead Patron|3|Form of Dread|RV|done|1|BA 1-minute form: 1d10 + level temp HP, Frightened immunity, once per turn a hit forces a WIS save or Frightened until the end of your next turn (CHA uses/LR)
 Warlock|Undead Patron|3|Undead Spells|RV|skip|3|Always-prepared spells from the sheet
 Warlock|Undead Patron|6|Grave Touched|RV|build|2|Your Necrotic damage ignores Resistance; once per turn change a spell's damage to Necrotic (asked); Dreaded Necrosis extra die in Form of Dread; Undead Endurance by hand
 Warlock|Undead Patron|10|Necrotic Husk|RV|build|2|Necrotic Resistance (immunity in form); Unholy Resuscitation at 0 HP - 30-ft CON save 2d10 + CHA Necrotic, HP = 2 x level, +1 Exhaustion (1/SR)
 Warlock|Undead Patron|14|Superior Dread|RV|build|3|In Form of Dread: B/P/S Resistance and Fly = Speed (hover); component-free casting by hand
-Warlock|Vestige Patron|3|Vestige Companion|AU|build|1|Summon actor (Celestial/Fiend/Undead forms) scaled by Warlock level: Vestige's Strike, Divine Power 1/day (Cursed Invocation, Fiendish Swap, Healing Touch), Pact Bond
+Warlock|Vestige Patron|3|Vestige Companion|AU|done|1|Summon actor (Celestial/Fiend/Undead forms) scaled by Warlock level: Vestige's Strike, Divine Power 1/day (Cursed Invocation, Fiendish Swap, Healing Touch), Pact Bond
 Warlock|Vestige Patron|3|Vestige Spells|AU|skip|3|Chosen domain spells from the sheet
 Warlock|Vestige Patron|6|Vestige Power|AU|build|2|Divine Power returns on a Short Rest / Magical Cunning; you share the vestige's Resistance within 30 ft
 Warlock|Vestige Patron|10|Vestige Recovery|AU|build|3|Reaction when the vestige would drop to 0 HP: spend a Pact slot, it returns to max HP and teleports 30 ft (1/LR)
@@ -612,12 +612,12 @@ Wizard|Abjurer|3|Arcane Ward|PHB|done|1|midi-qol sample item checked (activities
 Wizard|Abjurer|6|Projected Ward|PHB|done|2|Reaction prompt to absorb an ally's damage with your Arcane Ward (module rule).
 Wizard|Abjurer|10|Spell Breaker|PHB|skip|3|Sheet/advancement or manual
 Wizard|Abjurer|14|Spell Resistance|PHB|done|3|Advantage on saves vs spells; spell damage halved (module rule).
-Wizard|Bladesinger|3|Bladesong|FR|build|1|BA 1 minute (INT uses/LR, one back on Arcane Recovery): +INT AC, +10 ft Speed, Acrobatics Advantage, INT for proficient weapon attacks, +INT to Concentration saves; ends with armor/Shield/two-handed attack/Incapacitated
+Wizard|Bladesinger|3|Bladesong|FR|done|1|BA 1 minute (INT uses/LR, one back on Arcane Recovery): +INT AC, +10 ft Speed, Acrobatics Advantage, INT for proficient weapon attacks, +INT to Concentration saves; ends with armor/Shield/two-handed attack/Incapacitated
 Wizard|Bladesinger|3|Training in War and Song|FR|skip|3|Proficiencies and skill from the sheet
 Wizard|Bladesinger|6|Extra Attack|FR|skip|3|Sheet; cantrip in place of an attack by hand
 Wizard|Bladesinger|10|Song of Defense|FR|build|2|Reaction when damaged during Bladesong: spend a slot to reduce the damage by 5 x slot level (asked)
 Wizard|Bladesinger|14|Song of Victory|FR|build|3|After casting an action spell, offer a BA weapon attack
-Wizard|Conjurer|3|Benign Transposition|AU|verify|1|CGA item from v0.2.0 (teleport / swap activities) - check it matches: BA, 30 ft, INT uses/LR, swap with a willing Medium or smaller creature
+Wizard|Conjurer|3|Benign Transposition|AU|done|1|CGA item from v0.2.0 checked: Bonus Action teleport / swap activities, 30 ft, INT uses per Long Rest (the teleport waits for you to pick the spot on the map)
 Wizard|Conjurer|3|Conjuration Savant|AU|skip|3|Spellbook by hand
 Wizard|Conjurer|6|Distant Transposition|AU|build|2|Benign Transposition range 60 ft; restore a use with a level 3+ slot
 Wizard|Conjurer|6|Durable Summons|AU|build|2|Slot-cast Conjuration summons get 2 x Wizard level temp HP and Resistance (except Force/Necrotic/Psychic/Radiant) while it lasts
@@ -630,7 +630,7 @@ Wizard|Diviner|10|The Third Eye|PHB|done|3|Choice effect until a Short or Long R
 Wizard|Diviner|14|Greater Portent|PHB|done|3|Three foretelling rolls (Portent module rule).
 Wizard|Enchanter|3|Enchanting Conversationalist|AU|build|2|+INT to checks with the chosen Deception/Intimidation/Persuasion skill (proficiency from the sheet)
 Wizard|Enchanter|3|Enchantment Savant|AU|skip|3|Spellbook by hand
-Wizard|Enchanter|3|Hypnotic Presence|AU|build|1|Magic action, 10 ft: WIS save or Charmed + Incapacitated + Speed 0 for 1 minute, ends on damage or distance (INT uses/LR)
+Wizard|Enchanter|3|Hypnotic Presence|AU|done|1|Magic action, 10 ft: WIS save or Charmed + Incapacitated + Speed 0 for 1 minute, ends on damage or distance (INT uses/LR)
 Wizard|Enchanter|6|Split Enchantment|AU|build|2|Slot Enchantment spells that target more creatures when upcast can be cast one level higher (asked; INT uses/LR)
 Wizard|Enchanter|10|Instinctive Charm|AU|build|3|Reaction when hit within 30 ft: WIS save or the attack misses (redirect by hand); 1/LR, restored by an Enchantment slot spell
 Wizard|Enchanter|14|Alter Memories|AU|skip|3|Roleplay
@@ -645,7 +645,7 @@ Wizard|Illusionist|6|Phantasmal Creatures|PHB|skip|3|Illusion Summon Beast/Fey -
 Wizard|Illusionist|10|Illusory Self|PHB|done|2|Reaction prompt when hit: the attack misses (module rule).
 Wizard|Illusionist|14|Illusory Reality|PHB|skip|3|Manual
 Wizard|Necromancer|3|Necromancy Savant|AU|skip|3|Spellbook by hand
-Wizard|Necromancer|3|Necromancy Spellbook|AU|build|1|Necrotic Resistance; Undead Vitality - a slot Necromancy spell heals an Undead within 60 ft slot level + Wizard level (asked); Skeleton/Zombie familiar forms and familiar attack by hand
+Wizard|Necromancer|3|Necromancy Spellbook|AU|done|1|Necrotic Resistance; Undead Vitality - a slot Necromancy spell heals an Undead within 60 ft slot level + Wizard level (asked); Skeleton/Zombie familiar forms and familiar attack by hand
 Wizard|Necromancer|6|Grave Power|AU|build|2|Wizard spell damage ignores Necrotic Resistance; Arcane Recovery removes one Exhaustion level
 Wizard|Necromancer|6|Undead Thralls|AU|build|2|Animate Dead 1/LR without a slot at +1 level; your Necromancy undead get + INT + half level HP and + INT Necrotic on hits
 Wizard|Necromancer|10|Harvest Undead|AU|build|3|Reaction on becoming Bloodied: drop one of your Undead to 0 HP and heal Wizard level (asked)

@@ -73,7 +73,7 @@
    "level": 7,
    "name": "Flash of Genius",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Reaction when you or a creature within 30 ft fails an ability check or save: add INT mod (min +1), asked; INT uses/LR",
    "identifier": "flash-of-genius"
@@ -172,7 +172,7 @@
    "level": 3,
    "name": "Experimental Elixir",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Long Rest makes 2-5 random elixir consumables (Healing 2d8+INT, Swiftness, Resilience +1 AC, Boldness +1d4 attacks/saves, Flight) scaling at 9/15; Magic action + slot creates a chosen elixir",
    "identifier": "experimental-elixir"
@@ -183,7 +183,7 @@
    "level": 5,
    "name": "Alchemical Savant",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "+INT mod to one healing roll or Acid/Fire/Poison damage roll of your Artificer spells",
    "identifier": "alchemical-savant"
@@ -249,7 +249,7 @@
    "level": 3,
    "name": "Armor Model",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Dreadnaught (Force Demolisher 1d10 reach + push/pull, Giant Stature BA Large +5 reach), Guardian (Thunder Pulse 1d8 + Disadvantage vs others, Defensive Field temp HP while Bloodied), Infiltrator (Lightning Launcher 1d6 + 1d6 once per turn, +5 ft Speed, Stealth Advantage); INT for model weapons",
    "identifier": "armor-model"
@@ -315,7 +315,7 @@
    "level": 3,
    "name": "Eldritch Cannon",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Summon cannon actor (AC 18, HP 5 x level) with Flamethrower (15-ft cone 2d8 DEX), Force Ballista (120-ft spell attack 2d8 + push) and Protector (1d8+INT temp HP in 10 ft); 1/LR or a slot",
    "identifier": "eldritch-cannon"
@@ -326,7 +326,7 @@
    "level": 5,
    "name": "Arcane Firearm",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "+1d8 to one damage roll of your Artificer spells",
    "identifier": "arcane-firearm"
@@ -381,7 +381,7 @@
    "level": 3,
    "name": "Battle Ready",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "INT for attack and damage with magic weapons; Martial proficiency from the sheet",
    "identifier": "battle-ready"
@@ -392,7 +392,7 @@
    "level": 3,
    "name": "Steel Defender",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Summon actor scaled by Artificer level: Force-Empowered Rend, Repair (3/day), Deflect Attack Reaction (Disadvantage), Steel Bond",
    "identifier": "steel-defender"
@@ -458,7 +458,7 @@
    "level": 3,
    "name": "Adventurer’s Atlas",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Long Rest activity gives up to 1+INT map holders an Atlas effect: +1d4 to Initiative (Positioning by hand)",
    "identifier": "adventurers-atlas"
@@ -469,7 +469,7 @@
    "level": 3,
    "name": "Mapping Magic",
    "source": "EB",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Faerie Fire cast activity without a slot (INT uses/LR); Portal Jump teleport activity (10 ft or next to a map holder within 30 ft)",
    "identifier": "mapping-magic"
@@ -524,7 +524,7 @@
    "level": 3,
    "name": "Reanimator’s Skill Set",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Jolt to Life: Spare the Dying option - target regains HP = Artificer level and a 10-ft DEX save for 2d4 Lightning (3d4/4d4 at 11/17), INT uses/LR; tool proficiency from the sheet",
    "identifier": "reanimators-skill-set"
@@ -535,7 +535,7 @@
    "level": 3,
    "name": "Reanimated Companion",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Summon undead actor scaled by Artificer level: Dreadful Swipe (no Opportunity Attacks), Death Burst, Lightning Absorption; 1/LR or a slot",
    "identifier": "reanimated-companion"
@@ -1283,7 +1283,7 @@
    "level": 3,
    "name": "Spirits from Beyond",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Giving Bardic Inspiration channels a random spirit (roll the BI die); Controlled Channeling BA picks one; Unleash Magic action runs the 12 spirit effects (heals, damage, Avenger, Advantage, temp HP, saves)",
    "identifier": "spirits-from-beyond"
@@ -1316,7 +1316,7 @@
    "level": 3,
    "name": "Moon’s Inspiration",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Inspired Eclipse - giving Bardic Inspiration offers Invisible + 30-ft teleport; Lunar Vitality - once per turn spend a BI die to add it to spell healing, +10 ft Speed",
    "identifier": "moons-inspiration"
@@ -1536,7 +1536,7 @@
    "level": 3,
    "name": "Modify Magic",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Channel Divinity on a spell cast: Fortifying Spell (one target 2d8 + Cleric level temp HP) or Tenacious Spell (a creature that saves subtracts 1d6 from its first save against the spell)",
    "identifier": "modify-magic"
@@ -1591,7 +1591,7 @@
    "level": 3,
    "name": "Circle of Mortality",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Pull of Death +1d4 Necrotic (1d6 at 11) once per turn vs a creature missing HP; Spare the Dying as a BA; healing dice are maximized on creatures at 0 HP",
    "identifier": "circle-of-mortality"
@@ -1602,7 +1602,7 @@
    "level": 3,
    "name": "Path to the Grave",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Channel Divinity BA curse: Disadvantage on attacks and saves until your next turn; a hit by you or an ally can end it for + Cleric level Necrotic/Radiant (asked)",
    "identifier": "path-to-the-grave"
@@ -2449,7 +2449,7 @@
    "level": 3,
    "name": "Arcane Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Once per turn after an Ammunition weapon hit, offer your known Arcane Shot options; die d6/d8/d10/d12 by level, DC 8 + INT + PB, INT uses/SR",
    "identifier": "arcane-shot"
@@ -2515,7 +2515,7 @@
    "level": null,
    "name": "Banishing Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "+1 Arcane Shot die Psychic; CHA save or banished (Incapacitated, Speed 0) until the end of its next turn",
    "identifier": "banishing-shot"
@@ -2526,7 +2526,7 @@
    "level": null,
    "name": "Beguiling Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "+2 dice Psychic; WIS save or Charmed by you or an ally until your next turn",
    "identifier": "beguiling-shot"
@@ -2537,7 +2537,7 @@
    "level": null,
    "name": "Bursting Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Target and creatures within 10 ft take 2 dice Force",
    "identifier": "bursting-shot"
@@ -2548,7 +2548,7 @@
    "level": null,
    "name": "Enfeebling Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "+2 dice Necrotic; CON save or Poisoned until the end of its next turn, its hits deal 1 die less damage",
    "identifier": "enfeebling-shot"
@@ -2559,7 +2559,7 @@
    "level": null,
    "name": "Grasping Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "+1 die Slashing; STR save or Restrained for 1 minute (Athletics check to escape)",
    "identifier": "grasping-shot"
@@ -2570,7 +2570,7 @@
    "level": null,
    "name": "Piercing Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "No attack roll: 30-ft line DEX save, weapon damage + 2 dice Piercing (half on success)",
    "identifier": "piercing-shot"
@@ -2581,7 +2581,7 @@
    "level": null,
    "name": "Seeking Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "No attack roll: DEX save, weapon damage + 2 dice Force (half on success), ignores Half/Three-Quarters Cover",
    "identifier": "seeking-shot"
@@ -2592,7 +2592,7 @@
    "level": null,
    "name": "Shadow Shot",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "+1 die Psychic; WIS save or Blinded until the end of its next turn",
    "identifier": "shadow-shot"
@@ -2614,7 +2614,7 @@
    "level": 3,
    "name": "Group Recovery",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Second Wind offers healing for up to CHA allies within 30 ft: 1d4 + Fighter level each (1/SR)",
    "identifier": "group-recovery"
@@ -4011,7 +4011,7 @@
    "level": 3,
    "name": "Elemental Smite",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "After Divine Smite, offer Channel Divinity: Dao's Crush (Grappled + Restrained), Djinni's Escape (teleport 30 ft, B/P/S Resistance, immunities), Efreeti's Fury (2d4 Fire + jump 2d4), Marid's Surge (STR save push 15 ft + Prone)",
    "identifier": "elemental-smite"
@@ -4033,7 +4033,7 @@
    "level": 3,
    "name": "Genie’s Splendor",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Unarmored AC 10 + DEX + CHA (Shield allowed); skill from the sheet",
    "identifier": "genies-splendor"
@@ -4506,7 +4506,7 @@
    "level": 3,
    "name": "Wrath of the Wild",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "BA (spends a Favored Enemy use) 1-minute form: +1 AC (+2 at 11), Prowling Retribution Opportunity Attack prompt, Unnerving Aura 10-ft WIS save or Frightened on transform and each turn",
    "identifier": "wrath-of-the-wild"
@@ -4605,7 +4605,7 @@
    "level": 3,
    "name": "Frigid Explorer",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Cold Resistance; your weapon/Ranger damage ignores Cold Resistance; Polar Strikes +1d4 Cold once per turn on a weapon hit (1d6 at 11)",
    "identifier": "frigid-explorer"
@@ -4616,7 +4616,7 @@
    "level": 3,
    "name": "Hunter’s Rime",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Casting Hunter's Mark gives 1d10 + Ranger level temp HP; marked creatures can't Disengage (by hand)",
    "identifier": "hunters-rime"
@@ -4979,7 +4979,7 @@
    "level": 3,
    "name": "Wails from the Grave",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "After Sneak Attack damage on your turn, offer half the Sneak Attack dice as Necrotic to a second creature within 30 ft (DEX uses/LR)",
    "identifier": "wails-from-the-grave"
@@ -5045,7 +5045,7 @@
    "level": 3,
    "name": "Bloodthirst",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Reaction when an enemy within 30 ft becomes Bloodied: teleport next to it and make a melee attack (asked; INT uses/LR)",
    "identifier": "bloodthirst"
@@ -5056,7 +5056,7 @@
    "level": 3,
    "name": "Dread Allegiance",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Choose Bane/Bhaal/Myrkul: Psychic/Poison/Necrotic Resistance (cantrip from the sheet)",
    "identifier": "dread-allegiance"
@@ -5617,7 +5617,7 @@
    "level": 3,
    "name": "Power of Shadow",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Darkvision 120 / Blindsight 10; Strength of the Grave - dropping to 0 HP asks for a CHA save (DC 5 + damage) to stay at CHA + level HP (1/LR)",
    "identifier": "power-of-shadow"
@@ -5661,7 +5661,7 @@
    "level": 3,
    "name": "Spellfire Burst",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Once per turn after spending a Sorcery Point: Bolstering Flames (1d4 + CHA temp HP, + level at 14) or Radiant Fire (1d4 Fire/Radiant, 1d8 at 14) within 30 ft",
    "identifier": "spellfire-burst"
@@ -6420,7 +6420,7 @@
    "level": 3,
    "name": "Form of Dread",
    "source": "RV",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "BA 1-minute form: 1d10 + level temp HP, Frightened immunity, once per turn a hit forces a WIS save or Frightened until the end of your next turn (CHA uses/LR)",
    "identifier": "form-of-dread"
@@ -6475,7 +6475,7 @@
    "level": 3,
    "name": "Vestige Companion",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Summon actor (Celestial/Fiend/Undead forms) scaled by Warlock level: Vestige's Strike, Divine Power 1/day (Cursed Invocation, Fiendish Swap, Healing Touch), Pact Bond",
    "identifier": "vestige-companion"
@@ -6695,7 +6695,7 @@
    "level": 3,
    "name": "Bladesong",
    "source": "FR",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "BA 1 minute (INT uses/LR, one back on Arcane Recovery): +INT AC, +10 ft Speed, Acrobatics Advantage, INT for proficient weapon attacks, +INT to Concentration saves; ends with armor/Shield/two-handed attack/Incapacitated",
    "identifier": "bladesong"
@@ -6750,9 +6750,9 @@
    "level": 3,
    "name": "Benign Transposition",
    "source": "AU",
-   "category": "verify",
+   "category": "done",
    "priority": 1,
-   "note": "CGA item from v0.2.0 (teleport / swap activities) - check it matches: BA, 30 ft, INT uses/LR, swap with a willing Medium or smaller creature",
+   "note": "CGA item from v0.2.0 checked: Bonus Action teleport / swap activities, 30 ft, INT uses per Long Rest (the teleport waits for you to pick the spot on the map)",
    "identifier": "benign-transposition"
   },
   {
@@ -6893,7 +6893,7 @@
    "level": 3,
    "name": "Hypnotic Presence",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Magic action, 10 ft: WIS save or Charmed + Incapacitated + Speed 0 for 1 minute, ends on damage or distance (INT uses/LR)",
    "identifier": "hypnotic-presence"
@@ -7058,7 +7058,7 @@
    "level": 3,
    "name": "Necromancy Spellbook",
    "source": "AU",
-   "category": "build",
+   "category": "done",
    "priority": 1,
    "note": "Necrotic Resistance; Undead Vitality - a slot Necromancy spell heals an Undead within 60 ft slot level + Wizard level (asked); Skeleton/Zombie familiar forms and familiar attack by hand",
    "identifier": "necromancy-spellbook"

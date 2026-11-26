@@ -1,0 +1,100 @@
+{
+  "_id": "cgaCbpowerofshad",
+  "name": "Power of Shadow",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> <strong>Eyes of the Dark:</strong> Darkvision 120 ft and Blindsight 10 ft (seeing through your own Darkness spells is by hand). <strong>Strength of the Grave:</strong> when you'd drop to 0 HP and not die outright, the module rolls a CHA save (DC 5 + the damage); on a success your HP become CHA modifier + Sorcerer level. Once per Long Rest after a success.</p>",
+      "chat": ""
+    },
+    "identifier": "power-of-shadow",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Shadow Sorcery 3",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaCbFxShadEye00",
+      "name": "Eyes of the Dark",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+      "type": "base",
+      "transfer": true,
+      "disabled": false,
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "origin": null,
+      "sort": 0,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.ranges.darkvision",
+            "value": "120",
+            "type": "upgrade",
+            "priority": 20,
+            "phase": "initial"
+          },
+          {
+            "key": "system.attributes.senses.ranges.blindsight",
+            "value": "10",
+            "type": "upgrade",
+            "priority": 20,
+            "phase": "initial"
+          }
+        ]
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": []
+        }
+      }
+    }
+  ],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Darkvision/Blindsight effect; Strength of the Grave save at 0 HP (1/LR, module)."
+      }
+    }
+  }
+}

@@ -1,0 +1,269 @@
+{
+  "_id": "cgaCbreanimatedc",
+  "name": "Reanimated Companion",
+  "type": "feat",
+  "img": "icons/magic/death/hand-dirt-undead-zombie.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magic action: create your Reanimated Companion (from the module's Summoned Creatures compendium) within 5 ft - once per Long Rest, or by spending a spell slot; a new one replaces the old (module). AC 10 + INT, HP 5 + 5 x Artificer level, Dreadful Swipe with your spell attack (1d4 + INT Necrotic; the target can't take Opportunity Attacks until its next turn). When it dies, the module runs its Death Burst (10-ft DEX save, 2d4 Necrotic). Lightning damage heals it instead (module).</p>",
+      "chat": ""
+    },
+    "identifier": "reanimated-companion",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Reanimator 3",
+    "properties": [],
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {
+      "cgaCbCompanLR000": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbCompanLR000",
+        "type": "summon",
+        "name": "Create Reanimated Companion",
+        "img": "icons/magic/death/hand-dirt-undead-zombie.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "@abilities.int.mod",
+          "hd": "",
+          "hp": "5 * @classes.artificer.levels",
+          "attackDamage": "@abilities.int.mod",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "profiles": [
+          {
+            "_id": "cgaCbpfCompanLR0",
+            "count": "",
+            "name": "Reanimated Companion",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumReanimCmp0",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ]
+      },
+      "cgaCbCompanSlt00": {
+        "sort": 0,
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "hour",
+          "value": "1",
+          "concentration": false,
+          "override": false,
+          "special": ""
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "spellSlots",
+              "value": "1",
+              "target": "1",
+              "scaling": {}
+            }
+          ],
+          "scaling": {
+            "allowed": true,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "range": {
+          "units": "ft",
+          "value": "5",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": ""
+          },
+          "prompt": false,
+          "override": false
+        },
+        "visibility": {
+          "requireIdentification": false,
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": ""
+        },
+        "_id": "cgaCbCompanSlt00",
+        "type": "summon",
+        "name": "Create Reanimated Companion (Spell Slot)",
+        "img": "icons/magic/death/hand-dirt-undead-zombie.webp",
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "bonuses": {
+          "ac": "@abilities.int.mod",
+          "hd": "",
+          "hp": "5 * @classes.artificer.levels",
+          "attackDamage": "@abilities.int.mod",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "match": {
+          "attacks": true,
+          "proficiency": true,
+          "saves": true,
+          "ability": ""
+        },
+        "summon": {
+          "prompt": true,
+          "mode": "",
+          "identifier": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [],
+        "profiles": [
+          {
+            "_id": "cgaCbpfCompanSl0",
+            "count": "",
+            "name": "Reanimated Companion",
+            "uuid": "Compendium.champions-guild-automation.cga-summons.Actor.cgaSumReanimCmp0",
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ]
+      }
+    },
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Summons the companion scaled to your Artificer level (1/LR or a slot); Death Burst and Lightning Absorption by the module."
+      }
+    }
+  }
+}

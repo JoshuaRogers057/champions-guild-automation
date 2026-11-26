@@ -1,0 +1,51 @@
+{
+  "_id": "cgaCbhuntersrime",
+  "name": "Hunter's Rime",
+  "type": "feat",
+  "img": "icons/magic/water/ice-crystal-white.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When you cast Hunter's Mark, the module gives you 1d10 + Ranger level Temporary Hit Points. Your marked creature can't Disengage (by hand).</p>",
+      "chat": ""
+    },
+    "identifier": "hunters-rime",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Winter Walker 3",
+    "properties": [],
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "activities": {},
+    "advancement": {},
+    "crewed": false,
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "repeatable": false
+    },
+    "source": {
+      "custom": "Champions Guild Automation",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    }
+  },
+  "effects": [],
+  "flags": {
+    "midi-qol": {},
+    "dnd5e": {},
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: Temp HP when you cast Hunter's Mark (module)."
+      }
+    }
+  }
+}
