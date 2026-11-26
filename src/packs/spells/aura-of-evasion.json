@@ -1,0 +1,237 @@
+{
+  "name": "Aura of Evasion",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> An aura of alacrity fills a 30-ft Emanation around you: you and your allies in it have Advantage on Dexterity saving throws, and when subjected to an effect that allows a DEX save for half damage, take no damage on a success and half on a failure (not while Incapacitated - by hand).</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "choice": false,
+        "count": "",
+        "type": "ally"
+      },
+      "template": {
+        "units": "ft",
+        "type": "radius",
+        "size": "30",
+        "contiguous": false,
+        "count": "",
+        "stationary": false
+      }
+    },
+    "range": {
+      "units": "self",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 7,
+    "school": "abj",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false,
+          "concentration": false
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self"
+        },
+        "target": {
+          "override": true,
+          "prompt": true,
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "radius",
+            "size": "30",
+            "stationary": false
+          },
+          "affects": {
+            "type": "ally",
+            "count": "",
+            "choice": false,
+            "special": ""
+          }
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "name": "Aura of Alacrity",
+        "img": "systems/dnd5e/icons/svg/trait-damage-immunities.svg",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "formula": "",
+          "name": ""
+        },
+        "regionBehavior": {
+          "enabled": true,
+          "dispositionFilter": 1,
+          "excludeSource": false,
+          "oncePerTurn": false,
+          "wallRestriction": "none",
+          "regionVisibility": 2,
+          "attachToken": "caster",
+          "moveDistance": 0,
+          "moveDirection": "away",
+          "moveTiming": "start",
+          "templateOrigin": "default",
+          "rules": [
+            {
+              "trigger": "entry",
+              "action": "applyEffect",
+              "targetId": "cgaAuraEvasionFx"
+            },
+            {
+              "trigger": "exit",
+              "action": "removeEffect",
+              "targetId": "cgaAuraEvasionFx"
+            }
+          ]
+        }
+      }
+    },
+    "identifier": "aura-of-evasion",
+    "method": "spell",
+    "prepared": 0
+  },
+  "_id": "cgaSplAuraEvasio",
+  "type": "spell",
+  "img": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
+  "effects": [
+    {
+      "_id": "cgaAuraEvasionFx",
+      "name": "Aura of Evasion",
+      "img": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [],
+      "description": "<p>Advantage on DEX saves; on a DEX save for half damage, no damage on a success and half on a failure.</p>",
+      "sort": 0,
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [],
+          "showIcon": true
+        }
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "flags.midi-qol.advantage.save.dex",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000002"
+          },
+          {
+            "key": "flags.midi-qol.superSaver.dex",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000003"
+          },
+          {
+            "key": "flags.midi-qol.semiSuperSaver.dex",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000004"
+          }
+        ],
+        "magical": true
+      }
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: 30-ft aura that moves with you: you and allies inside have Advantage on DEX saves and Evasion (midi super saver)."
+      }
+    }
+  }
+}

@@ -127,7 +127,7 @@
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.advantage.ability.check.cha",
+            "key": "flags.midi-qol.advantage.check.cha",
             "value": "1",
             "type": "override",
             "priority": 20,
@@ -148,7 +148,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Shape-Shift applies the Advantage on Charisma checks until you revert."
       }
     }

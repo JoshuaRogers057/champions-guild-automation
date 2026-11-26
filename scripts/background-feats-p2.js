@@ -108,7 +108,7 @@ const DARK_GIFTS = [
   { ident: "echoing-soul", label: "Intrusive Echoes", ability: "con", fx: (a) => ({ name: "Incapacitated (Intrusive Echoes)", statuses: ["incapacitated"], ...endOfNextTurn(a),
       changes: MOVES.map((m) => chg(`system.attributes.movement.${m}`, "0.5", "multiply")) }) },
   { ident: "gathered-whispers", label: "Voices from Beyond", ability: "wis", fx: (a) => ({ name: "Deafened (Voices from Beyond)", statuses: ["deafened"], ...endOfNextTurn(a),
-      changes: [chg("flags.midi-qol.disadvantage.ability.check.all", "1"), chg("flags.midi-qol.disadvantage.attack.all", "1")] }) },
+      changes: [chg("flags.midi-qol.disadvantage.check.all", "1"), chg("flags.midi-qol.disadvantage.attack.all", "1")] }) },
   { ident: "living-shadow", label: "Ominous Will", ability: "wis", shadow: true, fx: () => ({ name: "Incapacitated (Ominous Will)", statuses: ["incapacitated"],
       duration: { rounds: 1 }, special: ["turnStart"] }) },
   { ident: "symbiotic-being", label: "Symbiotic Agenda", ability: "cha", fx: async () => { const r = await new Roll("1d12").evaluate();

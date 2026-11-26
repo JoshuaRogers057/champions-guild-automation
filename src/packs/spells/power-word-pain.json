@@ -1,0 +1,387 @@
+{
+  "name": "Power Word Pain",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> A creature within 60 ft takes 6d8 Force damage. If it had 100 Hit Points or fewer, it's also Charmed for the duration: its Speed can be no more than 10 ft, it has Disadvantage on D20 Tests except Constitution saves, and when it tries to cast a spell it makes a CON save first or the spell fails (the slot isn't spent). It makes a CON save at the end of each of its turns, ending the effect on a success.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "action",
+      "condition": "",
+      "value": null
+    },
+    "duration": {
+      "value": "1",
+      "units": "minute"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "@item.level - 1",
+        "choice": false
+      },
+      "template": {
+        "units": "",
+        "contiguous": false
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 7,
+    "school": "enc",
+    "properties": [
+      "vocal"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "damage",
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [
+          {
+            "_id": "cgaPWPainFx00000"
+          }
+        ],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": false,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "override": true
+        },
+        "damage": {
+          "critical": {
+            "allow": false,
+            "bonus": ""
+          },
+          "parts": [
+            {
+              "number": 6,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "force"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": null,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "behaviors": []
+      },
+      "pwPainOTSave0000": {
+        "_id": "pwPainOTSave0000",
+        "type": "save",
+        "name": "Power Word Pain: Repeat Save",
+        "sort": 900000,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "End of each of the target's turns",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "target": {
+          "override": true,
+          "prompt": false,
+          "affects": {
+            "type": "creature",
+            "count": "1",
+            "choice": false,
+            "special": ""
+          },
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft",
+            "stationary": false
+          }
+        },
+        "range": {
+          "override": true,
+          "units": "any",
+          "special": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": true,
+          "concentration": false
+        },
+        "effects": [],
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "isOverTimeFlag": true,
+        "overTimeProperties": {
+          "turnChoice": "end",
+          "saveRemoves": true,
+          "rollAs": "source",
+          "preRemoveConditionText": "",
+          "postRemoveConditionText": ""
+        },
+        "midiProperties": {
+          "automationOnly": true,
+          "identifier": "pwPainSave",
+          "otherActivityCompatible": false
+        },
+        "otherActivityId": "none",
+        "behaviors": []
+      }
+    },
+    "identifier": "power-word-pain",
+    "prepared": 0
+  },
+  "_id": "cgaSplPWPain0000",
+  "type": "spell",
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "effects": [
+    {
+      "_id": "cgaPWPainFx00000",
+      "name": "Power Word Pain",
+      "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": [
+        "charmed"
+      ],
+      "description": "<p>Charmed: Speed no more than 10 ft, Disadvantage on D20 Tests except CON saves, a CON save to cast a spell (or it fails). CON save at the end of each of its turns ends it.</p>",
+      "sort": 0,
+      "start": null,
+      "origin": null,
+      "tint": "#ffffff",
+      "showIcon": 1,
+      "folder": null,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "flags": {
+        "dae": {
+          "stackable": "noneName",
+          "specialDuration": [],
+          "showIcon": true
+        }
+      },
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.walk",
+            "value": "10",
+            "priority": 20,
+            "type": "downgrade",
+            "phase": "initial",
+            "_id": "cgaChgBk30000005"
+          },
+          {
+            "key": "system.attributes.movement.fly",
+            "value": "10",
+            "priority": 20,
+            "type": "downgrade",
+            "phase": "initial",
+            "_id": "cgaChgBk30000006"
+          },
+          {
+            "key": "system.attributes.movement.swim",
+            "value": "10",
+            "priority": 20,
+            "type": "downgrade",
+            "phase": "initial",
+            "_id": "cgaChgBk30000007"
+          },
+          {
+            "key": "system.attributes.movement.climb",
+            "value": "10",
+            "priority": 20,
+            "type": "downgrade",
+            "phase": "initial",
+            "_id": "cgaChgBk30000008"
+          },
+          {
+            "key": "system.attributes.movement.burrow",
+            "value": "10",
+            "priority": 20,
+            "type": "downgrade",
+            "phase": "initial",
+            "_id": "cgaChgBk30000009"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.attack.all",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000010"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.check.all",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000011"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.save.str",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000012"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.save.dex",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000013"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.save.int",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000014"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.save.wis",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000015"
+          },
+          {
+            "key": "flags.midi-qol.disadvantage.save.cha",
+            "value": "1",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000016"
+          },
+          {
+            "key": "flags.midi-qol.ActivityOverTime",
+            "value": "pwPainSave",
+            "priority": 20,
+            "type": "override",
+            "phase": "initial",
+            "_id": "cgaChgBk30000017"
+          }
+        ],
+        "magical": true
+      }
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: 6d8 Force; a target with 100 HP or fewer is also Charmed (Speed 10, Disadvantage on D20 Tests except CON saves, CON save or its spells fail) and repeats a CON save at the end of each turn; above 100 HP the Charm is removed (module rule)."
+      }
+    }
+  }
+}

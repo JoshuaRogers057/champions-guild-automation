@@ -277,7 +277,7 @@ const SHIFT_OPTIONS = [
       r.toMessage({ speaker: ChatMessage.getSpeaker({ actor: a }), flavor: "Beasthide: extra Temporary Hit Points" });
     } },
   { ident: "swiftstride", effect: () => ({ name: "Swiftstride", changes: [chg("system.attributes.movement.walk", "10", "add")] }) },
-  { ident: "wildhunt", effect: () => ({ name: "Wildhunt", changes: [chg("flags.midi-qol.advantage.ability.check.wis", "1"), chg("flags.midi-qol.grants.noAdvantage.attack.all", "1")] }) },
+  { ident: "wildhunt", effect: () => ({ name: "Wildhunt", changes: [chg("flags.midi-qol.advantage.check.wis", "1"), chg("flags.midi-qol.grants.noAdvantage.attack.all", "1")] }) },
   { ident: "longtooth", effect: () => ({ name: "Longtooth", changes: [] }) }
 ];
 const isShifted = (e) => /^shifted/i.test(e.name ?? "") && !e.flags?.[MODULE_ID]?.shiftOption;

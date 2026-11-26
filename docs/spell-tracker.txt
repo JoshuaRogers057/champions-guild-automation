@@ -157,7 +157,7 @@
 2|Moonbeam|SRD|done|1|Zone: CON save radiant on entering/starting turn; move the beam as a bonus action
 2|Nystul's Magic Aura|SRD|skip|3|aka Arcanist's Magic Aura
 2|Pass without Trace|SRD|done|2|midi-qol's sample item, checked in the test world: +10 Stealth aura
-2|Phantasmal Force|SRD|midi|3|
+2|Phantasmal Force|SRD|done|3|midi-qol's sample item, checked in the test world: Seeing Illusions
 2|Prayer of Healing|SRD|done|2|
 2|Protection from Poison|SRD|done|2|
 2|Ray of Enfeeblement|SRD|done|2|Weaker damage + STR disadvantage; repeat save end of each turn
@@ -281,7 +281,7 @@
 4|Summon Elemental|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 4|Vitriolic Sphere|SRD|done|2|Plus acid at the end of the target's next turn
 4|Wall of Fire|SRD|done|2|Wall: damage on entering/ending turn near the hot side
-4|Zone of Amicability|AU|build|3|60-ft Emanation: a d20 of 9 or lower on checks to influence a creature counts as 10
+4|Zone of Amicability|AU|done|3|CGA item + module rule: influence skill d20s of 9 or lower count as 10 for 10 minutes
 5|Alustriel’s Mooncloak|FR|done|2|CGA item: ally aura - Half Cover + Cold/Lightning/Radiant Resistance; Respite (4d10 + mod) and Liberation (Reaction, module) end it
 5|Animate Objects|SRD|done|2|Summon animated objects
 5|Antilife Shell|SRD|done|3|
@@ -346,13 +346,13 @@
 6|Conjure Fey|SRD|done|3|2024: fey spirit attacks
 6|Contingency|SRD|skip|3|
 6|Create Undead|SRD|done|3|Summon
-6|Dirge|FR|build|3|60-ft Emanation: no healing for others; CON save 3d10 Necrotic + Prone (half + half Speed); enter / end turn
+6|Dirge|FR|done|3|CGA item: 60-ft Emanation, no healing for enemies, CON save 3d10 Necrotic + Prone; half Speed on a success and Circle casting by hand
 6|Disintegrate|SRD|done|2|Dust at 0 HP
 6|Drawmij's Instant Summons|SRD|skip|3|aka Instant Summons
-6|Elminster’s Effulgent Spheres|FR|build|3|Six spheres: Reaction Resistance to an element, or Bonus Action ranged attack 3d6 of a chosen element
-6|Eyebite|SRD|midi|3|
+6|Elminster’s Effulgent Spheres|FR|done|3|CGA item + module rule: spheres as uses (6 +1/level), Energy Blast activity, Absorb Energy offered on elemental damage, ends when empty
+6|Eyebite|SRD|done|3|midi-qol's sample item, checked in the test world: choose Asleep / Panicked / Sickened
 6|Find the Path|SRD|skip|3|
-6|Flesh to Stone|SRD|midi|3|
+6|Flesh to Stone|SRD|done|3|midi-qol's sample item, checked in the test world: Restrained, turning to stone
 6|Forbiddance|SRD|skip|3|
 6|Globe of Invulnerability|SRD|done|3|Blocks spells of 5th level and lower
 6|Guards and Wards|SRD|skip|3|
@@ -363,10 +363,10 @@
 6|Mass Suggestion|SRD|skip|3|
 6|Move Earth|SRD|skip|3|
 6|Otiluke's Freezing Sphere|SRD|done|3|aka Freezing Sphere
-6|Otto's Irresistible Dance|SRD|midi|3|aka Irresistible Dance
+6|Otto's Irresistible Dance|SRD|done|3|midi-qol's sample item, checked in the test world: Charmed dancing
 6|Planar Ally|SRD|skip|3|
 6|Programmed Illusion|SRD|skip|3|
-6|Summon Dinosaur|AU|build|3|Summon: Ankylosaur / Triceratops / Tyrannosaur Dinosaur Spirit actor scaling with slot level
+6|Summon Dinosaur|AU|done|3|CGA item + 3 summon actors (Ankylosaur / Triceratops / Tyrannosaur) scaling with the slot
 6|Summon Fiend|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 6|Sunbeam|SRD|done|2|midi-qol's sample item, checked in the test world: CON save 6d8 Radiant + Blinded, new beam activity
 6|Tasha's Bubbling Cauldron|PHB|skip|3|
@@ -376,76 +376,76 @@
 6|Wall of Thorns|SRD|done|3|Wall: damage on entering
 6|Wind Walk|SRD|skip|3|
 6|Word of Recall|SRD|skip|3|
-7|Aura of Evasion|AU|build|3|30-ft Emanation: allies Advantage on DEX saves and Evasion
+7|Aura of Evasion|AU|done|3|CGA item: ally aura - Advantage on DEX saves and Evasion
 7|Conjure Celestial|SRD|done|3|2024: light aura heals or damages
-7|Delayed Blast Fireball|SRD|midi|3|
-7|Divine Word|SRD|midi|3|
+7|Delayed Blast Fireball|SRD|done|3|midi-qol's sample item, checked in the test world: charging bead
+7|Divine Word|SRD|done|3|midi-qol's sample item, checked in the test world: condition by remaining HP
 7|Etherealness|SRD|skip|3|
-7|Finger of Death|SRD|midi|3|
+7|Finger of Death|SRD|done|3|midi-qol's sample item, checked in the test world: 7d8 + 30 Necrotic
 7|Fire Storm|SRD|done|3|
 7|Forcecage|SRD|skip|3|
-7|Fractured Awareness|AU|build|3|INT save 12d10 Psychic + Disadvantage on D20 Tests; save at end of each turn
+7|Fractured Awareness|AU|done|3|CGA item: INT save 12d10 Psychic + Disadvantage on D20 Tests, repeat save each turn
 7|Mirage Arcane|SRD|skip|3|
 7|Mordenkainen's Magnificent Mansion|SRD|skip|3|aka Magnificent Mansion
 7|Mordenkainen's Sword|SRD|done|2|aka Arcane Sword. Summoned sword, bonus-action attacks
 7|Plane Shift|SRD|skip|3|
 7|Power Word Fortify|PHB|done|3|Split 120 temp HP between creatures
-7|Power Word Pain|AU|build|3|100 HP or fewer: 6d8 Force + Charmed (Speed 10, Disadvantage on D20 Tests except CON saves, CON save to cast)
-7|Prismatic Spray|SRD|midi|3|
+7|Power Word Pain|AU|done|3|CGA item + module rule: 6d8 Force; at 100 HP or fewer Charmed (Speed 10, Disadvantage except CON saves, CON save to cast), repeat save
+7|Prismatic Spray|SRD|done|3|midi-qol's sample item, checked in the test world: random ray effect
 7|Project Image|SRD|skip|3|
-7|Regenerate|SRD|midi|3|
+7|Regenerate|SRD|done|3|midi-qol's sample item, checked in the test world: 4d8 + 15 and 1 HP per turn
 7|Resurrection|SRD|skip|3|
-7|Reverse Gravity|SRD|midi|3|
-7|Reweave Fate|AU|build|3|Reaction: an ally within 60 ft rerolls a failed D20 Test with Advantage; success gives 6d10 temp HP (module rule)
+7|Reverse Gravity|SRD|done|3|midi-qol's sample item, checked in the test world: the save only; falling and positioning by hand
+7|Reweave Fate|AU|done|3|CGA item + module rule: offered on an ally's failed save or missed attack within 60 ft - reroll with Advantage, success gives 6d10 temp HP
 7|Sequester|SRD|skip|3|
-7|Simbul’s Synostodweomer|FR|build|3|Touch: whenever the target casts with a slot it can spend Hit Dice equal to the slot level to heal + your mod
+7|Simbul’s Synostodweomer|FR|done|3|CGA item + module rule: the target casting with a slot is offered Hit Dice healing + your modifier
 7|Simulacrum|SRD|skip|3|
 7|Symbol|SRD|done|3|Triggered glyph with several effects
 7|Teleport|SRD|skip|3|
-7|Transfix|AU|build|3|CHA save or Charmed + Incapacitated, pulled toward you, 4d8 Psychic ending its turn within 5 ft; Magic action to retarget
+7|Transfix|AU|done|3|CGA item + module rule: CHA save or Charmed + Incapacitated, 4d8 Psychic when it ends its turn within 5 ft; moving it is by hand
 8|Animal Shapes|SRD|skip|3|
 8|Antimagic Field|SRD|skip|3|
 8|Antipathy/Sympathy|SRD|skip|3|
-8|Befuddlement|SRD|midi|3|
+8|Befuddlement|SRD|done|3|midi-qol's sample item, checked in the test world: 10d12 Psychic + Befuddled
 8|Clone|SRD|skip|3|
 8|Control Weather|SRD|skip|3|
 8|Demiplane|SRD|skip|3|
 8|Dominate Monster|SRD|done|3|
 8|Earthquake|SRD|done|3|Zone: prone, concentration saves, fissures
-8|Entrancing Mirrors|AU|build|3|Up to 3 creatures INT save: 7d6 Psychic + Stunned (half Speed); save at end of each turn
+8|Entrancing Mirrors|AU|done|3|CGA item: up to 3 creatures INT save 7d6 Psychic + Stunned (half Speed), repeat save
 8|Glibness|SRD|skip|3|
 8|Holy Aura|SRD|done|3|Advantage on saves, attackers have disadvantage; fiend/undead blinded
-8|Holy Star of Mystra|FR|build|3|Mote: Bonus Action ranged attack 4d10 + mod Force/Radiant; you have Three-Quarters Cover; reflect single-target spells
-8|Illusory Dragon|AU|build|3|Huge shadow dragon: WIS save or Frightened; Bonus Action breath 60-ft Cone INT save 7d6 of a chosen type
+8|Holy Star of Mystra|FR|done|3|CGA item + module rule: Shining Bolt 4d10 + mod Force/Radiant (BA activity), Three-Quarters Cover while concentrating; reflection by hand
+8|Illusory Dragon|AU|done|3|CGA item: WIS save or Frightened; Shadow Breath activity (60-ft Cone INT save 6d6 of the chosen type); token placement by hand
 8|Incendiary Cloud|SRD|done|3|Moving zone: DEX save fire
-8|Iron Body|AU|build|3|Touch: Resistance to B/P/S/Fire, Immunity to Poison, Paralyzed, Petrified, Poisoned; no new Exhaustion
-8|Lightning Ring|AU|build|3|10-ft Emanation CON save 3d6 Lightning + 3d6 Thunder + Deafened; Magic action 60-ft Line DEX save 6d6 Lightning
+8|Iron Body|AU|done|3|CGA item + module rule: B/P/S/Fire Resistance, Poison immunity, Paralyzed/Petrified/Poisoned immunity (existing ones end)
+8|Lightning Ring|AU|done|3|CGA item: 10-ft Emanation CON save 3d6 Lightning + 3d6 Thunder + Deafened; Lightning Line activity (DEX save 6d6)
 8|Maze|SRD|done|3|
 8|Mind Blank|SRD|done|3|
-8|Moment of Prescience|AU|build|3|Reaction: a failed D20 Test becomes a 20, or an attack that hits you becomes a 1 (module rule)
-8|Power Word Stun|SRD|midi|3|
+8|Moment of Prescience|AU|done|3|CGA item + module rule: offered when you fail a save (becomes 20) or are hit (attack becomes 1)
+8|Power Word Stun|SRD|done|3|midi-qol's sample item, checked in the test world: Stunned at 150 HP or fewer
 8|Sunburst|SRD|done|3|Blinded with repeat saves
 8|Telepathy|PHB|skip|3|
 8|Tsunami|SRD|done|3|Moving wall
 9|Astral Projection|SRD|skip|3|
-9|Blade of Disaster|FR|build|3|Rift: two melee spell attacks 10d6 Force, crit on 18-20; Bonus Action to move it and repeat
-9|Detonate|AU|build|3|CON save 10d10 Fire, then 60-ft Emanation DEX save 10d10 Fire (Disadvantage if the target dropped to 0)
-9|Foresight|SRD|midi|3|
+9|Blade of Disaster|FR|done|3|CGA item: melee spell attacks 10d6 Force, Critical Hit on 18-20; Rift Attack activity for the other attacks
+9|Detonate|AU|done|3|CGA item + module rule: Explosive Seed CON save 10d10 Fire, Explosion activity DEX save 10d10 (Disadvantage if the seed dropped the target)
+9|Foresight|SRD|done|3|midi-qol's sample item, checked in the test world: Advantage on D20 Tests, attacks against it at Disadvantage
 9|Gate|SRD|skip|3|
 9|Hindsight|AU|skip|3|Divination visions - roleplay
-9|Imprisonment|SRD|midi|3|
-9|Invulnerability|AU|build|3|Immunity to all damage (concentration)
-9|Mass Heal|SRD|midi|3|
-9|Meteor Swarm|SRD|midi|3|
+9|Imprisonment|SRD|done|3|midi-qol's sample item, checked in the test world: Restrained + Incapacitated
+9|Invulnerability|AU|done|3|CGA item: Immunity to all damage while concentrating
+9|Mass Heal|SRD|done|3|midi-qol's sample item, checked in the test world: 700 HP distribution dialog
+9|Meteor Swarm|SRD|done|3|midi-qol's sample item, checked in the test world: 20d6 Fire + 20d6 Bludgeoning
 9|Power Word Heal|SRD|done|3|
 9|Power Word Kill|SRD|done|3|Dies at 100 HP or less, otherwise 12d12 psychic
 9|Prismatic Wall|SRD|done|3|Layered wall effects
-9|Shapechange|SRD|midi|3|
-9|Storm of Vengeance|SRD|midi|3|
+9|Shapechange|SRD|done|3|midi-qol's sample item, checked in the test world: dnd5e transform - choose the creature in the Compendium Browser
+9|Storm of Vengeance|SRD|done|3|midi-qol's sample item, checked in the test world: round-by-round storm activities
 9|Time Stop|SRD|skip|3|
-9|True Polymorph|SRD|midi|3|
-9|True Resurrection|SRD|midi|3|
-9|Vision of Elapsing Eons|AU|build|3|INT save 10d12 Psychic + Paralyzed; each failed repeat save adds Exhaustion
-9|Wail of the Banshee|AU|build|3|Up to 10 creatures: 50 HP or fewer die; others CON save 12d10 Psychic + Deafened
-9|Weird|SRD|midi|3|
+9|True Polymorph|SRD|done|3|midi-qol's sample item, checked in the test world: willing transform or unwilling save, then the Compendium Browser
+9|True Resurrection|SRD|done|3|midi-qol's sample item, checked in the test world: full HP, Exhaustion and death saves reset (the module also ends Poisoned/Diseased/Cursed)
+9|Vision of Elapsing Eons|AU|done|3|CGA item + module rule: INT save or 10d12 Psychic + Paralyzed; failed repeat saves add Exhaustion
+9|Wail of the Banshee|AU|done|3|CGA item + module rule: 50 HP or fewer die; others CON save 12d10 Psychic + Deafened
+9|Weird|SRD|done|3|midi-qol's sample item, checked in the test world: 10d10 Psychic + Frightened
 9|Wish|SRD|skip|3|

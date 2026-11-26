@@ -139,7 +139,7 @@
       "system": {
         "changes": [
           {
-            "key": "flags.midi-qol.advantage.ability.check.all",
+            "key": "flags.midi-qol.advantage.check.all",
             "value": "1",
             "type": "override",
             "priority": 20,
@@ -170,7 +170,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Activity: Advantage on the next ability check (PB/LR)."
       }
     }

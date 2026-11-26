@@ -1,0 +1,141 @@
+{
+  "name": "Reweave Fate",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> When a creature you can see within 60 ft fails a D20 Test, use your Reaction: it rerolls with Advantage and must use the new roll; if that succeeds, it gains 6d10 Temporary Hit Points. Offered automatically for failed saves and missed attacks; for ability checks, cast it by hand.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "",
+      "page": "",
+      "license": "",
+      "rules": "2024",
+      "revision": 1
+    },
+    "activation": {
+      "type": "reaction",
+      "condition": "A creature you can see within 60 ft fails a D20 Test",
+      "value": null
+    },
+    "duration": {
+      "value": "",
+      "units": "inst"
+    },
+    "target": {
+      "affects": {
+        "type": "creature",
+        "count": "1",
+        "choice": false,
+        "special": ""
+      },
+      "template": {
+        "units": "",
+        "contiguous": false,
+        "type": ""
+      }
+    },
+    "range": {
+      "value": "60",
+      "units": "ft",
+      "special": ""
+    },
+    "uses": {
+      "max": "",
+      "recovery": [],
+      "spent": 0
+    },
+    "level": 7,
+    "school": "div",
+    "properties": [
+      "somatic"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "preparation": {
+      "mode": "prepared",
+      "prepared": false
+    },
+    "activities": {
+      "dnd5eactivity000": {
+        "_id": "dnd5eactivity000",
+        "type": "utility",
+        "activation": {
+          "type": "reaction",
+          "value": 1,
+          "condition": "",
+          "override": true
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          }
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "override": false
+        },
+        "target": {
+          "prompt": false,
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "type": "self",
+            "count": "",
+            "choice": false,
+            "special": ""
+          },
+          "override": true
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "sort": 0,
+        "name": "Reweave Fate (offered automatically)",
+        "behaviors": []
+      }
+    },
+    "identifier": "reweave-fate",
+    "prepared": 0
+  },
+  "_id": "cgaSplReweaveFat",
+  "type": "spell",
+  "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
+  "effects": [],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: offered when a creature you can see within 60 ft fails a save or misses with an attack (7th+ slot and your Reaction): it rerolls with Advantage; on a success it gains 6d10 Temporary Hit Points (module rule). Failed ability checks are by hand."
+      }
+    }
+  }
+}
