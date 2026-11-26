@@ -34,22 +34,22 @@
   {
    "group": "Magic weapons",
    "sub": "Weapon · very rare",
-   "name": "Ammunition, +1, +2, or +3",
-   "source": "SRD",
-   "category": "done",
-   "priority": 1,
-   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
-   "identifier": "ammunition-1-2-or-3"
-  },
-  {
-   "group": "Magic weapons",
-   "sub": "Weapon · very rare",
    "name": "Ammunition of Slaying",
    "source": "SRD",
    "category": "done",
    "priority": 2,
    "note": "Module rule (no Mass Apply): the creature type from the ammunition's name (or asked) - DC 17 CON, 6d10 Force (half on a success)",
    "identifier": "ammunition-of-slaying"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare",
+   "name": "Ammunition, +1, +2, or +3",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
+   "identifier": "ammunition-1-2-or-3"
   },
   {
    "group": "Wondrous items",
@@ -102,14 +102,24 @@
    "identifier": "apparatus-of-kwalish"
   },
   {
-   "group": "Magic armor and shields",
-   "sub": "Armor · very rare",
-   "name": "Armor, +1, +2, or +3",
-   "source": "SRD",
-   "category": "done",
-   "priority": 1,
-   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
-   "identifier": "armor-1-2-or-3"
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Arcane Chatelaine",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility (Arcane Lock keys) - by hand",
+   "identifier": "arcane-chatelaine"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Arcanist's Bestiary",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Charm Monster cast 1/dawn (DC 15, Disadvantage for non-Humanoids); skill choice and Monster Primer by hand",
+   "identifier": "arcanists-bestiary"
   },
   {
    "group": "Magic armor and shields",
@@ -150,6 +160,16 @@
    "priority": 2,
    "note": "Checked in v0.24.0 (data only) - compendium enchantment template; D&D Beyond armor carries its own effects. Not exercised in a test",
    "identifier": "armor-of-vulnerability"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare",
+   "name": "Armor, +1, +2, or +3",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
+   "identifier": "armor-1-2-or-3"
   },
   {
    "group": "Magic armor and shields",
@@ -253,6 +273,16 @@
   },
   {
    "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Bellows of Strangulation",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "6 charges: CON 15 save or Incapacitated with repeat saves (one creature for 1, 30-ft cone for 3), Cloudkill cast (DC 17) for 5; regains 1d6+1 at dawn",
+   "identifier": "bellows-of-strangulation"
+  },
+  {
+   "group": "Wondrous items",
    "sub": "Wondrous Item · rare · attunement",
    "name": "Belt of Dwarvenkind",
    "source": "SRD",
@@ -292,6 +322,26 @@
    "identifier": "blackrazor"
   },
   {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Blood Amulet",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "3 charges: after you deal damage, spend one for +2d10 Necrotic and a DC 15 CON save or 1 Exhaustion (asked)",
+   "identifier": "blood-amulet"
+  },
+  {
+   "group": "Rods",
+   "sub": "Rod · varies · attunement (spellcaster)",
+   "name": "Blossom Rod",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Druidcraft / Plant Growth (budding), Insect Plague 1/dawn (flowering), 30-ft sleep pollen CON 17 or Unconscious 1/dawn (somniferous)",
+   "identifier": "blossom-rod"
+  },
+  {
    "group": "Artifacts",
    "sub": "Wondrous Item · artifact · attunement",
    "name": "Book of Exalted Deeds",
@@ -310,6 +360,16 @@
    "priority": 3,
    "note": "Artifact - automate on request when one enters a campaign",
    "identifier": "book-of-vile-darkness"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon",
+   "name": "Boon Companions' Bands",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Your save effect: the creature wearing the matching band automatically succeeds and takes no damage on a half-damage save (1/dawn, asked)",
+   "identifier": "boon-companions-bands"
   },
   {
    "group": "Wondrous items",
@@ -360,6 +420,16 @@
    "priority": 2,
    "note": "Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked",
    "identifier": "boots-of-striding-and-springing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Boots of the Winding Path",
+   "source": "EB",
+   "category": "build",
+   "priority": 2,
+   "note": "Bonus Action: next move is a 15-ft teleport to a space you occupied this turn",
+   "identifier": "boots-of-the-winding-path"
   },
   {
    "group": "Wondrous items",
@@ -453,16 +523,6 @@
   },
   {
    "group": "Wondrous items",
-   "sub": "Wondrous Item · rare",
-   "name": "Cape of the Mountebank",
-   "source": "SRD",
-   "category": "done",
-   "priority": 2,
-   "note": "CGA item: casts the module's automated spells",
-   "identifier": "cape-of-the-mountebank"
-  },
-  {
-   "group": "Wondrous items",
    "sub": "Wondrous Item · uncommon",
    "name": "Cap of Water Breathing",
    "source": "DMG",
@@ -470,6 +530,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "cap-of-water-breathing"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Cape of the Mountebank",
+   "source": "SRD",
+   "category": "done",
+   "priority": 2,
+   "note": "CGA item: casts the module's automated spells",
+   "identifier": "cape-of-the-mountebank"
   },
   {
    "group": "Wondrous items",
@@ -653,6 +723,16 @@
   },
   {
    "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Conjurer's Canopy",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "conjurers-canopy"
+  },
+  {
+   "group": "Wondrous items",
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Crystal Ball",
    "source": "SRD",
@@ -762,6 +842,16 @@
    "identifier": "dark-shard-amulet"
   },
   {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare · attunement",
+   "name": "Dazzling Weapon",
+   "source": "EB",
+   "category": "build",
+   "priority": 1,
+   "note": "+1 (on the item); Bonus Action light; Reaction after you're hit - spend a charge, attacker makes a DC 15 CON save or is Blinded until the end of its next turn (4 charges, 1d4 at dawn)",
+   "identifier": "dazzling-weapon"
+  },
+  {
    "group": "Wondrous items",
    "sub": "Wondrous Item · uncommon",
    "name": "Decanter of Endless Water",
@@ -822,6 +912,26 @@
    "identifier": "demonomicon-of-iggwilv"
   },
   {
+   "group": "Staffs",
+   "sub": "Staff · legendary · attunement (sorcerer, warlock, wizard)",
+   "name": "Diamond Staff",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "+3 Quarterstaff (on the item); Arcana Advantage; light; spells by charges; Stunning Hit (2 charges, CON 17 or Stunned until the end of your next turn)",
+   "identifier": "diamond-staff"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Dictation Quill",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "dictation-quill"
+  },
+  {
    "group": "Wondrous items",
    "sub": "Wondrous Item · rare",
    "name": "Dimensional Shackles",
@@ -830,6 +940,26 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "dimensional-shackles"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon",
+   "name": "Dispelling Ammunition",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "When it damages a target, spells of level 3 or lower on the target end (module); the ammunition then loses its magic",
+   "identifier": "dispelling-ammunition"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · rare · attunement",
+   "name": "Dissuader",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "+1 Quarterstaff; Calm Emotions 1/dawn; Dissuading Aura (WIS 15 or Frightened); Repel Reaction (STR 15 or pushed 30 ft) - each 1/dawn",
+   "identifier": "dissuader"
   },
   {
    "group": "Magic armor and shields",
@@ -860,6 +990,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "dread-helm"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Dream Weaver",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Dream Wisdom: a d20 rolled after a Long Rest that can replace one D20 Test; Mind Wall: Advantage on INT/WIS/CHA saves while Unconscious",
+   "identifier": "dream-weaver"
   },
   {
    "group": "Wondrous items",
@@ -972,6 +1112,16 @@
    "identifier": "elixir-of-health"
   },
   {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Elocutionist's Lexicon",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "elocutionists-lexicon"
+  },
+  {
    "group": "Magic armor and shields",
    "sub": "Armor · rare",
    "name": "Elven Chain",
@@ -1000,6 +1150,16 @@
    "priority": 2,
    "note": "Module rule (no Mass Apply): its Arrow of Restraint no longer runs after every attack (use it by hand after a hit). Force damage comes from the item. Not fully seen in play",
    "identifier": "energy-bow"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Ensorcelled Missive",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "ensorcelled-missive"
   },
   {
    "group": "Magic armor and shields",
@@ -1040,6 +1200,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "ersatz-eye"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Evergreen Fertilizer",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "evergreen-fertilizer"
   },
   {
    "group": "Wondrous items",
@@ -1312,6 +1482,16 @@
    "identifier": "gloves-of-thievery"
   },
   {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon",
+   "name": "Goading Ammunition",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "When it damages a target: DC 13 CHA save or no Reactions until the start of its next turn (module)",
+   "identifier": "goading-ammunition"
+  },
+  {
    "group": "Wondrous items",
    "sub": "Wondrous Item · uncommon",
    "name": "Goggles of Night",
@@ -1320,6 +1500,16 @@
    "priority": 3,
    "note": "Checked in v0.25.0 - the compendium goggles give Darkvision 60 ft; midi-qol's samples didn't change vision in testing",
    "identifier": "goggles-of-night"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Grave Reaper",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "+2 Sickle (on the item); +2d8 Necrotic on a hit (module); Spirit Lantern cast 1/dawn (DC 17, five fragments)",
+   "identifier": "grave-reaper"
   },
   {
    "group": "Wondrous items",
@@ -1393,6 +1583,16 @@
   },
   {
    "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon",
+   "name": "Helm of Awareness",
+   "source": "EB",
+   "category": "build",
+   "priority": 1,
+   "note": "Advantage on Initiative rolls while worn (module passive)",
+   "identifier": "helm-of-awareness"
+  },
+  {
+   "group": "Wondrous items",
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Helm of Brilliance",
    "source": "SRD",
@@ -1463,6 +1663,16 @@
   },
   {
    "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Homeward Compass",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "homeward-compass"
+  },
+  {
+   "group": "Wondrous items",
    "sub": "Wondrous Item · rare",
    "name": "Horn of Blasting",
    "source": "SRD",
@@ -1510,6 +1720,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "horseshoes-of-speed"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · varies · attunement",
+   "name": "Idol of Good Fortunes",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Augury 1/dawn (blemished), +1 AC (tarnished, module passive), Globe of Invulnerability 1/dawn (golden); coin conversion by hand",
+   "identifier": "idol-of-good-fortunes"
   },
   {
    "group": "Rods",
@@ -1742,6 +1962,16 @@
    "identifier": "keoghtoms-ointment"
   },
   {
+   "group": "Magic weapons",
+   "sub": "Weapon · varies · attunement",
+   "name": "Keyholes Dagger",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "+1/+2/+3 (on the item); weapon form changes by hand; very rare - reroll a missed attack 1/dawn (asked)",
+   "identifier": "keyholes-dagger"
+  },
+  {
    "group": "Wondrous items",
    "sub": "Wondrous Item · uncommon",
    "name": "Lantern of Revealing",
@@ -1770,6 +2000,16 @@
    "priority": 1,
    "note": "Module rule (no Mass Apply; works on the character's own item): once per Long Rest, reroll a failed attack roll or save (asked when it fails). +1 saves and Wish come from the item",
    "identifier": "luck-blade"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Lucky Foot",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "When you roll a 1 on a save or check, the module offers to reroll it; the foot then disintegrates",
+   "identifier": "lucky-foot"
   },
   {
    "group": "Magic weapons",
@@ -1810,6 +2050,46 @@
    "priority": 2,
    "note": "Checked in v0.24.0 - the compendium item works under midi-qol; module rule (no mass apply) stops its extra activity running after every attack",
    "identifier": "mace-of-terror"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare",
+   "name": "Mage Breaker",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "+1 Dagger (on the item); a hit that damages a concentrating creature gives it Disadvantage on the Concentration save (module)",
+   "identifier": "mage-breaker"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare",
+   "name": "Mage's Manacle",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Magic action, 1/dawn: a Grappled or Incapacitated Large or smaller creature within 5 ft makes a DEX 15 save or is Restrained and bound for 8 hours",
+   "identifier": "mages-manacle"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Magewright's Gloves",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Crafting time - by hand",
+   "identifier": "magewrights-gloves"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common · attunement",
+   "name": "Manifold Tool",
+   "source": "EB",
+   "category": "skip",
+   "priority": 3,
+   "note": "Tool form and proficiency - by hand",
+   "identifier": "manifold-tool"
   },
   {
    "group": "Wondrous items",
@@ -1872,6 +2152,16 @@
    "identifier": "mariners-armor"
   },
   {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon · attunement",
+   "name": "Martialist's Quarterstaff",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "4 charges: Searing Smite cast (2, DC 13), Throw (1, by hand), Trip (1: Advantage on the attack, STR 13 or Prone on a hit)",
+   "identifier": "martialists-quarterstaff"
+  },
+  {
    "group": "Wondrous items",
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Medallion of Thoughts",
@@ -1880,6 +2170,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "medallion-of-thoughts"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon · attunement",
+   "name": "Mind Sharpener",
+   "source": "EB",
+   "category": "build",
+   "priority": 1,
+   "note": "4 charges: when you fail a Concentration save, the module offers your Reaction and a charge to succeed instead (1d4 at dawn)",
+   "identifier": "mind-sharpener"
   },
   {
    "group": "Wondrous items",
@@ -1903,16 +2203,6 @@
   },
   {
    "group": "Magic weapons",
-   "sub": "Weapon · legendary · attunement",
-   "name": "Moonblade",
-   "source": "DMG",
-   "category": "skip",
-   "priority": 3,
-   "note": "Random runes and a sentient personality chosen by the DM - build a specific blade on request",
-   "identifier": "moonblade"
-  },
-  {
-   "group": "Magic weapons",
    "sub": "Weapon · common",
    "name": "Moon-Touched Sword",
    "source": "DMG",
@@ -1920,6 +2210,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "moon-touched-sword"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · legendary · attunement",
+   "name": "Moonblade",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Random runes and a sentient personality chosen by the DM - build a specific blade on request",
+   "identifier": "moonblade"
   },
   {
    "group": "Wondrous items",
@@ -1930,6 +2230,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "mystery-key"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · rare",
+   "name": "Namer's Needle",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "+1 Dagger (on the item); Identify Target WIS 15 by hand; Named Target - turn a hit into a Critical Hit 1/dawn (asked)",
+   "identifier": "namers-needle"
   },
   {
    "group": "Wondrous items",
@@ -1970,6 +2280,16 @@
    "priority": 2,
    "note": "CGA item: casts the module's automated spells",
    "identifier": "necklace-of-prayer-beads"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · varies · attunement (spellcaster)",
+   "name": "Necklace of the Beastly Familiar",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Find Familiar 1/dawn; Beast Transformation of the familiar for 10 minutes (form by gemstone, temp HP = beast HP)",
+   "identifier": "necklace-of-the-beastly-familiar"
   },
   {
    "group": "Magic weapons",
@@ -2042,6 +2362,16 @@
    "identifier": "orb-of-direction"
   },
   {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Orb of Divination Detection",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Detection glow and focus - by hand",
+   "identifier": "orb-of-divination-detection"
+  },
+  {
    "group": "Artifacts",
    "sub": "Wondrous Item · artifact · attunement",
    "name": "Orb of Dragonkind",
@@ -2050,6 +2380,16 @@
    "priority": 3,
    "note": "Artifact - automate on request when one enters a campaign",
    "identifier": "orb-of-dragonkind"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement (sorcerer)",
+   "name": "Orb of Sorcery",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Magic action, 1/dawn: regain up to 2 Sorcery Points (activity)",
+   "identifier": "orb-of-sorcery"
   },
   {
    "group": "Wondrous items",
@@ -2192,6 +2532,16 @@
    "identifier": "portable-hole"
   },
   {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Pot of Awakening",
+   "source": "DMG",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "pot-of-awakening"
+  },
+  {
    "group": "Potions and oils",
    "sub": "Potion · uncommon",
    "name": "Potion of Animal Friendship",
@@ -2240,6 +2590,16 @@
    "priority": 2,
    "note": "CGA item: casts the module's automated spells",
    "identifier": "potion-of-diminution"
+  },
+  {
+   "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Dragon's Breath",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Dragon's Breath effect for 1 minute (DC 13, no Concentration), damage type by the potion's color",
+   "identifier": "potion-of-dragons-breath"
   },
   {
    "group": "Potions and oils",
@@ -2300,16 +2660,6 @@
    "priority": 2,
    "note": "CGA item: casts the module's automated spells",
    "identifier": "potion-of-growth"
-  },
-  {
-   "group": "Potions and oils",
-   "sub": "Potion · varies",
-   "name": "Potions of Healing",
-   "source": "SRD",
-   "category": "done",
-   "priority": 1,
-   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)",
-   "identifier": "potion-of-healing"
   },
   {
    "group": "Potions and oils",
@@ -2403,6 +2753,16 @@
   },
   {
    "group": "Potions and oils",
+   "sub": "Potion · uncommon",
+   "name": "Potion of Tirelessness",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "No sleep, 4-hour Long Rest - by hand",
+   "identifier": "potion-of-tirelessness"
+  },
+  {
+   "group": "Potions and oils",
    "sub": "Potion · very rare",
    "name": "Potion of Vitality",
    "source": "SRD",
@@ -2422,14 +2782,24 @@
    "identifier": "potion-of-water-breathing"
   },
   {
+   "group": "Potions and oils",
+   "sub": "Potion · varies",
+   "name": "Potions of Healing",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)",
+   "identifier": "potion-of-healing"
+  },
+  {
    "group": "Wondrous items",
-   "sub": "Wondrous Item · common",
-   "name": "Pot of Awakening",
-   "source": "DMG",
-   "category": "skip",
+   "sub": "Wondrous Item · rare · attunement (spellcaster)",
+   "name": "Prismatic Rune",
+   "source": "AU",
+   "category": "build",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
-   "identifier": "pot-of-awakening"
+   "note": "6 charges: change a damaging spell's damage to the rune's type chosen after a Long Rest (asked)",
+   "identifier": "prismatic-rune"
   },
   {
    "group": "Wondrous items",
@@ -2522,6 +2892,16 @@
    "identifier": "quarterstaff-of-the-acrobat"
   },
   {
+   "group": "Artifacts",
+   "sub": "Wondrous Item · artifact · attunement",
+   "name": "Queen Ehlissa's Marvelous Nightingale",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - DM-run",
+   "identifier": "queen-ehlissas-marvelous-nightingale"
+  },
+  {
    "group": "Wondrous items",
    "sub": "Wondrous Item · uncommon",
    "name": "Quiver of Ehlonna",
@@ -2532,6 +2912,36 @@
    "identifier": "quiver-of-ehlonna"
   },
   {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon · attunement",
+   "name": "Repeating Shot",
+   "source": "EB",
+   "category": "skip",
+   "priority": 3,
+   "note": "+1 ranged (on the item); no Loading, self-made ammunition by hand",
+   "identifier": "repeating-shot"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · uncommon",
+   "name": "Repulsion Shield",
+   "source": "EB",
+   "category": "build",
+   "priority": 1,
+   "note": "+1 Shield (on the item); 4 charges: Reaction when a Large or smaller creature within 5 ft hits you in melee - push it 15 ft (1d4 at dawn)",
+   "identifier": "repulsion-shield"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · uncommon",
+   "name": "Returning Weapon",
+   "source": "EB",
+   "category": "skip",
+   "priority": 3,
+   "note": "+1 (on the item); returns to your hand by hand",
+   "identifier": "returning-weapon"
+  },
+  {
    "group": "Rings",
    "sub": "Ring · rare",
    "name": "Ring of Animal Influence",
@@ -2540,6 +2950,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-animal-influence"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon · attunement",
+   "name": "Ring of Dedicated Focus",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "When you fail a Concentration save, the module offers to roll up to two Hit Dice and add them",
+   "identifier": "ring-of-dedicated-focus"
   },
   {
    "group": "Rings",
@@ -2942,6 +3362,16 @@
    "identifier": "scarab-of-protection"
   },
   {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Scholar's Anchoring Bangle",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "Single-Minded Focus: Reaction to succeed on a failed Concentration save (1/dawn); Deep Knowledge Study minimum 10 by hand",
+   "identifier": "scholars-anchoring-bangle"
+  },
+  {
    "group": "Magic weapons",
    "sub": "Weapon · very rare · attunement",
    "name": "Scimitar of Speed",
@@ -2973,6 +3403,16 @@
   },
   {
    "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement",
+   "name": "Secret Keeper's Circlet",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "secret-keepers-circlet"
+  },
+  {
+   "group": "Wondrous items",
    "sub": "Wondrous Item · uncommon",
    "name": "Sending Stones",
    "source": "SRD",
@@ -2990,16 +3430,6 @@
    "priority": 2,
    "note": "Checked in v0.24.0 - the compendium item works under midi-qol",
    "identifier": "sentinel-shield"
-  },
-  {
-   "group": "Magic armor and shields",
-   "sub": "Armor · very rare",
-   "name": "Shield, +1, +2, or +3",
-   "source": "SRD",
-   "category": "done",
-   "priority": 1,
-   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
-   "identifier": "shield"
   },
   {
    "group": "Magic armor and shields",
@@ -3030,6 +3460,16 @@
    "priority": 3,
    "note": "Checked in v0.25.0 - the compendium item works under midi-qol (+2 AC, Forceful Bash, Protective Field); module rule (no mass apply) stops Protective Field running after every bash",
    "identifier": "shield-of-the-cavalier"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare",
+   "name": "Shield, +1, +2, or +3",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
+   "identifier": "shield"
   },
   {
    "group": "Magic weapons",
@@ -3072,14 +3512,24 @@
    "identifier": "sovereign-glue"
   },
   {
-   "group": "Magic armor and shields",
-   "sub": "Armor · very rare · attunement",
-   "name": "Spellguard Shield",
-   "source": "SRD",
-   "category": "done",
-   "priority": 2,
-   "note": "Module rule (no Mass Apply): Advantage on saves vs spells and magical effects; spell attacks against you have Disadvantage",
-   "identifier": "spellguard-shield"
+   "group": "Rings",
+   "sub": "Ring · common",
+   "name": "Spell Component Ring",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Material component storage - by hand",
+   "identifier": "spell-component-ring"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · rare · attunement (spellcaster)",
+   "name": "Spell Duelist's Trophy",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Dispelling Touch: after a melee spell attack hit, cast Dispel Magic on the target (1/dawn); Mage Hand cast; no Somatic components by hand",
+   "identifier": "spell-duelists-trophy"
   },
   {
    "group": "Scrolls",
@@ -3090,6 +3540,36 @@
    "priority": 1,
    "note": "Checked in v0.26.0 - a scroll made from a spell (dnd5e's Create Scroll) casts it, including the module's automated spells, and crumbles",
    "identifier": "spell-scroll"
+  },
+  {
+   "group": "Rings",
+   "sub": "Ring · uncommon · attunement (spellcaster)",
+   "name": "Spell-Refueling Ring",
+   "source": "EB",
+   "category": "build",
+   "priority": 2,
+   "note": "Bonus Action, 1/dawn: recover one expended spell slot of level 3 or lower (activity)",
+   "identifier": "spell-refueling-ring"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Spell-Slinger's Puppet",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "spell-slingers-puppet"
+  },
+  {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare · attunement",
+   "name": "Spellguard Shield",
+   "source": "SRD",
+   "category": "done",
+   "priority": 2,
+   "note": "Module rule (no Mass Apply): Advantage on saves vs spells and magical effects; spell attacks against you have Disadvantage",
+   "identifier": "spellguard-shield"
   },
   {
    "group": "Wondrous items",
@@ -3193,6 +3673,16 @@
   },
   {
    "group": "Staffs",
+   "sub": "Staff · varies · attunement (spellcaster)",
+   "name": "Staff of Skulls",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Chill Touch cast and Intimidation Advantage (ominous); Reaction Disadvantage on an attack within 30 ft (chattering); 10d8 Necrotic CON 17 + Prone 1/dawn (pulverizing)",
+   "identifier": "staff-of-skulls"
+  },
+  {
+   "group": "Staffs",
    "sub": "Staff · very rare · attunement",
    "name": "Staff of Striking",
    "source": "SRD",
@@ -3220,6 +3710,16 @@
    "priority": 2,
    "note": "Not checked: DMG-only, no compendium copy to test (check your D&D Beyond item) - Charges or spells from the item - check activities and save DCs",
    "identifier": "staff-of-the-adder"
+  },
+  {
+   "group": "Staffs",
+   "sub": "Staff · very rare · attunement",
+   "name": "Staff of the Lost",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "+1 Quarterstaff; 3 charges: Maze (DC 18) or Teleport casts; curse by hand",
+   "identifier": "staff-of-the-lost"
   },
   {
    "group": "Staffs",
@@ -3300,6 +3800,16 @@
    "priority": 1,
    "note": "Module rule (no Mass Apply; works on the character's own item): +1d8 Radiant vs Undead (compendium lacked it)",
    "identifier": "sun-blade"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · common",
+   "name": "Sweeping Broom",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Utility, narrative or DM-run - nothing to automate",
+   "identifier": "sweeping-broom"
   },
   {
    "group": "Magic weapons",
@@ -3432,6 +3942,26 @@
    "identifier": "tentacle-rod"
   },
   {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Thespian's Playbill",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Study bonus - by hand",
+   "identifier": "thespians-playbill"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · uncommon · attunement",
+   "name": "Thief's Thimble",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Trap damage - by hand",
+   "identifier": "thiefs-thimble"
+  },
+  {
    "group": "Magic weapons",
    "sub": "Weapon · very rare · attunement",
    "name": "Thunderous Greatclub",
@@ -3482,6 +4012,26 @@
    "identifier": "tome-of-understanding"
   },
   {
+   "group": "Magic armor and shields",
+   "sub": "Armor · very rare · attunement",
+   "name": "Tramontane Armor",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "+1 armor (on the item); Grasping Tendrils (1/dawn, 1 minute): Bonus Action STR 15 save in 20 ft or Grappled and pulled 20 ft",
+   "identifier": "tramontane-armor"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · legendary · attunement",
+   "name": "Traveler's Pearl",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "Teleport cast 1/dawn",
+   "identifier": "travelers-pearl"
+  },
+  {
    "group": "Magic weapons",
    "sub": "Weapon · uncommon · attunement",
    "name": "Trident of Fish Command",
@@ -3490,6 +4040,16 @@
    "priority": 3,
    "note": "Utility, narrative or DM-run - nothing to automate",
    "identifier": "trident-of-fish-command"
+  },
+  {
+   "group": "Artifacts",
+   "sub": "Wondrous Item · artifact",
+   "name": "Universal Pantograph",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Artifact - DM-run",
+   "identifier": "universal-pantograph"
   },
   {
    "group": "Wondrous items",
@@ -3593,6 +4153,16 @@
   },
   {
    "group": "Wands",
+   "sub": "Wand · uncommon",
+   "name": "Wand of Freshness",
+   "source": "AU",
+   "category": "skip",
+   "priority": 3,
+   "note": "Purify Food and Drink - by hand",
+   "identifier": "wand-of-freshness"
+  },
+  {
+   "group": "Wands",
    "sub": "Wand · rare · attunement",
    "name": "Wand of Lightning Bolts",
    "source": "SRD",
@@ -3673,6 +4243,26 @@
   },
   {
    "group": "Wands",
+   "sub": "Wand · rare · attunement",
+   "name": "Wand of Slumber",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "7 charges: Sleep (1, DC 15) or Catnap (3); regains 1d6+1 at dawn",
+   "identifier": "wand-of-slumber"
+  },
+  {
+   "group": "Wands",
+   "sub": "Wand · rare",
+   "name": "Wand of Teeth",
+   "source": "AU",
+   "category": "build",
+   "priority": 2,
+   "note": "10 charges: 1-3 charges for a 30-ft cone, DEX 15 save, Xd8 Piercing + Poisoned until your next turn (half only on a success)",
+   "identifier": "wand-of-teeth"
+  },
+  {
+   "group": "Wands",
    "sub": "Wand · very rare · attunement",
    "name": "Wand of the War Mage, +1, +2, or +3",
    "source": "SRD",
@@ -3713,13 +4303,13 @@
   },
   {
    "group": "Magic weapons",
-   "sub": "Weapon · very rare",
-   "name": "Weapon, +1, +2, or +3",
-   "source": "SRD",
-   "category": "done",
-   "priority": 1,
-   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
-   "identifier": "weapon-1-2-or-3"
+   "sub": "Weapon · varies · attunement",
+   "name": "Wave-Swept Weapon",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "+1/+2/+3 (on the item); water breathing + Swim 30 (aquatic), Fly 30 (ascendant) while held (module passive); brine and light by hand",
+   "identifier": "wave-swept-weapon"
   },
   {
    "group": "Magic weapons",
@@ -3730,6 +4320,16 @@
    "priority": 3,
    "note": "Module rule (no Mass Apply): you and allies within 30 ft have Advantage on Initiative",
    "identifier": "weapon-of-warning"
+  },
+  {
+   "group": "Magic weapons",
+   "sub": "Weapon · very rare",
+   "name": "Weapon, +1, +2, or +3",
+   "source": "SRD",
+   "category": "done",
+   "priority": 1,
+   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)",
+   "identifier": "weapon-1-2-or-3"
   },
   {
    "group": "Wondrous items",
@@ -3780,6 +4380,16 @@
    "priority": 2,
    "note": "Checked in v0.24.0 - the compendium item works under midi-qol",
    "identifier": "wings-of-flying"
+  },
+  {
+   "group": "Wondrous items",
+   "sub": "Wondrous Item · very rare",
+   "name": "Workshop Wrecker",
+   "source": "AU",
+   "category": "build",
+   "priority": 3,
+   "note": "1 minute, 1/dawn: each creature in the area makes a DEX save on activation and each of your turns - DC and Bludgeoning damage by area size (asked)",
+   "identifier": "workshop-wrecker"
   },
   {
    "group": "Wondrous items",
