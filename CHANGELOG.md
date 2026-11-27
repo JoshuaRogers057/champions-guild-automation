@@ -3,6 +3,23 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.43.1
+
+Species check: every trait in the combined species list is now on the tracker. I re-tested the automated ones (save
+Advantage, Goliath ancestries, Relentless Endurance, Celestial Revelation, Vampiric Bite, Breath Weapon, Shifter, Howl,
+Past Life, Resourceful, Cold Fire Magic, Feral Pounce, Draconic Flight and others), and all of them still work.
+
+- **Changeling Shape-Shifter restored (1.0.2)**: v0.41.0's Transmuter feature of the same name (also Shape-Shifter,
+  1.0.1) had replaced it in cga-features. Mass Apply would have turned a Changeling's trait into the Transmuter's
+  Polymorph.
+  - Both are now in the pack, tagged for CAT with `flags.cat.automation.sourceType` (`race:changeling` and
+    `subclass:transmuter`). A character built with species or subclass advancement gets the right one.
+  - If a Changeling's trait came from an import with no advancement link, check that CAT's medkit shows the Changeling
+    version.
+- **Build**: two pack items may now share an identifier only when their CAT `sourceType` differs.
+- **Species tracker**: added the Lorwyn-Shadowmoor Elven Lineages, Lorwyn Elf and Shadowmoor Elf. Their spells are
+  already automated or utility-only.
+
 ## 0.43.0
 
 The last 24 Dungeon Master's Guide magic items, the ones dnd5e has no compendium copy of. This release adds 25 new

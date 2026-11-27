@@ -129,8 +129,9 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
-        "notes": "Champions Guild Automation: Polymorph 1/LR cast."
+        "version": "1.0.1",
+        "notes": "Champions Guild Automation: Polymorph 1/LR cast. Tagged subclass:transmuter so CAT doesn't confuse it with the Changeling's Shape-Shifter.",
+        "sourceType": "subclass:transmuter"
       }
     }
   }

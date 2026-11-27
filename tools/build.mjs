@@ -58,7 +58,8 @@ function prepareItem(file, raw, seenIds, seenKeys) {
   const identifier = item.system?.identifier;
   if (!identifier) err(rel, "missing system.identifier - CAT matches actor items by it");
   const rules = item.system?.source?.rules || "2024";
-  const key = `${item.type}|${identifier}|${rules}`;
+  // CAT keeps same-identifier automations apart by flags.cat.automation.sourceType (e.g. "race:changeling").
+  const key = `${item.type}|${identifier}|${rules}|${item.flags?.cat?.automation?.sourceType ?? ""}`;
   if (seenKeys.has(key)) err(rel, `same type/identifier/rules as ${seenKeys.get(key)} - CAT would only see one`);
   seenKeys.set(key, rel);
   const version = item.flags?.cat?.automation?.version;

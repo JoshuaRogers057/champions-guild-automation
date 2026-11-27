@@ -98,7 +98,7 @@
    "source": "Other",
    "category": "done",
    "priority": 2,
-   "note": "CGA item: Shape-Shift applies Advantage on Charisma checks until you revert",
+   "note": "CGA item (Mass Apply): Shape-Shift applies Advantage on Charisma checks until you revert. Restored in v0.43.1 - the Transmuter's Shape-Shifter (v0.41.0) had overwritten it; both are now tagged for CAT (race:changeling / subclass:transmuter)",
    "identifier": "shape-shifter"
   },
   {
@@ -1010,6 +1010,26 @@
    "priority": 2,
    "note": "Checked in v0.28.0 - the trait item is a description; the species advancement grants the cantrip, spells (levels 1/3/5) and resistance (D&D Beyond imports carry them too)",
    "identifier": "elven-lineage-wood-elf"
+  },
+  {
+   "group": "Elf",
+   "sub": "Lorwyn · Elven Lineage option",
+   "name": "Elven Lineage (Shadowmoor Elf)",
+   "source": "Other",
+   "category": "done",
+   "priority": 2,
+   "note": "Checked in v0.43.1 - a description trait: Darkvision 120 ft (sheet) and Starry Wisp, then Heroism (level 3) and Gentle Repose (level 5); Starry Wisp and Heroism are automated, Gentle Repose is utility",
+   "identifier": "elven-lineage-shadowmoor-elf"
+  },
+  {
+   "group": "Elf",
+   "sub": "Lorwyn · Elven Lineage option",
+   "name": "Elven Lineage (Lorwyn Elf)",
+   "source": "Other",
+   "category": "done",
+   "priority": 2,
+   "note": "Checked in v0.43.1 - a description trait: you know Thorn Whip (swap it for another Druid cantrip on a Long Rest, by hand), then Command (level 3) and Silence (level 5); Thorn Whip and Command are automated, Silence is utility",
+   "identifier": "elven-lineage-lorwyn-elf"
   },
   {
    "group": "Tiefling",
