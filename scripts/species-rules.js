@@ -129,21 +129,51 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     // Relentless Endurance: drop to 1 HP instead of 0 unless the damage would kill outright (leftover >= HP maximum).
     const rel = trait(actor, "relentless-endurance");
     const oldHP = Number(ditem.oldHP ?? actor.system.attributes.hp.value ?? 0);
-    if (rel && usesLeft(rel) > 0 && oldHP > 0 && (ditem.newHP ?? 1) <= 0) {
+    if (rel && relentlessLeft(actor, rel) > 0 && oldHP > 0 && (ditem.newHP ?? 1) <= 0) {
       // midi caps hpDamage at the HP you have, but applies the damage-detail values: work from their total.
       const total = (ditem.damageDetail ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || (ditem.hpDamage ?? 0);
       const oldTemp = Number(ditem.oldTempHP ?? actor.system.attributes.hp.temp ?? 0);
       const leftover = total - oldTemp - oldHP;
       if (leftover < Number(actor.system.attributes.hp.max ?? 0)
         && await askOwner(actor, `Relentless Endurance: ${actor.name}`, `<p>${actor.name} would drop to 0 Hit Points. Use Relentless Endurance to drop to 1 instead (once per Long Rest)?</p>`)) {
-        await spendUse(rel);
+        if (rel.system.uses?.max) await spendUse(rel);
+        else await gmUpdateActor(actor, { [`flags.${MODULE_ID}.relentlessUsed`]: true });
         const cut = total - (oldTemp + oldHP - 1);
         reduceDamage(ditem, cut);
         ditem.hpDamage = oldHP - 1; ditem.newHP = 1; ditem.tempDamage = oldTemp; ditem.newTempHP = 0;
         say(actor, `<strong>Relentless Endurance:</strong> ${actor.name} drops to 1 Hit Point instead.`);
       }
+      relentlessAsked.set(actor.uuid, Date.now());
     }
   } catch (err) { console.warn(`${MODULE_ID} | species damage rules failed`, err); }
+});
+
+// Relentless Endurance when Hit Points reach 0 some other way (damage applied from a chat card or the token, or typed
+// on the sheet): offer to go back up to 1. A trait with no uses counts as once per Long Rest, tracked with a flag.
+const relentlessAsked = new Map(); // actor uuid -> time the damage hook already handled it
+const relentlessLeft = (actor, rel) => (rel.system.uses?.max ? usesLeft(rel) : (actor.getFlag(MODULE_ID, "relentlessUsed") ? 0 : 1));
+Hooks.on("preUpdateActor", (actor, changes, options) => {
+  if (foundry.utils.getProperty(changes, "system.attributes.hp.value") !== undefined) options.cgaHpBefore = Number(actor.system.attributes.hp.value ?? 0);
+});
+Hooks.on("updateActor", async (actor, changes, options, userId) => {
+  try {
+    const hp = foundry.utils.getProperty(changes, "system.attributes.hp.value");
+    if (hp === undefined || Number(hp) > 0 || userId !== game.user.id) return;
+    const before = Number(options?.cgaHpBefore ?? 0);
+    if (before <= 0 || Date.now() - (relentlessAsked.get(actor.uuid) ?? 0) < 5000) return;
+    const rel = trait(actor, "relentless-endurance");
+    if (!rel || relentlessLeft(actor, rel) <= 0) return;
+    relentlessAsked.set(actor.uuid, Date.now());
+    if (!(await askOwner(actor, `Relentless Endurance: ${actor.name}`, `<p>${actor.name} dropped to 0 Hit Points. Use Relentless Endurance to drop to 1 instead (once per Long Rest)? Say no if the damage would have killed outright.</p>`))) return;
+    if (rel.system.uses?.max) await spendUse(rel);
+    else await gmUpdateActor(actor, { [`flags.${MODULE_ID}.relentlessUsed`]: true });
+    await gmUpdateActor(actor, { "system.attributes.hp.value": 1, "system.attributes.death.success": 0, "system.attributes.death.failure": 0 });
+    for (const e of actor.effects.filter((x) => x.statuses?.has("unconscious") || x.statuses?.has("dead"))) await e.delete().catch(() => {});
+    say(actor, `<strong>Relentless Endurance:</strong> ${actor.name} drops to 1 Hit Point instead.`);
+  } catch (err) { console.warn(`${MODULE_ID} | Relentless Endurance (HP update) failed`, err); }
+});
+Hooks.on("dnd5e.restCompleted", (actor, result, config) => {
+  if (config?.type === "long" && actor?.getFlag?.(MODULE_ID, "relentlessUsed")) actor.unsetFlag(MODULE_ID, "relentlessUsed").catch(() => {});
 });
 
 // ------------------------------------------------------------------ Storm's Thunder: Reaction against the creature that damaged you

@@ -26,7 +26,8 @@
     "scripts/class-rules-books-p2.js",
     "scripts/class-rules-books-p3.js",
     "scripts/item-rules-books.js",
-    "scripts/item-rules-dmg.js"
+    "scripts/item-rules-dmg.js",
+    "scripts/site-import.js"
   ],
   "relationships": {
     "systems": [

@@ -15,6 +15,25 @@ Requires: CAT 0.1.8+, midi-qol 14.6.5+, DAE 14.6.4+, lib-wrapper.
    you put it.
 4. On each player character, click the **CAT shield** in the sheet's title bar → **Mass Apply / Update**.
 
+## Characters from the Champions Guild website
+
+The website's **Download for Foundry** file lists what a character has, but its items carry no rules data.
+
+1. Make a blank Player Character, right-click it → **Import Data** → pick the file.
+2. Open the character's sheet (as GM, or as its owner when no GM is on). The module fills the items in from the dnd5e
+   2024 compendium, and a whispered message says what it did.
+3. Click the CAT shield → **Mass Apply / Update**, as for any other character.
+
+The fill-in step covers:
+
+- **Classes**: scale values, such as sorcery points and rage uses.
+- **Items**: the activities, uses and effects of features, species traits, feats, spells and gear. Weapons and armor
+  are matched by base item too, so a "Longsword +1" works.
+- **Picks the site keeps as text**: Metamagic, Eldritch Invocations, Fighting Style and Weapon Mastery.
+- **Species**: the lineage (for example a Goliath's Fire's Burn) and species resistances.
+- **Magic items**: names like "Vicious Longsword" and "Mariner's Chain Mail" are matched to the book items.
+- **Unarmed Strike**: added if the character has none.
+
 ## For DMs: after an update
 
 1. Foundry Setup screen → Add-on Modules → **Update** (or "Update All").

@@ -3,6 +3,37 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.44.0
+
+Characters downloaded from the Champions Guild website now get their rules data. The website's file lists names, text
+and identifiers but no mechanics: no attacks, uses, effects or scale values. Before this release a site import's
+weapons couldn't attack properly, its features had no uses, and Mass Apply only reached the spells and feats that CAT
+has automations for. The new `scripts/site-import.js` fills the items in when the character's sheet is first opened
+(see the README). Tested with the site's Test Sorc export and with test characters built on it.
+
+- **Compendium fill-in**: each site item gets the matching dnd5e 2024 compendium item's activities, uses and effects.
+  The site's name, text, quantity, equipped, attuned, prepared state and magic bonus are kept.
+  - Class features are matched through the class or subclass that grants them.
+  - Weapons and armor are also matched by base item, so "Longsword +2" becomes a Longsword with +2.
+  - Classes and subclasses get their scale values, so Font of Magic has its sorcery points.
+  - A dagger that dnd5e had given a blank attack is replaced too.
+- **Enchanted weapons**: Vicious, Flame Tongue, Frost Brand, Holy Avenger and the other compendium enchantments are
+  written into the site's weapon (extra damage, magic bonus, attunement). dnd5e won't enchant a weapon that is already
+  magical, and the site marks these magical.
+- **Variant magic item names**: about 200 site items named "kind + base item" now carry the identifier our rules and
+  CAT look for. Examples: Adamantine/Mithral/Mariner's/Smoldering/Cast-Off/Tramontane armor, Vicious/Dazzling/Vorpal/
+  Dancing/Executioner's/Energy/Repeating/Returning weapons, Ring of X Resistance and Ammunition of Slaying.
+- **Picks kept as text**: the site's free-text choices on Metamagic, Eldritch Invocations and Fighting Style now add
+  those option items, so Mass Apply can automate them. Weapon Mastery picks become the character's mastery list.
+- **Species**: the lineage picked on the site adds its trait, for example Goliath Fire → Fire's Burn, Elf Drow,
+  Gnome Forest or Tiefling Abyssal. Shifter options are added too. Species resistances the site doesn't record are
+  set: Aasimar, Dhampir, Dragonborn (by ancestry), Kalashtar, Reborn, Rimekin and Tiefling (by legacy).
+- **Uses from text**: a feature with no compendium copy gets uses when its text states them, such as "a number of
+  times equal to your Proficiency Bonus ... Long Rest".
+- **Unarmed Strike** is added when the character has none.
+- **Relentless Endurance**: it now also works when Hit Points reach 0 outside an attack: damage applied from a chat
+  card or the token, or typed on the sheet. A trait with no uses counts as once per Long Rest.
+
 ## 0.43.1
 
 Species check: every trait in the combined species list is now on the tracker. I re-tested the automated ones (save
