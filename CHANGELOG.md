@@ -3,6 +3,20 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.48.0
+
+- **Report Bug**: every item on a character sheet (features, spells, weapons, armor, magic items, feats, species
+  traits, backgrounds) has a bug icon in its sheet's title bar, and **Report Bug** in the right-click menu on the
+  character sheet. The form asks *What did you expect to happen?* and *What actually happened?* and sends the answers
+  to championsguildrpg.com, where they are listed at /admin/foundry-bugs. Sent with it: the Foundry user and
+  character names, the item's automation (CGA version, CAT, midi or dnd5e), activities and effects, the active
+  modules' versions, the last 15 error messages and the character's last few chat messages. Characters exported from
+  the site also send their site character id, so the report links to the character. If the site can't be reached,
+  the report is whispered to the GM so it isn't lost. New world setting **Bug report address**. Tested from the test
+  world against a local copy of the site: the report arrived with all its details, and a dead address fell back to
+  the whisper.
+- New script `scripts/bug-report.js`. No automation changes.
+
 ## 0.47.2
 
 - **Unarmed Strike** (new CGA item, 1.0.0, Mass Apply): four separate options you pick from each time: **Punch**

@@ -15,6 +15,14 @@ Requires: Foundry v14 (verified 14.371), dnd5e 6.1+ (verified 6.1.2), CAT 0.1.9+
    you put it.
 4. On each player character, click the **CAT shield** in the sheet's title bar → **Mass Apply / Update**.
 
+## Reporting a bug
+
+Something on a character sheet not working right? Open it (a feature, spell, weapon, magic item, feat, anything) and
+click the **bug icon** in its title bar, or right-click it on the character sheet → **Report Bug**. Say what you
+expected to happen and what actually happened, then **Send Report**. It goes to the Champions Guild website with the
+item's automation details, the game's module versions and recent errors, so we can find and fix it. If the site
+can't be reached, the report is whispered to the GM instead.
+
 ## Characters from the Champions Guild website
 
 The website's **Download for Foundry** file lists what a character has, but its items carry no rules data.
