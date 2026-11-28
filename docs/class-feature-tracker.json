@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "features": [
   {
    "group": "Artificer",
@@ -3793,7 +3793,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol sample item checked (activities run)",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - ",
    "identifier": "radiant-strikes"
   },
   {

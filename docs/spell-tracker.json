@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "spells": [
   {
    "level": 0,
@@ -27,7 +27,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol's sample item, checked in the test world: Necrotic + can't regain HP",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - Necrotic + can't regain HP",
    "aka": null,
    "identifier": "chill-touch"
   },
@@ -307,7 +307,7 @@
    "source": "PHB",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol's sample item, checked in the test world: d8, d12 against wounded targets",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - d8, d12 against wounded targets",
    "aka": null,
    "identifier": "toll-the-dead"
   },
@@ -447,7 +447,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol's sample item, checked in the test world: WIS save, chosen command effect",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - WIS save, chosen command effect",
    "aka": null,
    "identifier": "command"
   },
@@ -667,7 +667,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol's sample item, checked in the test world: 4d6 Radiant + Advantage on the next attack against it",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - 4d6 Radiant + Advantage on the next attack against it",
    "aka": null,
    "identifier": "guiding-bolt"
   },
@@ -847,7 +847,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "midi-qol's sample item, checked in the test world: Warded",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - Warded",
    "aka": null,
    "identifier": "sanctuary"
   },
@@ -867,7 +867,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol's sample item, checked in the test world: +5 AC until your next turn, Magic Missile immunity",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +5 AC until your next turn, Magic Missile immunity",
    "aka": null,
    "identifier": "shield"
   },
@@ -957,7 +957,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol's sample item, checked in the test world: CON save 2d8 Thunder + 10-ft push",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - CON save 2d8 Thunder + 10-ft push",
    "aka": null,
    "identifier": "thunderwave"
   },
@@ -1007,7 +1007,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol's sample item, checked in the test world: +5 maximum and current HP",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +5 maximum and current HP",
    "aka": null,
    "identifier": "aid"
   },
@@ -1227,7 +1227,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "midi-qol's sample item, checked in the test world: the target gets a breath save activity of the chosen type",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - the target gets a breath save activity of the chosen type",
    "aka": null,
    "identifier": "dragons-breath"
   },
@@ -1517,7 +1517,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "midi-qol's sample item, checked in the test world: +10 Stealth aura",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +10 Stealth aura",
    "aka": null,
    "identifier": "pass-without-trace"
   },
@@ -3077,7 +3077,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "midi-qol's sample item, checked in the test world: 5d8 + mod to the targets",
+   "note": "CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - 5d8 + mod to the targets",
    "aka": null,
    "identifier": "mass-cure-wounds"
   },

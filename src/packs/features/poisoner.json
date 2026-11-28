@@ -419,10 +419,10 @@
       "system": {
         "changes": [
           {
-            "key": "system.traits.idr.value",
+            "key": "damage",
             "value": "poison",
-            "priority": 20,
-            "type": "add",
+            "priority": 100,
+            "type": "dnd5e.damage.ignore.resistance",
             "phase": "initial",
             "_id": "cgaFtChg08040000",
             "conditions": "{}",
@@ -569,7 +569,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Poison damage ignores Resistance; Apply Poison uses a dose; the coated weapon's next damaging hit forces the CON save (2d8 Poison + Poisoned)."
       }
     }

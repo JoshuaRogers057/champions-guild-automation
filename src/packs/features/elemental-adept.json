@@ -211,10 +211,10 @@
       "system": {
         "changes": [
           {
-            "key": "system.traits.idr.value",
+            "key": "damage",
             "value": "acid",
-            "priority": 20,
-            "type": "add",
+            "priority": 100,
+            "type": "dnd5e.damage.ignore.resistance",
             "phase": "initial",
             "_id": "cgaFtChg05210000",
             "conditions": "{}",
@@ -270,10 +270,10 @@
       "system": {
         "changes": [
           {
-            "key": "system.traits.idr.value",
+            "key": "damage",
             "value": "cold",
-            "priority": 20,
-            "type": "add",
+            "priority": 100,
+            "type": "dnd5e.damage.ignore.resistance",
             "phase": "initial",
             "_id": "cgaFtChg05220000",
             "conditions": "{}",
@@ -329,10 +329,10 @@
       "system": {
         "changes": [
           {
-            "key": "system.traits.idr.value",
+            "key": "damage",
             "value": "fire",
-            "priority": 20,
-            "type": "add",
+            "priority": 100,
+            "type": "dnd5e.damage.ignore.resistance",
             "phase": "initial",
             "_id": "cgaFtChg05230000",
             "conditions": "{}",
@@ -388,10 +388,10 @@
       "system": {
         "changes": [
           {
-            "key": "system.traits.idr.value",
+            "key": "damage",
             "value": "lightning",
-            "priority": 20,
-            "type": "add",
+            "priority": 100,
+            "type": "dnd5e.damage.ignore.resistance",
             "phase": "initial",
             "_id": "cgaFtChg05240000",
             "conditions": "{}",
@@ -447,10 +447,10 @@
       "system": {
         "changes": [
           {
-            "key": "system.traits.idr.value",
+            "key": "damage",
             "value": "thunder",
-            "priority": 20,
-            "type": "add",
+            "priority": 100,
+            "type": "dnd5e.damage.ignore.resistance",
             "phase": "initial",
             "_id": "cgaFtChg05250000",
             "conditions": "{}",
@@ -551,7 +551,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Choose Damage Type activity; your damage of that type ignores Resistance (book: spells only) and your spells treat 1s on its dice as 2s."
       }
     }

@@ -276,7 +276,7 @@ Hooks.on("midi-qol.RollComplete", async (workflow) => {
       if (!act) continue;
       const types = Object.keys(CONFIG.DND5E.damageTypes);
       const [fx] = await def.createEmbeddedDocuments("ActiveEffect", [{ name: "Sword of Answering", img: sword.img, transfer: false,
-        system: { changes: [chg("flags.midi-qol.advantage.attack.all", "1"), ...types.flatMap((t) => [chg("system.traits.idr.value", t, "add"), chg("system.traits.idi.value", t, "add")])] } }]);
+        system: { changes: [chg("flags.midi-qol.advantage.attack.all", "1"), ...types.flatMap((t) => [({ key: "damage", value: t, type: "dnd5e.damage.ignore.resistance", priority: 100, phase: "initial" }), ({ key: "damage", value: t, type: "dnd5e.damage.ignore.immunity", priority: 100, phase: "initial" })])] } }]);
       await useReaction(def);
       await runActivity(act, attackerTok);
       await fx?.delete().catch(() => {});
@@ -311,7 +311,7 @@ PASSIVES.push(
   { key: "wound-closure", active: (a) => !!magicItem(a, "periapt-of-wound-closure"),
     effect: { name: "Periapt of Wound Closure", img: "icons/equipment/neck/amulet-round-gold-red.webp", changes: [chg("system.attributes.death.roll.min", "10", "upgrade")] } },
   { key: "vorpal", active: (a) => !!magicItem(a, "vorpal-sword"),
-    effect: { name: "Vorpal Sword", img: "icons/weapons/swords/greatsword-crossguard-silver.webp", changes: [chg("system.traits.idr.value", "slashing", "add")] } }
+    effect: { name: "Vorpal Sword", img: "icons/weapons/swords/greatsword-crossguard-silver.webp", changes: [({ key: "damage", value: "slashing", type: "dnd5e.damage.ignore.resistance", priority: 100, phase: "initial" })] } }
 );
 ITEM_TOGGLES.push(
   // Arrow-Catching Shield: its +2 is only against ranged attacks (handled when hits are checked), never always-on.
@@ -409,8 +409,8 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem }) => {
   try {
     const actor = token?.actor;
     const oil = actor?.effects?.find((e) => e.flags?.[MODULE_ID]?.oiled && !e.disabled);
-    if (!oil || !(ditem.damageDetail ?? []).some((d) => d.type === "fire" && (d.value ?? 0) > 0)) return;
-    const fire = ditem.damageDetail.find((d) => d.type === "fire");
+    if (!oil || !((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).some((d) => d.type === "fire" && (d.value ?? 0) > 0)) return;
+    const fire = (ditem.calculatedDamages ?? ditem.damageDetail).find((d) => d.type === "fire");
     fire.value += 5;
     ditem.totalDamage = (ditem.totalDamage ?? 0) + 5;
     const extra = Math.min(5, Math.max(0, ditem.newHP ?? 0));

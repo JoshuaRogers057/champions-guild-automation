@@ -157,7 +157,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     }
     // Vampire Hunter: Reaction, Necrotic damage reduced by (PB)d6 (1/Short Rest)
     const vh = feat(actor, "vampire-hunter");
-    const nec = (ditem.damageDetail ?? []).filter((d) => d.type === "necrotic" && (d.value ?? 0) > 0).reduce((s, d) => s + d.value, 0);
+    const nec = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((d) => d.type === "necrotic" && (d.value ?? 0) > 0).reduce((s, d) => s + d.value, 0);
     if (vh && nec > 0 && usesLeft(vh, 1, "sr") > 0 && canReact(actor)
       && await askOwner(actor, `Vitality Ward: ${actor.name}`, `<p>${actor.name} takes ${nec} Necrotic damage. Use your Reaction to reduce it by ${prof(actor)}d6 (once per Short Rest)?</p>`)) {
       await spend(vh, "sr"); await useReaction(actor);

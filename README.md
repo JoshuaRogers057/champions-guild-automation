@@ -3,7 +3,7 @@
 Fixes and additions for **Coven's Automation Toolkit (CAT)** on Foundry v14 / dnd5e 6. Covers spells, class features
 and items that CAT and its sources are missing or get wrong.
 
-Requires: CAT 0.1.8+, midi-qol 14.6.5+, DAE 14.6.4+, lib-wrapper.
+Requires: Foundry v14 (verified 14.371), dnd5e 6.1+ (verified 6.1.2), CAT 0.1.9+, midi-qol 14.7+, DAE 14.6.10+, lib-wrapper, socketlib.
 
 ## For DMs: install (once)
 

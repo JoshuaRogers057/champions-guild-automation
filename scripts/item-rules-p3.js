@@ -55,7 +55,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     if (!actor || !ditem) return;
     const dealt = () => (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0);
     // Ring of Warmth: Cold damage reduced by 2d8.
-    if (dealt() > 0 && magicItem(actor, "ring-of-warmth") && (ditem.damageDetail ?? []).some((d) => d.type === "cold" && (d.value ?? 0) > 0)) {
+    if (dealt() > 0 && magicItem(actor, "ring-of-warmth") && ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).some((d) => d.type === "cold" && (d.value ?? 0) > 0)) {
       const roll = await new Roll("2d8").evaluate();
       const cut = reduceDamage(ditem, roll.total, ["cold"]);
       roll.toMessage({ speaker: ChatMessage.getSpeaker({ actor }), flavor: `Ring of Warmth: ${actor.name} takes ${cut} less Cold damage` });
@@ -63,7 +63,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     // Shield of Missile Attraction: Resistance to damage from Ranged weapon attacks (skipped if already resistant).
     if (dealt() > 0 && isRangedWeapon(workflow) && magicItem(actor, "shield-of-missile-attraction")) {
       const dr = actor.system.traits?.dr?.value ?? new Set();
-      const half = (ditem.damageDetail ?? []).filter((d) => (d.value ?? 0) > 0 && !dr.has?.(d.type) && ["bludgeoning", "piercing", "slashing", "force", "fire", "cold", "lightning", "acid", "poison", "necrotic", "radiant", "thunder", "psychic"].includes(d.type))
+      const half = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((d) => (d.value ?? 0) > 0 && !dr.has?.(d.type) && ["bludgeoning", "piercing", "slashing", "force", "fire", "cold", "lightning", "acid", "poison", "necrotic", "radiant", "thunder", "psychic"].includes(d.type))
         .reduce((s, d) => s + Math.ceil(d.value / 2), 0);
       if (half > 0) { const cut = reduceDamage(ditem, half); say(actor, `<strong>Shield of Missile Attraction:</strong> Resistance - ${actor.name} takes ${cut} less damage.`); }
     }

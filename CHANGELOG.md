@@ -3,6 +3,30 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.45.0
+
+Updated for Foundry 14.371, dnd5e 6.1.2, CAT 0.1.10, midi-qol 14.7.1 and DAE 14.6.10. **This release needs dnd5e 6.1,
+midi-qol 14.7, DAE 14.6.10 and CAT 0.1.9 or newer.** CAT 0.1.9 and midi 14.7 already require dnd5e 6.1, so update
+them together. Tested in the test world on the new versions.
+
+- **12 automations midi-qol 14.7 removed are now CGA items** (1.0.0, Mass Apply): Aid, Chill Touch, Command,
+  Dragon's Breath, Guiding Bolt, Mass Cure Wounds, Pass without Trace, Sanctuary, Shield, Thunderwave, Toll the Dead
+  and Radiant Strikes. midi dropped its versions in favour of CPR's, which the guild doesn't use. These are midi 14.6's
+  versions, kept as they were.
+  - Command's turn-start reminder, Sanctuary's save-before-attacking and Dragon's Breath's exhale feature now run from
+    this module, because midi removes those scripts in 14.8.
+  - Radiant Strikes' +1d8 Radiant uses a plain bonus, since dnd5e 6.1 ignored the old "custom" change.
+  - On characters that already have midi's copies, run Mass Apply to switch to these.
+- **Ignoring resistance and immunity**: dnd5e 6.1 replaced the `system.traits.idr/idi` keys with damage rules. Seven
+  CGA items moved to the new rules (1.0.1): Boon of Irresistible Offense, Elemental Adept, Frigid Explorer, Grave
+  Power, Grave Touched, Poisoner and Spellfire Adept. So did the module's own effects: Vorpal Sword, Sword of
+  Answering, Touch of Death and Improved Reanimation.
+- **Damage rules** read midi 14.7's renamed damage records (`calculatedDamages`), falling back to the old name.
+- **Website fill-in**: dnd5e 6.1 renamed the Goliath boons ("Fire's Burn (Fire Giant)") and merged the Elf, Gnome and
+  Tiefling lineages into one trait each. The lineage step finds both the old and the new names.
+- **Website export**: the site's species item may now carry the lineage pick as `flags.champions-guild-automation.site.choice`.
+  The module already reads it, and falls back to the "Chosen:" line in older files.
+
 ## 0.44.0
 
 Characters downloaded from the Champions Guild website now get their rules data. The website's file lists names, text

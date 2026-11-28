@@ -136,7 +136,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem }) => {
     const actor = token?.actor;
     const it = actor && feat(actor, "delicious-pain");
     if (!it || !ditem || usesLeft(it, 1, "sr") <= 0 || !canReact(actor)) return;
-    const bps = (ditem.damageDetail ?? []).filter((d) => ["bludgeoning", "piercing", "slashing"].includes(d.type) && (d.value ?? 0) > 0).reduce((s, d) => s + d.value, 0);
+    const bps = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((d) => ["bludgeoning", "piercing", "slashing"].includes(d.type) && (d.value ?? 0) > 0).reduce((s, d) => s + d.value, 0);
     if (bps <= 0 || (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0) <= 0 || actor.effects.some((e) => e.name === "Toughened Flesh")) return;
     if (!(await askOwner(actor, `Toughened Flesh: ${actor.name}`, `<p>${actor.name} takes Bludgeoning, Piercing or Slashing damage. Use your Reaction for Resistance to those types until the start of your next turn (once per Short Rest)?</p>`))) return;
     await spend(it, "sr"); await useReaction(actor);

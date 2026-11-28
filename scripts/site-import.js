@@ -288,8 +288,12 @@ async function addChoices(actor) {
       const rx = (s) => String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
       const key = choice.replace(new RegExp(`\\b(${rx(species)}|giant|elf|gnome)\\b`, "ig"), "").trim();
       const req = new RegExp(`^${rx(species)}\\s*\\(\\s*${rx(key)}`, "i");
+      // dnd5e 6.0 named them by requirement ("Goliath (Fire Giant)", "Elf (Drow)") or identifier ("...-abyssal");
+      // dnd5e 6.1 puts the lineage in the name ("Fire's Burn (Fire Giant)") and merges Elf/Gnome/Tiefling lineages
+      // into one trait each, which the site already exports by name.
+      const inName = new RegExp(`\\(\\s*${rx(key)}`, "i");
       const lineage = all("origins").filter((e) => e.type === "feat" && (req.test(e.system?.requirements ?? "")
-        || (slug(e.system?.requirements) === slug(species) && (e.system?.identifier ?? "").endsWith(`-${slug(key)}`))));
+        || (slug(e.system?.requirements) === slug(species) && ((e.system?.identifier ?? "").endsWith(`-${slug(key)}`) || inName.test(e.name)))));
       const added = await addFrom(actor, lineage, `${species} (${choice})`);
       if (added.length) out.push(`${species} lineage: ${added.join(", ")}`);
       // Shifter options are module rules that look for the trait by name.

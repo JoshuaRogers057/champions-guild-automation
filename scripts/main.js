@@ -161,7 +161,7 @@ const resistanceUsed = new Map(); // actor uuid -> combat turn key
 export const turnKey = () => (game.combat?.started ? `${game.combat.id}:${game.combat.round}:${game.combat.turn}` : `t${Math.floor(Date.now() / 6000)}`);
 export function reduceDamage(ditem, amount, types) {
   let left = amount;
-  for (const d of ditem.damageDetail ?? []) {
+  for (const d of (ditem.calculatedDamages ?? ditem.damageDetail) ?? []) {
     if (left <= 0) break;
     if (types && !types.includes(d.type)) continue;
     if (d.type === "temphp" || d.type === "healing" || (d.value ?? 0) <= 0) continue;
@@ -211,7 +211,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
       const max = Number(actor.system.attributes.hp.max ?? 0);
       const gain = Math.min(con, Math.max(0, max - Number(ditem.newHP ?? 0)));
       if (gain > 0) {
-        const heal = (ditem.damageDetail ?? []).find((d) => d.type === "healing");
+        const heal = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).find((d) => d.type === "healing");
         if (heal) heal.value += (heal.value < 0 ? -gain : gain); // midi stores healing as a negative value
         ditem.newHP += gain; ditem.hpDamage -= gain; ditem.totalDamage -= gain;
         fortitudeUsed.set(actor.uuid, turnKey());
@@ -226,7 +226,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
       const tr = actor.system.traits ?? {};
       const resisted = (type) => tr.dr?.value?.has?.(type) || tr.di?.value?.has?.(type) || tr.dr?.all || tr.di?.all;
       let cut = 0;
-      for (const d of ditem.damageDetail ?? []) {
+      for (const d of (ditem.calculatedDamages ?? ditem.damageDetail) ?? []) {
         if (["psychic", "radiant", "healing", "temphp"].includes(d.type) || (d.value ?? 0) <= 0 || resisted(d.type)) continue;
         cut += reduceDamage(ditem, d.value - Math.floor(d.value / 2), [d.type]);
       }
@@ -255,7 +255,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     const types = foundry.utils.getProperty(actor, `flags.${MODULE_ID}.resistance`);
     if (types && resistanceUsed.get(actor.uuid) !== turnKey()) {
       const list = String(types).split(/[,;|\s]+/).filter(Boolean);
-      if ((ditem.damageDetail ?? []).some((d) => list.includes(d.type) && d.value > 0)) {
+      if (((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).some((d) => list.includes(d.type) && d.value > 0)) {
         const roll = await new Roll("1d4").evaluate();
         const cut = reduceDamage(ditem, roll.total, list);
         if (cut) {
@@ -267,7 +267,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     // Death Ward
     if (foundry.utils.getProperty(actor, `flags.${MODULE_ID}.deathWard`) && (ditem.oldHP ?? 0) > 0 && (ditem.newHP ?? 1) <= 0) {
       // midi applies the per-type damage values, so trim those until the creature keeps exactly 1 HP.
-      const dealt = (ditem.damageDetail ?? []).reduce((s, d) => s + (["temphp", "healing"].includes(d.type) ? 0 : Math.max(0, d.value ?? 0)), 0);
+      const dealt = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).reduce((s, d) => s + (["temphp", "healing"].includes(d.type) ? 0 : Math.max(0, d.value ?? 0)), 0);
       const allowed = Math.max(0, (ditem.oldHP ?? 0) - 1 + (ditem.oldTempHP ?? 0));
       if (dealt > allowed) reduceDamage(ditem, dealt - allowed);
       ditem.newHP = 1;
@@ -280,7 +280,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     const stand = (ditem.oldHP ?? 0) > 0 && (ditem.newHP ?? 1) <= 0
       ? actor.items.find((i) => i.system?.identifier === "boon-of-recovery")?.system.activities.find((a) => a.midiProperties?.identifier === "last-stand") : null;
     if (stand && Number(stand.uses?.value ?? 0) > 0) {
-      const dealt = (ditem.damageDetail ?? []).reduce((s, d) => s + (["temphp", "healing"].includes(d.type) ? 0 : Math.max(0, d.value ?? 0)), 0);
+      const dealt = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).reduce((s, d) => s + (["temphp", "healing"].includes(d.type) ? 0 : Math.max(0, d.value ?? 0)), 0);
       const allowed = Math.max(0, (ditem.oldHP ?? 0) - 1 + (ditem.oldTempHP ?? 0));
       if (dealt > allowed) reduceDamage(ditem, dealt - allowed);
       ditem.newHP = 1;

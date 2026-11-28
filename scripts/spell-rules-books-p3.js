@@ -61,7 +61,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     if (!actor || !ditem || !hasFx(actor, "Elminster’s Effulgent Spheres") || !canReact(actor)) return;
     const spell = spellOf(actor, "elminsters-effulgent-spheres");
     if (!spell || Number(spell.system.uses.value ?? 0) <= 0) return;
-    const by = {}; for (const d of ditem.damageDetail ?? []) if (ELEM.includes(d.type) && (d.value ?? 0) > 0) by[d.type] = (by[d.type] ?? 0) + d.value;
+    const by = {}; for (const d of (ditem.calculatedDamages ?? ditem.damageDetail) ?? []) if (ELEM.includes(d.type) && (d.value ?? 0) > 0) by[d.type] = (by[d.type] ?? 0) + d.value;
     const type = Object.keys(by).sort((a, b) => by[b] - by[a])[0];
     if (!type) return;
     if (!(await askOwner(actor, `Absorb Energy: ${actor.name}`, `<p>${actor.name} takes ${by[type]} ${type} damage. Spend a sphere (${spell.system.uses.value} left) and your Reaction for Resistance to ${type} until the start of your next turn?</p>`))) return;

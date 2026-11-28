@@ -7,7 +7,7 @@
 # Names use the PHB names; "aka" in the note is the SRD name, which the CGA item must list as an alias.
 0|Acid Splash|SRD|done|1|DEX save, up to two creatures within 5 ft of each other; cantrip scaling
 0|Blade Ward|PHB|done|2|Attackers subtract 1d4 from attack rolls against you (concentration)
-0|Chill Touch|SRD|done|1|midi-qol's sample item, checked in the test world: Necrotic + can't regain HP
+0|Chill Touch|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - Necrotic + can't regain HP
 0|Dancing Lights|SRD|skip|3|
 0|Druidcraft|SRD|skip|3|
 0|Eldritch Blast|SRD|done|1|One attack per beam, Agonizing Blast, Repelling Blast push
@@ -35,7 +35,7 @@
 0|Thaumaturgy|SRD|skip|3|
 0|Thorn Whip|PHB|done|1|Melee spell attack; pull Large or smaller 10 ft toward you (no token spin)
 0|Thunderclap|PHB|done|1|CON save, every creature within 5 ft
-0|Toll the Dead|PHB|done|1|midi-qol's sample item, checked in the test world: d8, d12 against wounded targets
+0|Toll the Dead|PHB|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - d8, d12 against wounded targets
 0|True Strike|SRD|done|1|Weapon attack with spellcasting ability; extra radiant at 5th+
 0|Vicious Mockery|SRD|done|1|Failed save: disadvantage on its next attack roll
 0|Word of Radiance|PHB|done|1|CON save, creatures of your choice within 5 ft
@@ -49,7 +49,7 @@
 1|Charm Person|SRD|done|3|WIS save or Charmed
 1|Chromatic Orb|SRD|done|2|Choose damage type; matching dice leap to another target
 1|Color Spray|SRD|done|1|Blinded until end of your next turn
-1|Command|SRD|done|1|midi-qol's sample item, checked in the test world: WIS save, chosen command effect
+1|Command|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - WIS save, chosen command effect
 1|Compelled Duel|PHB|done|2|Mirjam's compelled-duel macro exists (disadvantage vs others, end conditions)
 1|Comprehend Languages|SRD|skip|3|
 1|Create or Destroy Water|SRD|skip|3|
@@ -71,7 +71,7 @@
 1|Fog Cloud|SRD|skip|3|
 1|Goodberry|SRD|skip|3|
 1|Grease|SRD|done|2|Prone on failed DEX save; save again entering or ending turn in it
-1|Guiding Bolt|SRD|done|1|midi-qol's sample item, checked in the test world: 4d6 Radiant + Advantage on the next attack against it
+1|Guiding Bolt|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - 4d6 Radiant + Advantage on the next attack against it
 1|Hail of Thorns|PHB|done|2|Next ranged weapon hit: DEX save in a 5-ft area around the target
 1|Healing Word|SRD|done|1|
 1|Hellish Rebuke|SRD|done|1|midi-qol's sample item, checked in the test world: DEX save 2d10 Fire (Reaction)
@@ -89,9 +89,9 @@
 1|Protection from Evil and Good|SRD|done|2|Aberration/celestial/elemental/fey/fiend/undead attackers have disadvantage; charm/fear immunity vs them
 1|Purify Food and Drink|SRD|skip|3|
 1|Ray of Sickness|SRD|done|2|Poisoned until end of your next turn on a hit
-1|Sanctuary|SRD|done|2|midi-qol's sample item, checked in the test world: Warded
+1|Sanctuary|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - Warded
 1|Searing Smite|SRD|done|1|Via Paladin's Smite prompt
-1|Shield|SRD|done|1|midi-qol's sample item, checked in the test world: +5 AC until your next turn, Magic Missile immunity
+1|Shield|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +5 AC until your next turn, Magic Missile immunity
 1|Shield of Faith|SRD|done|1|+2 AC (concentration)
 1|Silent Image|SRD|skip|3|
 1|Sleep|SRD|done|1|midi-qol's sample item, checked in the test world: WIS save, Incapacitated then Unconscious
@@ -100,12 +100,12 @@
 1|Tasha's Hideous Laughter|SRD|done|2|aka Hideous Laughter. Prone + Incapacitated; repeat save end of turn and on damage (with advantage)
 1|Tenser's Floating Disk|SRD|skip|3|aka Floating Disk
 1|Thunderous Smite|PHB|done|1|Push 10 ft + Prone
-1|Thunderwave|SRD|done|1|midi-qol's sample item, checked in the test world: CON save 2d8 Thunder + 10-ft push
+1|Thunderwave|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - CON save 2d8 Thunder + 10-ft push
 1|Unseen Servant|SRD|skip|3|
 1|Wardaway|FR|done|1|CGA item: CON save 2d4 Force (+2d4/level), Speed halved until your next turn; Constructs and Undead succeed automatically (module rule)
 1|Witch Bolt|PHB|done|2|Bonus action each turn for 1d12 lightning while the target stays in range
 1|Wrathful Smite|PHB|done|1|Frightened with repeat save
-2|Aid|SRD|done|1|midi-qol's sample item, checked in the test world: +5 maximum and current HP
+2|Aid|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +5 maximum and current HP
 2|Alter Self|SRD|skip|3|
 2|Animal Messenger|SRD|skip|3|
 2|Arcane Lock|SRD|skip|3|
@@ -127,7 +127,7 @@
 2|Deryan’s Helpful Homunculi|FR|skip|3|Crafting assistant - nothing to automate
 2|Detect Thoughts|SRD|skip|3|
 2|Disruptive Tune|AU|done|1|CGA item: 20-ft Sphere CON save - a failure ends Concentration and gives Disadvantage on Concentration saves
-2|Dragon's Breath|SRD|done|2|midi-qol's sample item, checked in the test world: the target gets a breath save activity of the chosen type
+2|Dragon's Breath|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - the target gets a breath save activity of the chosen type
 2|Dueling Ground|AU|skip|3|Downtime duel arena - DM-handled
 2|Elminster’s Elusion|FR|done|1|CGA item: Advantage on saves vs spells/magic (midi magic resistance); a successful save for half takes none
 2|Enhance Ability|SRD|done|2|Advantage on checks with the chosen ability
@@ -156,7 +156,7 @@
 2|Misty Step|SRD|done|1|Teleport
 2|Moonbeam|SRD|done|1|Zone: CON save radiant on entering/starting turn; move the beam as a bonus action
 2|Nystul's Magic Aura|SRD|skip|3|aka Arcanist's Magic Aura
-2|Pass without Trace|SRD|done|2|midi-qol's sample item, checked in the test world: +10 Stealth aura
+2|Pass without Trace|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +10 Stealth aura
 2|Phantasmal Force|SRD|done|3|midi-qol's sample item, checked in the test world: Seeing Illusions
 2|Prayer of Healing|SRD|done|2|
 2|Protection from Poison|SRD|done|2|
@@ -312,7 +312,7 @@
 5|Insect Plague|SRD|done|2|Zone: CON save piercing on entering/starting turn
 5|Jallarzi's Storm of Radiance|PHB|done|3|Zone: radiant + thunder, deafened, blinded
 5|Legend Lore|SRD|skip|3|
-5|Mass Cure Wounds|SRD|done|2|midi-qol's sample item, checked in the test world: 5d8 + mod to the targets
+5|Mass Cure Wounds|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - 5d8 + mod to the targets
 5|Mislead|SRD|skip|3|
 5|Modify Memory|SRD|skip|3|
 5|Mordenkainen’s Lucubration|AU|done|2|CGA item + module dialog: recover up to two expended slots of level 2 (3 at 6-7, 4 at 8+)

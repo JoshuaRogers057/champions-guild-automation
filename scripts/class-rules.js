@@ -130,7 +130,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
   const dealt = () => Math.max(0, (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0));
   try {
     // Deflect Attacks (Monk 3; Deflect Energy at 13 = any damage type)
-    const types = new Set((ditem.damageDetail ?? []).filter((d) => (d.value ?? 0) > 0).map((d) => d.type));
+    const types = new Set(((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((d) => (d.value ?? 0) > 0).map((d) => d.type));
     if (wasHit && hasFeat(actor, "deflect-attacks") && reactionFree(actor) && !isIncapacitated(actor)
       && (hasFeat(actor, "deflect-energy") || classLevel(actor, "monk") >= 13 || ["bludgeoning", "piercing", "slashing"].some((t) => types.has(t)))) {
       const bonus = Number(actor.system.abilities.dex?.mod ?? 0) + classLevel(actor, "monk");

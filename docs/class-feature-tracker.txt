@@ -348,7 +348,7 @@ Paladin||5|Faithful Steed|SRD|done|2|Fixed copy: Adds a free Find Steed cast (th
 Paladin||6|Aura of Protection|SRD|done|1|+CHA to saves for you and allies in 10/30 ft, kept up to date as tokens move (module rule)
 Paladin||9|Abjure Foes|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium WIS save Frightened (ends on damage)
 Paladin||10|Aura of Courage|SRD|done|2|Frightened immunity aura (module rule).
-Paladin||11|Radiant Strikes|SRD|done|1|midi-qol sample item checked (activities run)
+Paladin||11|Radiant Strikes|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - 
 Paladin||14|Restoring Touch|SRD|done|3|Spends 5 Lay on Hands points and ends a chosen condition.
 Paladin||18|Aura Expansion|SRD|done|3|Aura ranges grow at 18 in the aura automation.
 Paladin||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual

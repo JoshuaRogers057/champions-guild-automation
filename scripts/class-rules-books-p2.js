@@ -30,7 +30,7 @@ const companionsOf = (owner, ident, scene) => Array.from(scene?.tokens ?? []).fi
 const formOn = (a) => a?.effects?.some((e) => e.flags?.world?.cgaFormOfDread && !e.disabled);
 const songOn = (a) => a?.effects?.some((e) => e.flags?.world?.cgaBladesong && !e.disabled);
 const wrathOn = (a) => a?.effects?.some((e) => e.flags?.world?.cgaWrathWild && !e.disabled);
-const damageTotal = (ditem) => (ditem.damageDetail ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || Math.max(0, (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0));
+const damageTotal = (ditem) => ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || Math.max(0, (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0));
 const CARTO_SPELLS = /^(faerie fire|guiding bolt|healing word|locate object|mind spike|call lightning|clairvoyance|banishment|locate creature|scrying|teleportation circle)$/i;
 const CONDITION_SPELLS = /^(lesser restoration|greater restoration|remove curse|heal|power word heal|protection from poison|dispel evil and good|mass heal)$/i;
 
@@ -296,7 +296,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     if (!actor || !ditem) return;
     // Menacing Aura: no healing
     if (actor.effects.some((e) => e.flags?.world?.cgaNoHeal && !e.disabled) && (ditem.hpDamage ?? 0) < 0) {
-      for (const d of ditem.damageDetail ?? []) if (d.type === "healing") d.value = 0;
+      for (const d of (ditem.calculatedDamages ?? ditem.damageDetail) ?? []) if (d.type === "healing") d.value = 0;
       ditem.hpDamage = 0; ditem.newHP = ditem.oldHP ?? hpOf(actor).value; ditem.totalDamage = 0;
       return say(actor, `<strong>Menacing Aura:</strong> ${actor.name} can't regain Hit Points.`);
     }
@@ -478,7 +478,7 @@ async function applyMods(t, mods, improved) {
   if (mods.includes("bloated")) { await a.update({ "system.traits.size": "lg" }); await t.update({ width: 2, height: 2 }).catch(() => {}); }
   if (mods.includes("gaunt")) await a.update({ "system.attributes.movement.walk": 45, "system.attributes.movement.climb": 45 });
   if (mods.includes("moist")) await a.update({ "system.attributes.movement.swim": Number(a.system.attributes.movement.walk) || 30 });
-  if (improved) await addEffect(a, { name: "Improved Reanimation (Necrotic ignores Resistance)", img: "icons/magic/death/skull-energy-light-purple.webp", transfer: false, system: { changes: [chg("system.traits.idr.value", "necrotic", "add")] } });
+  if (improved) await addEffect(a, { name: "Improved Reanimation (Necrotic ignores Resistance)", img: "icons/magic/death/skull-energy-light-purple.webp", transfer: false, system: { changes: [({ key: "damage", value: "necrotic", type: "dnd5e.damage.ignore.resistance", priority: 100, phase: "initial" })] } });
 }
 Hooks.on("updateActor", async (actor, changes) => {
   if (!isGM() || !foundry.utils.hasProperty(changes, "system.attributes.hp.temp") || Number(changes.system.attributes.hp.temp) > 0) return;

@@ -66,10 +66,10 @@
             "phase": "initial"
           },
           {
-            "key": "system.traits.idr.value",
+            "key": "damage",
             "value": "cold",
-            "type": "add",
-            "priority": 20,
+            "type": "dnd5e.damage.ignore.resistance",
+            "priority": 100,
             "phase": "initial"
           }
         ]
@@ -87,7 +87,7 @@
     "dnd5e": {},
     "cat": {
       "automation": {
-        "version": "1.0.0",
+        "version": "1.0.1",
         "notes": "Champions Guild Automation: Cold Resistance + ignore Cold Resistance (effect); Polar Strikes extra Cold once per turn (module)."
       }
     }

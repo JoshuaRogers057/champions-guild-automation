@@ -170,7 +170,7 @@ Hooks.on("midi-qol.DamageRollComplete", async (workflow) => {
     }
     // Touch of Death: Chill Touch's Necrotic damage ignores Resistance (removed when the workflow ends)
     if (feat(actor, "touch-of-death") && /chill touch/i.test(item?.name ?? "") && !actor.effects.some((e) => e.flags?.[MODULE_ID]?.deathTouch)) {
-      await addEffect(actor, { name: "Death Touch", img: item.img, transfer: false, system: { changes: [chg("system.traits.idr.value", "necrotic", "add")] }, flags: { [MODULE_ID]: { deathTouch: true } } });
+      await addEffect(actor, { name: "Death Touch", img: item.img, transfer: false, system: { changes: [({ key: "damage", value: "necrotic", type: "dnd5e.damage.ignore.resistance", priority: 100, phase: "initial" })] }, flags: { [MODULE_ID]: { deathTouch: true } } });
     }
     // Zhentarim Ruffian, Exploit Opening: roll an Opportunity Attack's damage twice and use either
     if (feat(actor, "zhentarim-ruffian") && workflow.activity?.attack && (workflow.AoO || (game.combat?.started && game.combat.combatant && game.combat.combatant.actor !== actor))) {

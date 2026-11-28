@@ -84,7 +84,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
         await MidiQOL.applyTokenDamage([{ value: taken, type: "psychic" }], taken, new Set([atkDoc.object]), null, new Set(), {});
     }
     // Thought Shield (Great Old One 10): psychic damage you take is dealt back to its source
-    const psychic = (ditem.damageDetail ?? []).filter((d) => d.type === "psychic").reduce((s, d) => s + Number(d.value ?? 0), 0);
+    const psychic = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((d) => d.type === "psychic").reduce((s, d) => s + Number(d.value ?? 0), 0);
     if (psychic > 0 && hasFeat(actor, "thought-shield") && atkDoc && attacker !== actor) {
       setTimeout(() => MidiQOL.applyTokenDamage([{ value: psychic, type: "psychic" }], psychic, new Set([atkDoc.object]), null, new Set(), {}), 300);
       say(actor, `<strong>Thought Shield:</strong> ${atkDoc.name} takes ${psychic} Psychic damage back.`);

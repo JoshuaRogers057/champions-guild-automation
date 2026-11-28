@@ -322,7 +322,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     if (blocked && (ditem.hpDamage ?? 0) < 0) {
       ditem.hpDamage = 0;
       ditem.newHP = ditem.oldHP;
-      for (const d of ditem.damageDetail ?? []) if (d.type === "healing") d.value = 0;
+      for (const d of (ditem.calculatedDamages ?? ditem.damageDetail) ?? []) if (d.type === "healing") d.value = 0;
       say(actor, `<strong>Wounded:</strong> ${actor.name} can't regain Hit Points.`);
     }
   } catch (err) { console.warn(`${MODULE_ID} | item damage rules failed`, err); }

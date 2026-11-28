@@ -524,7 +524,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem, workflow 
     const ps = feat(actor, "power-of-shadow");
     const oldHP = Number(ditem.oldHP ?? hpOf(actor).value ?? 0);
     if (ps && usesOf(ps) > 0 && oldHP > 0 && (ditem.newHP ?? 1) <= 0) {
-      const total = (ditem.damageDetail ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || (ditem.hpDamage ?? 0);
+      const total = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || (ditem.hpDamage ?? 0);
       const oldTemp = Number(ditem.oldTempHP ?? hpOf(actor).temp ?? 0);
       if (total - oldTemp - oldHP >= Number(hpOf(actor).max ?? 0)) return; // killed outright
       const save = await actor.rollSavingThrow({ ability: "cha", target: 5 + total }, {}, { create: true }).catch(() => null);

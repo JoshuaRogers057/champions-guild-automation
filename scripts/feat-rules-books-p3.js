@@ -491,7 +491,7 @@ Hooks.on("midi-qol.preTargetDamageApplication", async (token, { ditem }) => {
     if (!it || !ditem || usesLeft(it, 1) <= 0) return;
     const oldHP = Number(ditem.oldHP ?? actor.system.attributes.hp.value ?? 0);
     if (oldHP <= 0 || (ditem.newHP ?? 1) > 0) return;
-    const total = (ditem.damageDetail ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || (ditem.hpDamage ?? 0);
+    const total = ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || (ditem.hpDamage ?? 0);
     const oldTemp = Number(ditem.oldTempHP ?? actor.system.attributes.hp.temp ?? 0);
     if (total - oldTemp - oldHP >= Number(actor.system.attributes.hp.max ?? 0)) return; // killed outright
     if (!(await askOwner(actor, `Misty Escape: ${actor.name}`, `<p>${actor.name} would drop to 0 Hit Points. Drop to 1 instead and turn to mist (Gaseous Form, once per Long Rest)?</p>`))) return;

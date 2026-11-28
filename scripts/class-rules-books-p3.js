@@ -23,7 +23,7 @@ const later = (fn, ms = 1000) => setTimeout(() => Promise.resolve(fn()).catch((e
 const pick1 = (actor, title, html, toks, none = "No") => askChoice(actor, title, html, [...toks.map((t, i) => ({ action: t.id, label: t.name, default: i === 0 })), { action: "none", label: none }]).then((id) => toks.find((t) => t.id === id) ?? null);
 const freeSlots = (a, min = 1) => Object.entries(a.system.spells ?? {}).filter(([k, s]) => /^spell\d$|^pact$/.test(k) && Number(s.value) > 0 && Number(s.level ?? k.slice(5)) >= min)
   .map(([k, s]) => ({ key: k, level: Number(s.level ?? k.slice(5)), value: Number(s.value) }));
-const damageTotal = (ditem) => (ditem.damageDetail ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || Math.max(0, (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0));
+const damageTotal = (ditem) => ((ditem.calculatedDamages ?? ditem.damageDetail) ?? []).filter((x) => !["temphp", "healing"].includes(x.type) && (x.value ?? 0) > 0).reduce((s, x) => s + x.value, 0) || Math.max(0, (ditem.hpDamage ?? 0) + (ditem.tempDamage ?? 0));
 const wasHit = (workflow, tDoc) => isAttack(workflow) && hits(workflow).some((t) => t.uuid === tDoc?.uuid);
 const companionsOf = (owner, ident, scene) => Array.from(scene?.tokens ?? []).filter((t) => t.actor && summonOrigin(t.actor)?.system?.identifier === ident && summonerOf(t.actor) === owner);
 const undeadOf = (owner, scene) => Array.from(scene?.tokens ?? []).filter((t) => t.actor && summonerOf(t.actor) === owner && /undead/.test(creatureType(t.actor)) && alive(t.actor));

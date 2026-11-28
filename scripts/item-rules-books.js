@@ -305,7 +305,7 @@ Hooks.on("midi-qol.preSavesComplete", async (workflow) => {
 // Boon Companions' Bands: the protected creature takes no damage from the effect
 Hooks.on("midi-qol.preTargetDamageApplication", (token, { ditem, workflow }) => {
   if (!(banded.get(workflow) ?? []).includes(tokenOf(token)?.uuid)) return;
-  for (const d of ditem.damageDetail ?? []) if (!["healing", "temphp"].includes(d.type)) d.value = 0;
+  for (const d of (ditem.calculatedDamages ?? ditem.damageDetail) ?? []) if (!["healing", "temphp"].includes(d.type)) d.value = 0;
   ditem.hpDamage = 0; ditem.tempDamage = 0; ditem.totalDamage = 0; ditem.newHP = ditem.oldHP; ditem.newTempHP = ditem.oldTempHP;
 });
 async function consumeOne(item) { if (Number(item.system.quantity ?? 1) > 1) await item.update({ "system.quantity": Number(item.system.quantity) - 1 }); else await item.delete(); }
