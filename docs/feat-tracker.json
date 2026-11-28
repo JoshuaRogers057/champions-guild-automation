@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "feats": [
   {
    "group": "Origin",
@@ -158,9 +158,9 @@
    "group": "Origin",
    "name": "Magic Initiate",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Spell choices come from the advancement; the free cast is the spell's own once-per-Long-Rest use",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Spell choices come from the advancement; the free cast is the spell's own once-per-Long-Rest use",
    "identifier": "magic-initiate"
   },
   {
@@ -221,9 +221,9 @@
    "group": "Origin",
    "name": "Skilled",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Proficiencies come from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Proficiencies come from the advancement",
    "identifier": "skilled"
   },
   {
@@ -320,9 +320,9 @@
    "group": "General",
    "name": "Ability Score Improvement",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Advancement",
    "identifier": "ability-score-improvement"
   },
   {
@@ -1051,7 +1051,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "Compendium item checked in the test world: +2 to ranged weapon attack rolls",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Compendium item checked in the test world: +2 to ranged weapon attack rolls",
    "identifier": "archery"
   },
   {
@@ -1420,7 +1420,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "Compendium item checked in the test world: Truesight 60 ft",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Compendium item checked in the test world: Truesight 60 ft",
    "identifier": "boon-of-truesight"
   }
  ]

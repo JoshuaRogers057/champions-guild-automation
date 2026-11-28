@@ -1,0 +1,137 @@
+{
+  "name": "Fiendish Vigor",
+  "type": "feat",
+  "_id": "cgainvFiendishVi",
+  "img": "icons/magic/death/undead-zombie-grave-green.webp",
+  "system": {
+    "description": {
+      "value": "<div class=\"item-entry-details\"><p class=\"item-entry-tag\">Prerequisite: Level 2+ Warlock</p></div><p>You can cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFalseLife0]{False Life}</em> on yourself without expending a spell slot. When you cast the spell with this feature, you don't roll the die for the Temporary Hit Points; you automatically get the highest number on the die.</p><section id=\"secret-9kRkRSKEmbOaga6L\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>False Life</strong> activity includes the maximum amount of healing.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "prerequisites": {
+      "level": 2,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ],
+    "requirements": "",
+    "activities": {
+      "fORgQlbeidLbJ4lv": {
+        "type": "heal",
+        "name": "False Life",
+        "_id": "fORgQlbeidLbJ4lv",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "expiry": null
+        },
+        "effects": [],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "healing": {
+          "number": null,
+          "denomination": null,
+          "types": [
+            "temphp"
+          ],
+          "custom": {
+            "enabled": true,
+            "formula": "8 + 4"
+          },
+          "scaling": {
+            "number": 1
+          },
+          "bonus": "",
+          "modifiers": []
+        },
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": true,
+          "identifier": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "fiendish-vigor",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate."
+      }
+    }
+  }
+}

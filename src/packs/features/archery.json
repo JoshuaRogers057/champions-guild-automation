@@ -1,0 +1,91 @@
+{
+  "name": "Archery",
+  "type": "feat",
+  "_id": "cgafstArchery000",
+  "img": "icons/skills/ranged/arrow-flying-broadhead-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>(Prerequisite: Fighting Style Feature)</em></p><p>You gain a +2 bonus to attack rolls you make with Ranged weapons.</p><section id=\"secret-n13Z6zR2u0CiIA7D\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect which adds the bonus to Ranged weapon attack rolls.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "license": "CC-BY-4.0",
+      "book": ""
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "fightingStyle"
+    },
+    "prerequisites": {
+      "level": null,
+      "repeatable": false,
+      "items": [
+        "fighting-style"
+      ]
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "enchant": {},
+    "identifier": "archery"
+  },
+  "effects": [
+    {
+      "name": "Archery Style",
+      "img": "icons/skills/ranged/arrow-flying-broadhead-metal.webp",
+      "_id": "kigkIjyf2OGWqdVU",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.rwak.attack",
+            "value": 2,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "4OBXNJyb2xC8Jvka"
+          }
+        ]
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate."
+      }
+    }
+  }
+}

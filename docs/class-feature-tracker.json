@@ -51,9 +51,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -260,9 +260,9 @@
    "level": 5,
    "name": "Extra Attack",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "extra-attack"
   },
   {
@@ -403,9 +403,9 @@
    "level": 5,
    "name": "Extra Attack",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet; trading an attack for the defender's Rend by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet; trading an attack for the defender's Rend by hand",
    "identifier": "extra-attack"
   },
   {
@@ -603,7 +603,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredBarb",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredBarb",
    "identifier": "unarmored-defense"
   },
   {
@@ -612,9 +612,9 @@
    "level": 1,
    "name": "Weapon Mastery",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "weapon-mastery"
   },
   {
@@ -656,9 +656,9 @@
    "level": 3,
    "name": "Primal Knowledge",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "primal-knowledge"
   },
   {
@@ -667,9 +667,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -678,9 +678,9 @@
    "level": 5,
    "name": "Extra Attack",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "extra-attack"
   },
   {
@@ -702,7 +702,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on Initiative",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on Initiative",
    "identifier": "feral-instinct"
   },
   {
@@ -711,9 +711,9 @@
    "level": 7,
    "name": "Instinctive Pounce",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Move half Speed when raging - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Move half Speed when raging - manual",
    "identifier": "instinctive-pounce"
   },
   {
@@ -799,9 +799,9 @@
    "level": 20,
    "name": "Primal Champion",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "+4 STR/CON from advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: +4 STR/CON from advancement",
    "identifier": "primal-champion"
   },
   {
@@ -1019,9 +1019,9 @@
    "level": 1,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -1030,9 +1030,9 @@
    "level": 2,
    "name": "Expertise",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "expertise"
   },
   {
@@ -1043,7 +1043,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium flag",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium flag",
    "identifier": "jack-of-all-trades"
   },
   {
@@ -1063,9 +1063,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -1076,7 +1076,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium: spend a slot to regain a use; SR recharge from level 5",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium: spend a slot to regain a use; SR recharge from level 5",
    "identifier": "font-of-inspiration"
   },
   {
@@ -1096,9 +1096,9 @@
    "level": 10,
    "name": "Magical Secrets",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "magical-secrets"
   },
   {
@@ -1129,9 +1129,9 @@
    "level": 20,
    "name": "Words of Creation",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared Power Word Heal/Kill + second target - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Always-prepared Power Word Heal/Kill + second target - manual",
    "identifier": "words-of-creation"
   },
   {
@@ -1228,9 +1228,9 @@
    "level": 3,
    "name": "Bonus Proficiencies",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "bonus-proficiencies"
   },
   {
@@ -1250,9 +1250,9 @@
    "level": 6,
    "name": "Magical Discoveries",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "magical-discoveries"
   },
   {
@@ -1382,9 +1382,9 @@
    "level": 6,
    "name": "Extra Attack",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "extra-attack"
   },
   {
@@ -1404,9 +1404,9 @@
    "level": 1,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -1415,9 +1415,9 @@
    "level": 1,
    "name": "Divine Order",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "divine-order"
   },
   {
@@ -1448,9 +1448,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -1481,9 +1481,9 @@
    "level": 10,
    "name": "Divine Intervention",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Cast any level 5- Cleric spell free - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Cast any level 5- Cleric spell free - manual",
    "identifier": "divine-intervention"
   },
   {
@@ -1514,9 +1514,9 @@
    "level": 20,
    "name": "Greater Divine Intervention",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Wish - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Wish - manual",
    "identifier": "greater-divine-intervention"
   },
   {
@@ -1701,9 +1701,9 @@
    "level": 3,
    "name": "Life Domain Spells",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "life-domain-spells"
   },
   {
@@ -1910,9 +1910,9 @@
    "level": 1,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -1921,9 +1921,9 @@
    "level": 1,
    "name": "Druidic",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "druidic"
   },
   {
@@ -1932,9 +1932,9 @@
    "level": 1,
    "name": "Primal Order",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "primal-order"
   },
   {
@@ -1976,9 +1976,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -2020,9 +2020,9 @@
    "level": 18,
    "name": "Beast Spells",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "beast-spells"
   },
   {
@@ -2077,7 +2077,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium activities",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium activities",
    "identifier": "natural-recovery"
   },
   {
@@ -2273,9 +2273,9 @@
    "level": 1,
    "name": "Fighting Style",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "fighting-style"
   },
   {
@@ -2286,7 +2286,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium heal 1d10 + level; check uses scale",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium heal 1d10 + level; check uses scale",
    "identifier": "second-wind"
   },
   {
@@ -2295,9 +2295,9 @@
    "level": 1,
    "name": "Weapon Mastery",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "weapon-mastery"
   },
   {
@@ -2308,7 +2308,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium utility (extra action is manual)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium utility (extra action is manual)",
    "identifier": "action-surge"
   },
   {
@@ -2339,9 +2339,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -2350,9 +2350,9 @@
    "level": 5,
    "name": "Extra Attack",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "extra-attack"
   },
   {
@@ -2361,9 +2361,9 @@
    "level": 5,
    "name": "Tactical Shift",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Move half speed on Second Wind - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Move half speed on Second Wind - manual",
    "identifier": "tactical-shift"
   },
   {
@@ -2385,7 +2385,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium mastery swap",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium mastery swap",
    "identifier": "tactical-master"
   },
   {
@@ -2394,9 +2394,9 @@
    "level": 11,
    "name": "Two Extra Attacks",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "two-extra-attacks"
   },
   {
@@ -2427,9 +2427,9 @@
    "level": 20,
    "name": "Three Extra Attacks",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "three-extra-attacks"
   },
   {
@@ -2737,7 +2737,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium crit 19 (should include Unarmed Strike)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium crit 19 (should include Unarmed Strike)",
    "identifier": "improved-critical"
   },
   {
@@ -2748,7 +2748,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium flag; post-crit move is manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium flag; post-crit move is manual",
    "identifier": "remarkable-athlete"
   },
   {
@@ -2757,9 +2757,9 @@
    "level": 7,
    "name": "Additional Fighting Style",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "additional-fighting-style"
   },
   {
@@ -2781,7 +2781,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium crit 18",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium crit 18",
    "identifier": "superior-critical"
   },
   {
@@ -3155,7 +3155,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredMonk",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredMonk",
    "identifier": "unarmored-defense"
   },
   {
@@ -3219,9 +3219,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -3232,7 +3232,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium reduce fall damage",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium reduce fall damage",
    "identifier": "slow-fall"
   },
   {
@@ -3241,9 +3241,9 @@
    "level": 5,
    "name": "Extra Attack",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "extra-attack"
   },
   {
@@ -3285,9 +3285,9 @@
    "level": 9,
    "name": "Acrobatic Movement",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "acrobatic-movement"
   },
   {
@@ -3307,9 +3307,9 @@
    "level": 10,
    "name": "Self-Restoration",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "End Charmed/Frightened/Poisoned at end of turn - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: End Charmed/Frightened/Poisoned at end of turn - manual",
    "identifier": "self-restoration"
   },
   {
@@ -3373,9 +3373,9 @@
    "level": 20,
    "name": "Body and Mind",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "+4 DEX/WIS from advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: +4 DEX/WIS from advancement",
    "identifier": "body-and-mind"
   },
   {
@@ -3626,9 +3626,9 @@
    "level": 11,
    "name": "Fleet Step",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Manual",
    "identifier": "fleet-step"
   },
   {
@@ -3650,7 +3650,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium pool heal + remove Poisoned; check pool = 5x level and amount choice",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium pool heal + remove Poisoned; check pool = 5x level and amount choice",
    "identifier": "lay-on-hands"
   },
   {
@@ -3659,9 +3659,9 @@
    "level": 1,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -3670,9 +3670,9 @@
    "level": 1,
    "name": "Weapon Mastery",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "weapon-mastery"
   },
   {
@@ -3681,9 +3681,9 @@
    "level": 2,
    "name": "Fighting Style",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "fighting-style"
   },
   {
@@ -3705,7 +3705,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Divine Sense",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Divine Sense",
    "identifier": "channel-divinity"
   },
   {
@@ -3725,9 +3725,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -3736,9 +3736,9 @@
    "level": 5,
    "name": "Extra Attack",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "extra-attack"
   },
   {
@@ -3771,7 +3771,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium WIS save Frightened (ends on damage)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium WIS save Frightened (ends on damage)",
    "identifier": "abjure-foes"
   },
   {
@@ -3835,9 +3835,9 @@
    "level": 3,
    "name": "Oath of Devotion Spells",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "oath-of-devotion-spells"
   },
   {
@@ -3848,7 +3848,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium enchant (+CHA to attacks, radiant, light)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium enchant (+CHA to attacks, radiant, light)",
    "identifier": "sacred-weapon"
   },
   {
@@ -3881,7 +3881,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium aura damage",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium aura damage",
    "identifier": "holy-nimbus"
   },
   {
@@ -4132,9 +4132,9 @@
    "level": 1,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -4154,9 +4154,9 @@
    "level": 1,
    "name": "Weapon Mastery",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "weapon-mastery"
   },
   {
@@ -4165,9 +4165,9 @@
    "level": 2,
    "name": "Deft Explorer",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "deft-explorer"
   },
   {
@@ -4176,9 +4176,9 @@
    "level": 2,
    "name": "Fighting Style",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "fighting-style"
   },
   {
@@ -4198,9 +4198,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -4209,9 +4209,9 @@
    "level": 5,
    "name": "Extra Attack",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "extra-attack"
   },
   {
@@ -4222,7 +4222,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium +10 ft, climb/swim",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium +10 ft, climb/swim",
    "identifier": "roving"
   },
   {
@@ -4231,9 +4231,9 @@
    "level": 9,
    "name": "Expertise",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "expertise"
   },
   {
@@ -4244,7 +4244,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium temp HP / exhaustion",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium temp HP / exhaustion",
    "identifier": "tireless"
   },
   {
@@ -4266,7 +4266,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Invisible until end of next turn",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Invisible until end of next turn",
    "identifier": "natures-veil"
   },
   {
@@ -4288,7 +4288,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Blindsight 30",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Blindsight 30",
    "identifier": "feral-senses"
   },
   {
@@ -4550,9 +4550,9 @@
    "level": 3,
    "name": "Hunter’s Lore",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "DM tells resistances - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: DM tells resistances - manual",
    "identifier": "hunters-lore"
   },
   {
@@ -4596,7 +4596,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium reaction resistance by type",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium reaction resistance by type",
    "identifier": "superior-hunters-defense"
   },
   {
@@ -4671,9 +4671,9 @@
    "level": 1,
    "name": "Expertise",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "expertise"
   },
   {
@@ -4693,9 +4693,9 @@
    "level": 1,
    "name": "Thieves’ Cant",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "thieves-cant"
   },
   {
@@ -4704,9 +4704,9 @@
    "level": 1,
    "name": "Weapon Mastery",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "weapon-mastery"
   },
   {
@@ -4717,7 +4717,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Dash/Disengage/Hide",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Dash/Disengage/Hide",
    "identifier": "cunning-action"
   },
   {
@@ -4748,9 +4748,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -4794,7 +4794,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium flag",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium flag",
    "identifier": "reliable-talent"
   },
   {
@@ -4825,9 +4825,9 @@
    "level": 15,
    "name": "Slippery Mind",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "slippery-mind"
   },
   {
@@ -5155,9 +5155,9 @@
    "level": 3,
    "name": "Fast Hands",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "fast-hands"
   },
   {
@@ -5168,7 +5168,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium climb speed",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium climb speed",
    "identifier": "second-story-work"
   },
   {
@@ -5177,9 +5177,9 @@
    "level": 9,
    "name": "Supreme Sneak",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Manual",
    "identifier": "supreme-sneak"
   },
   {
@@ -5188,9 +5188,9 @@
    "level": 13,
    "name": "Use Magic Device",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "use-magic-device"
   },
   {
@@ -5199,9 +5199,9 @@
    "level": 17,
    "name": "Thief’s Reflexes",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Two turns in round 1 - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Two turns in round 1 - manual",
    "identifier": "thiefs-reflexes"
   },
   {
@@ -5210,9 +5210,9 @@
    "level": 1,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -5234,7 +5234,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium slot <-> sorcery point conversions",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium slot <-> sorcery point conversions",
    "identifier": "font-of-magic"
   },
   {
@@ -5243,9 +5243,9 @@
    "level": 2,
    "name": "Metamagic",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "metamagic"
   },
   {
@@ -5265,9 +5265,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -5309,9 +5309,9 @@
    "level": 20,
    "name": "Arcane Apotheosis",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Free Metamagic once per turn - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Free Metamagic once per turn - manual",
    "identifier": "arcane-apotheosis"
   },
   {
@@ -5443,7 +5443,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium AC + HP",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium AC + HP",
    "identifier": "draconic-resilience"
   },
   {
@@ -5452,9 +5452,9 @@
    "level": 3,
    "name": "Draconic Spells",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "draconic-spells"
   },
   {
@@ -5485,9 +5485,9 @@
    "level": 18,
    "name": "Dragon Companion",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Summon Dragon without concentration - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Summon Dragon without concentration - manual",
    "identifier": "dragon-companion"
   },
   {
@@ -5771,9 +5771,9 @@
    "level": 1,
    "name": "Eldritch Invocations",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "eldritch-invocations"
   },
   {
@@ -5782,9 +5782,9 @@
    "level": 1,
    "name": "Pact Magic",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "pact-magic"
   },
   {
@@ -5795,7 +5795,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium regain half pact slots",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium regain half pact slots",
    "identifier": "magical-cunning"
   },
   {
@@ -5815,9 +5815,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -5826,9 +5826,9 @@
    "level": 9,
    "name": "Contact Patron",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "contact-patron"
   },
   {
@@ -5837,9 +5837,9 @@
    "level": 11,
    "name": "Mystic Arcanum",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "mystic-arcanum"
   },
   {
@@ -5993,7 +5993,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Mage Armor",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Mage Armor",
    "identifier": "armor-of-shadows"
   },
   {
@@ -6004,7 +6004,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "ascendant-step"
   },
   {
@@ -6015,7 +6015,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium darkvision 120 (sees magical darkness)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium darkvision 120 (sees magical darkness)",
    "identifier": "devils-sight"
   },
   {
@@ -6024,9 +6024,9 @@
    "level": null,
    "name": "Devouring Blade",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Extra attack",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Extra attack",
    "identifier": "devouring-blade"
   },
   {
@@ -6037,7 +6037,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on concentration",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on concentration",
    "identifier": "eldritch-mind"
   },
   {
@@ -6059,7 +6059,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium range enchant",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium range enchant",
    "identifier": "eldritch-spear"
   },
   {
@@ -6070,7 +6070,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium max temp HP",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium max temp HP",
    "identifier": "fiendish-vigor"
   },
   {
@@ -6079,9 +6079,9 @@
    "level": null,
    "name": "Gaze of Two Minds",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Manual",
    "identifier": "gaze-of-two-minds"
   },
   {
@@ -6092,7 +6092,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "gift-of-the-depths"
   },
   {
@@ -6114,7 +6114,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium familiar options",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium familiar options",
    "identifier": "investment-of-the-chain-master"
   },
   {
@@ -6123,9 +6123,9 @@
    "level": null,
    "name": "Lessons of the First Ones",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "lessons-of-the-first-ones"
   },
   {
@@ -6147,7 +6147,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "mask-of-many-faces"
   },
   {
@@ -6158,7 +6158,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "master-of-myriad-forms"
   },
   {
@@ -6169,7 +6169,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "misty-visions"
   },
   {
@@ -6180,7 +6180,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "one-with-shadows"
   },
   {
@@ -6191,7 +6191,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "otherworldly-leap"
   },
   {
@@ -6202,7 +6202,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium pact weapon enchant (CHA attacks, damage type)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium pact weapon enchant (CHA attacks, damage type)",
    "identifier": "pact-of-the-blade"
   },
   {
@@ -6222,9 +6222,9 @@
    "level": null,
    "name": "Pact of the Tome",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "pact-of-the-tome"
   },
   {
@@ -6244,9 +6244,9 @@
    "level": null,
    "name": "Thirsting Blade",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Extra Attack with pact weapon",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Extra Attack with pact weapon",
    "identifier": "thirsting-blade"
   },
   {
@@ -6257,7 +6257,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "visions-of-distant-realms"
   },
   {
@@ -6268,7 +6268,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "whispers-of-the-grave"
   },
   {
@@ -6279,7 +6279,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium truesight 30",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium truesight 30",
    "identifier": "witch-sight"
   },
   {
@@ -6299,9 +6299,9 @@
    "level": 3,
    "name": "Fiend Spells",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "fiend-spells"
   },
   {
@@ -6323,7 +6323,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium resistance choice",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium resistance choice",
    "identifier": "fiendish-resilience"
   },
   {
@@ -6334,7 +6334,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium CHA save 8d10 psychic",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium CHA save 8d10 psychic",
    "identifier": "hurl-through-hell"
   },
   {
@@ -6530,9 +6530,9 @@
    "level": 1,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -6541,9 +6541,9 @@
    "level": 1,
    "name": "Ritual Adept",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ritual-adept"
   },
   {
@@ -6554,7 +6554,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium recover slots",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium recover slots",
    "identifier": "arcane-recovery"
   },
   {
@@ -6563,9 +6563,9 @@
    "level": 2,
    "name": "Scholar",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "scholar"
   },
   {
@@ -6585,9 +6585,9 @@
    "level": 4,
    "name": "Ability Score Improvement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "ability-score-improvement"
   },
   {
@@ -6596,9 +6596,9 @@
    "level": 5,
    "name": "Memorize Spell",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "memorize-spell"
   },
   {
@@ -6609,7 +6609,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium enchant",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium enchant",
    "identifier": "spell-mastery"
   },
   {
@@ -6631,7 +6631,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "dnd5e compendium item checked (activities run, effects OK) - Compendium",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium",
    "identifier": "signature-spells"
   },
   {
@@ -6717,9 +6717,9 @@
    "level": 6,
    "name": "Extra Attack",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet; cantrip in place of an attack by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet; cantrip in place of an attack by hand",
    "identifier": "extra-attack"
   },
   {
@@ -6937,9 +6937,9 @@
    "level": 3,
    "name": "Evocation Savant",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual",
    "identifier": "evocation-savant"
   },
   {

@@ -3,6 +3,32 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.46.0
+
+The module now ships its own copy of every tracked spell, feature, trait, feat, background and item that dnd5e's 2024
+compendium has. That's 444 new CGA items (1.0.0, Mass Apply): 360 that were marked "skip" and 84 that relied on the
+plain compendium item. Mass Apply now gives website characters their pictures and rules data from this module, so any
+bug can be fixed here. Features several classes share (Spellcasting, Weapon Mastery, Fighting Style, Extra Attack,
+Unarmored Defense) are tagged per class for CAT.
+
+- **Paladin Channel Divinity**: the website sends "channel-divinity", but dnd5e calls it `channel-divinity-paladin`
+  (and `-cleric`). The fill-in found nothing, so Channel Divinity had no uses, and Sacred Weapon failed with "Item
+  configured to be consumed ... could not be found". The fill-in now also matches dnd5e's names and takes dnd5e's
+  identifier, so Channel Divinity gets its 2 uses and Sacred Weapon spends them.
+- **Subclass names**: dnd5e identifies some subclasses differently (`oath-devotion`, `college-lore`, `circle-land`,
+  `path-berserker`, `warrior-open-hand`). The fill-in switches the subclass to dnd5e's identifier, so its scale values
+  and @scale formulas work.
+- **Class tags for CAT**: the fill-in links each website feature to the class, subclass or species item that grants
+  it (dnd5e's advancementOrigin). CAT then picks the Paladin's Spellcasting, not the Cleric's.
+- **Species options**: the website exports every option a species' text describes. That means all six Goliath boons,
+  both Gnome lineages and all four Shifter options. The fill-in removes the ones not picked. Before, a Fire Goliath got
+  every boon offered.
+- **Pictures**: class, subclass, species and background items get their book picture. CAT keeps those items' own
+  picture, so the fill-in sets it. Loot and containers are filled from the compendium too, such as Healer's Kit and the
+  equipment packs.
+- **Trackers**: skip rows with a compendium copy are now done. 376 skip rows remain; they have no compendium copy and
+  come next.
+
 ## 0.45.0
 
 Updated for Foundry 14.371, dnd5e 6.1.2, CAT 0.1.10, midi-qol 14.7.1 and DAE 14.6.10. **This release needs dnd5e 6.1,

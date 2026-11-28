@@ -1,0 +1,48 @@
+{
+  "name": "Ram, Portable",
+  "type": "loot",
+  "_id": "cgaagRamPortable",
+  "img": "icons/weapons/maces/mace-skull-ram.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can use a Portable Ram to break down doors. When doing so, you gain a +4 bonus to the Strength check. One other character can help you use the ram, giving you Advantage on this check.</p>",
+      "chat": ""
+    },
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "CC-BY-4.0",
+      "book": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 35,
+      "units": "lb"
+    },
+    "rarity": "",
+    "properties": [],
+    "type": {
+      "value": "gear",
+      "subtype": ""
+    },
+    "identifier": "ram-portable"
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate."
+      }
+    }
+  }
+}

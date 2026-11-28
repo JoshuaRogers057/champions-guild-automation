@@ -1,0 +1,178 @@
+{
+  "name": "Primal Knowledge",
+  "type": "feat",
+  "_id": "cgabrbPrimalKnow",
+  "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.</p><p>In addition, while your Rage is active, you can channel primal power when you attempt certain tasks; whenever you make an ability check using one of the following skills, you can make it as a Strength check even if it normally uses a different ability: Acrobatics, Intimidation, Perception, Stealth, or Survival. When you use this ability, your Strength represents primal power coursing through you, honing your agility, bearing, and senses.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "revision": 2
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 3,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Barbarian",
+    "activities": {},
+    "enchant": {},
+    "identifier": "primal-knowledge",
+    "advancement": {
+      "n7u8pfM928PJ8Mkd": {
+        "_id": "n7u8pfM928PJ8Mkd",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:ani",
+                "skills:ath",
+                "skills:itm",
+                "skills:nat",
+                "skills:prc",
+                "skills:sur"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 3,
+        "hint": "You gain proficiency in another skill of your choice from the skill list available to Barbarians at level 1.",
+        "flags": {},
+        "name": "Primal Knowledge"
+      }
+    },
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Primal Knowledge",
+      "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+      "_id": "ufbJRsGGW3REMmJm",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.skills.acr.roll.bonus",
+            "value": "max(0, @abilities.str.mod - @mod)",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "6lRF6fjrziyY9FC8",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.skills.itm.roll.bonus",
+            "value": "max(0, @abilities.str.mod - @mod)",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "6axbAhDGHvndBwiD",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.skills.prc.roll.bonus",
+            "value": "max(0, @abilities.str.mod - @mod)",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "9rrYaEKT9UBhNIsP",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.skills.ste.roll.bonus",
+            "value": "max(0, @abilities.str.mod - @mod)",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Fo7CXzG7LjJ89Grc",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.skills.sur.roll.bonus",
+            "value": "max(0, @abilities.str.mod - @mod)",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Uz8OSIQyj1Z8zzcd",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": {
+        "combat": null,
+        "round": null,
+        "time": 0,
+        "turn": null,
+        "combatant": null,
+        "initiative": null
+      },
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "class:barbarian"
+      }
+    }
+  }
+}

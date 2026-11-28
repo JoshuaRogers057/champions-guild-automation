@@ -1,0 +1,84 @@
+{
+  "name": "Otherworldly Presence",
+  "type": "feat",
+  "_id": "cgasptOtherworld",
+  "img": "icons/magic/control/silhouette-grow-shrink-tan.webp",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>You know the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg]{Thaumaturgy}</em> cantrip. When you cast it with this trait, the spell uses the same spellcasting ability you use for your Fiendish legacy trait.</p>",
+      "chat": ""
+    },
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "enchant": {},
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Tiefling",
+    "identifier": "otherworldly-presence",
+    "advancement": {
+      "YENpPevreTnGrRVK": {
+        "_id": "YENpPevreTnGrRVK",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplThaumaturg",
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [
+              "int",
+              "wis",
+              "cha"
+            ],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "prepared": 2,
+            "method": "spell"
+          },
+          "sorting": "m"
+        },
+        "value": {},
+        "level": 0,
+        "hint": "",
+        "name": "Cantrip",
+        "flags": {}
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "race:tiefling"
+      }
+    }
+  }
+}

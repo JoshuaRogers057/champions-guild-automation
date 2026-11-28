@@ -1,0 +1,1384 @@
+{
+  "name": "Investment of the Chain Master",
+  "type": "feat",
+  "_id": "cgainvInvestment",
+  "img": "icons/magic/control/debuff-chains-orb-movement-blue.webp",
+  "system": {
+    "description": {
+      "value": "<div class=\"item-entry-details\"><p class=\"item-entry-tag\">Prerequisite: Level 5+ Warlock, @UUID[Compendium.dnd5e.classes24.Item.phbinvPactChain0]{Pact of the Chain} Invocation</p></div><p>When you cast <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFindFamili]{Find Familiar}</em>, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits.</p><p><em><strong>Aerial or Aquatic.</strong></em> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbinvInvestment.Activity.nVygzzH0AxhOMaxu caption=false cite=false nameStyle=inline]</p><p><em><strong>Necrotic or Radiant Damage.</strong></em> Whenever the familiar deals Bludgeoning, Piercing, or Slashing damage, you can make it deal Necrotic or Radiant damage instead.</p><p><em><strong>Your Save DC.</strong></em> If the familiar forces a creature to make a saving throw, it uses your spell save DC.</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbinvInvestment.Activity.fHEY2QcPTBaT4lBF caption=false cite=false nameStyle=inline]</p><section id=\"secret-D3vSCo0uEG4Kp1X6\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Find Familiar</strong> activities will apply both <strong>Aerial</strong> and <strong>Aquatic</strong> effects to the summoned creature. The unused effect on the creature may be deleted.</p><p>The <strong>Resistance</strong> activity includes optional Active Effect for resisting each type of damage.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "revision": 2
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "prerequisites": {
+      "level": 5,
+      "items": [
+        "feat:pact-of-the-chain"
+      ],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {
+      "fHEY2QcPTBaT4lBF": {
+        "type": "utility",
+        "name": "Resistance",
+        "_id": "fHEY2QcPTBaT4lBF",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": "<p>When the familiar takes damage, you can take a Reaction to grant it Resistance against that damage.</p>"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "chVfpaM9kmt2hOWW",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "SzrV0ZUdpHCl8ury",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "dNB2b7C34xZ8f1VC",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "J9HrAcFSX8Oiz5Os",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "931L7kMtCmfeKCke",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "ftnhEVvBRxrbAfa3",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "wNoq81xzNrVLdSGT",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "8tJH6UHt7riDLp1q",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "W1jLBRVt0gryqFMJ",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "XYrQSl0kdJtV6Bf0",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "hNA4gzQMT9cM2ALU",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "QDl6CxMONYK8Kru1",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "0vsrMfL3s6IQtWcM",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "creature",
+            "special": "Your familiar"
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "img": "systems/dnd5e/icons/svg/trait-damage-resistances.svg",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false
+        },
+        "behaviors": [],
+        "flags": {}
+      },
+      "icfBGsxAZABbkcqD": {
+        "type": "summon",
+        "name": "Find Familiar",
+        "sort": -100000,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "Ziuu5P6LoAvevtuN",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          },
+          {
+            "_id": "VxM3FsirIcd3Of7q",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "uuid": null
+          }
+        ],
+        "range": {
+          "override": false,
+          "value": "10",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "space",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [
+          "celestial",
+          "fey",
+          "fiend"
+        ],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": true,
+          "disposition": true,
+          "ability": "cha"
+        },
+        "profiles": [
+          {
+            "count": "1",
+            "cr": "0",
+            "name": "CR 0 Beast",
+            "_id": "e5dWV5L2uBJ2KPAM",
+            "uuid": null,
+            "types": [
+              "beast"
+            ],
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": "cr"
+        },
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireMagic": true,
+          "requireAttunement": false,
+          "requireIdentification": false
+        },
+        "tempHP": "",
+        "flags": {},
+        "_id": "icfBGsxAZABbkcqD",
+        "behaviors": []
+      },
+      "VuSBWUN8wdL0B4fZ": {
+        "type": "summon",
+        "name": "Find Familiar (Expanded Options)",
+        "sort": -50000,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "value": "",
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "Ziuu5P6LoAvevtuN",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          },
+          {
+            "_id": "VxM3FsirIcd3Of7q",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "value": "10",
+          "units": "ft",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false,
+            "count": "1",
+            "type": "space",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "bonuses": {
+          "ac": "",
+          "hd": "",
+          "hp": "",
+          "attackDamage": "",
+          "saveDamage": "",
+          "healing": ""
+        },
+        "creatureSizes": [],
+        "creatureTypes": [
+          "celestial",
+          "fey",
+          "fiend"
+        ],
+        "match": {
+          "attacks": false,
+          "proficiency": false,
+          "saves": true,
+          "disposition": true,
+          "ability": "cha"
+        },
+        "profiles": [
+          {
+            "count": "",
+            "name": "",
+            "_id": "Rr8F49wXgEzvI3Je",
+            "uuid": "Compendium.dnd-monster-manual.actors.Actor.mmImp00000000000",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "Cg8B2qkwRo7qh7oZ",
+            "uuid": "Compendium.dnd-monster-manual.actors.Actor.mmPseudodragon00",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "8NAn0ZR5HRnRJvqs",
+            "uuid": "Compendium.dnd-monster-manual.actors.Actor.mmQuasit00000000",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "Gik7lMg53Gno0nSf",
+            "uuid": "Compendium.dnd-monster-manual.actors.Actor.mmSphinxOfWonder",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "m5hfZoWAcEjKrkxo",
+            "uuid": "Compendium.dnd-monster-manual.actors.Actor.mmSkeleton000000",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "mDue5EQkMxi5G6Pf",
+            "uuid": "Compendium.dnd-monster-manual.actors.Actor.mmSlaadTadpole00",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "U60QGv6hzjT15bFK",
+            "uuid": "Compendium.dnd-monster-manual.actors.Actor.mmSprite00000000",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          },
+          {
+            "count": "",
+            "name": "",
+            "_id": "ZtrQLBrDRmN97IvI",
+            "uuid": "Compendium.dnd-monster-manual.actors.Actor.mmVenomousSnake0",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "types": []
+          }
+        ],
+        "summon": {
+          "prompt": true,
+          "mode": ""
+        },
+        "img": "",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireMagic": true,
+          "requireAttunement": false,
+          "requireIdentification": false
+        },
+        "tempHP": "",
+        "flags": {},
+        "_id": "VuSBWUN8wdL0B4fZ",
+        "behaviors": []
+      },
+      "nVygzzH0AxhOMaxu": {
+        "type": "utility",
+        "name": "Quick Attack",
+        "_id": "nVygzzH0AxhOMaxu",
+        "img": "systems/dnd5e/icons/svg/action/attack.svg",
+        "sort": -25000,
+        "activation": {
+          "type": "bonus",
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "The familiar takes the Attack action",
+          "value": "<p>As a Bonus Action, you can command the familiar to take the &amp;Reference[Attack] action.</p>"
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "expiry": null
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "any",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": "ally",
+            "count": "1",
+            "special": "the familiar"
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "behaviors": []
+      }
+    },
+    "enchant": {},
+    "identifier": "investment-of-the-chain-master",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Resist Thunder",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "o74RSAjqPozxfLk9",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "0vsrMfL3s6IQtWcM",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Piercing",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "W7LiNYn93TzjTjAL",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "8tJH6UHt7riDLp1q",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Force",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "force",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ceBAf7VdPyJfVV19",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "931L7kMtCmfeKCke",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Fire",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "ZPTELTnMX99KeR2J",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "J9HrAcFSX8Oiz5Os",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Slashing",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "qrR63LFyh0DPWwkW",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "QDl6CxMONYK8Kru1",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Bludgeoning",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "8PRn3VYR18K23VLC",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "SzrV0ZUdpHCl8ury",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Aquatic",
+      "img": "icons/creatures/fish/fish-pirahna-tan.webp",
+      "origin": null,
+      "transfer": false,
+      "_id": "VxM3FsirIcd3Of7q",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.swim",
+            "value": 40,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "hHvbfs4sqrF9kkS9",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}",
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Poison",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "YL3y7kSE49qGEZLi",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "W1jLBRVt0gryqFMJ",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Psychic",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "MUa9ix4cAR4uhpqR",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "XYrQSl0kdJtV6Bf0",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Aerial",
+      "img": "icons/magic/holy/angel-wings-gray.webp",
+      "origin": null,
+      "transfer": false,
+      "_id": "Ziuu5P6LoAvevtuN",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.fly",
+            "value": 40,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "gQElJndWWjHNEYU7",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}",
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p><strong>Aerial or Aquatic.</strong> The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Acid",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "_id": "chVfpaM9kmt2hOWW",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "i6vB1nMFvq2VB4LG",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Cold",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "jQjttsk5YIQdLFZ6",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "dNB2b7C34xZ8f1VC",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Lightning",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "zreVyAhEaWpnpH7p",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "ftnhEVvBRxrbAfa3",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Radiant",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "vovPwCnaAk53cEa2",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "hNA4gzQMT9cM2ALU",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Resist Necrotic",
+      "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
+      "origin": null,
+      "transfer": false,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "kffFO0FKI8vjLZmX",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvInvestment",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": 1,
+        "units": "turns",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "wNoq81xzNrVLdSGT",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate."
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "name": "Second-Story Work",
+  "type": "feat",
+  "_id": "cgargeSecondstor",
+  "img": "icons/environment/settlement/stone-stairs.webp",
+  "system": {
+    "description": {
+      "value": "<p>You've trained to get into especially hard-to-reach places, granting you these benefits.</p><p><em><strong>Climber.</strong></em> You gain a Climb Speed equal to your &amp;Reference[Speed].</p><p><em><strong>Jumper.</strong></em> You can determine your &amp;Reference[Jumping]{jump} distance using your Dexterity rather than your Strength.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "revision": 2
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 3,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "Thief",
+    "activities": {},
+    "enchant": {},
+    "identifier": "second-story-work",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Second-Story Work",
+      "img": "icons/environment/settlement/stone-stairs.webp",
+      "origin": null,
+      "type": "base",
+      "_id": "ctlSR3WUH2w9ID9Q",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.movement.speeds.climb",
+            "value": "@attributes.movement.speed",
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "bm3NY9Cs5PPxOYvd",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbrgeSecondstor",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}",
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:thief"
+      }
+    }
+  }
+}

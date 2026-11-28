@@ -1,0 +1,101 @@
+{
+  "name": "Druidic",
+  "type": "feat",
+  "_id": "cgadrdDruidic000",
+  "img": "icons/commodities/treasure/token-runed-circle-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA]{Speak with Animals}</em> spell prepared.</p><p>You can use Druidic to leave hidden messages. You and others who know Druidic automatically spot such a message. Others spot the message's presence with a successful [[/check inv 15]] check but can't decipher it without magic.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 2,
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Druid",
+    "activities": {},
+    "enchant": {},
+    "identifier": "druidic",
+    "advancement": {
+      "SpGvDfOabbJrOR3K": {
+        "_id": "SpGvDfOabbJrOR3K",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA",
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "spell",
+            "prepared": 2
+          },
+          "sorting": "m"
+        },
+        "value": {},
+        "level": 1,
+        "hint": "<p>You know Druidic, the secret language of Druids. While learning this ancient tongue, you also unlocked the magic of communicating with animals; you always have the <em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSpeakwithA]{Speak with Animals}</em> spell prepared.</p>",
+        "name": "Speak with Animals",
+        "flags": {}
+      },
+      "fwwJ7sF6UAsgWaLf": {
+        "_id": "fwwJ7sF6UAsgWaLf",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "languages:exotic:druidic"
+          ],
+          "choices": []
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "hint": "<p>You know Druidic, the secret language of Druids.</p>",
+        "name": "Druidic",
+        "flags": {}
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "class:druid"
+      }
+    }
+  }
+}

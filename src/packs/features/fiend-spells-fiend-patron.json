@@ -1,0 +1,202 @@
+{
+  "name": "Fiend Spells",
+  "type": "feat",
+  "_id": "cgawlkFiendSpell",
+  "img": "icons/magic/control/encase-creature-monster-hold.webp",
+  "system": {
+    "description": {
+      "value": "<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared.</p><table><caption><p>Fiend Spells</p></caption><thead><tr><td><p>Warlock Level</p></td><td><p>Spells</p></td></tr></thead><tbody><tr><td><p>3</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplBurningHan]{Burning Hands}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplCommand000]{Command}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplScorchingR]{Scorching Ray}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion]{Suggestion}</em></p></td></tr><tr><td><p>5</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireball00]{Fireball}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplStinkingCl]{Stinking Cloud}</em></p></td></tr><tr><td><p>7</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplFireShield]{Fire Shield}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplWallofFire]{Wall of Fire}</em></p></td></tr><tr><td><p>9</p></td><td><p><em>@UUID[Compendium.dnd-players-handbook.spells.Item.phbsplGeas000000]{Geas}, @UUID[Compendium.dnd-players-handbook.spells.Item.phbsplInsectPlag]{Insect Plague}</em></p></td></tr></tbody></table>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 2,
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 3,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Fiend Patron",
+    "activities": {},
+    "enchant": {},
+    "identifier": "fiend-spells",
+    "advancement": {
+      "BL0KO6NHMdWDzORz": {
+        "_id": "BL0KO6NHMdWDzORz",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplBurningHan",
+              "sort": 0
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplCommand000",
+              "sort": 0
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplScorchingR",
+              "sort": 0
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplSuggestion",
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "pact",
+            "prepared": 2
+          },
+          "sorting": "a"
+        },
+        "value": {},
+        "level": 3,
+        "hint": "<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared.</p>",
+        "name": "Fiend Spells",
+        "flags": {}
+      },
+      "RQGbS50hbBG90d1e": {
+        "_id": "RQGbS50hbBG90d1e",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplFireball00",
+              "sort": 0
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplStinkingCl",
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "pact",
+            "prepared": 2
+          },
+          "sorting": "a"
+        },
+        "value": {},
+        "level": 5,
+        "hint": "<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared.</p>",
+        "name": "Fiend Spells",
+        "flags": {}
+      },
+      "HI0odgqJuVranhPH": {
+        "_id": "HI0odgqJuVranhPH",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplFireShield",
+              "sort": 0
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplWallofFire",
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "pact",
+            "prepared": 2
+          },
+          "sorting": "a"
+        },
+        "value": {},
+        "level": 7,
+        "hint": "<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared.</p>",
+        "name": "Fiend Spells",
+        "flags": {}
+      },
+      "Aqu6VkaM9Z70GTtM": {
+        "_id": "Aqu6VkaM9Z70GTtM",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplGeas000000",
+              "sort": 0
+            },
+            {
+              "optional": false,
+              "uuid": "Compendium.dnd-players-handbook.spells.Item.phbsplInsectPlag",
+              "sort": 0
+            }
+          ],
+          "optional": false,
+          "spell": {
+            "ability": [],
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "method": "pact",
+            "prepared": 2
+          },
+          "sorting": "a"
+        },
+        "value": {},
+        "level": 9,
+        "hint": "<p>The magic of your patron ensures you always have certain spells ready; when you reach a Warlock level specified in the Fiend Spells table, you thereafter always have the listed spells prepared.</p>",
+        "name": "Fiend Spells",
+        "flags": {}
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:fiend-patron"
+      }
+    }
+  }
+}

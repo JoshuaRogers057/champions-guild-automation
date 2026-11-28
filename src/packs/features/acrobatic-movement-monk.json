@@ -1,0 +1,50 @@
+{
+  "name": "Acrobatic Movement",
+  "type": "feat",
+  "_id": "cgamnkAcrobaticM",
+  "img": "icons/skills/movement/arrow-upward-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>While you aren't wearing armor or wielding a Shield, you gain the ability to move along vertical surfaces and across liquids on your turn without falling during the movement.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "license": "CC-BY-4.0",
+      "revision": 1
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 9,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Monk",
+    "activities": {},
+    "enchant": {},
+    "identifier": "acrobatic-movement",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "class:monk"
+      }
+    }
+  }
+}

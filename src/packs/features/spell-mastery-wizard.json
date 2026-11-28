@@ -1,0 +1,204 @@
+{
+  "name": "Spell Mastery",
+  "type": "feat",
+  "_id": "cgawzdSpellMaste",
+  "img": "icons/magic/unholy/beam-impact-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have achieved such mastery over certain spells that you can cast them at will. Choose a level 1 and a level 2 spell in your spellbook that have a casting time of an action. You always have those spells prepared, and you can cast them at their lowest level without expending a spell slot. To cast either spell at a higher level, you must expend a spell slot.</p><p>Whenever you finish a Long Rest, you can study your spellbook and replace one of those spells with an eligible spell of the same level from the book.</p><section id=\"secret-OhEjtOfrcVMJh1qk\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>The <strong>Master Spell</strong> activity includes an enchantment that marks the spells as \"Always Prepared\" and adds \"(Mastered)\" to their name for easy identification.</p><p>Uncheck the \"Consumption\" box when casting at the lowest level. You can drag multiple spells to the same chat card.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 2,
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 18,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Wizard",
+    "activities": {
+      "bT2LjQRvFei2uzIl": {
+        "type": "enchant",
+        "name": "Master Spell",
+        "_id": "bT2LjQRvFei2uzIl",
+        "sort": 0,
+        "activation": {
+          "type": "",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "P5SxPZNi4KPzW8dD",
+            "level": {
+              "min": null,
+              "max": null
+            },
+            "riders": {
+              "activity": [],
+              "effect": [],
+              "item": []
+            },
+            "uuid": null
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "enchant": {
+          "self": false
+        },
+        "restrictions": {
+          "allowMagical": true,
+          "categories": [],
+          "properties": [],
+          "type": "spell"
+        },
+        "img": "",
+        "behaviors": [],
+        "flags": {},
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "spell-mastery",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "type": "enchantment",
+      "name": "Mastered",
+      "img": "icons/magic/unholy/beam-impact-purple.webp",
+      "disabled": true,
+      "_id": "P5SxPZNi4KPzW8dD",
+      "system": {
+        "changes": [
+          {
+            "key": "name",
+            "value": "{} (Mastered)",
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "8MDqUwOnY1MO3T4i",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.prepared",
+            "value": 2,
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "6Ng1dhGDFuPdBQNd",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "magical": false,
+        "rider": {
+          "activities": [],
+          "effects": [],
+          "items": []
+        }
+      },
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>You always have those spells prepared, and you can cast them at their lowest level without expending a spell slot. To cast either spell at a higher level, you must expend a spell slot.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": false,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "class:wizard"
+      }
+    }
+  }
+}

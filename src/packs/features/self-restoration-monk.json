@@ -1,0 +1,111 @@
+{
+  "name": "Self-Restoration",
+  "type": "feat",
+  "_id": "cgamnkSelfrestor",
+  "img": "icons/magic/life/cross-worn-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Through sheer force of will, you can remove one of the following conditions from yourself at the end of each of your turns: &amp;Reference[Charmed apply=false], &amp;Reference[Frightened apply=false], or &amp;Reference[Poisoned apply=false].</p><p>In addition, forgoing food and drink doesn't give you levels of &amp;Reference[Exhaustion apply=false].</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "page": "",
+      "license": "",
+      "revision": 2
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 10,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Monk",
+    "activities": {},
+    "enchant": {},
+    "identifier": "self-restoration",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Self-Restoration",
+      "img": "icons/magic/life/cross-worn-green.webp",
+      "system": {
+        "magical": false,
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbmnkSelfrestor",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "changes": [
+          {
+            "key": "system.traits.ci.value",
+            "type": "add",
+            "value": "dehydration",
+            "phase": "initial",
+            "_id": "we0NfWVdzuxgBqkA",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          },
+          {
+            "key": "system.traits.ci.value",
+            "type": "add",
+            "value": "malnutrition",
+            "phase": "initial",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null,
+            "_id": "85z2v8PakRjMvSNK"
+          }
+        ],
+        "conditions": "{}",
+        "rider": {
+          "statuses": []
+        }
+      },
+      "type": "base",
+      "_id": "oB4U8ru4ATK4dniq",
+      "disabled": false,
+      "start": null,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>Forgoing food and drink doesn't give you levels of &amp;Reference[Exhaustion apply=false].</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "showIcon": 1,
+      "folder": null,
+      "sort": 0,
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "class:monk"
+      }
+    }
+  }
+}

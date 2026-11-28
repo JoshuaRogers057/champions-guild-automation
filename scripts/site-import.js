@@ -12,7 +12,7 @@
 // so in chat. Mass Apply afterwards swaps in the CAT / CGA versions where they exist.
 import { MODULE_ID } from "./main.js";
 
-const PACKS = { classes: "dnd5e.classes24", origins: "dnd5e.origins24", feats: "dnd5e.feats24", spells: "dnd5e.spells24", items: "dnd5e.equipment24", cga: `${MODULE_ID}.cga-features` };
+const PACKS = { classes: "dnd5e.classes24", origins: "dnd5e.origins24", feats: "dnd5e.feats24", spells: "dnd5e.spells24", items: "dnd5e.equipment24", cga: `${MODULE_ID}.cga-features`, cgaItems: `${MODULE_ID}.cga-items` };
 
 // Magic items the site names "<kind> <base item>" ("Vicious Longsword +1", "Mariner's Chain Mail") get the identifier the
 // book item has, so CAT and the module rules find them. armor/weapon/ammo say which item types each one is for.
@@ -58,7 +58,14 @@ function speciesResistances(species, choice, actor) {
 }
 // Enchantment templates not to apply to a website weapon: its +N is already its magic bonus; Dancing Sword is by hand.
 const NO_ENCHANT = /^(weapon|armor|shield|ammunition)(-|$)|dancing-sword/;
-const SHIFTER_OPTIONS =["beasthide", "longtooth", "swiftstride", "wildhunt"];
+const SHIFTER_OPTIONS = ["beasthide", "longtooth", "swiftstride", "wildhunt"];
+// The site lists every option a species' text describes (all six Goliath boons, both Gnome lineages, the four Shifter
+// options). Only the picked one stays. Keys are the pick's first word; values are identifier starts.
+const SPECIES_OPTIONS = {
+  goliath: { cloud: "clouds-jaunt", fire: "fires-burn", frost: "frosts-chill", hill: "hills-tumble", stone: "stones-endurance", storm: "storms-thunder" },
+  gnome: { forest: "forest-gnome", rock: "rock-gnome" },
+  shifter: { beasthide: "beasthide", longtooth: "longtooth", swiftstride: "swiftstride", wildhunt: "wildhunt" }
+};
 
 // Features whose picks the site keeps as free text, and where their option items come from.
 const OPTION_SOURCES = {
@@ -96,22 +103,45 @@ async function lookups() {
     const pack = game.packs.get(id);
     byIdent[key] = {};
     if (!pack) continue;
-    for (const e of await pack.getIndex({ fields: ["system.identifier", "system.requirements", "system.type"] })) {
+    for (const e of await pack.getIndex({ fields: ["system.identifier", "system.requirements", "system.type", "img"] })) {
       const ident = e.system?.identifier || slug(e.name);
-      (byIdent[key][ident] ??= []).push({ ...e, uuid: e.uuid ?? `Compendium.${id}.Item.${e._id}` });
+      const entry = { ...e, uuid: e.uuid ?? `Compendium.${id}.Item.${e._id}` };
+      (byIdent[key][ident] ??= []).push(entry);
+      // The site's identifier is the slug of the name. dnd5e sometimes names an item differently from its
+      // identifier ("Channel Divinity" is channel-divinity-paladin, "Oath of Devotion" is oath-devotion), so the
+      // name's slug is indexed too.
+      const byName = slug(e.name);
+      if (byName && byName !== ident) (byIdent[key][byName] ??= []).push(entry);
     }
   }
   // Which class or subclass grants each class feature (from their Item Grant advancements), and their scale values.
-  const owner = new Map(); // feature uuid -> class/subclass identifier
-  const scales = {}; // class/subclass identifier -> [ScaleValue advancement data]
+  // Both the dnd5e identifier and the slug of the name (what the site sends) are keys.
+  const owner = new Map(); // feature uuid -> Set of class/subclass keys
+  const scales = {}; // class/subclass key -> [ScaleValue advancement data]
+  const classIdent = {}; // site key -> dnd5e identifier
   const pack = game.packs.get(PACKS.classes);
   if (pack) for (const doc of await pack.getDocuments({ type__in: ["class", "subclass"] })) {
-    const ident = doc.system.identifier;
+    const keys = new Set([doc.system.identifier, slug(doc.name)]);
     const adv = Object.values(doc.toObject().system.advancement ?? {});
-    scales[ident] = adv.filter((a) => a.type === "ScaleValue");
-    for (const a of adv) if (a.type === "ItemGrant") for (const it of a.configuration?.items ?? []) owner.set(it.uuid, ident);
+    for (const k of keys) { scales[k] = adv.filter((a) => a.type === "ScaleValue"); classIdent[k] = doc.system.identifier; }
+    for (const a of adv) if (a.type === "ItemGrant") for (const it of a.configuration?.items ?? []) {
+      const set = owner.get(it.uuid) ?? new Set();
+      for (const k of keys) set.add(k);
+      owner.set(it.uuid, set);
+    }
   }
-  return (cache = { byIdent, owner, scales });
+  return (cache = { byIdent, owner, scales, classIdent });
+}
+
+// A picture for a site item that keeps its own (class, subclass, species, background): the CGA item's, else dnd5e's.
+async function iconFor(item) {
+  const { byIdent } = await lookups();
+  const keys = [item.system.identifier, slug(item.name)].filter(Boolean);
+  for (const pack of ["cgaItems", "cga", "origins", "classes"]) for (const k of keys) {
+    const e = (byIdent[pack]?.[k] ?? []).find((x) => x.type === item.type && x.img && !/item-bag|mystery-man/.test(x.img));
+    if (e) return e.img;
+  }
+  return null;
 }
 
 // The compendium entry for a site item, or null. baseOnly: skip the named item (it was an enchantment template).
@@ -125,8 +155,8 @@ async function findSource(item, { baseOnly = false } = {}) {
     case "feat": {
       if (flag.kind === "class-feature" || flag.kind === "subclass-feature") {
         const who = slug(String(flag.key ?? "").split("|")[1]);
-        const list = pick(byIdent.classes[ident], (e) => e.type === "feat");
-        return list.find((e) => owner.get(e.uuid) === who) ?? (list.length === 1 ? list[0] : list.find((e) => !owner.has(e.uuid)) ?? null);
+        const list = pick([...(byIdent.classes[ident] ?? []), ...(byIdent.classes[`${ident}-${who}`] ?? [])], (e) => e.type === "feat");
+        return list.find((e) => owner.get(e.uuid)?.has(who)) ?? (list.length === 1 ? list[0] : list.find((e) => !owner.has(e.uuid)) ?? null);
       }
       if (flag.kind === "species-feature") {
         const species = String(flag.key ?? "").split("|")[1] ?? "";
@@ -135,8 +165,9 @@ async function findSource(item, { baseOnly = false } = {}) {
       }
       return pick(byIdent.feats[ident], (e) => e.type === "feat")[0] ?? pick(byIdent.origins[ident], (e) => e.type === "feat")[0] ?? null;
     }
-    case "weapon": case "equipment": case "consumable": case "tool": {
-      const same = (e) => e.type === item.type || (item.type === "equipment" && e.type === "equipment");
+    case "weapon": case "equipment": case "consumable": case "tool": case "loot": case "container": {
+      const gear = ["loot", "container", "equipment", "consumable", "tool"];
+      const same = (e) => e.type === item.type || (["loot", "container"].includes(item.type) && gear.includes(e.type));
       const canon = canonicalIdent(item);
       let hit = baseOnly ? null : (canon && pick(byIdent.items[canon], same)[0]) || pick(byIdent.items[ident], same)[0];
       // "Longsword +1" / "Shield +2": the plain item (the +N is kept as the item's magic bonus).
@@ -168,6 +199,9 @@ function merge(siteItem, source) {
   const s = site.system;
   const keep = ["identifier", "description", "quantity", "equipped", "attuned", "prepared", "method", "sourceItem", "requirements", "container"];
   for (const k of keep) if (s[k] !== undefined) sys[k] = s[k];
+  // A feature dnd5e identifies differently (channel-divinity-paladin, fires-burn for "Fire's Burn (Fire Giant)")
+  // takes dnd5e's identifier: other features spend it by that identifier, and our rules look for it.
+  if (siteItem.type === "feat" && source.system.identifier && source.system.identifier !== s.identifier) sys.identifier = source.system.identifier;
   if (s.price?.value) sys.price = s.price;
   if (s.weight?.value) sys.weight = s.weight;
   if (s.rarities?.length) sys.rarities = s.rarities;
@@ -224,6 +258,18 @@ function bakeEnchantment(data, template) {
     // Critical-hit extras (Vorpal, Life Stealing, Sharpness) are module rules already, so they're left out here.
   }
   return `${effect.name} built in`;
+}
+
+// The class, subclass or species item that grants a website feature, as dnd5e's advancementOrigin ("<itemId>.<id>").
+// CAT reads it as the feature's source type (class:paladin, subclass:oath-devotion, race:gnome), so features that
+// several classes share (Spellcasting, Weapon Mastery, Extra Attack ...) get their own class's automation.
+function grantedBy(actor, item) {
+  const flag = siteFlag(item) ?? {};
+  const owner = slug(String(flag.key ?? "").split("|")[1]);
+  const type = { "class-feature": "class", "subclass-feature": "subclass", "species-feature": "race" }[flag.kind];
+  if (!type || !owner) return null;
+  const root = actor.items.find((i) => i.type === type && (type === "race" || slug(i.name) === owner || i.system.identifier === owner));
+  return root ? `${root.id}.cgaSiteImport0000` : null;
 }
 
 // New items from compendium entries (skipping identifiers the character already has).
@@ -294,6 +340,17 @@ async function addChoices(actor) {
       const inName = new RegExp(`\\(\\s*${rx(key)}`, "i");
       const lineage = all("origins").filter((e) => e.type === "feat" && (req.test(e.system?.requirements ?? "")
         || (slug(e.system?.requirements) === slug(species) && ((e.system?.identifier ?? "").endsWith(`-${slug(key)}`) || inName.test(e.name)))));
+      // Options the player didn't pick go first, so the lineage step doesn't see them as already there.
+      const opts = SPECIES_OPTIONS[slug(species)];
+      const picked = opts?.[slug(choice).split("-")[0]];
+      if (opts && picked) {
+        const drop = actor.items.filter((i) => i.type === "feat" && siteFlag(i)?.kind === "species-feature"
+          && Object.values(opts).some((p) => p !== picked && (i.system.identifier ?? "").startsWith(p)));
+        if (drop.length) {
+          await actor.deleteEmbeddedDocuments("Item", drop.map((i) => i.id), { cgaSiteFill: true });
+          out.push(`removed options not picked: ${drop.map((i) => i.name).join(", ")}`);
+        }
+      }
       const added = await addFrom(actor, lineage, `${species} (${choice})`);
       if (added.length) out.push(`${species} lineage: ${added.join(", ")}`);
       // Shifter options are module rules that look for the trait by name.
@@ -321,19 +378,31 @@ export async function fillSiteItems(actor, { quiet = false } = {}) {
   running.add(actor.uuid);
   const filled = [], missing = [];
   try {
-    const { scales } = await lookups();
-    // Class and subclass scale values.
+    const { scales, classIdent } = await lookups();
+    // Class and subclass scale values, and dnd5e's identifier (oath-devotion for "Oath of Devotion"), which its
+    // features' @scale formulas use.
     for (const cls of actor.items.filter((i) => (i.type === "class" || i.type === "subclass") && siteFlag(i) && !siteFlag(i).filled)) {
       const want = scales[cls.system.identifier] ?? [];
       const have = new Set(Object.values(cls.toObject().system.advancement ?? {}).map((a) => a.configuration?.identifier ?? a.title));
       const add = {};
       for (const a of want) if (!have.has(a.configuration?.identifier ?? a.title)) add[a._id] = a;
-      await cls.update({ "system.advancement": add, [`flags.${MODULE_ID}.site.filled`]: true });
-      if (Object.keys(add).length) filled.push(`${cls.name} (scale values)`);
+      const update = { "system.advancement": add, [`flags.${MODULE_ID}.site.filled`]: true };
+      const dndIdent = classIdent[cls.system.identifier];
+      if (dndIdent && dndIdent !== cls.system.identifier) update["system.identifier"] = dndIdent;
+      const img = /item-bag/.test(cls.img) ? await iconFor(cls) : null;
+      if (img) update.img = img;
+      await cls.update(update);
+      if (Object.keys(add).length || update["system.identifier"]) filled.push(`${cls.name} (${[Object.keys(add).length && "scale values", update["system.identifier"] && "identifier " + dndIdent].filter(Boolean).join(", ")})`);
+    }
+    // Species and background: CAT keeps these items' own picture, so give them the book item's.
+    for (const it of actor.items.filter((i) => (i.type === "race" || i.type === "background") && siteFlag(i) && !siteFlag(i).filled)) {
+      const img = /item-bag/.test(it.img) ? await iconFor(it) : null;
+      await it.update({ ...(img ? { img } : {}), [`flags.${MODULE_ID}.site.filled`]: true });
+      if (img) filled.push(`${it.name} (picture)`);
     }
     // Everything else.
     const todo = actor.items.filter((i) => siteFlag(i) && !siteFlag(i).filled && !tried.has(i.uuid)
-      && ["feat", "spell", "weapon", "equipment", "consumable", "tool"].includes(i.type)
+      && ["feat", "spell", "weapon", "equipment", "consumable", "tool", "loot", "container"].includes(i.type)
       && !i.flags?.cat?.automation && !i.flags?.cat?.hash && !i.flags?.cat?.source);
     const create = [], remove = [];
     const patch = [], enchant = [];
@@ -349,6 +418,8 @@ export async function fillSiteItems(actor, { quiet = false } = {}) {
       }
       if (source) {
         const data = merge(item, source);
+        const origin = grantedBy(actor, item);
+        if (origin) foundry.utils.setProperty(data, "flags.dnd5e.advancementOrigin", origin);
         const tmpl = enchant.find((e) => e.id === item.id)?.template;
         const baked = tmpl ? bakeEnchantment(data, tmpl) : null;
         create.push(data);
@@ -359,12 +430,15 @@ export async function fillSiteItems(actor, { quiet = false } = {}) {
       // No compendium copy: still give it the book item's identifier, and uses from its text.
       tried.add(item.uuid);
       const up = { _id: item.id };
+      const origin = grantedBy(actor, item);
+      if (origin && !item.flags?.dnd5e?.advancementOrigin) up["flags.dnd5e.advancementOrigin"] = origin;
       const canon = canonicalIdent(item);
       if (canon) up["system.identifier"] = canon;
       const uses = item.type === "feat" && !item.system.uses?.max ? usesFromText(item.system.description?.value) : null;
       if (uses) up["system.uses"] = uses;
-      if (Object.keys(up).length > 1) { up[`flags.${MODULE_ID}.site.filled`] = canon ? "identifier" : "uses"; patch.push(up); filled.push(`${item.name} (${[canon && "identifier " + canon, uses && "uses"].filter(Boolean).join(", ")})`); }
+      if (canon || uses) { up[`flags.${MODULE_ID}.site.filled`] = canon ? "identifier" : "uses"; filled.push(`${item.name} (${[canon && "identifier " + canon, uses && "uses"].filter(Boolean).join(", ")})`); }
       else missing.push(item.name);
+      if (Object.keys(up).length > 1) patch.push(up);
     }
     if (remove.length) {
       await actor.deleteEmbeddedDocuments("Item", remove, { cgaSiteFill: true });
@@ -416,7 +490,7 @@ function shouldRun(actor) {
   return owner?.isSelf ?? false;
 }
 const needsFill = (actor) => actor.getFlag(MODULE_ID, "siteFilled") !== (actor.flags[MODULE_ID].export.exportedAtUtc ?? "1") || actor.items.some((i) => siteFlag(i) && !siteFlag(i).filled && !tried.has(i.uuid)
-  && ["class", "subclass", "feat", "spell", "weapon", "equipment", "consumable", "tool"].includes(i.type))
+  && ["class", "subclass", "race", "background", "feat", "spell", "weapon", "equipment", "consumable", "tool", "loot", "container"].includes(i.type))
   || !actor.items.some((i) => i.type === "weapon" && i.system.identifier === "unarmed-strike");
 Hooks.on("renderActorSheetV2", (app) => {
   const actor = app.document;

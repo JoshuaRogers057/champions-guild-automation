@@ -24,14 +24,14 @@ Origin|Harper Agent|FR|skip|3|Background Origin feat - see the Backgrounds tab
 Origin|Healer|PHB|done|1|Battle Medic: Utilize action, expend a Healer's Kit use, target within 5 ft spends a Hit Die and heals that roll + Proficiency Bonus. Healing Rerolls: reroll 1s on healing dice of your spells and Battle Medic
 Origin|Lords’ Alliance Agent|FR|done|2|Background Origin feat - see the Backgrounds tab
 Origin|Lucky|PHB|done|1|Luck Points (PB per Long Rest): before a saving throw without Advantage you are asked whether to spend one for Advantage (module rule); use the feat for Advantage on your next d20 Test; attacks against you offer Disadvantage
-Origin|Magic Initiate|SRD|skip|2|Spell choices come from the advancement; the free cast is the spell's own once-per-Long-Rest use
+Origin|Magic Initiate|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Spell choices come from the advancement; the free cast is the spell's own once-per-Long-Rest use
 Origin|Musician|PHB|done|2|Encouraging Song: at the end of a Short or Long Rest, give Heroic Inspiration to up to PB allies
 Origin|Portal Jumper|AU|done|2|Background Origin feat - see the Backgrounds tab
 Origin|Purple Dragon Rook|FR|done|2|Background Origin feat - see the Backgrounds tab
 Origin|Savage Attacker|SRD|done|1|Once per turn on a weapon hit, roll the weapon's damage dice twice and keep the higher (compendium has no automation)
 Origin|Shadowmoor Hexer|LW|done|1|Background Origin feat - see the Backgrounds tab
 Origin|Sharp Eye|RV|done|3|Background Origin feat - see the Backgrounds tab
-Origin|Skilled|SRD|skip|3|Proficiencies come from the advancement
+Origin|Skilled|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Proficiencies come from the advancement
 Origin|Spellfire Spark|FR|done|1|Background Origin feat - see the Backgrounds tab
 Origin|Survivor|RV|done|1|Background Origin feat - see the Backgrounds tab
 Origin|Tavern Brawler|PHB|done|2|Unarmed Strike deals 1d4 + STR Bludgeoning, reroll 1s on its damage dice, push 5 ft once per turn on a hit during the Attack action. Improvised weapon proficiency is the dnd5e tavernBrawlerFeat flag
@@ -42,7 +42,7 @@ Origin|Tyro of the Gauntlet|FR|done|3|Background Origin feat - see the Backgroun
 Origin|Vampire Hunter|AB|done|1|Background Origin feat - see the Backgrounds tab
 Origin|Vampire’s Plaything|AB|done|2|Background Origin feat - see the Backgrounds tab
 Origin|Zhentarim Ruffian|FR|done|2|Background Origin feat - see the Backgrounds tab
-General|Ability Score Improvement|SRD|skip|3|Advancement
+General|Ability Score Improvement|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Advancement
 General|Abjuration Adept|AU|done|1|CGA item + module rule: Protective Ward temp HP (2 x slot level) to you or an ally within 30 ft; Additional Spells from the compendium
 General|Actor|PHB|skip|3|Advantage on disguise Deception/Performance checks and mimicry are DM calls
 General|Athlete|PHB|done|3|Climb Speed equal to your Speed. Hop Up and Jumping are movement rules
@@ -123,7 +123,7 @@ General|War Caster|PHB|done|1|Advantage on Concentration saves. Reactive Spell a
 General|Weapon Master|PHB|skip|3|Weapon Mastery choice from the advancement
 General|Zhentarim Tactics|FR|done|2|CGA item + module rule: Retaliate Reaction Opportunity Attack after a melee hit from within 5 ft; Versatile Merc by hand
 Fighting Style|Arcane Warrior|AU|skip|3|Two Wizard cantrips - from the sheet
-Fighting Style|Archery|SRD|done|1|Compendium item checked in the test world: +2 to ranged weapon attack rolls
+Fighting Style|Archery|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Compendium item checked in the test world: +2 to ranged weapon attack rolls
 Fighting Style|Blind Fighting|PHB|done|2|Blindsight 10 ft
 Fighting Style|Defense|SRD|done|1|Compendium item + module rule: its +1 AC switches off while you wear no Light, Medium or Heavy armor
 Fighting Style|Dueling|PHB|done|1|+2 damage with a melee weapon held in one hand when you hold no other weapon
@@ -164,4 +164,4 @@ Epic Boon|Boon of the Furious Storm|FR|done|3|CGA item + module rule: Lightning/
 Epic Boon|Boon of the Iron Mind|AU|done|3|CGA item + module rule: Concentration saves from damage always succeed
 Epic Boon|Boon of the Night Spirit|SRD|done|3|Resistance (not Psychic/Radiant) only outside Bright Light, checked against the scene lighting (module rule); Merge with Shadows makes you Invisible until you act
 Epic Boon|Boon of the Soul Drinker|FR|done|3|CGA item + module rule: Cold/Necrotic Resistance; Siphon Life Reaction regains 50 HP when an enemy within 120 ft drops to 0 (1/SR)
-Epic Boon|Boon of Truesight|SRD|done|3|Compendium item checked in the test world: Truesight 60 ft
+Epic Boon|Boon of Truesight|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Compendium item checked in the test world: Truesight 60 ft

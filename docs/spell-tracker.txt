@@ -8,21 +8,21 @@
 0|Acid Splash|SRD|done|1|DEX save, up to two creatures within 5 ft of each other; cantrip scaling
 0|Blade Ward|PHB|done|2|Attackers subtract 1d4 from attack rolls against you (concentration)
 0|Chill Touch|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - Necrotic + can't regain HP
-0|Dancing Lights|SRD|skip|3|
-0|Druidcraft|SRD|skip|3|
+0|Dancing Lights|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+0|Druidcraft|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Eldritch Blast|SRD|done|1|One attack per beam, Agonizing Blast, Repelling Blast push
-0|Elementalism|SRD|skip|3|
+0|Elementalism|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Fire Bolt|SRD|done|1|
 0|Friends|PHB|skip|3|
 0|Guidance|SRD|done|1|Skill picker, +1d4
-0|Light|SRD|skip|3|midi-qol has one
-0|Mage Hand|SRD|skip|3|
-0|Mending|SRD|skip|3|
-0|Message|SRD|skip|3|
+0|Light|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: midi-qol has one
+0|Mage Hand|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+0|Mending|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+0|Message|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Mind Sliver|PHB|done|1|INT save psychic damage; failed save subtracts 1d4 from its next saving throw
-0|Minor Illusion|SRD|skip|3|
+0|Minor Illusion|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Poison Spray|SRD|done|1|2024 version is a ranged spell attack
-0|Prestidigitation|SRD|skip|3|
+0|Prestidigitation|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Produce Flame|SRD|done|1|
 0|Ray of Frost|SRD|done|1|Speed -10 ft until your next turn
 0|Resistance|SRD|done|2|Reduce one damage type by 1d4 once per turn (concentration)
@@ -32,15 +32,15 @@
 0|Sorcerous Burst|SRD|done|2|Damage dice explode on 8s, up to spellcasting-modifier extra dice
 0|Spare the Dying|SRD|done|2|midi-qol's sample item, checked in the test world: Stable
 0|Starry Wisp|SRD|done|2|Target can't be invisible until end of your next turn
-0|Thaumaturgy|SRD|skip|3|
+0|Thaumaturgy|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Thorn Whip|PHB|done|1|Melee spell attack; pull Large or smaller 10 ft toward you (no token spin)
 0|Thunderclap|PHB|done|1|CON save, every creature within 5 ft
 0|Toll the Dead|PHB|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - d8, d12 against wounded targets
 0|True Strike|SRD|done|1|Weapon attack with spellcasting ability; extra radiant at 5th+
 0|Vicious Mockery|SRD|done|1|Failed save: disadvantage on its next attack roll
 0|Word of Radiance|PHB|done|1|CON save, creatures of your choice within 5 ft
-1|Alarm|SRD|skip|3|
-1|Animal Friendship|SRD|skip|3|
+1|Alarm|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+1|Animal Friendship|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Armor of Agathys|PHB|done|1|Temp HP; while it lasts, melee attackers take cold damage
 1|Arms of Hadar|PHB|done|2|STR save necrotic all around; failed save = no reactions until its next turn
 1|Bane|SRD|done|1|-1d4 to attacks and saves for creatures that fail (concentration)
@@ -51,25 +51,25 @@
 1|Color Spray|SRD|done|1|Blinded until end of your next turn
 1|Command|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - WIS save, chosen command effect
 1|Compelled Duel|PHB|done|2|Mirjam's compelled-duel macro exists (disadvantage vs others, end conditions)
-1|Comprehend Languages|SRD|skip|3|
-1|Create or Destroy Water|SRD|skip|3|
+1|Comprehend Languages|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+1|Create or Destroy Water|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Cure Wounds|SRD|done|1|
-1|Detect Evil and Good|SRD|skip|3|
-1|Detect Magic|SRD|skip|3|midi-qol has one
-1|Detect Poison and Disease|SRD|skip|3|
-1|Disguise Self|SRD|skip|3|
+1|Detect Evil and Good|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+1|Detect Magic|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: midi-qol has one
+1|Detect Poison and Disease|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+1|Disguise Self|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Dissonant Whispers|SRD|done|2|Half on save; the forced Reaction move is DM-handled
 1|Divine Favor|SRD|done|1|+1d4 radiant on weapon hits
 1|Divine Smite|SRD|done|1|Via Paladin's Smite prompt
 1|Ensnaring Strike|SRD|done|2|midi-qol's sample item, checked in the test world: cast after a hit: Restrained, 1d6 Piercing per turn, Athletics to escape
 1|Entangle|SRD|done|2|Restrained on failed STR save; action STR check to escape; difficult terrain
-1|Expeditious Retreat|SRD|skip|3|
+1|Expeditious Retreat|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Faerie Fire|SRD|done|1|Outlined creatures: attacks against them have advantage, no invisibility
 1|False Life|SRD|done|1|Temp HP
-1|Feather Fall|SRD|skip|3|
+1|Feather Fall|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Find Familiar|SRD|done|2|Summon; per-caster familiar pattern exists (necromancy familiar)
-1|Fog Cloud|SRD|skip|3|
-1|Goodberry|SRD|skip|3|
+1|Fog Cloud|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+1|Goodberry|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Grease|SRD|done|2|Prone on failed DEX save; save again entering or ending turn in it
 1|Guiding Bolt|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - 4d6 Radiant + Advantage on the next attack against it
 1|Hail of Thorns|PHB|done|2|Next ranged weapon hit: DEX save in a 5-ft area around the target
@@ -79,38 +79,38 @@
 1|Hex|SRD|done|1|+1d6 on hits, Curse New Creature
 1|Hunter's Mark|SRD|done|1|+1d6 on hits, Move Mark
 1|Ice Knife|SRD|done|1|Attack, then DEX save for everything within 5 ft
-1|Identify|SRD|skip|3|midi-qol has one
-1|Illusory Script|SRD|skip|3|
+1|Identify|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: midi-qol has one
+1|Illusory Script|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Inflict Wounds|SRD|done|1|2024: CON save, half on success
-1|Jump|SRD|skip|3|
+1|Jump|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Longstrider|SRD|done|2|Speed +10 ft
 1|Mage Armor|SRD|done|1|AC 13 + DEX
 1|Magic Missile|SRD|done|1|Darts by slot, split between targets, one roll
 1|Protection from Evil and Good|SRD|done|2|Aberration/celestial/elemental/fey/fiend/undead attackers have disadvantage; charm/fear immunity vs them
-1|Purify Food and Drink|SRD|skip|3|
+1|Purify Food and Drink|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Ray of Sickness|SRD|done|2|Poisoned until end of your next turn on a hit
 1|Sanctuary|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - Warded
 1|Searing Smite|SRD|done|1|Via Paladin's Smite prompt
 1|Shield|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +5 AC until your next turn, Magic Missile immunity
 1|Shield of Faith|SRD|done|1|+2 AC (concentration)
-1|Silent Image|SRD|skip|3|
+1|Silent Image|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Sleep|SRD|done|1|midi-qol's sample item, checked in the test world: WIS save, Incapacitated then Unconscious
-1|Speak with Animals|SRD|skip|3|
+1|Speak with Animals|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Spellfire Flare|FR|done|1|CGA item: one ranged spell attack per blast (+1 per slot level above 1), 2d10 Radiant; ignores Half/Three-Quarters Cover during its attacks (module rule)
 1|Tasha's Hideous Laughter|SRD|done|2|aka Hideous Laughter. Prone + Incapacitated; repeat save end of turn and on damage (with advantage)
-1|Tenser's Floating Disk|SRD|skip|3|aka Floating Disk
+1|Tenser's Floating Disk|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: aka Floating Disk
 1|Thunderous Smite|PHB|done|1|Push 10 ft + Prone
 1|Thunderwave|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - CON save 2d8 Thunder + 10-ft push
-1|Unseen Servant|SRD|skip|3|
+1|Unseen Servant|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Wardaway|FR|done|1|CGA item: CON save 2d4 Force (+2d4/level), Speed halved until your next turn; Constructs and Undead succeed automatically (module rule)
 1|Witch Bolt|PHB|done|2|Bonus action each turn for 1d12 lightning while the target stays in range
 1|Wrathful Smite|PHB|done|1|Frightened with repeat save
 2|Aid|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +5 maximum and current HP
-2|Alter Self|SRD|skip|3|
-2|Animal Messenger|SRD|skip|3|
-2|Arcane Lock|SRD|skip|3|
+2|Alter Self|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+2|Animal Messenger|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+2|Arcane Lock|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Arcane Vigor|SRD|done|3|Spend Hit Point Dice to heal
-2|Augury|SRD|skip|3|
+2|Augury|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Barkskin|SRD|done|1|AC can't be lower than 17
 2|Battle Familiar|AU|done|1|CGA item + 3 summon actors (Brute / Flyer / Stalker); AC, HP and Rend scale with the slot, Rend uses your spell attack. Empowering a Find Familiar familiar is by hand
 2|Beast Sense|PHB|skip|3|
@@ -118,55 +118,55 @@
 2|Blur|SRD|done|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
 2|Calm Emotions|SRD|done|3|
 2|Cloud of Daggers|PHB|done|2|Zone: 4d4 slashing on entering or starting turn there
-2|Continual Flame|SRD|skip|3|
+2|Continual Flame|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Cordon of Arrows|PHB|done|3|Trap: arrows fire at creatures entering 30 ft
 2|Crown of Madness|PHB|done|3|Charmed; forced melee attack each turn; repeat save
-2|Darkness|SRD|skip|3|
+2|Darkness|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Darkvision|SRD|done|2|
 2|Death Armor|FR|done|1|CGA item: Advantage on Death Saves; once per turn a melee hitter within 5 ft takes 2d4 Necrotic (module rule)
 2|Deryan’s Helpful Homunculi|FR|skip|3|Crafting assistant - nothing to automate
-2|Detect Thoughts|SRD|skip|3|
+2|Detect Thoughts|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Disruptive Tune|AU|done|1|CGA item: 20-ft Sphere CON save - a failure ends Concentration and gives Disadvantage on Concentration saves
 2|Dragon's Breath|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - the target gets a breath save activity of the chosen type
 2|Dueling Ground|AU|skip|3|Downtime duel arena - DM-handled
 2|Elminster’s Elusion|FR|done|1|CGA item: Advantage on saves vs spells/magic (midi magic resistance); a successful save for half takes none
 2|Enhance Ability|SRD|done|2|Advantage on checks with the chosen ability
 2|Enlarge/Reduce|SRD|done|2|Size, STR checks/saves, +/-1d4 weapon damage
-2|Enthrall|SRD|skip|3|
+2|Enthrall|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Find Steed|SRD|done|2|Summon; older v13 "Find Steed (Free)" fix exists in Macros
-2|Find Traps|SRD|skip|3|
+2|Find Traps|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Flame Blade|SRD|done|2|
 2|Flaming Sphere|SRD|done|2|Summoned sphere: end-of-turn DEX save damage; ram as a bonus action
-2|Gentle Repose|SRD|skip|3|
+2|Gentle Repose|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Gust of Wind|SRD|done|3|Push 15 ft on failed STR save; line
 2|Heat Metal|SRD|done|2|Bonus action to repeat damage; drop the object or disadvantage
 2|Hold Person|SRD|done|1|Paralyzed; repeat WIS save end of each turn; extra target per slot
 2|Homunculus Servant|EB|done|2|CGA item + summon actor: HP 5 + 5/level, Force Strike (melee/30 ft) at your spell attack; replacing an old homunculus is by hand
 2|Invisibility|SRD|done|1|midi-qol's sample item, checked in the test world: Invisible while you concentrate
-2|Knock|SRD|skip|3|
+2|Knock|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Lesser Restoration|SRD|done|2|midi-qol's sample item, checked in the test world: removes the chosen condition
 2|Levitate|SRD|done|3|
-2|Locate Animals or Plants|SRD|skip|3|
-2|Locate Object|SRD|skip|3|
-2|Magic Mouth|SRD|skip|3|
+2|Locate Animals or Plants|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+2|Locate Object|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+2|Magic Mouth|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Magic Weapon|SRD|done|2|+1 weapon (+2/+3 at higher slots)
 2|Melf's Acid Arrow|SRD|done|2|aka Acid Arrow. Half on miss; extra acid at end of target's next turn
 2|Mind Spike|SRD|done|3|
 2|Mirror Image|SRD|done|1|Duplicates absorb hits; mirror-image macro exists (needs the PHB-module flag replaced)
 2|Misty Step|SRD|done|1|Teleport
 2|Moonbeam|SRD|done|1|Zone: CON save radiant on entering/starting turn; move the beam as a bonus action
-2|Nystul's Magic Aura|SRD|skip|3|aka Arcanist's Magic Aura
+2|Nystul's Magic Aura|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: aka Arcanist's Magic Aura
 2|Pass without Trace|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - +10 Stealth aura
 2|Phantasmal Force|SRD|done|3|midi-qol's sample item, checked in the test world: Seeing Illusions
 2|Prayer of Healing|SRD|done|2|
 2|Protection from Poison|SRD|done|2|
 2|Ray of Enfeeblement|SRD|done|2|Weaker damage + STR disadvantage; repeat save end of each turn
-2|Rope Trick|SRD|skip|3|
+2|Rope Trick|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Scorching Ray|SRD|done|1|One attack per ray; beams macro already handles it, just package it
 2|See Invisibility|SRD|done|3|
 2|Shatter|SRD|done|1|
 2|Shining Smite|SRD|done|2|Check it works from the Paladin's Smite prompt (glowing, no invisibility)
-2|Silence|SRD|skip|3|
+2|Silence|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Spider Climb|SRD|done|3|
 2|Spike Growth|SRD|done|2|2d4 piercing per 5 ft moved inside the area
 2|Spiritual Weapon|SRD|done|1|Summoned weapon; bonus-action melee spell attack; move it
@@ -176,7 +176,7 @@
 2|Warding Bond|SRD|done|2|+1 AC/saves, resistance; caster takes the same damage
 2|Web|SRD|done|2|midi-qol's sample item, checked in the test world: DEX save or Restrained
 2|Wither and Bloom|AU|done|1|CGA item (from an earlier release): choose wither targets and the bloom creature; Hit Point Dice healing applied
-2|Zone of Truth|SRD|skip|3|
+2|Zone of Truth|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Animate Dead|SRD|done|2|Summon skeletons/zombies; command as bonus action
 3|Aura of Vitality|PHB|done|2|Bonus action: heal 2d6 to a creature in the aura
 3|Beacon of Hope|SRD|done|2|Healing is maximized (needs a midi flag), advantage on WIS and death saves
@@ -186,14 +186,14 @@
 3|Cacophonic Shield|FR|done|1|CGA item: 10-ft Emanation following you, CON save 3d6 Thunder + Deafened on entering/ending a turn (once per turn); your Thunder Resistance and ranged-attack Disadvantage end with the concentration (module rule)
 3|Call Lightning|SRD|done|2|Repeat the bolt as an action each turn
 3|Catnap|AU|done|2|CGA item: up to three willing creatures Unconscious 10 minutes, ends on damage; the Short Rest benefit is by hand
-3|Clairvoyance|SRD|skip|3|
+3|Clairvoyance|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Conjure Animals|SRD|done|2|2024: pack of spirits deals damage to creatures near it
 3|Conjure Barrage|PHB|done|2|Cone DEX save
 3|Conjure Constructs|FR|done|1|CGA item + Construct Spirits token: Clockwork Force (DEX save 3d6 Force) and Orderly Ward (1d6 + mod temp HP) activities scaling with the cast slot
 3|Counterspell|SRD|done|2|Reaction; the target caster makes a CON save
-3|Create Food and Water|SRD|skip|3|
+3|Create Food and Water|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Crusader's Mantle|PHB|done|2|Aura: allies' weapon hits deal +1d4 radiant
-3|Daylight|SRD|skip|3|
+3|Daylight|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Dispel Magic|SRD|done|3|End spell effects on a target (check for higher levels)
 3|Elemental Weapon|PHB|done|2|+1 attack and +1d4 elemental damage on the weapon
 3|Fear|SRD|done|2|Frightened, drop held item, must Dash away; save only out of sight
@@ -207,35 +207,35 @@
 3|Hypnotic Pattern|SRD|done|1|Charmed + Incapacitated; must end when the creature takes damage
 3|Inflict Doubt|AU|done|1|CGA item: WIS save or Disadvantage on D20 Tests; repeat save at the end of each turn
 3|Laeral’s Silver Lance|FR|done|1|CGA item: 120-ft Line STR save 3d10 Force (+1d10/level) + Prone, half only on a success
-3|Leomund's Tiny Hut|SRD|skip|3|aka Tiny Hut
+3|Leomund's Tiny Hut|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: aka Tiny Hut
 3|Lightning Arrow|PHB|done|2|Next ranged weapon attack becomes lightning + burst
 3|Lightning Bolt|SRD|done|1|
-3|Magic Circle|SRD|skip|3|
-3|Major Image|SRD|skip|3|
+3|Magic Circle|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+3|Major Image|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Mass Healing Word|SRD|done|2|
-3|Meld into Stone|SRD|skip|3|
-3|Nondetection|SRD|skip|3|
-3|Phantom Steed|SRD|skip|3|
-3|Plant Growth|SRD|skip|3|
+3|Meld into Stone|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+3|Nondetection|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+3|Phantom Steed|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+3|Plant Growth|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Protection from Energy|SRD|done|2|Resistance to the chosen type
-3|Remove Curse|SRD|skip|3|
+3|Remove Curse|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Revivify|SRD|done|3|Returns to 1 HP
-3|Sending|SRD|skip|3|
+3|Sending|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Sleet Storm|SRD|done|3|Zone: DEX save or Prone; concentration checks
 3|Slow|SRD|done|2|-2 AC/DEX saves, half speed, one action; repeat WIS save end of each turn
-3|Speak with Dead|SRD|skip|3|
-3|Speak with Plants|SRD|skip|3|
+3|Speak with Dead|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+3|Speak with Plants|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Spirit Guardians|SRD|done|1|Aura: WIS save on entering/starting turn; half speed for enemies
 3|Stinking Cloud|SRD|done|2|Zone: CON save at turn start or lose the action (Poisoned)
 3|Summon Fey|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 3|Summon Undead|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 3|Syluné’s Viper|FR|done|1|CGA item: 15 temp HP (+5/level), Climb Speed, Venomous Bite activity (1d6 Force per level above 2 + Poisoned/Incapacitated); ends when the temp HP are gone (module rule)
-3|Tongues|SRD|skip|3|
+3|Tongues|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Vampiric Touch|SRD|done|2|Heal half the damage dealt; repeat the touch as an action
-3|Water Breathing|SRD|skip|3|
-3|Water Walk|SRD|skip|3|
+3|Water Breathing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+3|Water Walk|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 3|Wind Wall|SRD|done|3|Wall; ranged attacks through it
-4|Arcane Eye|SRD|skip|3|
+4|Arcane Eye|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 4|Aura of Life|SRD|done|3|Necrotic resistance; creatures at 0 HP regain 1 HP
 4|Aura of Purity|PHB|done|3|Aura: poison resistance, advantage on saves vs conditions
 4|Backlash|FR|done|2|CGA item + module rule: offered as a Reaction on damage (lowest 4th+ slot): damage -(level)d6 - mod, attacker CON save (level)d6 Force
@@ -246,15 +246,15 @@
 4|Confusion|SRD|done|2|d10 behaviour roll each turn; repeat save
 4|Conjure Minor Elementals|SRD|done|2|2024: your attacks deal +2d8 elemental near you
 4|Conjure Woodland Beings|SRD|done|2|2024: aura damage around you
-4|Control Water|SRD|skip|3|
+4|Control Water|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 4|Death Ward|SRD|done|2|First drop to 0 HP becomes 1 HP instead
 4|Dimension Door|SRD|done|2|Teleport (+ a willing creature)
 4|Distorted Distance|AU|done|2|CGA item: cast Dizzying Elongation (INT save 2d10 Psychic); Shortened Space (+20 ft) and repeat activities without a slot
-4|Divination|SRD|skip|3|
+4|Divination|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 4|Dominate Beast|SRD|done|3|
 4|Doomtide|FR|done|2|CGA item: 20-ft Sphere zone, WIS save 5d6 Psychic and -1d6 to saves; drag it 10 ft each turn; Darkness by hand
 4|Evard's Black Tentacles|SRD|done|2|aka Black Tentacles. Zone: restrained + bludgeoning
-4|Fabricate|SRD|skip|3|
+4|Fabricate|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 4|Festering Blast|AU|done|2|CGA item: 60x10 Line CON save 4d10 Necrotic + Poisoned, 2d10 Poison each turn start, repeat save at turn end
 4|Fire Shield|SRD|done|2|Melee attackers take 2d8 fire/cold; resistance
 4|Fount of Moonlight|PHB|done|3|Radiant resistance, +2d6 radiant on melee hits, reaction CON save or Blinded
@@ -263,18 +263,18 @@
 4|Grasping Vine|PHB|done|3|Pull 30 ft on a failed save; bonus action each turn
 4|Greater Invisibility|SRD|done|2|midi-qol's sample item, checked in the test world: Invisible while you concentrate
 4|Guardian of Faith|SRD|done|2|Guardian deals 20 radiant on entering/starting turn, up to 60 total
-4|Hallucinatory Terrain|SRD|skip|3|
+4|Hallucinatory Terrain|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 4|Ice Storm|SRD|done|2|
-4|Leomund's Secret Chest|SRD|skip|3|aka Secret Chest
-4|Locate Creature|SRD|skip|3|
+4|Leomund's Secret Chest|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: aka Secret Chest
+4|Locate Creature|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 4|Mordenkainen's Faithful Hound|SRD|done|3|aka Faithful Hound. Bites invisible intruders
-4|Mordenkainen's Private Sanctum|SRD|skip|3|aka Private Sanctum
+4|Mordenkainen's Private Sanctum|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: aka Private Sanctum
 4|Otiluke's Resilient Sphere|SRD|done|3|aka Resilient Sphere
 4|Phantasmal Killer|SRD|done|2|Frightened; repeat WIS save end of turn with psychic damage
 4|Polymorph|SRD|done|2|Transform into a beast; revert at 0 HP
 4|Spellfire Storm|FR|done|2|CGA item: Cylinder zone CON save 4d10 Radiant for enemies; casting inside needs a CON save or the spell fails, slot refunded (module rule)
 4|Staggering Smite|PHB|done|2|Smite prompt; Stunned until end of your next turn on a failed save
-4|Stone Shape|SRD|skip|3|
+4|Stone Shape|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 4|Stoneskin|SRD|done|2|Resistance to B/P/S
 4|Summon Aberration|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 4|Summon Construct|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
@@ -285,45 +285,45 @@
 5|Alustriel’s Mooncloak|FR|done|2|CGA item: ally aura - Half Cover + Cold/Lightning/Radiant Resistance; Respite (4d10 + mod) and Liberation (Reaction, module) end it
 5|Animate Objects|SRD|done|2|Summon animated objects
 5|Antilife Shell|SRD|done|3|
-5|Awaken|SRD|skip|3|
+5|Awaken|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Banishing Smite|PHB|done|2|Smite prompt; banish at 50 HP or less
 5|Bigby's Hand|SRD|done|2|aka Arcane Hand. Per-caster summon built before (see Bigby's Hand notes)
 5|Circle of Power|PHB|done|3|Aura: advantage on saves vs spells, no damage on success
 5|Cloudkill|SRD|done|2|Moving zone: CON save poison at turn start
-5|Commune|SRD|skip|3|
-5|Commune with Nature|SRD|skip|3|
+5|Commune|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Commune with Nature|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Cone of Cold|SRD|done|1|
 5|Conjure Elemental|SRD|done|2|2024: elemental spirit, restrains/damages nearby
 5|Conjure Volley|PHB|done|2|
-5|Contact Other Plane|SRD|skip|3|
+5|Contact Other Plane|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Contagion|SRD|done|3|Poisoned; repeat saves
-5|Creation|SRD|skip|3|
+5|Creation|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Destructive Wave|PHB|done|2|CON save, creatures of your choice; knocked Prone
-5|Dispel Evil and Good|SRD|skip|3|
+5|Dispel Evil and Good|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Dominate Person|SRD|done|3|
-5|Dream|SRD|skip|3|
+5|Dream|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Enervation|AU|done|2|CGA item: DEX save 6d8 Necrotic, Bonus Action Drain 2d8; you heal half the Necrotic, a success ends it (module rule)
 5|Flame Strike|SRD|done|1|
-5|Geas|SRD|skip|3|
+5|Geas|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Grave Ground|AU|done|2|CGA item: 20-ft square zone for enemies, STR save 6d6 Necrotic and -1d6 to their damage rolls, Difficult Terrain
-5|Greater Restoration|SRD|skip|3|
-5|Hallow|SRD|skip|3|
+5|Greater Restoration|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Hallow|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Hold Monster|SRD|done|1|Paralyzed; repeat WIS save end of each turn
 5|Insect Plague|SRD|done|2|Zone: CON save piercing on entering/starting turn
 5|Jallarzi's Storm of Radiance|PHB|done|3|Zone: radiant + thunder, deafened, blinded
-5|Legend Lore|SRD|skip|3|
+5|Legend Lore|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Mass Cure Wounds|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - 5d8 + mod to the targets
-5|Mislead|SRD|skip|3|
-5|Modify Memory|SRD|skip|3|
+5|Mislead|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Modify Memory|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Mordenkainen’s Lucubration|AU|done|2|CGA item + module dialog: recover up to two expended slots of level 2 (3 at 6-7, 4 at 8+)
 5|Negative Energy Flood|AU|done|2|CGA item: CON save 3d10 + 25 Necrotic; Undead gain 3d10 temp HP instead (module rule); zombie rising by hand
-5|Passwall|SRD|skip|3|
-5|Planar Binding|SRD|skip|3|
-5|Raise Dead|SRD|skip|3|
-5|Rary's Telepathic Bond|SRD|skip|3|aka Telepathic Bond
-5|Reincarnate|SRD|skip|3|
-5|Scrying|SRD|skip|3|
-5|Seeming|SRD|skip|3|
+5|Passwall|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Planar Binding|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Raise Dead|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Rary's Telepathic Bond|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: aka Telepathic Bond
+5|Reincarnate|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Scrying|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Seeming|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Songal’s Elemental Suffusion|FR|done|2|CGA item + module rule: chosen Resistance and Fly 30 hover while concentrating; 15-ft pulse DEX save 2d6 + Prone on cast and each turn (activity)
 5|Spirit Lantern|AU|done|2|CGA item + module rule: soul fragments from enemies dying within 60 ft (uses up to your modifier); Drain Life / Repair Undead / Ward Ally
 5|Steel Wind Strike|PHB|done|2|Melee spell attack against up to 5 targets, then teleport
@@ -332,11 +332,11 @@
 5|Summon Plant|AU|done|2|CGA item + 3 summon actors (Fungus / Tree / Vine) scaling with the slot
 5|Swift Quiver|PHB|done|3|Two bonus-action weapon attacks each turn
 5|Synaptic Static|PHB|done|2|INT save psychic; failed save: -1d6 on attacks and checks, repeat save
-5|Telekinesis|SRD|skip|3|
-5|Teleportation Circle|SRD|skip|3|
-5|Tree Stride|SRD|skip|3|
-5|Wall of Force|SRD|skip|3|
-5|Wall of Stone|SRD|skip|3|
+5|Telekinesis|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Teleportation Circle|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Tree Stride|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Wall of Force|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+5|Wall of Stone|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Waves of Exhaustion|AU|done|2|CGA item + module rule: Wave activity, failed CON save = +1 Exhaustion (max 4), removed when the spell ends
 5|Yolande's Regal Presence|PHB|done|3|Zone: WIS save psychic, prone or pushed
 6|Arcane Gate|PHB|skip|3|
@@ -344,76 +344,76 @@
 6|Chain Lightning|SRD|done|2|Primary target + three leaps
 6|Circle of Death|SRD|done|2|
 6|Conjure Fey|SRD|done|3|2024: fey spirit attacks
-6|Contingency|SRD|skip|3|
+6|Contingency|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 6|Create Undead|SRD|done|3|Summon
 6|Dirge|FR|done|3|CGA item: 60-ft Emanation, no healing for enemies, CON save 3d10 Necrotic + Prone; half Speed on a success and Circle casting by hand
 6|Disintegrate|SRD|done|2|Dust at 0 HP
-6|Drawmij's Instant Summons|SRD|skip|3|aka Instant Summons
+6|Drawmij's Instant Summons|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: aka Instant Summons
 6|Elminster’s Effulgent Spheres|FR|done|3|CGA item + module rule: spheres as uses (6 +1/level), Energy Blast activity, Absorb Energy offered on elemental damage, ends when empty
 6|Eyebite|SRD|done|3|midi-qol's sample item, checked in the test world: choose Asleep / Panicked / Sickened
-6|Find the Path|SRD|skip|3|
+6|Find the Path|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 6|Flesh to Stone|SRD|done|3|midi-qol's sample item, checked in the test world: Restrained, turning to stone
-6|Forbiddance|SRD|skip|3|
+6|Forbiddance|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 6|Globe of Invulnerability|SRD|done|3|Blocks spells of 5th level and lower
-6|Guards and Wards|SRD|skip|3|
+6|Guards and Wards|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 6|Harm|SRD|done|2|midi-qol's sample item, checked in the test world: CON save 14d6 Necrotic and lower HP maximum
 6|Heal|SRD|done|2|
 6|Heroes' Feast|SRD|done|3|
-6|Magic Jar|SRD|skip|3|
-6|Mass Suggestion|SRD|skip|3|
-6|Move Earth|SRD|skip|3|
+6|Magic Jar|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+6|Mass Suggestion|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+6|Move Earth|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 6|Otiluke's Freezing Sphere|SRD|done|3|aka Freezing Sphere
 6|Otto's Irresistible Dance|SRD|done|3|midi-qol's sample item, checked in the test world: Charmed dancing
-6|Planar Ally|SRD|skip|3|
-6|Programmed Illusion|SRD|skip|3|
+6|Planar Ally|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+6|Programmed Illusion|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 6|Summon Dinosaur|AU|done|3|CGA item + 3 summon actors (Ankylosaur / Triceratops / Tyrannosaur) scaling with the slot
 6|Summon Fiend|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 6|Sunbeam|SRD|done|2|midi-qol's sample item, checked in the test world: CON save 6d8 Radiant + Blinded, new beam activity
 6|Tasha's Bubbling Cauldron|PHB|skip|3|
-6|Transport via Plants|SRD|skip|3|
+6|Transport via Plants|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 6|True Seeing|SRD|done|3|
 6|Wall of Ice|SRD|done|3|Wall: damage + cold zone
 6|Wall of Thorns|SRD|done|3|Wall: damage on entering
-6|Wind Walk|SRD|skip|3|
-6|Word of Recall|SRD|skip|3|
+6|Wind Walk|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+6|Word of Recall|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Aura of Evasion|AU|done|3|CGA item: ally aura - Advantage on DEX saves and Evasion
 7|Conjure Celestial|SRD|done|3|2024: light aura heals or damages
 7|Delayed Blast Fireball|SRD|done|3|midi-qol's sample item, checked in the test world: charging bead
 7|Divine Word|SRD|done|3|midi-qol's sample item, checked in the test world: condition by remaining HP
-7|Etherealness|SRD|skip|3|
+7|Etherealness|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Finger of Death|SRD|done|3|midi-qol's sample item, checked in the test world: 7d8 + 30 Necrotic
 7|Fire Storm|SRD|done|3|
-7|Forcecage|SRD|skip|3|
+7|Forcecage|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Fractured Awareness|AU|done|3|CGA item: INT save 12d10 Psychic + Disadvantage on D20 Tests, repeat save each turn
-7|Mirage Arcane|SRD|skip|3|
-7|Mordenkainen's Magnificent Mansion|SRD|skip|3|aka Magnificent Mansion
+7|Mirage Arcane|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+7|Mordenkainen's Magnificent Mansion|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: aka Magnificent Mansion
 7|Mordenkainen's Sword|SRD|done|2|aka Arcane Sword. Summoned sword, bonus-action attacks
-7|Plane Shift|SRD|skip|3|
+7|Plane Shift|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Power Word Fortify|PHB|done|3|Split 120 temp HP between creatures
 7|Power Word Pain|AU|done|3|CGA item + module rule: 6d8 Force; at 100 HP or fewer Charmed (Speed 10, Disadvantage except CON saves, CON save to cast), repeat save
 7|Prismatic Spray|SRD|done|3|midi-qol's sample item, checked in the test world: random ray effect
-7|Project Image|SRD|skip|3|
+7|Project Image|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Regenerate|SRD|done|3|midi-qol's sample item, checked in the test world: 4d8 + 15 and 1 HP per turn
-7|Resurrection|SRD|skip|3|
+7|Resurrection|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Reverse Gravity|SRD|done|3|midi-qol's sample item, checked in the test world: the save only; falling and positioning by hand
 7|Reweave Fate|AU|done|3|CGA item + module rule: offered on an ally's failed save or missed attack within 60 ft - reroll with Advantage, success gives 6d10 temp HP
-7|Sequester|SRD|skip|3|
+7|Sequester|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Simbul’s Synostodweomer|FR|done|3|CGA item + module rule: the target casting with a slot is offered Hit Dice healing + your modifier
-7|Simulacrum|SRD|skip|3|
+7|Simulacrum|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Symbol|SRD|done|3|Triggered glyph with several effects
-7|Teleport|SRD|skip|3|
+7|Teleport|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 7|Transfix|AU|done|3|CGA item + module rule: CHA save or Charmed + Incapacitated, 4d8 Psychic when it ends its turn within 5 ft; moving it is by hand
-8|Animal Shapes|SRD|skip|3|
-8|Antimagic Field|SRD|skip|3|
-8|Antipathy/Sympathy|SRD|skip|3|
+8|Animal Shapes|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+8|Antimagic Field|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+8|Antipathy/Sympathy|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 8|Befuddlement|SRD|done|3|midi-qol's sample item, checked in the test world: 10d12 Psychic + Befuddled
-8|Clone|SRD|skip|3|
-8|Control Weather|SRD|skip|3|
-8|Demiplane|SRD|skip|3|
+8|Clone|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+8|Control Weather|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
+8|Demiplane|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 8|Dominate Monster|SRD|done|3|
 8|Earthquake|SRD|done|3|Zone: prone, concentration saves, fissures
 8|Entrancing Mirrors|AU|done|3|CGA item: up to 3 creatures INT save 7d6 Psychic + Stunned (half Speed), repeat save
-8|Glibness|SRD|skip|3|
+8|Glibness|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 8|Holy Aura|SRD|done|3|Advantage on saves, attackers have disadvantage; fiend/undead blinded
 8|Holy Star of Mystra|FR|done|3|CGA item + module rule: Shining Bolt 4d10 + mod Force/Radiant (BA activity), Three-Quarters Cover while concentrating; reflection by hand
 8|Illusory Dragon|AU|done|3|CGA item: WIS save or Frightened; Shadow Breath activity (60-ft Cone INT save 6d6 of the chosen type); token placement by hand
@@ -427,11 +427,11 @@
 8|Sunburst|SRD|done|3|Blinded with repeat saves
 8|Telepathy|PHB|skip|3|
 8|Tsunami|SRD|done|3|Moving wall
-9|Astral Projection|SRD|skip|3|
+9|Astral Projection|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 9|Blade of Disaster|FR|done|3|CGA item: melee spell attacks 10d6 Force, Critical Hit on 18-20; Rift Attack activity for the other attacks
 9|Detonate|AU|done|3|CGA item + module rule: Explosive Seed CON save 10d10 Fire, Explosion activity DEX save 10d10 (Disadvantage if the seed dropped the target)
 9|Foresight|SRD|done|3|midi-qol's sample item, checked in the test world: Advantage on D20 Tests, attacks against it at Disadvantage
-9|Gate|SRD|skip|3|
+9|Gate|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 9|Hindsight|AU|skip|3|Divination visions - roleplay
 9|Imprisonment|SRD|done|3|midi-qol's sample item, checked in the test world: Restrained + Incapacitated
 9|Invulnerability|AU|done|3|CGA item: Immunity to all damage while concentrating
@@ -442,10 +442,10 @@
 9|Prismatic Wall|SRD|done|3|Layered wall effects
 9|Shapechange|SRD|done|3|midi-qol's sample item, checked in the test world: dnd5e transform - choose the creature in the Compendium Browser
 9|Storm of Vengeance|SRD|done|3|midi-qol's sample item, checked in the test world: round-by-round storm activities
-9|Time Stop|SRD|skip|3|
+9|Time Stop|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 9|True Polymorph|SRD|done|3|midi-qol's sample item, checked in the test world: willing transform or unwilling save, then the Compendium Browser
 9|True Resurrection|SRD|done|3|midi-qol's sample item, checked in the test world: full HP, Exhaustion and death saves reset (the module also ends Poisoned/Diseased/Cursed)
 9|Vision of Elapsing Eons|AU|done|3|CGA item + module rule: INT save or 10d12 Psychic + Paralyzed; failed repeat saves add Exhaustion
 9|Wail of the Banshee|AU|done|3|CGA item + module rule: 50 HP or fewer die; others CON save 12d10 Psychic + Deafened
 9|Weird|SRD|done|3|midi-qol's sample item, checked in the test world: 10d10 Psychic + Frightened
-9|Wish|SRD|skip|3|
+9|Wish|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)

@@ -1,0 +1,103 @@
+{
+  "name": "Eldritch Mind",
+  "type": "feat",
+  "_id": "cgainvEldritchMi",
+  "img": "icons/magic/unholy/silhouette-robe-evil-power.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have Advantage on Constitution saving throws that you make to maintain Concentration.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "prerequisites": {
+      "level": null,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "enchant": {},
+    "identifier": "eldritch-mind",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Concentration Advantage",
+      "img": "icons/magic/unholy/silhouette-robe-evil-power.webp",
+      "origin": null,
+      "_id": "24hE74nCrrmswvlm",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.concentration.roll.mode",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "FjPfwmfbPTatrAnX",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbinvEldritchMi",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "rider": {
+          "statuses": []
+        },
+        "conditions": "{}",
+        "magical": false
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {}
+        }
+      },
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate."
+      }
+    }
+  }
+}

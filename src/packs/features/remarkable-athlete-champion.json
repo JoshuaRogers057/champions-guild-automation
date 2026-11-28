@@ -1,0 +1,100 @@
+{
+  "name": "Remarkable Athlete",
+  "type": "feat",
+  "_id": "cgaftrRemarkable",
+  "img": "icons/magic/control/buff-strength-muscle-damage.webp",
+  "system": {
+    "description": {
+      "value": "<p>Thanks to your athleticism, you have Advantage on Initiative rolls and Strength (Athletics) checks.</p><p>In addition, immediately after you score a Critical Hit, you can move up to half your &amp;Reference[Speed] without provoking Opportunity Attacks.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 3,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Champion",
+    "activities": {},
+    "enchant": {},
+    "identifier": "remarkable-athlete",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Remarkable Athlete",
+      "img": "icons/magic/control/buff-strength-muscle-damage.webp",
+      "_id": "1f8R9CFfhsetkhF5",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.remarkableAthlete",
+            "value": true,
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "h6OGSMq6PjxO8n43",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:champion"
+      }
+    }
+  }
+}

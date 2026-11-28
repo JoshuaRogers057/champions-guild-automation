@@ -1,0 +1,84 @@
+{
+  "name": "Body and Mind",
+  "type": "feat",
+  "_id": "cgamnkBodyAndMin",
+  "img": "icons/magic/perception/third-eye-blue-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have developed your body and mind to new heights. Your Dexterity and Wisdom scores increase by 4, to a maximum of 25.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "license": "CC-BY-4.0",
+      "revision": 1
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 20,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Monk",
+    "activities": {},
+    "enchant": {},
+    "identifier": "body-and-mind",
+    "advancement": {
+      "Yj4v0ul6dJiogWZy": {
+        "type": "AbilityScoreImprovement",
+        "_id": "Yj4v0ul6dJiogWZy",
+        "configuration": {
+          "cap": 4,
+          "fixed": {
+            "str": 0,
+            "dex": 4,
+            "con": 0,
+            "int": 0,
+            "wis": 4,
+            "cha": 0
+          },
+          "locked": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ],
+          "points": 0,
+          "recommendation": null,
+          "max": 25
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 20,
+        "hint": "",
+        "name": "",
+        "flags": {}
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "class:monk"
+      }
+    }
+  }
+}

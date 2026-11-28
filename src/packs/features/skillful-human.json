@@ -1,0 +1,74 @@
+{
+  "name": "Skillful",
+  "type": "feat",
+  "_id": "cgasptSkillful00",
+  "img": "icons/commodities/treasure/medal-ribbon-silver-blue.webp",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>You gain proficiency in one skill of your choice.</p>",
+      "chat": ""
+    },
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "enchant": {},
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Human",
+    "identifier": "skillful",
+    "advancement": {
+      "xIdIaWtTj1cBERln": {
+        "_id": "xIdIaWtTj1cBERln",
+        "type": "Trait",
+        "configuration": {
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 0,
+        "hint": "<p>You gain proficiency in one skill of your choice.</p>",
+        "name": "Skillful",
+        "flags": {}
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "race:human"
+      }
+    }
+  }
+}

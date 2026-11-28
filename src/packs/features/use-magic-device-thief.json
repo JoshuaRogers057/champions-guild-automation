@@ -1,0 +1,180 @@
+{
+  "name": "Use Magic Device",
+  "type": "feat",
+  "_id": "cgargeUseMagicDe",
+  "img": "icons/sundries/documents/blueprint-magical.webp",
+  "system": {
+    "description": {
+      "value": "<p>You've learned how to maximize use of magic items, granting you the following benefits.</p><p><em><strong>Attunement.</strong></em> You can attune to up to four magic items at once.</p><p><em><strong>Charges.</strong></em> Whenever you use a magic item property that expends charges, roll [[/r 1d6]]. On a roll of 6, you use the property without expending the charges.</p><p>@Embed[Compendium.dnd5e.classes24.Item.phbrgeUseMagicDe.Activity.mrK57dSVtwgDGh3F caption=false cite=false nameStyle=inline]{Scrolls}</p><section id=\"secret-2tHTpsolDU6Nggvo\" class=\"secret\"><p><strong>Foundry Note</strong></p><p>When using an item property that expends charges roll the d6 and uncheck the consumption box to use it for free.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 13,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Thief",
+    "activities": {
+      "mrK57dSVtwgDGh3F": {
+        "type": "check",
+        "name": "Use Scroll",
+        "_id": "mrK57dSVtwgDGh3F",
+        "img": "",
+        "sort": 100000,
+        "activation": {
+          "type": "",
+          "override": false,
+          "condition": "When you attemp to use a Spell Scroll higher than level 1"
+        },
+        "behaviors": [],
+        "consumption": {
+          "scaling": {
+            "allowed": true,
+            "max": "9"
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "description": {
+          "value": "<p>You can use any <em>Spell Scroll,</em> using Intelligence as your spellcasting ability for the spell. If the spell is a cantrip or a level 1 spell, you can cast it reliably. If the scroll contains a higher-level spell, you must first succeed on an Intelligence (Arcana) check (DC 10 plus the spell’s level). On a successful check, you cast the spell from the scroll. On a failed check, the scroll disintegrates.</p>",
+          "chatFlavor": ""
+        },
+        "duration": {
+          "units": "inst",
+          "expiry": null,
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "flags": {},
+        "range": {
+          "units": "self",
+          "override": false,
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "stationary": false,
+            "units": "ft",
+            "type": ""
+          },
+          "affects": {
+            "choice": false,
+            "type": ""
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "requireAttunement": false,
+          "requireIdentification": false,
+          "requireMagic": false,
+          "identifier": ""
+        },
+        "check": {
+          "associated": [
+            "arc"
+          ],
+          "dc": {
+            "calculation": "",
+            "formula": "10 + @scaling"
+          },
+          "visible": true,
+          "ability": "",
+          "bonus": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "use-magic-device",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Attunement Bonus",
+      "img": "icons/magic/symbols/star-solid-gold.webp",
+      "_id": "FZWFvTtuOvMIj003",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.attunement.max",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "WeYOVNR5R5fgq3LK",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "<p>The Use Magic Device feature allows you to attune to up to four magic items at once.</p>",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:thief"
+      }
+    }
+  }
+}

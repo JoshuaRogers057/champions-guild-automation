@@ -1,0 +1,50 @@
+{
+  "name": "Extra Attack",
+  "type": "feat",
+  "_id": "cgabrbExtraAttaO",
+  "img": "icons/skills/melee/spear-tips-triple-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>You can attack twice instead of once whenever you take the Attack action on your turn.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "license": "CC-BY-4.0",
+      "revision": 1
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 5,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Barbarian",
+    "activities": {},
+    "enchant": {},
+    "identifier": "extra-attack",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:battle-smith"
+      }
+    }
+  }
+}

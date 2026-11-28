@@ -1,0 +1,100 @@
+{
+  "name": "Expertise",
+  "type": "feat",
+  "_id": "cgargeExpertise0",
+  "img": "icons/magic/symbols/chevron-elipse-circle-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You gain &amp;Reference[Expertise] in two of your skill proficiencies of your choice. Sleight of Hand and Stealth are recommended if you have proficiency in them.</p><p>At Rogue level 6, you gain Expertise in two more of your skill proficiencies of your choice.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 2,
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Rogue",
+    "activities": {},
+    "enchant": {},
+    "identifier": "expertise",
+    "advancement": {
+      "4doj2kFD8sIYiX8X": {
+        "_id": "4doj2kFD8sIYiX8X",
+        "type": "Trait",
+        "configuration": {
+          "mode": "expertise",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 1,
+        "hint": "<p>You gain &amp;Reference[Expertise] in two of your skill proficiencies of your choice. Sleight of Hand and Stealth are recommended if you have proficiency in them.</p>",
+        "name": "Expertise",
+        "flags": {}
+      },
+      "sqWH6tnUg7jiGaEj": {
+        "_id": "sqWH6tnUg7jiGaEj",
+        "type": "Trait",
+        "configuration": {
+          "mode": "expertise",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        },
+        "value": {
+          "chosen": []
+        },
+        "level": 6,
+        "hint": "<p>You gain &amp;Reference[Expertise] in two more of your skill proficiencies of your choice.</p>",
+        "name": "Expertise",
+        "flags": {}
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "class:rogue"
+      }
+    }
+  }
+}

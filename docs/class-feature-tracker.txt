@@ -8,7 +8,7 @@ Artificer||1|Spellcasting|EB|skip|3|Sheet/advancement (INT half caster, tool foc
 Artificer||1|Tinker’s Magic|EB|skip|3|Mending from the sheet; mundane item creation by hand (INT uses/LR on the sheet)
 Artificer||2|Replicate Magic Item|EB|skip|3|Plans and created items by hand; the plan magic items are tracked on the Items tab
 Artificer||3|Artificer Subclass|EB|skip|3|Sheet/advancement or manual
-Artificer||4|Ability Score Improvement|EB|skip|3|Sheet/advancement or manual
+Artificer||4|Ability Score Improvement|EB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Artificer||6|Magic Item Tinker|EB|done|3|Charge Magic Item (BA, spend a slot: item regains charges = slot level) and Drain Magic Item (item vanishes, gain a level 1/2 slot, 1/LR) activities; Transmute by hand
 Artificer||7|Flash of Genius|EB|done|1|Reaction when you or a creature within 30 ft fails an ability check or save: add INT mod (min +1), asked; INT uses/LR
 Artificer||10|Magic Item Adept|EB|done|2|Attunement limit 4 (effect on system.attributes.attunement.max)
@@ -27,7 +27,7 @@ Artificer|Armorer|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manual
 Artificer|Armorer|3|Armorer Spells|EB|skip|3|Always-prepared spells from the sheet
 Artificer|Armorer|3|Arcane Armor|EB|skip|3|No Strength requirement, quick don/doff and focus by hand
 Artificer|Armorer|3|Armor Model|EB|done|1|Dreadnaught (Force Demolisher 1d10 reach + push/pull, Giant Stature BA Large +5 reach), Guardian (Thunder Pulse 1d8 + Disadvantage vs others, Defensive Field temp HP while Bloodied), Infiltrator (Lightning Launcher 1d6 + 1d6 once per turn, +5 ft Speed, Stealth Advantage); INT for model weapons
-Artificer|Armorer|5|Extra Attack|EB|skip|3|Sheet/advancement or manual
+Artificer|Armorer|5|Extra Attack|EB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Artificer|Armorer|9|Improved Armorer|EB|done|2|+1 attack/damage with the model weapon (Armor Replication by hand)
 Artificer|Armorer|15|Perfected Armor|EB|done|3|Bigger model weapon dice; Giant Stature Huge/+10 reach/STR Advantage; Guardian end-of-turn pull Reaction (STR save, pull 25 ft, attack); Infiltrator glimmer (Disadvantage on attacks vs you) + BA flight
 Artificer|Artillerist|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manual
@@ -40,7 +40,7 @@ Artificer|Battle Smith|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manua
 Artificer|Battle Smith|3|Battle Smith Spells|EB|skip|3|Always-prepared spells from the sheet
 Artificer|Battle Smith|3|Battle Ready|EB|done|1|INT for attack and damage with magic weapons; Martial proficiency from the sheet
 Artificer|Battle Smith|3|Steel Defender|EB|done|1|Summon actor scaled by Artificer level: Force-Empowered Rend, Repair (3/day), Deflect Attack Reaction (Disadvantage), Steel Bond
-Artificer|Battle Smith|5|Extra Attack|EB|skip|3|Sheet; trading an attack for the defender's Rend by hand
+Artificer|Battle Smith|5|Extra Attack|EB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet; trading an attack for the defender's Rend by hand
 Artificer|Battle Smith|9|Arcane Jolt|EB|done|2|Once per turn when you hit with a magic weapon or the defender hits: +2d6 Force or heal 2d6 within 30 ft (asked; INT uses/LR)
 Artificer|Battle Smith|15|Improved Defender|EB|done|3|Arcane Jolt 4d6; Deflect Attack deals 1d4+INT Force to the attacker
 Artificer|Cartographer|3|Tools of the Trade|EB|skip|3|Sheet/advancement or manual
@@ -58,17 +58,17 @@ Artificer|Reanimator|9|Improved Reanimation|RV|done|2|Death Burst 4d4; companion
 Artificer|Reanimator|9|Macabre Modifications|RV|done|2|Two options; adds Bloated (Large, push 10 ft, +INT to Death Burst), Gaunt (45 ft + climb, Frightened aura WIS save) and Moist (swim, Acid retaliation = INT)
 Artificer|Reanimator|15|Refined Reanimation|RV|done|3|Raise Dead 1/LR cast activity; Life Transfer Reaction (gain the companion's HP, companion dies with Death Burst); three modifications
 Barbarian||1|Rage|SRD|done|1|Rage effect, Rage Damage on STR attacks, ends Concentration; ends at the end of a turn you didn't attack/force a save/extend (module rule)
-Barbarian||1|Unarmored Defense|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredBarb
-Barbarian||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
+Barbarian||1|Unarmored Defense|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredBarb
+Barbarian||1|Weapon Mastery|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Barbarian||2|Danger Sense|SRD|done|1|Fixed copy: DEX save Advantage that switches off while Incapacitated (module rule).
 Barbarian||2|Reckless Attack|SRD|done|1|Prompt before the first STR attack of your turn; Advantage for you and against you until your next turn
 Barbarian||3|Barbarian Subclass|PHB|skip|3|Sheet/advancement or manual
-Barbarian||3|Primal Knowledge|SRD|skip|3|Sheet/advancement or manual
-Barbarian||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Barbarian||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
+Barbarian||3|Primal Knowledge|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Barbarian||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Barbarian||5|Extra Attack|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Barbarian||5|Fast Movement|SRD|done|1|Fixed copy: +10 ft unless in Heavy armor (module rule).
-Barbarian||7|Feral Instinct|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on Initiative
-Barbarian||7|Instinctive Pounce|SRD|skip|2|Move half Speed when raging - manual
+Barbarian||7|Feral Instinct|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on Initiative
+Barbarian||7|Instinctive Pounce|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Move half Speed when raging - manual
 Barbarian||9|Brutal Strike|SRD|done|2|Prompt before a reckless STR attack; extra 1d10/2d10 and the chosen Brutal Strike effect.
 Barbarian||11|Relentless Rage|SRD|done|2|Automatic CON save at 0 HP while raging (DC 10 +5 per use, reset on rests) - module rule.
 Barbarian||13|Improved Brutal Strike|SRD|done|3|Handled by Brutal Strike (extra options at 13, 2d10 and two effects at 17).
@@ -76,7 +76,7 @@ Barbarian||15|Persistent Rage|SRD|done|3|Fixed copy: Spends the other feature's 
 Barbarian||17|Improved Brutal Strike|SRD|done|3|Handled by Brutal Strike (extra options at 13, 2d10 and two effects at 17).
 Barbarian||18|Indomitable Might|SRD|done|3|STR check/save totals raised to your STR score (module rule).
 Barbarian||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Barbarian||20|Primal Champion|SRD|skip|3|+4 STR/CON from advancement
+Barbarian||20|Primal Champion|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: +4 STR/CON from advancement
 Barbarian|Path of the Berserker|3|Frenzy|SRD|done|1|Automatic Rage-Damage-count d6s on the first STR hit each turn while raging and reckless
 Barbarian|Path of the Berserker|6|Mindless Rage|SRD|done|2|Charmed/Frightened immunity on the Rage effect while raging.
 Barbarian|Path of the Berserker|10|Retaliation|SRD|done|2|Reaction prompt when damaged in melee; attacks with your melee weapon.
@@ -96,17 +96,17 @@ Barbarian|Path of the Zealot|6|Fanatical Focus|PHB|done|2|Once-per-Rage optional
 Barbarian|Path of the Zealot|10|Zealous Presence|PHB|done|2|Bonus Action Advantage effect for up to ten allies; Recharge spends a Rage use.
 Barbarian|Path of the Zealot|14|Rage of the Gods|PHB|done|3|Divine Warrior Form effect; Revivification Reaction prompt (module rule).
 Bard||1|Bardic Inspiration|SRD|done|1|Inspire gives the target an optional-bonus effect (prompt after a failed attack/save or on a check)
-Bard||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
-Bard||2|Expertise|SRD|skip|3|Sheet/advancement or manual
-Bard||2|Jack of All Trades|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium flag
+Bard||1|Spellcasting|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Bard||2|Expertise|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Bard||2|Jack of All Trades|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium flag
 Bard||3|Bard Subclass|PHB|skip|3|Sheet/advancement or manual
-Bard||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Bard||5|Font of Inspiration|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium: spend a slot to regain a use; SR recharge from level 5
+Bard||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Bard||5|Font of Inspiration|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium: spend a slot to regain a use; SR recharge from level 5
 Bard||7|Countercharm|SRD|done|2|Reaction prompt after a failed save vs Charmed/Frightened; reroll with Advantage (module rule).
-Bard||10|Magical Secrets|SRD|skip|3|Sheet/advancement or manual
+Bard||10|Magical Secrets|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Bard||18|Superior Inspiration|SRD|done|3|Bardic Inspiration back to 2 on Initiative (module rule).
 Bard||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Bard||20|Words of Creation|SRD|skip|3|Always-prepared Power Word Heal/Kill + second target - manual
+Bard||20|Words of Creation|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Always-prepared Power Word Heal/Kill + second target - manual
 Bard|College of Dance|3|Dazzling Footwork|PHB|done|2|Bard Unarmored Defense AC option; Unarmed Strike gets Dexterity (module) and the Bardic die for damage.
 Bard|College of Dance|6|Inspiring Movement|PHB|skip|3|Reaction movement - manual
 Bard|College of Dance|6|Tandem Footwork|PHB|done|3|Initiative prompt; adds the Bardic die to you and allies within 30 ft (module rule).
@@ -115,9 +115,9 @@ Bard|College of Glamour|3|Beguiling Magic|PHB|done|2|Prompt after Enchantment/Il
 Bard|College of Glamour|3|Mantle of Inspiration|PHB|done|2|Bonus Action spending Bardic Inspiration: 2x die temp HP to targeted creatures.
 Bard|College of Glamour|6|Mantle of Majesty|PHB|done|3|Mantle effect with Concentration; Command cast activity without a slot.
 Bard|College of Glamour|14|Unbreakable Majesty|PHB|done|3|Majesty effect; first hit each turn: attacker CHA save or it misses (module rule).
-Bard|College of Lore|3|Bonus Proficiencies|SRD|skip|3|Sheet/advancement or manual
+Bard|College of Lore|3|Bonus Proficiencies|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Bard|College of Lore|3|Cutting Words|SRD|done|1|Reaction prompt when an enemy's attack within 60 ft would hit; subtract the Bardic die (damage/check uses manual)
-Bard|College of Lore|6|Magical Discoveries|SRD|skip|3|Sheet/advancement or manual
+Bard|College of Lore|6|Magical Discoveries|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Bard|College of Lore|14|Peerless Skill|SRD|done|3|Optional Bardic die on a failed check (module rule keeps the die size).
 Bard|College of Spirits|3|Channeler|RV|skip|3|Guidance and focus from the sheet; 60-ft Guidance range by hand
 Bard|College of Spirits|3|Spirits from Beyond|RV|done|1|Giving Bardic Inspiration channels a random spirit (roll the BI die); Controlled Channeling BA picks one; Unleash Magic action runs the 12 spirit effects (heals, damage, Avenger, Advantage, temp HP, saves)
@@ -129,19 +129,19 @@ Bard|College of the Moon|6|Blessing of Moonlight|FR|done|2|Moonbeam option 1/LR:
 Bard|College of the Moon|14|Eventide’s Splendor|FR|done|3|Inspired Eclipse also makes the recipient Invisible with a 30-ft teleport; Lunar Vitality can use 1d6 instead of a BI die
 Bard|College of Valor|3|Combat Inspiration|PHB|done|2|Adds damage and AC-on-hit optional bonuses to your Bardic Inspiration.
 Bard|College of Valor|3|Martial Training|PHB|skip|3|Sheet/advancement or manual
-Bard|College of Valor|6|Extra Attack|SRD|skip|3|Sheet/advancement or manual
+Bard|College of Valor|6|Extra Attack|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Bard|College of Valor|14|Battle Magic|PHB|skip|3|Bonus Action weapon attack after an action spell - manual
-Cleric||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
-Cleric||1|Divine Order|SRD|skip|3|Sheet/advancement or manual
+Cleric||1|Spellcasting|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Cleric||1|Divine Order|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Cleric||2|Channel Divinity|SRD|done|1|Fixed copy: Divine Spark dice worked out from your Cleric level (no scale values needed).
 Cleric||3|Cleric Subclass|PHB|skip|3|Sheet/advancement or manual
-Cleric||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
+Cleric||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Cleric||5|Sear Undead|SRD|done|2|Turn Undead failures take WIS-mod d8 Radiant.
 Cleric||7|Blessed Strikes|SRD|done|1|Divine Strike (once per turn prompt for the type) and Potent Spellcasting (+WIS to Cleric cantrips) items
-Cleric||10|Divine Intervention|SRD|skip|3|Cast any level 5- Cleric spell free - manual
+Cleric||10|Divine Intervention|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Cast any level 5- Cleric spell free - manual
 Cleric||14|Improved Blessed Strikes|SRD|done|3|Divine Strike 2d8 (Blessed Strikes); cantrip temp HP prompt.
 Cleric||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Cleric||20|Greater Divine Intervention|SRD|skip|3|Wish - manual
+Cleric||20|Greater Divine Intervention|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Wish - manual
 Cleric|Arcana Domain|3|Arcana Domain Spells|AU|skip|3|Always-prepared spells from the sheet
 Cleric|Arcana Domain|3|Modify Magic|AU|done|1|Channel Divinity on a spell cast: Fortifying Spell (one target 2d8 + Cleric level temp HP) or Tenacious Spell (a creature that saves subtracts 1d6 from its first save against the spell)
 Cleric|Arcana Domain|3|Student of Arcana|AU|skip|3|Skill and Wizard cantrips from the sheet
@@ -158,7 +158,7 @@ Cleric|Knowledge Domain|3|Mind Magic|FR|done|2|Channel Divinity cast activities 
 Cleric|Knowledge Domain|6|Unfettered Mind|FR|skip|3|Telepathy and save proficiency from the sheet
 Cleric|Knowledge Domain|17|Divine Foreknowledge|FR|done|3|BA: Advantage on D20 Tests for 1 hour (1/LR, or a level 6+ slot)
 Cleric|Life Domain|3|Disciple of Life|SRD|done|1|Slot healing spells add 2 + slot level automatically
-Cleric|Life Domain|3|Life Domain Spells|SRD|skip|3|Sheet/advancement or manual
+Cleric|Life Domain|3|Life Domain Spells|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Cleric|Life Domain|3|Preserve Life|SRD|done|2|midi-qol sample item checked (activities run)
 Cleric|Life Domain|6|Blessed Healer|SRD|done|2|midi-qol sample item checked (activities run)
 Cleric|Life Domain|17|Supreme Healing|SRD|done|3|Healing dice maximized on your spells and Channel Divinity.
@@ -177,22 +177,22 @@ Cleric|War Domain|3|War Domain Spells|PHB|skip|3|Sheet/advancement or manual
 Cleric|War Domain|3|War Priest|PHB|done|1|Bonus Action attack activity (pick the weapon), WIS-mod uses per Short Rest
 Cleric|War Domain|6|War God’s Blessing|PHB|done|3|Cast activities spending Channel Divinity, without Concentration.
 Cleric|War Domain|17|Avatar of Battle|PHB|done|3|B/P/S resistance.
-Druid||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
-Druid||1|Druidic|SRD|skip|3|Sheet/advancement or manual
-Druid||1|Primal Order|SRD|skip|3|Sheet/advancement or manual
+Druid||1|Spellcasting|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Druid||1|Druidic|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Druid||1|Primal Order|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Druid||2|Wild Shape|SRD|done|1|dnd5e Transform (Wild Shape preset): Compendium Browser of CR-limited Beasts (no fly before 8), keeps HP/mental/features, temp HP = Druid level
 Druid||2|Wild Companion|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Druid||3|Druid Subclass|PHB|skip|3|Sheet/advancement or manual
-Druid||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
+Druid||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Druid||5|Wild Resurgence|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Druid||7|Elemental Fury|SRD|done|1|Primal Strike (once per turn prompt for the type) and Potent Spellcasting (+WIS to Druid cantrips) items
 Druid||15|Improved Elemental Fury|SRD|done|3|Primal Strike 2d8 handled by Elemental Fury; range extension manual.
-Druid||18|Beast Spells|SRD|skip|3|Sheet/advancement or manual
+Druid||18|Beast Spells|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Druid||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Druid||20|Archdruid|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Wild Shape uses worked out from your Druid level.
 Druid|Circle of the Land|3|Circle of the Land Spells|SRD|done|2|Choose Land activity adds the land's spells (always prepared) and removes the old ones.
 Druid|Circle of the Land|3|Land’s Aid|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Dice worked out from your Druid level.
-Druid|Circle of the Land|6|Natural Recovery|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium activities
+Druid|Circle of the Land|6|Natural Recovery|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium activities
 Druid|Circle of the Land|10|Nature’s Ward|SRD|done|3|midi-qol sample item checked (activities run)
 Druid|Circle of the Land|14|Nature’s Sanctuary|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Druid|Circle of the Moon|3|Circle Forms|PHB|done|1|Wild Shape (Circle Forms) transform: CR level/3, AC 13 + WIS, temp HP 3x Druid level, Moon spells castable; spends a Wild Shape use
@@ -210,21 +210,21 @@ Druid|Circle of the Stars|3|Starry Form|PHB|done|1|Constellation prompt (Wild Sh
 Druid|Circle of the Stars|6|Cosmic Omen|PHB|done|2|Long Rest Weal/Woe roll (module rule); activity gives +1d6 optional bonus or -1d6 on the next D20 Test.
 Druid|Circle of the Stars|10|Twinkling Constellations|PHB|done|3|Part of Starry Form: 2d8, Dragon fly 20 + hover, Change Constellation activity
 Druid|Circle of the Stars|14|Full of Stars|PHB|done|3|Part of Starry Form: B/P/S resistance at 14
-Fighter||1|Fighting Style|SRD|skip|3|Sheet/advancement or manual
-Fighter||1|Second Wind|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium heal 1d10 + level; check uses scale
-Fighter||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
-Fighter||2|Action Surge|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium utility (extra action is manual)
+Fighter||1|Fighting Style|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Fighter||1|Second Wind|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium heal 1d10 + level; check uses scale
+Fighter||1|Weapon Mastery|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Fighter||2|Action Surge|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium utility (extra action is manual)
 Fighter||2|Tactical Mind|SRD|done|2|Optional +1d10 on a failed check, spending a Second Wind use.
 Fighter||3|Fighter Subclass|PHB|skip|3|Sheet/advancement or manual
-Fighter||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Fighter||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
-Fighter||5|Tactical Shift|SRD|skip|2|Move half speed on Second Wind - manual
+Fighter||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Fighter||5|Extra Attack|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Fighter||5|Tactical Shift|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Move half speed on Second Wind - manual
 Fighter||9|Indomitable|SRD|done|2|Optional reroll of a failed save + Fighter level, using Indomitable uses.
-Fighter||9|Tactical Master|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium mastery swap
-Fighter||11|Two Extra Attacks|SRD|skip|3|Sheet/advancement or manual
+Fighter||9|Tactical Master|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium mastery swap
+Fighter||11|Two Extra Attacks|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Fighter||13|Studied Attacks|SRD|done|3|Miss: Advantage on your next attack against that creature.
 Fighter||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Fighter||20|Three Extra Attacks|SRD|skip|3|Sheet/advancement or manual
+Fighter||20|Three Extra Attacks|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Fighter|Arcane Archer|3|Arcane Archer Lore|AU|skip|3|Cantrip and skills from the sheet
 Fighter|Arcane Archer|3|Arcane Shot|AU|done|1|Once per turn after an Ammunition weapon hit, offer your known Arcane Shot options; die d6/d8/d10/d12 by level, DC 8 + INT + PB, INT uses/SR
 Fighter|Arcane Archer|7|Curving Shot|AU|done|2|After a missed Ammunition attack, offer a BA re-attack against a creature within 60 ft of the target
@@ -252,11 +252,11 @@ Fighter|Battle Master|7|Know Your Enemy|PHB|skip|3|DM tells resistances - manual
 Fighter|Battle Master|10|Improved Combat Superiority|PHB|done|2|Die size is worked out from your Fighter level by the maneuver automation.
 Fighter|Battle Master|15|Relentless|SRD|done|3|Free d8 maneuver once per turn when out of dice (Combat Superiority prompt).
 Fighter|Battle Master|18|Ultimate Combat Superiority|PHB|done|3|Die size worked out from your Fighter level.
-Fighter|Champion|3|Improved Critical|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium crit 19 (should include Unarmed Strike)
-Fighter|Champion|3|Remarkable Athlete|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium flag; post-crit move is manual
-Fighter|Champion|7|Additional Fighting Style|SRD|skip|3|Sheet/advancement or manual
+Fighter|Champion|3|Improved Critical|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium crit 19 (should include Unarmed Strike)
+Fighter|Champion|3|Remarkable Athlete|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium flag; post-crit move is manual
+Fighter|Champion|7|Additional Fighting Style|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Fighter|Champion|10|Heroic Warrior|SRD|done|2|Heroic Inspiration at the start of your turn (module rule).
-Fighter|Champion|15|Superior Critical|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium crit 18
+Fighter|Champion|15|Superior Critical|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium crit 18
 Fighter|Champion|18|Survivor|SRD|done|3|Death save Advantage; turn-start heal while Bloodied.
 Fighter|Eldritch Knight|3|Spellcasting|SRD|skip|3|Sheet/advancement or manual
 Fighter|Eldritch Knight|3|War Bond|PHB|skip|3|Bonded weapon - roleplay
@@ -290,27 +290,27 @@ Fighter|Psi Warrior|10|Guarded Mind|PHB|done|3|Psychic resistance; activity spen
 Fighter|Psi Warrior|15|Bulwark of Force|PHB|done|3|Half Cover effect on the targets for 1 minute.
 Fighter|Psi Warrior|18|Telekinetic Master|PHB|done|3|Telekinesis cast activity (once per Long Rest).
 Monk||1|Martial Arts|SRD|done|1|Martial Arts die on Unarmed/Monk weapons; Finesse + better of STR/DEX added to them by the module
-Monk||1|Unarmored Defense|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredMonk
+Monk||1|Unarmored Defense|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium AC calc unarmoredMonk
 Monk||2|Monk’s Focus|SRD|done|1|Flurry of Blows makes the Unarmed Strikes; Focus = Monk level
 Monk||2|Unarmored Movement|SRD|done|1|Fixed copy: Speed bonus by Monk level while unarmored and without a Shield (module rule).
 Monk||2|Uncanny Metabolism|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters. Martial Arts die worked out from your Monk level; offered on Initiative (module rule).
 Monk||3|Deflect Attacks|SRD|done|1|Reaction prompt when hit (module rule), Redirect save + damage when reduced to 0
 Monk||3|Monk Subclass|PHB|skip|3|Sheet/advancement or manual
-Monk||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Monk||4|Slow Fall|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium reduce fall damage
-Monk||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
+Monk||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Monk||4|Slow Fall|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium reduce fall damage
+Monk||5|Extra Attack|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Monk||5|Stunning Strike|SRD|done|1|Prompt after Monk weapon/unarmed hits (once per turn, 1 Focus); Stunned or Slowed + Off Balance
 Monk||6|Empowered Strikes|SRD|done|2|Unarmed Strike damage becomes Force (toggle).
 Monk||7|Evasion|SRD|done|1|superSaver/semiSuperSaver on DEX (not while Incapacitated)
-Monk||9|Acrobatic Movement|SRD|skip|3|Sheet/advancement or manual
+Monk||9|Acrobatic Movement|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Monk||10|Heightened Focus|SRD|done|2|Handled by Monk's Focus (3 Flurry strikes, Patient Defense temp HP).
-Monk||10|Self-Restoration|PHB|skip|3|End Charmed/Frightened/Poisoned at end of turn - manual
+Monk||10|Self-Restoration|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: End Charmed/Frightened/Poisoned at end of turn - manual
 Monk||13|Deflect Energy|SRD|done|3|Deflect Attacks covers every damage type from level 13 (module rule).
 Monk||14|Disciplined Survivor|SRD|done|3|All save proficiencies; optional reroll spending Focus.
 Monk||15|Perfect Focus|SRD|done|3|Focus back to 4 on Initiative (module rule).
 Monk||18|Superior Defense|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Monk||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Monk||20|Body and Mind|SRD|skip|3|+4 DEX/WIS from advancement
+Monk||20|Body and Mind|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: +4 DEX/WIS from advancement
 Monk|Warrior of Mercy|3|Hand of Harm|PHB|done|1|Prompt after unarmed hits (1 Focus): +MA die + WIS Necrotic; Poisoned from level 6
 Monk|Warrior of Mercy|3|Hand of Healing|PHB|done|1|Heal activity: MA die + WIS, 1 Focus
 Monk|Warrior of Mercy|3|Implements of Mercy|PHB|skip|3|Sheet/advancement or manual
@@ -333,30 +333,30 @@ Monk|Warrior of the Mystic Arts|11|Focused Strike|AU|done|2|After Stunning Strik
 Monk|Warrior of the Mystic Arts|17|Improved Mystic Fighting Style|AU|skip|3|Swapping Flurry strikes for a spell by hand
 Monk|Warrior of the Open Hand|3|Open Hand Technique|SRD|done|1|Prompt after Flurry hits: Addle / Push / Topple
 Monk|Warrior of the Open Hand|6|Wholeness of Body|SRD|done|2|Fixed copy: Martial Arts die worked out from your Monk level (no scale values needed).
-Monk|Warrior of the Open Hand|11|Fleet Step|SRD|skip|3|Manual
+Monk|Warrior of the Open Hand|11|Fleet Step|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Manual
 Monk|Warrior of the Open Hand|17|Quivering Palm|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
-Paladin||1|Lay On Hands|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium pool heal + remove Poisoned; check pool = 5x level and amount choice
-Paladin||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
-Paladin||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
-Paladin||2|Fighting Style|SRD|skip|3|Sheet/advancement or manual
+Paladin||1|Lay On Hands|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium pool heal + remove Poisoned; check pool = 5x level and amount choice
+Paladin||1|Spellcasting|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Paladin||1|Weapon Mastery|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Paladin||2|Fighting Style|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Paladin||2|Paladin’s Smite|SRD|done|1|Free Divine Smite + smite prompt after melee hits
-Paladin||3|Channel Divinity|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium Divine Sense
+Paladin||3|Channel Divinity|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Divine Sense
 Paladin||3|Paladin Subclass|PHB|skip|3|Sheet/advancement or manual
-Paladin||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Paladin||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
+Paladin||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Paladin||5|Extra Attack|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Paladin||5|Faithful Steed|SRD|done|2|Fixed copy: Adds a free Find Steed cast (the compendium item had no activity).
 Paladin||6|Aura of Protection|SRD|done|1|+CHA to saves for you and allies in 10/30 ft, kept up to date as tokens move (module rule)
-Paladin||9|Abjure Foes|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium WIS save Frightened (ends on damage)
+Paladin||9|Abjure Foes|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium WIS save Frightened (ends on damage)
 Paladin||10|Aura of Courage|SRD|done|2|Frightened immunity aura (module rule).
 Paladin||11|Radiant Strikes|SRD|done|1|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - 
 Paladin||14|Restoring Touch|SRD|done|3|Spends 5 Lay on Hands points and ends a chosen condition.
 Paladin||18|Aura Expansion|SRD|done|3|Aura ranges grow at 18 in the aura automation.
 Paladin||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Paladin|Oath of Devotion|3|Oath of Devotion Spells|SRD|skip|3|Sheet/advancement or manual
-Paladin|Oath of Devotion|3|Sacred Weapon|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium enchant (+CHA to attacks, radiant, light)
+Paladin|Oath of Devotion|3|Oath of Devotion Spells|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Paladin|Oath of Devotion|3|Sacred Weapon|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium enchant (+CHA to attacks, radiant, light)
 Paladin|Oath of Devotion|7|Aura of Devotion|SRD|done|2|Charmed immunity aura (module rule).
 Paladin|Oath of Devotion|15|Smite of Protection|SRD|done|3|Divine Smite: Half Cover for allies in your aura.
-Paladin|Oath of Devotion|20|Holy Nimbus|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium aura damage
+Paladin|Oath of Devotion|20|Holy Nimbus|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium aura damage
 Paladin|Oath of Glory|3|Inspiring Smite|PHB|done|2|Prompt after Divine Smite; split 2d8 + level temp HP.
 Paladin|Oath of Glory|3|Oath of Glory Spells|PHB|skip|3|Sheet/advancement or manual
 Paladin|Oath of Glory|3|Peerless Athlete|PHB|done|2|Channel Divinity: Advantage on Athletics and Acrobatics for 1 hour.
@@ -379,21 +379,21 @@ Paladin|Oath of Vengeance|3|Vow of Enmity|PHB|done|1|midi-qol sample item checke
 Paladin|Oath of Vengeance|7|Relentless Avenger|PHB|done|2|Opportunity Attack hit: target's Speed 0 this turn.
 Paladin|Oath of Vengeance|15|Soul of Vengeance|PHB|done|3|Reaction activity: melee attack against the targeted creature.
 Paladin|Oath of Vengeance|20|Avenging Angel|PHB|done|3|Fly 60 effect; frightful aura at enemy turn starts (module rule).
-Ranger||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
+Ranger||1|Spellcasting|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Ranger||1|Favored Enemy|SRD|done|1|Fixed copy: Free Hunter's Mark casts use the module's automated Hunter's Mark spell.
-Ranger||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
-Ranger||2|Deft Explorer|SRD|skip|3|Sheet/advancement or manual
-Ranger||2|Fighting Style|SRD|skip|3|Sheet/advancement or manual
+Ranger||1|Weapon Mastery|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Ranger||2|Deft Explorer|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Ranger||2|Fighting Style|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Ranger||3|Ranger Subclass|PHB|skip|3|Sheet/advancement or manual
-Ranger||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Ranger||5|Extra Attack|SRD|skip|3|Sheet/advancement or manual
-Ranger||6|Roving|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium +10 ft, climb/swim
-Ranger||9|Expertise|SRD|skip|3|Sheet/advancement or manual
-Ranger||10|Tireless|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium temp HP / exhaustion
+Ranger||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Ranger||5|Extra Attack|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Ranger||6|Roving|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium +10 ft, climb/swim
+Ranger||9|Expertise|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Ranger||10|Tireless|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium temp HP / exhaustion
 Ranger||13|Relentless Hunter|SRD|done|3|Damage doesn't call for a Concentration save on Hunter's Mark (module rule).
-Ranger||14|Nature’s Veil|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium Invisible until end of next turn
+Ranger||14|Nature’s Veil|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Invisible until end of next turn
 Ranger||17|Precise Hunter|SRD|done|3|Advantage against your Hunter's Mark target.
-Ranger||18|Feral Senses|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium Blindsight 30
+Ranger||18|Feral Senses|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Blindsight 30
 Ranger||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Ranger||20|Foe Slayer|SRD|done|3|Hunter's Mark die becomes d10 (Hunter's Mark automation).
 Ranger|Beast Master|3|Primal Companion|PHB|done|1|Summon Beast of the Land/Sea/Sky (AC 13+WIS, HP by Ranger level, spell attack, +WIS damage, Primal Bond); a new beast replaces the old (module rule)
@@ -417,32 +417,32 @@ Ranger|Hollow Warden|3|Wrath of the Wild|RV|done|1|BA (spends a Favored Enemy us
 Ranger|Hollow Warden|7|Hungering Might|RV|done|2|+WIS to CON saves; once per turn while transformed and Bloodied, a hit heals 1d10 + WIS
 Ranger|Hollow Warden|11|Rot and Violence|RV|done|2|Menacing Aura - failed Unnerving Aura saves also block healing and Reactions; Strangling Roots extra Sap/Slow mastery by hand
 Ranger|Hollow Warden|15|Ancient Might|RV|done|3|Ominous Strikes + WIS damage vs Frightened targets; Persistent Wrath (0 HP while transformed -> 2 x Ranger level, 1/LR or level 4+ slot); Exhaustion immunity
-Ranger|Hunter|3|Hunter’s Lore|SRD|skip|3|DM tells resistances - manual
+Ranger|Hunter|3|Hunter’s Lore|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: DM tells resistances - manual
 Ranger|Hunter|3|Hunter’s Prey|SRD|done|1|Choose Option activity; Colossus Slayer automatic, Horde Breaker manual
 Ranger|Hunter|7|Defensive Tactics|SRD|done|2|Choose Option: Escape the Horde effect or Multiattack Defense (module rule).
 Ranger|Hunter|11|Superior Hunter’s Prey|SRD|done|3|Once per turn, the Hunter's Mark die to a second creature within 30 ft.
-Ranger|Hunter|15|Superior Hunter’s Defense|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium reaction resistance by type
+Ranger|Hunter|15|Superior Hunter’s Defense|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium reaction resistance by type
 Ranger|Winter Walker|3|Frigid Explorer|FR|done|1|Cold Resistance; your weapon/Ranger damage ignores Cold Resistance; Polar Strikes +1d4 Cold once per turn on a weapon hit (1d6 at 11)
 Ranger|Winter Walker|3|Hunter’s Rime|FR|done|1|Casting Hunter's Mark gives 1d10 + Ranger level temp HP; marked creatures can't Disengage (by hand)
 Ranger|Winter Walker|3|Winter Walker Spells|FR|skip|3|Always-prepared spells from the sheet
 Ranger|Winter Walker|7|Fortifying Soul|FR|done|2|Magic action: up to WIS creatures heal 1d10 + Ranger level and get Advantage on saves vs Frightened for 1 hour (1/LR)
 Ranger|Winter Walker|11|Chilling Retribution|FR|done|2|Reaction when hit: WIS save or Stunned (Speed 0) until the end of your next turn (WIS uses/LR)
 Ranger|Winter Walker|15|Frozen Haunt|FR|done|3|Hunter's Mark form: Cold immunity, 15-ft 2d4 Cold to chosen creatures on adopt and each turn start, Grappled/Prone/Restrained immunity (1/LR or level 4+ slot)
-Rogue||1|Expertise|SRD|skip|3|Sheet/advancement or manual
+Rogue||1|Expertise|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Rogue||1|Sneak Attack|SRD|done|1|CGA's own Sneak Attack (2024 rules: Advantage or ally within 5 ft, Finesse/Ranged, once per turn) - replaces midi's
-Rogue||1|Thieves’ Cant|SRD|skip|3|Sheet/advancement or manual
-Rogue||1|Weapon Mastery|SRD|skip|3|Sheet/advancement or manual
-Rogue||2|Cunning Action|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium Dash/Disengage/Hide
+Rogue||1|Thieves’ Cant|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Rogue||1|Weapon Mastery|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Rogue||2|Cunning Action|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Dash/Disengage/Hide
 Rogue||3|Rogue Subclass|PHB|skip|3|Sheet/advancement or manual
 Rogue||3|Steady Aim|SRD|done|2|Activity effects: Advantage on the next attack this turn, Speed 0.
-Rogue||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
+Rogue||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Rogue||5|Cunning Strike|SRD|done|1|Choice in the Sneak Attack prompt (Poison/Trip/Withdraw; Daze/Obscure/Knock Out at 14); saves run automatically
 Rogue||5|Uncanny Dodge|SRD|done|1|midi-qol sample item checked (activities run)
 Rogue||7|Evasion|SRD|done|1|superSaver/semiSuperSaver on DEX (not while Incapacitated)
-Rogue||7|Reliable Talent|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium flag
+Rogue||7|Reliable Talent|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium flag
 Rogue||11|Improved Cunning Strike|SRD|done|3|Second Cunning Strike effect in the Sneak Attack prompt.
 Rogue||14|Devious Strikes|SRD|done|3|Daze/Knock Out/Obscure in the Cunning Strike choices.
-Rogue||15|Slippery Mind|SRD|skip|3|Sheet/advancement or manual
+Rogue||15|Slippery Mind|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Rogue||18|Elusive|SRD|done|3|Attacks against you can't have Advantage.
 Rogue||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Rogue||20|Stroke of Luck|SRD|done|3|Optional: a failed D20 Test becomes a 20.
@@ -472,21 +472,21 @@ Rogue|Soulknife|3|Psychic Blades|PHB|done|1|Psychic Blade (melee/thrown) and Bon
 Rogue|Soulknife|9|Soul Blades|PHB|done|2|Homing Strikes prompt (module rule); Psychic Teleportation distance roll.
 Rogue|Soulknife|13|Psychic Veil|PHB|done|3|Invisible effect for 1 hour (ends when you deal damage).
 Rogue|Soulknife|17|Rend Mind|PHB|done|3|Prompt after a Psychic Blade Sneak Attack; WIS save or Stunned.
-Rogue|Thief|3|Fast Hands|SRD|skip|3|Sheet/advancement or manual
-Rogue|Thief|3|Second-Story Work|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium climb speed
-Rogue|Thief|9|Supreme Sneak|SRD|skip|3|Manual
-Rogue|Thief|13|Use Magic Device|SRD|skip|3|Sheet/advancement or manual
-Rogue|Thief|17|Thief’s Reflexes|SRD|skip|3|Two turns in round 1 - manual
-Sorcerer||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
+Rogue|Thief|3|Fast Hands|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Rogue|Thief|3|Second-Story Work|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium climb speed
+Rogue|Thief|9|Supreme Sneak|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Manual
+Rogue|Thief|13|Use Magic Device|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Rogue|Thief|17|Thief’s Reflexes|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Two turns in round 1 - manual
+Sorcerer||1|Spellcasting|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Sorcerer||1|Innate Sorcery|SRD|done|1|midi-qol sample item checked (activities run)
-Sorcerer||2|Font of Magic|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium slot <-> sorcery point conversions
-Sorcerer||2|Metamagic|SRD|skip|3|Sheet/advancement or manual
+Sorcerer||2|Font of Magic|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium slot <-> sorcery point conversions
+Sorcerer||2|Metamagic|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Sorcerer||3|Sorcerer Subclass|PHB|skip|3|Sheet/advancement or manual
-Sorcerer||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
+Sorcerer||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Sorcerer||5|Sorcerous Restoration|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Sorcerer||7|Sorcery Incarnate|SRD|done|2|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Sorcerer||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Sorcerer||20|Arcane Apotheosis|SRD|skip|3|Free Metamagic once per turn - manual
+Sorcerer||20|Arcane Apotheosis|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Free Metamagic once per turn - manual
 Sorcerer|Aberrant Sorcery|3|Psionic Spells|PHB|skip|3|Sheet/advancement or manual
 Sorcerer|Aberrant Sorcery|3|Telepathic Speech|PHB|skip|3|Sheet/advancement or manual
 Sorcerer|Aberrant Sorcery|6|Psionic Sorcery|PHB|done|3|Reminder; spend Sorcery Points by hand.
@@ -498,11 +498,11 @@ Sorcerer|Clockwork Sorcery|3|Restore Balance|PHB|done|2|Reaction prompt to cance
 Sorcerer|Clockwork Sorcery|6|Bastion of Law|PHB|done|2|Ward of d8s (Sorcery Points); damage prompt spends dice (module rule).
 Sorcerer|Clockwork Sorcery|14|Trance of Order|PHB|done|3|No Advantage against you; d20 minimum 10 on your tests.
 Sorcerer|Clockwork Sorcery|18|Clockwork Cavalcade|PHB|done|3|Use tracker; effects are applied by hand.
-Sorcerer|Draconic Sorcery|3|Draconic Resilience|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium AC + HP
-Sorcerer|Draconic Sorcery|3|Draconic Spells|SRD|skip|3|Sheet/advancement or manual
+Sorcerer|Draconic Sorcery|3|Draconic Resilience|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium AC + HP
+Sorcerer|Draconic Sorcery|3|Draconic Spells|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Sorcerer|Draconic Sorcery|6|Elemental Affinity|SRD|done|2|Choose Type sets resistance; +CHA to spell damage of that type.
 Sorcerer|Draconic Sorcery|14|Dragon Wings|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
-Sorcerer|Draconic Sorcery|18|Dragon Companion|SRD|skip|3|Summon Dragon without concentration - manual
+Sorcerer|Draconic Sorcery|18|Dragon Companion|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Summon Dragon without concentration - manual
 Sorcerer|Metamagic||Careful Spell|SRD|done|1|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
 Sorcerer|Metamagic||Distant Spell|SRD|done|2|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
 Sorcerer|Metamagic||Empowered Spell|SRD|done|2|midi-qol sample item checked (activities run) - midi-qol ships it (verify with 2024 costs)
@@ -528,13 +528,13 @@ Sorcerer|Wild Magic Sorcery|3|Tides of Chaos|PHB|done|2|Advantage on your next D
 Sorcerer|Wild Magic Sorcery|6|Bend Luck|PHB|done|3|Spends a Sorcery Point; +1d4 optional bonus or -1d4 on the next D20 Test.
 Sorcerer|Wild Magic Sorcery|14|Controlled Chaos|PHB|done|3|Wild Magic Surge rolls the d100 twice.
 Sorcerer|Wild Magic Sorcery|18|Tamed Surge|PHB|done|3|Use tracker; pick the effect yourself.
-Warlock||1|Eldritch Invocations|SRD|skip|3|Sheet/advancement or manual
-Warlock||1|Pact Magic|SRD|skip|3|Sheet/advancement or manual
-Warlock||2|Magical Cunning|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium regain half pact slots
+Warlock||1|Eldritch Invocations|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Warlock||1|Pact Magic|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Warlock||2|Magical Cunning|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium regain half pact slots
 Warlock||3|Warlock Subclass|PHB|skip|3|Sheet/advancement or manual
-Warlock||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Warlock||9|Contact Patron|SRD|skip|3|Sheet/advancement or manual
-Warlock||11|Mystic Arcanum|SRD|skip|3|Sheet/advancement or manual
+Warlock||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Warlock||9|Contact Patron|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Warlock||11|Mystic Arcanum|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Warlock||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
 Warlock||20|Eldritch Master|SRD|done|3|Fixed copy: Spends the other feature's uses by identifier, so it works on imported characters.
 Warlock|Archfey Patron|3|Archfey Spells|PHB|skip|3|Sheet/advancement or manual
@@ -548,38 +548,38 @@ Warlock|Celestial Patron|6|Radiant Soul|PHB|done|2|Radiant resistance; +CHA to o
 Warlock|Celestial Patron|10|Celestial Resilience|PHB|done|3|Temp HP for you after rests (module rule); allies by hand.
 Warlock|Celestial Patron|14|Searing Vengeance|PHB|done|3|Turn-start prompt at 0 HP: heal half, radiant burst + Blinded (module rule).
 Warlock|Eldritch Invocation||Agonizing Blast|SRD|done|1|Eldritch Blast fix adds CHA automatically
-Warlock|Eldritch Invocation||Armor of Shadows|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium Mage Armor
-Warlock|Eldritch Invocation||Ascendant Step|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
-Warlock|Eldritch Invocation||Devil’s Sight|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium darkvision 120 (sees magical darkness)
-Warlock|Eldritch Invocation||Devouring Blade|SRD|skip|3|Extra attack
-Warlock|Eldritch Invocation||Eldritch Mind|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on concentration
+Warlock|Eldritch Invocation||Armor of Shadows|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Mage Armor
+Warlock|Eldritch Invocation||Ascendant Step|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Devil’s Sight|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium darkvision 120 (sees magical darkness)
+Warlock|Eldritch Invocation||Devouring Blade|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Extra attack
+Warlock|Eldritch Invocation||Eldritch Mind|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium Advantage on concentration
 Warlock|Eldritch Invocation||Eldritch Smite|SRD|done|2|Weapon-hit prompt: spend a pact slot for (1 + level)d8 Force + Prone.
-Warlock|Eldritch Invocation||Eldritch Spear|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium range enchant
-Warlock|Eldritch Invocation||Fiendish Vigor|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium max temp HP
-Warlock|Eldritch Invocation||Gaze of Two Minds|SRD|skip|3|Manual
-Warlock|Eldritch Invocation||Gift of the Depths|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Eldritch Spear|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium range enchant
+Warlock|Eldritch Invocation||Fiendish Vigor|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium max temp HP
+Warlock|Eldritch Invocation||Gaze of Two Minds|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Manual
+Warlock|Eldritch Invocation||Gift of the Depths|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
 Warlock|Eldritch Invocation||Gift of the Protectors|SRD|done|3|Reminder; apply the 1 HP by hand.
-Warlock|Eldritch Invocation||Investment of the Chain Master|SRD|done|2|dnd5e compendium item checked (activities run, effects OK) - Compendium familiar options
-Warlock|Eldritch Invocation||Lessons of the First Ones|SRD|skip|3|Sheet/advancement or manual
+Warlock|Eldritch Invocation||Investment of the Chain Master|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium familiar options
+Warlock|Eldritch Invocation||Lessons of the First Ones|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Warlock|Eldritch Invocation||Lifedrinker|SRD|done|2|Once per turn +1d6 (type choice) and an optional Hit Die heal.
-Warlock|Eldritch Invocation||Mask of Many Faces|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
-Warlock|Eldritch Invocation||Master of Myriad Forms|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
-Warlock|Eldritch Invocation||Misty Visions|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
-Warlock|Eldritch Invocation||One with Shadows|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
-Warlock|Eldritch Invocation||Otherworldly Leap|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
-Warlock|Eldritch Invocation||Pact of the Blade|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium pact weapon enchant (CHA attacks, damage type)
+Warlock|Eldritch Invocation||Mask of Many Faces|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Master of Myriad Forms|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Misty Visions|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||One with Shadows|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Otherworldly Leap|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Pact of the Blade|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium pact weapon enchant (CHA attacks, damage type)
 Warlock|Eldritch Invocation||Pact of the Chain|SRD|done|1|Fixed copy: Find Familiar without a spell slot (the compendium version tried to spend a resource that doesn't exist).
-Warlock|Eldritch Invocation||Pact of the Tome|SRD|skip|3|Sheet/advancement or manual
+Warlock|Eldritch Invocation||Pact of the Tome|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Warlock|Eldritch Invocation||Repelling Blast|SRD|done|1|Repelling Blast toggle
-Warlock|Eldritch Invocation||Thirsting Blade|SRD|skip|2|Extra Attack with pact weapon
-Warlock|Eldritch Invocation||Visions of Distant Realms|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
-Warlock|Eldritch Invocation||Whispers of the Grave|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
-Warlock|Eldritch Invocation||Witch Sight|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium truesight 30
+Warlock|Eldritch Invocation||Thirsting Blade|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Extra Attack with pact weapon
+Warlock|Eldritch Invocation||Visions of Distant Realms|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Whispers of the Grave|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
+Warlock|Eldritch Invocation||Witch Sight|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium truesight 30
 Warlock|Fiend Patron|3|Dark One’s Blessing|SRD|done|1|Automatic temp HP when an enemy drops to 0 by you or within 10 ft (module rule)
-Warlock|Fiend Patron|3|Fiend Spells|SRD|skip|3|Sheet/advancement or manual
+Warlock|Fiend Patron|3|Fiend Spells|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Warlock|Fiend Patron|6|Dark One’s Own Luck|SRD|done|2|Optional +1d10 on checks and saves, using this feature's uses.
-Warlock|Fiend Patron|10|Fiendish Resilience|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium resistance choice
-Warlock|Fiend Patron|14|Hurl Through Hell|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium CHA save 8d10 psychic
+Warlock|Fiend Patron|10|Fiendish Resilience|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium resistance choice
+Warlock|Fiend Patron|14|Hurl Through Hell|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium CHA save 8d10 psychic
 Warlock|Great Old One Patron|3|Awakened Mind|PHB|skip|3|Sheet/advancement or manual
 Warlock|Great Old One Patron|3|Great Old One Spells|PHB|skip|3|Sheet/advancement or manual
 Warlock|Great Old One Patron|3|Psychic Spells|PHB|done|2|Prompt to change Warlock spell damage to Psychic.
@@ -597,16 +597,16 @@ Warlock|Vestige Patron|3|Vestige Spells|AU|skip|3|Chosen domain spells from the 
 Warlock|Vestige Patron|6|Vestige Power|AU|done|2|Divine Power returns on a Short Rest / Magical Cunning; you share the vestige's Resistance within 30 ft
 Warlock|Vestige Patron|10|Vestige Recovery|AU|done|3|Reaction when the vestige would drop to 0 HP: spend a Pact slot, it returns to max HP and teleports 30 ft (1/LR)
 Warlock|Vestige Patron|14|Semblance of Life|AU|done|3|Magic action: the vestige becomes the matching Summon Celestial/Fiend/Undead spirit (level = half Warlock level) for 1 hour with temp HP = spirit HP (1/LR)
-Wizard||1|Spellcasting|SRD|skip|3|Sheet/advancement or manual
-Wizard||1|Ritual Adept|SRD|skip|3|Sheet/advancement or manual
-Wizard||1|Arcane Recovery|SRD|done|1|dnd5e compendium item checked (activities run, effects OK) - Compendium recover slots
-Wizard||2|Scholar|SRD|skip|3|Sheet/advancement or manual
+Wizard||1|Spellcasting|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Wizard||1|Ritual Adept|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Wizard||1|Arcane Recovery|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium recover slots
+Wizard||2|Scholar|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Wizard||3|Wizard Subclass|PHB|skip|3|Sheet/advancement or manual
-Wizard||4|Ability Score Improvement|PHB|skip|3|Sheet/advancement or manual
-Wizard||5|Memorize Spell|SRD|skip|3|Sheet/advancement or manual
-Wizard||18|Spell Mastery|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium enchant
+Wizard||4|Ability Score Improvement|PHB|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Wizard||5|Memorize Spell|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
+Wizard||18|Spell Mastery|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium enchant
 Wizard||19|Epic Boon|SRD|skip|3|Sheet/advancement or manual
-Wizard||20|Signature Spells|SRD|done|3|dnd5e compendium item checked (activities run, effects OK) - Compendium
+Wizard||20|Signature Spells|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium
 Wizard|Abjurer|3|Abjuration Savant|PHB|skip|3|Sheet/advancement or manual
 Wizard|Abjurer|3|Arcane Ward|PHB|done|1|midi-qol sample item checked (activities run) - midi ships Arcane Ward; an older one-character fix exists in Macros (Ambrose)
 Wizard|Abjurer|6|Projected Ward|PHB|done|2|Reaction prompt to absorb an ally's damage with your Arcane Ward (module rule).
@@ -614,7 +614,7 @@ Wizard|Abjurer|10|Spell Breaker|PHB|skip|3|Sheet/advancement or manual
 Wizard|Abjurer|14|Spell Resistance|PHB|done|3|Advantage on saves vs spells; spell damage halved (module rule).
 Wizard|Bladesinger|3|Bladesong|FR|done|1|BA 1 minute (INT uses/LR, one back on Arcane Recovery): +INT AC, +10 ft Speed, Acrobatics Advantage, INT for proficient weapon attacks, +INT to Concentration saves; ends with armor/Shield/two-handed attack/Incapacitated
 Wizard|Bladesinger|3|Training in War and Song|FR|skip|3|Proficiencies and skill from the sheet
-Wizard|Bladesinger|6|Extra Attack|FR|skip|3|Sheet; cantrip in place of an attack by hand
+Wizard|Bladesinger|6|Extra Attack|FR|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet; cantrip in place of an attack by hand
 Wizard|Bladesinger|10|Song of Defense|FR|done|2|Reaction when damaged during Bladesong: spend a slot to reduce the damage by 5 x slot level (asked)
 Wizard|Bladesinger|14|Song of Victory|FR|done|3|After casting an action spell, offer a BA weapon attack
 Wizard|Conjurer|3|Benign Transposition|AU|done|1|CGA item from v0.2.0 checked: Bonus Action teleport / swap activities, 30 ft, INT uses per Long Rest (the teleport waits for you to pick the spot on the map)
@@ -634,7 +634,7 @@ Wizard|Enchanter|3|Hypnotic Presence|AU|done|1|Magic action, 10 ft: WIS save or 
 Wizard|Enchanter|6|Split Enchantment|AU|done|2|Slot Enchantment spells that target more creatures when upcast can be cast one level higher (asked; INT uses/LR)
 Wizard|Enchanter|10|Instinctive Charm|AU|done|3|Reaction when hit within 30 ft: WIS save or the attack misses (redirect by hand); 1/LR, restored by an Enchantment slot spell
 Wizard|Enchanter|14|Alter Memories|AU|skip|3|Roleplay
-Wizard|Evoker|3|Evocation Savant|SRD|skip|3|Sheet/advancement or manual
+Wizard|Evoker|3|Evocation Savant|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Wizard|Evoker|3|Potent Cantrip|SRD|done|2|midi potentCantrip on saves; half damage on missed cantrip attacks.
 Wizard|Evoker|6|Sculpt Spells|SRD|done|2|midi sculptSpells flag.
 Wizard|Evoker|10|Empowered Evocation|SRD|done|2|+INT to Wizard Evocation spell damage.

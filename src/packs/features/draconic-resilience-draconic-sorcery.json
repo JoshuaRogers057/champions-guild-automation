@@ -1,0 +1,114 @@
+{
+  "name": "Draconic Resilience",
+  "type": "feat",
+  "_id": "cgascrDraconicRe",
+  "img": "icons/creatures/claws/claw-scaled-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>The magic in your body manifests physical traits of your draconic gift. Your Hit Point maximum increases by 3, and it increases by 1 whenever you gain another Sorcerer level.</p><p>Parts of you are also covered by dragon-like scales. While you aren't wearing armor, your base Armor Class equals 10 plus your Dexterity and Charisma modifiers.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "revision": 2
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 3,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Draconic Sorcery",
+    "activities": {},
+    "enchant": {},
+    "identifier": "draconic-resilience",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "ZoJYjZ3KGM30khz3",
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "origin": null,
+      "transfer": true,
+      "flags": {},
+      "tint": "#ffffff",
+      "name": "Draconic Resilience",
+      "description": "",
+      "statuses": [],
+      "img": "icons/creatures/claws/claw-scaled-red.webp",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.ac.formulas",
+            "value": {
+              "formula": "10 + @abilities.dex.mod + @abilities.cha.mod",
+              "armored": false
+            },
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "iNv4TJmAAqTAlJXZ",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "system.attributes.hp.bonuses.overall",
+            "type": "add",
+            "value": "@classes.sorcerer.levels",
+            "phase": "initial",
+            "_id": "pdGnTmLf2sb5gkxy",
+            "conditions": "{}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "sort": 0,
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:draconic-sorcery"
+      }
+    }
+  }
+}

@@ -1,0 +1,639 @@
+{
+  "name": "Fiendish Resilience",
+  "type": "feat",
+  "_id": "cgawlkFiendishRe",
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "system": {
+    "description": {
+      "value": "<p>Choose one damage type, other than Force, whenever you finish a Short or Long Rest. You have Resistance to that damage type until you choose a different one with this feature.</p><section class=\"secret\" id=\"secret-MG3loWptcg4gpsdG\"><p><strong>Foundry Note</strong></p><p>This feature includes an Active Effect for each type of damage which will grant you the correct Resistance. Apply and disable the effects as necessary when you change types.</p></section>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 10,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Fiend Patron",
+    "activities": {},
+    "enchant": {},
+    "identifier": "fiendish-resilience",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Fiendish Resilience: Poison",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "poison",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "pe7gbn9pAgxbbrHi",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "3Uw7a9ldJtxHam1x",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Thunder",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "thunder",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "BBKXJOl5x4ABwnFa",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "6BHlD7hrfHUEfum5",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Slashing",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "slashing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "fpjcLvqf2yq3HGve",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "7oATkYAfEZzx6F5P",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Radiant",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "radiant",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "Kxtjv6EZ6jeBwkGZ",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "F8szMcfuxVxXJ7sf",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Piercing",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "piercing",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "aOTLcT6Wb5Uw9HPv",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "G0Ed5szAi1vUFCf7",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Fire",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "fire",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "F0IASxhIuZwUGM52",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "GvzW5wzRBfjFqye7",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Acid",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "_id": "JdULzod722VVpgZx",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "acid",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "k1KV4msaD1mNVNBW",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Bludgeoning",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "bludgeoning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "aEtbEavdtgaGrXb7",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "JjA9Jda2qeK6Tpxk",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Lightning",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "lightning",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "30cxe8K9p0pSeAFx",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "UZ00jXoUKfevQhxQ",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Necrotic",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "necrotic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "FPxMCyhg5dAwsrUB",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "iMBfFAs7UwqdgSI5",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Psychic",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "psychic",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "PGTb4OWv8FnZ5sEy",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "loTaIaBwUsMSzpdW",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    },
+    {
+      "name": "Fiendish Resilience: Cold",
+      "img": "icons/magic/defensive/armor-stone-skin.webp",
+      "origin": null,
+      "transfer": true,
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.traits.dr.value",
+            "value": "cold",
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "KjJoDO6KGhAb36sx",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "item": "Compendium.dnd5e.classes24.Item.phbwlkFiendishRe",
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "_id": "rhUc7IVz5XTphPRp",
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:fiend-patron"
+      }
+    }
+  }
+}

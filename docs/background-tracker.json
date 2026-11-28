@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "backgrounds": [
   {
    "group": "Backgrounds · Eberron: Forge of the Artificer",
@@ -16,9 +16,9 @@
    "sub": "Ability scores: Intelligence, Wisdom, Charisma",
    "name": "Acolyte",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Cleric) (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Cleric) (Feats tab: skip)",
    "identifier": "acolyte"
   },
   {
@@ -116,9 +116,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Intelligence",
    "name": "Criminal",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
    "identifier": "criminal"
   },
   {
@@ -566,9 +566,9 @@
    "sub": "Ability scores: Constitution, Intelligence, Wisdom",
    "name": "Sage",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Wizard) (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Wizard) (Feats tab: skip)",
    "identifier": "sage"
   },
   {
@@ -626,9 +626,9 @@
    "sub": "Ability scores: Strength, Dexterity, Constitution",
    "name": "Soldier",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Savage Attacker (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Savage Attacker (Feats tab: done)",
    "identifier": "soldier"
   },
   {

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "items": [
   {
    "group": "Magic armor and shields",
@@ -66,9 +66,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Amulet of Proof against Detection and Location",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "amulet-of-proof-against-detection-and-location"
   },
   {
@@ -76,9 +76,9 @@
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Amulet of the Planes",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "amulet-of-the-planes"
   },
   {
@@ -206,9 +206,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Bag of Beans",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "bag-of-beans"
   },
   {
@@ -216,9 +216,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Bag of Devouring",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "bag-of-devouring"
   },
   {
@@ -226,9 +226,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Bag of Holding",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "bag-of-holding"
   },
   {
@@ -256,9 +256,9 @@
    "sub": "Wondrous Item · common",
    "name": "Bead of Nourishment",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "bead-of-nourishment"
   },
   {
@@ -496,9 +496,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Broom of Flying",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "broom-of-flying"
   },
   {
@@ -546,9 +546,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Carpet of Flying",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "carpet-of-flying"
   },
   {
@@ -596,9 +596,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Chime of Opening",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "chime-of-opening"
   },
   {
@@ -736,9 +736,9 @@
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Crystal Ball",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "crystal-ball"
   },
   {
@@ -746,9 +746,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Crystal Ball of Mind Reading",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "mind-reading-crystal-ball-of"
   },
   {
@@ -756,9 +756,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Crystal Ball of Telepathy",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "telepathy-crystal-ball-of"
   },
   {
@@ -766,9 +766,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Crystal Ball of True Seeing",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "true-seeing-crystal-ball-of"
   },
   {
@@ -796,9 +796,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Cubic Gate",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "cubic-gate"
   },
   {
@@ -856,9 +856,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Decanter of Endless Water",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "decanter-of-endless-water"
   },
   {
@@ -866,9 +866,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Deck of Illusions",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "deck-of-illusions"
   },
   {
@@ -936,9 +936,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Dimensional Shackles",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "dimensional-shackles"
   },
   {
@@ -1026,9 +1026,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Dust of Dryness",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "dust-of-dryness"
   },
   {
@@ -1076,9 +1076,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Efreeti Bottle",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "efreeti-bottle"
   },
   {
@@ -1256,9 +1256,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Eyes of Minute Seeing",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "eyes-of-minute-seeing"
   },
   {
@@ -1276,9 +1276,9 @@
    "sub": "Wondrous Item · varies",
    "name": "Figurine of Wondrous Power",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Listed by variant below",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Listed by variant below",
    "identifier": "figurine-of-wondrous-power"
   },
   {
@@ -1386,9 +1386,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Folding Boat",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "folding-boat"
   },
   {
@@ -1426,9 +1426,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Gem of Seeing",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "gem-of-seeing"
   },
   {
@@ -1536,9 +1536,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Hat of Disguise",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "hat-of-disguise"
   },
   {
@@ -1546,9 +1546,9 @@
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Hat of Many Spells",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "hat-of-many-spells"
   },
   {
@@ -1606,9 +1606,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Helm of Comprehending Languages",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "helm-of-comprehending-languages"
   },
   {
@@ -1616,9 +1616,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Helm of Telepathy",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "helm-of-telepathy"
   },
   {
@@ -1626,9 +1626,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Helm of Teleportation",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "helm-of-teleportation"
   },
   {
@@ -1706,9 +1706,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Horseshoes of a Zephyr",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "horseshoes-of-a-zephyr"
   },
   {
@@ -1716,9 +1716,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Horseshoes of Speed",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "horseshoes-of-speed"
   },
   {
@@ -1736,9 +1736,9 @@
    "sub": "Rod · uncommon",
    "name": "Immovable Rod",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "immovable-rod"
   },
   {
@@ -1776,9 +1776,9 @@
    "sub": "Wondrous Item · varies · attunement",
    "name": "Ioun Stone",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Listed by variant below",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Listed by variant below",
    "identifier": "ioun-stone"
   },
   {
@@ -1886,9 +1886,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Ioun Stone (Regeneration)",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "regeneration-ioun-stone"
   },
   {
@@ -1896,9 +1896,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Ioun Stone (Reserve)",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "reserve-ioun-stone"
   },
   {
@@ -1916,9 +1916,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Ioun Stone (Sustenance)",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "sustenance-ioun-stone"
   },
   {
@@ -1936,9 +1936,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Iron Flask",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "iron-flask"
   },
   {
@@ -1976,9 +1976,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Lantern of Revealing",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "lantern-of-revealing"
   },
   {
@@ -2106,9 +2106,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Manual of Bodily Health",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "manual-of-bodily-health"
   },
   {
@@ -2116,9 +2116,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Manual of Gainful Exercise",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "manual-of-gainful-exercise"
   },
   {
@@ -2126,9 +2126,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Manual of Golems",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "manual-of-golems"
   },
   {
@@ -2136,9 +2136,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Manual of Quickness of Action",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "manual-of-quickness-of-action"
   },
   {
@@ -2166,9 +2166,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Medallion of Thoughts",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "medallion-of-thoughts"
   },
   {
@@ -2186,9 +2186,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Mirror of Life Trapping",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "mirror-of-life-trapping"
   },
   {
@@ -2326,9 +2326,9 @@
    "sub": "Potion · rare",
    "name": "Oil of Etherealness",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "oil-of-etherealness"
   },
   {
@@ -2456,9 +2456,9 @@
    "sub": "Potion · uncommon",
    "name": "Philter of Love",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "philter-of-love"
   },
   {
@@ -2466,9 +2466,9 @@
    "sub": "Wondrous Item · common",
    "name": "Pipe of Smoke Monsters",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "pipe-of-smoke-monsters"
   },
   {
@@ -2486,9 +2486,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Pipes of the Sewers",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "pipes-of-the-sewers"
   },
   {
@@ -2526,9 +2526,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Portable Hole",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "portable-hole"
   },
   {
@@ -2556,9 +2556,9 @@
    "sub": "Potion · rare",
    "name": "Potion of Clairvoyance",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "potion-of-clairvoyance"
   },
   {
@@ -2696,9 +2696,9 @@
    "sub": "Potion · very rare",
    "name": "Potion of Longevity",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "potion-of-longevity"
   },
   {
@@ -2706,9 +2706,9 @@
    "sub": "Potion · rare",
    "name": "Potion of Mind Reading",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "potion-of-mind-reading"
   },
   {
@@ -2748,7 +2748,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "Checked in v0.23.0 - the compendium potion casts Haste on the drinker without Concentration (pick Cast, not Apply Lethargy, when asked)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.23.0 - the compendium potion casts Haste on the drinker without Concentration (pick Cast, not Apply Lethargy, when asked)",
    "identifier": "potion-of-speed"
   },
   {
@@ -2776,9 +2776,9 @@
    "sub": "Potion · uncommon",
    "name": "Potion of Water Breathing",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "potion-of-water-breathing"
   },
   {
@@ -2788,7 +2788,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)",
    "identifier": "potion-of-healing"
   },
   {
@@ -2946,9 +2946,9 @@
    "sub": "Ring · rare",
    "name": "Ring of Animal Influence",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-animal-influence"
   },
   {
@@ -2966,9 +2966,9 @@
    "sub": "Ring · legendary · attunement",
    "name": "Ring of Djinni Summoning",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-djinni-summoning"
   },
   {
@@ -2996,9 +2996,9 @@
    "sub": "Ring · rare · attunement",
    "name": "Ring of Feather Falling",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-feather-falling"
   },
   {
@@ -3026,9 +3026,9 @@
    "sub": "Ring · uncommon · attunement",
    "name": "Ring of Jumping",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-jumping"
   },
   {
@@ -3036,9 +3036,9 @@
    "sub": "Ring · uncommon · attunement",
    "name": "Ring of Mind Shielding",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-mind-shielding"
   },
   {
@@ -3086,9 +3086,9 @@
    "sub": "Ring · rare · attunement",
    "name": "Ring of Spell Storing",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-spell-storing"
   },
   {
@@ -3136,9 +3136,9 @@
    "sub": "Ring · legendary",
    "name": "Ring of Three Wishes",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-three-wishes"
   },
   {
@@ -3156,9 +3156,9 @@
    "sub": "Ring · uncommon",
    "name": "Ring of Water Walking",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-water-walking"
   },
   {
@@ -3166,9 +3166,9 @@
    "sub": "Ring · rare · attunement",
    "name": "Ring of X-ray Vision",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ring-of-x-ray-vision"
   },
   {
@@ -3226,9 +3226,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Robe of Useful Items",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "robe-of-useful-items"
   },
   {
@@ -3286,9 +3286,9 @@
    "sub": "Rod · very rare",
    "name": "Rod of Security",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "rod-of-security"
   },
   {
@@ -3306,9 +3306,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Rope of Climbing",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "rope-of-climbing"
   },
   {
@@ -3416,9 +3416,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Sending Stones",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "sending-stones"
   },
   {
@@ -3506,9 +3506,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Sovereign Glue",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "sovereign-glue"
   },
   {
@@ -3538,7 +3538,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "Checked in v0.26.0 - a scroll made from a spell (dnd5e's Create Scroll) casts it, including the module's automated spells, and crumbles",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.26.0 - a scroll made from a spell (dnd5e's Create Scroll) casts it, including the module's automated spells, and crumbles",
    "identifier": "spell-scroll"
   },
   {
@@ -3576,9 +3576,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Sphere of Annihilation",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "sphere-of-annihilation"
   },
   {
@@ -3896,9 +3896,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Talisman of the Sphere",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "talisman-of-the-sphere"
   },
   {
@@ -3976,9 +3976,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Tome of Clear Thought",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "tome-of-clear-thought"
   },
   {
@@ -3986,9 +3986,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Tome of Leadership and Influence",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "tome-of-leadership-and-influence"
   },
   {
@@ -4006,9 +4006,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Tome of Understanding",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "tome-of-understanding"
   },
   {
@@ -4036,9 +4036,9 @@
    "sub": "Weapon · uncommon · attunement",
    "name": "Trident of Fish Command",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "trident-of-fish-command"
   },
   {
@@ -4056,9 +4056,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Universal Solvent",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "universal-solvent"
   },
   {
@@ -4126,9 +4126,9 @@
    "sub": "Wand · rare · attunement",
    "name": "Wand of Enemy Detection",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "wand-of-enemy-detection"
   },
   {
@@ -4176,9 +4176,9 @@
    "sub": "Wand · uncommon",
    "name": "Wand of Magic Detection",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "wand-of-magic-detection"
   },
   {
@@ -4236,9 +4236,9 @@
    "sub": "Wand · uncommon",
    "name": "Wand of Secrets",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "wand-of-secrets"
   },
   {
@@ -4336,9 +4336,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Well of Many Worlds",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "well-of-many-worlds"
   },
   {
@@ -4408,7 +4408,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "club"
   },
   {
@@ -4418,7 +4418,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "dagger"
   },
   {
@@ -4428,7 +4428,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "greatclub"
   },
   {
@@ -4438,7 +4438,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "handaxe"
   },
   {
@@ -4448,7 +4448,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "javelin"
   },
   {
@@ -4458,7 +4458,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "light-hammer"
   },
   {
@@ -4468,7 +4468,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "mace"
   },
   {
@@ -4478,7 +4478,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "quarterstaff"
   },
   {
@@ -4488,7 +4488,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "sickle"
   },
   {
@@ -4498,7 +4498,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "spear"
   },
   {
@@ -4508,7 +4508,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "dart"
   },
   {
@@ -4518,7 +4518,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "light-crossbow"
   },
   {
@@ -4528,7 +4528,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "shortbow"
   },
   {
@@ -4538,7 +4538,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "sling"
   },
   {
@@ -4548,7 +4548,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "battleaxe"
   },
   {
@@ -4558,7 +4558,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "flail"
   },
   {
@@ -4568,7 +4568,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "glaive"
   },
   {
@@ -4578,7 +4578,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "greataxe"
   },
   {
@@ -4588,7 +4588,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "greatsword"
   },
   {
@@ -4598,7 +4598,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "halberd"
   },
   {
@@ -4608,7 +4608,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "lance"
   },
   {
@@ -4618,7 +4618,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "longsword"
   },
   {
@@ -4628,7 +4628,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "maul"
   },
   {
@@ -4638,7 +4638,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "morningstar"
   },
   {
@@ -4648,7 +4648,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "pike"
   },
   {
@@ -4658,7 +4658,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "rapier"
   },
   {
@@ -4668,7 +4668,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "scimitar"
   },
   {
@@ -4678,7 +4678,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "shortsword"
   },
   {
@@ -4688,7 +4688,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "trident"
   },
   {
@@ -4698,7 +4698,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "warhammer"
   },
   {
@@ -4708,7 +4708,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "war-pick"
   },
   {
@@ -4718,7 +4718,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "whip"
   },
   {
@@ -4728,7 +4728,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "blowgun"
   },
   {
@@ -4738,7 +4738,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "hand-crossbow"
   },
   {
@@ -4748,7 +4748,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "heavy-crossbow"
   },
   {
@@ -4758,7 +4758,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "longbow"
   },
   {
@@ -4768,7 +4768,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "musket"
   },
   {
@@ -4778,7 +4778,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e",
    "identifier": "pistol"
   },
   {
@@ -4786,9 +4786,9 @@
    "sub": "AC 11 + Dex modifier",
    "name": "Padded Armor",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 11 + Dex modifier)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 11 + Dex modifier)",
    "identifier": "padded-armor"
   },
   {
@@ -4796,9 +4796,9 @@
    "sub": "AC 11 + Dex modifier",
    "name": "Leather Armor",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 11 + Dex modifier)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 11 + Dex modifier)",
    "identifier": "leather-armor"
   },
   {
@@ -4806,9 +4806,9 @@
    "sub": "AC 12 + Dex modifier",
    "name": "Studded Leather Armor",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 12 + Dex modifier)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 12 + Dex modifier)",
    "identifier": "studded-leather-armor"
   },
   {
@@ -4816,9 +4816,9 @@
    "sub": "AC 12 + Dex modifier (max 2)",
    "name": "Hide Armor",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 12 + Dex modifier (max 2))",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 12 + Dex modifier (max 2))",
    "identifier": "hide-armor"
   },
   {
@@ -4826,9 +4826,9 @@
    "sub": "AC 13 + Dex modifier (max 2)",
    "name": "Chain Shirt",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 13 + Dex modifier (max 2))",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 13 + Dex modifier (max 2))",
    "identifier": "chain-shirt"
   },
   {
@@ -4836,9 +4836,9 @@
    "sub": "AC 14 + Dex modifier (max 2)",
    "name": "Scale Mail",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 14 + Dex modifier (max 2))",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 14 + Dex modifier (max 2))",
    "identifier": "scale-mail"
   },
   {
@@ -4846,9 +4846,9 @@
    "sub": "AC 14 + Dex modifier (max 2)",
    "name": "Breastplate",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 14 + Dex modifier (max 2))",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 14 + Dex modifier (max 2))",
    "identifier": "breastplate"
   },
   {
@@ -4856,9 +4856,9 @@
    "sub": "AC 15 + Dex modifier (max 2)",
    "name": "Half Plate Armor",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 15 + Dex modifier (max 2))",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 15 + Dex modifier (max 2))",
    "identifier": "half-plate-armor"
   },
   {
@@ -4866,9 +4866,9 @@
    "sub": "AC 14",
    "name": "Ring Mail",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 14)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 14)",
    "identifier": "ring-mail"
   },
   {
@@ -4876,9 +4876,9 @@
    "sub": "AC 16",
    "name": "Chain Mail",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 16; Str 13)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 16; Str 13)",
    "identifier": "chain-mail"
   },
   {
@@ -4886,9 +4886,9 @@
    "sub": "AC 17",
    "name": "Splint Armor",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 17; Str 15)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 17; Str 15)",
    "identifier": "splint-armor"
   },
   {
@@ -4896,9 +4896,9 @@
    "sub": "AC 18",
    "name": "Plate Armor",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC 18; Str 15)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 18; Str 15)",
    "identifier": "plate-armor"
   },
   {
@@ -4916,9 +4916,9 @@
    "sub": "AC 20",
    "name": "Arrows",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ammunition - tracked by the weapon",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon",
    "identifier": "arrows"
   },
   {
@@ -4926,9 +4926,9 @@
    "sub": "AC 20",
    "name": "Bolts",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ammunition - tracked by the weapon",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon",
    "identifier": "bolts"
   },
   {
@@ -4936,9 +4936,9 @@
    "sub": "AC 10",
    "name": "Bullets, Firearm",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ammunition - tracked by the weapon",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon",
    "identifier": "bullets-firearm"
   },
   {
@@ -4946,9 +4946,9 @@
    "sub": "AC 20",
    "name": "Bullets, Sling",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ammunition - tracked by the weapon",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon",
    "identifier": "bullets-sling"
   },
   {
@@ -4956,9 +4956,9 @@
    "sub": "AC 50",
    "name": "Needles",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ammunition - tracked by the weapon",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon",
    "identifier": "needles"
   },
   {
@@ -5096,9 +5096,9 @@
    "sub": "5 GP",
    "name": "Chain",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "chain"
   },
   {
@@ -5136,9 +5136,9 @@
    "sub": "2 GP",
    "name": "Manacles",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "manacles"
   },
   {
@@ -5176,9 +5176,9 @@
    "sub": "50 GP",
    "name": "Potion of Healing",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Same item as Potions of Healing (magic items)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Same item as Potions of Healing (magic items)",
    "identifier": "potion-of-healing"
   },
   {
@@ -5186,9 +5186,9 @@
    "sub": "1 GP",
    "name": "Rope",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "rope"
   },
   {
@@ -5196,9 +5196,9 @@
    "sub": "Cantrip, 30 GP Level 1, 50 GP",
    "name": "Spell Scroll",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Same item as Spell Scroll (magic items)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Same item as Spell Scroll (magic items)",
    "identifier": "spell-scroll"
   },
   {
@@ -5256,9 +5256,9 @@
    "sub": "25 GP",
    "name": "Climber’s Kit",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "climbers-kit"
   },
   {
@@ -5266,9 +5266,9 @@
    "sub": "2 GP",
    "name": "Grappling Hook",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "grappling-hook"
   },
   {
@@ -5276,9 +5276,9 @@
    "sub": "2 GP",
    "name": "Crowbar",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "crowbar"
   },
   {
@@ -5286,9 +5286,9 @@
    "sub": "100 GP",
    "name": "Magnifying Glass",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "magnifying-glass"
   },
   {
@@ -5296,9 +5296,9 @@
    "sub": "5 GP",
    "name": "Costume",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "costume"
   },
   {
@@ -5306,9 +5306,9 @@
    "sub": "5 GP",
    "name": "Perfume",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "perfume"
   },
   {
@@ -5316,9 +5316,9 @@
    "sub": "25 GP",
    "name": "Book",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "book"
   },
   {
@@ -5326,9 +5326,9 @@
    "sub": "1 GP",
    "name": "Map",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "map"
   },
   {
@@ -5336,9 +5336,9 @@
    "sub": "5 CP",
    "name": "Pole",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "pole"
   },
   {
@@ -5346,9 +5346,9 @@
    "sub": "4 GP",
    "name": "Ram, Portable",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "ram-portable"
   },
   {
@@ -5356,9 +5356,9 @@
    "sub": "5 CP",
    "name": "Signal Whistle",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "signal-whistle"
   },
   {
@@ -5366,9 +5366,9 @@
    "sub": "1,000 GP",
    "name": "Spyglass",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "spyglass"
   },
   {
@@ -5376,9 +5376,9 @@
    "sub": "1 GP",
    "name": "Bell",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "bell"
   },
   {
@@ -5386,9 +5386,9 @@
    "sub": "5 SP",
    "name": "Blanket",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "blanket"
   },
   {
@@ -5396,9 +5396,9 @@
    "sub": "1 GP",
    "name": "Bedroll",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "bedroll"
   },
   {
@@ -5406,9 +5406,9 @@
    "sub": "5 SP",
    "name": "Tinderbox",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Gear - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate",
    "identifier": "tinderbox"
   },
   {
@@ -5416,9 +5416,9 @@
    "sub": "Tool",
    "name": "Poisoner’s Kit",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Tool - crafting and checks on the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Tool - crafting and checks on the sheet",
    "identifier": "poisoners-kit"
   },
   {
@@ -5426,9 +5426,9 @@
    "sub": "Tool",
    "name": "Herbalism Kit",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Tool - crafting and checks on the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Tool - crafting and checks on the sheet",
    "identifier": "herbalism-kit"
   }
  ]

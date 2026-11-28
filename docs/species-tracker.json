@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "species": [
   {
    "group": "Aasimar",
@@ -166,9 +166,9 @@
    "sub": "Player's Handbook",
    "name": "Draconic Ancestry",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "draconic-ancestry"
   },
   {
@@ -238,7 +238,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 2,
-   "note": "Checked in v0.28.0 - the compendium effect adds 1 HP per level",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.28.0 - the compendium effect adds 1 HP per level",
    "identifier": "dwarven-toughness"
   },
   {
@@ -248,7 +248,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 3,
-   "note": "Checked in v0.29.0 - the compendium activity gives Tremorsense 60 ft for 10 minutes and spends a use",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.29.0 - the compendium activity gives Tremorsense 60 ft for 10 minutes and spends a use",
    "identifier": "stonecunning"
   },
   {
@@ -266,9 +266,9 @@
    "sub": "Player's Handbook",
    "name": "Elven Lineage",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "elven-lineage"
   },
   {
@@ -286,9 +286,9 @@
    "sub": "Player's Handbook",
    "name": "Keen Senses",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "keen-senses"
   },
   {
@@ -296,9 +296,9 @@
    "sub": "Player's Handbook",
    "name": "Trance",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "trance"
   },
   {
@@ -326,9 +326,9 @@
    "sub": "Player's Handbook",
    "name": "Gnomish Lineage",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "gnomish-lineage"
   },
   {
@@ -346,9 +346,9 @@
    "sub": "Player's Handbook · Gnomish Lineage option",
    "name": "Rock Gnome",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "rock-gnome"
   },
   {
@@ -356,9 +356,9 @@
    "sub": "Player's Handbook",
    "name": "Giant Ancestry",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "giant-ancestry"
   },
   {
@@ -436,9 +436,9 @@
    "sub": "Player's Handbook",
    "name": "Powerful Build",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "powerful-build"
   },
   {
@@ -456,9 +456,9 @@
    "sub": "Player's Handbook",
    "name": "Halfling Nimbleness",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "halfling-nimbleness"
   },
   {
@@ -468,7 +468,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "Checked in v0.27.0 - dnd5e rerolls natural 1s (the compendium sets halflingLucky)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.27.0 - dnd5e rerolls natural 1s (the compendium sets halflingLucky)",
    "identifier": "luck"
   },
   {
@@ -476,9 +476,9 @@
    "sub": "Player's Handbook",
    "name": "Naturally Stealthy",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "naturally-stealthy"
   },
   {
@@ -546,9 +546,9 @@
    "sub": "Player's Handbook",
    "name": "Skillful",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "skillful"
   },
   {
@@ -556,9 +556,9 @@
    "sub": "Player's Handbook",
    "name": "Versatile",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "versatile"
   },
   {
@@ -738,7 +738,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "Checked in v0.27.0 - the compendium activity gives temp HP = PB and spends a use (the Dash is your movement)",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.27.0 - the compendium activity gives temp HP = PB and spends a use (the Dash is your movement)",
    "identifier": "adrenaline-rush"
   },
   {
@@ -916,9 +916,9 @@
    "sub": "Player's Handbook",
    "name": "Fiendish Legacy",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "fiendish-legacy"
   },
   {
@@ -926,9 +926,9 @@
    "sub": "Player's Handbook",
    "name": "Otherworldly Presence",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "otherworldly-presence"
   },
   {

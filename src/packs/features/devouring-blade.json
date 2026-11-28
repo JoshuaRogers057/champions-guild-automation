@@ -1,0 +1,52 @@
+{
+  "name": "Devouring Blade",
+  "type": "feat",
+  "_id": "cgainvDevouringB",
+  "img": "icons/skills/melee/blood-slash-foam-red.webp",
+  "system": {
+    "description": {
+      "value": "<div class=\"item-entry-details\"><p class=\"item-entry-tag\">Prerequisite: Level 12+ Warlock, @UUID[Compendium.dnd5e.classes24.Item.phbinvThirstingB]{Thirsting Blade} Invocation</p></div><p>The Extra Attack of your Thirsting Blade invocation confers two extra attacks rather than one.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 2,
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "prerequisites": {
+      "level": 12,
+      "items": [
+        "feat:thirsting-blade"
+      ],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "enchant": {},
+    "identifier": "devouring-blade",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate."
+      }
+    }
+  }
+}

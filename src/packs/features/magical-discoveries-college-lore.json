@@ -1,0 +1,150 @@
+{
+  "name": "Magical Discoveries",
+  "type": "feat",
+  "_id": "cgabrdMagicalDis",
+  "img": "icons/sundries/books/book-tooled-eye-gold-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>You learn two spells of your choice. These spells can come from the @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.SkHptN2PTzFGDaEj]{Cleric}, @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.LhvuDQEyrCdg5EfU]{Druid}, or @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard} spell list or any combination thereof. A spell you choose must be a cantrip or a spell for which you have spell slots, as shown in the @UUID[Compendium.dnd5e.content24.JournalEntry.phbBard000000000.JournalEntryPage.V8pqIWlaL9GhY61t#equipment]{Bard Features} table.</p><p>You always have the chosen spells prepared, and whenever you gain a Bard level, you can replace one of the spells with another spell that meets these requirements.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 2,
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 6,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "College of Lore",
+    "activities": {},
+    "enchant": {},
+    "identifier": "magical-discoveries",
+    "advancement": {
+      "oQwTWF2ZW1lXNbmd": {
+        "name": "Choose Spells",
+        "type": "ItemChoice",
+        "_id": "oQwTWF2ZW1lXNbmd",
+        "configuration": {
+          "allowDrops": true,
+          "choices": {
+            "6": {
+              "count": 2,
+              "replacement": false
+            },
+            "7": {
+              "count": null,
+              "replacement": true
+            },
+            "8": {
+              "count": null,
+              "replacement": true
+            },
+            "9": {
+              "count": null,
+              "replacement": true
+            },
+            "10": {
+              "count": null,
+              "replacement": true
+            },
+            "11": {
+              "count": null,
+              "replacement": true
+            },
+            "12": {
+              "count": null,
+              "replacement": true
+            },
+            "13": {
+              "count": null,
+              "replacement": true
+            },
+            "14": {
+              "count": null,
+              "replacement": true
+            },
+            "15": {
+              "count": null,
+              "replacement": true
+            },
+            "16": {
+              "count": null,
+              "replacement": true
+            },
+            "17": {
+              "count": null,
+              "replacement": true
+            },
+            "18": {
+              "count": null,
+              "replacement": true
+            },
+            "19": {
+              "count": null,
+              "replacement": true
+            },
+            "20": {
+              "count": null,
+              "replacement": true
+            }
+          },
+          "pool": [],
+          "restriction": {
+            "list": [
+              "class:cleric",
+              "class:druid",
+              "class:wizard"
+            ],
+            "school": [],
+            "level": "available"
+          },
+          "sorting": "a",
+          "spell": {
+            "ability": [],
+            "method": "spell",
+            "uses": {
+              "max": "",
+              "per": "",
+              "requireSlot": false
+            },
+            "prepared": 2
+          },
+          "type": "spell"
+        },
+        "flags": {},
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "<p>@Embed[Compendium.dnd5e.classes24.Item.phbbrdMagicalDis inline]</p>"
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:college-lore"
+      }
+    }
+  }
+}

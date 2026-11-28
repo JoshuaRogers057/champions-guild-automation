@@ -1,0 +1,99 @@
+{
+  "name": "Luck",
+  "type": "feat",
+  "_id": "cgasptLuck000000",
+  "img": "icons/commodities/flowers/clover.webp",
+  "system": {
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "recovery": [],
+      "max": ""
+    },
+    "description": {
+      "value": "<p>When you roll a 1 on the d20 of a &amp;Reference[D20 Test], you can reroll the die, and you must use the new roll.</p>",
+      "chat": ""
+    },
+    "source": {
+      "revision": 1,
+      "rules": "2024",
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "enchant": {},
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": null,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Halfling",
+    "identifier": "luck",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Luck",
+      "img": "icons/commodities/flowers/clover.webp",
+      "origin": null,
+      "_id": "k1FDpZEBCHzRsFSA",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "flags.dnd5e.halflingLucky",
+            "value": true,
+            "priority": null,
+            "type": "override",
+            "phase": "initial",
+            "_id": "CHHrjpxgegR7dbTk",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "race:halfling"
+      }
+    }
+  }
+}

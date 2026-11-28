@@ -1,0 +1,50 @@
+{
+  "name": "Thief's Reflexes",
+  "type": "feat",
+  "_id": "cgargeThiefsRefl",
+  "img": "icons/magic/symbols/symbol-lightning-bolt.webp",
+  "system": {
+    "description": {
+      "value": "<p>You are adept at laying ambushes and quickly escaping danger. You can take two turns during the first round of any combat. You take your first turn at your normal Initiative and your second turn at your Initiative minus 10.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 17,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Thief",
+    "activities": {},
+    "enchant": {},
+    "identifier": "thiefs-reflexes",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "subclass:thief"
+      }
+    }
+  }
+}

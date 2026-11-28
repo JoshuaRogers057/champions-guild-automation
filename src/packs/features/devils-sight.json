@@ -1,0 +1,99 @@
+{
+  "name": "Devil's Sight",
+  "type": "feat",
+  "_id": "cgainvDevilsSigh",
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "system": {
+    "description": {
+      "value": "<div class=\"item-entry-details\"><p class=\"item-entry-tag\">Prerequisite: Level 2+ Warlock</p></div><p>You can see normally in Dim Light and Darkness—both magical and nonmagical—within 120 feet of yourself.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 1,
+      "book": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": "eldritchInvocation"
+    },
+    "prerequisites": {
+      "level": 2,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "",
+    "activities": {},
+    "enchant": {},
+    "identifier": "devils-sight",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Devil's Sight",
+      "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+      "_id": "Qfe7snyNHXLJHp4G",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.attributes.senses.darkvision",
+            "value": 120,
+            "priority": null,
+            "type": "upgrade",
+            "phase": "initial",
+            "_id": "Zw2dBCm0mzmK0luo",
+            "conditions": "{}",
+            "replacement": ""
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": false,
+      "duration": {
+        "value": null,
+        "units": "seconds",
+        "expiry": null,
+        "expired": false
+      },
+      "description": "",
+      "origin": null,
+      "tint": "#ffffff",
+      "transfer": true,
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate."
+      }
+    }
+  }
+}

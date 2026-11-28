@@ -8,8 +8,8 @@ Wondrous items|Wondrous Item · uncommon|Alchemy Jug|DMG|skip|3|Utility, narrati
 Magic weapons|Weapon · very rare|Ammunition of Slaying|SRD|done|2|Module rule (no Mass Apply): the creature type from the ammunition's name (or asked) - DC 17 CON, 6d10 Force (half on a success)|ammunition-of-slaying
 Magic weapons|Weapon · very rare|Ammunition, +1, +2, or +3|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)|ammunition-1-2-or-3
 Wondrous items|Wondrous Item · rare · attunement|Amulet of Health|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)|amulet-of-health
-Wondrous items|Wondrous Item · uncommon · attunement|Amulet of Proof against Detection and Location|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|amulet-of-proof-against-detection-and-location
-Wondrous items|Wondrous Item · very rare · attunement|Amulet of the Planes|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|amulet-of-the-planes
+Wondrous items|Wondrous Item · uncommon · attunement|Amulet of Proof against Detection and Location|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|amulet-of-proof-against-detection-and-location
+Wondrous items|Wondrous Item · very rare · attunement|Amulet of the Planes|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|amulet-of-the-planes
 Magic armor and shields|Armor · very rare · attunement|Animated Shield|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|animated-shield
 Wondrous items|Wondrous Item · legendary|Apparatus of Kwalish|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|apparatus-of-kwalish
 Wondrous items|Wondrous Item · rare|Arcane Chatelaine|AU|skip|3|Utility (Arcane Lock keys) - by hand|arcane-chatelaine
@@ -22,12 +22,12 @@ Magic armor and shields|Armor · very rare|Armor, +1, +2, or +3|SRD|done|1|Check
 Magic armor and shields|Armor · rare · attunement|Arrow-Catching Shield|SRD|done|2|Module rule (no Mass Apply): +2 AC only against ranged attack rolls (the compendium gave it always). The Reaction to become the target stays manual|arrow-catching-shield
 Artifacts|Weapon · artifact · attunement|Axe of the Dwarvish Lords|DMG|skip|3|Artifact - automate on request when one enters a campaign|axe-of-the-dwarvish-lords
 Wondrous items|Wondrous Item · uncommon · attunement|Baba Yaga’s Dancing Broom|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|baba-yagas-dancing-broom
-Wondrous items|Wondrous Item · rare|Bag of Beans|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-beans
-Wondrous items|Wondrous Item · very rare|Bag of Devouring|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-devouring
-Wondrous items|Wondrous Item · uncommon|Bag of Holding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bag-of-holding
+Wondrous items|Wondrous Item · rare|Bag of Beans|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|bag-of-beans
+Wondrous items|Wondrous Item · very rare|Bag of Devouring|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|bag-of-devouring
+Wondrous items|Wondrous Item · uncommon|Bag of Holding|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|bag-of-holding
 Wondrous items|Wondrous Item · uncommon|Bag of Tricks|DMG|done|3|CGA item: Pull Fuzzy Object rolls the d8; Gray / Rust / Tan Bag summon the table's creature (3 per dawn)|bag-of-tricks
 Wondrous items|Wondrous Item · rare|Bead of Force|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|bead-of-force
-Wondrous items|Wondrous Item · common|Bead of Nourishment|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|bead-of-nourishment
+Wondrous items|Wondrous Item · common|Bead of Nourishment|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|bead-of-nourishment
 Wondrous items|Wondrous Item · common|Bead of Refreshment|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|bead-of-refreshment
 Wondrous items|Wondrous Item · rare|Bellows of Strangulation|AU|done|2|Done in v0.42.0: 6 charges: CON 15 save or Incapacitated with repeat saves (one creature for 1, 30-ft cone for 3), Cloudkill cast (DC 17) for 5; regains 1d6+1 at dawn|bellows-of-strangulation
 Wondrous items|Wondrous Item · rare · attunement|Belt of Dwarvenkind|SRD|done|2|Module rule (no Mass Apply): switches on the belt's benefits effect (shipped disabled)|belt-of-dwarvenkind
@@ -51,17 +51,17 @@ Wondrous items|Wondrous Item · uncommon · attunement|Bracers of Archery|SRD|do
 Wondrous items|Wondrous Item · rare · attunement|Bracers of Defense|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): the bracers' +2 AC switches off while wearing armor or a Shield (compendium gave it always)|bracers-of-defense
 Wondrous items|Wondrous Item · rare|Brazier of Commanding Fire Elementals|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|brazier-of-commanding-fire-elementals
 Wondrous items|Wondrous Item · uncommon · attunement|Brooch of Shielding|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol (Force Resistance)|brooch-of-shielding
-Wondrous items|Wondrous Item · uncommon · attunement|Broom of Flying|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|broom-of-flying
+Wondrous items|Wondrous Item · uncommon · attunement|Broom of Flying|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|broom-of-flying
 Wondrous items|Wondrous Item · very rare · attunement|Candle of Invocation|SRD|done|3|Module rule (no Mass Apply): while lit, every creature within 30 ft has Advantage on D20 Tests. Free level 1 spells for Clerics/Druids stay manual|candle-of-invocation
 Wondrous items|Wondrous Item · common|Candle of the Deep|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|candle-of-the-deep
 Wondrous items|Wondrous Item · uncommon|Cap of Water Breathing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cap-of-water-breathing
 Wondrous items|Wondrous Item · rare|Cape of the Mountebank|SRD|done|2|CGA item: casts the module's automated spells|cape-of-the-mountebank
-Wondrous items|Wondrous Item · very rare|Carpet of Flying|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|carpet-of-flying
+Wondrous items|Wondrous Item · very rare|Carpet of Flying|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|carpet-of-flying
 Magic armor and shields|Armor · common|Cast-Off Armor|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cast-off-armor
 Wondrous items|Wondrous Item · very rare · attunement|Cauldron of Rebirth|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cauldron-of-rebirth
 Wondrous items|Wondrous Item · rare|Censer of Controlling Air Elementals|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|censer-of-controlling-air-elementals
 Wondrous items|Wondrous Item · common · attunement|Charlatan’s Die|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|charlatans-die
-Wondrous items|Wondrous Item · rare|Chime of Opening|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|chime-of-opening
+Wondrous items|Wondrous Item · rare|Chime of Opening|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|chime-of-opening
 Wondrous items|Wondrous Item · uncommon|Circlet of Blasting|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|circlet-of-blasting
 Wondrous items|Wondrous Item · very rare · attunement|Cloak of Arachnida|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|cloak-of-arachnida
 Wondrous items|Wondrous Item · common|Cloak of Billowing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|cloak-of-billowing
@@ -75,27 +75,27 @@ Wondrous items|Wondrous Item · uncommon · attunement|Cloak of the Manta Ray|SR
 Wondrous items|Wondrous Item · common|Clockwork Amulet|DMG|done|3|Module rule (no Mass Apply): once per dawn, a missed attack whose d20 was under 10 can count it as a 10 (asked when it would hit)|clockwork-amulet
 Wondrous items|Wondrous Item · common|Clothes of Mending|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|clothes-of-mending
 Wondrous items|Wondrous Item · common|Conjurer's Canopy|AU|skip|3|Utility, narrative or DM-run - nothing to automate|conjurers-canopy
-Wondrous items|Wondrous Item · very rare · attunement|Crystal Ball|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|crystal-ball
-Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Mind Reading|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mind-reading-crystal-ball-of
-Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Telepathy|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|telepathy-crystal-ball-of
-Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of True Seeing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|true-seeing-crystal-ball-of
+Wondrous items|Wondrous Item · very rare · attunement|Crystal Ball|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|crystal-ball
+Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Mind Reading|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|mind-reading-crystal-ball-of
+Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of Telepathy|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|telepathy-crystal-ball-of
+Wondrous items|Wondrous Item · legendary · attunement|Crystal Ball of True Seeing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|true-seeing-crystal-ball-of
 Wondrous items|Wondrous Item · rare · attunement|Cube of Force|SRD|done|2|CGA item: casts the module's automated spells|cube-of-force
 Wondrous items|Wondrous Item · rare|Cube of Summoning|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Wind the Crank rolls 1d6 and casts that summon spell at level 5 (DC 17, +9, no Concentration); you pick the form|cube-of-summoning
-Wondrous items|Wondrous Item · legendary|Cubic Gate|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|cubic-gate
+Wondrous items|Wondrous Item · legendary|Cubic Gate|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|cubic-gate
 Wondrous items|Wondrous Item · rare · attunement|Daern’s Instant Fortress|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|daerns-instant-fortress
 Magic weapons|Weapon · rare|Dagger of Venom|SRD|done|1|CGA item + module rule: the Poison Save rolls on the first hit while coated (compendium ran it on every hit)|dagger-of-venom
 Magic weapons|Weapon · very rare · attunement|Dancing Sword|SRD|skip|2|Attack with the sword as the Bonus Action (it uses your attack roll); the compendium summon is a template that only works once enchanted onto a sword|dancing-sword
 Wondrous items|Wondrous Item · common · attunement|Dark Shard Amulet|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|dark-shard-amulet
 Magic weapons|Weapon · rare · attunement|Dazzling Weapon|EB|done|1|Done in v0.42.0: +1 (on the item); Bonus Action light; Reaction after you're hit - spend a charge, attacker makes a DC 15 CON save or is Blinded until the end of its next turn (4 charges, 1d4 at dawn)|dazzling-weapon
-Wondrous items|Wondrous Item · uncommon|Decanter of Endless Water|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|decanter-of-endless-water
-Wondrous items|Wondrous Item · uncommon|Deck of Illusions|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|deck-of-illusions
+Wondrous items|Wondrous Item · uncommon|Decanter of Endless Water|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|decanter-of-endless-water
+Wondrous items|Wondrous Item · uncommon|Deck of Illusions|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|deck-of-illusions
 Wondrous items|Wondrous Item · legendary|Deck of Many Things|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|deck-of-many-things
 Magic weapons|Weapon · legendary · attunement|Defender|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): first attack each turn asks how much of the +3 moves to AC until your next turn|defender
 Magic armor and shields|Armor · very rare · attunement|Demon Armor|SRD|done|2|Checked in v0.24.0 (data only) - compendium enchantment template; D&D Beyond armor carries its own effects. Not exercised in a test|demon-armor
 Artifacts|Wondrous Item · artifact · attunement|Demonomicon of Iggwilv|DMG|skip|3|Artifact - automate on request when one enters a campaign|demonomicon-of-iggwilv
 Staffs|Staff · legendary · attunement (sorcerer, warlock, wizard)|Diamond Staff|AU|done|3|Done in v0.42.0: +3 Quarterstaff (on the item); Arcana Advantage; light; spells by charges; Stunning Hit (2 charges, CON 17 or Stunned until the end of your next turn)|diamond-staff
 Wondrous items|Wondrous Item · common|Dictation Quill|AU|skip|3|Utility, narrative or DM-run - nothing to automate|dictation-quill
-Wondrous items|Wondrous Item · rare|Dimensional Shackles|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|dimensional-shackles
+Wondrous items|Wondrous Item · rare|Dimensional Shackles|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|dimensional-shackles
 Magic weapons|Weapon · uncommon|Dispelling Ammunition|AU|done|2|Done in v0.42.0: When it damages a target, spells of level 3 or lower on the target end (module); the ammunition then loses its magic|dispelling-ammunition
 Staffs|Staff · rare · attunement|Dissuader|AU|done|3|Done in v0.42.0: +1 Quarterstaff; Calm Emotions 1/dawn; Dissuading Aura (WIS 15 or Frightened); Repel Reaction (STR 15 or pushed 30 ft) - each 1/dawn|dissuader
 Magic armor and shields|Armor · very rare · attunement|Dragon Scale Mail|SRD|done|2|Checked in v0.24.0 (data only) - compendium enchantment template; D&D Beyond armor carries its own effects. Not exercised in a test|dragon-scale-mail
@@ -104,12 +104,12 @@ Wondrous items|Wondrous Item · common|Dread Helm|DMG|skip|3|Utility, narrative 
 Wondrous items|Wondrous Item · rare · attunement|Dream Weaver|AU|done|3|Done in v0.42.0: Dream Wisdom: a d20 rolled after a Long Rest that can replace one D20 Test; Mind Wall: Advantage on INT/WIS/CHA saves while Unconscious|dream-weaver
 Wondrous items|Wondrous Item · uncommon|Driftglobe|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|driftglobe
 Wondrous items|Wondrous Item · uncommon|Dust of Disappearance|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|dust-of-disappearance
-Wondrous items|Wondrous Item · uncommon|Dust of Dryness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|dust-of-dryness
+Wondrous items|Wondrous Item · uncommon|Dust of Dryness|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|dust-of-dryness
 Wondrous items|Wondrous Item · uncommon|Dust of Sneezing and Choking|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|dust-of-sneezing-and-choking
 Magic armor and shields|Armor · very rare|Dwarven Plate|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (+2 AC); the forced-movement Reaction is a reminder activity|dwarven-plate
 Magic weapons|Weapon · very rare · attunement|Dwarven Thrower|SRD|done|2|CGA item + module rule (no mass apply): +1d8 Force only when thrown, +1d8 more vs Giants|dwarven-thrower
 Wondrous items|Wondrous Item · common|Ear Horn of Hearing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ear-horn-of-hearing
-Wondrous items|Wondrous Item · very rare|Efreeti Bottle|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|efreeti-bottle
+Wondrous items|Wondrous Item · very rare|Efreeti Bottle|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|efreeti-bottle
 Magic armor and shields|Armor · legendary · attunement|Efreeti Chain|SRD|done|2|Checked in v0.24.0 (data only) - compendium enchantment template; D&D Beyond armor carries its own effects. Not exercised in a test|efreeti-chain
 Wondrous items|Wondrous Item · uncommon|Elemental Gem|SRD|done|2|CGA item: the four gems summon the right elementals (compendium links were broken - the gem was used up, nothing appeared)|elemental-gem
 Potions and oils|Potion · rare|Elixir of Health|SRD|done|2|Module rule (no Mass Apply): ends Blinded, Deafened, Paralyzed and Poisoned (compendium activity did nothing)|elixir-of-health
@@ -127,9 +127,9 @@ Wondrous items|Wondrous Item · uncommon|Eversmoking Bottle|SRD|done|3|Checked i
 Magic weapons|Weapon · very rare|Executioner’s Axe|DMG|done|2|Module rule (no Mass Apply): Humanoid hit +2d6 Slashing and temp HP equal to it|executioners-axe
 Artifacts|Wondrous Item · artifact · attunement|Eye and Hand of Vecna|DMG|skip|3|Artifact - automate on request when one enters a campaign|eye-and-hand-of-vecna
 Wondrous items|Wondrous Item · uncommon · attunement|Eyes of Charming|SRD|done|2|CGA item: casts the module's automated spells|eyes-of-charming
-Wondrous items|Wondrous Item · uncommon|Eyes of Minute Seeing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|eyes-of-minute-seeing
+Wondrous items|Wondrous Item · uncommon|Eyes of Minute Seeing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|eyes-of-minute-seeing
 Wondrous items|Wondrous Item · uncommon|Eyes of the Eagle|SRD|done|2|Module rule (no Mass Apply): Advantage on Perception (compendium item was empty)|eyes-of-the-eagle
-Wondrous items|Wondrous Item · varies|Figurine of Wondrous Power|SRD|skip|3|Listed by variant below|figurine-of-wondrous-power
+Wondrous items|Wondrous Item · varies|Figurine of Wondrous Power|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Listed by variant below|figurine-of-wondrous-power
 Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Bronze Griffon)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand|figurine-of-wondrous-power-bronze-griffon
 Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Ebony Fly)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand|figurine-of-wondrous-power-ebony-fly
 Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Golden Lions)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - one lion or both|figurine-of-wondrous-power-golden-lions
@@ -140,11 +140,11 @@ Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Onyx Dog)|DMG|d
 Wondrous items|Wondrous Item · rare|Figurine of Wondrous Power (Serpentine Owl)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand|figurine-of-wondrous-power-serpentine-owl
 Wondrous items|Wondrous Item · uncommon|Figurine of Wondrous Power (Silver Raven)|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): summons the figurine's creature from the dnd5e compendium for its duration; the days before it works again are by hand - plus Animal Messenger on the raven|figurine-of-wondrous-power-silver-raven
 Magic weapons|Weapon · rare · attunement|Flame Tongue|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)|flame-tongue
-Wondrous items|Wondrous Item · rare|Folding Boat|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|folding-boat
+Wondrous items|Wondrous Item · rare|Folding Boat|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|folding-boat
 Magic weapons|Weapon · very rare · attunement|Frost Brand|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)|frost-brand
 Wondrous items|Wondrous Item · uncommon · attunement|Gauntlets of Ogre Power|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)|gauntlets-of-ogre-power
 Wondrous items|Wondrous Item · uncommon|Gem of Brightness|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|gem-of-brightness
-Wondrous items|Wondrous Item · rare · attunement|Gem of Seeing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|gem-of-seeing
+Wondrous items|Wondrous Item · rare · attunement|Gem of Seeing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|gem-of-seeing
 Magic weapons|Weapon · rare|Giant Slayer|SRD|done|2|Module rule (no Mass Apply): Giant hit +2d6 (weapon type) and DC 15 STR save or Prone|giant-slayer
 Magic armor and shields|Armor · rare|Glamoured Studded Leather|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|glamoured-studded-leather
 Wondrous items|Wondrous Item · uncommon · attunement|Gloves of Missile Snaring|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): Reaction when hit by a ranged/thrown weapon attack - reduce by 1d10 + DEX|gloves-of-missile-snaring
@@ -155,16 +155,16 @@ Wondrous items|Wondrous Item · uncommon|Goggles of Night|SRD|done|3|Checked in 
 Magic weapons|Weapon · legendary · attunement|Grave Reaper|AU|done|2|Done in v0.42.0: +2 Sickle (on the item); +2d8 Necrotic on a hit (module); Spirit Lantern cast 1/dawn (DC 17, five fragments)|grave-reaper
 Wondrous items|Wondrous Item · uncommon|Hag Eye|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hag-eye
 Magic weapons|Weapon · legendary · attunement|Hammer of Thunderbolts|SRD|done|2|Module rule (no Mass Apply): hurled hit - the target and every creature within 30 ft of it: DC 17 CON or Stunned; Giant's Bane with an attuned Belt/Gauntlets; Giant's Bane save no longer runs on every hit|hammer-of-thunderbolts
-Wondrous items|Wondrous Item · uncommon · attunement|Hat of Disguise|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-disguise
-Wondrous items|Wondrous Item · very rare · attunement|Hat of Many Spells|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-many-spells
+Wondrous items|Wondrous Item · uncommon · attunement|Hat of Disguise|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|hat-of-disguise
+Wondrous items|Wondrous Item · very rare · attunement|Hat of Many Spells|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|hat-of-many-spells
 Wondrous items|Wondrous Item · common|Hat of Vermin|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-vermin
 Wondrous items|Wondrous Item · common · attunement|Hat of Wizardry|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hat-of-wizardry
 Wondrous items|Wondrous Item · uncommon · attunement|Headband of Intellect|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (upgrade mode: never lowers a higher score)|headband-of-intellect
 Wondrous items|Wondrous Item · uncommon|Helm of Awareness|EB|done|1|Done in v0.42.0: Advantage on Initiative rolls while worn (module passive)|helm-of-awareness
 Wondrous items|Wondrous Item · very rare · attunement|Helm of Brilliance|SRD|done|3|CGA item: Fireball and Wall of Fire cast the module's versions; gem counts, Fire Opal flames and the explosion use the compendium activities|helm-of-brilliance
-Wondrous items|Wondrous Item · uncommon|Helm of Comprehending Languages|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-comprehending-languages
-Wondrous items|Wondrous Item · uncommon · attunement|Helm of Telepathy|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-telepathy
-Wondrous items|Wondrous Item · rare · attunement|Helm of Teleportation|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|helm-of-teleportation
+Wondrous items|Wondrous Item · uncommon|Helm of Comprehending Languages|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|helm-of-comprehending-languages
+Wondrous items|Wondrous Item · uncommon · attunement|Helm of Telepathy|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|helm-of-telepathy
+Wondrous items|Wondrous Item · rare · attunement|Helm of Teleportation|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|helm-of-teleportation
 Wondrous items|Wondrous Item · rare|Heward’s Handy Haversack|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hewards-handy-haversack
 Wondrous items|Wondrous Item · common|Heward’s Handy Spice Pouch|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|hewards-handy-spice-pouch
 Magic weapons|Weapon · legendary · attunement|Holy Avenger|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): +2d10 Radiant vs Fiends/Undead; 10-ft (30 at Paladin 17) aura of Advantage on saves vs spells and magical effects while equipped|holy-avenger
@@ -172,14 +172,14 @@ Wondrous items|Wondrous Item · common|Homeward Compass|AU|skip|3|Utility, narra
 Wondrous items|Wondrous Item · rare|Horn of Blasting|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|horn-of-blasting
 Wondrous items|Wondrous Item · common|Horn of Silent Alarm|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|horn-of-silent-alarm
 Wondrous items|Wondrous Item · very rare|Horn of Valhalla|SRD|done|2|CGA item: summons Berserkers (compendium link was broken)|horn-of-valhalla
-Wondrous items|Wondrous Item · very rare|Horseshoes of a Zephyr|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|horseshoes-of-a-zephyr
-Wondrous items|Wondrous Item · rare|Horseshoes of Speed|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|horseshoes-of-speed
+Wondrous items|Wondrous Item · very rare|Horseshoes of a Zephyr|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|horseshoes-of-a-zephyr
+Wondrous items|Wondrous Item · rare|Horseshoes of Speed|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|horseshoes-of-speed
 Wondrous items|Wondrous Item · varies · attunement|Idol of Good Fortunes|AU|done|3|Done in v0.42.0: Augury 1/dawn (blemished), +1 AC (tarnished, module passive), Globe of Invulnerability 1/dawn (golden); coin conversion by hand|idol-of-good-fortunes
-Rods|Rod · uncommon|Immovable Rod|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|immovable-rod
+Rods|Rod · uncommon|Immovable Rod|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|immovable-rod
 Wondrous items|Wondrous Item · common|Instrument of Illusions|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-illusions
 Wondrous items|Wondrous Item · common|Instrument of Scribing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|instrument-of-scribing
 Wondrous items|Wondrous Item · varies · attunement|Instrument of the Bards|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): seven items, one per instrument - each spell once per dawn (Cure Wounds at the listed level); playing it unattuned costs a DC 15 WIS save or 2d4 Psychic and casts nothing|instrument-of-the-bards
-Wondrous items|Wondrous Item · varies · attunement|Ioun Stone|SRD|skip|3|Listed by variant below|ioun-stone
+Wondrous items|Wondrous Item · varies · attunement|Ioun Stone|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Listed by variant below|ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Absorption)|SRD|done|3|Module rule (no Mass Apply): Reaction when an enemy casts a spell of level 4 (8) or lower - cancel it, spending that many of the stone's 20 levels|absorption-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Agility)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|agility-ioun-stone
 Wondrous items|Wondrous Item · rare|Ioun Stone (Awareness)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|awareness-ioun-stone
@@ -190,16 +190,16 @@ Wondrous items|Wondrous Item · very rare|Ioun Stone (Intellect)|SRD|done|2|Chec
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Leadership)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|leadership-ioun-stone
 Wondrous items|Wondrous Item · legendary|Ioun Stone (Mastery)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|mastery-ioun-stone
 Wondrous items|Wondrous Item · rare|Ioun Stone (Protection)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|protection-ioun-stone
-Wondrous items|Wondrous Item · legendary|Ioun Stone (Regeneration)|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|regeneration-ioun-stone
-Wondrous items|Wondrous Item · rare|Ioun Stone (Reserve)|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|reserve-ioun-stone
+Wondrous items|Wondrous Item · legendary|Ioun Stone (Regeneration)|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|regeneration-ioun-stone
+Wondrous items|Wondrous Item · rare|Ioun Stone (Reserve)|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|reserve-ioun-stone
 Wondrous items|Wondrous Item · very rare|Ioun Stone (Strength)|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|strength-ioun-stone
-Wondrous items|Wondrous Item · rare|Ioun Stone (Sustenance)|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sustenance-ioun-stone
+Wondrous items|Wondrous Item · rare|Ioun Stone (Sustenance)|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|sustenance-ioun-stone
 Wondrous items|Wondrous Item · rare|Iron Bands of Bilarro|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): ranged attack (PB + DEX) that Restrains on a hit, once per dawn; Release (Bonus Action) frees the target; breaking them is by hand|iron-bands-of-bilarro
-Wondrous items|Wondrous Item · legendary|Iron Flask|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|iron-flask
+Wondrous items|Wondrous Item · legendary|Iron Flask|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|iron-flask
 Magic weapons|Weapon · uncommon|Javelin of Lightning|SRD|done|1|CGA item: attacks no longer pop up Lightning Bolt; Attack (Piercing) and Attack (Lightning) options|javelin-of-lightning
 Wondrous items|Wondrous Item · uncommon|Keoghtom’s Ointment|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Apply a Dose heals 2d8 + 2 and ends Poisoned; set the doses rolled|keoghtoms-ointment
 Magic weapons|Weapon · varies · attunement|Keyholes Dagger|AU|done|3|Done in v0.42.0: +1/+2/+3 (on the item); weapon form changes by hand; very rare - reroll a missed attack 1/dawn (asked)|keyholes-dagger
-Wondrous items|Wondrous Item · uncommon|Lantern of Revealing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|lantern-of-revealing
+Wondrous items|Wondrous Item · uncommon|Lantern of Revealing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|lantern-of-revealing
 Wondrous items|Wondrous Item · common|Lock of Trickery|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|lock-of-trickery
 Magic weapons|Weapon · legendary · attunement|Luck Blade|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): once per Long Rest, reroll a failed attack roll or save (asked when it fails). +1 saves and Wish come from the item|luck-blade
 Wondrous items|Wondrous Item · common|Lucky Foot|AU|done|2|Done in v0.42.0: When you roll a 1 on a save or check, the module offers to reroll it; the foot then disintegrates|lucky-foot
@@ -212,15 +212,15 @@ Wondrous items|Wondrous Item · rare|Mage's Manacle|AU|done|3|Done in v0.42.0: M
 Wondrous items|Wondrous Item · uncommon · attunement|Magewright's Gloves|AU|skip|3|Crafting time - by hand|magewrights-gloves
 Wondrous items|Wondrous Item · common · attunement|Manifold Tool|EB|skip|3|Tool form and proficiency - by hand|manifold-tool
 Wondrous items|Wondrous Item · rare · attunement|Mantle of Spell Resistance|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): Advantage on saves against spells (compendium item had no effect)|mantle-of-spell-resistance
-Wondrous items|Wondrous Item · very rare|Manual of Bodily Health|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-bodily-health
-Wondrous items|Wondrous Item · very rare|Manual of Gainful Exercise|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-gainful-exercise
-Wondrous items|Wondrous Item · very rare|Manual of Golems|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-golems
-Wondrous items|Wondrous Item · very rare|Manual of Quickness of Action|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|manual-of-quickness-of-action
+Wondrous items|Wondrous Item · very rare|Manual of Bodily Health|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|manual-of-bodily-health
+Wondrous items|Wondrous Item · very rare|Manual of Gainful Exercise|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|manual-of-gainful-exercise
+Wondrous items|Wondrous Item · very rare|Manual of Golems|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|manual-of-golems
+Wondrous items|Wondrous Item · very rare|Manual of Quickness of Action|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|manual-of-quickness-of-action
 Magic armor and shields|Armor · uncommon|Mariner’s Armor|DMG|done|2|Done in v0.43.0: Module rule (no Mass Apply): Swim Speed equal to your Speed while worn; at the start of your turn at 0 HP it asks if you're underwater and heals 1d4 (once per day)|mariners-armor
 Magic weapons|Weapon · uncommon · attunement|Martialist's Quarterstaff|AU|done|2|Done in v0.42.0: 4 charges: Searing Smite cast (2, DC 13), Throw (1, by hand), Trip (1: Advantage on the attack, STR 13 or Prone on a hit)|martialists-quarterstaff
-Wondrous items|Wondrous Item · uncommon · attunement|Medallion of Thoughts|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|medallion-of-thoughts
+Wondrous items|Wondrous Item · uncommon · attunement|Medallion of Thoughts|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|medallion-of-thoughts
 Rings|Ring · uncommon · attunement|Mind Sharpener|EB|done|1|Done in v0.42.0: 4 charges: when you fail a Concentration save, the module offers your Reaction and a charge to succeed instead (1d4 at dawn)|mind-sharpener
-Wondrous items|Wondrous Item · very rare|Mirror of Life Trapping|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mirror-of-life-trapping
+Wondrous items|Wondrous Item · very rare|Mirror of Life Trapping|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|mirror-of-life-trapping
 Magic armor and shields|Armor · uncommon|Mithral Armor|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|mithral-armor
 Magic weapons|Weapon · common|Moon-Touched Sword|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|moon-touched-sword
 Magic weapons|Weapon · legendary · attunement|Moonblade|DMG|skip|3|Random runes and a sentient personality chosen by the DM - build a specific blade on request|moonblade
@@ -234,7 +234,7 @@ Wondrous items|Wondrous Item · varies · attunement (spellcaster)|Necklace of t
 Magic weapons|Weapon · very rare · attunement|Nine Lives Stealer|SRD|done|2|Module rule (no Mass Apply): a 20 vs fewer than 100 HP - DC 15 CON or slain (Constructs/Undead immune), spends a charge; Life Stealing no longer runs on every hit|nine-lives-stealer
 Wondrous items|Wondrous Item · very rare|Nolzur’s Marvelous Pigments|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|nolzurs-marvelous-pigments
 Magic weapons|Weapon · very rare · attunement|Oathbow|SRD|done|2|Module rule (no Mass Apply): offers to swear the target as your sworn enemy; Advantage and +3d6 vs it, Disadvantage with other weapons while it lives|oathbow
-Potions and oils|Potion · rare|Oil of Etherealness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|oil-of-etherealness
+Potions and oils|Potion · rare|Oil of Etherealness|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|oil-of-etherealness
 Potions and oils|Potion · very rare|Oil of Sharpness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|oil-of-sharpness
 Potions and oils|Potion · uncommon|Oil of Slipperiness|SRD|done|2|CGA item: casts the module's automated spells|oil-of-slipperiness
 Wondrous items|Wondrous Item · common|Orb of Direction|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|orb-of-direction
@@ -247,17 +247,17 @@ Wondrous items|Wondrous Item · common|Perfume of Bewitching|DMG|skip|3|Utility,
 Wondrous items|Wondrous Item · uncommon · attunement|Periapt of Health|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|periapt-of-health
 Wondrous items|Wondrous Item · rare · attunement|Periapt of Proof against Poison|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|periapt-of-proof-against-poison
 Wondrous items|Wondrous Item · uncommon · attunement|Periapt of Wound Closure|SRD|done|2|Module rule (no Mass Apply): death saves of 9 or lower count as 10; Hit Point Dice heal double|periapt-of-wound-closure
-Potions and oils|Potion · uncommon|Philter of Love|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|philter-of-love
-Wondrous items|Wondrous Item · common|Pipe of Smoke Monsters|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|pipe-of-smoke-monsters
+Potions and oils|Potion · uncommon|Philter of Love|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|philter-of-love
+Wondrous items|Wondrous Item · common|Pipe of Smoke Monsters|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|pipe-of-smoke-monsters
 Wondrous items|Wondrous Item · uncommon|Pipes of Haunting|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|pipes-of-haunting
-Wondrous items|Wondrous Item · uncommon · attunement|Pipes of the Sewers|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|pipes-of-the-sewers
+Wondrous items|Wondrous Item · uncommon · attunement|Pipes of the Sewers|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|pipes-of-the-sewers
 Magic armor and shields|Armor · legendary · attunement|Plate Armor of Etherealness|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|plate-armor-of-etherealness
 Wondrous items|Wondrous Item · common|Pole of Angling|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|pole-of-angling
 Wondrous items|Wondrous Item · common|Pole of Collapsing|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|pole-of-collapsing
-Wondrous items|Wondrous Item · rare|Portable Hole|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|portable-hole
+Wondrous items|Wondrous Item · rare|Portable Hole|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|portable-hole
 Wondrous items|Wondrous Item · common|Pot of Awakening|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|pot-of-awakening
 Potions and oils|Potion · uncommon|Potion of Animal Friendship|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|potion-of-animal-friendship
-Potions and oils|Potion · rare|Potion of Clairvoyance|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-clairvoyance
+Potions and oils|Potion · rare|Potion of Clairvoyance|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|potion-of-clairvoyance
 Potions and oils|Potion · common|Potion of Climbing|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|potion-of-climbing
 Potions and oils|Potion · common|Potion of Comprehension|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-comprehension
 Potions and oils|Potion · rare|Potion of Diminution|SRD|done|2|CGA item: casts the module's automated spells|potion-of-diminution
@@ -271,16 +271,16 @@ Potions and oils|Potion · uncommon|Potion of Growth|SRD|done|2|CGA item: casts 
 Potions and oils|Potion · rare|Potion of Heroism|SRD|done|1|CGA item: Drink now applies Bless for 1 hour (compendium only gave the temp HP)|potion-of-heroism
 Potions and oils|Potion · rare|Potion of Invisibility|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)|potion-of-invisibility
 Potions and oils|Potion · rare|Potion of Invulnerability|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)|potion-of-invulnerability
-Potions and oils|Potion · very rare|Potion of Longevity|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-longevity
-Potions and oils|Potion · rare|Potion of Mind Reading|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-mind-reading
+Potions and oils|Potion · very rare|Potion of Longevity|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|potion-of-longevity
+Potions and oils|Potion · rare|Potion of Mind Reading|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|potion-of-mind-reading
 Potions and oils|Potion · uncommon|Potion of Poison|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|potion-of-poison
 Potions and oils|Potion · uncommon|Potion of Pugilism|DMG|done|2|CGA item + module rule (no mass apply): Unarmed Strikes +1d6 Force for 10 minutes|potion-of-pugilism
 Potions and oils|Potion · uncommon|Potion of Resistance|SRD|done|1|CGA item: one Drink activity per damage type (compendium applied all ten under midi)|potion-of-resistance
-Potions and oils|Potion · very rare|Potion of Speed|SRD|done|1|Checked in v0.23.0 - the compendium potion casts Haste on the drinker without Concentration (pick Cast, not Apply Lethargy, when asked)|potion-of-speed
+Potions and oils|Potion · very rare|Potion of Speed|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.23.0 - the compendium potion casts Haste on the drinker without Concentration (pick Cast, not Apply Lethargy, when asked)|potion-of-speed
 Potions and oils|Potion · uncommon|Potion of Tirelessness|AU|skip|3|No sleep, 4-hour Long Rest - by hand|potion-of-tirelessness
 Potions and oils|Potion · very rare|Potion of Vitality|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|potion-of-vitality
-Potions and oils|Potion · uncommon|Potion of Water Breathing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|potion-of-water-breathing
-Potions and oils|Potion · varies|Potions of Healing|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)|potion-of-healing
+Potions and oils|Potion · uncommon|Potion of Water Breathing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|potion-of-water-breathing
+Potions and oils|Potion · varies|Potions of Healing|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.23.0 - the compendium item works under midi-qol (target the drinker)|potion-of-healing
 Wondrous items|Wondrous Item · rare · attunement (spellcaster)|Prismatic Rune|AU|done|3|Done in v0.42.0: 6 charges: change a damaging spell's damage to the rune's type chosen after a Long Rest (asked)|prismatic-rune
 Wondrous items|Wondrous Item · common|Prosthetic Limb|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|prosthetic-limb
 Wondrous items|Wondrous Item · varies|Quaal’s Feather Token|DMG|skip|3|Listed by variant below|quaals-feather-token
@@ -296,43 +296,43 @@ Wondrous items|Wondrous Item · uncommon|Quiver of Ehlonna|DMG|skip|3|Utility, n
 Magic weapons|Weapon · uncommon · attunement|Repeating Shot|EB|skip|3|+1 ranged (on the item); no Loading, self-made ammunition by hand|repeating-shot
 Magic armor and shields|Armor · uncommon|Repulsion Shield|EB|done|1|Done in v0.42.0: +1 Shield (on the item); 4 charges: Reaction when a Large or smaller creature within 5 ft hits you in melee - push it 15 ft (1d4 at dawn)|repulsion-shield
 Magic weapons|Weapon · uncommon|Returning Weapon|EB|skip|3|+1 (on the item); returns to your hand by hand|returning-weapon
-Rings|Ring · rare|Ring of Animal Influence|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-animal-influence
+Rings|Ring · rare|Ring of Animal Influence|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-animal-influence
 Rings|Ring · uncommon · attunement|Ring of Dedicated Focus|AU|done|2|Done in v0.42.0: When you fail a Concentration save, the module offers to roll up to two Hit Dice and add them|ring-of-dedicated-focus
-Rings|Ring · legendary · attunement|Ring of Djinni Summoning|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-djinni-summoning
+Rings|Ring · legendary · attunement|Ring of Djinni Summoning|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-djinni-summoning
 Rings|Ring · legendary · attunement|Ring of Elemental Command|SRD|done|3|Module rule (no Mass Apply): Elemental Bane (Advantage vs Elementals, they have Disadvantage vs you) and the plane's benefits from the ring's name (air/earth/fire/water). Compulsion and spells stay manual|ring-of-elemental-command
 Rings|Ring · rare · attunement|Ring of Evasion|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): Reaction after a failed DEX save - spend a charge to succeed|ring-of-evasion
-Rings|Ring · rare · attunement|Ring of Feather Falling|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-feather-falling
+Rings|Ring · rare · attunement|Ring of Feather Falling|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-feather-falling
 Rings|Ring · rare · attunement|Ring of Free Action|SRD|done|2|Module rule (no Mass Apply): immune to Paralyzed and Restrained (compendium only ignored Difficult Terrain)|ring-of-free-action
 Rings|Ring · legendary · attunement|Ring of Invisibility|SRD|done|2|CGA item: Turn Invisible activity (compendium ring had none)|ring-of-invisibility
-Rings|Ring · uncommon · attunement|Ring of Jumping|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-jumping
-Rings|Ring · uncommon · attunement|Ring of Mind Shielding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-mind-shielding
+Rings|Ring · uncommon · attunement|Ring of Jumping|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-jumping
+Rings|Ring · uncommon · attunement|Ring of Mind Shielding|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-mind-shielding
 Rings|Ring · rare · attunement|Ring of Protection|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (+1 AC/saves/checks)|ring-of-protection
 Rings|Ring · very rare · attunement|Ring of Regeneration|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|ring-of-regeneration
 Rings|Ring · rare|Ring of Resistance|SRD|done|1|Module rule (no Mass Apply): the compendium enchantment only renamed the ring - the module reads the type (or gemstone) from the name and gives the Resistance while worn|ring-of-resistance
 Rings|Ring · very rare · attunement|Ring of Shooting Stars|SRD|done|2|CGA item: casts the module's automated spells|ring-of-shooting-stars
-Rings|Ring · rare · attunement|Ring of Spell Storing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-spell-storing
+Rings|Ring · rare · attunement|Ring of Spell Storing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-spell-storing
 Rings|Ring · legendary · attunement|Ring of Spell Turning|SRD|done|2|Module rule (no Mass Apply): Advantage on saves vs spells; a saved spell of level 7 or lower has no effect. Turning a spell back stays manual|ring-of-spell-turning
 Rings|Ring · uncommon|Ring of Swimming|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|ring-of-swimming
 Rings|Ring · very rare · attunement|Ring of Telekinesis|SRD|done|2|Checked in v0.24.0 - casts a dnd5e spell from the item (the cast mechanism works; the module has no fixed version of that spell). Passive effects checked|ring-of-telekinesis
 Rings|Ring · rare · attunement|Ring of the Ram|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol; module rule (no mass apply) stops its extra activity running after every attack|ring-of-the-ram
-Rings|Ring · legendary|Ring of Three Wishes|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-three-wishes
+Rings|Ring · legendary|Ring of Three Wishes|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-three-wishes
 Rings|Ring · uncommon · attunement|Ring of Warmth|SRD|done|3|Module rule (no Mass Apply): Cold damage reduced by 2d8|ring-of-warmth
-Rings|Ring · uncommon|Ring of Water Walking|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-water-walking
-Rings|Ring · rare · attunement|Ring of X-ray Vision|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|ring-of-x-ray-vision
+Rings|Ring · uncommon|Ring of Water Walking|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-water-walking
+Rings|Ring · rare · attunement|Ring of X-ray Vision|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|ring-of-x-ray-vision
 Wondrous items|Wondrous Item · common|Rival Coin|DMG|done|2|Done in v0.43.0: CGA item (Mass Apply): Toss rolls heads or tails - WIS 13 save, 2d4 Psychic and Disadvantage on the next attack, or 1d4 Psychic to you|rival-coin
 Wondrous items|Wondrous Item · rare · attunement|Robe of Eyes|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|robe-of-eyes
 Wondrous items|Wondrous Item · very rare · attunement|Robe of Scintillating Colors|SRD|done|3|CGA item: Display gives attackers Disadvantage until the end of your next turn; Dazzle - enemies within 30 ft WIS 15 or Stunned|robe-of-scintillating-colors
 Wondrous items|Wondrous Item · very rare · attunement|Robe of Stars|SRD|done|2|CGA item: casts the module's automated spells|robe-of-stars
 Wondrous items|Wondrous Item · legendary · attunement|Robe of the Archmagi|SRD|done|2|Module rule (no Mass Apply): Magic Resistance added; its AC 15 + DEX switches off in armor|robe-of-the-archmagi
-Wondrous items|Wondrous Item · uncommon|Robe of Useful Items|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|robe-of-useful-items
+Wondrous items|Wondrous Item · uncommon|Robe of Useful Items|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|robe-of-useful-items
 Rods|Rod · very rare · attunement|Rod of Absorption|SRD|done|3|Module rule (no Mass Apply): Reaction to absorb a spell targeting only you, storing its levels in the rod's 50; converting energy to slots uses the item's activity|rod-of-absorption
 Rods|Rod · very rare · attunement|Rod of Alertness|SRD|done|3|Module rule (no Mass Apply): Advantage on Perception and Initiative while held; planted, you and allies within 60 ft get +1 AC and saves|rod-of-alertness
 Rods|Rod · legendary · attunement|Rod of Lordly Might|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (button weapon forms, Drain Life, Paralyze, Terrify)|rod-of-lordly-might
 Rods|Rod · legendary · attunement|Rod of Resurrection|SRD|done|2|CGA item: casts the module's automated spells|rod-of-resurrection
 Rods|Rod · rare · attunement|Rod of Rulership|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|rod-of-rulership
-Rods|Rod · very rare|Rod of Security|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|rod-of-security
+Rods|Rod · very rare|Rod of Security|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|rod-of-security
 Rods|Rod · very rare · attunement|Rod of the Pact Keeper|DMG|done|1|Module rule (no Mass Apply): +1/+2/+3 (from the name, else rarity) to spell attacks and spell save DC while held and attuned (all spells, not only Warlock ones); regaining a slot stays manual|rod-of-the-pact-keeper
-Wondrous items|Wondrous Item · uncommon|Rope of Climbing|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|rope-of-climbing
+Wondrous items|Wondrous Item · uncommon|Rope of Climbing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|rope-of-climbing
 Wondrous items|Wondrous Item · rare|Rope of Entanglement|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|rope-of-entanglement
 Wondrous items|Wondrous Item · common|Rope of Mending|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|rope-of-mending
 Wondrous items|Wondrous Item · common · attunement|Ruby of the War Mage|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|ruby-of-the-war-mage
@@ -343,7 +343,7 @@ Magic weapons|Weapon · very rare · attunement|Scimitar of Speed|SRD|done|2|Che
 Scrolls|Scroll · rare|Scroll of Protection|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|scroll-of-protection
 Scrolls|Scroll · legendary|Scroll of Titan Summoning|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|scroll-of-titan-summoning
 Wondrous items|Wondrous Item · rare · attunement|Secret Keeper's Circlet|AU|skip|3|Utility, narrative or DM-run - nothing to automate|secret-keepers-circlet
-Wondrous items|Wondrous Item · uncommon|Sending Stones|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sending-stones
+Wondrous items|Wondrous Item · uncommon|Sending Stones|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|sending-stones
 Magic armor and shields|Armor · uncommon|Sentinel Shield|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|sentinel-shield
 Magic armor and shields|Armor · common|Shield of Expression|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|shield-of-expression
 Magic armor and shields|Armor · rare · attunement|Shield of Missile Attraction|SRD|done|3|Module rule (no Mass Apply): Resistance to Ranged weapon attack damage. The curse (attacks redirected to you) stays manual|shield-of-missile-attraction
@@ -352,14 +352,14 @@ Magic armor and shields|Armor · very rare|Shield, +1, +2, or +3|SRD|done|1|Chec
 Magic weapons|Weapon · common|Silvered Weapon|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|silvered-weapon
 Wondrous items|Wondrous Item · uncommon · attunement|Slippers of Spider Climbing|SRD|done|2|Module rule (no Mass Apply): Climb Speed equal to your Speed (compendium item was empty)|slippers-of-spider-climbing
 Magic armor and shields|Armor · common|Smoldering Armor|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|smoldering-armor
-Wondrous items|Wondrous Item · legendary|Sovereign Glue|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sovereign-glue
+Wondrous items|Wondrous Item · legendary|Sovereign Glue|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|sovereign-glue
 Rings|Ring · common|Spell Component Ring|AU|skip|3|Material component storage - by hand|spell-component-ring
 Wondrous items|Wondrous Item · rare · attunement (spellcaster)|Spell Duelist's Trophy|AU|done|3|Done in v0.42.0: Dispelling Touch: after a melee spell attack hit, cast Dispel Magic on the target (1/dawn); Mage Hand cast; no Somatic components by hand|spell-duelists-trophy
-Scrolls|Scroll · varies|Spell Scroll|SRD|done|1|Checked in v0.26.0 - a scroll made from a spell (dnd5e's Create Scroll) casts it, including the module's automated spells, and crumbles|spell-scroll
+Scrolls|Scroll · varies|Spell Scroll|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.26.0 - a scroll made from a spell (dnd5e's Create Scroll) casts it, including the module's automated spells, and crumbles|spell-scroll
 Rings|Ring · uncommon · attunement (spellcaster)|Spell-Refueling Ring|EB|done|2|Done in v0.42.0: Bonus Action, 1/dawn: recover one expended spell slot of level 3 or lower (activity)|spell-refueling-ring
 Wondrous items|Wondrous Item · uncommon · attunement|Spell-Slinger's Puppet|AU|skip|3|Utility, narrative or DM-run - nothing to automate|spell-slingers-puppet
 Magic armor and shields|Armor · very rare · attunement|Spellguard Shield|SRD|done|2|Module rule (no Mass Apply): Advantage on saves vs spells and magical effects; spell attacks against you have Disadvantage|spellguard-shield
-Wondrous items|Wondrous Item · legendary|Sphere of Annihilation|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|sphere-of-annihilation
+Wondrous items|Wondrous Item · legendary|Sphere of Annihilation|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|sphere-of-annihilation
 Wondrous items|Wondrous Item · very rare|Spirit Board|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|spirit-board
 Staffs|Staff · common|Staff of Adornment|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|staff-of-adornment
 Staffs|Staff · common|Staff of Birdcalls|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|staff-of-birdcalls
@@ -391,7 +391,7 @@ Magic weapons|Weapon · uncommon · attunement|Sword of Vengeance|DMG|done|3|Mod
 Magic weapons|Weapon · rare · attunement|Sword of Wounding|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): 2024 version - +2d6 Necrotic, DC 15 CON save or can't regain HP (repeat save end of turn). midi's sample is the 2014 item|sword-of-wounding
 Magic weapons|Weapon · common · attunement|Sylvan Talon|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|sylvan-talon
 Wondrous items|Wondrous Item · legendary · attunement|Talisman of Pure Good|SRD|done|3|Module rule (no Mass Apply): the fissure - Fiends/Undead (Celestials) save with Disadvantage; a failed save destroys the target, a success takes 4d6 Psychic|talisman-of-pure-good
-Wondrous items|Wondrous Item · legendary · attunement|Talisman of the Sphere|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|talisman-of-the-sphere
+Wondrous items|Wondrous Item · legendary · attunement|Talisman of the Sphere|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|talisman-of-the-sphere
 Wondrous items|Wondrous Item · legendary · attunement|Talisman of Ultimate Evil|SRD|done|3|Module rule (no Mass Apply): the fissure - Fiends/Undead (Celestials) save with Disadvantage; a failed save destroys the target, a success takes 4d6 Psychic|talisman-of-ultimate-evil
 Wondrous items|Wondrous Item · common · attunement|Talking Doll|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|talking-doll
 Wondrous items|Wondrous Item · common|Tankard of Sobriety|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|tankard-of-sobriety
@@ -399,33 +399,33 @@ Rods|Rod · rare · attunement|Tentacle Rod|DMG|done|2|CGA item + module rule (n
 Wondrous items|Wondrous Item · uncommon · attunement|Thespian's Playbill|AU|skip|3|Study bonus - by hand|thespians-playbill
 Wondrous items|Wondrous Item · uncommon · attunement|Thief's Thimble|AU|skip|3|Trap damage - by hand|thiefs-thimble
 Magic weapons|Weapon · very rare · attunement|Thunderous Greatclub|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (STR 20, +1d8 Thunder, Clap of Thunder, Earthquake)|thunderous-greatclub
-Wondrous items|Wondrous Item · very rare|Tome of Clear Thought|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-clear-thought
-Wondrous items|Wondrous Item · very rare|Tome of Leadership and Influence|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-leadership-and-influence
+Wondrous items|Wondrous Item · very rare|Tome of Clear Thought|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|tome-of-clear-thought
+Wondrous items|Wondrous Item · very rare|Tome of Leadership and Influence|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|tome-of-leadership-and-influence
 Wondrous items|Wondrous Item · legendary · attunement|Tome of the Stilled Tongue|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-the-stilled-tongue
-Wondrous items|Wondrous Item · very rare|Tome of Understanding|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|tome-of-understanding
+Wondrous items|Wondrous Item · very rare|Tome of Understanding|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|tome-of-understanding
 Magic armor and shields|Armor · very rare · attunement|Tramontane Armor|AU|done|3|Done in v0.42.0: +1 armor (on the item); Grasping Tendrils (1/dawn, 1 minute): Bonus Action STR 15 save in 20 ft or Grappled and pulled 20 ft|tramontane-armor
 Wondrous items|Wondrous Item · legendary · attunement|Traveler's Pearl|AU|done|3|Done in v0.42.0: Teleport cast 1/dawn|travelers-pearl
-Magic weapons|Weapon · uncommon · attunement|Trident of Fish Command|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|trident-of-fish-command
+Magic weapons|Weapon · uncommon · attunement|Trident of Fish Command|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|trident-of-fish-command
 Artifacts|Wondrous Item · artifact|Universal Pantograph|AU|skip|3|Artifact - DM-run|universal-pantograph
-Wondrous items|Wondrous Item · legendary|Universal Solvent|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|universal-solvent
+Wondrous items|Wondrous Item · legendary|Universal Solvent|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|universal-solvent
 Wondrous items|Wondrous Item · common|Veteran’s Cane|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|veterans-cane
 Magic weapons|Weapon · rare|Vicious Weapon|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (apply the enchantment to the weapon; Flame Tongue's Engulf in Flames adds the 2d6 Fire)|vicious-weapon
 Magic weapons|Weapon · legendary · attunement|Vorpal Sword|SRD|done|2|Module rule (no Mass Apply): ignores Slashing Resistance; a 20 asks: cut off the head or +30 Slashing|vorpal-sword
 Magic weapons|Weapon · common|Walloping Ammunition|DMG|done|2|Done in v0.43.0: Module rule (no Mass Apply): a hit with it forces a DC 10 STR save or Prone|walloping-ammunition
 Wands|Wand · rare · attunement|Wand of Binding|SRD|done|2|CGA item: casts the module's automated spells|wand-of-binding
 Wands|Wand · common|Wand of Conducting|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-conducting
-Wands|Wand · rare · attunement|Wand of Enemy Detection|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-enemy-detection
+Wands|Wand · rare · attunement|Wand of Enemy Detection|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|wand-of-enemy-detection
 Wands|Wand · rare · attunement|Wand of Fear|SRD|done|2|CGA item: casts the module's automated spells|wand-of-fear
 Wands|Wand · rare · attunement|Wand of Fireballs|SRD|done|1|CGA item: direct DC 15 Fireball save, +1d6 per extra charge (midi's sample ignored extra charges)|wand-of-fireballs
 Wands|Wand · uncommon|Wand of Freshness|AU|skip|3|Purify Food and Drink - by hand|wand-of-freshness
 Wands|Wand · rare · attunement|Wand of Lightning Bolts|SRD|done|1|CGA item: direct DC 15 Lightning Bolt line save, +1d6 per extra charge|wand-of-lightning-bolts
-Wands|Wand · uncommon|Wand of Magic Detection|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-magic-detection
+Wands|Wand · uncommon|Wand of Magic Detection|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|wand-of-magic-detection
 Wands|Wand · uncommon|Wand of Magic Missiles|SRD|done|1|CGA item: casts the module's Magic Missile (dnd5e's rolled one dart); level picker = charges|wand-of-magic-missiles
 Artifacts|Wand · artifact · attunement|Wand of Orcus|DMG|skip|3|Artifact - automate on request when one enters a campaign|wand-of-orcus
 Wands|Wand · rare · attunement|Wand of Paralysis|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|wand-of-paralysis
 Wands|Wand · very rare · attunement|Wand of Polymorph|SRD|done|2|CGA item: casts the module's automated spells|wand-of-polymorph
 Wands|Wand · common|Wand of Pyrotechnics|DMG|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-pyrotechnics
-Wands|Wand · uncommon|Wand of Secrets|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|wand-of-secrets
+Wands|Wand · uncommon|Wand of Secrets|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|wand-of-secrets
 Wands|Wand · rare · attunement|Wand of Slumber|AU|done|2|Done in v0.42.0: 7 charges: Sleep (1, DC 15) or Catnap (3); regains 1d6+1 at dawn|wand-of-slumber
 Wands|Wand · rare|Wand of Teeth|AU|done|2|Done in v0.42.0: 10 charges: 1-3 charges for a 30-ft cone, DEX 15 save, Xd8 Piercing + Poisoned until your next turn (half only on a success)|wand-of-teeth
 Wands|Wand · very rare · attunement|Wand of the War Mage, +1, +2, or +3|SRD|done|1|Module rule (no Mass Apply): the compendium enchantment's +N didn't reach spell attacks - the module adds +N to spell attack rolls while held and attuned|1-wand-of-the-war-mage
@@ -435,69 +435,69 @@ Artifacts|Weapon · artifact · attunement|Wave|DMG|skip|3|Artifact - automate o
 Magic weapons|Weapon · varies · attunement|Wave-Swept Weapon|AU|done|3|Done in v0.42.0: +1/+2/+3 (on the item); water breathing + Swim 30 (aquatic), Fly 30 (ascendant) while held (module passive); brine and light by hand|wave-swept-weapon
 Magic weapons|Weapon · uncommon · attunement|Weapon of Warning|SRD|done|3|Module rule (no Mass Apply): you and allies within 30 ft have Advantage on Initiative|weapon-of-warning
 Magic weapons|Weapon · very rare|Weapon, +1, +2, or +3|SRD|done|1|Checked in v0.23.0 - the compendium item works under midi-qol (enchantment templates; D&D Beyond items carry their own bonus)|weapon-1-2-or-3
-Wondrous items|Wondrous Item · legendary|Well of Many Worlds|SRD|skip|3|Utility, narrative or DM-run - nothing to automate|well-of-many-worlds
+Wondrous items|Wondrous Item · legendary|Well of Many Worlds|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Utility, narrative or DM-run - nothing to automate|well-of-many-worlds
 Artifacts|Weapon · artifact · attunement|Whelm|DMG|skip|3|Artifact - automate on request when one enters a campaign|whelm
 Wondrous items|Wondrous Item · uncommon|Wind Fan|SRD|done|2|CGA item: casts the module's automated spells|wind-fan
 Wondrous items|Wondrous Item · uncommon · attunement|Winged Boots|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|winged-boots
 Wondrous items|Wondrous Item · rare · attunement|Wings of Flying|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|wings-of-flying
 Wondrous items|Wondrous Item · very rare|Workshop Wrecker|AU|done|3|Done in v0.42.0: 1 minute, 1/dawn: each creature in the area makes a DEX save on activation and each of your turns - DC and Bludgeoning damage by area size (asked)|workshop-wrecker
 Wondrous items|Wondrous Item · very rare|Wraps of Unarmed Power|DMG|done|2|Done in v0.43.0: Module rule (no Mass Apply): +1/+2/+3 (from the name, else rarity) to Unarmed Strike attack and damage rolls, with Force offered as the damage type|wraps-of-unarmed-power
-Weapons|1d4 Bludgeoning|Club|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|club
-Weapons|1d4 Piercing|Dagger|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|dagger
-Weapons|1d8 Bludgeoning|Greatclub|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|greatclub
-Weapons|1d6 Slashing|Handaxe|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|handaxe
-Weapons|1d6 Piercing|Javelin|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|javelin
-Weapons|1d4 Bludgeoning|Light Hammer|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|light-hammer
-Weapons|1d6 Bludgeoning|Mace|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|mace
-Weapons|1d6 Bludgeoning|Quarterstaff|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|quarterstaff
-Weapons|1d4 Slashing|Sickle|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|sickle
-Weapons|1d6 Piercing|Spear|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|spear
-Weapons|1d4 Piercing|Dart|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|dart
-Weapons|1d8 Piercing|Light Crossbow|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|light-crossbow
-Weapons|1d6 Piercing|Shortbow|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|shortbow
-Weapons|1d4 Bludgeoning|Sling|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|sling
-Weapons|1d8 Slashing|Battleaxe|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|battleaxe
-Weapons|1d8 Bludgeoning|Flail|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|flail
-Weapons|1d10 Slashing|Glaive|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|glaive
-Weapons|1d12 Slashing|Greataxe|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|greataxe
-Weapons|2d6 Slashing|Greatsword|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|greatsword
-Weapons|1d10 Slashing|Halberd|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|halberd
-Weapons|1d10 Piercing|Lance|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|lance
-Weapons|1d8 Slashing|Longsword|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|longsword
-Weapons|2d6 Bludgeoning|Maul|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|maul
-Weapons|1d8 Piercing|Morningstar|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|morningstar
-Weapons|1d10 Piercing|Pike|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|pike
-Weapons|1d8 Piercing|Rapier|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|rapier
-Weapons|1d6 Slashing|Scimitar|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|scimitar
-Weapons|1d6 Piercing|Shortsword|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|shortsword
-Weapons|1d8 Piercing|Trident|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|trident
-Weapons|1d8 Bludgeoning|Warhammer|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|warhammer
-Weapons|1d8 Piercing|War Pick|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|war-pick
-Weapons|1d4 Slashing|Whip|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|whip
-Weapons|1 Piercing|Blowgun|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|blowgun
-Weapons|1d6 Piercing|Hand Crossbow|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|hand-crossbow
-Weapons|1d10 Piercing|Heavy Crossbow|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|heavy-crossbow
-Weapons|1d8 Piercing|Longbow|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|longbow
-Weapons|1d12 Piercing|Musket|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|musket
-Weapons|1d10 Piercing|Pistol|SRD|done|2|Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|pistol
-Armor|AC 11 + Dex modifier|Padded Armor|SRD|skip|3|Sheet AC (AC 11 + Dex modifier)|padded-armor
-Armor|AC 11 + Dex modifier|Leather Armor|SRD|skip|3|Sheet AC (AC 11 + Dex modifier)|leather-armor
-Armor|AC 12 + Dex modifier|Studded Leather Armor|SRD|skip|3|Sheet AC (AC 12 + Dex modifier)|studded-leather-armor
-Armor|AC 12 + Dex modifier (max 2)|Hide Armor|SRD|skip|3|Sheet AC (AC 12 + Dex modifier (max 2))|hide-armor
-Armor|AC 13 + Dex modifier (max 2)|Chain Shirt|SRD|skip|3|Sheet AC (AC 13 + Dex modifier (max 2))|chain-shirt
-Armor|AC 14 + Dex modifier (max 2)|Scale Mail|SRD|skip|3|Sheet AC (AC 14 + Dex modifier (max 2))|scale-mail
-Armor|AC 14 + Dex modifier (max 2)|Breastplate|SRD|skip|3|Sheet AC (AC 14 + Dex modifier (max 2))|breastplate
-Armor|AC 15 + Dex modifier (max 2)|Half Plate Armor|SRD|skip|3|Sheet AC (AC 15 + Dex modifier (max 2))|half-plate-armor
-Armor|AC 14|Ring Mail|SRD|skip|3|Sheet AC (AC 14)|ring-mail
-Armor|AC 16|Chain Mail|SRD|skip|3|Sheet AC (AC 16; Str 13)|chain-mail
-Armor|AC 17|Splint Armor|SRD|skip|3|Sheet AC (AC 17; Str 15)|splint-armor
-Armor|AC 18|Plate Armor|SRD|skip|3|Sheet AC (AC 18; Str 15)|plate-armor
+Weapons|1d4 Bludgeoning|Club|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|club
+Weapons|1d4 Piercing|Dagger|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|dagger
+Weapons|1d8 Bludgeoning|Greatclub|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|greatclub
+Weapons|1d6 Slashing|Handaxe|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|handaxe
+Weapons|1d6 Piercing|Javelin|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|javelin
+Weapons|1d4 Bludgeoning|Light Hammer|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|light-hammer
+Weapons|1d6 Bludgeoning|Mace|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|mace
+Weapons|1d6 Bludgeoning|Quarterstaff|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|quarterstaff
+Weapons|1d4 Slashing|Sickle|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|sickle
+Weapons|1d6 Piercing|Spear|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|spear
+Weapons|1d4 Piercing|Dart|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|dart
+Weapons|1d8 Piercing|Light Crossbow|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|light-crossbow
+Weapons|1d6 Piercing|Shortbow|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|shortbow
+Weapons|1d4 Bludgeoning|Sling|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|sling
+Weapons|1d8 Slashing|Battleaxe|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|battleaxe
+Weapons|1d8 Bludgeoning|Flail|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|flail
+Weapons|1d10 Slashing|Glaive|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|glaive
+Weapons|1d12 Slashing|Greataxe|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|greataxe
+Weapons|2d6 Slashing|Greatsword|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|greatsword
+Weapons|1d10 Slashing|Halberd|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|halberd
+Weapons|1d10 Piercing|Lance|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|lance
+Weapons|1d8 Slashing|Longsword|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|longsword
+Weapons|2d6 Bludgeoning|Maul|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|maul
+Weapons|1d8 Piercing|Morningstar|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|morningstar
+Weapons|1d10 Piercing|Pike|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|pike
+Weapons|1d8 Piercing|Rapier|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|rapier
+Weapons|1d6 Slashing|Scimitar|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|scimitar
+Weapons|1d6 Piercing|Shortsword|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|shortsword
+Weapons|1d8 Piercing|Trident|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|trident
+Weapons|1d8 Bludgeoning|Warhammer|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|warhammer
+Weapons|1d8 Piercing|War Pick|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|war-pick
+Weapons|1d4 Slashing|Whip|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|whip
+Weapons|1 Piercing|Blowgun|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|blowgun
+Weapons|1d6 Piercing|Hand Crossbow|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|hand-crossbow
+Weapons|1d10 Piercing|Heavy Crossbow|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|heavy-crossbow
+Weapons|1d8 Piercing|Longbow|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|longbow
+Weapons|1d12 Piercing|Musket|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|musket
+Weapons|1d10 Piercing|Pistol|SRD|done|2|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); Checked in v0.24.0 - compendium weapon; its mastery comes from Automated Masteries 5e|pistol
+Armor|AC 11 + Dex modifier|Padded Armor|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 11 + Dex modifier)|padded-armor
+Armor|AC 11 + Dex modifier|Leather Armor|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 11 + Dex modifier)|leather-armor
+Armor|AC 12 + Dex modifier|Studded Leather Armor|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 12 + Dex modifier)|studded-leather-armor
+Armor|AC 12 + Dex modifier (max 2)|Hide Armor|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 12 + Dex modifier (max 2))|hide-armor
+Armor|AC 13 + Dex modifier (max 2)|Chain Shirt|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 13 + Dex modifier (max 2))|chain-shirt
+Armor|AC 14 + Dex modifier (max 2)|Scale Mail|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 14 + Dex modifier (max 2))|scale-mail
+Armor|AC 14 + Dex modifier (max 2)|Breastplate|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 14 + Dex modifier (max 2))|breastplate
+Armor|AC 15 + Dex modifier (max 2)|Half Plate Armor|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 15 + Dex modifier (max 2))|half-plate-armor
+Armor|AC 14|Ring Mail|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 14)|ring-mail
+Armor|AC 16|Chain Mail|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 16; Str 13)|chain-mail
+Armor|AC 17|Splint Armor|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 17; Str 15)|splint-armor
+Armor|AC 18|Plate Armor|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet AC (AC 18; Str 15)|plate-armor
 Armor|AC +2|Shield|SRD|skip|3|Sheet AC (AC +2)|shield
-Adventuring gear|AC 20|Arrows|SRD|skip|3|Ammunition - tracked by the weapon|arrows
-Adventuring gear|AC 20|Bolts|SRD|skip|3|Ammunition - tracked by the weapon|bolts
-Adventuring gear|AC 10|Bullets, Firearm|SRD|skip|3|Ammunition - tracked by the weapon|bullets-firearm
-Adventuring gear|AC 20|Bullets, Sling|SRD|skip|3|Ammunition - tracked by the weapon|bullets-sling
-Adventuring gear|AC 50|Needles|SRD|skip|3|Ammunition - tracked by the weapon|needles
+Adventuring gear|AC 20|Arrows|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon|arrows
+Adventuring gear|AC 20|Bolts|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon|bolts
+Adventuring gear|AC 10|Bullets, Firearm|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon|bullets-firearm
+Adventuring gear|AC 20|Bullets, Sling|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon|bullets-sling
+Adventuring gear|AC 50|Needles|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Ammunition - tracked by the weapon|needles
 Weapon masteries|Mastery property|Mastery: Cleave|SRD|done|1|Checked in v0.23.0 - Automated Masteries 5e asks (push distance / second target) and applies it|mastery-cleave
 Weapon masteries|Mastery property|Mastery: Graze|SRD|done|1|Checked in v0.23.0 - Automated Masteries 5e applies it under midi-qol|mastery-graze
 Weapon masteries|Mastery property|Mastery: Nick|SRD|done|1|Checked in v0.23.0 - Automated Masteries 5e shows a reminder (the extra Light attack is bookkeeping)|mastery-nick
@@ -511,37 +511,37 @@ Adventuring gear|50 GP|Alchemist’s Fire|SRD|done|1|CGA item: applies Burning w
 Adventuring gear|50 GP|Antitoxin|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol (Advantage vs Poisoned for 1 hour)|antitoxin
 Adventuring gear|1 GP|Ball Bearings|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|ball-bearings
 Adventuring gear|1 GP|Caltrops|SRD|done|2|Checked in v0.24.0 - the compendium item works under midi-qol|caltrops
-Adventuring gear|5 GP|Chain|SRD|skip|3|Gear - nothing to automate|chain
+Adventuring gear|5 GP|Chain|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|chain
 Adventuring gear|5 GP|Healer’s Kit|SRD|done|2|Checked in v0.24.0 - Stabilize is a utility use (mark the creature stable by hand)|healers-kit
 Adventuring gear|25 GP|Holy Water|SRD|done|1|Module rule (no Mass Apply; works on the character's own item): only Fiends and Undead take the 2d8 Radiant (compendium hurt anyone)|holy-water
 Adventuring gear|5 GP|Hunting Trap|SRD|done|3|Checked in v0.25.0 - the compendium item works under midi-qol (DC 13 DEX, 1d4 Piercing, Trapped)|hunting-trap
-Adventuring gear|2 GP|Manacles|SRD|skip|3|Gear - nothing to automate|manacles
+Adventuring gear|2 GP|Manacles|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|manacles
 Adventuring gear|1 GP|Net|SRD|done|1|CGA item: the save now applies Restrained (compendium pointed at a missing effect)|net
 Adventuring gear|1 SP|Oil|SRD|done|2|CGA item + module rule (no mass apply): a failed save covers the target in oil; its next Fire damage +5|oil
 Adventuring gear|100 GP|Poison, Basic|SRD|done|2|CGA item + module rule (no mass apply): Coat Weapon (Bonus Action); the next Piercing/Slashing weapon hit within 1 minute +1d4 Poison|poison-basic
-Adventuring gear|50 GP|Potion of Healing|SRD|skip|3|Same item as Potions of Healing (magic items)|potion-of-healing
-Adventuring gear|1 GP|Rope|SRD|skip|3|Gear - nothing to automate|rope
-Adventuring gear|Cantrip, 30 GP Level 1, 50 GP|Spell Scroll|SRD|skip|3|Same item as Spell Scroll (magic items)|spell-scroll
+Adventuring gear|50 GP|Potion of Healing|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Same item as Potions of Healing (magic items)|potion-of-healing
+Adventuring gear|1 GP|Rope|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|rope
+Adventuring gear|Cantrip, 30 GP Level 1, 50 GP|Spell Scroll|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Same item as Spell Scroll (magic items)|spell-scroll
 Adventuring gear|1 CP|Torch|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|torch
 Adventuring gear|5 SP|Lamp|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|lamp
 Adventuring gear|10 GP|Lantern, Bullseye|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|lantern-bullseye
 Adventuring gear|5 GP|Lantern, Hooded|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|lantern-hooded
 Adventuring gear|1 CP|Candle|SRD|done|3|Checked in v0.25.0 - midi-qol's sample lights the token (2024 radii)|candle
-Adventuring gear|25 GP|Climber’s Kit|SRD|skip|3|Gear - nothing to automate|climbers-kit
-Adventuring gear|2 GP|Grappling Hook|SRD|skip|3|Gear - nothing to automate|grappling-hook
-Adventuring gear|2 GP|Crowbar|SRD|skip|3|Gear - nothing to automate|crowbar
-Adventuring gear|100 GP|Magnifying Glass|SRD|skip|3|Gear - nothing to automate|magnifying-glass
-Adventuring gear|5 GP|Costume|SRD|skip|3|Gear - nothing to automate|costume
-Adventuring gear|5 GP|Perfume|SRD|skip|3|Gear - nothing to automate|perfume
-Adventuring gear|25 GP|Book|SRD|skip|3|Gear - nothing to automate|book
-Adventuring gear|1 GP|Map|SRD|skip|3|Gear - nothing to automate|map
-Adventuring gear|5 CP|Pole|SRD|skip|3|Gear - nothing to automate|pole
-Adventuring gear|4 GP|Ram, Portable|SRD|skip|3|Gear - nothing to automate|ram-portable
-Adventuring gear|5 CP|Signal Whistle|SRD|skip|3|Gear - nothing to automate|signal-whistle
-Adventuring gear|1,000 GP|Spyglass|SRD|skip|3|Gear - nothing to automate|spyglass
-Adventuring gear|1 GP|Bell|SRD|skip|3|Gear - nothing to automate|bell
-Adventuring gear|5 SP|Blanket|SRD|skip|3|Gear - nothing to automate|blanket
-Adventuring gear|1 GP|Bedroll|SRD|skip|3|Gear - nothing to automate|bedroll
-Adventuring gear|5 SP|Tinderbox|SRD|skip|3|Gear - nothing to automate|tinderbox
-Tools|Tool|Poisoner’s Kit|SRD|skip|3|Tool - crafting and checks on the sheet|poisoners-kit
-Tools|Tool|Herbalism Kit|SRD|skip|3|Tool - crafting and checks on the sheet|herbalism-kit
+Adventuring gear|25 GP|Climber’s Kit|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|climbers-kit
+Adventuring gear|2 GP|Grappling Hook|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|grappling-hook
+Adventuring gear|2 GP|Crowbar|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|crowbar
+Adventuring gear|100 GP|Magnifying Glass|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|magnifying-glass
+Adventuring gear|5 GP|Costume|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|costume
+Adventuring gear|5 GP|Perfume|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|perfume
+Adventuring gear|25 GP|Book|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|book
+Adventuring gear|1 GP|Map|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|map
+Adventuring gear|5 CP|Pole|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|pole
+Adventuring gear|4 GP|Ram, Portable|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|ram-portable
+Adventuring gear|5 CP|Signal Whistle|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|signal-whistle
+Adventuring gear|1,000 GP|Spyglass|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|spyglass
+Adventuring gear|1 GP|Bell|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|bell
+Adventuring gear|5 SP|Blanket|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|blanket
+Adventuring gear|1 GP|Bedroll|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|bedroll
+Adventuring gear|5 SP|Tinderbox|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Gear - nothing to automate|tinderbox
+Tools|Tool|Poisoner’s Kit|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Tool - crafting and checks on the sheet|poisoners-kit
+Tools|Tool|Herbalism Kit|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Tool - crafting and checks on the sheet|herbalism-kit

@@ -1,0 +1,158 @@
+{
+  "name": "Fighting Style",
+  "type": "feat",
+  "_id": "cgaftrFightingSt",
+  "img": "icons/skills/melee/hand-grip-staff-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>You have honed your martial prowess and gain a @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.sbHImaCB8ZMEHYkb]{Fighting Style feat} of your choice. @UUID[Compendium.dnd-players-handbook.feats.Item.phbfstDefense000]{Defense} is recommended.</p><p>Whenever you gain a Fighter level, you can replace the feat you chose with a different Fighting Style feat.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "revision": 2,
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [],
+    "requirements": "Fighter",
+    "activities": {},
+    "enchant": {},
+    "identifier": "fighting-style",
+    "advancement": {
+      "EmTANp6x6GfXFTmU": {
+        "_id": "EmTANp6x6GfXFTmU",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": false
+            },
+            "2": {
+              "count": null,
+              "replacement": true
+            },
+            "3": {
+              "count": null,
+              "replacement": true
+            },
+            "4": {
+              "count": null,
+              "replacement": true
+            },
+            "5": {
+              "count": null,
+              "replacement": true
+            },
+            "6": {
+              "count": null,
+              "replacement": true
+            },
+            "7": {
+              "count": null,
+              "replacement": true
+            },
+            "8": {
+              "count": null,
+              "replacement": true
+            },
+            "9": {
+              "count": null,
+              "replacement": true
+            },
+            "10": {
+              "count": null,
+              "replacement": true
+            },
+            "11": {
+              "count": null,
+              "replacement": true
+            },
+            "12": {
+              "count": null,
+              "replacement": true
+            },
+            "13": {
+              "count": null,
+              "replacement": true
+            },
+            "14": {
+              "count": null,
+              "replacement": true
+            },
+            "15": {
+              "count": null,
+              "replacement": true
+            },
+            "16": {
+              "count": null,
+              "replacement": true
+            },
+            "17": {
+              "count": null,
+              "replacement": true
+            },
+            "18": {
+              "count": null,
+              "replacement": true
+            },
+            "19": {
+              "count": null,
+              "replacement": true
+            },
+            "20": {
+              "count": null,
+              "replacement": true
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [],
+          "spell": null,
+          "restriction": {
+            "type": "feat",
+            "subtype": "fightingStyle",
+            "list": [],
+            "school": []
+          },
+          "sorting": "a"
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "hint": "<p>@Embed[Compendium.dnd5e.classes24.Item.phbftrFightingSt inline]</p>",
+        "name": "Fighting Style",
+        "flags": {}
+      }
+    },
+    "crewed": false
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: the dnd5e 2024 compendium item (icon and rules data); nothing extra to automate.",
+        "sourceType": "class:fighter"
+      }
+    }
+  }
+}
