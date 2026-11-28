@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "features": [
   {
    "group": "Artificer",
@@ -5223,7 +5223,7 @@
    "source": "SRD",
    "category": "done",
    "priority": 1,
-   "note": "midi-qol sample item checked (activities run)",
+   "note": "CGA item (v0.48.0): Spell save DC +1 and Advantage on Sorcerer spell attacks (dnd5e rule); midi's version gave no Advantage on dnd5e 6.1 - was: midi-qol sample item checked (activities run)",
    "identifier": "innate-sorcery"
   },
   {

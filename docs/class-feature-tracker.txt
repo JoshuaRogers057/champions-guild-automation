@@ -478,7 +478,7 @@ Rogue|Thief|9|Supreme Sneak|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the 
 Rogue|Thief|13|Use Magic Device|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Rogue|Thief|17|Thief’s Reflexes|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Two turns in round 1 - manual
 Sorcerer||1|Spellcasting|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
-Sorcerer||1|Innate Sorcery|SRD|done|1|midi-qol sample item checked (activities run)
+Sorcerer||1|Innate Sorcery|SRD|done|1|CGA item (v0.48.0): Spell save DC +1 and Advantage on Sorcerer spell attacks (dnd5e rule); midi's version gave no Advantage on dnd5e 6.1
 Sorcerer||2|Font of Magic|SRD|done|1|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data); dnd5e compendium item checked (activities run, effects OK) - Compendium slot <-> sorcery point conversions
 Sorcerer||2|Metamagic|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet/advancement or manual
 Sorcerer||3|Sorcerer Subclass|PHB|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual
