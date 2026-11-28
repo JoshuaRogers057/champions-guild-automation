@@ -2,7 +2,7 @@
   "id": "champions-guild-automation",
   "title": "Champions Guild Automation",
   "description": "Fixes and additions for Coven's Automation Toolkit (CAT): spells, class features and items that CAT is missing or gets wrong. Registers itself as a CAT automation source, so CAT's Mass Apply / Update picks up every fix.",
-  "version": "0.46.0",
+  "version": "0.47.0",
   "authors": [
     { "name": "Champions Guild" }
   ],
@@ -96,7 +96,7 @@
   ],
   "url": "https://github.com/JoshuaRogers057/champions-guild-automation",
   "manifest": "https://github.com/JoshuaRogers057/champions-guild-automation/releases/latest/download/module.json",
-  "download": "https://github.com/JoshuaRogers057/champions-guild-automation/releases/download/v0.46.0/module.zip",
+  "download": "https://github.com/JoshuaRogers057/champions-guild-automation/releases/download/v0.47.0/module.zip",
   "bugs": "https://github.com/JoshuaRogers057/champions-guild-automation/issues",
   "changelog": "https://github.com/JoshuaRogers057/champions-guild-automation/blob/main/CHANGELOG.md"
 }
