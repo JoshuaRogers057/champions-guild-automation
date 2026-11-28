@@ -42,11 +42,22 @@ async function applySaveCards() {
   const mode = game.settings.get(MODULE_ID, "saveCards");
   if (mode === "player" || !game.settings.settings.has("dnd5e.chatCardSummary")) return;
   const want = mode === "condensed";
-  if (game.settings.get("dnd5e", "chatCardSummary") !== want) await game.settings.set("dnd5e", "chatCardSummary", want);
-  // midi-qol's own saves section is the summary that matches the old look.
-  if (want && game.user.isGM) {
+  // midi-qol 14.7+ has its own world setting, "Chat card summaries" (Each user's choice / Always / Never), which sets
+  // dnd5e's client setting on every client at ready. Left on "Never" it switches the summaries straight back off, so
+  // the GM's client points it the same way as ours; midi then applies it on every client.
+  const midiDrives = game.settings.settings.has("midi-qol.ownChatCardSummary");
+  if (game.user.isGM && game.settings.settings.has("midi-qol.ConfigSettings")) {
     const cfg = foundry.utils.duplicate(game.settings.get("midi-qol", "ConfigSettings") ?? {});
-    if (cfg.saveSummaryStyle && cfg.saveSummaryStyle !== "midi") { cfg.saveSummaryStyle = "midi"; await game.settings.set("midi-qol", "ConfigSettings", cfg); }
+    let changed = false;
+    const midiMode = want ? "always" : "never";
+    if (midiDrives && cfg.chatCardSummaries !== midiMode) { cfg.chatCardSummaries = midiMode; changed = true; }
+    // midi-qol's own saves section is the summary that matches the old look.
+    if (want && cfg.saveSummaryStyle && cfg.saveSummaryStyle !== "midi") { cfg.saveSummaryStyle = "midi"; changed = true; }
+    if (changed) await game.settings.set("midi-qol", "ConfigSettings", cfg);
+  }
+  if (game.settings.get("dnd5e", "chatCardSummary") !== want) {
+    await game.settings.set("dnd5e", "chatCardSummary", want);
+    ui.chat?.render({ force: true });
   }
 }
 Hooks.once("ready", () => { applySaveCards().catch((err) => console.warn(`${MODULE_ID} | couldn't apply the saving throw card setting`, err)); });
