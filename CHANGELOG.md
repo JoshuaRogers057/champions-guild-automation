@@ -3,6 +3,14 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.48.1
+
+- **Saving throw cards** set to *Condensed* now stays condensed. midi-qol 14.7 added its own world setting, *Chat card
+  summaries* (Workflow Settings → GM tab), and when it was on *Never* midi switched dnd5e's "Summary Chat Cards" back
+  off for every user each time the world loaded, so saves kept posting as separate chat cards. Our setting now drives
+  midi's too: *Condensed* sets it to *Always*, *Separate cards* sets it to *Never*, and *Each player's choice* leaves
+  it alone. It is applied when a GM loads the world. No Mass Apply needed.
+
 ## 0.48.0
 
 - **Report Bug**: every item on a character sheet (features, spells, weapons, armor, magic items, feats, species
