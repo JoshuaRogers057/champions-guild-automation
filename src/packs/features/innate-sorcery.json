@@ -1,0 +1,223 @@
+{
+  "_id": "cgascrInnateSorc",
+  "name": "Innate Sorcery",
+  "type": "feat",
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>An event in your past left an indelible mark on you, infusing you with simmering magic. As a Bonus Action, you can unleash that magic for 1 minute, during which you gain the following benefits:</p><ul><li><p>The spell save DC of your Sorcerer spells increases by 1.</p></li><li><p>You have Advantage on the attack rolls of Sorcerer spells you cast.</p></li></ul><p>You can use this feature twice, and you regain all expended uses of it when you finish a Long Rest.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "book": "",
+      "page": "",
+      "license": "CC-BY-4.0",
+      "revision": 2
+    },
+    "uses": {
+      "max": "2",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "level": 1,
+      "items": [],
+      "repeatable": false
+    },
+    "properties": [
+      "mgc"
+    ],
+    "requirements": "Sorcerer",
+    "activities": {
+      "mh49lCJGuCDeiyB8": {
+        "type": "utility",
+        "_id": "mh49lCJGuCDeiyB8",
+        "activation": {
+          "type": "bonus",
+          "value": null,
+          "override": false,
+          "condition": ""
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {}
+            }
+          ]
+        },
+        "description": {
+          "chatFlavor": "",
+          "value": ""
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false,
+          "expiry": null
+        },
+        "effects": [
+          {
+            "_id": "WtiHwWONdmCOeSDR",
+            "uuid": null,
+            "level": {
+              "min": null,
+              "max": null
+            }
+          }
+        ],
+        "range": {
+          "override": false,
+          "units": "self",
+          "special": ""
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft",
+            "type": "",
+            "stationary": false
+          },
+          "affects": {
+            "choice": false,
+            "count": "",
+            "type": "self",
+            "special": ""
+          },
+          "override": false,
+          "prompt": false
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": [],
+          "max": ""
+        },
+        "sort": 0,
+        "roll": {
+          "prompt": false,
+          "visible": false,
+          "name": "",
+          "formula": ""
+        },
+        "name": "Unleash Magic",
+        "img": "systems/dnd5e/icons/svg/action/magic.svg",
+        "visibility": {
+          "level": {
+            "min": null,
+            "max": null
+          },
+          "identifier": "",
+          "requireMagic": true,
+          "requireAttunement": false,
+          "requireIdentification": false
+        },
+        "behaviors": [],
+        "flags": {},
+        "useConditionText": "",
+        "useConditionReason": "",
+        "effectConditionText": "",
+        "otherActivityId": null,
+        "macroData": {
+          "name": "",
+          "command": ""
+        },
+        "midiProperties": {
+          "triggeredActivityId": "none",
+          "otherActivityCompatible": true,
+          "identifier": ""
+        }
+      }
+    },
+    "enchant": {},
+    "identifier": "innate-sorcery",
+    "advancement": {},
+    "crewed": false
+  },
+  "effects": [
+    {
+      "name": "Innate Sorcery",
+      "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+      "origin": null,
+      "transfer": true,
+      "_id": "WtiHwWONdmCOeSDR",
+      "type": "base",
+      "system": {
+        "changes": [
+          {
+            "key": "system.bonuses.spell.dc",
+            "value": 1,
+            "priority": null,
+            "type": "add",
+            "phase": "initial",
+            "_id": "11n5CmLzkmXX9zkt",
+            "conditions": "{}",
+            "replacement": ""
+          },
+          {
+            "key": "attack",
+            "type": "dnd5e.advantage",
+            "value": 1,
+            "phase": "initial",
+            "_id": "RLa3vOTEprQFBCLV",
+            "conditions": "{\n  \"k\": \"item.classIdentifier\",\n  \"v\": \"sorcerer\"\n}",
+            "replacement": "",
+            "priority": null
+          }
+        ],
+        "origin": {
+          "actor": null,
+          "behavior": null,
+          "effect": null,
+          "item": null,
+          "message": null
+        },
+        "conditions": "{}",
+        "magical": false,
+        "rider": {
+          "statuses": []
+        }
+      },
+      "disabled": true,
+      "duration": {
+        "value": 60,
+        "units": "seconds",
+        "expiry": "turnStart",
+        "expired": false
+      },
+      "description": "<p>The spell save DC of your Sorcerer spells increases by 1.</p><p>You have Advantage on the attack rolls of Sorcerer spells you cast.</p>",
+      "tint": "#ffffff",
+      "statuses": [],
+      "sort": 0,
+      "flags": {},
+      "start": null,
+      "showIcon": 1,
+      "folder": null
+    }
+  ],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: dnd5e's own Innate Sorcery (Spell save DC +1 and Advantage on Sorcerer spell attacks, using dnd5e 6.1's advantage rule). midi-qol's version checks item.sourceClass, which dnd5e 6.1 no longer has, so it never gave Advantage.",
+        "sourceType": "class:sorcerer"
+      }
+    }
+  }
+}

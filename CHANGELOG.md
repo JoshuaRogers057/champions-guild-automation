@@ -15,7 +15,17 @@ item changes, so DMs see it as "Out of date".
   the report is whispered to the GM so it isn't lost. New world setting **Bug report address**. Tested from the test
   world against a local copy of the site: the report arrived with all its details, and a dead address fell back to
   the whisper.
-- New script `scripts/bug-report.js`. No automation changes.
+- New script `scripts/bug-report.js`.
+- **Innate Sorcery** (new CGA item, 1.0.0, Mass Apply): Advantage on Sorcerer spell attacks now works. Mass Apply had
+  been putting on midi-qol's version, whose Advantage checks `item.sourceClass`, a field dnd5e 6.1 no longer has, so
+  only the Spell save DC +1 worked. Ours is dnd5e's own version (DC +1 and dnd5e 6.1's Advantage rule for spells whose
+  class is Sorcerer). CAT never moves an item to a different source by itself, so when the GM loads the world, any
+  Innate Sorcery still on midi's version is marked as an out-of-date CGA item, and the next Mass Apply switches it to
+  ours. Tested: Fire Bolt rolled with Advantage ("rule: Innate Sorcery") and the DC went from 13 to 14.
+- **Witch Bolt's Arc Lightning** (and any other spell's later activity that spends no slot, such as Call Lightning's
+  later bolts or moving a Flaming Sphere) no longer asks "Cast at Level" while you concentrate on the spell. It uses
+  the level the spell was cast at. Arc Lightning stays 1d12 at every level, as the spell says: only the first hit
+  grows with the slot. Tested: cast at 2nd level, then Arc Lightning dealt 1d12 with no prompt and no slot spent.
 
 ## 0.47.2
 

@@ -855,3 +855,20 @@ export async function gmUpdateTokens(scene, updates, options = {}) {
   if (game.user.isGM) return scene.updateEmbeddedDocuments("Token", updates, options);
   return cgaSocket?.executeAsGM("updateTokens", scene.id, updates, options);
 }
+
+// ------------------------------------------------------------------ Items stuck on another source's broken automation
+// CAT keeps an item on the source it was first given: once a character got midi-qol's Innate Sorcery, Mass Apply only
+// ever updates it from midi, never switches it to ours. For the features below, where midi's version no longer works
+// on dnd5e 6.1, the GM's client retags such items as an out-of-date CGA automation, so CAT shows "Out of date" and
+// the next Mass Apply puts ours on.
+//  - innate-sorcery: midi's Advantage checks item.sourceClass, which dnd5e 6.1 no longer has (no Advantage at all).
+const REPLACE_MIDI = new Set(["innate-sorcery"]);
+async function retagBrokenMidi() {
+  if (!game.users.activeGM?.isSelf) return;
+  for (const actor of game.actors) {
+    const updates = actor.items.filter((i) => i.flags?.cat?.automation?.source === "midi-qol" && REPLACE_MIDI.has(i.system?.identifier))
+      .map((i) => ({ _id: i.id, "flags.cat.automation.source": MODULE_ID, "flags.cat.automation.version": "0.0.0" }));
+    if (updates.length) await actor.updateEmbeddedDocuments("Item", updates).catch((err) => console.warn(`${MODULE_ID} | retagging ${actor.name}'s items failed`, err));
+  }
+}
+Hooks.once("ready", () => { retagBrokenMidi(); });

@@ -5,6 +5,7 @@
 //  - Syluné's Viper: the spell ends when its Temporary Hit Points are gone.
 //  - Cacophonic Shield: the caster gets Thunder Resistance and Disadvantage on ranged attacks against them while it lasts.
 //  - Spellfire Flare: its attacks ignore Half and Three-Quarters Cover (midi-qol Spell Sniper cover rule, during its attacks only).
+//  - Any spell: while concentrating on it, its follow-up activities that spend no slot use the cast level without asking.
 import { MODULE_ID, edgeDistance, turnKey } from "./main.js";
 import { isMagicItem, say, tokenOf, isGM, chg, creatureType } from "./item-rules.js";
 
@@ -104,4 +105,23 @@ Hooks.on("midi-qol.RollComplete", async (workflow) => {
     const level = Number(workflow.castData?.castLevel ?? workflow.spellLevel ?? item.system.level) || item.system.level;
     await workflow.actor.update({ [`flags.world.cgaSpellLevel.${key}`]: level }).catch(() => asGM("updateActor", { actorUuid: workflow.actor.uuid, updates: { [`flags.world.cgaSpellLevel.${key}`]: level } }));
   } catch (err) { console.warn(`${MODULE_ID} | spell cast level failed`, err); }
+});
+
+// ------------------------------------------------------------------ Concentration follow-ups use the level the spell was cast at
+// A spell's later activities that spend no slot (Witch Bolt's Arc Lightning, Call Lightning's later bolts, moving a
+// Flaming Sphere...) made dnd5e ask "Cast at Level" every time. While the caster concentrates on that spell, the
+// activity now runs at the level it was cast at, with no prompt.
+Hooks.on("dnd5e.preUseActivity", (activity, usageConfig, dialogConfig) => {
+  try {
+    const item = activity?.item;
+    if (item?.type !== "spell" || !(item.system.level > 0) || activity.consumption?.spellSlot) return;
+    if ((activity.consumption?.targets ?? []).length) return; // something else to choose: keep the dialog
+    const actor = item.actor;
+    const conc = actor?.effects.find((e) => e.statuses?.has("concentrating") && !e.disabled
+      && (e.flags?.dnd5e?.item?.uuid === item.uuid || e.origin === item.uuid));
+    if (!conc) return;
+    const scaling = Number(conc.flags?.dnd5e?.scaling ?? 0) || 0;
+    if (usageConfig) usageConfig.scaling = scaling;
+    if (dialogConfig) dialogConfig.configure = false;
+  } catch (err) { console.warn(`${MODULE_ID} | concentration follow-up level`, err); }
 });
