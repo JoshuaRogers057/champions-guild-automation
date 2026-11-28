@@ -1,0 +1,26 @@
+{
+  "name": "Vampire Survivor",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "identifier": "vampire-survivor",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Vampire Survivor background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBNYF4vxQCJfDL",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

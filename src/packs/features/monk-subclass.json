@@ -1,0 +1,31 @@
+{
+  "name": "Monk Subclass",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "monk-subclass",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Monk Subclass.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Monk 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBJSdWCzh7UdSQ",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

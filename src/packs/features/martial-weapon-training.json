@@ -1,0 +1,31 @@
+{
+  "name": "Martial Weapon Training",
+  "type": "feat",
+  "img": "icons/magic/death/weapon-sword-skull-purple.webp",
+  "system": {
+    "identifier": "martial-weapon-training",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Martial Weapon Training.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBBM3sRt7seAV2",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

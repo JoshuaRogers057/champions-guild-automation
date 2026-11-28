@@ -16,9 +16,9 @@
    "sub": "Weapon · uncommon",
    "name": "Adamantine Weapon",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "adamantine-weapon"
   },
   {
@@ -26,9 +26,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Alchemy Jug",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "alchemy-jug"
   },
   {
@@ -96,9 +96,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Apparatus of Kwalish",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "apparatus-of-kwalish"
   },
   {
@@ -106,9 +106,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Arcane Chatelaine",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility (Arcane Lock keys) - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility (Arcane Lock keys) - by hand",
    "identifier": "arcane-chatelaine"
   },
   {
@@ -126,9 +126,9 @@
    "sub": "Armor · common",
    "name": "Armor of Gleaming",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "armor-of-gleaming"
   },
   {
@@ -186,9 +186,9 @@
    "sub": "Weapon · artifact · attunement",
    "name": "Axe of the Dwarvish Lords",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "axe-of-the-dwarvish-lords"
   },
   {
@@ -196,9 +196,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Baba Yaga’s Dancing Broom",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "baba-yagas-dancing-broom"
   },
   {
@@ -266,9 +266,9 @@
    "sub": "Wondrous Item · common",
    "name": "Bead of Refreshment",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "bead-of-refreshment"
   },
   {
@@ -316,9 +316,9 @@
    "sub": "Weapon · artifact · attunement",
    "name": "Blackrazor",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "blackrazor"
   },
   {
@@ -346,9 +346,9 @@
    "sub": "Wondrous Item · artifact · attunement",
    "name": "Book of Exalted Deeds",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "book-of-exalted-deeds"
   },
   {
@@ -356,9 +356,9 @@
    "sub": "Wondrous Item · artifact · attunement",
    "name": "Book of Vile Darkness",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "book-of-vile-darkness"
   },
   {
@@ -386,9 +386,9 @@
    "sub": "Wondrous Item · common · attunement",
    "name": "Boots of False Tracks",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "boots-of-false-tracks"
   },
   {
@@ -516,9 +516,9 @@
    "sub": "Wondrous Item · common",
    "name": "Candle of the Deep",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "candle-of-the-deep"
   },
   {
@@ -526,9 +526,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Cap of Water Breathing",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "cap-of-water-breathing"
   },
   {
@@ -556,9 +556,9 @@
    "sub": "Armor · common",
    "name": "Cast-Off Armor",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "cast-off-armor"
   },
   {
@@ -566,9 +566,9 @@
    "sub": "Wondrous Item · very rare · attunement",
    "name": "Cauldron of Rebirth",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "cauldron-of-rebirth"
   },
   {
@@ -586,9 +586,9 @@
    "sub": "Wondrous Item · common · attunement",
    "name": "Charlatan’s Die",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "charlatans-die"
   },
   {
@@ -626,9 +626,9 @@
    "sub": "Wondrous Item · common",
    "name": "Cloak of Billowing",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "cloak-of-billowing"
   },
   {
@@ -666,9 +666,9 @@
    "sub": "Wondrous Item · common",
    "name": "Cloak of Many Fashions",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "cloak-of-many-fashions"
   },
   {
@@ -716,9 +716,9 @@
    "sub": "Wondrous Item · common",
    "name": "Clothes of Mending",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "clothes-of-mending"
   },
   {
@@ -726,9 +726,9 @@
    "sub": "Wondrous Item · common",
    "name": "Conjurer's Canopy",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "conjurers-canopy"
   },
   {
@@ -806,9 +806,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Daern’s Instant Fortress",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "daerns-instant-fortress"
   },
   {
@@ -826,9 +826,9 @@
    "sub": "Weapon · very rare · attunement",
    "name": "Dancing Sword",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Attack with the sword as the Bonus Action (it uses your attack roll); the compendium summon is a template that only works once enchanted onto a sword",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "dancing-sword"
   },
   {
@@ -836,9 +836,9 @@
    "sub": "Wondrous Item · common · attunement",
    "name": "Dark Shard Amulet",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "dark-shard-amulet"
   },
   {
@@ -876,9 +876,9 @@
    "sub": "Wondrous Item · legendary",
    "name": "Deck of Many Things",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "deck-of-many-things"
   },
   {
@@ -906,9 +906,9 @@
    "sub": "Wondrous Item · artifact · attunement",
    "name": "Demonomicon of Iggwilv",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "demonomicon-of-iggwilv"
   },
   {
@@ -926,9 +926,9 @@
    "sub": "Wondrous Item · common",
    "name": "Dictation Quill",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "dictation-quill"
   },
   {
@@ -986,9 +986,9 @@
    "sub": "Wondrous Item · common",
    "name": "Dread Helm",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "dread-helm"
   },
   {
@@ -1006,9 +1006,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Driftglobe",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "driftglobe"
   },
   {
@@ -1066,9 +1066,9 @@
    "sub": "Wondrous Item · common",
    "name": "Ear Horn of Hearing",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ear-horn-of-hearing"
   },
   {
@@ -1116,9 +1116,9 @@
    "sub": "Wondrous Item · common",
    "name": "Elocutionist's Lexicon",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "elocutionists-lexicon"
   },
   {
@@ -1126,9 +1126,9 @@
    "sub": "Armor · rare",
    "name": "Elven Chain",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "elven-chain"
   },
   {
@@ -1136,9 +1136,9 @@
    "sub": "Wondrous Item · common",
    "name": "Enduring Spellbook",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "enduring-spellbook"
   },
   {
@@ -1156,9 +1156,9 @@
    "sub": "Wondrous Item · common",
    "name": "Ensorcelled Missive",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ensorcelled-missive"
   },
   {
@@ -1196,9 +1196,9 @@
    "sub": "Wondrous Item · common",
    "name": "Ersatz Eye",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ersatz-eye"
   },
   {
@@ -1206,9 +1206,9 @@
    "sub": "Wondrous Item · common",
    "name": "Evergreen Fertilizer",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "evergreen-fertilizer"
   },
   {
@@ -1236,9 +1236,9 @@
    "sub": "Wondrous Item · artifact · attunement",
    "name": "Eye and Hand of Vecna",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "eye-and-hand-of-vecna"
   },
   {
@@ -1516,9 +1516,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Hag Eye",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "hag-eye"
   },
   {
@@ -1556,9 +1556,9 @@
    "sub": "Wondrous Item · common",
    "name": "Hat of Vermin",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "hat-of-vermin"
   },
   {
@@ -1566,9 +1566,9 @@
    "sub": "Wondrous Item · common · attunement",
    "name": "Hat of Wizardry",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "hat-of-wizardry"
   },
   {
@@ -1636,9 +1636,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Heward’s Handy Haversack",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "hewards-handy-haversack"
   },
   {
@@ -1646,9 +1646,9 @@
    "sub": "Wondrous Item · common",
    "name": "Heward’s Handy Spice Pouch",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "hewards-handy-spice-pouch"
   },
   {
@@ -1666,9 +1666,9 @@
    "sub": "Wondrous Item · common",
    "name": "Homeward Compass",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "homeward-compass"
   },
   {
@@ -1686,9 +1686,9 @@
    "sub": "Wondrous Item · common",
    "name": "Horn of Silent Alarm",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "horn-of-silent-alarm"
   },
   {
@@ -1746,9 +1746,9 @@
    "sub": "Wondrous Item · common",
    "name": "Instrument of Illusions",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "instrument-of-illusions"
   },
   {
@@ -1756,9 +1756,9 @@
    "sub": "Wondrous Item · common",
    "name": "Instrument of Scribing",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "instrument-of-scribing"
   },
   {
@@ -1986,9 +1986,9 @@
    "sub": "Wondrous Item · common",
    "name": "Lock of Trickery",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "lock-of-trickery"
   },
   {
@@ -2076,9 +2076,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Magewright's Gloves",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Crafting time - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Crafting time - by hand",
    "identifier": "magewrights-gloves"
   },
   {
@@ -2086,9 +2086,9 @@
    "sub": "Wondrous Item · common · attunement",
    "name": "Manifold Tool",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Tool form and proficiency - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Tool form and proficiency - by hand",
    "identifier": "manifold-tool"
   },
   {
@@ -2196,9 +2196,9 @@
    "sub": "Armor · uncommon",
    "name": "Mithral Armor",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "mithral-armor"
   },
   {
@@ -2206,9 +2206,9 @@
    "sub": "Weapon · common",
    "name": "Moon-Touched Sword",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "moon-touched-sword"
   },
   {
@@ -2216,9 +2216,9 @@
    "sub": "Weapon · legendary · attunement",
    "name": "Moonblade",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Random runes and a sentient personality chosen by the DM - build a specific blade on request",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "moonblade"
   },
   {
@@ -2226,9 +2226,9 @@
    "sub": "Wondrous Item · common",
    "name": "Mystery Key",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "mystery-key"
   },
   {
@@ -2246,9 +2246,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Nature’s Mantle",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "natures-mantle"
   },
   {
@@ -2306,9 +2306,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Nolzur’s Marvelous Pigments",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "nolzurs-marvelous-pigments"
   },
   {
@@ -2336,9 +2336,9 @@
    "sub": "Potion · very rare",
    "name": "Oil of Sharpness",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "oil-of-sharpness"
   },
   {
@@ -2356,9 +2356,9 @@
    "sub": "Wondrous Item · common",
    "name": "Orb of Direction",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "orb-of-direction"
   },
   {
@@ -2366,9 +2366,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Orb of Divination Detection",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Detection glow and focus - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Detection glow and focus - by hand",
    "identifier": "orb-of-divination-detection"
   },
   {
@@ -2376,9 +2376,9 @@
    "sub": "Wondrous Item · artifact · attunement",
    "name": "Orb of Dragonkind",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "orb-of-dragonkind"
   },
   {
@@ -2396,9 +2396,9 @@
    "sub": "Wondrous Item · common",
    "name": "Orb of Time",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "orb-of-time"
   },
   {
@@ -2416,9 +2416,9 @@
    "sub": "Wondrous Item · common",
    "name": "Perfume of Bewitching",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "perfume-of-bewitching"
   },
   {
@@ -2496,9 +2496,9 @@
    "sub": "Armor · legendary · attunement",
    "name": "Plate Armor of Etherealness",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "plate-armor-of-etherealness"
   },
   {
@@ -2506,9 +2506,9 @@
    "sub": "Wondrous Item · common",
    "name": "Pole of Angling",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "pole-of-angling"
   },
   {
@@ -2516,9 +2516,9 @@
    "sub": "Wondrous Item · common",
    "name": "Pole of Collapsing",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "pole-of-collapsing"
   },
   {
@@ -2536,9 +2536,9 @@
    "sub": "Wondrous Item · common",
    "name": "Pot of Awakening",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "pot-of-awakening"
   },
   {
@@ -2576,9 +2576,9 @@
    "sub": "Potion · common",
    "name": "Potion of Comprehension",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "potion-of-comprehension"
   },
   {
@@ -2756,9 +2756,9 @@
    "sub": "Potion · uncommon",
    "name": "Potion of Tirelessness",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "No sleep, 4-hour Long Rest - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: No sleep, 4-hour Long Rest - by hand",
    "identifier": "potion-of-tirelessness"
   },
   {
@@ -2806,9 +2806,9 @@
    "sub": "Wondrous Item · common",
    "name": "Prosthetic Limb",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "prosthetic-limb"
   },
   {
@@ -2816,9 +2816,9 @@
    "sub": "Wondrous Item · varies",
    "name": "Quaal’s Feather Token",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Listed by variant below",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Listed by variant below",
    "identifier": "quaals-feather-token"
   },
   {
@@ -2826,9 +2826,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Quaal’s Feather Token (Anchor)",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "quaals-feather-token-anchor"
   },
   {
@@ -2836,9 +2836,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Quaal’s Feather Token (Bird)",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "quaals-feather-token-bird"
   },
   {
@@ -2846,9 +2846,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Quaal’s Feather Token (Fan)",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "quaals-feather-token-fan"
   },
   {
@@ -2856,9 +2856,9 @@
    "sub": "Wondrous Item · rare",
    "name": "Quaal’s Feather Token (Swan Boat)",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "quaals-feather-token-swan-boat"
   },
   {
@@ -2866,9 +2866,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Quaal’s Feather Token (Tree)",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "quaals-feather-token-tree"
   },
   {
@@ -2896,9 +2896,9 @@
    "sub": "Wondrous Item · artifact · attunement",
    "name": "Queen Ehlissa's Marvelous Nightingale",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - DM-run",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - DM-run",
    "identifier": "queen-ehlissas-marvelous-nightingale"
   },
   {
@@ -2906,9 +2906,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Quiver of Ehlonna",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "quiver-of-ehlonna"
   },
   {
@@ -2916,9 +2916,9 @@
    "sub": "Weapon · uncommon · attunement",
    "name": "Repeating Shot",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "+1 ranged (on the item); no Loading, self-made ammunition by hand",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "repeating-shot"
   },
   {
@@ -2936,9 +2936,9 @@
    "sub": "Weapon · uncommon",
    "name": "Returning Weapon",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "+1 (on the item); returns to your hand by hand",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "returning-weapon"
   },
   {
@@ -3326,9 +3326,9 @@
    "sub": "Wondrous Item · common",
    "name": "Rope of Mending",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "rope-of-mending"
   },
   {
@@ -3336,9 +3336,9 @@
    "sub": "Wondrous Item · common · attunement",
    "name": "Ruby of the War Mage",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "ruby-of-the-war-mage"
   },
   {
@@ -3346,9 +3346,9 @@
    "sub": "Wondrous Item · uncommon",
    "name": "Saddle of the Cavalier",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "saddle-of-the-cavalier"
   },
   {
@@ -3386,9 +3386,9 @@
    "sub": "Scroll · rare",
    "name": "Scroll of Protection",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "scroll-of-protection"
   },
   {
@@ -3396,9 +3396,9 @@
    "sub": "Scroll · legendary",
    "name": "Scroll of Titan Summoning",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "scroll-of-titan-summoning"
   },
   {
@@ -3406,9 +3406,9 @@
    "sub": "Wondrous Item · rare · attunement",
    "name": "Secret Keeper's Circlet",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "secret-keepers-circlet"
   },
   {
@@ -3436,9 +3436,9 @@
    "sub": "Armor · common",
    "name": "Shield of Expression",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "shield-of-expression"
   },
   {
@@ -3476,9 +3476,9 @@
    "sub": "Weapon · common",
    "name": "Silvered Weapon",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "silvered-weapon"
   },
   {
@@ -3496,9 +3496,9 @@
    "sub": "Armor · common",
    "name": "Smoldering Armor",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "smoldering-armor"
   },
   {
@@ -3516,9 +3516,9 @@
    "sub": "Ring · common",
    "name": "Spell Component Ring",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Material component storage - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Material component storage - by hand",
    "identifier": "spell-component-ring"
   },
   {
@@ -3556,9 +3556,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Spell-Slinger's Puppet",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "spell-slingers-puppet"
   },
   {
@@ -3586,9 +3586,9 @@
    "sub": "Wondrous Item · very rare",
    "name": "Spirit Board",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "spirit-board"
   },
   {
@@ -3596,9 +3596,9 @@
    "sub": "Staff · common",
    "name": "Staff of Adornment",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "staff-of-adornment"
   },
   {
@@ -3606,9 +3606,9 @@
    "sub": "Staff · common",
    "name": "Staff of Birdcalls",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "staff-of-birdcalls"
   },
   {
@@ -3636,9 +3636,9 @@
    "sub": "Staff · common",
    "name": "Staff of Flowers",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "staff-of-flowers"
   },
   {
@@ -3806,9 +3806,9 @@
    "sub": "Wondrous Item · common",
    "name": "Sweeping Broom",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "sweeping-broom"
   },
   {
@@ -3826,9 +3826,9 @@
    "sub": "Weapon · artifact · attunement",
    "name": "Sword of Kas",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "sword-of-kas"
   },
   {
@@ -3876,9 +3876,9 @@
    "sub": "Weapon · common · attunement",
    "name": "Sylvan Talon",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "Done in v0.46.0 without a CGA item on purpose: it's a property of any base weapon or armor, so a pack item would replace the character's own base on Mass Apply. The website item keeps its base (the fill-in gives it the base item's data and picture) and the module rules find it by name",
    "identifier": "sylvan-talon"
   },
   {
@@ -3916,9 +3916,9 @@
    "sub": "Wondrous Item · common · attunement",
    "name": "Talking Doll",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "talking-doll"
   },
   {
@@ -3926,9 +3926,9 @@
    "sub": "Wondrous Item · common",
    "name": "Tankard of Sobriety",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "tankard-of-sobriety"
   },
   {
@@ -3946,9 +3946,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Thespian's Playbill",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Study bonus - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Study bonus - by hand",
    "identifier": "thespians-playbill"
   },
   {
@@ -3956,9 +3956,9 @@
    "sub": "Wondrous Item · uncommon · attunement",
    "name": "Thief's Thimble",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Trap damage - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Trap damage - by hand",
    "identifier": "thiefs-thimble"
   },
   {
@@ -3996,9 +3996,9 @@
    "sub": "Wondrous Item · legendary · attunement",
    "name": "Tome of the Stilled Tongue",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "tome-of-the-stilled-tongue"
   },
   {
@@ -4046,9 +4046,9 @@
    "sub": "Wondrous Item · artifact",
    "name": "Universal Pantograph",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - DM-run",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - DM-run",
    "identifier": "universal-pantograph"
   },
   {
@@ -4066,9 +4066,9 @@
    "sub": "Wondrous Item · common",
    "name": "Veteran’s Cane",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "veterans-cane"
   },
   {
@@ -4116,9 +4116,9 @@
    "sub": "Wand · common",
    "name": "Wand of Conducting",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "wand-of-conducting"
   },
   {
@@ -4156,9 +4156,9 @@
    "sub": "Wand · uncommon",
    "name": "Wand of Freshness",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Purify Food and Drink - by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Purify Food and Drink - by hand",
    "identifier": "wand-of-freshness"
   },
   {
@@ -4196,9 +4196,9 @@
    "sub": "Wand · artifact · attunement",
    "name": "Wand of Orcus",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "wand-of-orcus"
   },
   {
@@ -4226,9 +4226,9 @@
    "sub": "Wand · common",
    "name": "Wand of Pyrotechnics",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility, narrative or DM-run - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility, narrative or DM-run - nothing to automate",
    "identifier": "wand-of-pyrotechnics"
   },
   {
@@ -4296,9 +4296,9 @@
    "sub": "Weapon · artifact · attunement",
    "name": "Wave",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "wave"
   },
   {
@@ -4346,9 +4346,9 @@
    "sub": "Weapon · artifact · attunement",
    "name": "Whelm",
    "source": "DMG",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Artifact - automate on request when one enters a campaign",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Artifact - automate on request when one enters a campaign",
    "identifier": "whelm"
   },
   {
@@ -4906,9 +4906,9 @@
    "sub": "AC +2",
    "name": "Shield",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet AC (AC +2)",
+   "note": "CGA item (Mass Apply) since v0.46.0 - was: Sheet AC (AC +2)",
    "identifier": "shield"
   },
   {

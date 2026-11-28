@@ -1,0 +1,26 @@
+{
+  "name": "Purple Dragon Squire",
+  "type": "background",
+  "img": "icons/creatures/abilities/dragon-breath-purple.webp",
+  "system": {
+    "identifier": "purple-dragon-squire",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Purple Dragon Squire background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaB6jOpVMt2iHAm",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

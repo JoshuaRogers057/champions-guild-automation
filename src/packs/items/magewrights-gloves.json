@@ -1,0 +1,45 @@
+{
+  "name": "Magewright's Gloves",
+  "type": "equipment",
+  "img": "icons/equipment/hand/glove-reticulated-steel.webp",
+  "system": {
+    "identifier": "magewrights-gloves",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Magewright's Gloves.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "uncommon",
+    "attunement": "required",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBmeid6r7CCplk",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

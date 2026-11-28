@@ -1,0 +1,94 @@
+{
+  "name": "Nature’s Mantle",
+  "type": "equipment",
+  "img": "icons/equipment/back/mantle-collared-black.webp",
+  "system": {
+    "identifier": "natures-mantle",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Nature’s Mantle.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "uncommon",
+    "attunement": "required",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {
+      "cgaActd9d173c06f": {
+        "_id": "cgaActd9d173c06f",
+        "type": "utility",
+        "name": "",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_id": "cgaBTLAFMT1c4Gv2",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

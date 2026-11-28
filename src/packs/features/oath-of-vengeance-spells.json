@@ -1,0 +1,31 @@
+{
+  "name": "Oath of Vengeance Spells",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "oath-of-vengeance-spells",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Oath of Vengeance Spells.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Oath of Vengeance 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBRDrNhILRTn1Z",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

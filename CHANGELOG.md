@@ -3,6 +3,28 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.47.0
+
+Every row on every tracker is now handled. Nothing is marked "skip" any more. This release adds 357 CGA items (1.0.0,
+Mass Apply) for rows dnd5e's compendium doesn't have: 121 class and subclass features, 109 magic items, 69
+backgrounds, 39 species traits, 28 feats and 9 spells. Each has a picture chosen from Foundry's icons and the right
+item type. Uses or charges and a basic action are set where the book text gives them, for example "a number of times
+equal to your Intelligence modifier", "has 7 charges ... regains 1d4 + 3 at dawn" or "as a Magic action". The rules
+text stays the character's own, because Mass Apply keeps the item's description.
+
+- **Website gear**: own items for the site's generic spellcasting foci and tools (Arcane Focus, Holy Symbol, Amulet,
+  Emblem, Reliquary, Gaming Set, Musical Instrument, Artisan's Tools). `scripts/site-icons.js` holds pictures for the
+  site's other mundane gear (treasure, trinkets, components) and pictures by word (clothes, rope, rations, kit ...).
+- **No more bag icons**: when the fill-in finds no compendium copy, it takes the picture from this module's packs,
+  the website gear table, a word in the name, or a default for the item type. Two-word gear also matches dnd5e's
+  reversed names ("Traveler's Clothes" is dnd5e's "Clothes, Traveler's"). Tested on the Test Pally and Test Sorc
+  exports and a made-up character: no item kept the bag.
+- **Deliberately without a CGA item**: 14 "property of any weapon or armor" items, such as Adamantine, Mithral,
+  Silvered, Moon-Touched, Returning and Smoldering. A pack item would replace the character's own longsword or
+  breastplate on Mass Apply, so the website item keeps its base and the module rules find it by name.
+- **Left to midi-qol**: Light, Detect Magic, Identify and Keen Senses keep midi's automations, so no plain copy
+  outranks them.
+
 ## 0.46.0
 
 The module now ships its own copy of every tracked spell, feature, trait, feat, background and item that dnd5e's 2024

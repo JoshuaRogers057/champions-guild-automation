@@ -1,0 +1,94 @@
+{
+  "name": "Apparatus of Kwalish",
+  "type": "equipment",
+  "img": "icons/commodities/treasure/brooch-jewel-gold-blue.webp",
+  "system": {
+    "identifier": "apparatus-of-kwalish",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Apparatus of Kwalish.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "legendary",
+    "attunement": "",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {
+      "cgaActbbcf309b81": {
+        "_id": "cgaActbbcf309b81",
+        "type": "utility",
+        "name": "",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_id": "cgaBtFmRnCsTBbZp",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

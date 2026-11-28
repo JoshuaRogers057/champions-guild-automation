@@ -1,0 +1,31 @@
+{
+  "name": "Battle Smith Spells",
+  "type": "feat",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "identifier": "battle-smith-spells",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Battle Smith Spells.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Battle Smith 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaB07YjcYT11E02",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

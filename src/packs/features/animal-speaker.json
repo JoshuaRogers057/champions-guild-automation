@@ -1,0 +1,31 @@
+{
+  "name": "Animal Speaker",
+  "type": "feat",
+  "img": "icons/magic/life/heart-shadow-red.webp",
+  "system": {
+    "identifier": "animal-speaker",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Animal Speaker.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Path of the Wild Heart 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBiw4ast4KFCwL",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

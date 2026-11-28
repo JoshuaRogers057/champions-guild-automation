@@ -1,0 +1,26 @@
+{
+  "name": "Spirit Medium",
+  "type": "background",
+  "img": "icons/creatures/magical/spirit-undead-ghost-purple.webp",
+  "system": {
+    "identifier": "spirit-medium",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Spirit Medium background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBD2e45VV4Hz6b",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

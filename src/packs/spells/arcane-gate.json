@@ -1,0 +1,88 @@
+{
+  "name": "Arcane Gate",
+  "type": "spell",
+  "img": "icons/magic/movement/portal-vortex-orange.webp",
+  "system": {
+    "identifier": "arcane-gate",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Arcane Gate.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "level": 6,
+    "school": "con",
+    "properties": [
+      "vocal",
+      "somatic",
+      "concentration"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "method": "spell",
+    "prepared": 0,
+    "activities": {
+      "cgaActcdcf77bcdd": {
+        "_id": "cgaActcdcf77bcdd",
+        "type": "utility",
+        "name": "",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_id": "cgaBKAc0beL0FMCK",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

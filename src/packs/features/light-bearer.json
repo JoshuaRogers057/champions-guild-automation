@@ -1,0 +1,31 @@
+{
+  "name": "Light Bearer",
+  "type": "feat",
+  "img": "icons/magic/water/barrier-ice-crystal-wall-faceted-light.webp",
+  "system": {
+    "identifier": "light-bearer",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Light Bearer.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Aasimar",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBXS6guWUbQwq7",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

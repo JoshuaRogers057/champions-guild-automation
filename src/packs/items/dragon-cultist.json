@@ -1,0 +1,26 @@
+{
+  "name": "Dragon Cultist",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "identifier": "dragon-cultist",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Dragon Cultist background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaB4rcbKGTCqgYP",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

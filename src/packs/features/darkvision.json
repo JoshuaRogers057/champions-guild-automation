@@ -1,0 +1,31 @@
+{
+  "name": "Darkvision",
+  "type": "feat",
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+  "system": {
+    "identifier": "darkvision",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Darkvision.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBePjrdghgf30Z",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

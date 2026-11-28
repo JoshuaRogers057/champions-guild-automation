@@ -1,0 +1,31 @@
+{
+  "name": "Conjuration Savant",
+  "type": "feat",
+  "img": "icons/magic/movement/portal-vortex-orange.webp",
+  "system": {
+    "identifier": "conjuration-savant",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Conjuration Savant.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Conjurer 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaB31oL6FMmsW0j",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

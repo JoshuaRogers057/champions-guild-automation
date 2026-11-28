@@ -1,0 +1,115 @@
+{
+  "name": "Queen Ehlissa's Marvelous Nightingale",
+  "type": "equipment",
+  "img": "icons/sundries/gaming/chess-queen-gray.webp",
+  "system": {
+    "identifier": "queen-ehlissas-marvelous-nightingale",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Queen Ehlissa's Marvelous Nightingale.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "artifact",
+    "attunement": "required",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "uses": {
+      "max": "6",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6+1"
+        }
+      ]
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {
+      "cgaActea8b866a95": {
+        "_id": "cgaActea8b866a95",
+        "type": "utility",
+        "name": "",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": [
+            {
+              "type": "itemUses",
+              "value": "1",
+              "target": "",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_id": "cgaBg0qLVnHOuqdc",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

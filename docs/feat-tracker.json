@@ -86,9 +86,9 @@
    "group": "Origin",
    "name": "Crafter",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Tool proficiencies, shop discount and Fast Crafting are bookkeeping",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Tool proficiencies, shop discount and Fast Crafting are bookkeeping",
    "identifier": "crafter"
   },
   {
@@ -104,9 +104,9 @@
    "group": "Origin",
    "name": "Emerald Enclave Fledgling",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Background Origin feat - see the Backgrounds tab",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Background Origin feat - see the Backgrounds tab",
    "identifier": "emerald-enclave-fledgling"
   },
   {
@@ -122,9 +122,9 @@
    "group": "Origin",
    "name": "Harper Agent",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Background Origin feat - see the Backgrounds tab",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Background Origin feat - see the Backgrounds tab",
    "identifier": "harper-agent"
   },
   {
@@ -338,9 +338,9 @@
    "group": "General",
    "name": "Actor",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Advantage on disguise Deception/Performance checks and mimicry are DM calls",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Advantage on disguise Deception/Performance checks and mimicry are DM calls",
    "identifier": "actor"
   },
   {
@@ -509,18 +509,18 @@
    "group": "General",
    "name": "Enchantment Adept",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells and casting without components - sheet and table",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells and casting without components - sheet and table",
    "identifier": "enchantment-adept"
   },
   {
    "group": "General",
    "name": "Enclave Magic",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Advantage on Influence with Beasts and Beast Sense - sheet and table",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Advantage on Influence with Beasts and Beast Sense - sheet and table",
    "identifier": "enclave-magic"
   },
   {
@@ -545,18 +545,18 @@
    "group": "General",
    "name": "Fey Touched",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Misty Step + one spell from the advancement, each castable once per Long Rest without a slot (spell uses)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Misty Step + one spell from the advancement, each castable once per Long Rest without a slot (spell uses)",
    "identifier": "fey-touched"
   },
   {
    "group": "General",
    "name": "Genie Magic",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Extra spells cast without a slot - from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Extra spells cast without a slot - from the sheet",
    "identifier": "genie-magic"
   },
   {
@@ -590,9 +590,9 @@
    "group": "General",
    "name": "Heavily Armored",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Armor training from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Armor training from the advancement",
    "identifier": "heavily-armored"
   },
   {
@@ -608,9 +608,9 @@
    "group": "General",
    "name": "Illusion Adept",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells and casting without components - sheet and table",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells and casting without components - sheet and table",
    "identifier": "illusion-adept"
   },
   {
@@ -626,9 +626,9 @@
    "group": "General",
    "name": "Keen Mind",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Skill from the advancement; Study as a Bonus Action is manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Skill from the advancement; Study as a Bonus Action is manual",
    "identifier": "keen-mind"
   },
   {
@@ -644,9 +644,9 @@
    "group": "General",
    "name": "Lightly Armored",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Armor training from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Armor training from the advancement",
    "identifier": "lightly-armored"
   },
   {
@@ -680,18 +680,18 @@
    "group": "General",
    "name": "Magic Connoisseur",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Extra spells cast without a slot - from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Extra spells cast without a slot - from the sheet",
    "identifier": "magic-connoisseur"
   },
   {
    "group": "General",
    "name": "Martial Weapon Training",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Proficiency from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Proficiency from the advancement",
    "identifier": "martial-weapon-training"
   },
   {
@@ -707,18 +707,18 @@
    "group": "General",
    "name": "Moderately Armored",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Armor training from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Armor training from the advancement",
    "identifier": "moderately-armored"
   },
   {
    "group": "General",
    "name": "Mounted Combatant",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Mounted rules are DM-handled",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Mounted rules are DM-handled",
    "identifier": "mounted-combatant"
   },
   {
@@ -743,9 +743,9 @@
    "group": "General",
    "name": "Observant",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Skill from the advancement; Search as a Bonus Action is manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Skill from the advancement; Search as a Bonus Action is manual",
    "identifier": "observant"
   },
   {
@@ -824,18 +824,18 @@
    "group": "General",
    "name": "Resilient",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Saving throw proficiency from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Saving throw proficiency from the advancement",
    "identifier": "resilient"
   },
   {
    "group": "General",
    "name": "Ritual Caster",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ritual spells from the advancement; Quick Ritual is manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ritual spells from the advancement; Quick Ritual is manual",
    "identifier": "ritual-caster"
   },
   {
@@ -851,9 +851,9 @@
    "group": "General",
    "name": "Shadow Touched",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Invisibility + one spell from the advancement, each castable once per Long Rest without a slot (spell uses)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Invisibility + one spell from the advancement, each castable once per Long Rest without a slot (spell uses)",
    "identifier": "shadow-touched"
   },
   {
@@ -878,9 +878,9 @@
    "group": "General",
    "name": "Skill Expert",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Skill and Expertise from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Skill and Expertise from the advancement",
    "identifier": "skill-expert"
   },
   {
@@ -977,9 +977,9 @@
    "group": "General",
    "name": "Telepathic",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Telepathy is roleplay; Detect Thoughts from the advancement (once per Long Rest without a slot)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Telepathy is roleplay; Detect Thoughts from the advancement (once per Long Rest without a slot)",
    "identifier": "telepathic"
   },
   {
@@ -1004,9 +1004,9 @@
    "group": "General",
    "name": "Vampire Touched",
    "source": "AB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Extra spells cast without a slot - from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Extra spells cast without a slot - from the sheet",
    "identifier": "vampire-touched"
   },
   {
@@ -1022,9 +1022,9 @@
    "group": "General",
    "name": "Weapon Master",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Weapon Mastery choice from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Weapon Mastery choice from the advancement",
    "identifier": "weapon-master"
   },
   {
@@ -1040,9 +1040,9 @@
    "group": "Fighting Style",
    "name": "Arcane Warrior",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Two Wizard cantrips - from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Two Wizard cantrips - from the sheet",
    "identifier": "arcane-warrior"
   },
   {
@@ -1184,9 +1184,9 @@
    "group": "Epic Boon",
    "name": "Boon of Communication",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Telepathy and languages - sheet and roleplay",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Telepathy and languages - sheet and roleplay",
    "identifier": "boon-of-communication"
   },
   {
@@ -1292,9 +1292,9 @@
    "group": "Epic Boon",
    "name": "Boon of Magic School Mastery",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Extra prepared spells cast without a slot - from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Extra prepared spells cast without a slot - from the sheet",
    "identifier": "boon-of-magic-school-mastery"
   },
   {
@@ -1337,9 +1337,9 @@
    "group": "Epic Boon",
    "name": "Boon of Skill",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Proficiency in all skills + Expertise from the advancement",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Proficiency in all skills + Expertise from the advancement",
    "identifier": "boon-of-skill"
   },
   {

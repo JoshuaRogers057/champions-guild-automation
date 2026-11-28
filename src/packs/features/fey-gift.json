@@ -1,0 +1,31 @@
+{
+  "name": "Fey Gift",
+  "type": "feat",
+  "img": "icons/magic/nature/leaf-flower-wreath-glow-green-blue.webp",
+  "system": {
+    "identifier": "fey-gift",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Fey Gift.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Khoravar",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBXVPV4Zrky7Xy",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

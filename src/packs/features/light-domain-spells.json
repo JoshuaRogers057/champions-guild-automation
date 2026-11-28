@@ -1,0 +1,31 @@
+{
+  "name": "Light Domain Spells",
+  "type": "feat",
+  "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
+  "system": {
+    "identifier": "light-domain-spells",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Light Domain Spells.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Light Domain 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBTPdiwmRR2BGI",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

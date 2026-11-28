@@ -1,0 +1,31 @@
+{
+  "name": "Spider Climb",
+  "type": "feat",
+  "img": "icons/creatures/webs/web-spider-moving-blue.webp",
+  "system": {
+    "identifier": "spider-climb",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Spider Climb.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Dhampir",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBKnnDtcGcgYa9",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

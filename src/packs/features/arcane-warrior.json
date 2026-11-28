@@ -1,0 +1,31 @@
+{
+  "name": "Arcane Warrior",
+  "type": "feat",
+  "img": "icons/skills/melee/strike-dagger-arcane-pink.webp",
+  "system": {
+    "identifier": "arcane-warrior",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Arcane Warrior.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "fightingStyle"
+    },
+    "requirements": "",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaB98U1apQQcrUQ",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

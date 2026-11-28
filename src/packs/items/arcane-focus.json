@@ -1,0 +1,42 @@
+{
+  "name": "Arcane Focus",
+  "type": "equipment",
+  "img": "icons/commodities/tech/battery-arcane-crystal-green.webp",
+  "system": {
+    "identifier": "arcane-focus",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> an arcane focus (Sorcerer, Warlock and Wizard spellcasting focus).</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "properties": [
+      "foc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "equipped": true,
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaGaaff0311e55c",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: generic website gear (picture and type)."
+      }
+    }
+  }
+}

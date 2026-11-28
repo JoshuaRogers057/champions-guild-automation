@@ -1,0 +1,26 @@
+{
+  "name": "House Agent",
+  "type": "background",
+  "img": "icons/sundries/misc/bird-house.webp",
+  "system": {
+    "identifier": "house-agent",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> House Agent background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBF7yROlbVzCa1",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

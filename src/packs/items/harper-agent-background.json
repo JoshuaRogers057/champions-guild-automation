@@ -1,0 +1,26 @@
+{
+  "name": "Harper Agent",
+  "type": "background",
+  "_id": "cgaBHarperAgentB",
+  "img": "icons/tools/instruments/harp-gold-glowing.webp",
+  "system": {
+    "identifier": "harper-agent",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Harper Agent background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type); rules text comes from the character's item."
+      }
+    }
+  }
+}

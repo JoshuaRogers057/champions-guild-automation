@@ -1,0 +1,45 @@
+{
+  "name": "Pot of Awakening",
+  "type": "equipment",
+  "img": "icons/commodities/materials/plant-pot-flower-rose.webp",
+  "system": {
+    "identifier": "pot-of-awakening",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Pot of Awakening.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBop11RByzMx6G",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

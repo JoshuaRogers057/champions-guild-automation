@@ -1,0 +1,94 @@
+{
+  "name": "Cloak of Billowing",
+  "type": "equipment",
+  "img": "icons/equipment/back/cloak-layered-red-orange.webp",
+  "system": {
+    "identifier": "cloak-of-billowing",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Cloak of Billowing.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {
+      "cgaAct3c9d44d3f4": {
+        "_id": "cgaAct3c9d44d3f4",
+        "type": "utility",
+        "name": "",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_id": "cgaB0tDDydzfCFeU",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

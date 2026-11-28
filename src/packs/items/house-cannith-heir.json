@@ -1,0 +1,26 @@
+{
+  "name": "House Cannith Heir",
+  "type": "background",
+  "img": "icons/equipment/finger/ring-crown-teal-gold.webp",
+  "system": {
+    "identifier": "house-cannith-heir",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> House Cannith Heir background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBPZWZ31fyg4ed",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

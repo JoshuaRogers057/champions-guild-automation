@@ -1,0 +1,26 @@
+{
+  "name": "Emerald Enclave Fledgling",
+  "type": "background",
+  "_id": "cgaBEmeraldEncBg",
+  "img": "icons/magic/nature/leaf-glow-maple-green.webp",
+  "system": {
+    "identifier": "emerald-enclave-fledgling",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Emerald Enclave Fledgling background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type); rules text comes from the character's item."
+      }
+    }
+  }
+}

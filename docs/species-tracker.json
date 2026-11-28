@@ -6,9 +6,9 @@
    "sub": "Player's Handbook",
    "name": "Celestial Resistance",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "celestial-resistance"
   },
   {
@@ -16,9 +16,9 @@
    "sub": "Player's Handbook",
    "name": "Darkvision",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -36,9 +36,9 @@
    "sub": "Player's Handbook",
    "name": "Light Bearer",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "light-bearer"
   },
   {
@@ -86,9 +86,9 @@
    "sub": "Other books",
    "name": "Changeling Instincts",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "changeling-instincts"
   },
   {
@@ -106,9 +106,9 @@
    "sub": "Other books",
    "name": "Darkvision",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -116,9 +116,9 @@
    "sub": "Other books",
    "name": "Spider Climb",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "spider-climb"
   },
   {
@@ -126,9 +126,9 @@
    "sub": "Other books",
    "name": "Trace of Undeath",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "trace-of-undeath"
   },
   {
@@ -186,9 +186,9 @@
    "sub": "Player's Handbook",
    "name": "Damage Resistance",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "damage-resistance"
   },
   {
@@ -196,9 +196,9 @@
    "sub": "Player's Handbook",
    "name": "Darkvision",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -216,9 +216,9 @@
    "sub": "Player's Handbook",
    "name": "Darkvision",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -256,9 +256,9 @@
    "sub": "Player's Handbook",
    "name": "Darkvision",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -286,9 +286,9 @@
    "sub": "Player's Handbook",
    "name": "Keen Senses",
    "source": "SRD",
-   "category": "done",
+   "category": "midi",
    "priority": 3,
-   "note": "CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "midi-qol's CAT automation (Mass Apply offers it); no CGA copy so midi's version stays in charge",
    "identifier": "keen-senses"
   },
   {
@@ -306,9 +306,9 @@
    "sub": "Player's Handbook",
    "name": "Darkvision",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -486,9 +486,9 @@
    "sub": "Other books",
    "name": "Darkvision",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -496,9 +496,9 @@
    "sub": "Other books",
    "name": "Eerie Token",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "eerie-token"
   },
   {
@@ -506,9 +506,9 @@
    "sub": "Other books · Eerie Token option",
    "name": "Distant Message",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "distant-message"
   },
   {
@@ -516,9 +516,9 @@
    "sub": "Other books · Eerie Token option",
    "name": "Remote Viewing",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "remote-viewing"
   },
   {
@@ -576,9 +576,9 @@
    "sub": "Other books",
    "name": "Mental Discipline",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "mental-discipline"
   },
   {
@@ -586,9 +586,9 @@
    "sub": "Other books",
    "name": "Mind Link",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "mind-link"
   },
   {
@@ -596,9 +596,9 @@
    "sub": "Other books",
    "name": "Severed from Dreams",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "severed-from-dreams"
   },
   {
@@ -606,9 +606,9 @@
    "sub": "Other books",
    "name": "Darkvision",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -626,9 +626,9 @@
    "sub": "Other books",
    "name": "Fey Gift",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "fey-gift"
   },
   {
@@ -646,9 +646,9 @@
    "sub": "Other books",
    "name": "Skill Versatility",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "skill-versatility"
   },
   {
@@ -656,9 +656,9 @@
    "sub": "Other books",
    "name": "Shape Self",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "shape-self"
   },
   {
@@ -666,9 +666,9 @@
    "sub": "Other books",
    "name": "Darkvision",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -676,9 +676,9 @@
    "sub": "Other books",
    "name": "Delightful Imitator",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "delightful-imitator"
   },
   {
@@ -686,9 +686,9 @@
    "sub": "Other books",
    "name": "Unpredictable Movement",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "unpredictable-movement"
   },
   {
@@ -696,9 +696,9 @@
    "sub": "Other books",
    "name": "Darkvision",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -726,9 +726,9 @@
    "sub": "Other books",
    "name": "Werewolf Instincts",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "werewolf-instincts"
   },
   {
@@ -746,9 +746,9 @@
    "sub": "Player's Handbook",
    "name": "Darkvision",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -776,9 +776,9 @@
    "sub": "Other books",
    "name": "Everlasting",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "everlasting"
   },
   {
@@ -796,9 +796,9 @@
    "sub": "Other books",
    "name": "Strange Endurance",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "strange-endurance"
   },
   {
@@ -816,9 +816,9 @@
    "sub": "Other books",
    "name": "Cold Resistance",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "cold-resistance"
   },
   {
@@ -826,9 +826,9 @@
    "sub": "Other books",
    "name": "Darkvision",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -836,9 +836,9 @@
    "sub": "Other books",
    "name": "Bestial Instincts",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "bestial-instincts"
   },
   {
@@ -846,9 +846,9 @@
    "sub": "Other books",
    "name": "Darkvision",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -906,9 +906,9 @@
    "sub": "Player's Handbook",
    "name": "Darkvision",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "darkvision"
   },
   {
@@ -956,9 +956,9 @@
    "sub": "Other books",
    "name": "Sentry’s Rest",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Rest rule - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Rest rule - nothing to automate",
    "identifier": "sentrys-rest"
   },
   {
@@ -966,9 +966,9 @@
    "sub": "Other books",
    "name": "Specialized Design",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "specialized-design"
   },
   {
@@ -976,9 +976,9 @@
    "sub": "Other books",
    "name": "Tireless",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0 - was: Sheet trait, proficiency, sense, cantrip, roleplay or a choice made at character creation - nothing to automate",
    "identifier": "tireless"
   },
   {

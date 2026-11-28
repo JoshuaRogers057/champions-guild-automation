@@ -7,9 +7,9 @@
    "level": 1,
    "name": "Spellcasting",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement (INT half caster, tool focus)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement (INT half caster, tool focus)",
    "identifier": "spellcasting"
   },
   {
@@ -18,9 +18,9 @@
    "level": 1,
    "name": "Tinker’s Magic",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Mending from the sheet; mundane item creation by hand (INT uses/LR on the sheet)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Mending from the sheet; mundane item creation by hand (INT uses/LR on the sheet)",
    "identifier": "tinkers-magic"
   },
   {
@@ -29,9 +29,9 @@
    "level": 2,
    "name": "Replicate Magic Item",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Plans and created items by hand; the plan magic items are tracked on the Items tab",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Plans and created items by hand; the plan magic items are tracked on the Items tab",
    "identifier": "replicate-magic-item"
   },
   {
@@ -40,9 +40,9 @@
    "level": 3,
    "name": "Artificer Subclass",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "artificer-subclass"
   },
   {
@@ -128,9 +128,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -150,9 +150,9 @@
    "level": 3,
    "name": "Tools of the Trade",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "tools-of-the-trade"
   },
   {
@@ -161,9 +161,9 @@
    "level": 3,
    "name": "Alchemist Spells",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "alchemist-spells"
   },
   {
@@ -216,9 +216,9 @@
    "level": 3,
    "name": "Tools of the Trade",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "tools-of-the-trade"
   },
   {
@@ -227,9 +227,9 @@
    "level": 3,
    "name": "Armorer Spells",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "armorer-spells"
   },
   {
@@ -238,9 +238,9 @@
    "level": 3,
    "name": "Arcane Armor",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "No Strength requirement, quick don/doff and focus by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: No Strength requirement, quick don/doff and focus by hand",
    "identifier": "arcane-armor"
   },
   {
@@ -293,9 +293,9 @@
    "level": 3,
    "name": "Tools of the Trade",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "tools-of-the-trade"
   },
   {
@@ -304,9 +304,9 @@
    "level": 3,
    "name": "Artillerist Spells",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "artillerist-spells"
   },
   {
@@ -359,9 +359,9 @@
    "level": 3,
    "name": "Tools of the Trade",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "tools-of-the-trade"
   },
   {
@@ -370,9 +370,9 @@
    "level": 3,
    "name": "Battle Smith Spells",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "battle-smith-spells"
   },
   {
@@ -436,9 +436,9 @@
    "level": 3,
    "name": "Tools of the Trade",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "tools-of-the-trade"
   },
   {
@@ -447,9 +447,9 @@
    "level": 3,
    "name": "Cartographer Spells",
    "source": "EB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "cartographer-spells"
   },
   {
@@ -513,9 +513,9 @@
    "level": 3,
    "name": "Reanimator Spells",
    "source": "RV",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "reanimator-spells"
   },
   {
@@ -645,9 +645,9 @@
    "level": 3,
    "name": "Barbarian Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "barbarian-subclass"
   },
   {
@@ -788,9 +788,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -854,9 +854,9 @@
    "level": 3,
    "name": "Animal Speaker",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "animal-speaker"
   },
   {
@@ -887,9 +887,9 @@
    "level": 10,
    "name": "Nature Speaker",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "nature-speaker"
   },
   {
@@ -931,9 +931,9 @@
    "level": 10,
    "name": "Battering Roots",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "+10 ft reach and extra Push/Topple mastery - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: +10 ft reach and extra Push/Topple mastery - manual",
    "identifier": "battering-roots"
   },
   {
@@ -1052,9 +1052,9 @@
    "level": 3,
    "name": "Bard Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "bard-subclass"
   },
   {
@@ -1118,9 +1118,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -1151,9 +1151,9 @@
    "level": 6,
    "name": "Inspiring Movement",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Reaction movement - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Reaction movement - manual",
    "identifier": "inspiring-movement"
   },
   {
@@ -1272,9 +1272,9 @@
    "level": 3,
    "name": "Channeler",
    "source": "RV",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Guidance and focus from the sheet; 60-ft Guidance range by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Guidance and focus from the sheet; 60-ft Guidance range by hand",
    "identifier": "channeler"
   },
   {
@@ -1327,9 +1327,9 @@
    "level": 3,
    "name": "Primal Lore",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Druidic, cantrip and skill from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Druidic, cantrip and skill from the sheet",
    "identifier": "primal-lore"
   },
   {
@@ -1371,9 +1371,9 @@
    "level": 3,
    "name": "Martial Training",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "martial-training"
   },
   {
@@ -1393,9 +1393,9 @@
    "level": 14,
    "name": "Battle Magic",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Bonus Action weapon attack after an action spell - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Bonus Action weapon attack after an action spell - manual",
    "identifier": "battle-magic"
   },
   {
@@ -1437,9 +1437,9 @@
    "level": 3,
    "name": "Cleric Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "cleric-subclass"
   },
   {
@@ -1503,9 +1503,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -1525,9 +1525,9 @@
    "level": 3,
    "name": "Arcana Domain Spells",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "arcana-domain-spells"
   },
   {
@@ -1547,9 +1547,9 @@
    "level": 3,
    "name": "Student of Arcana",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Skill and Wizard cantrips from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Skill and Wizard cantrips from the sheet",
    "identifier": "student-of-arcana"
   },
   {
@@ -1569,9 +1569,9 @@
    "level": 17,
    "name": "Magical Mastery",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared Wizard spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared Wizard spells from the sheet",
    "identifier": "magical-mastery"
   },
   {
@@ -1580,9 +1580,9 @@
    "level": 3,
    "name": "Grave Domain Spells",
    "source": "RV",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "grave-domain-spells"
   },
   {
@@ -1635,9 +1635,9 @@
    "level": 3,
    "name": "Blessings of Knowledge",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Skills, Expertise and tools from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Skills, Expertise and tools from the sheet",
    "identifier": "blessings-of-knowledge"
   },
   {
@@ -1646,9 +1646,9 @@
    "level": 3,
    "name": "Knowledge Domain Spells",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "knowledge-domain-spells"
   },
   {
@@ -1668,9 +1668,9 @@
    "level": 6,
    "name": "Unfettered Mind",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Telepathy and save proficiency from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Telepathy and save proficiency from the sheet",
    "identifier": "unfettered-mind"
   },
   {
@@ -1745,9 +1745,9 @@
    "level": 3,
    "name": "Light Domain Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "light-domain-spells"
   },
   {
@@ -1811,9 +1811,9 @@
    "level": 3,
    "name": "Trickery Domain Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "trickery-domain-spells"
   },
   {
@@ -1866,9 +1866,9 @@
    "level": 3,
    "name": "War Domain Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "war-domain-spells"
   },
   {
@@ -1965,9 +1965,9 @@
    "level": 3,
    "name": "Druid Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "druid-subclass"
   },
   {
@@ -2031,9 +2031,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -2119,9 +2119,9 @@
    "level": 3,
    "name": "Circle of the Moon Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "circle-of-the-moon-spells"
   },
   {
@@ -2163,9 +2163,9 @@
    "level": 3,
    "name": "Circle of the Sea Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "circle-of-the-sea-spells"
   },
   {
@@ -2328,9 +2328,9 @@
    "level": 3,
    "name": "Fighter Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "fighter-subclass"
   },
   {
@@ -2416,9 +2416,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -2438,9 +2438,9 @@
    "level": 3,
    "name": "Arcane Archer Lore",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Cantrip and skills from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Cantrip and skills from the sheet",
    "identifier": "arcane-archer-lore"
   },
   {
@@ -2471,9 +2471,9 @@
    "level": 7,
    "name": "Magical Ammunition",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Utility ammunition (darkness, unlock, vine) by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Utility ammunition (darkness, unlock, vine) by hand",
    "identifier": "magical-ammunition"
   },
   {
@@ -2603,9 +2603,9 @@
    "level": 3,
    "name": "Knightly Envoy",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ritual, language and skill from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ritual, language and skill from the sheet",
    "identifier": "knightly-envoy"
   },
   {
@@ -2680,9 +2680,9 @@
    "level": 3,
    "name": "Student of War",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "student-of-war"
   },
   {
@@ -2691,9 +2691,9 @@
    "level": 7,
    "name": "Know Your Enemy",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "DM tells resistances - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: DM tells resistances - manual",
    "identifier": "know-your-enemy"
   },
   {
@@ -2801,9 +2801,9 @@
    "level": 3,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -2812,9 +2812,9 @@
    "level": 3,
    "name": "War Bond",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Bonded weapon - roleplay",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Bonded weapon - roleplay",
    "identifier": "war-bond"
   },
   {
@@ -2823,9 +2823,9 @@
    "level": 7,
    "name": "War Magic",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 2,
-   "note": "Cantrip in place of an attack - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Cantrip in place of an attack - manual",
    "identifier": "war-magic"
   },
   {
@@ -2845,9 +2845,9 @@
    "level": 15,
    "name": "Arcane Charge",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Teleport on Action Surge - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Teleport on Action Surge - manual",
    "identifier": "arcane-charge"
   },
   {
@@ -2856,9 +2856,9 @@
    "level": 18,
    "name": "Improved War Magic",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Manual",
    "identifier": "improved-war-magic"
   },
   {
@@ -3208,9 +3208,9 @@
    "level": 3,
    "name": "Monk Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "monk-subclass"
   },
   {
@@ -3362,9 +3362,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -3406,9 +3406,9 @@
    "level": 3,
    "name": "Implements of Mercy",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "implements-of-mercy"
   },
   {
@@ -3439,9 +3439,9 @@
    "level": 17,
    "name": "Hand of Ultimate Mercy",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Revive - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Revive - manual",
    "identifier": "hand-of-ultimate-mercy"
   },
   {
@@ -3505,9 +3505,9 @@
    "level": 3,
    "name": "Manipulate Elements",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "manipulate-elements"
   },
   {
@@ -3549,9 +3549,9 @@
    "level": 3,
    "name": "Spellcasting",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement (third caster, WIS, Sorcerer list)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement (third caster, WIS, Sorcerer list)",
    "identifier": "spellcasting"
   },
   {
@@ -3560,9 +3560,9 @@
    "level": 6,
    "name": "Mystic Fighting Style",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Swapping an Unarmed Strike for a cantrip by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Swapping an Unarmed Strike for a cantrip by hand",
    "identifier": "mystic-fighting-style"
   },
   {
@@ -3593,9 +3593,9 @@
    "level": 17,
    "name": "Improved Mystic Fighting Style",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Swapping Flurry strikes for a spell by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Swapping Flurry strikes for a spell by hand",
    "identifier": "improved-mystic-fighting-style"
   },
   {
@@ -3714,9 +3714,9 @@
    "level": 3,
    "name": "Paladin Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "paladin-subclass"
   },
   {
@@ -3824,9 +3824,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -3901,9 +3901,9 @@
    "level": 3,
    "name": "Oath of Glory Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "oath-of-glory-spells"
   },
   {
@@ -3967,9 +3967,9 @@
    "level": 3,
    "name": "Oath of the Ancients Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "oath-of-the-ancients-spells"
   },
   {
@@ -4022,9 +4022,9 @@
    "level": 3,
    "name": "Genie Spells",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "genie-spells"
   },
   {
@@ -4077,9 +4077,9 @@
    "level": 3,
    "name": "Oath of Vengeance Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "oath-of-vengeance-spells"
   },
   {
@@ -4187,9 +4187,9 @@
    "level": 3,
    "name": "Ranger Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "ranger-subclass"
   },
   {
@@ -4297,9 +4297,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -4352,9 +4352,9 @@
    "level": 15,
    "name": "Share Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Manual",
    "identifier": "share-spells"
   },
   {
@@ -4374,9 +4374,9 @@
    "level": 3,
    "name": "Fey Wanderer Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "fey-wanderer-spells"
   },
   {
@@ -4407,9 +4407,9 @@
    "level": 11,
    "name": "Fey Reinforcements",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Free Summon Fey without concentration - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Free Summon Fey without concentration - manual",
    "identifier": "fey-reinforcements"
   },
   {
@@ -4440,9 +4440,9 @@
    "level": 3,
    "name": "Gloom Stalker Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "gloom-stalker-spells"
   },
   {
@@ -4462,9 +4462,9 @@
    "level": 7,
    "name": "Iron Mind",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "iron-mind"
   },
   {
@@ -4495,9 +4495,9 @@
    "level": 3,
    "name": "Hollow Warden Spells",
    "source": "RV",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "hollow-warden-spells"
   },
   {
@@ -4627,9 +4627,9 @@
    "level": 3,
    "name": "Winter Walker Spells",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "winter-walker-spells"
   },
   {
@@ -4726,9 +4726,9 @@
    "level": 3,
    "name": "Rogue Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "rogue-subclass"
   },
   {
@@ -4847,9 +4847,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -4869,9 +4869,9 @@
    "level": 3,
    "name": "Spellcasting",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "spellcasting"
   },
   {
@@ -4880,9 +4880,9 @@
    "level": 3,
    "name": "Mage Hand Legerdemain",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "mage-hand-legerdemain"
   },
   {
@@ -4902,9 +4902,9 @@
    "level": 13,
    "name": "Versatile Trickster",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Manual",
    "identifier": "versatile-trickster"
   },
   {
@@ -4913,9 +4913,9 @@
    "level": 17,
    "name": "Spell Thief",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Manual",
    "identifier": "spell-thief"
   },
   {
@@ -4935,9 +4935,9 @@
    "level": 3,
    "name": "Assassin’s Tools",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "assassins-tools"
   },
   {
@@ -4946,9 +4946,9 @@
    "level": 9,
    "name": "Infiltration Expertise",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "infiltration-expertise"
   },
   {
@@ -4990,9 +4990,9 @@
    "level": 3,
    "name": "Whispers of the Dead",
    "source": "RV",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Rest proficiency swap by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Rest proficiency swap by hand",
    "identifier": "whispers-of-the-dead"
   },
   {
@@ -5254,9 +5254,9 @@
    "level": 3,
    "name": "Sorcerer Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "sorcerer-subclass"
   },
   {
@@ -5298,9 +5298,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -5320,9 +5320,9 @@
    "level": 3,
    "name": "Psionic Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "psionic-spells"
   },
   {
@@ -5331,9 +5331,9 @@
    "level": 3,
    "name": "Telepathic Speech",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "telepathic-speech"
   },
   {
@@ -5386,9 +5386,9 @@
    "level": 3,
    "name": "Clockwork Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "clockwork-spells"
   },
   {
@@ -5606,9 +5606,9 @@
    "level": 3,
    "name": "Shadow Spells",
    "source": "RV",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "shadow-spells"
   },
   {
@@ -5672,9 +5672,9 @@
    "level": 3,
    "name": "Spellfire Spells",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "spellfire-spells"
   },
   {
@@ -5804,9 +5804,9 @@
    "level": 3,
    "name": "Warlock Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "warlock-subclass"
   },
   {
@@ -5848,9 +5848,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -5870,9 +5870,9 @@
    "level": 3,
    "name": "Archfey Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "archfey-spells"
   },
   {
@@ -5914,9 +5914,9 @@
    "level": 14,
    "name": "Bewitching Magic",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Free Misty Step after an enchantment/illusion spell - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Free Misty Step after an enchantment/illusion spell - manual",
    "identifier": "bewitching-magic"
   },
   {
@@ -5925,9 +5925,9 @@
    "level": 3,
    "name": "Celestial Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "celestial-spells"
   },
   {
@@ -6343,9 +6343,9 @@
    "level": 3,
    "name": "Awakened Mind",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "awakened-mind"
   },
   {
@@ -6354,9 +6354,9 @@
    "level": 3,
    "name": "Great Old One Spells",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "great-old-one-spells"
   },
   {
@@ -6409,9 +6409,9 @@
    "level": 14,
    "name": "Create Thrall",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Summon Aberration without concentration - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Summon Aberration without concentration - manual",
    "identifier": "create-thrall"
   },
   {
@@ -6431,9 +6431,9 @@
    "level": 3,
    "name": "Undead Spells",
    "source": "RV",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Always-prepared spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Always-prepared spells from the sheet",
    "identifier": "undead-spells"
   },
   {
@@ -6486,9 +6486,9 @@
    "level": 3,
    "name": "Vestige Spells",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Chosen domain spells from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Chosen domain spells from the sheet",
    "identifier": "vestige-spells"
   },
   {
@@ -6574,9 +6574,9 @@
    "level": 3,
    "name": "Wizard Subclass",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "wizard-subclass"
   },
   {
@@ -6618,9 +6618,9 @@
    "level": 19,
    "name": "Epic Boon",
    "source": "SRD",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "epic-boon"
   },
   {
@@ -6640,9 +6640,9 @@
    "level": 3,
    "name": "Abjuration Savant",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "abjuration-savant"
   },
   {
@@ -6673,9 +6673,9 @@
    "level": 10,
    "name": "Spell Breaker",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "spell-breaker"
   },
   {
@@ -6706,9 +6706,9 @@
    "level": 3,
    "name": "Training in War and Song",
    "source": "FR",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Proficiencies and skill from the sheet",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Proficiencies and skill from the sheet",
    "identifier": "training-in-war-and-song"
   },
   {
@@ -6761,9 +6761,9 @@
    "level": 3,
    "name": "Conjuration Savant",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Spellbook by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Spellbook by hand",
    "identifier": "conjuration-savant"
   },
   {
@@ -6816,9 +6816,9 @@
    "level": 3,
    "name": "Divination Savant",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "divination-savant"
   },
   {
@@ -6882,9 +6882,9 @@
    "level": 3,
    "name": "Enchantment Savant",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Spellbook by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Spellbook by hand",
    "identifier": "enchantment-savant"
   },
   {
@@ -6926,9 +6926,9 @@
    "level": 14,
    "name": "Alter Memories",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Roleplay",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Roleplay",
    "identifier": "alter-memories"
   },
   {
@@ -6992,9 +6992,9 @@
    "level": 3,
    "name": "Illusion Savant",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Sheet/advancement or manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Sheet/advancement or manual",
    "identifier": "illusion-savant"
   },
   {
@@ -7003,9 +7003,9 @@
    "level": 3,
    "name": "Improved Illusions",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "No verbal components, +60 ft range - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: No verbal components, +60 ft range - manual",
    "identifier": "improved-illusions"
   },
   {
@@ -7014,9 +7014,9 @@
    "level": 6,
    "name": "Phantasmal Creatures",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Illusion Summon Beast/Fey - manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Illusion Summon Beast/Fey - manual",
    "identifier": "phantasmal-creatures"
   },
   {
@@ -7036,9 +7036,9 @@
    "level": 14,
    "name": "Illusory Reality",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Manual",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Manual",
    "identifier": "illusory-reality"
   },
   {
@@ -7047,9 +7047,9 @@
    "level": 3,
    "name": "Necromancy Savant",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Spellbook by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Spellbook by hand",
    "identifier": "necromancy-savant"
   },
   {
@@ -7113,9 +7113,9 @@
    "level": 3,
    "name": "Transmutation Savant",
    "source": "AU",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Spellbook by hand",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Spellbook by hand",
    "identifier": "transmutation-savant"
   },
   {

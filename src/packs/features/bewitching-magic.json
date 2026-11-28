@@ -1,0 +1,31 @@
+{
+  "name": "Bewitching Magic",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "bewitching-magic",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Bewitching Magic.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Archfey Patron 14",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBX5qOEMSmLiwZ",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

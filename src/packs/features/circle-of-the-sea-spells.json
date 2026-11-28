@@ -1,0 +1,31 @@
+{
+  "name": "Circle of the Sea Spells",
+  "type": "feat",
+  "img": "icons/magic/symbols/chevron-elipse-circle-blue.webp",
+  "system": {
+    "identifier": "circle-of-the-sea-spells",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Circle of the Sea Spells.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Circle of the Sea 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBHT5FFJMIrWjz",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

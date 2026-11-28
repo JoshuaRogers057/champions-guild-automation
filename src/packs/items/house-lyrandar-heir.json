@@ -1,0 +1,26 @@
+{
+  "name": "House Lyrandar Heir",
+  "type": "background",
+  "img": "icons/equipment/finger/ring-crown-gold-red.webp",
+  "system": {
+    "identifier": "house-lyrandar-heir",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> House Lyrandar Heir background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBZUtdcWNXlSU9",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

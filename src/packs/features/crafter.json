@@ -1,0 +1,31 @@
+{
+  "name": "Crafter",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "crafter",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Crafter.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "origin"
+    },
+    "requirements": "",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBSANy4ULGCz9O",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

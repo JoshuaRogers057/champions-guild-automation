@@ -1,0 +1,82 @@
+{
+  "name": "Shield of Expression",
+  "system": {
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Shield of Expression.</p>"
+    },
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "CC-BY-4.0",
+      "book": ""
+    },
+    "identified": true,
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 6,
+      "units": "lb"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "cover": null,
+    "crewed": false,
+    "uses": {
+      "max": "",
+      "spent": 0,
+      "recovery": []
+    },
+    "armor": {
+      "value": 2,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "type": {
+      "value": "shield",
+      "baseItem": "shield"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "speed": {
+      "value": null,
+      "conditions": ""
+    },
+    "strength": null,
+    "proficient": null,
+    "activities": {},
+    "identifier": "shield-of-expression"
+  },
+  "type": "equipment",
+  "folder": "Iyyec8ij0PAfdLBd",
+  "img": "icons/equipment/shield/shield-round-boss-wood-brown.webp",
+  "effects": [],
+  "sort": 100000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  },
+  "_id": "cgaByq0114clUNK4"
+}

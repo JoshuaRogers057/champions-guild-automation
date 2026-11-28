@@ -1,0 +1,45 @@
+{
+  "name": "Mystery Key",
+  "type": "equipment",
+  "img": "icons/sundries/misc/key-ornate-iron-black.webp",
+  "system": {
+    "identifier": "mystery-key",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Mystery Key.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "common",
+    "attunement": "",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBGoo3pbUHDo5U",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

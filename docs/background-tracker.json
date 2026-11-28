@@ -6,9 +6,9 @@
    "sub": "Ability scores: Strength, Constitution, Charisma",
    "name": "Aberrant Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Aberrant Dragonmark (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Aberrant Dragonmark (below)",
    "identifier": "aberrant-heir"
   },
   {
@@ -26,9 +26,9 @@
    "sub": "Ability scores: Dexterity, Intelligence, Charisma",
    "name": "Agent of the Ninth Quill",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Infiltrator (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Infiltrator (below)",
    "identifier": "agent-of-the-ninth-quill"
   },
   {
@@ -36,9 +36,9 @@
    "sub": "Ability scores: Dexterity, Intelligence, Wisdom",
    "name": "Archaeologist",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
    "identifier": "archaeologist"
   },
   {
@@ -46,9 +46,9 @@
    "sub": "Ability scores: Strength, Dexterity, Intelligence",
    "name": "Artisan",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Crafter (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Crafter (Feats tab: skip)",
    "identifier": "artisan"
   },
   {
@@ -56,9 +56,9 @@
    "sub": "Ability scores: Dexterity, Wisdom, Charisma",
    "name": "Bejeweled Conclave Spy",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Eloquence (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Eloquence (below)",
    "identifier": "bejeweled-conclave-spy"
   },
   {
@@ -66,9 +66,9 @@
    "sub": "Ability scores: Dexterity, Intelligence, Charisma",
    "name": "Carouser",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tireless Reveler (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tireless Reveler (below)",
    "identifier": "carouser"
   },
   {
@@ -76,9 +76,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Charisma",
    "name": "Charlatan",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
    "identifier": "charlatan"
   },
   {
@@ -86,9 +86,9 @@
    "sub": "Ability scores: Strength, Dexterity, Wisdom",
    "name": "Chondathan Freebooter",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
    "identifier": "chondathan-freebooter"
   },
   {
@@ -96,9 +96,9 @@
    "sub": "Ability scores: Strength, Dexterity, Constitution",
    "name": "Cosmic Dawn Experiment",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Transmuted Anatomy (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Transmuted Anatomy (below)",
    "identifier": "cosmic-dawn-experiment"
   },
   {
@@ -106,9 +106,9 @@
    "sub": "Ability scores: Strength, Intelligence, Wisdom",
    "name": "Covenant of the Grave Recruit",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Undertaker (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Undertaker (below)",
    "identifier": "covenant-of-the-grave-recruit"
   },
   {
@@ -126,9 +126,9 @@
    "sub": "Ability scores: Strength, Constitution, Intelligence",
    "name": "Crucible Storm Chaser",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Overload (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Overload (below)",
    "identifier": "crucible-storm-chaser"
   },
   {
@@ -136,9 +136,9 @@
    "sub": "Ability scores: Strength, Constitution, Wisdom",
    "name": "Dead Magic Dweller",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Healer (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Healer (Feats tab: done)",
    "identifier": "dead-magic-dweller"
   },
   {
@@ -146,9 +146,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Intelligence",
    "name": "Dragon Cultist",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Cult of the Dragon Initiate (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Cult of the Dragon Initiate (below)",
    "identifier": "dragon-cultist"
   },
   {
@@ -156,9 +156,9 @@
    "sub": "Ability scores: Constitution, Intelligence, Wisdom",
    "name": "Emerald Enclave Caretaker",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Emerald Enclave Fledgling (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Emerald Enclave Fledgling (below)",
    "identifier": "emerald-enclave-caretaker"
   },
   {
@@ -166,9 +166,9 @@
    "sub": "Ability scores: Strength, Dexterity, Charisma",
    "name": "Entertainer",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Musician (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Musician (Feats tab: done)",
    "identifier": "entertainer"
   },
   {
@@ -176,9 +176,9 @@
    "sub": "Ability scores: Constitution, Intelligence, Wisdom",
    "name": "Familiar Trainer",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Familiar Friend (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Familiar Friend (below)",
    "identifier": "familiar-trainer"
   },
   {
@@ -186,9 +186,9 @@
    "sub": "Ability scores: Strength, Constitution, Wisdom",
    "name": "Farmer",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
    "identifier": "farmer"
   },
   {
@@ -196,9 +196,9 @@
    "sub": "Ability scores: Strength, Constitution, Charisma",
    "name": "Flaming Fist Mercenary",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
    "identifier": "flaming-fist-mercenary"
   },
   {
@@ -206,9 +206,9 @@
    "sub": "Ability scores: Dexterity, Wisdom, Charisma",
    "name": "Genie Touched",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Wizard) (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Wizard) (Feats tab: skip)",
    "identifier": "genie-touched"
   },
   {
@@ -216,9 +216,9 @@
    "sub": "Ability scores: Strength, Intelligence, Wisdom",
    "name": "Guard",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
    "identifier": "guard"
   },
   {
@@ -226,9 +226,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Wisdom",
    "name": "Guide",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Druid) (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Druid) (Feats tab: skip)",
    "identifier": "guide"
   },
   {
@@ -236,9 +236,9 @@
    "sub": "Ability scores: Dexterity, Intelligence, Charisma",
    "name": "Harper",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Harper Agent (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Harper Agent (below)",
    "identifier": "harper"
   },
   {
@@ -246,9 +246,9 @@
    "sub": "Ability scores: Constitution, Wisdom, Charisma",
    "name": "Haunted One",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Survivor (below) or a Dark Gift feat of your choice (see Dark Gift feats below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Survivor (below) or a Dark Gift feat of your choice (see Dark Gift feats below)",
    "identifier": "haunted-one"
   },
   {
@@ -256,9 +256,9 @@
    "sub": "Ability scores: Constitution, Wisdom, Charisma",
    "name": "Hermit",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Healer (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Healer (Feats tab: done)",
    "identifier": "hermit"
   },
   {
@@ -266,9 +266,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Wisdom",
    "name": "Horizon Weaver Initiate",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Portal Jumper (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Portal Jumper (below)",
    "identifier": "horizon-weaver-initiate"
   },
   {
@@ -276,9 +276,9 @@
    "sub": "Ability scores: Strength, Intelligence, Charisma",
    "name": "House Agent",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
    "identifier": "house-agent"
   },
   {
@@ -286,9 +286,9 @@
    "sub": "Ability scores: Strength, Dexterity, Intelligence",
    "name": "House Cannith Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Making (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Making (below)",
    "identifier": "house-cannith-heir"
   },
   {
@@ -296,9 +296,9 @@
    "sub": "Ability scores: Strength, Constitution, Wisdom",
    "name": "House Deneith Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Sentinel (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Sentinel (below)",
    "identifier": "house-deneith-heir"
   },
   {
@@ -306,9 +306,9 @@
    "sub": "Ability scores: Dexterity, Wisdom, Charisma",
    "name": "House Ghallanda Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Hospitality (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Hospitality (below)",
    "identifier": "house-ghallanda-heir"
   },
   {
@@ -316,9 +316,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Wisdom",
    "name": "House Jorasco Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Healing (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Healing (below)",
    "identifier": "house-jorasco-heir"
   },
   {
@@ -326,9 +326,9 @@
    "sub": "Ability scores: Strength, Constitution, Intelligence",
    "name": "House Kundarak Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Warding (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Warding (below)",
    "identifier": "house-kundarak-heir"
   },
   {
@@ -336,9 +336,9 @@
    "sub": "Ability scores: Strength, Dexterity, Charisma",
    "name": "House Lyrandar Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Storm (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Storm (below)",
    "identifier": "house-lyrandar-heir"
   },
   {
@@ -346,9 +346,9 @@
    "sub": "Ability scores: Dexterity, Intelligence, Wisdom",
    "name": "House Medani Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Detection (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Detection (below)",
    "identifier": "house-medani-heir"
   },
   {
@@ -356,9 +356,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Intelligence",
    "name": "House Orien Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Passage (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Passage (below)",
    "identifier": "house-orien-heir"
   },
   {
@@ -366,9 +366,9 @@
    "sub": "Ability scores: Dexterity, Wisdom, Charisma",
    "name": "House Phiarlan Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Shadow (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Shadow (below)",
    "identifier": "house-phiarlan-heir"
   },
   {
@@ -376,9 +376,9 @@
    "sub": "Ability scores: Intelligence, Wisdom, Charisma",
    "name": "House Sivis Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Scribing (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Scribing (below)",
    "identifier": "house-sivis-heir"
   },
   {
@@ -386,9 +386,9 @@
    "sub": "Ability scores: Constitution, Intelligence, Wisdom",
    "name": "House Tharashk Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Finding (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Finding (below)",
    "identifier": "house-tharashk-heir"
   },
   {
@@ -396,9 +396,9 @@
    "sub": "Ability scores: Dexterity, Intelligence, Charisma",
    "name": "House Thuranni Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Shadow (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Shadow (below)",
    "identifier": "house-thuranni-heir"
   },
   {
@@ -406,9 +406,9 @@
    "sub": "Ability scores: Constitution, Wisdom, Charisma",
    "name": "House Vadalis Heir",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Handling (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Mark of Handling (below)",
    "identifier": "house-vadalis-heir"
   },
   {
@@ -416,9 +416,9 @@
    "sub": "Ability scores: Strength, Dexterity, Constitution",
    "name": "Ice Fisher",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
    "identifier": "ice-fisher"
   },
   {
@@ -426,9 +426,9 @@
    "sub": "Ability scores: Constitution, Intelligence, Charisma",
    "name": "Inquisitive",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Alert (Feats tab: done)",
    "identifier": "inquisitive"
   },
   {
@@ -436,9 +436,9 @@
    "sub": "Ability scores: Intelligence, Wisdom, Charisma",
    "name": "Investigator",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Sharp Eye (below) or a Dark Gift feat of your choice (see Dark Gift feats below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Sharp Eye (below) or a Dark Gift feat of your choice (see Dark Gift feats below)",
    "identifier": "investigator"
   },
   {
@@ -446,9 +446,9 @@
    "sub": "Ability scores: Strength, Intelligence, Wisdom",
    "name": "Knight of the Gauntlet",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tyro of the Gauntlet (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tyro of the Gauntlet (below)",
    "identifier": "knight-of-the-gauntlet"
   },
   {
@@ -456,9 +456,9 @@
    "sub": "Ability scores: Strength, Intelligence, Charisma",
    "name": "Lords’ Alliance Vassal",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lords’ Alliance Agent (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lords’ Alliance Agent (below)",
    "identifier": "lords-alliance-vassal"
   },
   {
@@ -466,9 +466,9 @@
    "sub": "Ability scores: Strength, Constitution, Wisdom",
    "name": "Lorwyn Expert",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Child of the Sun (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Child of the Sun (below)",
    "identifier": "lorwyn-expert"
   },
   {
@@ -476,9 +476,9 @@
    "sub": "Ability scores: Constitution, Intelligence, Charisma",
    "name": "Merchant",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
    "identifier": "merchant"
   },
   {
@@ -486,9 +486,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Wisdom",
    "name": "Mist Wanderer",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: A Dark Gift feat of your choice (see Dark Gift feats below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: A Dark Gift feat of your choice (see Dark Gift feats below)",
    "identifier": "mist-wanderer"
   },
   {
@@ -496,9 +496,9 @@
    "sub": "Ability scores: Constitution, Wisdom, Charisma",
    "name": "Moonwell Pilgrim",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Druid) (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Magic Initiate (Druid) (Feats tab: skip)",
    "identifier": "moonwell-pilgrim"
   },
   {
@@ -506,9 +506,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Intelligence",
    "name": "Mulhorandi Tomb Raider",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
    "identifier": "mulhorandi-tomb-raider"
   },
   {
@@ -516,9 +516,9 @@
    "sub": "Ability scores: Intelligence, Wisdom, Charisma",
    "name": "Mythalkeeper",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Crafter (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Crafter (Feats tab: skip)",
    "identifier": "mythalkeeper"
   },
   {
@@ -526,9 +526,9 @@
    "sub": "Ability scores: Strength, Intelligence, Charisma",
    "name": "Noble",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
    "identifier": "noble"
   },
   {
@@ -536,9 +536,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Charisma",
    "name": "Phantasmic Circus Trouper",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Artist (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Artist (below)",
    "identifier": "phantasmic-circus-trouper"
   },
   {
@@ -546,9 +546,9 @@
    "sub": "Ability scores: Strength, Wisdom, Charisma",
    "name": "Purple Dragon Squire",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Purple Dragon Rook (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Purple Dragon Rook (below)",
    "identifier": "purple-dragon-squire"
   },
   {
@@ -556,9 +556,9 @@
    "sub": "Ability scores: Strength, Constitution, Charisma",
    "name": "Rashemi Wanderer",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tough (Feats tab: done)",
    "identifier": "rashemi-wanderer"
   },
   {
@@ -576,9 +576,9 @@
    "sub": "Ability scores: Strength, Dexterity, Wisdom",
    "name": "Sailor",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tavern Brawler (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Tavern Brawler (Feats tab: done)",
    "identifier": "sailor"
   },
   {
@@ -586,9 +586,9 @@
    "sub": "Ability scores: Dexterity, Intelligence, Wisdom",
    "name": "Scribe",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Skilled (Feats tab: skip)",
    "identifier": "scribe"
   },
   {
@@ -596,9 +596,9 @@
    "sub": "Ability scores: Intelligence, Wisdom, Charisma",
    "name": "Seer Apprentice",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Omens (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Omens (below)",
    "identifier": "seer-apprentice"
   },
   {
@@ -606,9 +606,9 @@
    "sub": "",
    "name": "Shadowmasters Exile",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Savage Attacker (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Savage Attacker (Feats tab: done)",
    "identifier": "shadowmasters-exile"
   },
   {
@@ -616,9 +616,9 @@
    "sub": "Ability scores: Dexterity, Intelligence, Charisma",
    "name": "Shadowmoor Expert",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Shadowmoor Hexer (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Shadowmoor Hexer (below)",
    "identifier": "shadowmoor-expert"
   },
   {
@@ -636,9 +636,9 @@
    "sub": "Ability scores: Constitution, Intelligence, Charisma",
    "name": "Spellfire Initiate",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Spellfire Spark (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Spellfire Spark (below)",
    "identifier": "spellfire-initiate"
   },
   {
@@ -646,9 +646,9 @@
    "sub": "Ability scores: Constitution, Intelligence, Wisdom",
    "name": "Spirit Medium",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: A Dark Gift feat of your choice (see Dark Gift feats below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: A Dark Gift feat of your choice (see Dark Gift feats below)",
    "identifier": "spirit-medium"
   },
   {
@@ -656,9 +656,9 @@
    "sub": "Ability scores: Strength, Constitution, Charisma",
    "name": "Vampire Devotee",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Vampire’s Plaything (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Vampire’s Plaything (below)",
    "identifier": "vampire-devotee"
   },
   {
@@ -666,9 +666,9 @@
    "sub": "Ability scores: Dexterity, Constitution, Wisdom",
    "name": "Vampire Survivor",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Vampire Hunter (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Vampire Hunter (below)",
    "identifier": "vampire-survivor"
   },
   {
@@ -676,9 +676,9 @@
    "sub": "Ability scores: Constitution, Wisdom, Charisma",
    "name": "Ward of the Sheltering Hands",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Safeguard (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Arcane Safeguard (below)",
    "identifier": "ward-of-the-sheltering-hands"
   },
   {
@@ -686,9 +686,9 @@
    "sub": "Ability scores: Dexterity, Wisdom, Charisma",
    "name": "Wayfarer",
    "source": "PHB",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Lucky (Feats tab: done)",
    "identifier": "wayfarer"
   },
   {
@@ -696,9 +696,9 @@
    "sub": "Ability scores: Strength, Dexterity, Charisma",
    "name": "Zhentarim Mercenary",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Ability scores, skills, tool and equipment come from the sheet. Origin feat: Zhentarim Ruffian (below)",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Ability scores, skills, tool and equipment come from the sheet. Origin feat: Zhentarim Ruffian (below)",
    "identifier": "zhentarim-mercenary"
   },
   {
@@ -826,9 +826,9 @@
    "sub": "Forgotten Realms: Heroes of Faerûn",
    "name": "Emerald Enclave Fledgling",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Spell, proficiency, language or Help-action positioning - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0 - was: Spell, proficiency, language or Help-action positioning - nothing to automate",
    "identifier": "emerald-enclave-fledgling"
   },
   {
@@ -856,9 +856,9 @@
    "sub": "Forgotten Realms: Heroes of Faerûn",
    "name": "Harper Agent",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Spell, proficiency, language or Help-action positioning - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0 - was: Spell, proficiency, language or Help-action positioning - nothing to automate",
    "identifier": "harper-agent"
   },
   {
@@ -1036,9 +1036,9 @@
    "sub": "Dark Gift feat (Ravenloft)",
    "name": "Second Skin",
    "source": "Other",
-   "category": "skip",
+   "category": "done",
    "priority": 3,
-   "note": "Spell, proficiency, language or Help-action positioning - nothing to automate",
+   "note": "CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Spell, proficiency, language or Help-action positioning - nothing to automate",
    "identifier": "second-skin"
   },
   {

@@ -1,0 +1,26 @@
+{
+  "name": "House Kundarak Heir",
+  "type": "background",
+  "img": "icons/equipment/finger/ring-crown-dragon-green.webp",
+  "system": {
+    "identifier": "house-kundarak-heir",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> House Kundarak Heir background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBpn7bDS1fqKAx",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

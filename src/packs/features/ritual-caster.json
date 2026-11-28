@@ -1,0 +1,41 @@
+{
+  "name": "Ritual Caster",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-offering-ritual.webp",
+  "system": {
+    "identifier": "ritual-caster",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Ritual Caster.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBqqVbiN3IFMoC",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

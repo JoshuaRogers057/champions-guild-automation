@@ -1,0 +1,31 @@
+{
+  "name": "Unfettered Mind",
+  "type": "feat",
+  "img": "icons/skills/wounds/anatomy-organ-brain-pink-red.webp",
+  "system": {
+    "identifier": "unfettered-mind",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Unfettered Mind.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Knowledge Domain 6",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBTAz3Z56u283a",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "Fey Touched",
+  "type": "feat",
+  "img": "icons/magic/nature/leaf-flower-wreath-glow-green-blue.webp",
+  "system": {
+    "identifier": "fey-touched",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Fey Touched.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "uses": {
+      "max": "1",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBsU5jljdd0mrU",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Trickery Domain Spells",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "trickery-domain-spells",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Trickery Domain Spells.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Trickery Domain 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBdCA96r3TbASp",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

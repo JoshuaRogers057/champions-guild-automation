@@ -1,0 +1,45 @@
+{
+  "name": "Orb of Divination Detection",
+  "type": "equipment",
+  "img": "icons/magic/perception/orb-eye-scrying.webp",
+  "system": {
+    "identifier": "orb-of-divination-detection",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Orb of Divination Detection.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "uncommon",
+    "attunement": "required",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBQX3e9QGnOuLE",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

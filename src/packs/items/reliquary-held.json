@@ -1,0 +1,42 @@
+{
+  "name": "Reliquary (held)",
+  "type": "equipment",
+  "img": "icons/commodities/treasure/puzzle-box-glowing-blue.webp",
+  "system": {
+    "identifier": "reliquary-held",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> a holy symbol (Cleric and Paladin spellcasting focus).</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "properties": [
+      "foc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "equipped": true,
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaG1ae223bbacf0",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: generic website gear (picture and type)."
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "Musical Instrument",
+  "type": "tool",
+  "img": "icons/tools/instruments/pipe-flute-tan.webp",
+  "system": {
+    "identifier": "musical-instrument",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Musical Instrument.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "type": {
+      "value": "music",
+      "baseItem": ""
+    },
+    "ability": "",
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaGba575394cd52",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: generic website gear (picture and type)."
+      }
+    }
+  }
+}

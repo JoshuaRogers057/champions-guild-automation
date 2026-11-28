@@ -1,0 +1,31 @@
+{
+  "name": "Knightly Envoy",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "knightly-envoy",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Knightly Envoy.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Banneret 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBE9B3tpHniHLI",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

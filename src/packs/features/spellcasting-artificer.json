@@ -1,0 +1,32 @@
+{
+  "name": "Spellcasting",
+  "type": "feat",
+  "img": "icons/commodities/tech/cog-gear-wheel-gold.webp",
+  "system": {
+    "identifier": "spellcasting",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Spellcasting.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Artificer 1",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBRF235bZ9j9dF",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item.",
+        "sourceType": "class:artificer"
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Bard Subclass",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "bard-subclass",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Bard Subclass.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Bard 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaB6eonTSLyxqWB",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

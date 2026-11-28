@@ -1,0 +1,31 @@
+{
+  "name": "Channeler",
+  "type": "feat",
+  "img": "icons/magic/nature/tree-spirit-glow-black-yellow.webp",
+  "system": {
+    "identifier": "channeler",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Channeler.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "College of Spirits 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBsVSh8nfLh4pa",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

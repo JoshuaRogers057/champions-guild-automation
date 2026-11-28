@@ -1,0 +1,31 @@
+{
+  "name": "Sorcerer Subclass",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "sorcerer-subclass",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Sorcerer Subclass.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Sorcerer 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaB0hwv5lwG5bix",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

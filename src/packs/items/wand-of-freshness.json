@@ -1,0 +1,56 @@
+{
+  "name": "Wand of Freshness",
+  "type": "equipment",
+  "img": "icons/commodities/treasure/brooch-jewel-gold-blue.webp",
+  "system": {
+    "identifier": "wand-of-freshness",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Wand of Freshness.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "rarity": "uncommon",
+    "attunement": "",
+    "properties": [
+      "mgc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "type": {
+      "value": "wand",
+      "baseItem": ""
+    },
+    "uses": {
+      "max": "4",
+      "spent": 0,
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d4+1"
+        }
+      ]
+    },
+    "equipped": false,
+    "attuned": false,
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBJJsFb6VNXYa4",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

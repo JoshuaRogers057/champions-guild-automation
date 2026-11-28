@@ -1,0 +1,31 @@
+{
+  "name": "Resilient",
+  "type": "feat",
+  "img": "icons/magic/unholy/barrier-shield-glowing-pink.webp",
+  "system": {
+    "identifier": "resilient",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Resilient.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "feat",
+      "subtype": "general"
+    },
+    "requirements": "",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaB6NvySWuHl4bs",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

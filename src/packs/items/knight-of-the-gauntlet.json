@@ -1,0 +1,26 @@
+{
+  "name": "Knight of the Gauntlet",
+  "type": "background",
+  "img": "icons/sundries/documents/blueprint-helmet.webp",
+  "system": {
+    "identifier": "knight-of-the-gauntlet",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Knight of the Gauntlet background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBkA5pY2xXjMUK",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

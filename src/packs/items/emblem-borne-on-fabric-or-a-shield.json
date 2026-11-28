@@ -1,0 +1,42 @@
+{
+  "name": "Emblem (borne on fabric or a Shield)",
+  "type": "equipment",
+  "img": "icons/commodities/treasure/brooch-shield-grey.webp",
+  "system": {
+    "identifier": "emblem-borne-on-fabric-or-a-shield",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> a holy symbol (Cleric and Paladin spellcasting focus).</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "type": {
+      "value": "trinket",
+      "baseItem": ""
+    },
+    "properties": [
+      "foc"
+    ],
+    "quantity": 1,
+    "weight": {
+      "value": 1,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "equipped": true,
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaG6e0504131021",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: generic website gear (picture and type)."
+      }
+    }
+  }
+}

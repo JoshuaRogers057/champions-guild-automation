@@ -1,0 +1,26 @@
+{
+  "name": "Phantasmic Circus Trouper",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "identifier": "phantasmic-circus-trouper",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Phantasmic Circus Trouper background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBv0YmkgDK2Gni",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

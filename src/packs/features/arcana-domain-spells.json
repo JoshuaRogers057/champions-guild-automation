@@ -1,0 +1,31 @@
+{
+  "name": "Arcana Domain Spells",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "arcana-domain-spells",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Arcana Domain Spells.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Arcana Domain 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBlwetL06iiJun",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

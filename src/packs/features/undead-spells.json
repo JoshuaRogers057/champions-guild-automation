@@ -1,0 +1,31 @@
+{
+  "name": "Undead Spells",
+  "type": "feat",
+  "img": "icons/magic/death/undead-zombie-grave-green.webp",
+  "system": {
+    "identifier": "undead-spells",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Undead Spells.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Undead Patron 3",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBEkLN9kqmKCRt",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

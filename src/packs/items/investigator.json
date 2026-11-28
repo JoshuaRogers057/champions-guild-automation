@@ -1,0 +1,26 @@
+{
+  "name": "Investigator",
+  "type": "background",
+  "img": "icons/tools/scribal/magnifying-glass.webp",
+  "system": {
+    "identifier": "investigator",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Investigator background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBp8MLnItc4Sak",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

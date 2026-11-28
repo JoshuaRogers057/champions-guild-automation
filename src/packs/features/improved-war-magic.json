@@ -1,0 +1,31 @@
+{
+  "name": "Improved War Magic",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "improved-war-magic",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Improved War Magic.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "requirements": "Eldritch Knight 18",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBSXpDXcZJbRId",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

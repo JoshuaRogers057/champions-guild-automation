@@ -13,9 +13,9 @@
 0|Eldritch Blast|SRD|done|1|One attack per beam, Agonizing Blast, Repelling Blast push
 0|Elementalism|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Fire Bolt|SRD|done|1|
-0|Friends|PHB|skip|3|
+0|Friends|PHB|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item
 0|Guidance|SRD|done|1|Skill picker, +1d4
-0|Light|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: midi-qol has one
+0|Light|SRD|midi|3|midi-qol's CAT automation (Mass Apply offers it); no CGA copy so midi's version stays in charge
 0|Mage Hand|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Mending|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 0|Message|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
@@ -55,7 +55,7 @@
 1|Create or Destroy Water|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Cure Wounds|SRD|done|1|
 1|Detect Evil and Good|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
-1|Detect Magic|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: midi-qol has one
+1|Detect Magic|SRD|midi|3|midi-qol's CAT automation (Mass Apply offers it); no CGA copy so midi's version stays in charge
 1|Detect Poison and Disease|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Disguise Self|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Dissonant Whispers|SRD|done|2|Half on save; the forced Reaction move is DM-handled
@@ -79,7 +79,7 @@
 1|Hex|SRD|done|1|+1d6 on hits, Curse New Creature
 1|Hunter's Mark|SRD|done|1|+1d6 on hits, Move Mark
 1|Ice Knife|SRD|done|1|Attack, then DEX save for everything within 5 ft
-1|Identify|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data) - was: midi-qol has one
+1|Identify|SRD|midi|3|midi-qol's CAT automation (Mass Apply offers it); no CGA copy so midi's version stays in charge
 1|Illusory Script|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 1|Inflict Wounds|SRD|done|1|2024: CON save, half on success
 1|Jump|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
@@ -113,7 +113,7 @@
 2|Augury|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Barkskin|SRD|done|1|AC can't be lower than 17
 2|Battle Familiar|AU|done|1|CGA item + 3 summon actors (Brute / Flyer / Stalker); AC, HP and Rend scale with the slot, Rend uses your spell attack. Empowering a Find Familiar familiar is by hand
-2|Beast Sense|PHB|skip|3|
+2|Beast Sense|PHB|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item
 2|Blindness/Deafness|SRD|done|2|Repeat CON save at the end of each of its turns
 2|Blur|SRD|done|1|Attacks against you have disadvantage unless the attacker has Blindsight/Truesight
 2|Calm Emotions|SRD|done|3|
@@ -124,11 +124,11 @@
 2|Darkness|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Darkvision|SRD|done|2|
 2|Death Armor|FR|done|1|CGA item: Advantage on Death Saves; once per turn a melee hitter within 5 ft takes 2d4 Necrotic (module rule)
-2|Deryan’s Helpful Homunculi|FR|skip|3|Crafting assistant - nothing to automate
+2|Deryan’s Helpful Homunculi|FR|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Crafting assistant - nothing to automate
 2|Detect Thoughts|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 2|Disruptive Tune|AU|done|1|CGA item: 20-ft Sphere CON save - a failure ends Concentration and gives Disadvantage on Concentration saves
 2|Dragon's Breath|SRD|done|2|CGA item (Mass Apply) since v0.45.0: midi-qol 14.7 removed its sample item, so the module keeps that version - the target gets a breath save activity of the chosen type
-2|Dueling Ground|AU|skip|3|Downtime duel arena - DM-handled
+2|Dueling Ground|AU|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Downtime duel arena - DM-handled
 2|Elminster’s Elusion|FR|done|1|CGA item: Advantage on saves vs spells/magic (midi magic resistance); a successful save for half takes none
 2|Enhance Ability|SRD|done|2|Advantage on checks with the chosen ability
 2|Enlarge/Reduce|SRD|done|2|Size, STR checks/saves, +/-1d4 weapon damage
@@ -197,7 +197,7 @@
 3|Dispel Magic|SRD|done|3|End spell effects on a target (check for higher levels)
 3|Elemental Weapon|PHB|done|2|+1 attack and +1d4 elemental damage on the weapon
 3|Fear|SRD|done|2|Frightened, drop held item, must Dash away; save only out of sight
-3|Feign Death|PHB|skip|3|
+3|Feign Death|PHB|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item
 3|Fireball|SRD|done|1|
 3|Fly|SRD|done|1|
 3|Gaseous Form|SRD|done|3|
@@ -339,7 +339,7 @@
 5|Wall of Stone|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 5|Waves of Exhaustion|AU|done|2|CGA item + module rule: Wave activity, failed CON save = +1 Exhaustion (max 4), removed when the spell ends
 5|Yolande's Regal Presence|PHB|done|3|Zone: WIS save psychic, prone or pushed
-6|Arcane Gate|PHB|skip|3|
+6|Arcane Gate|PHB|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item
 6|Blade Barrier|SRD|done|2|Wall: DEX save slashing on entering/starting turn
 6|Chain Lightning|SRD|done|2|Primary target + three leaps
 6|Circle of Death|SRD|done|2|
@@ -369,7 +369,7 @@
 6|Summon Dinosaur|AU|done|3|CGA item + 3 summon actors (Ankylosaur / Triceratops / Tyrannosaur) scaling with the slot
 6|Summon Fiend|PHB|done|2|Spirits in the CGA: Summoned Creatures compendium
 6|Sunbeam|SRD|done|2|midi-qol's sample item, checked in the test world: CON save 6d8 Radiant + Blinded, new beam activity
-6|Tasha's Bubbling Cauldron|PHB|skip|3|
+6|Tasha's Bubbling Cauldron|PHB|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item
 6|Transport via Plants|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 6|True Seeing|SRD|done|3|
 6|Wall of Ice|SRD|done|3|Wall: damage + cold zone
@@ -425,14 +425,14 @@
 8|Moment of Prescience|AU|done|3|CGA item + module rule: offered when you fail a save (becomes 20) or are hit (attack becomes 1)
 8|Power Word Stun|SRD|done|3|midi-qol's sample item, checked in the test world: Stunned at 150 HP or fewer
 8|Sunburst|SRD|done|3|Blinded with repeat saves
-8|Telepathy|PHB|skip|3|
+8|Telepathy|PHB|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item
 8|Tsunami|SRD|done|3|Moving wall
 9|Astral Projection|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
 9|Blade of Disaster|FR|done|3|CGA item: melee spell attacks 10d6 Force, Critical Hit on 18-20; Rift Attack activity for the other attacks
 9|Detonate|AU|done|3|CGA item + module rule: Explosive Seed CON save 10d10 Fire, Explosion activity DEX save 10d10 (Disadvantage if the seed dropped the target)
 9|Foresight|SRD|done|3|midi-qol's sample item, checked in the test world: Advantage on D20 Tests, attacks against it at Disadvantage
 9|Gate|SRD|done|3|CGA item (Mass Apply) since v0.46.0: the dnd5e 2024 compendium item (picture and rules data)
-9|Hindsight|AU|skip|3|Divination visions - roleplay
+9|Hindsight|AU|done|3|CGA item (Mass Apply) since v0.46.0: built for the website import - picture, item type, uses or charges and a basic action where the text gives one; rules text comes from the character's item - was: Divination visions - roleplay
 9|Imprisonment|SRD|done|3|midi-qol's sample item, checked in the test world: Restrained + Incapacitated
 9|Invulnerability|AU|done|3|CGA item: Immunity to all damage while concentrating
 9|Mass Heal|SRD|done|3|midi-qol's sample item, checked in the test world: 700 HP distribution dialog

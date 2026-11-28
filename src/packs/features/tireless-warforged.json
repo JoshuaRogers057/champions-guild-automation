@@ -1,0 +1,31 @@
+{
+  "name": "Tireless",
+  "type": "feat",
+  "_id": "cgaBTirelessWarf",
+  "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
+  "system": {
+    "identifier": "tireless",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Tireless (Warforged).</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Warforged",
+    "activities": {}
+  },
+  "effects": [],
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type); rules text comes from the character's item.",
+        "sourceType": "race:warforged"
+      }
+    }
+  }
+}

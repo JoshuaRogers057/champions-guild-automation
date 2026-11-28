@@ -1,0 +1,26 @@
+{
+  "name": "Covenant of the Grave Recruit",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "identifier": "covenant-of-the-grave-recruit",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Covenant of the Grave Recruit background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBcEPE8SoulJTk",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

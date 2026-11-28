@@ -1,0 +1,26 @@
+{
+  "name": "Shadowmoor Expert",
+  "type": "background",
+  "img": "icons/environment/people/commoner.webp",
+  "system": {
+    "identifier": "shadowmoor-expert",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Shadowmoor Expert background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaB8lCRiUwC1Me6",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Sailor",
+  "type": "background",
+  "img": "icons/tools/nautical/anchor.webp",
+  "system": {
+    "identifier": "sailor",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Sailor background.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "advancement": {},
+    "startingEquipment": []
+  },
+  "effects": [],
+  "_id": "cgaBPFwBJ8JUZVhm",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

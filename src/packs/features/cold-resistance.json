@@ -1,0 +1,31 @@
+{
+  "name": "Cold Resistance",
+  "type": "feat",
+  "img": "icons/magic/water/projectile-arrow-cold-fire-blue.webp",
+  "system": {
+    "identifier": "cold-resistance",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Cold Resistance.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Rimekin",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBkFkwwM9f6hDL",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Specialized Design",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "specialized-design",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Specialized Design.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Warforged",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBSfbCo0WpipeE",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

@@ -11,8 +11,9 @@
 // It runs once per item when the character's sheet is opened (by the GM, or the owner when no GM is on), then says
 // so in chat. Mass Apply afterwards swaps in the CAT / CGA versions where they exist.
 import { MODULE_ID } from "./main.js";
+import { SITE_ICONS, WORD_ICONS } from "./site-icons.js";
 
-const PACKS = { classes: "dnd5e.classes24", origins: "dnd5e.origins24", feats: "dnd5e.feats24", spells: "dnd5e.spells24", items: "dnd5e.equipment24", cga: `${MODULE_ID}.cga-features`, cgaItems: `${MODULE_ID}.cga-items` };
+const PACKS = { classes: "dnd5e.classes24", origins: "dnd5e.origins24", feats: "dnd5e.feats24", spells: "dnd5e.spells24", items: "dnd5e.equipment24", cga: `${MODULE_ID}.cga-features`, cgaItems: `${MODULE_ID}.cga-items`, cgaSpells: `${MODULE_ID}.cga-spells` };
 
 // Magic items the site names "<kind> <base item>" ("Vicious Longsword +1", "Mariner's Chain Mail") get the identifier the
 // book item has, so CAT and the module rules find them. armor/weapon/ammo say which item types each one is for.
@@ -133,12 +134,24 @@ async function lookups() {
   return (cache = { byIdent, owner, scales, classIdent });
 }
 
+const GEAR = ["weapon", "equipment", "consumable", "tool", "loot", "container"];
+// Last-resort pictures by item type, so nothing from the website keeps Foundry's blank bag.
+const TYPE_ICONS = {
+  feat: "icons/skills/trades/academics-book-study-purple.webp", spell: "icons/magic/symbols/runes-star-pentagon-blue.webp",
+  equipment: "icons/commodities/treasure/brooch-jewel-gold-blue.webp", consumable: "icons/commodities/gems/gem-cluster-blue-white.webp",
+  loot: "icons/sundries/misc/horseshoe-iron.webp", tool: "icons/tools/hand/awl-steel-tan.webp", container: "icons/containers/chest/chest-wooden-tied-white.webp",
+  weapon: "icons/weapons/swords/sword-guard-brown.webp", background: "icons/environment/people/commoner.webp", race: "icons/environment/people/commoner.webp"
+};
+async function pictureFor(item) {
+  const word = String(item.name).toLowerCase().split(/[^a-z]+/).map((w) => WORD_ICONS[w] ?? WORD_ICONS[w.replace(/s$/, "")]).find(Boolean);
+  return (await iconFor(item)) ?? SITE_ICONS[slug(item.name)] ?? (GEAR.includes(item.type) ? word : null) ?? TYPE_ICONS[item.type] ?? null;
+}
 // A picture for a site item that keeps its own (class, subclass, species, background): the CGA item's, else dnd5e's.
 async function iconFor(item) {
   const { byIdent } = await lookups();
   const keys = [item.system.identifier, slug(item.name)].filter(Boolean);
-  for (const pack of ["cgaItems", "cga", "origins", "classes"]) for (const k of keys) {
-    const e = (byIdent[pack]?.[k] ?? []).find((x) => x.type === item.type && x.img && !/item-bag|mystery-man/.test(x.img));
+  for (const pack of ["cgaItems", "cga", "cgaSpells", "origins", "classes", "items", "spells"]) for (const k of keys) {
+    const e = (byIdent[pack]?.[k] ?? []).find((x) => (x.type === item.type || (GEAR.includes(x.type) && GEAR.includes(item.type))) && x.img && !/item-bag|mystery-man/.test(x.img));
     if (e) return e.img;
   }
   return null;
@@ -170,6 +183,9 @@ async function findSource(item, { baseOnly = false } = {}) {
       const same = (e) => e.type === item.type || (["loot", "container"].includes(item.type) && gear.includes(e.type));
       const canon = canonicalIdent(item);
       let hit = baseOnly ? null : (canon && pick(byIdent.items[canon], same)[0]) || pick(byIdent.items[ident], same)[0];
+      // "Traveler's Clothes" is dnd5e's "Clothes, Traveler's": try two-word names the other way round.
+      const words = String(item.name).trim().split(/\s+/);
+      if (!hit && !baseOnly && words.length === 2) hit = pick(byIdent.items[slug(`${words[1]} ${words[0]}`)], same)[0];
       // "Longsword +1" / "Shield +2": the plain item (the +N is kept as the item's magic bonus).
       if (!hit && /-\d$/.test(ident)) hit = pick(byIdent.items[ident.replace(/-\d$/, "")], same)[0];
       // "Flame Tongue Shortsword": the longest named item (two words or more) the name starts with.
@@ -436,6 +452,7 @@ export async function fillSiteItems(actor, { quiet = false } = {}) {
       if (canon) up["system.identifier"] = canon;
       const uses = item.type === "feat" && !item.system.uses?.max ? usesFromText(item.system.description?.value) : null;
       if (uses) up["system.uses"] = uses;
+      if (/item-bag/.test(item.img)) { const img = await pictureFor(item); if (img) up.img = img; }
       if (canon || uses) { up[`flags.${MODULE_ID}.site.filled`] = canon ? "identifier" : "uses"; filled.push(`${item.name} (${[canon && "identifier " + canon, uses && "uses"].filter(Boolean).join(", ")})`); }
       else missing.push(item.name);
       if (Object.keys(up).length > 1) patch.push(up);

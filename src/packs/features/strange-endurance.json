@@ -1,0 +1,31 @@
+{
+  "name": "Strange Endurance",
+  "type": "feat",
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "system": {
+    "identifier": "strange-endurance",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Strange Endurance.</p>"
+    },
+    "source": {
+      "rules": "2024",
+      "book": ""
+    },
+    "type": {
+      "value": "race",
+      "subtype": ""
+    },
+    "requirements": "Reborn",
+    "activities": {}
+  },
+  "effects": [],
+  "_id": "cgaBx8ssRgJ1UaFn",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}

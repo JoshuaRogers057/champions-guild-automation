@@ -1,0 +1,88 @@
+{
+  "name": "Friends",
+  "type": "spell",
+  "img": "icons/magic/life/heart-shadow-red.webp",
+  "system": {
+    "identifier": "friends",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> Friends.</p>"
+    },
+    "source": {
+      "rules": "2024"
+    },
+    "level": 0,
+    "school": "enc",
+    "properties": [
+      "somatic",
+      "material",
+      "concentration"
+    ],
+    "activation": {
+      "type": "action",
+      "value": 1,
+      "condition": ""
+    },
+    "method": "spell",
+    "prepared": 0,
+    "activities": {
+      "cgaActf947f3c0d7": {
+        "_id": "cgaActf947f3c0d7",
+        "type": "utility",
+        "name": "",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "scaling": {
+            "allowed": false
+          },
+          "spellSlot": true,
+          "targets": []
+        },
+        "duration": {
+          "units": "inst",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "contiguous": false,
+            "units": "ft"
+          },
+          "affects": {
+            "choice": false
+          },
+          "override": false,
+          "prompt": true
+        },
+        "uses": {
+          "spent": 0,
+          "recovery": []
+        },
+        "roll": {
+          "prompt": false,
+          "visible": false
+        }
+      }
+    }
+  },
+  "effects": [],
+  "_id": "cgaBI1eYbGTiKqYP",
+  "flags": {
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: built for the website import (picture, type, uses); rules text comes from the character's item."
+      }
+    }
+  }
+}
