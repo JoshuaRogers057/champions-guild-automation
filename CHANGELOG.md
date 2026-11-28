@@ -3,6 +3,13 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.47.1
+
+No automation changes. Installing CGA now offers to install all of its required mods automatically: each requirement
+links to the exact tested release (socketlib v1.1.4, libWrapper 1.13.5.1, DAE 14.6.10, Midi QOL 14.7.1, Coven's
+Automation Toolkit 0.1.10). Before, Foundry looked Midi QOL and DAE up in its package listing, which offers older
+14.0.x versions, so it couldn't install them and they had to be installed by hand.
+
 ## 0.47.0
 
 Every row on every tracker is now handled. Nothing is marked "skip" any more. This release adds 357 CGA items (1.0.0,
