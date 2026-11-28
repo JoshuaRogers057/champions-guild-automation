@@ -4,7 +4,7 @@
   "img": "icons/magic/defensive/shield-barrier-glowing-triangle-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Necrotic/Psychic/Radiant resistance aura (module rule).</p>",
       "chat": ""
     },
     "identifier": "aura-of-warding",

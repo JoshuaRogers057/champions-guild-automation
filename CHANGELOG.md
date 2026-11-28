@@ -3,6 +3,18 @@
 Each fix lists the CAT automation version on the item (`flags.cat.automation.version`). Bump it whenever the
 item changes, so DMs see it as "Out of date".
 
+## 0.47.2
+
+- **Unarmed Strike** (new CGA item, 1.0.0, Mass Apply): four separate options you pick from each time: **Punch**
+  (attack, 1 + modifier Bludgeoning), **Grapple** (STR or DEX save, DC 8 + STR + Proficiency Bonus, or Grappled),
+  **Shove (Push 5 ft)** and **Shove (Prone)**. dnd5e's Unarmed Strike has an attack plus one "Grapple/Shove" save,
+  and midi-qol links that save to the attack, so a hit also rolled the save and applied Grappled *and* Prone. None of
+  the new options is linked to another. Tested: a Punch dealt damage only, Grapple applied only Grappled, the Push
+  moved the target 5 feet, and Prone applied only Prone. Mass Apply replaces the dnd5e copy on existing characters,
+  and the website import now adds this one. Monks still get their Martial Arts die on the Punch.
+- **Pack descriptions**: 235 CGA items showed "undefined" as their description in the compendium. They now show the
+  item's automation note. Characters were not affected, because Mass Apply keeps each character's own description.
+
 ## 0.47.1
 
 No automation changes. Installing CGA now offers to install all of its required mods automatically: each requirement

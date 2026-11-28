@@ -4,7 +4,7 @@
   "img": "icons/commodities/claws/claw-bear-brown.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Moon Wild Shape transform (CR level/3, AC 13 + WIS, temp HP 3x level) spending a Wild Shape use.</p>",
       "chat": ""
     },
     "identifier": "circle-forms",

@@ -4,7 +4,7 @@
   "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Half Cover effect on the targets for 1 minute.</p>",
       "chat": ""
     },
     "identifier": "bulwark-of-force",

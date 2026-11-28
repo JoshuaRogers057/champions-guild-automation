@@ -5,7 +5,7 @@
   "img": "icons/magic/nature/hand-weapon-wood-bark-brown.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Once per turn weapon/Wild Shape hit: +1d8/2d8 elemental (prompt).</p>",
       "chat": ""
     },
     "source": {

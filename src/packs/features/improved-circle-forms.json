@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/wolf-paw-glow-large-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Beast form gets +WIS to CON saves and a once-per-form Radiant option (module rule + macro).</p>",
       "chat": ""
     },
     "identifier": "improved-circle-forms",

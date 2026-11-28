@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/leaf-glow-maple-orange-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> +WIS (min 1) to Charisma checks.</p>",
       "chat": ""
     },
     "identifier": "otherworldly-glamour",

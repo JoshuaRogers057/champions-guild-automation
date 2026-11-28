@@ -4,7 +4,7 @@
   "img": "icons/magic/control/debuff-energy-hold-levitate-blue-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Telekinesis cast activity (once per Long Rest).</p>",
       "chat": ""
     },
     "identifier": "telekinetic-master",

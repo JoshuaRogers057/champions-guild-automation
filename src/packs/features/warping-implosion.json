@@ -4,7 +4,7 @@
   "img": "icons/magic/unholy/orb-glowing-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> 30-ft emanation STR save, 3d10 Force (half).</p>",
       "chat": ""
     },
     "identifier": "warping-implosion",

@@ -4,7 +4,7 @@
   "img": "icons/magic/light/beam-rays-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Warding Flare recharges on Short Rests (module rule); temp HP prompt after using it.</p>",
       "chat": ""
     },
     "identifier": "improved-warding-flare",

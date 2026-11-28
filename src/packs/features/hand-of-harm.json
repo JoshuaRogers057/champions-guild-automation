@@ -4,7 +4,7 @@
   "img": "icons/magic/unholy/strike-hand-glow-pink.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Prompt after unarmed hits (once per turn, 1 Focus); Physician's Touch poison at 6.</p>",
       "chat": ""
     },
     "identifier": "hand-of-harm",

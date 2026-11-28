@@ -4,7 +4,7 @@
   "img": "icons/magic/holy/saint-glass-portrait-halo.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Mantle effect with Concentration; Command cast activity without a slot.</p>",
       "chat": ""
     },
     "identifier": "mantle-of-majesty",

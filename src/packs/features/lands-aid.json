@@ -5,7 +5,7 @@
   "img": "icons/magic/nature/root-vines-grow-brown.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Spends the other feature's uses by identifier, so it works on imported characters. Dice worked out from your Druid level.</p>",
       "chat": ""
     },
     "source": {

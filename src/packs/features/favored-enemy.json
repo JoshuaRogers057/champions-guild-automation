@@ -5,7 +5,7 @@
   "img": "icons/creatures/abilities/dragon-breath-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Free Hunter's Mark casts use the module's automated Hunter's Mark spell.</p>",
       "chat": ""
     },
     "source": {

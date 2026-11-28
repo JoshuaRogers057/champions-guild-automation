@@ -4,7 +4,7 @@
   "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Prompt after Enchantment/Illusion slot spells; WIS save or Charmed/Frightened with repeat saves.</p>",
       "chat": ""
     },
     "identifier": "beguiling-magic",

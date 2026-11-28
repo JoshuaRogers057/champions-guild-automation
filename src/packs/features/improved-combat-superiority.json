@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Die size is worked out from your Fighter level by the maneuver automation.</p>",
       "chat": ""
     },
     "identifier": "improved-combat-superiority",

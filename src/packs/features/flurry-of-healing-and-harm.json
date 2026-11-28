@@ -4,7 +4,7 @@
   "img": "icons/magic/life/cross-yellow-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Free Hand of Harm uses during Flurry of Blows (Hand of Harm prompt).</p>",
       "chat": ""
     },
     "identifier": "flurry-of-healing-and-harm",

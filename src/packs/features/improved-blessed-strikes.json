@@ -4,7 +4,7 @@
   "img": "icons/magic/holy/projectiles-blades-salvo-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Divine Strike 2d8 (Blessed Strikes); cantrip temp HP prompt.</p>",
       "chat": ""
     },
     "identifier": "improved-blessed-strikes",

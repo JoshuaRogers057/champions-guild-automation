@@ -5,7 +5,7 @@
   "img": "icons/environment/creatures/horse-brown.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Adds a free Find Steed cast (the compendium item had no activity).</p>",
       "chat": ""
     },
     "source": {

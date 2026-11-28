@@ -5,7 +5,7 @@
   "img": "icons/skills/wounds/injury-pain-body-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Automatic CON save at 0 HP while raging (DC 10 +5 per use, reset on rests) - module rule.</p>",
       "chat": ""
     },
     "source": {

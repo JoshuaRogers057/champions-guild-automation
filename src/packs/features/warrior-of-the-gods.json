@@ -4,7 +4,7 @@
   "img": "icons/magic/life/heart-cross-strong-flame-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> d12 pool as item uses; Bonus Action heal that scales with the dice spent.</p>",
       "chat": ""
     },
     "identifier": "warrior-of-the-gods",

@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> When you make a Dexterity (Stealth) check you can spend a Superiority Die to add it (offered as an optional bonus). Adding it to Initiative is up to you.</p>",
       "chat": ""
     },
     "identifier": "maneuver-ambush",

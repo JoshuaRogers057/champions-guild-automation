@@ -5,7 +5,7 @@
   "img": "icons/magic/unholy/hand-marked-pink.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Spends the other feature's uses by identifier, so it works on imported characters.</p>",
       "chat": ""
     },
     "source": {

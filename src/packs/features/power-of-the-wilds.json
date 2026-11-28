@@ -4,7 +4,7 @@
   "img": "icons/creatures/abilities/lion-roar-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Choice when Rage starts: Falcon fly, Lion aura (module rule), Ram Prone on melee hits.</p>",
       "chat": ""
     },
     "identifier": "power-of-the-wilds",

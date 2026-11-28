@@ -4,7 +4,7 @@
   "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Charm immunity; Reaction prompt halves damage and reflects it as Psychic (module rule).</p>",
       "chat": ""
     },
     "identifier": "beguiling-defenses",

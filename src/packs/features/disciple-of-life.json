@@ -5,7 +5,7 @@
   "img": "icons/magic/life/cross-beam-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Slot healing spells add 2 + slot level to the healing.</p>",
       "chat": ""
     },
     "source": {

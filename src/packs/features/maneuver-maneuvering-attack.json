@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> After a hit: add the die to damage, and an ally can use its Reaction to move half its Speed without Opportunity Attacks from the target (offered in the maneuver prompt).</p>",
       "chat": ""
     },
     "identifier": "maneuver-maneuvering-attack",

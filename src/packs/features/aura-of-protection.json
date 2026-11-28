@@ -5,7 +5,7 @@
   "img": "icons/magic/defensive/barrier-shield-dome-deflect-teal.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> +CHA to saves for you and allies in range, kept up to date by the module.</p>",
       "chat": ""
     },
     "source": {

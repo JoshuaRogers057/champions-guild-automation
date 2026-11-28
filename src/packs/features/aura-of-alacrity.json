@@ -4,7 +4,7 @@
   "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> +10 ft Speed for you; +10 ft aura for nearby allies (module rule).</p>",
       "chat": ""
     },
     "identifier": "aura-of-alacrity",

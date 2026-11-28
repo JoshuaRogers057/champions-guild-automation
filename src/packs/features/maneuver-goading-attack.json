@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> After a hit: add the die to damage; WIS save or the target has Disadvantage on attacks against anyone but you until the end of your next turn.</p>",
       "chat": ""
     },
     "identifier": "maneuver-goading-attack",

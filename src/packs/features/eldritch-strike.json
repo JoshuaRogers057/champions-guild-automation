@@ -4,7 +4,7 @@
   "img": "icons/magic/lightning/bolt-strike-blue-white.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Weapon hit: target gets Disadvantage on its next save against your spell.</p>",
       "chat": ""
     },
     "identifier": "eldritch-strike",

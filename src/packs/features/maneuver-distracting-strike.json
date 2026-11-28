@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> After a hit: add the Superiority Die to damage; the next attack against the target by someone else before your next turn has Advantage.</p>",
       "chat": ""
     },
     "identifier": "maneuver-distracting-strike",

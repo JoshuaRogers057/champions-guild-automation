@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Three foretelling rolls (Portent module rule).</p>",
       "chat": ""
     },
     "identifier": "greater-portent",

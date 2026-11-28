@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Free d8 maneuver once per turn when out of dice (Combat Superiority prompt).</p>",
       "chat": ""
     },
     "identifier": "relentless",

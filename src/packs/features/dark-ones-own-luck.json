@@ -5,7 +5,7 @@
   "img": "icons/magic/unholy/silhouette-robe-evil-glow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Optional +1d10 on checks and saves, using this feature's uses.</p>",
       "chat": ""
     },
     "source": {

@@ -4,7 +4,7 @@
   "img": "icons/magic/control/silhouette-aura-energy.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Creates a duplicate token (removed with the effect); Advantage when you and it flank a target.</p>",
       "chat": ""
     },
     "identifier": "invoke-duplicity",

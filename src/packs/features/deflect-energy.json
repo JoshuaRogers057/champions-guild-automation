@@ -5,7 +5,7 @@
   "img": "icons/magic/defensive/shield-barrier-deflect-teal.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Deflect Attacks covers every damage type from level 13 (module rule).</p>",
       "chat": ""
     },
     "source": {

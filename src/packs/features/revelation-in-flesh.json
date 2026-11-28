@@ -4,7 +4,7 @@
   "img": "icons/creatures/tentacles/tentacles-octopus-black-pink.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Checkbox prompt; spends Sorcery Points and applies the chosen benefits.</p>",
       "chat": ""
     },
     "identifier": "revelation-in-flesh",

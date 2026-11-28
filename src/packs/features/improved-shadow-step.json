@@ -4,7 +4,7 @@
   "img": "icons/magic/movement/portal-vortex-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reminder (spend the Focus and make the strike yourself).</p>",
       "chat": ""
     },
     "identifier": "improved-shadow-step",

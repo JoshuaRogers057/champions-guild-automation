@@ -4,7 +4,7 @@
   "img": "icons/magic/control/energy-stream-link-large-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Use tracker; pick the effect yourself.</p>",
       "chat": ""
     },
     "identifier": "tamed-surge",

@@ -4,7 +4,7 @@
   "img": "icons/magic/time/clock-spinning-gold-pink.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction prompt to cancel an enemy's Advantage or an ally's Disadvantage on attacks (module rule).</p>",
       "chat": ""
     },
     "identifier": "restore-balance",

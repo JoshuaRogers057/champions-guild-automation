@@ -5,7 +5,7 @@
   "img": "icons/skills/ranged/arrow-flying-white-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction prompt when hit (module rule); Redirect save + damage when reduced to 0.</p>",
       "chat": ""
     },
     "source": {

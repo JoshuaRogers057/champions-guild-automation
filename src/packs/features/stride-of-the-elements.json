@@ -4,7 +4,7 @@
   "img": "icons/magic/air/wind-tornado-wall-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Fly and swim speed effect for 10 minutes.</p>",
       "chat": ""
     },
     "identifier": "stride-of-the-elements",

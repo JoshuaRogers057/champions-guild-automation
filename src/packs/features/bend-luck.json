@@ -4,7 +4,7 @@
   "img": "icons/magic/control/buff-luck-fortune-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Spends a Sorcery Point; +1d4 optional bonus or -1d4 on the next D20 Test.</p>",
       "chat": ""
     },
     "identifier": "bend-luck",

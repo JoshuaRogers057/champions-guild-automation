@@ -5,7 +5,7 @@
   "img": "icons/magic/light/orbs-firefly-hand-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Inspire gives the target an optional-bonus effect with your die (prompt after a failed attack/save or on a check); one die at a time.</p>",
       "chat": ""
     },
     "source": {

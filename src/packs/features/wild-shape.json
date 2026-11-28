@@ -5,7 +5,7 @@
   "img": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> dnd5e Transform (Wild Shape preset): CR-limited beast forms, keeps HP/mental/features, temp HP = Druid level.</p>",
       "chat": ""
     },
     "source": {

@@ -5,7 +5,7 @@
   "img": "icons/magic/fire/flame-burning-skeleton-explosion.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Turn Undead failures take WIS-mod d8 Radiant.</p>",
       "chat": ""
     },
     "source": {

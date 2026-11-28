@@ -4,7 +4,7 @@
   "img": "icons/magic/light/explosion-star-large-blue-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Starry Form with a constellation choice (Archer attack, Chalice extra heal, Dragon minimum 10); 2d8 at 10, B/P/S resistance at 14.</p>",
       "chat": ""
     },
     "identifier": "starry-form",

@@ -5,7 +5,7 @@
   "img": "icons/commodities/treasure/medal-ribbon-gold-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Optional Bardic die on a failed check (module rule keeps the die size).</p>",
       "chat": ""
     },
     "source": {

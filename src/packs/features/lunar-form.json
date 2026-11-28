@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/moon-crescent.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Once per turn +2d10 Radiant while in Wild Shape.</p>",
       "chat": ""
     },
     "identifier": "lunar-form",

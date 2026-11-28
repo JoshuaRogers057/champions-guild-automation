@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Choice effect until a Short or Long Rest.</p>",
       "chat": ""
     },
     "identifier": "the-third-eye",

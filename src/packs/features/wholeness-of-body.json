@@ -5,7 +5,7 @@
   "img": "icons/magic/life/heart-glowing-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Martial Arts die worked out from your Monk level (no scale values needed).</p>",
       "chat": ""
     },
     "source": {

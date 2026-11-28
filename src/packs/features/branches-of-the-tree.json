@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/root-vine-entwined-thorns.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Turn-start Reaction prompt; STR save, teleport next to you, Speed 0 (module rule).</p>",
       "chat": ""
     },
     "identifier": "branches-of-the-tree",

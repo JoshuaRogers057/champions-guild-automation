@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> +WIS Initiative; Dreadful Strike prompt (WIS-mod uses per Long Rest).</p>",
       "chat": ""
     },
     "identifier": "dread-ambusher",

@@ -4,7 +4,7 @@
   "img": "icons/magic/water/wave-water-teal.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Handled by Wrath of the Sea (10-ft emanation, swim speed).</p>",
       "chat": ""
     },
     "identifier": "aquatic-affinity",

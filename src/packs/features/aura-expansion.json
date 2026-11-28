@@ -5,7 +5,7 @@
   "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Aura ranges grow at 18 in the aura automation.</p>",
       "chat": ""
     },
     "source": {

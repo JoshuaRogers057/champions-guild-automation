@@ -5,7 +5,7 @@
   "img": "icons/magic/fire/flame-burning-eye.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Charmed/Frightened immunity on the Rage effect while raging.</p>",
       "chat": ""
     },
     "source": {

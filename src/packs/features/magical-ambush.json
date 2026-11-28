@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Spell targets get Disadvantage on their save when you cast while Invisible.</p>",
       "chat": ""
     },
     "identifier": "magical-ambush",

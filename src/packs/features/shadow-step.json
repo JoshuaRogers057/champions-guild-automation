@@ -4,7 +4,7 @@
   "img": "icons/magic/movement/portal-vortex-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action Advantage on your next melee attack this turn.</p>",
       "chat": ""
     },
     "identifier": "shadow-step",

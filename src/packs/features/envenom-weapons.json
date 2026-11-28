@@ -4,7 +4,7 @@
   "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Poison Cunning Strike adds 2d6 Poison.</p>",
       "chat": ""
     },
     "identifier": "envenom-weapons",

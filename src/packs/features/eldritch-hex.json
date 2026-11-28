@@ -4,7 +4,7 @@
   "img": "icons/magic/unholy/orb-glowing-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Hex effects also give Disadvantage on that ability's saves (module rule).</p>",
       "chat": ""
     },
     "identifier": "eldritch-hex",

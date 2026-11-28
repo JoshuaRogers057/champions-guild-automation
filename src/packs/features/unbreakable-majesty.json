@@ -4,7 +4,7 @@
   "img": "icons/magic/control/hypnosis-mesmerism-eye.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Majesty effect; first hit each turn: attacker CHA save or it misses (module rule).</p>",
       "chat": ""
     },
     "identifier": "unbreakable-majesty",

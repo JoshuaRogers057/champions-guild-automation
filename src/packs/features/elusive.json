@@ -5,7 +5,7 @@
   "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Attacks against you can't have Advantage.</p>",
       "chat": ""
     },
     "source": {

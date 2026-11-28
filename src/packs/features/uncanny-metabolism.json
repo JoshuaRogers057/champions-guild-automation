@@ -5,7 +5,7 @@
   "img": "icons/magic/life/cross-area-circle-green-white.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Spends the other feature's uses by identifier, so it works on imported characters. Martial Arts die worked out from your Monk level; offered on Initiative (module rule).</p>",
       "chat": ""
     },
     "source": {

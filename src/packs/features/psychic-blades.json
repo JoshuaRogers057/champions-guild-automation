@@ -4,7 +4,7 @@
   "img": "icons/weapons/daggers/dagger-curved-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Psychic Blade (melee/thrown) and Bonus Blade attack activities.</p>",
       "chat": ""
     },
     "identifier": "psychic-blades",

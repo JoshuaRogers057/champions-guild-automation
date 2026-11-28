@@ -5,7 +5,7 @@
   "img": "icons/magic/life/heart-cross-strong-purple-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Automatic temp HP when an enemy drops to 0 by you or within 10 ft (module rule).</p>",
       "chat": ""
     },
     "source": {

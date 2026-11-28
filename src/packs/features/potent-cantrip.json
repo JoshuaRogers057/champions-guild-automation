@@ -5,7 +5,7 @@
   "img": "icons/magic/earth/projectiles-fire-stone-salvo.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> midi potentCantrip on saves; half damage on missed cantrip attacks.</p>",
       "chat": ""
     },
     "source": {

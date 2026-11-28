@@ -4,7 +4,7 @@
   "img": "icons/creatures/birds/corvid-call-sound-glowing.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Choose Aspect activity sets the Owl/Panther/Salmon effect.</p>",
       "chat": ""
     },
     "identifier": "aspect-of-the-wilds",

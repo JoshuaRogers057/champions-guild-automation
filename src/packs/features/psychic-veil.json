@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Invisible effect for 1 hour (ends when you deal damage).</p>",
       "chat": ""
     },
     "identifier": "psychic-veil",

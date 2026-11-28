@@ -4,7 +4,7 @@
   "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Advantage on saves vs spells; spell damage halved (module rule).</p>",
       "chat": ""
     },
     "identifier": "spell-resistance",

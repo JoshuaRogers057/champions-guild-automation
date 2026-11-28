@@ -470,9 +470,13 @@ export async function fillSiteItems(actor, { quiet = false } = {}) {
     }
     // An Unarmed Strike, as every character sheet has.
     if (!actor.items.some((i) => i.type === "weapon" && i.system.identifier === "unarmed-strike")) {
-      const { byIdent } = await lookups();
-      const entry = (byIdent.classes["unarmed-strike"] ?? []).find((e) => !/monk/i.test(e.name)) ?? byIdent.classes["unarmed-strike"]?.[0];
-      const src = entry && await fromUuid(entry.uuid);
+      // Ours: Punch, Grapple and the two Shoves as separate choices (dnd5e's links its save to the attack under midi).
+      let src = await fromUuid(`Compendium.${PACKS.cgaItems}.Item.cgaUnarmedStrike`).catch(() => null);
+      if (!src) {
+        const { byIdent } = await lookups();
+        const entry = (byIdent.classes["unarmed-strike"] ?? []).find((e) => !/monk/i.test(e.name)) ?? byIdent.classes["unarmed-strike"]?.[0];
+        src = entry && await fromUuid(entry.uuid);
+      }
       if (src) {
         const data = src.toObject();
         data._stats = { ...(data._stats ?? {}), compendiumSource: src.uuid };

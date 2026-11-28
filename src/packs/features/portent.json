@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/eye-tendrils-web-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Long Rest foretelling rolls (module rule); Use Portent sets the target's next d20.</p>",
       "chat": ""
     },
     "identifier": "portent",

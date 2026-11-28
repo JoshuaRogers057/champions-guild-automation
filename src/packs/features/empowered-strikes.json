@@ -5,7 +5,7 @@
   "img": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Unarmed Strike damage becomes Force (toggle).</p>",
       "chat": ""
     },
     "source": {

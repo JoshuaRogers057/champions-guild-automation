@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/shield-block-fire-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Optional reroll of a failed save + Fighter level, using Indomitable uses.</p>",
       "chat": ""
     },
     "source": {

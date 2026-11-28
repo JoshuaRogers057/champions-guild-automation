@@ -4,7 +4,7 @@
   "img": "icons/skills/targeting/crosshair-pointed-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Advantage against your Hunter's Mark target.</p>",
       "chat": ""
     },
     "identifier": "precise-hunter",

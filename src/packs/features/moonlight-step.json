@@ -4,7 +4,7 @@
   "img": "icons/magic/movement/trail-streak-impact-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action Advantage-on-next-attack effect; WIS-mod uses.</p>",
       "chat": ""
     },
     "identifier": "moonlight-step",

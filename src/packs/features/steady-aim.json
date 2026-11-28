@@ -5,7 +5,7 @@
   "img": "icons/skills/ranged/arrow-flying-spiral-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Activity effects: Advantage on the next attack this turn, Speed 0.</p>",
       "chat": ""
     },
     "source": {

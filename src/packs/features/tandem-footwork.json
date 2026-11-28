@@ -4,7 +4,7 @@
   "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Initiative prompt; adds the Bardic die to you and allies within 30 ft (module rule).</p>",
       "chat": ""
     },
     "identifier": "tandem-footwork",

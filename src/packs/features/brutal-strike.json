@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/strike-axe-blood-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Prompt before a reckless STR attack; extra 1d10/2d10 and the chosen Brutal Strike effect.</p>",
       "chat": ""
     },
     "source": {

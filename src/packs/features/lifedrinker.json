@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/strike-sword-blood-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Once per turn +1d6 (type choice) and an optional Hit Die heal.</p>",
       "chat": ""
     },
     "source": {

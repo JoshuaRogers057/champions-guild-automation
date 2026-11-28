@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action, one Superiority Die: you take the Disengage action and add the die's roll to your AC until the start of your next turn.</p>",
       "chat": ""
     },
     "identifier": "maneuver-evasive-footwork",

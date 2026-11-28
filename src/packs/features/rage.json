@@ -5,7 +5,7 @@
   "img": "icons/creatures/abilities/mouth-teeth-human.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Rage effect (B/P/S resistance, STR advantage), Rage Damage on STR attacks, ends Concentration; ends at the end of a turn you didn't attack/force a save/extend (module rule).</p>",
       "chat": ""
     },
     "source": {

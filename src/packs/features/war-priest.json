@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/strike-sword-steel-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action attack activity (WIS-mod uses per Short Rest).</p>",
       "chat": ""
     },
     "identifier": "war-priest",

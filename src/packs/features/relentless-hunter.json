@@ -5,7 +5,7 @@
   "img": "icons/skills/wounds/injury-pain-body-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Damage doesn't call for a Concentration save on Hunter's Mark (module rule).</p>",
       "chat": ""
     },
     "source": {

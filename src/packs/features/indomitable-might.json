@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> STR check/save totals raised to your STR score (module rule).</p>",
       "chat": ""
     },
     "source": {

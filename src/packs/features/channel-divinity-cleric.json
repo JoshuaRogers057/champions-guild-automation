@@ -5,7 +5,7 @@
   "img": "icons/magic/symbols/star-rising-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Divine Spark dice worked out from your Cleric level (no scale values needed).</p>",
       "chat": ""
     },
     "source": {

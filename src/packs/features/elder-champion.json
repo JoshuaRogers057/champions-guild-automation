@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/tree-spirit-black.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Regeneration and an enemy save-Disadvantage aura for 1 minute (module rule).</p>",
       "chat": ""
     },
     "identifier": "elder-champion",

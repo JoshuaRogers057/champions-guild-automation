@@ -4,7 +4,7 @@
   "img": "icons/skills/ranged/arrows-flying-salvo-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Once per turn, the Hunter's Mark die to a second creature within 30 ft.</p>",
       "chat": ""
     },
     "identifier": "superior-hunters-prey",

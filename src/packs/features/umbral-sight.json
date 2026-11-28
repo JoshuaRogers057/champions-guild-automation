@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/eye-ringed-glow-angry-large-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> +60 ft Darkvision.</p>",
       "chat": ""
     },
     "identifier": "umbral-sight",

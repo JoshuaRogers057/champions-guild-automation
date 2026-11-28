@@ -4,7 +4,7 @@
   "img": "icons/magic/time/clock-spinning-gold-pink.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> No Advantage against you; d20 minimum 10 on your tests.</p>",
       "chat": ""
     },
     "identifier": "trance-of-order",

@@ -5,7 +5,7 @@
   "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction prompt when an enemy's attack within 60 ft would hit: subtract the Bardic die (module rule). Damage/check uses are manual.</p>",
       "chat": ""
     },
     "source": {

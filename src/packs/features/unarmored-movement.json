@@ -5,7 +5,7 @@
   "img": "icons/skills/movement/figure-running-gray.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Speed bonus by Monk level while unarmored and without a Shield (module rule).</p>",
       "chat": ""
     },
     "source": {

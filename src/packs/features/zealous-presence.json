@@ -4,7 +4,7 @@
   "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action Advantage effect for up to ten allies; Recharge spends a Rage use.</p>",
       "chat": ""
     },
     "identifier": "zealous-presence",

@@ -4,7 +4,7 @@
   "img": "icons/magic/life/cross-yellow-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Heal activity (Martial Arts die + WIS, 1 Focus).</p>",
       "chat": ""
     },
     "identifier": "hand-of-healing",

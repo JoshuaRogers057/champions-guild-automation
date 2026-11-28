@@ -1,0 +1,133 @@
+{
+  "_id": "cgaUnarmedStrike",
+  "name": "Unarmed Strike",
+  "type": "weapon",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+  "system": {
+    "identifier": "unarmed-strike",
+    "description": {
+      "value": "<p><em>Champions Guild Automation:</em> pick one option each time you use it.</p><ul><li><strong>Punch:</strong> melee attack, 1 + modifier Bludgeoning damage.</li><li><strong>Grapple:</strong> the target (no more than one size larger, within reach) makes a Strength or Dexterity save (DC 8 + your Strength modifier + Proficiency Bonus) or has the Grappled condition. You need a free hand.</li><li><strong>Shove (Push 5 ft):</strong> same save, or you push the target 5 feet away.</li><li><strong>Shove (Prone):</strong> same save, or the target has the Prone condition.</li></ul>",
+      "chat": ""
+    },
+    "source": { "book": "", "page": "", "custom": "", "license": "CC-BY-4.0", "rules": "2024", "revision": 1 },
+    "quantity": 1,
+    "weight": { "value": 0, "units": "lb" },
+    "price": { "value": 0, "denomination": "gp" },
+    "equipped": true,
+    "identified": true,
+    "proficient": 1,
+    "type": { "value": "natural", "baseItem": "" },
+    "properties": [],
+    "range": { "value": null, "long": null, "reach": null, "units": "ft" },
+    "damage": {
+      "base": { "number": null, "denomination": 0, "bonus": "", "types": ["bludgeoning"], "custom": { "enabled": true, "formula": "1 + @mod" }, "scaling": { "number": 1 } },
+      "versatile": { "number": null, "denomination": null, "bonus": "", "types": [], "custom": { "enabled": false, "formula": "" }, "scaling": { "number": 1 } }
+    },
+    "uses": { "spent": 0, "recovery": [], "max": "" },
+    "activities": {
+      "cgaUnarmedPunch0": {
+        "_id": "cgaUnarmedPunch0",
+        "type": "attack",
+        "name": "Punch",
+        "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
+        "sort": 100000,
+        "activation": { "type": "action", "value": null, "condition": "", "override": false },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "target": { "override": false, "prompt": false, "affects": { "type": "creature", "count": "1", "choice": false, "special": "" } },
+        "attack": { "ability": "str", "bonus": "", "flat": false, "critical": { "threshold": null }, "type": { "value": "melee", "classification": "unarmed" } },
+        "damage": { "includeBase": true, "parts": [], "critical": { "bonus": "" } },
+        "effects": [],
+        "otherActivityId": "none",
+        "midiProperties": { "triggeredActivityId": "none", "otherActivityCompatible": false, "identifier": "punch" }
+      },
+      "cgaUnarmedGrapl0": {
+        "_id": "cgaUnarmedGrapl0",
+        "type": "save",
+        "name": "Grapple",
+        "img": "icons/skills/melee/unarmed-punch-fist-white.webp",
+        "sort": 200000,
+        "activation": { "type": "action", "value": null, "condition": "", "override": false },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "target": { "override": false, "prompt": false, "affects": { "type": "creature", "count": "1", "choice": false, "special": "" } },
+        "save": { "ability": ["str", "dex"], "dc": { "calculation": "str", "formula": "" } },
+        "damage": { "onSave": "none", "parts": [] },
+        "effects": [{ "_id": "cgaUnarmedGrappl", "onSave": false }],
+        "otherActivityId": "none",
+        "midiProperties": { "triggeredActivityId": "none", "otherActivityCompatible": false, "identifier": "grapple" }
+      },
+      "cgaUnarmedPush00": {
+        "_id": "cgaUnarmedPush00",
+        "type": "save",
+        "name": "Shove (Push 5 ft)",
+        "img": "icons/skills/movement/arrow-upward-yellow.webp",
+        "sort": 300000,
+        "activation": { "type": "action", "value": null, "condition": "", "override": false },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "target": { "override": false, "prompt": false, "affects": { "type": "creature", "count": "1", "choice": false, "special": "" } },
+        "save": { "ability": ["str", "dex"], "dc": { "calculation": "str", "formula": "" } },
+        "damage": { "onSave": "none", "parts": [] },
+        "effects": [],
+        "otherActivityId": "none",
+        "midiProperties": { "triggeredActivityId": "none", "otherActivityCompatible": false, "identifier": "push-5" }
+      },
+      "cgaUnarmedProne0": {
+        "_id": "cgaUnarmedProne0",
+        "type": "save",
+        "name": "Shove (Prone)",
+        "img": "icons/svg/falling.svg",
+        "sort": 400000,
+        "activation": { "type": "action", "value": null, "condition": "", "override": false },
+        "duration": { "units": "inst", "concentration": false, "override": false },
+        "target": { "override": false, "prompt": false, "affects": { "type": "creature", "count": "1", "choice": false, "special": "" } },
+        "save": { "ability": ["str", "dex"], "dc": { "calculation": "str", "formula": "" } },
+        "damage": { "onSave": "none", "parts": [] },
+        "effects": [{ "_id": "cgaUnarmedProneE", "onSave": false }],
+        "otherActivityId": "none",
+        "midiProperties": { "triggeredActivityId": "none", "otherActivityCompatible": false, "identifier": "shove-prone" }
+      }
+    }
+  },
+  "effects": [
+    {
+      "_id": "cgaUnarmedGrappl",
+      "name": "Grappled",
+      "img": "icons/skills/melee/unarmed-punch-fist-white.webp",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": ["grappled"],
+      "duration": { "value": null, "units": "seconds", "expiry": null },
+      "description": "<p>Grappled by an Unarmed Strike. Escape: an action, Strength (Athletics) or Dexterity (Acrobatics) check against the grapple's save DC.</p>",
+      "sort": 0,
+      "flags": { "dae": { "stackable": "noneName", "specialDuration": [], "showIcon": true, "transfer": false } },
+      "system": { "changes": [], "conditions": "{}", "magical": false, "rider": { "statuses": [] } },
+      "origin": null
+    },
+    {
+      "_id": "cgaUnarmedProneE",
+      "name": "Prone",
+      "img": "icons/svg/falling.svg",
+      "type": "base",
+      "transfer": false,
+      "disabled": false,
+      "statuses": ["prone"],
+      "duration": { "value": null, "units": "seconds", "expiry": null },
+      "description": "",
+      "sort": 0,
+      "flags": { "dae": { "stackable": "noneName", "specialDuration": [], "showIcon": true, "transfer": false } },
+      "system": { "changes": [], "conditions": "{}", "magical": false, "rider": { "statuses": [] } },
+      "origin": null
+    }
+  ],
+  "flags": {
+    "dnd5e": {},
+    "midi-qol": { "onUseMacroName": "[postActiveEffects]ItemMacro" },
+    "cat": {
+      "automation": {
+        "version": "1.0.0",
+        "notes": "Champions Guild Automation: four separate options - Punch (attack), Grapple (STR/DEX save or Grappled), Shove (push 5 ft) and Shove (Prone). None is linked to another, so a Punch no longer also grapples and shoves."
+      }
+    }
+  },
+  "_cgaMacro": "push.js"
+}

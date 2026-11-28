@@ -4,7 +4,7 @@
   "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Fly 60 effect; frightful aura at enemy turn starts (module rule).</p>",
       "chat": ""
     },
     "identifier": "avenging-angel",

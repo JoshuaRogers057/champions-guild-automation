@@ -4,7 +4,7 @@
   "img": "icons/magic/water/wave-water-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Wrath of the Sea effect (Stormborn at 10) and the Spray save (Cold d6s, push 15 ft).</p>",
       "chat": ""
     },
     "identifier": "wrath-of-the-sea",

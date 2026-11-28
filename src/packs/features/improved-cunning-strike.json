@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/blade-tip-smoke-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Second Cunning Strike effect in the Sneak Attack prompt.</p>",
       "chat": ""
     },
     "source": {

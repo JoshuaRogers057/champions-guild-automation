@@ -4,7 +4,7 @@
   "img": "icons/magic/control/fear-fright-mask-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Prompt after Dreadful Strike: Sudden Strike reminder or Mass Fear saves.</p>",
       "chat": ""
     },
     "identifier": "stalkers-flurry",

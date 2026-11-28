@@ -4,7 +4,7 @@
   "img": "icons/magic/control/silhouette-hold-beam-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action spending Bardic Inspiration: 2x die temp HP to targeted creatures.</p>",
       "chat": ""
     },
     "identifier": "mantle-of-inspiration",

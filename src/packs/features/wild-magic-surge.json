@@ -4,7 +4,7 @@
   "img": "icons/magic/control/energy-stream-link-large-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> d20 surge check after Sorcerer slot spells; d100 roll on a surge.</p>",
       "chat": ""
     },
     "identifier": "wild-magic-surge",

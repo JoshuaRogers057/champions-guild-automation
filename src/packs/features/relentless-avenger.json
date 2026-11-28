@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/strike-sword-blood-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Opportunity Attack hit: target's Speed 0 this turn.</p>",
       "chat": ""
     },
     "identifier": "relentless-avenger",

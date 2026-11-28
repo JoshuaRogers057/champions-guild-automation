@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> WIS save; on a failure Disadvantage against you and Advantage for you.</p>",
       "chat": ""
     },
     "identifier": "clairvoyant-combatant",

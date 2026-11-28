@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/tree-spirit-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reminder when the Rage starts; Travel activity (move tokens yourself).</p>",
       "chat": ""
     },
     "identifier": "travel-along-the-tree",

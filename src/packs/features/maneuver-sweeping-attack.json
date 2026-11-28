@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> After a melee hit: spend a die; if your attack roll would hit a second creature within 5 ft of the target and of you, it takes the die's roll in damage (offered in the maneuver prompt).</p>",
       "chat": ""
     },
     "identifier": "maneuver-sweeping-attack",

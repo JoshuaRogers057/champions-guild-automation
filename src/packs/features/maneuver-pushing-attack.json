@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> After a hit: add the die to damage; a Large or smaller target makes a STR save or is pushed 15 ft.</p>",
       "chat": ""
     },
     "identifier": "maneuver-pushing-attack",

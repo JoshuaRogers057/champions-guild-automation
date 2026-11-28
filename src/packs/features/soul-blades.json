@@ -4,7 +4,7 @@
   "img": "icons/weapons/daggers/dagger-curved-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Homing Strikes prompt (module rule); Psychic Teleportation distance roll.</p>",
       "chat": ""
     },
     "identifier": "soul-blades",

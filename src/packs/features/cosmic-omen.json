@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/orb-crystal-ball-scrying-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Long Rest Weal/Woe roll (module rule); activity gives +1d6 optional bonus or -1d6 on the next D20 Test.</p>",
       "chat": ""
     },
     "identifier": "cosmic-omen",

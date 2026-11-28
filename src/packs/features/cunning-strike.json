@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/blade-tip-acid-poison-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Cunning Strike options in the Sneak Attack prompt; saves run automatically.</p>",
       "chat": ""
     },
     "source": {

@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/third-eye-blue-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Psychic resistance; activity spends a psi die to end Charmed/Frightened.</p>",
       "chat": ""
     },
     "identifier": "guarded-mind",

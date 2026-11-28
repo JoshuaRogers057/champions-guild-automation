@@ -5,7 +5,7 @@
   "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Colossus Slayer automatic +1d8; Horde Breaker manual.</p>",
       "chat": ""
     },
     "source": {

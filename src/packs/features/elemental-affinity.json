@@ -5,7 +5,7 @@
   "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Choose Type sets resistance; +CHA to spell damage of that type.</p>",
       "chat": ""
     },
     "source": {

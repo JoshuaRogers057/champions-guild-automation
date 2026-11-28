@@ -5,7 +5,7 @@
   "img": "icons/magic/nature/leaf-glow-triple-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Choose Land activity adds the land's spells (always prepared) and removes the old ones.</p>",
       "chat": ""
     },
     "source": {

@@ -4,7 +4,7 @@
   "img": "icons/magic/light/explosion-star-glow-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Heal activity spending d6s from the pool (scaling).</p>",
       "chat": ""
     },
     "identifier": "healing-light",

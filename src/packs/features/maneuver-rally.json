@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action, one Superiority Die: an ally within 30 ft gains Temporary Hit Points equal to the die roll + half your Fighter level.</p>",
       "chat": ""
     },
     "identifier": "maneuver-rally",

@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Cast activities: Guidance, and Guiding Bolt with WIS-mod free uses.</p>",
       "chat": ""
     },
     "identifier": "star-map",

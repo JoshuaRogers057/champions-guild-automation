@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/third-eye-blue-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Psychic resistance; Advantage on saves against effects that Charm or Frighten.</p>",
       "chat": ""
     },
     "identifier": "psychic-defenses",

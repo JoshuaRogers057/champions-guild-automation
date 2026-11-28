@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/sword-shield-stylized-white.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Adds damage and AC-on-hit optional bonuses to your Bardic Inspiration.</p>",
       "chat": ""
     },
     "identifier": "combat-inspiration",

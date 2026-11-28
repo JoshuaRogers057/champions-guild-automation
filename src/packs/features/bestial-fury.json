@@ -4,7 +4,7 @@
   "img": "icons/creatures/mammals/wolf-howl-moon-black.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reminder; the beast's attacks are made from its own sheet.</p>",
       "chat": ""
     },
     "identifier": "bestial-fury",

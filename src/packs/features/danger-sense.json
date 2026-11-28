@@ -5,7 +5,7 @@
   "img": "icons/skills/wounds/injury-face-impact-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> DEX save Advantage that switches off while Incapacitated (module rule).</p>",
       "chat": ""
     },
     "source": {

@@ -4,7 +4,7 @@
   "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Advantage on Initiative; first-round Advantage vs creatures that haven't acted; +Rogue level on first-round Sneak Attack.</p>",
       "chat": ""
     },
     "identifier": "assassinate",

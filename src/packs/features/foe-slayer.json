@@ -5,7 +5,7 @@
   "img": "icons/skills/targeting/crosshair-triple-strike-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Hunter's Mark die becomes d10 (Hunter's Mark automation).</p>",
       "chat": ""
     },
     "source": {

@@ -4,7 +4,7 @@
   "img": "icons/magic/light/explosion-star-glow-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Channel Divinity 30-ft emanation CON save, 2d10 + Cleric level Radiant (half).</p>",
       "chat": ""
     },
     "identifier": "radiance-of-the-dawn",

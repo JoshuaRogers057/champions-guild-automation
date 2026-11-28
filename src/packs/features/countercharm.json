@@ -5,7 +5,7 @@
   "img": "icons/skills/trades/music-singing-voice-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction prompt after a failed save vs Charmed/Frightened; reroll with Advantage (module rule).</p>",
       "chat": ""
     },
     "source": {

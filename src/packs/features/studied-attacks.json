@@ -4,7 +4,7 @@
   "img": "icons/skills/targeting/crosshair-pointed-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Miss: Advantage on your next attack against that creature.</p>",
       "chat": ""
     },
     "identifier": "studied-attacks",

@@ -5,7 +5,7 @@
   "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction prompt when damaged in melee; attacks with your melee weapon.</p>",
       "chat": ""
     },
     "source": {

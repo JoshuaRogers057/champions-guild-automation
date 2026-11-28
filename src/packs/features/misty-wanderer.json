@@ -4,7 +4,7 @@
   "img": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Misty Step cast activity with WIS-mod free uses.</p>",
       "chat": ""
     },
     "identifier": "misty-wanderer",

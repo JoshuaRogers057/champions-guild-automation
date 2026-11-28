@@ -5,7 +5,7 @@
   "img": "icons/creatures/eyes/human-single-brown.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Flurry of Blows makes the Unarmed Strikes automatically; Focus = Monk level.</p>",
       "chat": ""
     },
     "source": {

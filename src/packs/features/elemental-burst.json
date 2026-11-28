@@ -4,7 +4,7 @@
   "img": "icons/magic/fire/explosion-fireball-large-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> 20-ft sphere DEX save, 3 Martial Arts dice of the chosen element (half).</p>",
       "chat": ""
     },
     "identifier": "elemental-burst",

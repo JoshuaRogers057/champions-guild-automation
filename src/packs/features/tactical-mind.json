@@ -5,7 +5,7 @@
   "img": "icons/sundries/documents/document-torn-diagram-tan.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Optional +1d10 on a failed check, spending a Second Wind use.</p>",
       "chat": ""
     },
     "source": {

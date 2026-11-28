@@ -4,7 +4,7 @@
   "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Prompt to change Warlock spell damage to Psychic.</p>",
       "chat": ""
     },
     "identifier": "psychic-spells",

@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/sword-shield-stylized-white.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> B/P/S resistance.</p>",
       "chat": ""
     },
     "identifier": "avatar-of-battle",

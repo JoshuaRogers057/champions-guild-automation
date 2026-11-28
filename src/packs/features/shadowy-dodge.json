@@ -4,7 +4,7 @@
   "img": "icons/magic/perception/shadow-stealth-eyes-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction prompt: Disadvantage on the attack (module rule).</p>",
       "chat": ""
     },
     "identifier": "shadowy-dodge",

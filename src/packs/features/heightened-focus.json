@@ -5,7 +5,7 @@
   "img": "icons/skills/movement/arrows-up-trio-red.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Handled by Monk's Focus (3 Flurry strikes, Patient Defense temp HP).</p>",
       "chat": ""
     },
     "source": {

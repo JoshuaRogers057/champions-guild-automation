@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/tree-spirit-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Temp HP on Rage; turn-start prompt to give Rage-Damage d6s of temp HP to a creature within 10 ft (module rule).</p>",
       "chat": ""
     },
     "identifier": "vitality-of-the-tree",

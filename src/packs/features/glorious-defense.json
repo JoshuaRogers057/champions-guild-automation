@@ -4,7 +4,7 @@
   "img": "icons/magic/holy/barrier-shield-winged-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction prompt: +CHA AC, then a counterattack (module rule).</p>",
       "chat": ""
     },
     "identifier": "glorious-defense",

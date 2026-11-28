@@ -4,7 +4,7 @@
   "img": "icons/skills/ranged/target-bullseye-arrow-glowing.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Prompt on a near miss by you or an ally within 30 ft: Channel Divinity for +10 (module rule).</p>",
       "chat": ""
     },
     "identifier": "guided-strike",

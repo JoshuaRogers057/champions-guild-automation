@@ -4,7 +4,7 @@
   "img": "icons/magic/control/mouth-smile-deception-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Advantage vs Charm/Fear; Reaction save that Charms or Frightens.</p>",
       "chat": ""
     },
     "identifier": "beguiling-twist",

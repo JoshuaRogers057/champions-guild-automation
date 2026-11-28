@@ -4,7 +4,7 @@
   "img": "icons/magic/nature/root-vine-entangle-foot-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Channel Divinity 15-ft emanation STR save; Restrained with repeat saves.</p>",
       "chat": ""
     },
     "identifier": "natures-wrath",

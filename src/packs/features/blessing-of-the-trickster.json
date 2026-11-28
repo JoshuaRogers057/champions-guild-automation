@@ -4,7 +4,7 @@
   "img": "icons/magic/control/mouth-smile-deception-purple.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Activity effect: Advantage on Stealth until a Long Rest.</p>",
       "chat": ""
     },
     "identifier": "blessing-of-the-trickster",

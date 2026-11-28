@@ -4,7 +4,7 @@
   "img": "icons/magic/control/fear-fright-mask-orange.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Automatic +1d4/1d6 psychic, once per turn per target.</p>",
       "chat": ""
     },
     "identifier": "dreadful-strikes",

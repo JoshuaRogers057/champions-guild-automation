@@ -4,7 +4,7 @@
   "img": "icons/magic/life/heart-cross-strong-flame-green.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Healing dice maximized on your spells and Channel Divinity.</p>",
       "chat": ""
     },
     "identifier": "supreme-healing",

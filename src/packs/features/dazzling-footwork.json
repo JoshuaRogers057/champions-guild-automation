@@ -4,7 +4,7 @@
   "img": "icons/skills/movement/feet-winged-boots-glowing-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bard Unarmored Defense AC option; Unarmed Strike gets Dexterity (module) and the Bardic die for damage.</p>",
       "chat": ""
     },
     "identifier": "dazzling-footwork",

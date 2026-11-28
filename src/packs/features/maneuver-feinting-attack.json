@@ -4,7 +4,7 @@
   "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Bonus Action, one Superiority Die: target a creature within 5 ft. You have Advantage on your next attack against it this turn, and if it hits you add the die to the damage.</p>",
       "chat": ""
     },
     "identifier": "maneuver-feinting-attack",

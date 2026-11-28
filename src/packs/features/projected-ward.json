@@ -4,7 +4,7 @@
   "img": "icons/magic/defensive/shield-barrier-flaming-diamond-blue.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction prompt to absorb an ally's damage with your Arcane Ward (module rule).</p>",
       "chat": ""
     },
     "identifier": "projected-ward",

@@ -4,7 +4,7 @@
   "img": "icons/magic/movement/trail-streak-zigzag-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Reaction when damaged: runs Steps of the Fey (or your Misty Step spell).</p>",
       "chat": ""
     },
     "identifier": "misty-escape",

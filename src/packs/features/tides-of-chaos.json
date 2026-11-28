@@ -4,7 +4,7 @@
   "img": "icons/magic/time/hourglass-tilted-glowing-gold.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Advantage on your next D20 Test; recharges with a forced surge.</p>",
       "chat": ""
     },
     "identifier": "tides-of-chaos",

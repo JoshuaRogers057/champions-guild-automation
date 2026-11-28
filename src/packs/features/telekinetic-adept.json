@@ -4,7 +4,7 @@
   "img": "icons/magic/control/debuff-energy-hold-levitate-blue-yellow.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Psi-Powered Leap fly effect; Telekinetic Thrust save after Psionic Strike.</p>",
       "chat": ""
     },
     "identifier": "telekinetic-adept",

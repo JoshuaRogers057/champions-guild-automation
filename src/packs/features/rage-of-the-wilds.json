@@ -4,7 +4,7 @@
   "img": "icons/commodities/claws/claw-bear-brown.webp",
   "system": {
     "description": {
-      "value": "<p><em>Champions Guild Automation:</em> undefined</p>",
+      "value": "<p><em>Champions Guild Automation:</em> Choice when Rage starts: Bear resistances on the Rage effect, Eagle reminder, Wolf aura (module rule).</p>",
       "chat": ""
     },
     "identifier": "rage-of-the-wilds",
